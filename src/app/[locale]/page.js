@@ -13,6 +13,7 @@ import OurCommitWomen from "../components/ourCommitWomen";
 import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 import MapW from "../components/map";
+import { ProductCategories } from "../components/productCategories";
 export default function Home() {
   return (
     <div className="w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
@@ -25,8 +26,9 @@ export default function Home() {
       <CaptureWorldOur />
       <TopProduct />
       <NewProduct />
-     {/* <NowNearYou /> */}
-        {/*<OurQuality />
+      <ProductCategories />
+      {/* <NowNearYou /> */}
+      {/*<OurQuality />
       <OurCertifate />
       <Blog />
       <OurCommit />
