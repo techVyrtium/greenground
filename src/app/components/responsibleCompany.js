@@ -52,7 +52,7 @@ export default function ResponsibleCompany() {
   return (
     <section
       ref={ref}
-      className="w-full px-4 sm:px-6 lg:px-8 bg-[#F3AA17] h-[500px]"
+      className="w-full px-4 sm:px-6 lg:px-8 bg-[#F3AA17] h-[650px]"
     >
       <AnimatePresence mode="wait">
         {isInView && (
