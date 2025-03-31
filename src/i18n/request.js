@@ -1,13 +1,30 @@
-// src/i18n/request.js
-
 import { getRequestConfig } from "next-intl/server";
+import { headers } from "next/headers"; // ✅ Importar headers desde Next.js
 
 export default getRequestConfig(async () => {
-  // Puedes determinar el idioma estáticamente, o leer de cookies, cabeceras, etc.
-  const locale = "es";
+  // Obtener los headers de la solicitud
+  const requestHeaders = await headers();
+  const selectedLocale = requestHeaders.get("x-locale") || "es"; // ✅ Leer el idioma del middleware
+
+  console.log("Locale detectado:", selectedLocale); // Para depuración
+
+  const loadMessages = async (section) => {
+    try {
+      return (await import(`../../messages/${section}/${selectedLocale}.json`))
+        .default;
+    } catch (error) {
+      console.warn(`No se pudo cargar: ${section}/${selectedLocale}.json`);
+      return {};
+    }
+  };
 
   return {
-    locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
+    locale: selectedLocale,
+    messages: {
+      topNav: await loadMessages("topNav"),
+      whatWeDo: await loadMessages("whatWeDo"),
+      home: await loadMessages("home"),
+      footer: await loadMessages("footer"),
+    },
   };
 });
