@@ -92,10 +92,10 @@ export const ProductCategories = () => {
         ]
     }
     return (
-        <section className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] md:bg-[image:var(--image-product-categories-rotate)]`}>
+        <section className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)]`}>
             <div className="bg-[#00000080] p-2 px-8">
                 <h3 className="text-5xl font-bold my-4">{title}</h3>
-                <div className={"flex flex-col gap-4 flex-wrap items-center md:flex-row md:justify-around"}>
+                <div className={"flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-around"}>
                     <ProductCategory sup="Productos" title={"Congelados"} color="green" mainImage="/home/rabano.svg" mainImageHeight={392} mainImageWidth={269.555} classNameImage="w-52 -bottom-24" className="bg-product-green lg:bg-white-25 lg:hover:bg-product-green lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]" classNameTitle="md:bg-category-title-light" images={images.congelados} />
                     <ProductCategory title={"Abarrotes"} color="red" mainImage="/home/dulce.svg" mainImageHeight={231} mainImageWidth={468.405} classNameImage="bottom-6 w-full" className="bg-product-red lg:bg-white-25 lg:hover:bg-product-red lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]" classNameTitle="md:bg-category-title-bold" images={images.abarrotes} />
                     <ProductCategory title={"Menaje"} color="orange" mainImage="/home/olla.svg" mainImageHeight={272} mainImageWidth={261} classNameImage="bottom-2 w-[12.5rem]" className="bg-product-orange lg:bg-white-25 lg:hover:bg-product-orange lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]" classNameTitle="md:bg-category-title-bold" images={images.menaje} />
