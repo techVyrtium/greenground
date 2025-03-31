@@ -22,7 +22,11 @@
 }
 
 body {
-  background: var(--background);
+  background-image: url("/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efecto parallax */
+  background-repeat: no-repeat;
   color: var(--foreground);
   font-family: var(--font-roboto), sans-serif;
 }
