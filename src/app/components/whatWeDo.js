@@ -14,7 +14,7 @@ export default function WhatWeDo() {
 
           {/* Texto encima de la imagen */}
           <div className="absolute left-8 top-[38px]  w-full text-left">
-            <h2 className="text-[60px] font-bold text-green-800 mb-12 leading-[0.8]">
+            <h2 className="text-[60px] font-bold text-[#E7681F] mb-12 leading-[0.8]">
               Qué
               <br /> hacemos
             </h2>
@@ -24,7 +24,7 @@ export default function WhatWeDo() {
         <div className="flex-2 items-center">
           {/* Text Content */}
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-[#4A4A4A] leading-relaxed ">
               Productora Agrícola AG CI SAS, hace parte de la industria de
               procesamiento, comercialización y distribución de alimentos secos
               y congelados en el mercado colombiano e internacional. Con

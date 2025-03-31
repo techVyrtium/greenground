@@ -12,7 +12,7 @@ import OurCommit from "../components/ourCommit";
 import OurCommitWomen from "../components/ourCommitWomen";
 export default function Home() {
   return (
-    <div className="w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-white w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <TopNavHero />
       <WhatWeDo />
       <ResponsibleCompany />
