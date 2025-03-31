@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import TopNavHero from "@/app/components/topNav";
 import WhatWeDo from "../components/whatWeDo";
 import ResponsibleCompany from "../components/responsibleCompany";
@@ -12,11 +12,11 @@ import OurCommit from "../components/ourCommit";
 import OurCommitWomen from "../components/ourCommitWomen";
 import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
-import MapW from "../components/map";
+// import MapW from "../components/map";
 import { ProductCategories } from "../components/productCategories";
 export default function Home() {
   return (
-    <div className="w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <TopNavHero />
       <WhatWeDo />
       <ResponsibleCompany />
@@ -27,12 +27,12 @@ export default function Home() {
       <TopProduct />
       <NewProduct />
       <ProductCategories />
-      {/* <NowNearYou /> */}
-      {/*<OurQuality />
+      <NowNearYou />
+      <OurQuality />
       <OurCertifate />
       <Blog />
       <OurCommit />
-      <OurCommitWomen /> */}
+      <OurCommitWomen />
     </div>
   );
 }
