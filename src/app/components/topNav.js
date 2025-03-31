@@ -7,15 +7,15 @@ import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl"; // Importar useTranslations
 
 const slides = [
-  { type: "video", src: "/hero/video.mp4" },
-  { type: "image", src: "/path/to/image2.jpg" },
+  { type: "video", src: "/hero/video.mp4" }, // Asegúrate de que la ruta sea absoluta desde public
+  { type: "image", src: "/hero/image2.jpg" }, // Asegúrate de que la ruta sea absoluta desde public
 ];
 
 export default function TopNavHero() {
   const [current, setCurrent] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const { locale, push } = useRouter();
-  const t = useTranslations(); // Inicializar useTranslations
+  const t = useTranslations("topNav"); // Inicializar useTranslations
 
   const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
   const prevSlide = () =>
@@ -29,7 +29,7 @@ export default function TopNavHero() {
     <div className="w-full">
       <nav className="bg-[#008638] text-white flex justify-between items-center px-4 w-full">
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px] " />
+          <img src="./logo.png" alt="Logo" className="h-18 xl:pl-[86px] " />
           <ul className="hidden md:flex gap-6">
             <li>
               <a href="#">{t("home")}</a> {/* Utilizando la traducción */}
@@ -77,7 +77,7 @@ export default function TopNavHero() {
           >
             {slide.type === "image" ? (
               <img
-                src={slide.src}
+                src={slide.src} // Rutas absolutas desde public
                 alt="Slide"
                 className="w-full h-full object-cover"
               />
