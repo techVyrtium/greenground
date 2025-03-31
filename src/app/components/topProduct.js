@@ -120,7 +120,7 @@ export default function TopProduct() {
           }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full  sm:grid md:hidden  ${
+          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${
             activeIndex == 2 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
           }`}
         ></div>
@@ -134,7 +134,7 @@ export default function TopProduct() {
     );
   }
   return (
-    <section className="w-full h-fit mt-20">
+    <section className="w-full h-fit mt-20 ">
       <div className="relative flex h-[131px] w-4/5 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
         <div className="w-1/2 h-full px-4 sm:px-6 lg:px-20">
           <img
@@ -152,7 +152,7 @@ export default function TopProduct() {
           </h2>
         </div>
       </div>
-      <div className="mt-12 px-4 sm:px-6 lg:px-20 flex items-center justify-center">
+      <div className="mt-12 max-w-7xl mx-auto flex w-full items-center justify-center">
         <div className="hidden lg:grid ">
           <Card card={card} />
         </div>

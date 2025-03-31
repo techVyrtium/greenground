@@ -4,15 +4,7 @@ import React, { useState, useEffect } from "react";
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
   //const [duration, setDuration] = useState(0);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => setIsSmallScreen(window.innerWidth <= 1100);
-    handleResize(); // Comprueba al cargar
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+ 
   const dataVideo = [
     {
       id: 1,
@@ -78,9 +70,9 @@ export default function CaptureWorldOur() {
     if (activeIndex <= dataVideo.length) handleNext();
   };
   return (
-    <section className=" px-4 sm:px-6 lg:px-20 w-full h-fit mt-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row w-fit gap-10">
-        <div className="md:w-1/4 w-fit h-full flex flex-col md:flex-col lg:flex-col  items-start">
+    <section className="px-4 sm:px-6 lg:px-20 w-full h-fit mt-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-start">
           <div className="flex items-start h-fit">
             <video
               src={dataVideo[activeIndex].video}
@@ -138,8 +130,8 @@ export default function CaptureWorldOur() {
           </div>
         </div>
         {/* Sector 2 */}
-        <div className="lg:w-3/4 flex flex-col md:mt-18 lg:mt-6">
-          <div className="relative flex items-center">
+        <div className="lg:w-3/4 w-full h-full px-4 sm:px-6 lg:px-20 flex flex-col md:mt-18 lg:mt-6">
+          <div className="relative">
             <div className="w-1/3">
               <img
                 src="/home/sheetGreen.png"
@@ -147,7 +139,7 @@ export default function CaptureWorldOur() {
                 className="w-[70px] h-[90px]"
               />
             </div>
-            <div className="absolute left-8 top-[38px] w-full text-left">
+            <div className="absolute left-6 md:left-8 top-[36px] md:top-[38px] w-full text-left">
               <h2 className="text-[50px] font-bold text-green-800 mb-12 leading-[0.8]">
                 {data[0].title}
               </h2>
@@ -156,7 +148,7 @@ export default function CaptureWorldOur() {
           <div className="items-center mt-12 md:mt-0">
             <div className="space-y-6 mt-12 text-justify ">{data[0].text}</div>
           </div>
-          <div className={`${isSmallScreen ? 'hidden' : 'visible'}`}>
+          <div className={`hidden lg:grid`}>
             <div className="items-center flex flex-col lg:flex-row lg:mt-10 ">
               <div className="w-1/4">
                 <img src="/home/soup.png" className="w-auto h-[251px]" />
@@ -178,10 +170,7 @@ export default function CaptureWorldOur() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
-        {/* <div className="w-1/4">
-              <img src="/home/soup.png" className="w-auto h-[251px]" />
-            </div> */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
         <div className="md:w-1/2 w-full flex items-center justify-center">
           <img src="/home/Frame171.png" className="w-auto h-[251px]" />
         </div>
