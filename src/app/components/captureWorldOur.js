@@ -1,19 +1,20 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  //const [duration, setDuration] = useState(0);
+ 
   const dataVideo = [
     {
       id: 1,
       texto: "Nuestra marca ha logrado llegar a la quinta avenida en New York",
-      video: "/home/suiza.mov",
+      video: "/home/quintaAve.mov",
     },
     {
       id: 2,
       texto: "Feria de productos colombianos Frankfurt Alemania",
-      video: "/home/suiza.mov",
+      video: "/home/feria.mov",
     },
     {
       id: 3,
@@ -60,41 +61,77 @@ export default function CaptureWorldOur() {
       (prevIndex) => (prevIndex - 1 + dataVideo.length) % dataVideo.length
     );
   };
+
+  /* const videoTime = (e) => {
+    console.log(e.target.duration);
+  }; */
+
+  const handleVideoEnd = () => {
+    if (activeIndex <= dataVideo.length) handleNext();
+  };
   return (
-    <section className=" px-4 sm:px-6 lg:px-20 w-full h-full">
-      <div className="max-w-7xl mx-auto flex flex-row ">
-        <div className="w-1/3 h-full flex flex-col items-start">
-          <div className="flex items-start">
+    <section className="px-4 sm:px-6 lg:px-20 w-full h-fit mt-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-start">
+          <div className="flex items-start h-fit">
             <video
-              src="/home/suiza.mov"
+              src={dataVideo[activeIndex].video}
               autoPlay={true}
-              className="w-[290px] h-auto rounded-lg"
-            />
+              //loop
+              muted={true}
+              //controls={true}
+              //onLoadedMetadata={videoTime}
+              onEnded={handleVideoEnd}
+              className="md:w-[250px] h-auto rounded-lg"
+            >
+              <source
+                src={dataVideo[activeIndex].video}
+                type="video/mp4"
+                autoPlay={true}
+              />
+            </video>
           </div>
-          <div className="w-[19rem]">
+          <div className="md:w-[16rem] w-fit mt-4">
             <p className="text-[14px] text-gray-700 leading-relaxed">
               {dataVideo[activeIndex].texto}
             </p>
           </div>
-          <div className="w-[19rem] flex flex-row items-center justify-center">
+          <div className="md:w-[19rem] w-full flex flex-row items-center justify-center md:-ml-6">
             <img
               src="/home/arrowsL.png"
               alt="Descripción de la imagen"
-              className="mt-4"
+              className="mt-4 mr-2"
               onClick={() => handlePrev()}
             />
+            <div className="flex felx-row gap-2">
+              <div
+                className={`mt-4 p-1.5 rounded-full ${
+                  activeIndex == 0 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
+                }`}
+              ></div>
+              <div
+                className={`mt-4 p-1.5 rounded-full ${
+                  activeIndex == 1 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
+                }`}
+              ></div>
+              <div
+                className={`mt-4 p-1.5 rounded-full ${
+                  activeIndex == 2 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
+                }`}
+              ></div>
+            </div>
+
             <img
               src="/home/arrowsR.png"
               alt="Descripción de la imagen"
-              className="mt-4"
+              className="mt-4 ml-2"
               onClick={() => handleNext()}
             />
           </div>
         </div>
-
         {/* Sector 2 */}
-        <div className="w-2/3 flex flex-col mt-6">
-          <div className="relative flex items-center">
+        <div className="lg:w-3/4 w-full h-full px-4 sm:px-6 lg:px-20 flex flex-col md:mt-18 lg:mt-6">
+          <div className="relative">
             <div className="w-1/3">
               <img
                 src="/home/sheetGreen.png"
@@ -102,31 +139,47 @@ export default function CaptureWorldOur() {
                 className="w-[70px] h-[90px]"
               />
             </div>
-            <div className="absolute left-8 top-[38px] w-full text-left">
+            <div className="absolute left-6 md:left-8 top-[36px] md:top-[38px] w-full text-left">
               <h2 className="text-[50px] font-bold text-green-800 mb-12 leading-[0.8]">
                 {data[0].title}
               </h2>
             </div>
           </div>
-          <div className="items-center">
-            {/* Text Content */}
+          <div className="items-center mt-12 md:mt-0">
             <div className="space-y-6 mt-12 text-justify ">{data[0].text}</div>
           </div>
-          <div className="items-center flex flex-row mt-12">
-            <div className="w-1/4">
-              <img src="/home/soup.png" className="w-auto h-[251px]" />
-            </div>
-            <div className="w-1/2 flex items-center justify-center">
-              <img src="/home/Frame171.png" className="w-auto h-[251px]" />
-            </div>
-            <div className="w-1/3 h-full flex flex-col justify-end ml-4">
-              <div className="flex items-end justify-end">{data[0].text2}</div>
+          <div className={`hidden lg:grid`}>
+            <div className="items-center flex flex-col lg:flex-row lg:mt-10 ">
+              <div className="w-1/4">
+                <img src="/home/soup.png" className="w-auto h-[251px]" />
+              </div>
+              <div className="lg:w-1/2 flex items-center justify-center">
+                <img src="/home/Frame171.png" className="w-auto h-[251px]" />
+              </div>
+              <div className="w-1/3 h-full flex flex-col justify-end ml-4">
+                <div className="flex items-end justify-end">
+                  {data[0].text2}
+                </div>
 
-              <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md">
-                {data[0].button}
-              </button>
+                <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md">
+                  {data[0].button}
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
+        <div className="md:w-1/2 w-full flex items-center justify-center">
+          <img src="/home/Frame171.png" className="w-auto h-[251px]" />
+        </div>
+        <div className="lg:w-1/3 md:w-1/2 h-full flex flex-col justify-end ml-4">
+          <div className="flex items-end justify-end">{data[0].text2}</div>
+
+          <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md">
+            {data[0].button}
+          </button>
         </div>
       </div>
     </section>

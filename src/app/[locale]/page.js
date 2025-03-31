@@ -10,6 +10,9 @@ import OurCertifate from "../components/ourCertifate";
 import Blog from "../components/blog";
 import OurCommit from "../components/ourCommit";
 import OurCommitWomen from "../components/ourCommitWomen";
+import TopProduct from "../components/topProduct";
+import NewProduct from "../components/newProduct";
+import MapW from "../components/map";
 export default function Home() {
   return (
     <div className="bg-white w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
@@ -18,13 +21,16 @@ export default function Home() {
       <ResponsibleCompany />
       <Experience />
 
+      {/* <MapW /> */}
       <CaptureWorldOur />
-      <NowNearYou />
-      <OurQuality />
+      <TopProduct />
+      <NewProduct />
+     {/* <NowNearYou /> */}
+        {/*<OurQuality />
       <OurCertifate />
       <Blog />
       <OurCommit />
-      <OurCommitWomen />
+      <OurCommitWomen /> */}
     </div>
   );
 }
