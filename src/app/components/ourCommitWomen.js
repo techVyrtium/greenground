@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export default function OurCommitWomen() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,7 +24,7 @@ export default function OurCommitWomen() {
     {
       title: (
         <>
-          <h2 className="text-[60px] font-bold text-[#008638] mb-12 leading-[0.8]">
+          <h2 className={`text-[60px] font-bold text-[#008638] mb-12 leading-[0.8] ${itcAvantGardeCEGothicLTBold.className}`}>
             Nuestro compromiso es con las mujeres
           </h2>
         </>
