@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./card";
-import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export default function NewProduct() {
   const card = [

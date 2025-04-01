@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl"; // Importar useTranslations
-import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   return (

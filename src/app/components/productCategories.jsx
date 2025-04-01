@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export const ProductCategories = () => {
     const title = "Conoce nuestras distintas categorías de productos:";
