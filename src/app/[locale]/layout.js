@@ -4,6 +4,7 @@ import { Roboto } from "next/font/google";
 import { Baloo_2 } from "next/font/google";
 import "./../globals.css";
 import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import Footer from "@/app/components/Footer";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"], // Puedes agregar más estilos
@@ -24,7 +25,9 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={locale} className={`${roboto.variable} ${baloo.variable} ${itcGBook.variable} ${itcGBold.variable}`}>
       <body className="">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>{children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
