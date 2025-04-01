@@ -23,14 +23,14 @@ export default function Footer() {
           {/* Menú */}
           <div className="text-left min-w-[120px] self-start">
             <h3 className="font-bold text-2xl mb-3">{t("menuTitle")}</h3>
-            <ul className="space-y-1 text-white/90">
-              <li>{t("menuItems.home")}</li>
-              <li>{t("menuItems.whatWeDo")}</li>
-              <li>{t("menuItems.products")}</li>
-              <li>{t("menuItems.quality")}</li>
-              <li>{t("menuItems.aboutUs")}</li>
-              <li>{t("menuItems.social")}</li>
-              <li>{t("menuItems.contact")}</li>
+            <ul className="space-y-1 text-white/90 ">
+              <li className="font-bold">{t("menuItems.home")}</li>
+              <li className="font-bold">{t("menuItems.whatWeDo")}</li>
+              <li className="font-bold">{t("menuItems.products")}</li>
+              <li className="font-bold">{t("menuItems.quality")}</li>
+              <li className="font-bold">{t("menuItems.aboutUs")}</li>
+              <li className="font-bold">{t("menuItems.social")}</li>
+              <li className="font-bold">{t("menuItems.contact")}</li>
             </ul>
           </div>
 
