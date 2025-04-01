@@ -21,9 +21,9 @@ export default function TopProduct() {
       setDataMovil(dm);
     }
     if (activeIndex == 2) {
-        const dm = card.filter((r) => r.id == "5" || r.id == "6");
-        setDataMovil(dm);
-      }
+      const dm = card.filter((r) => r.id == "5" || r.id == "6");
+      setDataMovil(dm);
+    }
   }, [activeIndex]);
 
   const data = [
@@ -85,7 +85,7 @@ export default function TopProduct() {
       if (activeIndex >= 2 || activeIndex == 0) setActiveIndex(1);
       else if (activeIndex == 1) setActiveIndex(0);
     } else if (size == 0) {
-        if(activeIndex == 2) setActiveIndex(0)
+      if (activeIndex == 2) setActiveIndex(0)
     }
   };
 
@@ -95,7 +95,7 @@ export default function TopProduct() {
       if (activeIndex == 0) setActiveIndex(1);
       else if (activeIndex == 1) setActiveIndex(0);
     } else if (size == 0) {
-        if(activeIndex == 0) setActiveIndex(2)
+      if (activeIndex == 0) setActiveIndex(2)
     }
   };
 
@@ -110,19 +110,16 @@ export default function TopProduct() {
           onClick={() => handlePrev(size)}
         />
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 0 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 0 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 1 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 1 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${
-            activeIndex == 2 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
-          }`}
+          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${activeIndex == 2 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <img
           src="/home/arrowsOrangeR.png"
@@ -143,7 +140,7 @@ export default function TopProduct() {
             className="w-[80px] h-[100px] "
           />
         </div>
-        <div className="absolute px-4 sm:px-6 lg:px-30">
+        <div className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold`}>
           <h2 className="text-[40px] ml-22 top-[36px] text-left font-bold text-white leading-[0.8]">
             {data[0].title}
           </h2>

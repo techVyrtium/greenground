@@ -56,7 +56,7 @@ export default function NewProduct() {
         <div className="xl:w-2/5  w-full flex flex-col items-center justify-center mt-12">
           <div className="relative w-full flex">
             <div className="w-auto">
-              <h2 className="md:text-[75px] lg:text-[80px] text-6xl font-bold text-[#E7681F] mb-12 ">
+              <h2 className={`md:text-[75px] lg:text-[80px] text-6xl font-bold text-[#E7681F] mb-12 font-itcGBold`}>
                 {data[0].title}
               </h2>
             </div>

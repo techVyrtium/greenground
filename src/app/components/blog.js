@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import CardBlog from "./cardBlog";
 
+
 export default function Blog() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [dataTable, setDataTable] = useState([]);
@@ -30,7 +31,7 @@ export default function Blog() {
     {
       title: (
         <>
-          <h2 className="text-[60px] font-bold text-white mb-12 leading-[0.8]">
+          <h2 className={`text-[60px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}>
             Blog
           </h2>
         </>
@@ -53,7 +54,7 @@ export default function Blog() {
       ),
       text1: (
         <>
-          <p className="text-[26px] text-white leading-relaxed font-bold">
+          <p className={`text-[26px] text-white leading-relaxed font-bold font-itcGBold`}>
             Inspírate, cocina y disfruta con nosotros.
           </p>
         </>

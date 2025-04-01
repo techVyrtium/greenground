@@ -17,7 +17,7 @@ export default function WhatWeDo() {
           {/* Texto encima de la imagen */}
           <div className="absolute left-8 top-[38px]  w-full text-left">
             <h2
-              className="text-[60px] font-bold text-[#E7681F] mb-12 leading-[0.8]"
+              className={`text-[60px] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
               dangerouslySetInnerHTML={{ __html: t("title") }}
             />
           </div>

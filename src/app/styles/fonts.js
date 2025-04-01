@@ -1,8 +1,8 @@
 import localFont from 'next/font/local';
-const itcAvantGardeCEGothicBook = localFont({ src: '../../../public/fonts/ITC Avant Garde CE Gothic Book.ttf' });
+const itcAvantGardeCEGothicBook = localFont({ src: '../../../public/fonts/ITC Avant Garde CE Gothic Book.ttf', variable: '--font-itcBook' });
 const itcAvantGardeCEGothicDemi = localFont({ src: '../../../public/fonts/ITC Avant Garde CE Gothic Demi.ttf' });
 const itcAvantGardeCEGothicLTBoldOblique = localFont({ src: '../../../public/fonts/ITC Avant Garde Gothic LT Bold Oblique.ttf' });
-const itcAvantGardeCEGothicLTBold = localFont({ src: '../../../public/fonts/ITC Avant Garde Gothic LT Bold.ttf' });
+const itcAvantGardeCEGothicLTBold = localFont({ src: '../../../public/fonts/ITC Avant Garde Gothic LT Bold.ttf', variable: '--font-itcBold' });
 const itcAvantGardeCEGothicLTBookOblique = localFont({ src: '../../../public/fonts/ITC Avant Garde Gothic LT Book Oblique.ttf' });
 const itcAvantGardeCEGothicLTBook = localFont({ src: '../../../public/fonts/ITC Avant Garde Gothic LT Book.ttf' });
 const itcAvantGardeCEGothicLTCondensendBold = localFont({ src: '../../../public/fonts/ITC Avant Garde Gothic LT Condensed Bold.ttf' });
