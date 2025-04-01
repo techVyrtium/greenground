@@ -41,6 +41,7 @@ export default function TopProduct() {
       weight: "500gr / 1Kg / 2Kg / 3Kg",
       buttom: "Ver producto",
       img1: "/home/tajadaempaque.png",
+      img2: "/home/verdeempaque.png",
     },
     {
       id: 2,
@@ -48,6 +49,7 @@ export default function TopProduct() {
       weight: "500gr / 1Kg / 2Kg / 3Kg",
       buttom: "Ver producto",
       img1: "/home/tajadaempaque.png",
+      img2: "/home/verdeempaque.png",
     },
     {
       id: 3,
@@ -55,6 +57,7 @@ export default function TopProduct() {
       weight: "500gr / 1Kg / 2Kg / 3Kg",
       buttom: "Ver producto",
       img1: "/home/tajadaempaque.png",
+      img2: "/home/verdeempaque.png",
     },
     {
       id: 4,
@@ -62,6 +65,7 @@ export default function TopProduct() {
       weight: "500gr / 1Kg / 2Kg / 3Kg",
       buttom: "Ver producto",
       img1: "/home/tajadaempaque.png",
+      img2: "/home/verdeempaque.png",
     },
     {
       id: 5,
@@ -69,6 +73,7 @@ export default function TopProduct() {
       weight: "500gr / 1Kg / 2Kg / 3Kg",
       buttom: "Ver producto",
       img1: "/home/tajadaempaque.png",
+      img2: "/home/verdeempaque.png",
     },
     {
       id: 6,
@@ -76,6 +81,7 @@ export default function TopProduct() {
       weight: "500gr / 1Kg / 2Kg / 3Kg",
       buttom: "Ver producto",
       img1: "/home/tajadaempaque.png",
+      img2: "/home/verdeempaque.png",
     },
   ];
 
