@@ -14,6 +14,7 @@ import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 // import MapW from "../components/map";
 import { ProductCategories } from "../components/productCategories";
+import { WorkerTestimonials } from "../components/workerTestimonials";
 export default function Home() {
   return (
     <div className={`bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen`}>
@@ -33,6 +34,7 @@ export default function Home() {
       <Blog />
       <OurCommit />
       <OurCommitWomen />
+      <WorkerTestimonials />
     </div>
   );
 }

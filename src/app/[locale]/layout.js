@@ -7,7 +7,7 @@ import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../style
 import Footer from "@/app/components/Footer";
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "700"], // Puedes agregar más estilos
+  weight: ["300", "400", "700"], // Puedes agregar más estilos
   variable: "--font-roboto",
 });
 
