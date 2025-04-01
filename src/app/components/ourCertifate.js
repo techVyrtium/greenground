@@ -19,8 +19,7 @@ export default function OurCertifate() {
       title: (
         <>
           <h2 className="text-[40px] font-bold text-[#008638] mb-12 leading-[0.8]">
-            Nuestras
-            <br /> certificaciones
+            Nuestras certificaciones
           </h2>
         </>
       ),
@@ -28,14 +27,14 @@ export default function OurCertifate() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto w-full h-full mt-28">
-      <div className=" h-[10rem]">
+    <section className="w-full h-full px-4 sm:px-6 lg:px-20 mt-28">
+      <div className="lg:h-[10rem] max-w-7xl mx-auto">
         {" "}
         {/* Info Verde */}
-        <div className="flex flex-row h-full gap-16 ">
+        <div className="flex flex-col lg:flex-row items-center justify-center h-full w-full gap-16 ">
           {data.map((dato) => (
-            <div className="w-1/2" key={dato.id}>
-              <div className="w-full h-24 flex flex-row items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400">
+            <div className="lg:w-1/2 w-full" key={dato.id}>
+              <div className="w-full h-24 flex flex-row place-items-center items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400">
                 <div className="">
                   <img src={dato.img} className="w-16" />
                 </div>
@@ -50,9 +49,9 @@ export default function OurCertifate() {
         </div>
       </div>
       {/*  Certificaciones */}
-      <div className="h-[10rem]">
-        <div className="flex flex-row w-full">
-          <div className="flex flex-row gap-8">
+      <div className="lg:h-[10rem] mt-12 lg:mt-0 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row w-full place-items-center">
+          <div className="lg:w-3/5 mt-12 justify-items-stretch lg:mt-0 grid grid-cols-2 md:grid-cols-4 gap-8 lg:order-none order-last">
             <div>
               <img src="/home/certSGS.png" className="w-[150px] h-auto" />
             </div>
@@ -66,8 +65,8 @@ export default function OurCertifate() {
               <img src="/home/certKosher.png" className="w-[145px] h-auto" />
             </div>
           </div>
-          <div className="h-full ml-12 mt-6">
-            <div className="relative flex items-center justify-center h-full px-8 ">
+          <div className="h-full w-full lg:w-1/43 xl:w-1/4 2xl:w-1/4 mt-4 lg:order-none order-first">
+            <div className="relative flex h-full md:px-8 ">
               {/* Imagen a la izquierda */}
               <div className="h-full">
                 <img
@@ -78,7 +77,7 @@ export default function OurCertifate() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-20 top-[50px] w-full text-left">
+              <div className="absolute left-10 md:left-20 top-[40px] w-full text-left">
                 {data2[0].title}
               </div>
             </div>

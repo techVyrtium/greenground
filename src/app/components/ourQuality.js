@@ -8,8 +8,7 @@ export default function OurQuality() {
       title: (
         <>
           <h2 className="text-[60px] font-bold text-white mb-12 leading-[0.8]">
-            Nuestra
-            <br /> calidad
+            Nuestra calidad
           </h2>
         </>
       ),
@@ -45,10 +44,10 @@ export default function OurQuality() {
   };
 
   return (
-    <section className="mt-24 w-full h-[40rem]">
-      <div className=" h-[20rem] bg-[url(/home/bg-orange.png)] bg-cover bg-no-repeat">
-        <div className="flex flex-row max-w-7xl mx-auto h-full">
-          <div className="relative flex h-full w-2/3 py-8 ">
+    <section className="mt-24 w-full h-full">
+      <div className="h-[25rem] lg:h-[20rem] bg-[url(/home/bg-orange.png)] bg-cover bg-no-repeat">
+        <div className="flex flex-col lg:flex-row max-w-7xl mx-auto h-full">
+          <div className="relative flex h-full w-2/3 md:w-full lg:w-2/3 py-2 md:py-8 px-4 md:px-0">
             {/* Imagen a la izquierda */}
             <div className="w-1/3 h-full">
               <img
@@ -59,11 +58,11 @@ export default function OurQuality() {
             </div>
 
             {/* Texto encima de la imagen */}
-            <div className="absolute left-16 top-[70px]  w-full text-left">
+            <div className="absolute left-16 md:top-[70px] top-[50px] text-left">
               {data[0].title}
             </div>
           </div>
-          <div className="flex items-center justify-center h-[16rem]">
+          <div className="flex items-start lg:items-center lg:justify-center h-full xl:h-[16rem] px-4 md:px-0 -mt-8 md:mt-0 ">
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-white leading-relaxed">
@@ -74,36 +73,36 @@ export default function OurQuality() {
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-20 flex flex-row h-[10rem]">
-        <div className="flex flex-row w-full">
-          <div className="w-2/3 flex items-center justify-center">
+      <div className="px-4 sm:px-6 lg:px-20 flex flex-row  -mt-8 md:-mt-26">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row w-full">
+          <div className="lg:w-2/3 w-full flex items-center justify-center">
             <div className="flex flex-row items-center justify-evenly w-full">
               <div className="">
                 <img
                   src="/home/arrowsRedL.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 w-[3rem]"
+                  className="mt-4 md:w-[3rem] w-[6rem]"
                   onClick={() => handlePrev()}
                 />
               </div>
               <div className="">
                 <img
                   src={dataimg[activeIndex].image}
-                  className="w-[750px] h-[400px]"
+                  className="md:w-[750px] md:h-[400px] w-[950px] h-[200px]"
                 />
               </div>
               <div className="">
                 <img
                   src="/home/arrowsRedR.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 w-[3rem]"
+                  className="mt-4 md:w-[3rem] w-[6rem]"
                   onClick={() => handleNext()}
                 />
               </div>
             </div>
           </div>
-          <div className="w-1/3 flex">
-            <p className="text-lg text-[#4A4A4A] leading-relaxed mt-10 text-justify">
+          <div className="lg:w-1/3 w-full flex md:ml-10">
+            <p className="text-lg text-[#4A4A4A] leading-relaxed mt-8 md:mt-32 text-justify">
               {data[0].text2}
             </p>
           </div>

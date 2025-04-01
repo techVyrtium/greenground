@@ -43,7 +43,7 @@ export default function OurCommitWomen() {
   };
 
   return (
-    <section className="mt-24 w-full h-[30rem]">
+    <section className="mt-20 w-full h-full">
       <div className="px-4 sm:px-6 lg:px-20 flex flex-row h-full">
         <div className="flex flex-col lg:flex-row w-full h-full">
           <div className="lg:w-1/2 flex items-start">

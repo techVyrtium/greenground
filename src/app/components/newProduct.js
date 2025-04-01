@@ -64,7 +64,7 @@ export default function NewProduct() {
               <img
                 src="/home/sheetOrange.png"
                 alt="Descripción de la imagen"
-                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-140 lg:left-155 xl:left-50 -top-[50px]"
+                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-140 lg:left-155 xl:left-45 -top-[50px]"
               />
             </div>
           </div>
