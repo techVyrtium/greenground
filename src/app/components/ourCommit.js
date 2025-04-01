@@ -1,12 +1,11 @@
 import React from "react";
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export default function OurCommit() {
   const data = [
     {
       title: (
         <>
-          <h2 className={`lg:text-[60px] text-[50px] font-bold text-white mb-12 leading-[0.8] ${itcAvantGardeCEGothicLTBold.className}`}>
+          <h2 className={`lg:text-[60px] text-[50px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}>
             Nuestro compromiso
           </h2>
         </>

@@ -1,5 +1,5 @@
 import React from "react";
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+
 
 export default function OurCertifate() {
   const data = [
@@ -19,7 +19,7 @@ export default function OurCertifate() {
     {
       title: (
         <>
-          <h2 className={`text-[40px] font-bold text-[#008638] mb-12 leading-[0.8] ${itcAvantGardeCEGothicLTBold.className}`}>
+          <h2 className={`text-[40px] font-bold text-[#008638] mb-12 leading-[0.8] font-itcGBold`}>
             Nuestras certificaciones
           </h2>
         </>

@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl"; // Importar useTranslations
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   return (
@@ -18,7 +17,7 @@ export default function WhatWeDo() {
           {/* Texto encima de la imagen */}
           <div className="absolute left-8 top-[38px]  w-full text-left">
             <h2
-              className={`text-[60px] font-bold text-[#E7681F] mb-12 leading-[0.8] ${itcAvantGardeCEGothicLTBold.className}`}
+              className={`text-[60px] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
               dangerouslySetInnerHTML={{ __html: t("title") }}
             />
           </div>

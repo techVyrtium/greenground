@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Card from "./card";
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export default function TopProduct() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -141,7 +140,7 @@ export default function TopProduct() {
             className="w-[80px] h-[100px] "
           />
         </div>
-        <div className={`absolute px-4 sm:px-6 lg:px-30  ${itcAvantGardeCEGothicLTBold.className}`}>
+        <div className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold`}>
           <h2 className="text-[40px] ml-22 top-[36px] text-left font-bold text-white leading-[0.8]">
             {data[0].title}
           </h2>

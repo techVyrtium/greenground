@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export const ProductCategories = () => {
     const title = "Conoce nuestras distintas categorías de productos:";
@@ -93,7 +92,7 @@ export const ProductCategories = () => {
         ]
     }
     return (
-        <section className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)]  ${itcAvantGardeCEGothicLTBold.className}`}>
+        <section className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)] font-itcGBold`}>
             <div className="bg-[#00000080] p-2 px-8">
                 <h3 className="text-5xl font-bold my-4">{title}</h3>
                 <div className={"flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-around"}>

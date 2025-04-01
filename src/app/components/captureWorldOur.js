@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,7 +31,7 @@ export default function CaptureWorldOur() {
           <p className="text-[25px] text-[#5C6E79] leading-relaxed font-[500]">
             Está es tu oportunidad de llegar con tu negocio a todos los rincones
             del globo, con nuestros{" "}
-            <span className={` font-[700]  ${itcAvantGardeCEGothicLTBold.className}`}>
+            <span className={` font-[700] font-itcGBold`}>
               productos de alta calidad y 100% Colombianos
             </span>
             , además puedes expandir tu marca con nuestra alianza de Maquila,
@@ -43,7 +42,7 @@ export default function CaptureWorldOur() {
       ),
       text2: (
         <>
-          <p className={`text-[25px] text-[#5C6E79] font-[700]  ${itcAvantGardeCEGothicLTBold.className}`}>
+          <p className={`text-[25px] text-[#5C6E79] font-[700] font-itcGBold`}>
             Pon tu logo en nuestros productos, o distribúyelos alrededor del
             mundo
           </p>
@@ -138,13 +137,13 @@ export default function CaptureWorldOur() {
               />
             </div>
             <div className="absolute left-6 md:left-8 top-[36px] w-full text-left">
-              <h2 className={`text-[48px] font-bold text-[#008638] mb-12 leading-[0.8] ${itcAvantGardeCEGothicLTBold.className}`}>
+              <h2 className={`text-[48px] font-bold text-[#008638] mb-12 leading-[0.8] font-itcGBold`}>
                 {data[0].title}
               </h2>
             </div>
           </div>
           <div className="items-center mt-12 md:mt-0">
-            <div className={`space-y-6 mt-12 text-left  ${itcAvantGardeCEGothicBook.className}`}>{data[0].text}</div>
+            <div className={`space-y-6 mt-12 text-left font-itcGBook`}>{data[0].text}</div>
           </div>
           <div className={`hidden lg:grid`}>
             <div className="items-center flex flex-col lg:flex-row lg:mt-10 ">
@@ -155,7 +154,7 @@ export default function CaptureWorldOur() {
                 <img src="/home/Frame171.png" className="w-auto h-[251px]" />
               </div>
               <div className="w-1/3 h-full flex flex-col justify-end ml-4">
-                <div className={`flex items-end justify-end ${itcAvantGardeCEGothicBook.className}`}>
+                <div className={`flex items-end justify-end font-itcGBook`}>
                   {data[0].text2}
                 </div>
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 
 export default function NowNearYou() {
   const data = [
@@ -30,7 +29,7 @@ export default function NowNearYou() {
               <img src="/home/aroBird.png" className="w-[288px] md:w-[388px] h-auto" />
             </div>
             <div>
-              <h1 className={`text-white text-[60px] font-bold md:ml-16 leading-16  ${itcAvantGardeCEGothicLTBold.className}`}>
+              <h1 className={`text-white text-[60px] font-bold md:ml-16 leading-16 font-itcGBold`}>
                 {data[0].title}
               </h1>
             </div>
