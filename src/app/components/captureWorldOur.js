@@ -42,7 +42,7 @@ export default function CaptureWorldOur() {
       ),
       text2: (
         <>
-          <p className="text-[25px] text-[#5C6E79] leading-relaxed font-[700]">
+          <p className="text-[25px] text-[#5C6E79] font-[700]">
             Pon tu logo en nuestros productos, o distribúyelos alrededor del
             mundo
           </p>
@@ -70,8 +70,8 @@ export default function CaptureWorldOur() {
     if (activeIndex <= dataVideo.length) handleNext();
   };
   return (
-    <section className="px-4 sm:px-6 lg:px-[70px] 3xl:px-[96px] w-full h-fit mt-20">
-      <div className="w-full mx-auto flex flex-col md:flex-row">
+    <section className="px-4 sm:px-6 lg:px-20 w-full h-fit mt-20">
+      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row ">
         <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-start">
           <div className="flex items-start h-fit">
             <video
@@ -130,7 +130,7 @@ export default function CaptureWorldOur() {
           </div>
         </div>
         {/* Sector 2 */}
-        <div className=" w-full h-full lg:px-[70px] 3xl:px-[96px] flex flex-col md:mt-18 lg:mt-6">
+        <div className=" w-full h-full flex flex-col md:mt-18 lg:mt-6 md:ml-10">
           <div className="relative">
             <div className="w-1/3">
               <img
@@ -139,14 +139,14 @@ export default function CaptureWorldOur() {
                 className="w-[70px] h-[90px]"
               />
             </div>
-            <div className="absolute left-6 md:left-8 top-[36px] md:top-[38px] w-full text-left">
+            <div className="absolute left-6 md:left-8 top-[36px] w-full text-left">
               <h2 className="text-[48px] font-bold text-[#008638] mb-12 leading-[0.8]">
                 {data[0].title}
               </h2>
             </div>
           </div>
           <div className="items-center mt-12 md:mt-0">
-            <div className="space-y-6 mt-12 text-left ">{data[0].text}</div>
+            <div className="space-y-6 mt-12 text-left">{data[0].text}</div>
           </div>
           <div className={`hidden lg:grid`}>
             <div className="items-center flex flex-col lg:flex-row lg:mt-10 ">

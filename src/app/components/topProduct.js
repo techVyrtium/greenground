@@ -136,15 +136,15 @@ export default function TopProduct() {
   return (
     <section className="w-full h-fit mt-20 ">
       <div className="relative flex h-[131px] w-4/5 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
-        <div className="w-1/2 h-full px-4 sm:px-6 lg:px-20">
+        <div className="w-1/2 h-full px-4 sm:px-6 lg:px-30">
           <img
             src="/home/sheetWhite.png"
             alt="Descripción de la imagen"
             className="w-[80px] h-[100px] "
           />
         </div>
-        <div className="absolute w-full px-4 sm:px-6 lg:px-20">
-          <h2 className="text-[40px] ml-24 top-[25px] text-left font-bold text-white leading-[0.8]">
+        <div className="absolute px-4 sm:px-6 lg:px-30">
+          <h2 className="text-[40px] ml-22 top-[36px] text-left font-bold text-white leading-[0.8]">
             {data[0].title}
           </h2>
           <h2 className="text-[40px] ml-14 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
@@ -152,7 +152,7 @@ export default function TopProduct() {
           </h2>
         </div>
       </div>
-      <div className="mt-12 max-w-7xl mx-auto flex w-full items-center justify-center">
+      <div className="mt-10 max-w-7xl mx-auto flex w-full items-center justify-center">
         <div className="hidden lg:grid ">
           <Card card={card} />
         </div>
