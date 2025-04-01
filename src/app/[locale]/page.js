@@ -14,9 +14,11 @@ import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 // import MapW from "../components/map";
 import { ProductCategories } from "../components/productCategories";
+import { itcAvantGardeCEGothicBook } from '@/app/styles/fonts';
 export default function Home() {
   return (
-    <div className="bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className={`bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen ${itcAvantGardeCEGothicBook.className}`}>
+      {/* font-[family-name:var(--font-geist-sans)] */}
       <TopNavHero />
       <WhatWeDo />
       <ResponsibleCompany />
