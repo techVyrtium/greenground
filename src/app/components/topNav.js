@@ -11,7 +11,7 @@ const slides = [
   { type: "image", src: "/hero/image2.jpg" }, // Asegúrate de que la ruta sea absoluta desde public
 ];
 
-export default function TopNavHero() {
+export default function TopNavHero( { toggleModalContact } ) {
   const [current, setCurrent] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const { locale, push } = useRouter();
@@ -52,7 +52,7 @@ export default function TopNavHero() {
           </ul>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-orange-500 px-4 py-2 rounded">
+          <button className="bg-orange-500 px-4 py-2 rounded" onClick={toggleModalContact}>
             {t("contact")} {/* Utilizando la traducción */}
           </button>
           <button
