@@ -5,7 +5,7 @@ export default function OurCommit() {
     {
       title: (
         <>
-          <h2 className={`lg:text-[60px] text-[50px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}>
+          <h2 className={`lg:text-[60px] text-[40px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}>
             Nuestro compromiso
           </h2>
         </>
@@ -14,12 +14,12 @@ export default function OurCommit() {
     },
   ];
   return (
-    <section className="mt-24 w-full h-full">
+    <section className="mt-24 w-full h-full" id='ourcommit'>
       {/* Zona Orange */}
       <div className="h-[15rem] lg:h-[12rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
       <div className="px-4 sm:px-6 lg:px-20">
         <div className="flex flex-row max-w-7xl mx-auto h-full">
-          <div className="relative flex  h-full w-1/3 py-8 ">
+          <div className="relative flex  h-full w-1/2 lg:w-1/3 py-8 ">
             {/* Imagen a la izquierda */}
             <div className="lg:w-1/3 h-full">
               <img
