@@ -44,7 +44,7 @@ export default function OurQuality() {
   };
 
   return (
-    <section className="mt-24 w-full h-full">
+    <section className="mt-24 w-full h-full" id='ourquality'>
       <div className="h-[25rem] lg:h-[20rem] bg-[url(/home/bg-orange.png)] bg-cover bg-no-repeat">
         <div className="flex flex-col lg:flex-row max-w-7xl mx-auto h-full">
           <div className="relative flex h-full w-2/3 md:w-full lg:w-2/3 py-2 md:py-8 px-4 md:px-0">

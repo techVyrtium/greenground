@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl"; // Importar useTranslations
+import { Wendy_One } from "next/font/google";
 
 const slides = [
   { type: "video", src: "/hero/video.mp4" }, // Asegúrate de que la ruta sea absoluta desde public
@@ -24,6 +25,13 @@ export default function TopNavHero( { toggleModalContact } ) {
   const changeLanguage = (lang) => {
     push("/", { locale: lang });
   };
+
+/*   link :
+  que hacemos: wedo 
+  nuestra calidad: ourquality
+  nuestro compromiso: ourcommit
+  blog: blog
+  */
 
   return (
     <div className="w-full">
@@ -67,7 +75,7 @@ export default function TopNavHero( { toggleModalContact } ) {
         </div>
       </nav>
 
-      <div className="relative w-full h-screen overflow-hidden">
+      {/* <div className="relative w-full h-screen overflow-hidden">
         {slides.map((slide, index) => (
           <motion.div
             key={index}
@@ -113,7 +121,7 @@ export default function TopNavHero( { toggleModalContact } ) {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

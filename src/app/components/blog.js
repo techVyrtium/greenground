@@ -141,7 +141,7 @@ export default function Blog() {
   }
 
   return (
-    <section className="mt-24 w-full h-full">
+    <section className="mt-24 w-full h-full" id='blog'>
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-4 sm:px-6 lg:px-20">
