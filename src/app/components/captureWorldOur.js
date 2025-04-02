@@ -82,7 +82,7 @@ export default function CaptureWorldOur() {
               //controls={true}
               //onLoadedMetadata={videoTime}
               onEnded={handleVideoEnd}
-              className="md:w-[250px] h-auto rounded-lg"
+              className="md:w-[300px] h-auto rounded-lg"
             >
               <source
                 src={dataVideo[activeIndex].video}
@@ -91,7 +91,7 @@ export default function CaptureWorldOur() {
               />
             </video>
           </div>
-          <div className="md:w-[16rem] w-fit mt-4">
+          <div className="md:w-[20rem] w-fit mt-4">
             <p className="text-[14px] text-gray-700 leading-relaxed">
               {dataVideo[activeIndex].texto}
             </p>
