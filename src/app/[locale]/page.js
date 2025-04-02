@@ -15,6 +15,7 @@ import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 // import MapW from "../components/map";
 import { ProductCategories } from "../components/productCategories";
+import { WorkerTestimonials } from "../components/workerTestimonials";
 import ContactForm from "../components/modal/ContactForm";
 export default function Home() {
   const [showModalContact, setShowModalContact] = useState(false);
@@ -42,10 +43,11 @@ export default function Home() {
       <Blog />
       <OurCommit />
       <OurCommitWomen />
-
+      <WorkerTestimonials />
       {showModalContact && (
         <ContactForm toggleModalContact={toggleModalContact} />
       )}
+
     </div>
   );
 }

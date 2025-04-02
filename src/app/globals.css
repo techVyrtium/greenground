@@ -13,9 +13,13 @@
   --color-category-title-light: #006C36BF;
   --color-category-title-bold: #006C36F2;
   --color-product-green: #3FB549BF;
+  --color-green700: #008638;
+  --color-gray1: #4A4A4A;
   --color-product-red: #EE3135BF;
   --color-product-orange: #EEA514BF;
   --color-white-25: #FFFFFF40;
+  --color-border-gray: #A8A8A8;
+  --color-gray2: #C0C0C0;
   --image-product-categories: url(/home/bg-product-categories.png);
   --image-product-categories-rotate: url(/home/bg-product-categories-rotate.png);
   --font-sans: var(--font-geist-sans);
