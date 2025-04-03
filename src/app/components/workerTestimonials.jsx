@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useState } from "react"
 export const WorkerTestimonials = () => {
     return (
-        <section className="bg-[image:url(/home/bg-green.png)] w-full mt-24 relative lg:h-[36rem] pt-4">
+        <section className="bg-[image:url(/home/bg-green.png)] w-full mt-24 relative lg:h-[36rem] pt-4 overflow-x-hidden">
             <h2 className="text-4xl md:text-6xl text-center font-itcGBold leading-14 mt-4">Testimonios de nuestros trabajadores:</h2>
             <Testimonial
                 image={`/home/worker-testimonials/maria-castro.png`}
