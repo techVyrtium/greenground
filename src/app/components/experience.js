@@ -143,12 +143,13 @@ export default function Experience() {
               }}
             >
               <div className="flex flex-col text-center leading-none">
-                <div className="flex justify-center items-baseline gap-6 space-x-10">
+                <div className="flex justify-center items-baseline gap-4 space-x-6 sm:space-x-10">
                   <motion.p
                     variants={animationSettings.text1}
                     transition={{ duration: 0.7 }}
-                    className="text-[50px] sm:text-[100px] text-[#fff] font-[700] leading-tight whitespace-nowrap"
+                    className="pl-8 text-[30px] md:text-[80px] lg:text-[100px] text-[#fff] font-[700] leading-tight whitespace-nowrap"
                   >
+                    {" "}
                     Más de
                   </motion.p>
 
@@ -156,38 +157,38 @@ export default function Experience() {
                   <motion.div
                     variants={animationSettings.numberBackground}
                     transition={{ duration: 0.7, delay: 0.8 }}
-                    className="px-20 relative w-[250px] h-[150px] sm:w-[200px] sm:h-[200px] flex items-baseline justify-center"
+                    className="px-6 sm:px-20 relative w-[40px] h-[40px] sm:w-[200px] sm:h-[200px] flex items-baseline justify-center"
                   >
                     <motion.p
                       animate={{
                         color: color, // Cambiar color según el estado
                       }}
                       transition={{ duration: 0.8 }}
-                      className="text-[70px] sm:text-[220px] font-[700] leading-tight whitespace-nowrap absolute z-10 mt-8"
+                      className="text-[90px] md:text-[200px] lg:text-[220px] font-[700] leading-tight whitespace-nowrap absolute z-10 -mt-8 sm:mt-16 md:mt-12 lg:mt-8"
                     >
                       30
                     </motion.p>
                     <motion.div
                       variants={animationSettings.numberImage}
                       transition={{ duration: 0.7, delay: 2.5 }}
-                      className="absolute flex items-center justify-center bg-contain bg-center w-[350px] h-[350px] bg-no-repeat ml-4 -mt-8 overflow-visible"
+                      className="absolute flex items-center justify-center bg-contain bg-center w-[140px] h-[140px] sm:w-[250px] sm:h-[250px] md:w-[350px] md:h-[350px] bg-no-repeat md:ml-4 -mt-16 sm:mt-2 md:-mt-8 overflow-visible"
                       style={{ backgroundImage: `url('/home/manzana.png')` }}
                     >
                       <div ref={manzanaRef} className="absolute inset-0" />
                     </motion.div>
                   </motion.div>
-                  <div className="max-w-[280px] flex flex-col items-start">
+                  <div className="max-w-[120px] sm:max-w-[200px] md:max-w-[280px] flex flex-col items-start">
                     <motion.p
                       variants={animationSettings.text3}
                       transition={{ duration: 0.7, delay: 1 }}
-                      className="text-[50px] sm:text-[100px] text-[#fff] font-[700] leading-tight whitespace-nowrap text-left"
+                      className="text-[30px]  md:text-[80px] lg:text-[100px] text-[#fff] font-[700] leading-tight whitespace-nowrap text-left"
                     >
                       años
                     </motion.p>
                     <motion.p
                       variants={animationSettings.text4}
                       transition={{ duration: 0.7, delay: 2.4 }}
-                      className="text-[16px] sm:text-[24px] text-[#B52C17] leading-none self-start  font-[800] text-left"
+                      className="text-[14px] md:text-[18px] lg:text-[24px] text-[#B52C17] leading-none self-start  font-[800] text-left whitespace-wrap "
                     >
                       de experiencia como productores y comercializadores de
                       congelados y abarrotes
@@ -196,7 +197,7 @@ export default function Experience() {
                   <motion.div
                     variants={animationSettings.imageEnd}
                     transition={{ duration: 0.5, delay: 2.2 }}
-                    className="flex items-baseline justify-start bg-contain bg-baseline w-[200px] h-[200px] bg-no-repeat mb-14 -ml-10 overflow-visible"
+                    className="hidden lg:flex  items-baseline justify-start bg-contain bg-baseline w-[200px] h-[200px] bg-no-repeat mb-14 -ml-10 overflow-visible"
                     style={{
                       backgroundImage: `url('/home/experienceultima.png')`,
                     }}
@@ -210,7 +211,7 @@ export default function Experience() {
               <motion.img
                 src="/home/experiencepera.png"
                 alt="Production process"
-                className="w-[480px] h-auto"
+                className="w-[250px] sm:w-[400px] lg:w-[480px] h-auto"
                 variants={animationSettings.image}
                 transition={{
                   type: "tween",
