@@ -3,13 +3,29 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-roboto: "Roboto", sans-serif;
+  --font-baloo: "Baloo 2", sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-category-title-light: #006C36BF;
+  --color-category-title-bold: #006C36F2;
+  --color-product-green: #3FB549BF;
+  --color-green700: #008638;
+  --color-gray1: #4A4A4A;
+  --color-product-red: #EE3135BF;
+  --color-product-orange: #EEA514BF;
+  --color-white-25: #FFFFFF40;
+  --color-border-gray: #A8A8A8;
+  --color-gray2: #C0C0C0;
+  --image-product-categories: url(/home/bg-product-categories.png);
+  --image-product-categories-rotate: url(/home/bg-product-categories-rotate.png);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-itcGBold: var(--font-itcBold);
+  --font-itcGBook: var(--font-itcBook);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +36,48 @@
 }
 
 body {
-  background: var(--background);
+  background-image: url("/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Efecto parallax */
+  background-repeat: no-repeat;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), sans-serif;
+}
+
+
+.bg-product-categories {
+  background-image: url(/home/bg-product-categories.png);
+}
+
+
+
+.bg-product-categories-rotate {
+  background-image: url(/home/bg-product-categories-rotate.png);
+}
+
+.bg-category-title-light {
+  background-color: #006C36BF;
+}
+
+/* .bg-product-green {
+  background-color: #3FB549BF;
+}
+
+.bg-product-red {
+  background-color: #EE3135BF;
+}
+
+.bg-product-orange {
+  background-color: #EEA514BF;
+} */
+
+.bg-category-title-bold {
+  background-color: #006C36F2;
+}
+
+
+.product-category-card:hover .product-category-main-image {
+  scale: 100%;
 }
