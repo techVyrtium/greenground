@@ -93,7 +93,7 @@ export const ProductCategories = () => {
     }
     return (
         <section className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)] font-itcGBold`}>
-            <div className="bg-[#00000080] p-2 px-8">
+            <div className="bg-[#00000080] p-2 md:px-8 px-4">
                 <h3 className="text-5xl font-bold my-4">{title}</h3>
                 <div className={"flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-around"}>
                     <ProductCategory sup="Productos" title={"Congelados"} color="green" mainImage="/home/rabano.svg" mainImageHeight={392} mainImageWidth={269.555} classNameImage="w-52 -bottom-24" className="bg-product-green lg:bg-white-25 lg:hover:bg-product-green lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]" classNameTitle="md:bg-category-title-light" images={images.congelados} />
@@ -106,12 +106,12 @@ export const ProductCategories = () => {
 }
 const ProductCategory = ({ title, mainImage, mainImageWidth, mainImageHeight, images = [], className = "", bgTitleType = "bold", classNameImage = "", classNameTitle = "", sup }) => {
     return (
-        <div className={`group min-w-[21.875rem] h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`}>
+        <div className={`group w-[354px] md:w-[21.875rem] max-w-full h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`}>
             <div className="lg:flex justify-end w-full absolute hidden">
                 <div className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}></div>
             </div>
-            <h3 className={`text-5xl font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? 'pl-14 py-4' : 'py-6'} px-4 w-full ${classNameTitle}`}>
-                <div className="text-3xl self-start">{sup}</div>
+            <h3 className={`text-[34px] md:text-5xl font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? 'pl-14 py-4' : 'py-6'} px-4 w-full ${classNameTitle}`}>
+                <div className="text-2xl md:text-3xl self-start">{sup}</div>
                 {title}
             </h3>
             {images.map(({ className, id, ...props }) => <Image key={id} {...props} className={`absolute z-0 ${className} duration-150`} />)}
