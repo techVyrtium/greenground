@@ -191,7 +191,7 @@ export default function WhatWeDo() {
               />
             </div>
             <div>
-            <motion.img
+              <motion.img
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{
                   opacity: 1,
@@ -199,7 +199,6 @@ export default function WhatWeDo() {
                   transition: {
                     duration: 0.5,
                     delay: 1.5,
-                    
                   },
                 }}
                 src="/home/tajadaempaque.png"
@@ -262,8 +261,8 @@ export default function WhatWeDo() {
       <div className="relative w-full h-fit">
         {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : last()}
       </div>
-      <div className="py-16 px-4 sm:px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto h-full w-full " id='wedo'>
+      <div className="py-16 px-6 sm:px-10 lg:px-20">
+        <div className="max-w-full mx-auto h-full w-full " id="wedo">
           <div className="mb-12 -mt-12">{btn(0)}</div>
           <div className="flex flex-col lg:flex-row ">
             <div className="relative flex items-center h-full w-full lg:w-1/3">
@@ -284,7 +283,7 @@ export default function WhatWeDo() {
                 />
               </div>
             </div>
-            <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-10 mt-8 lg:mt-0">
+            <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
               {/* Text Content */}
               <p className="text-lg text-[#4A4A4A] leading-relaxed ">
                 {t("text")}
