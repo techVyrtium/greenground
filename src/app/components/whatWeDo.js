@@ -485,7 +485,7 @@ export default function WhatWeDo() {
                 />
               </div>
             </div>
-            <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-10 mt-8 lg:mt-0">
+            <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
               {/* Text Content */}
               <p className="text-lg text-[#4A4A4A] leading-relaxed ">
                 {t("text")}

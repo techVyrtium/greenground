@@ -18,7 +18,7 @@ export default function Card({ card, wSize = 48, hSize = 52, imgW = 400, zone = 
   },)
   return (
     <div
-      className={`w-full items-center grid grid-cols-2 ${zone == 1 ? 'md:grid-cols-3 lg:gap-[80px] xl:gap-[80px] 2xl:gap-[24px] ' : 'md:grid-cols-4 lg:gap-[240px] xl:gap-[180px] 2xl:gap-[184px]'} md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 relative md:mt-[34px] gap-[16px]  `}
+      className={`w-full items-center grid grid-cols-2 ${zone == 1 ? 'md:grid-cols-3 lg:gap-[80px] xl:gap-[80px] 2xl:gap-[24px] ' : 'md:grid-cols-4 lg:gap-[10px] xl:gap-[170px] 2xl:gap-[184px]'} md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 relative md:mt-[34px] gap-[16px]  `}
     >
       {card.map((data) => (
         <div className="md:w-48 w-full flex flex-col items-center justify-around lg:items-start " key={data.id}>

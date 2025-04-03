@@ -78,7 +78,7 @@ export default function OurCertifate() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className={`absolute left-10 md:left-20 top-[40px] w-full text-left`}>
+              <div className={`absolute left-10 md:left-20 top-[50px] w-full text-left font-itcGBold`}>
                 {data2[0].title}
               </div>
             </div>

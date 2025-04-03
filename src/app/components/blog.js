@@ -157,7 +157,7 @@ export default function Blog() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[80px] w-full text-left">
+              <div className="absolute left-16 top-[80px] w-full text-left font-itcGBold">
                 {data[0].title}
               </div>
             </div>

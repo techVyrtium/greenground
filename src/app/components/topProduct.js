@@ -28,8 +28,8 @@ export default function TopProduct() {
 
   const data = [
     {
-      title: "Top",
-      title2: "Productos",
+      title: "TOP",
+      title2: "PRODUCTOS",
       text: "Participamos como una de las empresas donantes y voluntarias hacia la comunidad de la Esperanza en la Guajira Colombiana, donde a través de donativos se instauró un tanque de agua que va a mejorar la calidad de vida de 100 familias, con un sistema de agua con capacidad de 10.000 litros que provisiona las necesidades hídricas de esta población.",
     },
   ];
@@ -138,19 +138,19 @@ export default function TopProduct() {
   }
   return (
     <section className="w-full h-fit mt-20 ">
-      <div className="relative flex h-[131px] w-4/5 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
-        <div className="w-1/2 h-full px-4 sm:px-6 lg:px-30">
+      <div className="relative flex h-[131px] w-5/6 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
+        <div className="w-1/2 lg:w-full h-full px-4 sm:px-6 lg:px-28 ">
           <img
             src="/home/sheetWhite.png"
             alt="Descripción de la imagen"
-            className="w-[80px] h-[100px] "
+            className="w-[80px] h-[100px]"
           />
         </div>
         <div className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold`}>
-          <h2 className="text-[40px] ml-22 top-[36px] text-left font-bold text-white leading-[0.8]">
+          <h2 className="text-[30px] ml-20 2xl:ml-24 top-[36px] text-left font-bold text-white leading-[0.8]">
             {data[0].title}
           </h2>
-          <h2 className="text-[40px] ml-14 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
+          <h2 className="text-[38px] md:text-[40px] lg:text-[35px] xl:text-[40px] ml-14 2xl:ml-18 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
             {data[0].title2}
           </h2>
         </div>

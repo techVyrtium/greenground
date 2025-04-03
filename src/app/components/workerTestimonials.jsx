@@ -4,7 +4,7 @@ import { useState } from "react"
 export const WorkerTestimonials = () => {
     return (
         <section className="bg-[image:url(/home/bg-green.png)] w-full mt-24 relative lg:h-[36rem] pt-4 overflow-x-hidden">
-            <h2 className="text-4xl md:text-6xl text-center font-itcGBold leading-14 mt-4">Testimonios de nuestros trabajadores:</h2>
+            <h2 className="text-4xl md:text-6xl text-center font-itcGBold leading-14 mt-4 text-white">Testimonios de nuestros trabajadores:</h2>
             <Testimonial
                 image={`/home/worker-testimonials/maria-castro.png`}
                 name="Maria Castro"

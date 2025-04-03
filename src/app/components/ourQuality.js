@@ -58,7 +58,7 @@ export default function OurQuality() {
             </div>
 
             {/* Texto encima de la imagen */}
-            <div className="absolute left-16 md:top-[70px] top-[50px] text-left">
+            <div className="absolute left-16 md:top-[70px] top-[50px] text-left font-itcGBold">
               {data[0].title}
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function OurQuality() {
             </div>
           </div>
           <div className="lg:w-1/3 w-full flex md:ml-10">
-            <p className="text-lg text-[#4A4A4A] leading-relaxed mt-8 md:mt-32 text-justify">
+            <p className="text-lg text-[#4A4A4A] leading-relaxed mt-8 md:mt-32 text-justify ">
               {data[0].text2}
             </p>
           </div>

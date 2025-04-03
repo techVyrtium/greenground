@@ -82,17 +82,12 @@ export default function CaptureWorldOur() {
               //controls={true}
               //onLoadedMetadata={videoTime}
               onEnded={handleVideoEnd}
-              className="md:w-[300px] h-auto rounded-lg"
+              className="md:w-[300px] h-auto rounded-lg transition ease-in-out"
             >
-              <source
-                src={dataVideo[activeIndex].video}
-                type="video/mp4"
-                autoPlay={true}
-              />
             </video>
           </div>
           <div className="md:w-[20rem] w-fit mt-4">
-            <p className="text-[14px] text-gray-700 leading-relaxed">
+            <p className="text-[24px] lg:text-[20px] text-gray-700">
               {dataVideo[activeIndex].texto}
             </p>
           </div>
@@ -136,7 +131,7 @@ export default function CaptureWorldOur() {
                 className="w-[70px] h-[90px]"
               />
             </div>
-            <div className="absolute left-6 md:left-8 top-[36px] w-full text-left">
+            <div className="absolute left-12 md:left-14 top-[36px] w-full text-left">
               <h2 className={`text-[48px] font-bold text-[#008638] mb-12 leading-[0.8] font-itcGBold`}>
                 {data[0].title}
               </h2>
