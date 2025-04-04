@@ -1,75 +1,81 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl"; // Importar useTranslations
-import { Wendy_One } from "next/font/google";
+import Link from "next/link";
+import { NavLinkMultiple } from "./navLinkMultiple";
 
-const slides = [
-  { type: "video", src: "/hero/video.mp4" }, // Asegúrate de que la ruta sea absoluta desde public
-  { type: "image", src: "/hero/image2.jpg" }, // Asegúrate de que la ruta sea absoluta desde public
-];
-
-export default function TopNavHero( { toggleModalContact } ) {
-  const [current, setCurrent] = useState(0);
+// const slides = [
+//   { type: "video", src: "/hero/video.mp4" }, // Asegúrate de que la ruta sea absoluta desde public
+//   { type: "image", src: "/hero/image2.jpg" }, // Asegúrate de que la ruta sea absoluta desde public
+// ];
+const CANT_LINKS_PRODUCTS = 4;
+export default function TopNavHero({ toggleModalContact }) {
+  // const [current, setCurrent] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const { locale, push } = useRouter();
   const t = useTranslations("topNav"); // Inicializar useTranslations
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
-  const prevSlide = () =>
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  // const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
+  // const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   const changeLanguage = (lang) => {
     push("/", { locale: lang });
   };
 
-/*   link :
-  que hacemos: wedo 
-  nuestra calidad: ourquality
-  nuestro compromiso: ourcommit
-  blog: blog
-  */
+  /*   link :
+    que hacemos: wedo 
+    nuestra calidad: ourquality
+    nuestro compromiso: ourcommit
+    blog: blog
+    */
 
   return (
     <div className="w-full">
-      <nav className="bg-[#008638] text-white flex justify-between items-center px-4 w-full">
+      <nav className="bg-[#008638] text-white flex justify-between items-center px-4 py-1 w-full">
         <div className="flex items-center gap-4">
-          <img src="./logo.png" alt="Logo" className="h-18 xl:pl-[86px] " />
-          <ul className="hidden md:flex gap-6">
+          <img src="./logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
+          <ul className="hidden lg:flex gap-[1vw] text-2xl font-light">
             <li>
-              <a href="#">{t("home")}</a> {/* Utilizando la traducción */}
+              <Link href="#" className="hover:underline hover:font-bold">{t("home")}</Link> {/* Utilizando la traducción */}
             </li>
             <li>
-              <a href="#">{t("whatWeDo")}</a> {/* Utilizando la traducción */}
+              <Link href="#" className="hover:underline hover:font-bold">{t("whatWeDo")}</Link> {/* Utilizando la traducción */}
             </li>
             <li>
-              <a href="#">{t("products")}</a> {/* Utilizando la traducción */}
+              {/* <Link href="#" className="hover:underline hover:font-bold">{t("products.title")}</Link> Utilizando la traducción */}
+              <NavLinkMultiple title={t('products.title')} options={new Array(CANT_LINKS_PRODUCTS).fill(0).map((_, i) => {
+                return {
+                  id: t(`products.options.${i}.id`),
+                  text: t(`products.options.${i}.text`),
+                  href: t(`products.options.${i}.href`),
+                }
+              })}
+              />
             </li>
             <li>
-              <a href="#">{t("quality")}</a> {/* Utilizando la traducción */}
+              <Link href="#" className="hover:underline hover:font-bold">{t("quality")}</Link> {/* Utilizando la traducción */}
             </li>
             <li>
-              <a href="#">{t("commitment")}</a> {/* Utilizando la traducción */}
+              <Link href="#" className="hover:underline hover:font-bold">{t("commitment")}</Link> {/* Utilizando la traducción */}
             </li>
             <li>
-              <a href="#">{t("blog")}</a> {/* Utilizando la traducción */}
+              <Link href="#" className="hover:underline hover:font-bold">{t("blog")}</Link> {/* Utilizando la traducción */}
             </li>
           </ul>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-orange-500 px-4 py-2 rounded" onClick={toggleModalContact}>
+          <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer" onClick={toggleModalContact}>
             {t("contact")} {/* Utilizando la traducción */}
           </button>
           <button
-            className="border px-4 py-2 rounded"
+            className="border px-4 py-2 rounded cursor-pointer"
             onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
           >
             {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
           </button>
-          <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          <button className="lg:hidden cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
             <IoMdMenu size={24} />
           </button>
         </div>
