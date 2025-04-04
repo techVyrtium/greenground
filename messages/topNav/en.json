@@ -1,7 +1,31 @@
 {
   "home": "Home",
   "whatWeDo": "What we do",
-  "products": "Products",
+  "products": {
+    "title": "Products",
+    "options": [
+      {
+        "id": "all-products",
+        "text": "All products",
+        "href": "#"
+      },
+      {
+        "id": "frozen-products",
+        "text": "Frozen products",
+        "href": "#"
+      },
+      {
+        "id": "groceries",
+        "text": "Groceries",
+        "href": "#"
+      },
+      {
+        "id": "household",
+        "text": "Household",
+        "href": "#"
+      }
+    ]
+  },
   "quality": "Quality",
   "commitment": "Commitment",
   "blog": "Blog",

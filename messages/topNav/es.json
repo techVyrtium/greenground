@@ -1,7 +1,31 @@
 {
   "home": "Inicio",
   "whatWeDo": "Qué hacemos",
-  "products": "Productos",
+  "products": {
+    "title": "Productos",
+    "options": [
+      {
+        "id": "all-products",
+        "text": "Todos los productos",
+        "href": "#"
+      },
+      {
+        "id": "frozen-products",
+        "text": "Productos congelados",
+        "href": "#"
+      },
+      {
+        "id": "groceries",
+        "text": "Abarrotes",
+        "href": "#"
+      },
+      {
+        "id": "household",
+        "text": "Menaje",
+        "href": "#"
+      }
+    ]
+  },
   "quality": "Calidad",
   "commitment": "Compromiso",
   "blog": "Blog",
