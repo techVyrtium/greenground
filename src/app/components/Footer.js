@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Contenedor para Menú y Contacto en móvil */}
         <div className="w-full flex lg:justify-start lg:gap-x-12 sm:gap-x-8  gap-x-0  items-center">
           {/* Menú */}
-          <div className="text-left min-w-[120px] self-start text-2xl">
+          <div className="text-left min-w-[120px] self-start text-base md:text-2xl">
             <h3 className="font-bold text-3xl mb-3">{t("menuTitle")}</h3>
             <ul className="space-y-1 text-white/90 ">
               <li className="font-bold">
@@ -50,11 +50,11 @@ export default function Footer() {
           </div>
 
           {/* Contacto */}
-          <div className="text-left  self-start lg:max-w-none text-2xl">
+          <div className="text-left  self-start lg:max-w-none text-base md:text-2xl">
             <h3 className="font-bold text-3xl mb-3">{t("contactTitle")}</h3>
             <div className="flex items-center gap-2 mb-3">
               <Image src="/icon-phone.svg" alt="Phone" width={20} height={20} />
-                <Link href={"tel:+573004194289"} className="hover:underline">+57 3004194289</Link>
+              <Link href={"tel:+573004194289"} className="hover:underline">+57 3004194289</Link>
             </div>
             <div className="flex items-center  gap-2 mb-5">
               <Image src="/icon-email.svg" alt="Email" width={35} height={35} />
@@ -62,7 +62,7 @@ export default function Footer() {
                 <Link href={"mailto:directorcomercial@greenground.com.co"} className="hover:underline">directorcomercial@greenground.com.co</Link>
               </span>
             </div>
-            <ul className="space-y-1 text-2xl">
+            <ul className="space-y-1 text-base lg:text-2xl">
               <li>
                 <Link
                   href="https://greenground.com.co/politica-para-el-tratamiento-de-datos-personales-de-los-titulares/"
