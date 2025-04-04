@@ -15,7 +15,7 @@ export default function Footer() {
             alt="Green Ground"
             width={300}
             height={300}
-            className="w-40 h-auto w-[200px] lg:w-[280px] "
+            className="h-auto w-[200px] lg:w-[280px] "
           />
         </div>
 
