@@ -169,12 +169,12 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto mt-12 h-full">
         <div className="flex flex-row items-center justify-center h-12 w-full gap-8  ">
           <div>
-            <button className="bg-[#f19412] px-8 py-4 rounded-xl text-white text-[20px] font-bold">
+            <button className="bg-[#f19412] px-8 py-1 rounded-xl text-white text-[20px] font-bold cursor-pointer">
               Recetas
             </button>
           </div>
           <div>
-            <button className="bg-[#f5b256] hover:bg-[#f19412] px-8 py-4 rounded-xl text-white text-[20px] font-bold">
+            <button className="bg-[#f5b256] hover:bg-[#f19412] px-8 py-1 rounded-xl text-white text-[20px] font-bold cursor-pointer">
               Actualidad
             </button>
           </div>
