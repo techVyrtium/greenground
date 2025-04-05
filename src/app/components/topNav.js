@@ -55,11 +55,11 @@ export default function TopNavHero({ locale }) {
           </ul>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer" onClick={toggleModalContact}>
+          <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block" onClick={toggleModalContact}>
             {t("contact")} {/* Utilizando la traducción */}
           </button>
           <button
-            className="border px-4 py-2 rounded cursor-pointer"
+            className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
             onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
           >
             {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}

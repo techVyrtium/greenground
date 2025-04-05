@@ -276,7 +276,7 @@ export default function WhatWeDo() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[40px] w-full ">
+              <div className="absolute left-16 top-[40px] w-fit">
                 <h2
                   className={`lg:text-[60px] text-[54px] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
                   dangerouslySetInnerHTML={{ __html: t("title") }}

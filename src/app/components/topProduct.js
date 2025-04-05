@@ -139,7 +139,7 @@ export default function TopProduct() {
   return (
     <section className="w-full h-fit mt-20 ">
       <div className="relative flex h-[131px] w-4/5 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
-        <div className="w-1/2 h-full px-4 sm:px-6 lg:px-30">
+        <div className="h-full px-4 sm:px-6 lg:px-30">
           <img
             src="/home/sheetWhite.png"
             alt="Descripción de la imagen"
