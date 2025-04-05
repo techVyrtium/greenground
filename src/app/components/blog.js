@@ -31,7 +31,7 @@ export default function Blog() {
     {
       title: (
         <>
-          <h2 className={`text-[60px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}>
+          <h2 className={`text-[60px] font-bold text-white leading-[0.8] font-itcGBold`}>
             Blog
           </h2>
         </>
@@ -92,7 +92,7 @@ export default function Blog() {
       if (activeIndex >= 2 || activeIndex == 0) setActiveIndex(1);
       else if (activeIndex == 1) setActiveIndex(0);
     } else if (size == 0) {
-        if(activeIndex == 2) setActiveIndex(0)
+      if (activeIndex == 2) setActiveIndex(0)
     }
   };
 
@@ -102,7 +102,7 @@ export default function Blog() {
       if (activeIndex == 0) setActiveIndex(1);
       else if (activeIndex == 1) setActiveIndex(0);
     } else if (size == 0) {
-        if(activeIndex == 0) setActiveIndex(2)
+      if (activeIndex == 0) setActiveIndex(2)
     }
   };
 
@@ -116,19 +116,16 @@ export default function Blog() {
           onClick={() => handlePrev(size)}
         />
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 0 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 0 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 1 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 1 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${
-            activeIndex == 2 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
-          }`}
+          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${activeIndex == 2 ? "bg-[#F19412]" : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <img
           src="/home/arrowsOrangeR.png"
@@ -145,10 +142,10 @@ export default function Blog() {
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-4 sm:px-6 lg:px-20 py-4 box-border">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-10 max-w-7xl mx-auto h-full ">
-            <div className="relative flex items-center h-full py-8 ml-14">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-10 max-w-7xl mx-auto h-full">
+            <div className="relative flex items-center h-full ml-14 mt-8 lg:mt-0">
               {/* Imagen a la izquierda */}
-              <div className="absolute w-fit h-full -left-14 bottom-2">
+              <div className="absolute w-fit h-full -left-14 -top-10">
                 <img
                   src="/home/sheetWhite.png"
                   alt="Descripción de la imagen"
