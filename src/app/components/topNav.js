@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
 import { useModal } from "@/app/hooks/useModal";
+import { Siderbar } from "./sidebar";
 
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
@@ -61,9 +62,12 @@ export default function TopNavHero({ locale }) {
           >
             {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
           </button>
-          <button className="lg:hidden cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
-            <IoMdMenu size={24} />
-          </button>
+          <div>
+            <button className="lg:hidden cursor-pointer z-30" onClick={() => setMenuOpen(!menuOpen)}>
+              <IoMdMenu size={24} />
+            </button>
+            <Siderbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} t={t} cantLinksProducts={CANT_LINKS_PRODUCTS} locale={locale} />
+          </div>
         </div>
       </nav>
     </div>
