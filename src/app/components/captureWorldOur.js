@@ -1,11 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useModal } from "@/app/context/ModalContext";
+import { useModal } from "@/app/hooks/useModal";
 
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const { toggleModalContact } = useModal();
+  const { toggleModal } = useModal();
 
   // Variables para la duración de las animaciones
   const videoAnimationDuration = 0.5; // Duración en segundos
@@ -169,7 +169,7 @@ export default function CaptureWorldOur() {
                   {data[0].text2}
                 </div>
 
-                <button onClick={toggleModalContact} className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] text-white px-6 mt-4 rounded-md">
+                <button onClick={toggleModal} className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] text-white px-6 mt-4 rounded-md">
                   {data[0].button}
                 </button>
               </div>

@@ -5,12 +5,12 @@ import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
-import { useModal } from "../context/ModalContext";
+import { useModal } from "@/app/hooks/useModal";
 
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { toggleModalContact } = useModal();
+  const { toggleModal } = useModal();
   const { push, refresh } = useRouter();
   const t = useTranslations("topNav"); // Inicializar useTranslations
   const changeLanguage = (lang) => {
@@ -52,7 +52,7 @@ export default function TopNavHero({ locale }) {
           </ul>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block" onClick={toggleModalContact}>
+          <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block" onClick={toggleModal}>
             {t("contact")} {/* Utilizando la traducción */}
           </button>
           <button
