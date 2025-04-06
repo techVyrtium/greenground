@@ -149,8 +149,8 @@ export default function CaptureWorldOur() {
                 className="w-[70px] h-[90px] md:w-[60px] md:h-[80px] lg:w-[70px] lg:h-[90px]"
               />
             </div>
-            <div className="absolute left-8 sm:left-12 top-[25px] sm:top-[36px] w-[95%] sm:w-full text-left md:left-10 lg:left-12">
-              <h2 className={`font-bold text-[#008638] mb-12 leading-[1]  font-itcGBold text-[23px] md:text-[32px] lg:text-[40px] xl:text-[48px] lg:leading-[0.8]`}>
+            <div className="absolute left-8 sm:left-12 top-[25px] sm:top-[36px] sm:w-full text-left md:left-10 lg:left-12 w-fit">
+              <h2 className={`font-bold text-[#008638] mb-12 leading-[1] font-itcGBold text-[23px] md:text-[32px] lg:text-[40px] xl:text-[48px] lg:leading-[0.8]`}>
                 {data[0].title}
               </h2>
             </div>
