@@ -114,7 +114,7 @@ export default function CaptureWorldOur() {
               className="mt-4 mr-2"
               onClick={() => handlePrev()}
             />
-            <div className="flex felx-row gap-2">
+            <div className="flex flex-row gap-2">
               <div
                 className={`mt-4 p-1.5 rounded-full ${activeIndex == 0 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
                   }`}
