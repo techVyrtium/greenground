@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function OurCertificate() {
   const data = [
     {
@@ -13,13 +12,16 @@ export default function OurCertificate() {
       text: "Contamos con la aprobación de los programas FSMA por parte de la inspección FDA.",
       img: "/home/Approve.png",
     },
+    
   ];
 
   const data2 = [
     {
       title: (
         <>
-          <h2 className={`text-[40px] font-bold text-[#008638] mb-12 leading-[0.8] font-itcGBold`}>
+          <h2
+            className={`text-[40px] font-bold text-[#008638]  leading-[0.8] font-itcGBold`}
+          >
             Nuestras certificaciones
           </h2>
         </>
@@ -28,9 +30,9 @@ export default function OurCertificate() {
   ];
 
   return (
-    <section className="w-full h-full px-4 sm:px-6 lg:px-20 mt-28">
+    <section className="w-full h-full px-4 sm:px-6 lg:px-20">
       <div className="lg:h-[10rem] max-w-7xl mx-auto">
-        {" "}
+
         {/* Info Verde */}
         <div className="flex flex-col lg:flex-row items-center justify-center h-full w-full gap-16 ">
           {data.map((dato) => (
@@ -50,41 +52,58 @@ export default function OurCertificate() {
         </div>
       </div>
       {/*  Certificaciones */}
-      <div className="lg:h-[10rem] mt-12 lg:mt-0 max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row w-full place-items-center">
-          <div className="lg:w-3/5 mt-12 justify-items-stretch lg:mt-0 grid grid-cols-2 md:grid-cols-4 gap-8 lg:order-none order-last">
-            <div>
-              <img src="/home/certSGS.png" className="w-[150px] h-auto" />
-            </div>
-            <div>
-              <img src="/home/certInvima.png" className="w-[180px] h-auto" />
-            </div>
-            <div>
-              <img src="/home/certFDA.png" className="w-[160px] h-auto" />
-            </div>
-            <div>
-              <img src="/home/certKosher.png" className="w-[145px] h-auto" />
-            </div>
-          </div>
-          <div className="h-full w-full lg:w-1/43 xl:w-1/4 2xl:w-1/4 mt-4 lg:order-none order-first">
-            <div className="relative flex h-full md:px-8 ">
+      <div className="lg:h-[20rem] mt-12 lg:mt-0 max-w-7xl mx-auto">
+        <div className="flex flex-col w-full items-start gap-12">
+          {/* titulo */}
+          <div className="h-full w-full relative">
+            <div className="flex h-full">
               {/* Imagen a la izquierda */}
               <div className="h-full">
                 <img
                   src="/home/sheetGreen.png"
                   alt="Descripción de la imagen"
-                  className="w-[90px] h-[110px] rotate-12"
+                  className="w-[70px] h-[90px] sm:w-[90px] sm:h-[110px] rotate-12"
                 />
               </div>
 
               {/* Texto encima de la imagen */}
-<<<<<<< HEAD:src/app/components/ourCertifate.js
-              <div className={`absolute left-10 md:left-20 top-[50px] w-full text-left font-itcGBold`}>
-=======
-              <div className={`absolute left-10 md:left-20 top-[40px] w-fit text-left`}>
->>>>>>> 0f8f60c48e60a834941c2e0f9f5a1667239e01c9:src/app/components/ourCertificate.js
+              <div
+                className="absolute left-10 md:left-14  bottom-[-14px] md:bottom-6 sm:w-fit text-left"
+              >
                 {data2[0].title}
               </div>
+            </div>
+          </div>
+
+          {/* imagenes */}
+          <div className="mt-12 w-full lg:mt-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:order-none order-last place-items-center">
+            <div>
+              <a
+                href="https://www.sgs.com/en/certified-clients-and-products"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/home/logotipo-iso-9001.png"
+                  className="w-full h-auto"
+                />
+              </a>
+            </div>
+
+            <div>
+              <img src="/home/FDA.png" className="w-full h-auto" />
+            </div>
+            <div>
+              <img src="/home/logo-invima1.png" className="w-full h-auto" />
+            </div>
+            <div>
+              <img src="/home/tcpat1.png" className="w-full h-auto" />
+            </div>
+            <div>
+              <img src="/home/logo-bacs.png" className="w-full h-auto" />
+            </div>
+            <div>
+              <img src="/home/Logo-Kosher1.png" className="w-full h-auto" />
             </div>
           </div>
         </div>

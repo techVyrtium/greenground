@@ -5,15 +5,12 @@ import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
-import ContactForm from "./modal/ContactForm";
+import { useModal } from "../context/ModalContext";
 
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showModalContact, setShowModalContact] = useState(false);
-  const toggleModalContact = () => {
-    setShowModalContact((prev) => !prev);
-  };
+  const { toggleModalContact } = useModal();
   const { push, refresh } = useRouter();
   const t = useTranslations("topNav"); // Inicializar useTranslations
   const changeLanguage = (lang) => {
@@ -69,9 +66,6 @@ export default function TopNavHero({ locale }) {
           </button>
         </div>
       </nav>
-      {showModalContact && (
-        <ContactForm toggleModalContact={toggleModalContact} />
-      )}
     </div>
   );
 }
