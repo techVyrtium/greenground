@@ -108,11 +108,11 @@ export default function TopProduct() {
 
   function btn(size) {
     return (
-      <div className="flex felx-row items-center justify-center gap-2">
+      <div className="flex flex-row items-center justify-center gap-2">
         <img
           src="/home/arrowsOrangeL.png"
           alt="Descripción de la imagen"
-          className="mt-4 mr-2"
+          className="mt-4 mr-2 cursor-pointer"
           onClick={() => handlePrev(size)}
         />
         <div
@@ -130,7 +130,7 @@ export default function TopProduct() {
         <img
           src="/home/arrowsOrangeR.png"
           alt="Descripción de la imagen"
-          className="mt-4 ml-2"
+          className="mt-4 ml-2 cursor-pointer"
           onClick={() => handleNext(size)}
         />
       </div>
@@ -138,19 +138,19 @@ export default function TopProduct() {
   }
   return (
     <section className="w-full h-fit mt-20 ">
-      <div className="relative flex h-[131px] w-5/6 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
-        <div className="w-1/2 lg:w-full h-full px-4 sm:px-6 lg:px-28 ">
+      <div className="relative flex h-[131px] w-4/5 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
+        <div className="h-full px-4 sm:px-6 lg:px-30">
           <img
             src="/home/sheetWhite.png"
             alt="Descripción de la imagen"
             className="w-[80px] h-[100px]"
           />
         </div>
-        <div className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold`}>
-          <h2 className="text-[30px] ml-20 2xl:ml-24 top-[36px] text-left font-bold text-white leading-[0.8]">
+        <div className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold text-[32px] md:text-[40px]`}>
+          <h2 className="ml-22 top-[36px] text-left font-bold text-white leading-[0.8]">
             {data[0].title}
           </h2>
-          <h2 className="text-[38px] md:text-[40px] lg:text-[35px] xl:text-[40px] ml-14 2xl:ml-18 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
+          <h2 className="text-[32.5px] ml-14 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
             {data[0].title2}
           </h2>
         </div>
@@ -160,7 +160,7 @@ export default function TopProduct() {
           <Card card={card} />
         </div>
         {/*  Movil */}
-        <div className="block lg:hidden sm:hidden">
+        <div className="block md:hidden">
           <Card card={dataMovil} />
           {btn(0)}
         </div>
