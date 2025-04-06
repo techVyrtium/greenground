@@ -5,7 +5,7 @@ export default function Footer() {
   const t = useTranslations("footer"); // Inicializar useTranslations
 
   return (
-    <footer className="bg-green-700 text-white max-w-[1920px] mx-auto px-6 py-10 bg-[url('/banana-patterns.png')] bg-cover bg-no-repeat bg-left mt-[200px]">
+    <footer className="bg-green-700 text-white px-6 py-10 bg-[url('/banana-patterns.png')] bg-cover bg-no-repeat bg-left mt-[200px] max-w-[1920px] mx-auto">
       <div className="max-w-7xl lg:mx-auto flex flex-col md:flex-row justify-start items-center gap-x-8 lg:gap-x-10  overflow-hidden">
         {/* Logo */}
         <div className="flex justify-start lg:justify-start lg:w-auto">
