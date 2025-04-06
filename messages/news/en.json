@@ -1,0 +1,21 @@
+{
+    "menuTitle": "Menu",
+    "menuItems": {
+      "home": "Home",
+      "whatWeDo": "What we do",
+      "products": "Products",
+      "quality": "Quality",
+      "aboutUs": "About us",
+      "social": "Social",
+      "contact": "Contact"
+    },
+    "contactTitle": "Contact",
+    "contactDetails": {
+      "phone": "+57 3004194289",
+      "email": "directorcomercial@greenground.com.co"
+    },
+    "policies": {
+      "dataPolicy": "Data Policy",
+      "securityPolicy": "Security Policy"
+    }
+  }

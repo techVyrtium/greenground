@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion, useInView, useScroll } from "framer-motion";
 import { useTranslations } from "next-intl"; // Importar useTranslations
 export default function WhatWeDo() {
