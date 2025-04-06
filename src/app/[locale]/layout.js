@@ -6,7 +6,7 @@ import "./../globals.css";
 import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
 import Footer from "@/app/components/Footer";
 import TopNavHero from "../components/topNav";
-import { ModalProvider } from "../context/ModalContext";
+import ModalContainer from "@/app/components/modal/ModalContainer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -28,11 +28,10 @@ export default async function RootLayout({ children }) {
     <html lang={locale} className={`${roboto.variable} ${baloo.variable} ${itcGBook.variable} ${itcGBold.variable}`}>
       <body className="">
         <NextIntlClientProvider>
-          <ModalProvider>
             <TopNavHero locale={locale} />
             {children}
             <Footer />
-          </ModalProvider>
+            <ModalContainer />
         </NextIntlClientProvider>
       </body>
     </html>

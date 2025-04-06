@@ -1,12 +1,16 @@
 "use client";
 import { useEffect } from "react";
 import FormContact from "@/app/components/ContactForm";
+import { useModal } from "@/app/hooks/useModal";
+
 
 const ContactForm = ({ toggleModalContact }) => {
+  const { toggleModal } = useModal();
+
 
   const handleClose = () => {
     setTimeout(() => {
-      toggleModalContact();
+      toggleModal();
     }, 350);
   };
 
@@ -19,7 +23,7 @@ const ContactForm = ({ toggleModalContact }) => {
 
     document.addEventListener("keydown", handleEscape);
     return () => document.removeEventListener("keydown", handleEscape);
-  }, [toggleModalContact]);
+  }, [toggleModal]);
 
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
