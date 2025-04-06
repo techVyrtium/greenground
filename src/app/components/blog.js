@@ -108,7 +108,7 @@ export default function Blog() {
 
   function btn(size) {
     return (
-      <div className="flex felx-row items-center justify-center gap-2">
+      <div className="flex flex-row items-center justify-center gap-2">
         <img
           src="/home/arrowsOrangeL.png"
           alt="Descripción de la imagen"

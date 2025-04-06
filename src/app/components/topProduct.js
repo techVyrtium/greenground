@@ -108,11 +108,11 @@ export default function TopProduct() {
 
   function btn(size) {
     return (
-      <div className="flex felx-row items-center justify-center gap-2">
+      <div className="flex flex-row items-center justify-center gap-2">
         <img
           src="/home/arrowsOrangeL.png"
           alt="Descripción de la imagen"
-          className="mt-4 mr-2"
+          className="mt-4 mr-2 cursor-pointer"
           onClick={() => handlePrev(size)}
         />
         <div
@@ -130,7 +130,7 @@ export default function TopProduct() {
         <img
           src="/home/arrowsOrangeR.png"
           alt="Descripción de la imagen"
-          className="mt-4 ml-2"
+          className="mt-4 ml-2 cursor-pointer"
           onClick={() => handleNext(size)}
         />
       </div>
