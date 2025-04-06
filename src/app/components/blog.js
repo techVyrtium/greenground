@@ -41,10 +41,8 @@ export default function Blog() {
     },
   ];
 
-  
-
   return (
-    <section className="mt-24 w-full h-full" id="blog">
+    <section className="mt-24 w-full h-full" id='blog'>
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-4 sm:px-6 lg:px-20 py-4 box-border">
@@ -59,7 +57,7 @@ export default function Blog() {
                 />
               </div>
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[80px] w-full text-left font-itcGBold">
+              <div className="w-fit text-left">
                 {data[0].title}
               </div>
             </div>
