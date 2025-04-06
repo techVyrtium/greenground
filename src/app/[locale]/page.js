@@ -11,7 +11,7 @@ import OurCommitWomen from "../components/ourCommitWomen";
 import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 import { ProductCategories } from "../components/productCategories";
-import { WorkerTestimonials } from "../components/workerTestimonials";
+// import { WorkerTestimonials } from "../components/workerTestimonials";
 import OurCertificate from "../components/ourCertificate";
 export default async function Home() {
   
