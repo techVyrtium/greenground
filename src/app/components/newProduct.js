@@ -58,17 +58,16 @@ export default function NewProduct() {
           />
         </div>
         <div className="xl:w-2/5  w-full flex flex-col items-center justify-center mt-12">
-          <div className="relative w-full flex">
-            <div className="w-auto">
-              <h2 className={`md:text-[75px] lg:text-[80px] text-6xl font-bold text-[#E7681F] font-itcGBold`}>
+          <div className="relative w-full">
+            <div className="w-fit">
+              <h2 className={`md:text-[75px] lg:text-[80px] text-6xl font-bold text-[#E7681F] mb-12 font-itcGBold`}>
                 {data[0].title}
               </h2>
-            </div>
-            <div className="w-fit">
               <img
                 src="/home/sheetOrange.png"
                 alt="Descripción de la imagen"
-                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-150 lg:left-165 xl:left-55 -top-[50px]"
+                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-140 lg:left-155 xl:left-45 -top-[50px] min-[600px]:left-112"
+                
               />
             </div>
           </div>

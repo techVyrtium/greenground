@@ -1,5 +1,4 @@
 import React from "react";
-import TopNavHero from "@/app/components/topNav";
 import WhatWeDo from "../components/whatWeDo";
 import ResponsibleCompany from "../components/responsibleCompany";
 import Experience from "../components/experience";
@@ -14,13 +13,12 @@ import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 import { ProductCategories } from "../components/productCategories";
 import { WorkerTestimonials } from "../components/workerTestimonials";
-export default async function Home({ params }) {
-  const { locale } = await params;
+export default async function Home() {
+  
   return (
     <div
       className={`bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen`}
     >
-      <TopNavHero locale={locale} />
       <WhatWeDo />
       <ResponsibleCompany />
       <Experience />

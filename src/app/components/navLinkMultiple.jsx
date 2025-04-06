@@ -2,7 +2,6 @@ import Link from "next/link"
 import { useState } from "react"
 import { FaChevronDown } from 'react-icons/fa';
 export const NavLinkMultiple = ({ title, options = [] }) => {
-    console.log({ options });
     const [open, setOpen] = useState(false);
     const toogleOptions = () => {
         setOpen(!open);
