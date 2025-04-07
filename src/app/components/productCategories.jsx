@@ -98,7 +98,7 @@ export const ProductCategories = () => {
     <section
       className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)] font-itcGBold`}
     >
-      <div className="bg-[#00000080] py-2 md:px-8 px-4">
+      <div className="bg-[#00000080] py-2 px-4 md:px-8 md:py-10">
         <h3 className="text-5xl font-bold my-4">{title}</h3>
         <div
           className={
