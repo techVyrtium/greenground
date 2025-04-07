@@ -1,0 +1,21 @@
+{
+    "familia-exportacion": {
+      "title":"Una familia de exportación.",
+      "description": "La fusión del respeto por la sabiduría de los mejores y la aceptación de las ideas innovadoras de los jóvenes ha permitido que tres generaciones de la familia Galán, orgullosamente campesinos de la Sabana, hayan construido una de las 100 empresas colombianas con mayor productividad en corto tiempo.",
+      "img": "/news/prodAgricola.svg",
+      "btn": "Consulta el reportaje"
+    },
+    "green-ground": {
+      "title":"Exportar es un trampolín para crecer.",
+      "description": "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
+      "img": "/news/exportarTram.svg",
+      "btn": "Consulta el reportaje"
+    },
+
+    "boom-congelados": {
+      "title":"Boom de congelados",
+      "description": "Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y manes, hoy salen más comidas de la nevera al fogón.",
+      "img": "/news/recetamaduro.svg",
+      "btn": "Consulta el reportaje"
+    }
+}

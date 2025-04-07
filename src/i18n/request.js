@@ -22,9 +22,13 @@ export default getRequestConfig(async () => {
     locale: selectedLocale,
     messages: {
       topNav: await loadMessages("topNav"),
+      products: await loadMessages("products"),
+      category: await loadMessages("category"),
       whatWeDo: await loadMessages("whatWeDo"),
       home: await loadMessages("home"),
       footer: await loadMessages("footer"),
+      news: await loadMessages("news"),
+      detallenews: await loadMessages("detallenews"),
     },
   };
 });

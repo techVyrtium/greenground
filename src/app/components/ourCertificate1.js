@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function OurCertifate() {
+export default function OurCertificate() {
   const data = [
     {
       id: 1,
@@ -78,7 +78,7 @@ export default function OurCertifate() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className={`absolute left-10 md:left-20 top-[40px] w-full text-left`}>
+              <div className={`absolute left-10 md:left-20 top-[40px] w-fit text-left`}>
                 {data2[0].title}
               </div>
             </div>

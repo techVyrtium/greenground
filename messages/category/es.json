@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "Congelados",
+      "subcategories": ["Verduras", "Carnes", "Mariscos", "Preparados"],
+      "link": "products/category/congelados"
+    },
+    {
+      "name": "Abarrotes",
+      "subcategories": ["Lácteos", "Granos", "Conservas", "Especias"],
+      "link": "products/category/abarrotes"
+    },
+    {
+      "name": "Menaje",
+      "subcategories": [],
+      "link": "products/category/menaje"
+    }
+  ]
+}

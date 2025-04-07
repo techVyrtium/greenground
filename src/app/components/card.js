@@ -18,7 +18,7 @@ export default function Card({ card, wSize = 48, hSize = 52, imgW = 400, zone = 
   },)
   return (
     <div
-      className={`w-full items-center grid grid-cols-2 ${zone == 1 ? 'md:grid-cols-3 lg:gap-[80px] xl:gap-[80px] 2xl:gap-[24px] ' : 'md:grid-cols-4 lg:gap-[240px] xl:gap-[180px] 2xl:gap-[184px]'} md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 relative md:mt-[34px] gap-[16px]  `}
+      className={`w-full items-center grid grid-cols-2 ${zone == 1 ? 'md:grid-cols-3 lg:gap-[2vw] 2xl:gap-[24px] ' : 'md:grid-cols-4 lg:gap-[3vw] xl:gap-[180px] 2xl:gap-[184px]'} md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 relative md:mt-[34px] gap-[16px]  `}
     >
       {card.map((data) => (
         <div className="md:w-48 w-full flex flex-col items-center justify-around lg:items-start " key={data.id}>
@@ -37,7 +37,7 @@ export default function Card({ card, wSize = 48, hSize = 52, imgW = 400, zone = 
               }`}
             ></div>
           </div>
-          <div className={`flex flex-col items-center justify-center w-[155px] md:w-${wSize} lg:w-${wSize} xl:w-${wSize}  h-fit mt-4 rounded-lg border ${zone == 1 ? 'bg-transparent' : 'bg-[#B52C17]'} border-[#008638] `}>
+          <div className={`flex flex-col items-center justify-center w-[155px] md:w-${wSize} lg:w-${wSize} xl:w-${wSize}  h-fit mt-4 rounded-lg border border-[#008638]  `}>
             <a className="text-[16px] text-[#4A4A4A]">{data.title}</a>
 
             <div className="w-[95%] text-[12px] flex items-center justify-center border border-b-0 border-l-0 border-r-0 border-t-amber-500">

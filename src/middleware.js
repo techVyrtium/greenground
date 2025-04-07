@@ -30,5 +30,7 @@ export async function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|favicon.ico|.*\\..*).*)"], // Excluir las rutas internas de Next.js
+  matcher: [
+    "/((?!_next|api|favicon.ico|.*\\.(?:png|jpg|jpeg|mov|gif|webp|svg|ico|mp4|mp3|wav|txt|pdf|zip|json|webmanifest)).*)",
+  ],
 };

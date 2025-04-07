@@ -30,7 +30,7 @@ export default function OurCommit() {
             </div>
 
             {/* Texto encima de la imagen */}
-            <div className="absolute left-16 top-[70px] w-full text-left">
+            <div className="absolute left-16 top-[70px] w-full text-left font-itcGBold">
               {data[0].title}
             </div>
           </div>
