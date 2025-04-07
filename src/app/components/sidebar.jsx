@@ -35,12 +35,12 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                 <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer" onClick={toggleModal}>
                     {t("contact")} {/* Utilizando la traducción */}
                 </button>
-                <button
+                {/* <button
                     className="border px-4 py-2 rounded cursor-pointer"
                     onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
                 >
                     {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
-                </button>
+                </button> */}
             </div>
         </section>
     )

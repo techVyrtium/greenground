@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -12,11 +12,14 @@ const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const { toggleModal } = useModal();
-  const { push, refresh } = useRouter();
-  const t = useTranslations("topNav"); // Inicializar useTranslations
+  const pathname = usePathname();
+  const router = useRouter();
+  const t = useTranslations("topNav");
   const changeLanguage = (lang) => {
-    push(lang);
-    refresh();
+    if (pathname.length === 3)
+      router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
+    else
+      router.replace(`${pathname.replace(`/${locale}/`, `/${lang}/`)}`);
   };
 
   return (
@@ -76,12 +79,12 @@ export default function TopNavHero({ locale }) {
           >
             {t("contact")} {/* Utilizando la traducción */}
           </button>
-          <button
+          {/* <button
             className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
             onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
           >
             {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
-          </button>
+          </button> */}
           <div>
             <button
               className="lg:hidden cursor-pointer z-30"
