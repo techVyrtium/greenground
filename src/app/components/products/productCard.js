@@ -51,7 +51,7 @@ const ProductCard = ({ product }) => {
           </div>
           <a
             href={`/products/${product.slug}`}
-            className="block w-full bg-[#F5B356] text-white text-[14px] 2xl:text-[24px] rounded-md p-2 text-center"
+            className="block w-full bg-[#F5B356] text-white text-[14px] 3xl:text-[24px] rounded-md p-2 text-center"
           >
             Ver producto
           </a>
