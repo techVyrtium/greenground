@@ -3,7 +3,7 @@ import { SidebarLinksMultiples } from "./sidebarLinksMultiples"
 
 export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLinksProducts }) => {
     return (
-        <section className={`absolute h-screen rounded-b-2xl bg-category-title-bold overflow-hidden ${menuOpen ? 'w-full md:w-1/2' : 'w-0'} right-0 top-19.5 z-10 transition-all duration-200`}>
+        <section className={`lg:hidden absolute h-screen rounded-b-2xl bg-category-title-bold overflow-hidden ${menuOpen ? 'w-full md:w-1/2' : 'w-0'} right-0 top-19.5 z-10 transition-all duration-200`}>
             <ul className="flex flex-col gap-4 text-2xl font-light mt-6 items-center">
                 <li>
                     <Link href="#" className="hover:underline hover:font-bold">{t("home")}</Link> {/* Utilizando la traducción */}

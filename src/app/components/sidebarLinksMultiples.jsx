@@ -11,7 +11,7 @@ export const SidebarLinksMultiples = ({ title, options = [] }) => {
             <span onClick={toogleOptions} className="hover:underline hover:font-bold cursor-pointer flex items-center gap-1">
                 {title} <FaChevronDown fillOpacity={0.85} className="w-4 h-4" />
             </span>
-            {open && (<ol className="top-8 z-10 bg-category-title-bold rounded p-4 pl-8 font-light w-4/5 items-center">
+            {open && (<ol className="top-8 z-10 bg-[#008638] rounded p-4 pl-8 font-light w-4/5 items-center">
                 {
                     options.map(({ id, text, href }) => (
                         <li key={id} className="mb-1">
