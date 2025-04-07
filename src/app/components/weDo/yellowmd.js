@@ -93,7 +93,7 @@ export default function Yellowmd() {
                 //delay:2,
                 ease: "easeInOut",
               }}
-              className="w-[900px] h-[auto]"
+              className={`${num == 1 ? 'w-[500px] h-[auto]' : 'w-full h-[25rem]' }`}
             />
           </AnimatePresence>
         </div>

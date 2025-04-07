@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl"; // Importar useTranslations
-import Yellowmd from "./yellowmd";
+import Yellowmd from "./weDo/yellowmd";
 import Link from "next/link";
+import Yellowsm from "./weDo/yellowsm";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
@@ -135,7 +136,7 @@ export default function WhatWeDo() {
         </video>
         {viewBotom ? (
           <div
-            className={`absolute w-full h-10 cursor-pointer mb-6 items-center`}
+            className={`absolute w-full 2xl:w-5/6 h-10 cursor-pointer mb-6 items-center`}
           >
             <div className="flex flex-row items-center justify-center  ">
               <div
@@ -194,7 +195,7 @@ export default function WhatWeDo() {
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
-              <div className="mt-12 flex justify-center" id="whatWeDo">
+              <div className="mt-12 flex justify-center">
                 <h1
                   className={`text-white text-[100px] font-bold leading-21 font-itcGBold`}
                 >
@@ -276,49 +277,7 @@ export default function WhatWeDo() {
 
         {/*Movil */}
         <div className="block md:hidden py-10 mb-10 ">
-          <div className="flex flex-col w-full h-full">
-            <div className="w-full h-fit flex items-center justify-center">
-              <img
-                src="/home/blanco-12.svg"
-                className="w-[200px] md:w-[250px] h-auto"
-              />
-            </div>
-            <div className="flex flex-col items-center h-fit w-full">
-              <h1
-                className={`text-white text-[32px] font-bold leading-21 font-itcGBold`}
-              >
-                {data2[0].title2}
-              </h1>
-              <h1
-                className={`text-white text-[80px] font-bold leading-21 font-itcGBold`}
-              >
-                {data2[0].title}
-              </h1>
-            </div>
-            <div className="w-full h-fit flex text-base mt-4">
-              {data2[0].text}
-            </div>
-
-            <div className="relative w-full h-full flex flex-row gap-4">
-              <div className="">
-                <img src="/home/tajadaempaque.png" className="w-full h-full" />
-              </div>
-            </div>
-            <div className="flex flex-row items-center justify-around mt-4">
-              <div className="flex flex-row items-center justify-center mt-8 gap-8">
-                <img src="/home/GFICON.png" className="w-[95px]" />
-                <img src="/home/MICICON.png" className="w-[95px]" />
-                <img src="/home/READYICON.png" className="w-[95px]" />
-              </div>
-            </div>
-            <div className="flex items-center justify-center mt-4">
-              <Link href={"/products"}>
-                <button className="bg-[#B52C17] text-[20px] text-white px-6 mt-4 rounded-md cursor-pointer">
-                  {data2[0].button}
-                </button>
-              </Link>
-            </div>
-          </div>
+          <Yellowsm />
         </div>
       </section>
     );
@@ -397,7 +356,7 @@ export default function WhatWeDo() {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <img src="/home/Frame171.png" className="w-[900px] h-[auto]" />
+              <img src="/home/Frame171.png" className="w-[600px] h-[auto]" />
             </div>
 
             <div className="flex flex-row items-center justify-center gap-8">
@@ -462,12 +421,12 @@ export default function WhatWeDo() {
                 src="/home/arrowsRSR.png"
                 alt="Descripción de la imagen"
                 className="mt-4 mr-2 w-8"
-                onClick={() => handlePrev()}
+                onClick={() => handleNext()}
               />
             </div>
           </div>
         </div>
-        {activeIndex == 0 ? video() : activeIndex == 1 ? red() : yellow()}
+        {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
       </div>
       <div
         className="py-16 px-4 sm:px-6 lg:px-20"

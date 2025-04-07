@@ -25,7 +25,7 @@ export default function News() {
   },[])
 
   return (
-    <section className="px-4 sm:px-6 lg:px-50 w-full h-fit mt-20 font-itcGBook">
+    <section className="px-4 sm:px-6 lg:px-50 w-full h-fit mt-20 ">
       <div className="max-w-7xl mx-auto flex flex-col">
         {dato.length > 0 ? <>{dato[0].section}</> : ""}
         <div className="mt-10 text-[30px] md:text-[36px] xl:text-[48px] 2xl:text-[60px] text-[#008638] font-itcGBold ">
