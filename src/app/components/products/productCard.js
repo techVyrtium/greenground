@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const ProductCard = ({ product }) => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: product.images.length > 1,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -6,16 +6,16 @@ export default function NewProduct() {
   const t = useTranslations("products");
   const tag = "Nuevo";
 
-  const products = Object.entries(t.raw("products"))
-    .map(([slug, product]) => ({
-      slug,
-      ...product,
-    }))
+  const products = Object.entries(t.raw("products")).map(([slug, product]) => ({
+    slug,
+    ...product,
+  }));
+  const filteredProducts = products
+    .filter(
+      (product) =>
+        product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
+    )
     .slice(0, 4);
-  const filteredProducts = products.filter(
-    (product) =>
-      product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
-  );
   const formatTitle = (str) =>
     str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 
@@ -30,7 +30,7 @@ export default function NewProduct() {
     <section className=" px-[48px] lg:px-[70px] 3xl:px-[96px] w-full h-fit mt-20 overflow-hidden">
       <div className="w-full mx-auto flex flex-col-reverse xl:flex-row">
         <div className="xl:w-3/5 w-full mt-12 md:mt-0  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-          {products.map((product, index) => (
+          {filteredProducts.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
@@ -51,9 +51,12 @@ export default function NewProduct() {
           </div>
           <div className="text-[16px] w-full text-black">{data[0].text}</div>
           <div className="flex justify-end w-full">
-            <button className="bg-[#F19412] text-[20px] text-white px-6 mt-4 rounded-md">
+            <a
+              href={`/products`}
+              className="bg-[#F19412] text-[20px] text-white px-6 mt-4 rounded-md"
+            >
               {data[0].button}
-            </button>
+            </a>
           </div>
         </div>
       </div>
