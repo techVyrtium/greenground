@@ -143,7 +143,7 @@ export default function TopProduct() {
           <img
             src="/home/sheetWhite.png"
             alt="Descripción de la imagen"
-            className="w-[80px] h-[100px] "
+            className="w-[80px] h-[100px]"
           />
         </div>
         <div className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold text-[32px] md:text-[40px]`}>

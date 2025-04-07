@@ -3,7 +3,7 @@ import React from "react";
 export default function NowNearYou() {
   const data = [
     {
-      title: "AHORA MAS CERCÁ DE TÍ",
+      title: "AHORA MÁS CERCA DE TI",
       text: (
         <>
           <p className="text-[20px] text-white md:text-[34px] leading-8">
@@ -21,15 +21,15 @@ export default function NowNearYou() {
     <section className="hidden md:block px-4 sm:px-6 lg:px-20 mt-20 w-full h-fit xl:h[32rem] 2xl:h[32rem] bg-[url(/home/bg-red.png)] bg-cover bg-no-repeat">
       <div className=" flex flex-col lg:flex-row ">
         <div className="lg:w-1/2 w-full flex items-center justify-center">
-          <img src="/home/Frame171.png" className="w-[700px] h-auto" />
+          <img src="/home/Frame171.png" className="w-[600px] h-auto" />
         </div>
         <div className="flex flex-col justify-around lg:w-1/2 w-full h-fit md:py-22">
           <div className="flex flex-col md:flex-row">
-            <div className="flex justify-center leading-7">
+            <div className="flex justify-center">
               <img src="/home/aroBird.png" className="w-[288px] md:w-[30rem] h-auto" />
             </div>
             <div>
-              <h1 className={`text-white text-[60px] font-bold md:ml-16 leading-16 font-itcGBold`}>
+              <h1 className={`text-white text-[56px] font-bold md:ml-16 leading-16 font-itcGBold`}>
                 {data[0].title}
               </h1>
             </div>

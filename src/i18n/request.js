@@ -27,6 +27,8 @@ export default getRequestConfig(async () => {
       whatWeDo: await loadMessages("whatWeDo"),
       home: await loadMessages("home"),
       footer: await loadMessages("footer"),
+      news: await loadMessages("news"),
+      detallenews: await loadMessages("detallenews"),
     },
   };
 });

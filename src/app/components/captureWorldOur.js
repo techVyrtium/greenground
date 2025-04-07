@@ -48,7 +48,7 @@ export default function CaptureWorldOur() {
       ),
       text2: (
         <>
-          <p className={`text-[12px] text-[#5C6E79] font-[700] font-itcGBold md:text-[14px]  2xl:text-[25px]`}>
+          <p className={`text-[12px] text-[#5C6E79] font-[700] font-itcGBold md:text-[20px]  2xl:text-[25px]`}>
             Pon tu logo en nuestros productos, o distribúyelos alrededor del
             mundo
           </p>
@@ -164,7 +164,7 @@ export default function CaptureWorldOur() {
               <div className="lg:w-1/2 flex items-center justify-center">
                 <img src="/home/Frame171.png" className="w-auto h-[320px]" />
               </div>
-              <div className="w-1/4 h-full flex flex-col justify-center ml-4">
+              <div className="w-2/5 h-full flex flex-col justify-center ml-4">
                 <div className={`flex items-end justify-end font-itcGBook`}>
                   {data[0].text2}
                 </div>

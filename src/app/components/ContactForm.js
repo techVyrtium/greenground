@@ -113,9 +113,9 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
     },
   ];
   return (
-    <div className="relative w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.png)] overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
+    <div className="relative w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.svg)] overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
       {contact && (
-        <div className="w-full md:h-auto flex flex-row justify-start items-center px-4 mt-8">
+        <div className="w-full md:h-auto flex flex-row justify-start items-center px-4 mt-4">
           <div className="relative flex h-full w-full py-2 md:py-8 px-4 md:px-0">
             {/* Imagen a la izquierda */}
             <div className="w-1/3 h-full">
@@ -168,7 +168,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
               <label className="text-white text-[16px]">
                 {placeholders.comment}
               </label>
-              <textarea name="textarea" rows="2" cols="48" className="bg-white p-1 rounded"></textarea>
+              <textarea name="textarea" rows="2" cols="48" className="bg-white p-1 rounded w-full"></textarea>
 
             </div>
 
@@ -224,7 +224,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
 
       {/* Botón para cerrar */}
       {contact && (
-        <div className="absolute top-12 left-8 z-30">
+        <div className="absolute top-6 left-4 z-30">
           <button
             onClick={toggleModalContact}
             className="transform text-white font-bold w-full"

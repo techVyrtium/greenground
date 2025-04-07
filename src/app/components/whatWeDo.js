@@ -1,15 +1,20 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion, useInView, useScroll } from "framer-motion";
 import { useTranslations } from "next-intl"; // Importar useTranslations
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
   const ubiRef = useRef();
+  const videoPlay = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [viewBotom, SetViewBotom] = useState(false);
+  const [stateBotom, setStateBotom] = useState(true);
+  const [videoMute, setVideoMute] = useState(true);
 
   const data = [
     {
-      title: "AHORA MAS CERCÁ DE TÍ",
+      title: "AHORA MÁS CERCA DE TI",
       text: (
         <>
           <p className="text-[30px] text-white ">
@@ -27,9 +32,10 @@ export default function WhatWeDo() {
   const data2 = [
     {
       title: "BOCADO",
+      title2: "Tradición en cada",
       text: (
         <>
-          <p className="text-[30px] text-white ">
+          <p className="lg:text-[30px] md:text-[50px] text-[24px] text-white ">
             Conoce nuestros productos{" "}
             <span className=" font-bold">
               orgánicos, sin etiquetas de excesos{" "}
@@ -38,72 +44,125 @@ export default function WhatWeDo() {
           </p>
         </>
       ),
+      button: "Conoce nuestros productos",
     },
   ];
 
-  const handleNext = (size) => {
-    setActiveIndex(activeIndex + 1);
-    if (size == 1) {
-      if (activeIndex >= 2 || activeIndex == 0) setActiveIndex(1);
-      else if (activeIndex == 1) setActiveIndex(0);
-    } else if (size == 0) {
-      if (activeIndex == 2) setActiveIndex(0);
-    }
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
   };
 
-  const handlePrev = (size) => {
-    setActiveIndex(activeIndex - 1);
-    if (size == 1) {
-      if (activeIndex == 0) setActiveIndex(1);
-      else if (activeIndex == 1) setActiveIndex(0);
-    } else if (size == 0) {
-      if (activeIndex == 0) setActiveIndex(2);
-    }
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + 3) % 3);
   };
 
-  function btn(size) {
+  function btn() {
     return (
-      <div className="flex flex-row items-center justify-center gap-2">
+      <div className="flex felx-row items-center justify-center gap-2 lg:hidden">
         <img
-          src="/home/arrowsRedL.png"
+          src="/home/arrowsRSL.png"
           alt="Descripción de la imagen"
           className="mt-4 mr-2 w-8"
-          onClick={() => handlePrev(size)}
+          onClick={() => handlePrev()}
         />
         <div
           className={`mt-4 p-3 rounded-full ${
-            activeIndex == 0 ? "bg-[#EA6B58]" : "bg-[#E1FAEE]"
+            activeIndex == 0 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
           }`}
         ></div>
         <div
           className={`mt-4 p-3 rounded-full ${
-            activeIndex == 1 ? "bg-[#EA6B58]" : "bg-[#E1FAEE]"
+            activeIndex == 1 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
           }`}
         ></div>
         <div
           className={`mt-4 p-3 rounded-full  ${
-            activeIndex == 2 ? "bg-[#EA6B58]" : "bg-[#E1FAEE]"
+            activeIndex == 2 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
           }`}
         ></div>
         <img
-          src="/home/arrowsRedR.png"
+          src="/home/arrowsRSR.png"
           alt="Descripción de la imagen"
           className="mt-4 ml-2 w-8"
-          onClick={() => handleNext(size)}
+          onClick={() => handleNext()}
         />
       </div>
     );
   }
 
+  /*  useEffect(() => {
+    //console.log(viewBotom);
+    console.log(videoMute);
+  }, [videoMute]); */
+
+  const togglePlayPause = () => {
+    const video = videoPlay.current;
+    setIsPlaying(!isPlaying);
+    if (isPlaying) {
+      video.pause(); // Pausa el video
+      setStateBotom(false);
+    } else {
+      video.play(); // Reproduce el video
+      setStateBotom(true);
+    }
+  };
+
+  const toggleMute = () => {
+    setVideoMute(!videoMute);
+  };
+
   function video() {
     return (
-      <video
-        src="/hero/video.mp4"
-        autoPlay={true}
-        loop
-        muted={true}
-        className="w-full h-full "
-      />
+      <div className="w-full h-full flex flex-row items-end">
+        <video
+          className="w-full h-full cursor-pointer"
+          autoPlay
+          loop
+          muted={videoMute}
+          ref={videoPlay}
+          onMouseOver={() => SetViewBotom(true)}
+        >
+          <source src={"/hero/video.mp4"} type="video/mp4" />
+          <track
+            // src="/path/to/captions.vtt"
+            kind="subtitles"
+            srcLang="en"
+            label="English"
+          />
+          Your browser does not support the video tag.
+        </video>
+        {viewBotom ? (
+          <div
+            className={`absolute w-full h-10 cursor-pointer mb-6 items-center`}
+          >
+            <div className="flex flex-row items-center justify-center  ">
+              <div
+                className={`cursor-pointer w-3/4 h-10 p-6 bg-[#031D35] rounded-md`}
+              >
+                <div className=" h-full" onClick={() => togglePlayPause()}>
+                  {stateBotom ? (
+                    <img src={"home/pause.svg"} className="w-5 h-auto -mt-4" />
+                  ) : (
+                    <img src={"home/play.svg"} className="w-8 h-auto -mt-4" />
+                  )}
+                </div>
+                <div className="relative h-full flex items-end justify-end mt-8">
+                  <img
+                    src={!videoMute ? "home/speaker.svg" : "home/mute.svg"}
+                    className={
+                      !videoMute ? "w-5 h-auto mr-4" : "w-8 h-auto mr-4"
+                    }
+                    onClick={() => toggleMute()}
+                  />
+                  {/* <img src={"home/play.svg"} className="w-8 h-auto" /> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
     );
   }
 
@@ -113,97 +172,154 @@ export default function WhatWeDo() {
         className="px-4 sm:px-6 lg:px-22 w-full h-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat"
         ref={ubiRef}
       >
-        <div className=" flex flex-col lg:flex-row ">
-          <motion.div
-            initial={{ opacity: 0, x: 0 }}
-            whileInView={{
-              opacity: 1,
-              x: 55,
-              transition: {
-                duration: 0.5,
-                delay: 1,
-              },
-            }}
-            className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
-          >
-            <div className="flex justify-center leading-7">
+        <div className="hidden lg:grid ">
+          <div className=" flex flex-col lg:flex-row ">
+            <motion.div
+              initial={{ opacity: 0, x: 0 }}
+              whileInView={{
+                opacity: 1,
+                x: 55,
+                transition: {
+                  duration: 0.5,
+                  delay: 1,
+                },
+              }}
+              className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
+            >
+              <div className="flex justify-center leading-7">
+                <img
+                  src="/home/blanco-12.svg"
+                  className="w-[200px] md:w-[250px] h-auto"
+                />
+              </div>
+              <div className="mt-12 flex justify-center">
+                <h1
+                  className={`text-white text-[100px] font-bold leading-21 font-itcGBold`}
+                >
+                  {data2[0].title}
+                </h1>
+              </div>
+              <div className="space-y-6 mt-12 text-justify ">
+                {data2[0].text}
+              </div>
+              <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
+                <div className="flex flex-row gap-8">
+                  <img src="/home/GFICON.png" className=" w-[140px]" />
+                  <img src="/home/MICICON.png" className=" w-[140px]" />
+                  <img src="/home/READYICON.png" className=" w-[140px]" />
+                </div>
+              </div>
+              <div className="flex items-end justify-end">
+                <button className="bg-[#B52C17] text-[20px] text-white px-6 mt-4 rounded-md">
+                  {data2[0].button}
+                </button>
+              </div>
+            </motion.div>
+            <div className="relative w-2/3 flex flex-col mt-12 ml-20">
+              <div className="">
+                <motion.img
+                  initial={{ opacity: 1, y: 160 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 10,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1,
+                    },
+                  }}
+                  src="/home/tajadaempaque.png"
+                  className="absolute w-[450px] h-[auto] -ml-14 z-10 "
+                />
+              </div>
+              <div>
+                <motion.img
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 10,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.2,
+                    },
+                  }}
+                  src="/home/patacones.png"
+                  className="absolute w-[450px] h-[auto] mt-42 ml-40 z-2"
+                />
+              </div>
+              <div>
+                <motion.img
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 80,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                  src="/home/papaCriolla.png"
+                  className="w-[350px] h-[auto] mt-70 ml-[24rem] "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:py-22 py-10 lg:hidden">
+          <div className="flex flex-col w-full h-full">
+            <div className="w-full h-fit flex items-center justify-center">
               <img
                 src="/home/blanco-12.svg"
                 className="w-[200px] md:w-[250px] h-auto"
               />
             </div>
-            <div className="mt-12 flex justify-center">
+            <div className="flex flex-col items-center h-fit w-full">
               <h1
-                className={`text-white text-[100px] font-bold leading-21 font-itcGBold`}
+                className={`text-white text-[32px] font-bold leading-21 font-itcGBold`}
+              >
+                {data2[0].title2}
+              </h1>
+              <h1
+                className={`text-white text-[80px] font-bold leading-21 font-itcGBold`}
               >
                 {data2[0].title}
               </h1>
             </div>
-            <div className="space-y-6 mt-12 text-justify ">{data2[0].text}</div>
-            <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
+            <div className="w-full h-fit flex text-base mt-4">
+              {data2[0].text}
+            </div>
+
+            <div className="relative w-full h-full flex flex-row gap-4">
+              <div className="">
+                <img
+                  src="/home/tajadaempaque.png"
+                  className="w-[450px] h-[400px] z-10 "
+                />
+              </div>
+             {/*  <div className="-ml-8">
+                <img
+                  src="/home/patacones.png"
+                  className="absolute w-[350px] h-[360px] ml-80 z-2"
+                />
+              </div>
+              <div className="ml-">
+                <img
+                  src="/home/papaCriolla.png"
+                  className="w-[350px] h-[400px] ml-[28rem] "
+                />
+              </div> */}
+            </div>
+            <div className="flex flex-row items-center justify-around mt-4">
               <div className="flex flex-row gap-8">
-                <img
-                  src="/home/GFICON.png"
-                  className="md:w-[156px] w-[120px]"
-                />
-                <img
-                  src="/home/MICICON.png"
-                  className="md:w-[156px] w-[120px]"
-                />
-              </div>
-              <div className="gap-8">
-                <img
-                  src="/home/READYICON.png"
-                  className="md:w-[156px] w-[120px]"
-                />
+                <img src="/home/GFICON.png" className=" w-[180px]" />
+                <img src="/home/MICICON.png" className=" w-[180px]" />
+                <img src="/home/READYICON.png" className=" w-[180px]" />
               </div>
             </div>
-          </motion.div>
-          <div className="w-2/3 flex flex-col mt-12 ml-20">
-            <div className="">
-              <motion.img
-                initial={{ opacity: 1, y: 160 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 10,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1,
-                  },
-                }}
-                src="/home/tajadaempaque.png"
-                className="w-[450px] h-[auto] -ml-14"
-              />
-            </div>
-            <div>
-              <motion.img
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 10,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.2,
-                  },
-                }}
-                src="/home/tajadaempaque.png"
-                className="w-[450px] h-[auto] -mt-52 ml-40"
-              />
-            </div>
-            <div>
-              <motion.img
-                initial={{ opacity: 0, x: -40 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 20,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.5,
-                  },
-                }}
-                src="/home/tajadaempaque.png"
-                className="w-[450px] h-[auto] -mt-52 ml-[24rem]"
-              />
+            <div className="flex items-center justify-center mt-4">
+              <button className="bg-[#B52C17] text-[30px] text-white px-6 mt-4 rounded-md">
+                {data2[0].button}
+              </button>
             </div>
           </div>
         </div>
@@ -211,45 +327,128 @@ export default function WhatWeDo() {
     );
   }
 
-  function last() {
+  function red() {
     return (
       <section className="px-4 sm:px-6 lg:px-22 w-full h-full bg-[url(/home/bg-red.png)] bg-cover bg-no-repeat">
-        <div className=" flex flex-col lg:flex-row ">
-          <div className="lg:w-3/5 w-full flex items-center justify-center">
-            <img src="/home/Frame171.png" className="w-[900px] h-[auto]" />
+        <div className="hidden lg:grid ">
+          <div className=" flex flex-col lg:flex-row ">
+            <div className="lg:w-3/5 w-full flex items-center justify-center">
+              <img src="/home/Frame171.png" className="w-[900px] h-[auto]" />
+            </div>
+            <div className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-22">
+              <div className="flex justify-end leading-7">
+                <img
+                  src="/home/aroBird.png"
+                  className="w-[200px] md:w-[250px] h-auto"
+                />
+              </div>
+              <div className="mt-6 flex justify-start">
+                <h1
+                  className={`text-white text-[82px] font-bold  leading-21 font-itcGBold`}
+                >
+                  {data[0].title}
+                </h1>
+              </div>
+              <div className="space-y-6 mt-12 text-justify ">
+                {data[0].text}
+              </div>
+              <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
+                <div className="flex flex-row gap-8">
+                  <img
+                    src="/home/GFICON.png"
+                    className="md:w-[156px] w-[120px]"
+                  />
+                  <img
+                    src="/home/MICICON.png"
+                    className="md:w-[156px] w-[120px]"
+                  />
+                </div>
+                <div className="gap-8">
+                  <img
+                    src="/home/READYICON.png"
+                    className="md:w-[156px] w-[120px]"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-22">
-            <div className="flex justify-end leading-7">
+        </div>
+
+        {/* Tabla */}
+        <div className="hidden md:grid lg:hidden py-22 mb-10 ">
+          <div className="flex flex-col w-full h-full">
+            <div className="flex flex-row">
+              <div className="w-1/5">
+                <img
+                  src="/home/aroBird.png"
+                  className="w-[200px] md:w-[250px] h-auto"
+                />
+              </div>
+              <div className="w-4/5 px-8">
+                <div className="flex flex-col">
+                  <div className="mt-6 flex justify-start">
+                    <h1
+                      className={`text-white text-[50px] font-bold  leading-21 font-itcGBold`}
+                    >
+                      {data[0].title}
+                    </h1>
+                  </div>
+                  <div className="space-y-6 mt-2 text-justify ">
+                    {data[0].text}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <img src="/home/Frame171.png" className="w-[900px] h-[auto]" />
+            </div>
+
+            <div className="flex flex-row items-center justify-center gap-8">
+              <img src="/home/GFICON.png" className="md:w-[156px] w-[120px]" />
+              <img src="/home/MICICON.png" className="md:w-[156px] w-[120px]" />
               <img
-                src="/home/aroBird.png"
-                className="w-[200px] md:w-[250px] h-auto"
+                src="/home/READYICON.png"
+                className="md:w-[156px] w-[120px]"
               />
             </div>
-            <div className="mt-6 flex justify-start">
-              <h1
-                className={`text-white text-[82px] font-bold  leading-21 font-itcGBold`}
-              >
-                {data[0].title}
-              </h1>
+          </div>
+        </div>
+
+        {/* Movil */}
+        <div className="block md:hidden py-10 mb-10 ">
+          <div className="flex flex-col w-full h-full">
+            <div className="flex flex-row items-center justify-center">
+              <div className="w-2/5 flex items-center justify-center">
+                <img
+                  src="/home/aroBird.png"
+                  className="w-[200px] md:w-[250px] h-auto"
+                />
+              </div>
+              <div className="w-3/5 flex items-center justify-center  ml-10">
+                <h1
+                  className={`text-white text-[50px] font-bold leading-16 font-itcGBold`}
+                >
+                  {data[0].title}
+                </h1>
+              </div>
             </div>
-            <div className="space-y-6 mt-12 text-justify ">{data[0].text}</div>
-            <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
-              <div className="flex flex-row gap-8">
-                <img
-                  src="/home/GFICON.png"
-                  className="md:w-[156px] w-[120px]"
-                />
-                <img
-                  src="/home/MICICON.png"
-                  className="md:w-[156px] w-[120px]"
-                />
+            <div className="flex flex-row items-center justify-center mt-8">
+              <div className="w-2/5">
+                <img src="/home/Frame171.png" className="w-full h-[220px]" />
               </div>
-              <div className="gap-8">
-                <img
-                  src="/home/READYICON.png"
-                  className="md:w-[156px] w-[120px]"
-                />
+              <div className="w-3/5 flex items-center justify-center  ml-10">
+                <div className="space-y-6 mt-2 text-pretty ">
+                  {data[0].text}
+                </div>
               </div>
+            </div>
+            <div className="flex flex-row items-center justify-center mt-8 gap-8">
+              <img src="/home/GFICON.png" className="md:w-[156px] w-[120px]" />
+              <img src="/home/MICICON.png" className="md:w-[156px] w-[120px]" />
+              <img
+                src="/home/READYICON.png"
+                className="md:w-[156px] w-[120px]"
+              />
             </div>
           </div>
         </div>
@@ -258,12 +457,37 @@ export default function WhatWeDo() {
   }
   return (
     <section className="h-full w-full">
-      <div className="relative w-full h-fit">
-        {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : last()}
+      <div className="w-full h-full flex flex-col">
+        <div className="hidden lg:grid">
+          <div className="flex">
+            <div className="absolute z-10 text-8xl ml-1 mt-[20rem]">
+              <img
+                src="/home/arrowsRSL.png"
+                alt="Descripción de la imagen"
+                className="mt-4 mr-2 w-8"
+                onClick={() => handlePrev()}
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-end ">
+            <div className="absolute z-10 text-8xl mr-1 mt-[44rem]">
+              <img
+                src="/home/arrowsRSR.png"
+                alt="Descripción de la imagen"
+                className="mt-4 mr-2 w-8"
+                onClick={() => handlePrev()}
+              />
+            </div>
+          </div>
+        </div>
+        {activeIndex == 0 ? video() : activeIndex == 1 ? red() : yellow()}
       </div>
-      <div className="py-16 px-6 sm:px-10 lg:px-20">
-        <div className="max-w-full mx-auto h-full w-full " id="wedo">
-          <div className="mb-12 -mt-12">{btn(0)}</div>
+      <div
+        className="py-16 px-4 sm:px-6 lg:px-20"
+        onMouseOver={() => SetViewBotom(false)}
+      >
+        <div className="max-w-7xl mx-auto h-full w-full " id="wedo">
+          <div className="mb-12 -mt-12">{btn()}</div>
           <div className="flex flex-col lg:flex-row ">
             <div className="relative flex items-center h-full w-full lg:w-1/3">
               {/* Imagen a la izquierda */}

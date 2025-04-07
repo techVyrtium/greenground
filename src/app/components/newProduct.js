@@ -66,12 +66,12 @@ export default function NewProduct() {
               <img
                 src="/home/sheetOrange.png"
                 alt="Descripción de la imagen"
-                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-142 lg:left-159 xl:left-45 -top-[50px] min-[600px]:left-112"
+                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-142 lg:left-159 xl:left-55 -top-[50px] min-[600px]:left-112"
 
               />
             </div>
           </div>
-          <div className="text-[16px] w-full">{data[0].text}</div>
+          <div className="text-[16px] w-full text-black">{data[0].text}</div>
           <div className="flex justify-end w-full">
             <button className="bg-[#F19412] text-[20px] text-white px-6 mt-4 rounded-md">
               {data[0].button}

@@ -58,7 +58,7 @@ export default function OurQuality() {
             </div>
 
             {/* Texto encima de la imagen */}
-            <div className="absolute left-16 md:top-[70px] top-[50px] text-left">
+            <div className="absolute left-16 md:top-[70px] top-[50px] text-left font-itcGBold">
               {data[0].title}
             </div>
           </div>
