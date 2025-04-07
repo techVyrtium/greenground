@@ -194,7 +194,7 @@ export default function WhatWeDo() {
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
-              <div className="mt-12 flex justify-center">
+              <div className="mt-12 flex justify-center" id="whatWeDo">
                 <h1
                   className={`text-white text-[100px] font-bold leading-21 font-itcGBold`}
                 >
