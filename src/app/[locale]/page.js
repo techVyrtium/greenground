@@ -5,14 +5,14 @@ import Experience from "../components/experience";
 import CaptureWorldOur from "../components/captureWorldOur";
 import NowNearYou from "../components/nowNearYou";
 import OurQuality from "../components/ourQuality";
-import OurCertifate from "../components/ourCertifate";
 import Blog from "../components/blog";
 import OurCommit from "../components/ourCommit";
 import OurCommitWomen from "../components/ourCommitWomen";
 import TopProduct from "../components/topProduct";
 import NewProduct from "../components/newProduct";
 import { ProductCategories } from "../components/productCategories";
-import { WorkerTestimonials } from "../components/workerTestimonials";
+// import { WorkerTestimonials } from "../components/workerTestimonials";
+import OurCertificate from "../components/ourCertificate";
 export default async function Home() {
   
   return (
@@ -30,11 +30,11 @@ export default async function Home() {
       <ProductCategories />
       <NowNearYou />
       <OurQuality />
-      <OurCertifate />
+      <OurCertificate />
       <Blog />
       <OurCommit />
       <OurCommitWomen />
-      <WorkerTestimonials />
+      {/* <WorkerTestimonials /> */}
     </div>
   );
 }

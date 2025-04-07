@@ -28,13 +28,6 @@
   --font-itcGBook: var(--font-itcBook);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background-image: url("/fondo.png");
   background-size: cover;

@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useModal } from "@/app/hooks/useModal";
 
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
-  
+  const { toggleModal } = useModal();
+
   // Variables para la duración de las animaciones
   const videoAnimationDuration = 0.5; // Duración en segundos
   const videoAnimationEase = "easeInOut"; // Tipo de transición
@@ -114,7 +116,7 @@ export default function CaptureWorldOur() {
               className="mt-4 mr-2"
               onClick={() => handlePrev()}
             />
-            <div className="flex felx-row gap-2">
+            <div className="flex flex-row gap-2">
               <div
                 className={`mt-4 p-1.5 rounded-full ${activeIndex == 0 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
                   }`}
@@ -147,8 +149,8 @@ export default function CaptureWorldOur() {
                 className="w-[70px] h-[90px] md:w-[60px] md:h-[80px] lg:w-[70px] lg:h-[90px]"
               />
             </div>
-            <div className="absolute left-12  top-[36px] w-full text-left md:left-10 lg:left-12">
-              <h2 className={`font-bold text-[#008638] mb-12 leading-[1]  font-itcGBold text-[23px] md:text-[32px] lg:text-[40px] xl:text-[48px] lg:leading-[0.8]`}>
+            <div className="absolute left-8 sm:left-12 top-[25px] sm:top-[36px] sm:w-full text-left md:left-10 lg:left-12 w-fit">
+              <h2 className={`font-bold text-[#008638] mb-12 leading-[1] font-itcGBold text-[23px] md:text-[32px] lg:text-[40px] xl:text-[48px] lg:leading-[0.8]`}>
                 {data[0].title}
               </h2>
             </div>
@@ -167,7 +169,7 @@ export default function CaptureWorldOur() {
                   {data[0].text2}
                 </div>
 
-                <button className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] text-white px-6 mt-4 rounded-md">
+                <button onClick={toggleModal} className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] text-white px-6 mt-4 rounded-md">
                   {data[0].button}
                 </button>
               </div>

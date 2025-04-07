@@ -101,7 +101,7 @@ export default function OurQuality() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 w-full flex md:ml-10">
+          <div className="lg:w-1/3 w-full flex md:ml-10 md:w-fit">
             <p className="text-lg text-[#4A4A4A] leading-relaxed mt-8 md:mt-32 text-justify">
               {data[0].text2}
             </p>

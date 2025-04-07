@@ -5,15 +5,13 @@ import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
-import ContactForm from "./modal/ContactForm";
+import { useModal } from "@/app/hooks/useModal";
+import { Siderbar } from "./sidebar";
 
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showModalContact, setShowModalContact] = useState(false);
-  const toggleModalContact = () => {
-    setShowModalContact((prev) => !prev);
-  };
+  const { toggleModal } = useModal();
   const { push, refresh } = useRouter();
   const t = useTranslations("topNav"); // Inicializar useTranslations
   const changeLanguage = (lang) => {
@@ -73,28 +71,34 @@ export default function TopNavHero({ locale }) {
         </div>
         <div className="flex items-center gap-4">
           <button
-            className="bg-orange-500 px-4 py-2 rounded cursor-pointer"
-            onClick={toggleModalContact}
+            className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block"
+            onClick={toggleModal}
           >
             {t("contact")} {/* Utilizando la traducción */}
           </button>
           <button
-            className="border px-4 py-2 rounded cursor-pointer"
+            className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
             onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
           >
             {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
           </button>
-          <button
-            className="lg:hidden cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <IoMdMenu size={24} />
-          </button>
+          <div>
+            <button
+              className="lg:hidden cursor-pointer z-30"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <IoMdMenu size={24} />
+            </button>
+            <Siderbar
+              menuOpen={menuOpen}
+              setMenuOpen={setMenuOpen}
+              t={t}
+              cantLinksProducts={CANT_LINKS_PRODUCTS}
+              locale={locale}
+            />
+          </div>
         </div>
       </nav>
-      {showModalContact && (
-        <ContactForm toggleModalContact={toggleModalContact} />
-      )}
     </div>
   );
 }

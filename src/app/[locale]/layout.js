@@ -9,6 +9,8 @@ import {
 } from "../styles/fonts";
 import Footer from "@/app/components/Footer";
 import TopNavHero from "../components/topNav";
+import ModalContainer from "@/app/components/modal/ModalContainer";
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "700"], // Puedes agregar más estilos
@@ -32,9 +34,10 @@ export default async function RootLayout({ children }) {
     >
       <body className="max-w-[1920px] mx-auto">
         <NextIntlClientProvider>
-          <TopNavHero locale={locale} />
-          {children}
-          <Footer />
+            <TopNavHero locale={locale} />
+            {children}
+            <Footer />
+            <ModalContainer />
         </NextIntlClientProvider>
       </body>
     </html>
