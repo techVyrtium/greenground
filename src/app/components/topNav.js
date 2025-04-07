@@ -89,12 +89,12 @@ export default function TopNavHero({ locale }) {
           >
             {t("contact")} {/* Utilizando la traducción */}
           </button>
-          {/* <button
+          <button
             className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
             onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
           >
             {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
-          </button> */}
+          </button>
           <div>
             <button
               className="lg:hidden cursor-pointer z-30"
