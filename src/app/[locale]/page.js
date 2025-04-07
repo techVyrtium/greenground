@@ -13,6 +13,7 @@ import NewProduct from "../components/newProduct";
 import { ProductCategories } from "../components/productCategories";
 // import { WorkerTestimonials } from "../components/workerTestimonials";
 import OurCertificate from "../components/ourCertificate";
+import MapW from "../components/map";
 export default async function Home() {
   
   return (

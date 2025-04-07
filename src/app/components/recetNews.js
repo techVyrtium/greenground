@@ -169,7 +169,7 @@ export default function RecetNews({ tipo = "recetas" }) {
           </button>
         </div>
       </div>
-      <div className="mt-4 flex w-full h-[40rem] items-center justify-center">
+      <div className={`mt-4 flex w-full ${isActive ? 'h-fit' : 'h-[40rem]'}  items-center justify-center`}>
         {isActive && (
           <motion.div
             initial={{ opacity: 0, y: 60 }}
