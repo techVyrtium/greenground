@@ -11,17 +11,19 @@ const TopProduct = () => {
 
   const t = useTranslations("products");
   const tag = "Top";
+  const tag2 = "Nuevo";
 
-  const products = Object.entries(t.raw("products"))
-    .map(([slug, product]) => ({
-      slug,
-      ...product,
-    }))
+  const products = Object.entries(t.raw("products")).map(([slug, product]) => ({
+    slug,
+    ...product,
+  }));
+  const productsTop = products
+    .filter(
+      (product) =>
+        product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
+    )
     .slice(0, 6);
-  const filteredProducts = products.filter(
-    (product) =>
-      product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
-  );
+
   const formatTitle = (str) =>
     str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   return (
@@ -47,7 +49,7 @@ const TopProduct = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 px-[48px] lg:px-[70px] 3xl:px-[96px]">
-          {products.map((product, index) => (
+          {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
