@@ -161,38 +161,39 @@ const ProductCategory = ({
   link,
 }) => {
   return (
-    <div
-      className={`group w-[354px] md:w-[21.875rem] max-w-full h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`}
+    <Link
+      className={
+        `group w-[354px] md:w-[21.875rem] max-w-full h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`
+      }
+      href={link}
     >
-      <Link href={link}>
-        <div className="lg:flex justify-end w-full absolute hidden">
-          <div
-            className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
-          ></div>
-        </div>
-        <h3
-          className={`text-[34px] lg:text-4xl font-bold flex flex-col lg:bg-transparent leading-7 ${
-            sup ? "pl-14 py-4" : "py-6"
+
+      <div className="lg:flex justify-end w-full absolute hidden">
+        <div
+          className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
+        ></div>
+      </div>
+      <h3
+        className={`text-[34px] lg:text-4xl font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? "pl-14 py-4" : "py-6"
           } px-4 w-full ${classNameTitle}`}
-        >
-          <div className="text-2xl md:text-3xl self-start">{sup}</div>
-          {title}
-        </h3>
-        {images.map(({ className, id, ...props }) => (
-          <Image
-            key={id}
-            {...props}
-            className={`absolute z-0 ${className} duration-150`}
-          />
-        ))}
+      >
+        <div className="text-2xl md:text-3xl self-start">{sup}</div>
+        {title}
+      </h3>
+      {images.map(({ className, id, ...props }) => (
         <Image
-          src={mainImage}
-          width={mainImageWidth}
-          height={mainImageHeight}
-          alt="main"
-          className={`absolute -z-10 lg:scale-0 duration-300 product-category-main-image ${classNameImage}`}
+          key={id}
+          {...props}
+          className={`absolute z-0 ${className} duration-150`}
         />
-      </Link>
-    </div>
+      ))}
+      <Image
+        src={mainImage}
+        width={mainImageWidth}
+        height={mainImageHeight}
+        alt="main"
+        className={`absolute -z-10 lg:scale-0 duration-300 product-category-main-image ${classNameImage}`}
+      />
+    </Link>
   );
 };
