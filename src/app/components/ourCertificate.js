@@ -30,7 +30,7 @@ export default function OurCertificate() {
   ];
 
   return (
-    <section className="w-full h-full px-4 sm:px-6 lg:px-20">
+    <section className="w-full h-full px-4 sm:px-6 lg:px-20 mt-10">
       <div className="lg:h-[10rem] max-w-7xl mx-auto">
 
         {/* Info Verde */}

@@ -14,7 +14,7 @@ export default function OurCommit() {
     },
   ];
   return (
-    <section className="mt-24 w-full h-full" id='ourcommit'>
+    <section className="mt-24 w-full h-full" id='ourCommit'>
       {/* Zona Orange */}
       <div className="h-[15rem] lg:h-[12rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
       <div className="px-4 sm:px-6 lg:px-20">

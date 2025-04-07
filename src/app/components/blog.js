@@ -47,7 +47,7 @@ export default function Blog() {
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-4 sm:px-6 lg:px-20 py-4 box-border">
           <div className="flex flex-col lg:flex-row lg:items-center gap-10 max-w-7xl mx-auto h-full">
-            <div className="relative flex items-center h-full ml-14 mt-8 lg:mt-0">
+            <div className="relative flex items-center h-full ml-14 mt-12">
               {/* Imagen a la izquierda */}
               <div className="absolute w-fit h-full -left-14 -top-10">
                 <img

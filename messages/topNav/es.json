@@ -7,22 +7,22 @@
       {
         "id": "all-products",
         "text": "Todos los productos",
-        "href": "#"
+        "href": "/products"
       },
       {
         "id": "frozen-products",
         "text": "Productos congelados",
-        "href": "#"
+        "href": "/products/category/congelados"
       },
       {
         "id": "groceries",
         "text": "Abarrotes",
-        "href": "#"
+        "href": "/products/category/abarrotes"
       },
       {
         "id": "household",
         "text": "Menaje",
-        "href": "#"
+        "href": "/products/category/menaje"
       }
     ]
   },

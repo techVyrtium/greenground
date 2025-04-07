@@ -7,8 +7,7 @@ export default function MapW() {
     <section className="w-full h-full mt-20 ">
         <Suspense fallback={<div>Loading...</div>}>
           <Spline
-          //scene="cxo_face.spline"
-            scene="https://prod.spline.design/LJYzeFf9FCVxgkFW/scene.splinecode"
+            scene="https://my.spline.design/maplocation-6600ef9f5bb652f87ee9228830dc1be3/"
             className="flex items-center justify-center"
           />
         </Suspense>
