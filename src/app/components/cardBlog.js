@@ -23,7 +23,7 @@ export default function CardBlog({ data, color }) {
             <div className="flex w-full h-fit">
               <Link href={`${/news/}${dato.id}`} className="w-full">
                 <button
-                  className={`mt-[16px] w-full text-center text-[#EFEBE7] ${
+                  className={`mt-[16px] w-full text-center text-[#EFEBE7] cursor-pointer ${
                     color
                       ? "bg-[#F19412] hover:bg-[#f19412e2]"
                       : "bg-[#EA6B58] hover:bg-[#B52C17]"

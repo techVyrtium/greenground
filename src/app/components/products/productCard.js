@@ -4,14 +4,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; // ✅ IMPORTANTE
 import "slick-carousel/slick/slick-theme.css";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, infinity = null }) => {
+  const hasMultipleImages = product.images.length > 1;
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: hasMultipleImages,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: hasMultipleImages,
+    autoplaySpeed: 3000,
     appendDots: (dots) => (
       <div className="absolute -bottom-8 w-full">
         <ul className="!m-0 !p-0 !static flex justify-center items-center">
@@ -37,6 +40,15 @@ const ProductCard = ({ product }) => {
           </div>
         ))}
       </Slider>
+      {!hasMultipleImages && (
+        <div className="relative py-2 w-full">
+          <ul className="flex justify-center items-center">
+            <li>
+              <div className=" bg-[#b52c17] rounded-full mx-1 w-4 h-4" />
+            </li>
+          </ul>
+        </div>
+      )}
 
       <div className="border border-[#008638] text-[#4A4A4A] text-[18px] 3xl:text-[24px] p-1 rounded-lg flex flex-col">
         <div className="min-h-[60px] flex items-center justify-center px-2 overflow-y-auto">

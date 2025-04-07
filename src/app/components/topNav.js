@@ -18,29 +18,33 @@ export default function TopNavHero({ locale }) {
   const changeLanguage = (lang) => {
     if (pathname.length === 3)
       router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
-    else
-      router.replace(`${pathname.replace(`/${locale}/`, `/${lang}/`)}`);
+    else router.replace(`${pathname.replace(`/${locale}/`, `/${lang}/`)}`);
   };
 
   return (
     <div className="w-full">
       <nav className="bg-[#008638] text-white flex justify-between items-center px-4 py-1 w-full">
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
+          <Link href="/">
+            <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
+          </Link>
           <ul className="hidden lg:flex gap-[1vw] text-2xl font-light">
             <li>
-              <Link href="#" className="hover:underline hover:font-bold">
+              <Link href="/" className="hover:underline hover:font-bold">
                 {t("home")}
               </Link>{" "}
               {/* Utilizando la traducción */}
             </li>
             <li>
-              <Link href="#" className="hover:underline hover:font-bold">
+              <Link
+                href="/#whatWeDo"
+                className="hover:underline hover:font-bold"
+              >
                 {t("whatWeDo")}
               </Link>{" "}
               {/* Utilizando la traducción */}
             </li>
-            <li>
+            <li className="z-50">
               <NavLinkMultiple
                 title={t("products.title")}
                 options={new Array(CANT_LINKS_PRODUCTS).fill(0).map((_, i) => {
@@ -53,19 +57,25 @@ export default function TopNavHero({ locale }) {
               />
             </li>
             <li>
-              <Link href="#" className="hover:underline hover:font-bold">
+              <Link
+                href="/#ourQuality"
+                className="hover:underline hover:font-bold"
+              >
                 {t("quality")}
               </Link>{" "}
               {/* Utilizando la traducción */}
             </li>
             <li>
-              <Link href="#" className="hover:underline hover:font-bold">
+              <Link
+                href="/#ourCommit"
+                className="hover:underline hover:font-bold"
+              >
                 {t("commitment")}
               </Link>{" "}
               {/* Utilizando la traducción */}
             </li>
             <li>
-              <Link href="#" className="hover:underline hover:font-bold">
+              <Link href="/#blog" className="hover:underline hover:font-bold">
                 {t("blog")}
               </Link>{" "}
               {/* Utilizando la traducción */}

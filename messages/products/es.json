@@ -6,7 +6,12 @@
       "category": "Congelados",
       "link": "products/tajadas-de-platano-maduro",
       "price": 0,
-      "images": [],
+      "tag": "Top",
+      "images": [
+        "/products/1.3 Tajada Madura Green Ground - Imagen Empaque.png",
+        "/products/tajadas maquila.png",
+        "/products/1.10 tajadas plato.png"
+      ],
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
     "platano-verde-toston": {
@@ -14,17 +19,27 @@
       "subcategory": "Latinos premium",
       "category": "Congelados",
       "link": "products/platano-verde-toston",
+      "tag": "Top",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/2.3 Toston Green Ground - Imagen Empaque.png",
+        "/products/tostones enpaque bandeja.png",
+        "/products/patacones servidos.png"
+      ],
       "description": "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos.  Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "ajiaco-precocido": {
       "title": "Ajiaco precocido",
       "subcategory": "Especialidades Latinas",
+      "tag": "Nuevo",
       "category": "Congelados",
       "link": "products/ajiaco-precocido",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/ajiaco-precocido.jpg",
+        "/products/3. ajiaco-bandeja-maquila.png",
+        "/products/3. ajiaco-bandeja (2).png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "arracacha": {
@@ -33,7 +48,10 @@
       "category": "Congelados",
       "link": "products/arracacha",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/arracacha.jpg",
+        "/products/3. ajiaco-bandeja-maquila.png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "choclo-entero": {
@@ -42,16 +60,23 @@
       "category": "Congelados",
       "link": "products/choclo-entero",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/choclo-entero-congelado.jpg",
+        "/products/choclo bandeja.png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "cubos-de-platano": {
       "title": "Cubos de platano",
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
+      "tag": "Nuevo",
       "link": "products/cubos-de-platano",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/cubos-platano-precocido.jpg",
+        "/products/Cubo de platano bandeja.png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "guacamole": {
@@ -60,7 +85,10 @@
       "category": "Congelados",
       "link": "products/guacamole",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/guacamole.jpg",
+        "/products/gucamole bandeja.png"
+      ],
       "description": "Pendiente"
     },
     "papa-criolla-precocida": {
@@ -68,8 +96,13 @@
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
       "link": "products/papa-criolla-precocida",
+      "tag": "Top",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/3.3 Papa Criolla Green Ground - Imagen Empaque.png",
+        "/products/papa criolla bandeja.png",
+        "/products/3.1 Papa Criolla Green Ground - Imagen Producto.png"
+      ],
       "description": "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "platano-entero-maduro": {
@@ -77,8 +110,13 @@
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
       "link": "products/platano-entero-maduro",
+      "tag": "Top",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/4.3 Entero Maduro Green Ground - Imagen Empaque.png",
+        "/products/platano maduro entero bandeja.png",
+        "/products/platano maduro servido.png"
+      ],
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
     "platano-entero-verde": {
@@ -86,8 +124,12 @@
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
       "link": "products/platano-entero-verde",
+      "tag": "Top",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/5.3 Entero Verde Crudo Green Ground - Imagen Empaque.png",
+        "/products/platano verde empaque.png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "sancocho-precocido": {
@@ -95,8 +137,13 @@
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
       "link": "products/sancocho-precocido",
+      "tag": "Nuevo",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/sancocho-.jpg",
+        "/products/sancocho empaque.png",
+        "/products/sancocho BANDEJA.png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "toston-hawaiano": {
@@ -113,8 +160,13 @@
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
       "link": "products/yuca-en-trozos",
+      "tag": "Top",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/Yuka frita frontal.png",
+        "/products/yuka fries empaque.png",
+        "/products/yuka fries bandeja.png"
+      ],
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "garrafa-azucarada-de-guanabana": {
@@ -123,7 +175,9 @@
       "category": "Congelados",
       "link": "products/garrafa-azucarada-de-guanabana",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/garrafa-azucarada-guanabana.jpg"
+      ],
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-mora": {
@@ -132,7 +186,9 @@
       "category": "Congelados",
       "link": "products/garrafa-azucarada-de-mora",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/garrafa-azucarada-mora.jpg"
+      ],
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-mango": {
@@ -141,7 +197,9 @@
       "category": "Congelados",
       "link": "products/garrafa-azucarada-de-mango",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/garrafa-azucarada-mango.jpg"
+      ],
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-guayaba": {
@@ -150,7 +208,9 @@
       "category": "Congelados",
       "link": "products/garrafa-azucarada-de-guayaba",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/garrafa-azucarada-guayaba.jpg"
+      ],
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-fresa": {
@@ -159,7 +219,9 @@
       "category": "Congelados",
       "link": "products/garrafa-azucarada-de-fresa",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/garrafa-azucarada-fresa.jpg"
+      ],
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "pulpa-de-mango": {
@@ -168,7 +230,9 @@
       "category": "Congelados",
       "link": "products/pulpa-de-mango",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/pulpa-mango.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-gunabana-en-mota": {
@@ -177,7 +241,9 @@
       "category": "Congelados",
       "link": "products/pulpa-de-gunabana-en-mota",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/mora-entera.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-maracuya-con-pepa": {
@@ -186,7 +252,9 @@
       "category": "Congelados",
       "link": "products/pulpa-de-maracuya-con-pepa",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/mora-entera.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "mora-entera": {
@@ -195,7 +263,9 @@
       "category": "Congelados",
       "link": "products/mora-entera",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/mora-entera.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "lulo-naranjillo-entero": {
@@ -204,7 +274,9 @@
       "category": "Congelados",
       "link": "products/lulo-naranjillo-entero",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/lulo-entero.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "tomate-de-arbol-entero": {
@@ -213,7 +285,9 @@
       "category": "Congelados",
       "link": "products/tomate-de-arbol-entero",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/tomate-arbol-entero.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "coco-rallado": {
@@ -222,7 +296,9 @@
       "category": "Congelados",
       "link": "products/coco-rallado",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/coco-rallado.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-papaya": {
@@ -231,7 +307,9 @@
       "category": "Congelados",
       "link": "products/pulpa-de-papaya",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/pulpa-papaya.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-tamarindo": {
@@ -240,7 +318,9 @@
       "category": "Congelados",
       "link": "products/pulpa-de-tamarindo",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/pulpa-tamarindo.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "piña-en-trozos": {
@@ -249,7 +329,9 @@
       "category": "Congelados",
       "link": "products/piña-en-trozos",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/piña-en-trozos.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "guayaba-en-trozos": {
@@ -258,7 +340,9 @@
       "category": "Congelados",
       "link": "products/guayaba-en-trozos",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/guayaba-en-trozos.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-curuba": {
@@ -267,7 +351,9 @@
       "category": "Congelados",
       "link": "products/pulpa-de-curuba",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/curuba-en-trozos.jpg"
+      ],
       "description": "Presentación 500gr – Caja * 24"
     },
     "pandebono-granel": {
@@ -1168,6 +1254,18 @@
       "link": "products/natuchips-yuca",
       "price": 0,
       "images": [],
+      "description": "Pendiente"
+    },
+    "maduritos": {
+      "title": "Maduritos",
+      "subcategory": "Especialidades Latinas",
+      "category": "Congelados",
+      "link": "products/maduritos-platanitos-yuquitas",
+      "tag": "Nuevo",
+      "price": 0,
+      "images": [
+        "/products/maduritos empaque.png"
+      ],
       "description": "Pendiente"
     },
     "maduritos-platanitos-yuquitas": {

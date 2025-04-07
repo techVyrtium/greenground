@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { motion, useInView, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl"; // Importar useTranslations
+import Yellowmd from "./yellowmd";
+import Link from "next/link";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,7 +37,7 @@ export default function WhatWeDo() {
       title2: "Tradición en cada",
       text: (
         <>
-          <p className="lg:text-[30px] md:text-[50px] text-[24px] text-white ">
+          <p className="lg:text-[30px] md:text-[24px] text-[24px] text-white ">
             Conoce nuestros productos{" "}
             <span className=" font-bold">
               orgánicos, sin etiquetas de excesos{" "}
@@ -210,9 +212,11 @@ export default function WhatWeDo() {
                 </div>
               </div>
               <div className="flex items-end justify-end">
-                <button className="bg-[#B52C17] text-[20px] text-white px-6 mt-4 rounded-md">
-                  {data2[0].button}
-                </button>
+                <Link href={"/products"}>
+                  <button className="bg-[#B52C17] text-[20px] text-white px-6 mt-4 rounded-md cursor-pointer">
+                    {data2[0].button}
+                  </button>
+                </Link>
               </div>
             </motion.div>
             <div className="relative w-2/3 flex flex-col mt-12 ml-20">
@@ -227,7 +231,7 @@ export default function WhatWeDo() {
                       delay: 1,
                     },
                   }}
-                  src="/home/tajadaempaque.png"
+                  src="/home/homeYellow1.png"
                   className="absolute w-[450px] h-[auto] -ml-14 z-10 "
                 />
               </div>
@@ -265,7 +269,13 @@ export default function WhatWeDo() {
           </div>
         </div>
 
-        <div className="md:py-22 py-10 lg:hidden">
+        {/* Tabla */}
+        <div className="hidden md:grid lg:hidden py-22 mb-10">
+          <Yellowmd />
+        </div>
+
+        {/*Movil */}
+        <div className="block md:hidden py-10 mb-10 ">
           <div className="flex flex-col w-full h-full">
             <div className="w-full h-fit flex items-center justify-center">
               <img
@@ -291,35 +301,22 @@ export default function WhatWeDo() {
 
             <div className="relative w-full h-full flex flex-row gap-4">
               <div className="">
-                <img
-                  src="/home/tajadaempaque.png"
-                  className="w-[450px] h-[400px] z-10 "
-                />
+                <img src="/home/tajadaempaque.png" className="w-full h-full" />
               </div>
-             {/*  <div className="-ml-8">
-                <img
-                  src="/home/patacones.png"
-                  className="absolute w-[350px] h-[360px] ml-80 z-2"
-                />
-              </div>
-              <div className="ml-">
-                <img
-                  src="/home/papaCriolla.png"
-                  className="w-[350px] h-[400px] ml-[28rem] "
-                />
-              </div> */}
             </div>
             <div className="flex flex-row items-center justify-around mt-4">
-              <div className="flex flex-row gap-8">
-                <img src="/home/GFICON.png" className=" w-[180px]" />
-                <img src="/home/MICICON.png" className=" w-[180px]" />
-                <img src="/home/READYICON.png" className=" w-[180px]" />
+              <div className="flex flex-row items-center justify-center mt-8 gap-8">
+                <img src="/home/GFICON.png" className="w-[95px]" />
+                <img src="/home/MICICON.png" className="w-[95px]" />
+                <img src="/home/READYICON.png" className="w-[95px]" />
               </div>
             </div>
             <div className="flex items-center justify-center mt-4">
-              <button className="bg-[#B52C17] text-[30px] text-white px-6 mt-4 rounded-md">
-                {data2[0].button}
-              </button>
+              <Link href={"/products"}>
+                <button className="bg-[#B52C17] text-[20px] text-white px-6 mt-4 rounded-md cursor-pointer">
+                  {data2[0].button}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -417,46 +414,36 @@ export default function WhatWeDo() {
         {/* Movil */}
         <div className="block md:hidden py-10 mb-10 ">
           <div className="flex flex-col w-full h-full">
-            <div className="flex flex-row items-center justify-center">
-              <div className="w-2/5 flex items-center justify-center">
-                <img
-                  src="/home/aroBird.png"
-                  className="w-[200px] md:w-[250px] h-auto"
-                />
-              </div>
-              <div className="w-3/5 flex items-center justify-center  ml-10">
-                <h1
-                  className={`text-white text-[50px] font-bold leading-16 font-itcGBold`}
-                >
-                  {data[0].title}
-                </h1>
-              </div>
-            </div>
-            <div className="flex flex-row items-center justify-center mt-8">
-              <div className="w-2/5">
-                <img src="/home/Frame171.png" className="w-full h-[220px]" />
-              </div>
-              <div className="w-3/5 flex items-center justify-center  ml-10">
-                <div className="space-y-6 mt-2 text-pretty ">
-                  {data[0].text}
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row items-center justify-center mt-8 gap-8">
-              <img src="/home/GFICON.png" className="md:w-[156px] w-[120px]" />
-              <img src="/home/MICICON.png" className="md:w-[156px] w-[120px]" />
+            <div className="w-full flex items-center justify-center">
               <img
-                src="/home/READYICON.png"
-                className="md:w-[156px] w-[120px]"
+                src="/home/aroBird.png"
+                className="w-[200px] md:w-[250px] h-auto"
               />
+            </div>
+            <div className="w-full flex items-center justify-center">
+              <img src="/home/Frame171.png" className="w-full h-full" />
+            </div>
+            <div className="w-full flex items-center justify-center">
+              <h1
+                className={`text-white text-6xl font-bold leading-16 font-itcGBold`}
+              >
+                {data[0].title}
+              </h1>
+            </div>
+            <div className="space-y-6 mt-2 text-pretty ">{data[0].text}</div>
+            <div className="flex flex-row items-center justify-center mt-8 gap-8">
+              <img src="/home/GFICON.png" className="w-[95px]" />
+              <img src="/home/MICICON.png" className="w-[95px]" />
+              <img src="/home/READYICON.png" className="w-[95px]" />
             </div>
           </div>
         </div>
       </section>
     );
   }
+
   return (
-    <section className="h-full w-full">
+    <section className="h-full w-full" >
       <div className="w-full h-full flex flex-col">
         <div className="hidden lg:grid">
           <div className="flex">
@@ -486,7 +473,7 @@ export default function WhatWeDo() {
         className="py-16 px-4 sm:px-6 lg:px-20"
         onMouseOver={() => SetViewBotom(false)}
       >
-        <div className="max-w-7xl mx-auto h-full w-full " id="wedo">
+        <div className="max-w-7xl mx-auto h-full w-full " id="whatWeDo">
           <div className="mb-12 -mt-12">{btn()}</div>
           <div className="flex flex-col lg:flex-row ">
             <div className="relative flex items-center h-full w-full lg:w-1/3">
