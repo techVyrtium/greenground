@@ -12,6 +12,8 @@ const ProductCard = ({ product }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     appendDots: (dots) => (
       <div className="absolute -bottom-8 w-full">
         <ul className="!m-0 !p-0 !static flex justify-center items-center">
