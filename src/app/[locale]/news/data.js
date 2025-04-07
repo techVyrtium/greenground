@@ -469,11 +469,11 @@ const Data = () => {
     },
 
     {
-      id: "toston-pisado",
-      title: "Tostón pisado.",
+      id: "yuca",
+      title: "Cremoso Puré de Yuca y Queso Doble.",
       tipo: "recetas",
       description:
-        "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
+        "Prepara un puré de yuca y doble queso súper cremoso con Yuca Green Ground. Receta paso a paso y lista en minutos.",
       img: "/news/recetatostone.svg",
       btn: "Consulta receta",
       section: (
@@ -484,10 +484,13 @@ const Data = () => {
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
               <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
-                Receta Patacón Pisao con hogao
+                Aborrajados de plátano maduro con queso: receta fácil y rápida
               </p>
-              <p className="mb-6 text-[22px] mt-4 text-[#008638]">
-                Articulo publicado en revista semana
+              <p className="mb-2 text-[22px] mt-4 text-[#008638]">
+                Porciones: 4-6
+              </p>
+              <p className="mb-5 text-[22px] mt-4 text-[#008638]">
+                Tiempo de preparación: 45-55 minutos.
               </p>
               <div className=" bg-[#008E4A] w-full rounded-md">
                 <p className="mb-4 text-[17px] mt-2 ml-2 text-white">
@@ -495,119 +498,106 @@ const Data = () => {
                 </p>
                 <ol className=" list-disc ml-8 text-[17px] text-white">
                   <li className="list-disc  ">
-                    1 paquete de 300 gr de taJadas de platano GREEN GROUND
+                    1 kg de{" "}
+                    <span className="font-semibold">
+                      Yuca en Trozos Green Ground
+                    </span>
                   </li>
-                  <li className="">2 a 3 tazas aceite vegetal</li>
-                  <li className="">
-                    1 cucharadita sal, para espolvorear sobre los patacones
-                  </li>
-                  <li className="list-disc  ">La Salsa Hogao</li>
-                  <li className="">4 a 5 Tomates Roma</li>
-                  <li className="">
-                    1 pequeña pimiento rojo, finamente picado
-                  </li>
+                  <li className="">2 dientes de ajo, pelados</li>
+                  <li className="">Sal, al gusto</li>
                   <li className="list-disc  ">
-                    3 a 4 cebolletas, las secciones superiores picadas
+                    Pimienta negra molida, al gusto (opcional)
                   </li>
-                  <li className="">1 cebolla blanca, grande, picada</li>
-                  <li className="">4 clavos de olor ajo picado</li>
-                  <li className=" list-disc  ">2 cucharada aceite de oliva</li>
-                  <li className="">1⁄2 cucharadita sal, o al gusto</li>
-                  <li className="">1⁄4 taza cilantro fresco, picado</li>
+                  <li className="">2 cucharadas de mantequilla sin sal</li>
+                  <li className="">½ taza de leche entera tibia </li>
+                  <li className="list-disc  ">
+                    1 taza de{" "}
+                    <span className="font-semibold">queso mozzarella</span>{" "}
+                    rallado
+                  </li>
+                  <li className="">
+                    ½ taza de{" "}
+                    <span className="font-semibold">queso costeño</span> bajo en
+                    sal, desmenuzado 2 cucharadas de{" "}
+                    <span className="font-semibold">queso crema</span>
+                  </li>
+                  <li className="">Suero costeño al gusto</li>
+                  <li className="list-disc  ">
+                    Hojitas frescas de cilantro o cebollín picado, para decorar
+                    (opcional).
+                  </li>
                 </ol>
               </div>
             </div>
           </div>
-          <p className="mb-4 text-[32px] mt-4 text-[#008638]">Preparación:</p>
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+            Esta receta realza el sabor natural de la{" "}
+            <span className="font-semibold">yuca</span> combinándola con la
+            textura fundente de la mozzarella, el toque sabroso del queso
+            costeño y la cremosidad del queso crema, creando un puré
+            irresistible y perfecto para acompañar una gran variedad de platos.
+          </p>
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+            La presentación de{" "}
+            <span className="font-semibold">Yuca en Trozos Green Ground</span>{" "}
+            facilita la preparación al venir ya cortada, ahorrándote tiempo en
+            la cocina.
+          </p>
           <p className="mb-4 text-[32px] mt-4 text-[#008638]">
-            Preparemos la Salsa de Hogao
+            Pasos para la Preparación:
           </p>
           <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
             <li className="mb-4   ">
-              Retire las semillas y las membranas interiores de los tomates.
-              Dados los tomates.
+              Coloca la{" "}
+              <span className="font-semibold">Yuca en Trozos Green Ground</span>{" "}
+              y los dientes de ajo en una olla grande. Cubre con suficiente agua
+              fría y agrega sal al gusto. Lleva a ebullición a fuego alto. Una
+              vez que hierva, reduce el fuego a medio y cocina hasta que la yuca
+              esté extremadamente suave y se pueda perforar fácilmente con un
+              tenedor, aproximadamente durante 30-40 minutos.
             </li>
             <li className="mb-4  ">
-              Despepitar, desmembrar y picar finamente el pimiento rojo.
-            </li>
-            <li className="mb-4   ">Pelar y picar la cebolla.</li>
-            <li className="mb-4  ">
-              En una sartén, caliente el aceite de oliva a fuego medio-bajo.
-              Agregue los tomates, la cebolla, el pimiento rojo, las cebolletas,
-              el ajo y la sal. Cocine a fuego lento durante 5 minutos a fuego
-              medio.
+              Mientras la yuca se cocina, calienta la leche entera en una
+              cacerola pequeña a fuego medio hasta que esté tibia. Reserva. Ten
+              listos los <span className="font-semibold">quesos</span>. rallados, desmenuzados y el <span className="font-semibold">queso crema</span>. Si
+              deseas usar suero costeño, tenlo a mano.
             </li>
             <li className="mb-4   ">
-              Baja el fuego, tapa y cocina a fuego lento durante 15 minutos,
-              revolviendo regularmente, para asegurarte de que las verduras no
-              se peguen a la sartén.
+            Una vez que la yuca esté cocida, escúrrela bien, reservando aproximadamente 1 taza del agua de cocción. Pasa la yuca y el ajo por un prensapapas o tritúralos con un tenedor en un tazón grande hasta obtener un puré sin grumos. Asegúrate de retirar cualquier hebra fibrosa que pueda haber en el centro de algunos trozos.
             </li>
             <li className="mb-4  ">
-              Destape, revuelva y saltee durante los últimos 5 minutos, sin
-              tapar. Pruebe y ajuste la sal, según sea necesario. Añadir un
-              chorrito final de aceite de oliva. Reserva mientras fríes los
-              patacones.
+            Vuelve a colocar el puré de yuca en la olla a fuego muy bajo. Agrega la mantequilla y la leche tibia, revolviendo constantemente con una cuchara de madera hasta que se integren por completo y el puré esté suave y cremoso. Si es necesario, agrega un poco del agua de cocción reservada para ajustar la consistencia.
             </li>
-            <p className="mb-4 text-[32px] -ml-8 text-[#008638]">
-              Es hora de freír los tostones
-            </p>
             <li className="mb-4   ">
-              En una sartén grande sobre un fuego medio-alto, agregue el aceite
-              vegetal y caliente a unos 350°.
+            Incorpora el queso mozzarella rallado y el queso costeño desmenuzado al puré caliente. Sigue revolviendo suavemente hasta que ambos quesos se derritan por completo y se integren de manera homogénea en el puré, creando una textura aún más cremosa y un sabor delicioso y equilibrado entre la suavidad y el toque costeño.
+            </li>
+            <li className="mb-4   ">
+            Agrega las cucharadas de queso crema al puré y revuelve hasta que se disuelva completamente, aportando una cremosidad extra y un ligero contraste de sabor. Si lo deseas, añade suero costeño al gusto para una consistencia más ligera y un sabor tradicional. Prueba el puré y ajusta la sal y la pimienta si es necesario.            </li>
+            <li className="mb-4  ">
+            Sirve el puré de yuca y doble queso caliente, adornado con hojitas frescas de cilantro o cebollín picado, si lo deseas. Disfruta de este plato colombiano y lleno de sabor!            </li>
+          </ol>
+          <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+            <li className="mb-4   ">
+            Sofreír ligeramente el ajo en la mantequilla antes de incorporarlo al puré le dará un toque aromático y un sabor más profundo que complementa muy bien la dulzura de la yuca y la riqueza de los quesos.
             </li>
             <li className="mb-4  ">
-              Pele y corte los plátanos verdes en rodajas gruesas, de una
-              pulgada de ancho cada una.
+            No dudes en usar una combinación de queso mozzarella rallado para un fundido suave y queso costeño desmenuzado para un sabor más pronunciado y pequeños "bocados" de queso que enriquecen la textura del puré.
             </li>
             <li className="mb-4   ">
-              Agregue las rodajas de plátano macho al aceite caliente en tandas
-              para que no se toquen. Después de unos 2 minutos, dales la vuelta
-              y fríe el otro lado durante 1 o 2 minutos.
-            </li>
-            <li className="mb-4  ">
-              Cuando ambos lados estén ligeramente dorados, saque los plátanos
-              con una espumadera.
-            </li>
-
-            <li className="mb-4   ">
-              Coloque los platanos en un plato forrado con toallas de papel para
-              drenar el exceso de aceite. Déjalos reposar durante varios minutos
-              para que se enfríen un poco antes de aplanarlos.
-            </li>
-            <li className="mb-4  ">
-              Coloque un trozo de papel pergamino o una envoltura de plástico en
-              su prensa de plátano, prensa de tortillas o una sartén redonda
-              pesada o una lata ancha. Presione cada plátano, uno a la vez, de
-              modo que cada uno tenga aproximadamente ¼ de pulgada de grosor.
-            </li>
-            <li className="mb-4   ">
-              Una vez que todos los Platanos estén prensados, regréselos en
-              tandas al aceite caliente para su segunda fritura. Esta vez, deja
-              cada plátano por solo 30 segundos a 1 minuto por lado.{" "}
-            </li>
-            <li className="mb-4  ">
-              Saque del aceite caliente y de nuevo descanse en un plato forrado
-              con toallas de papel para drenar el exceso de aceite.{" "}
-            </li>
-            <li className="mb-4   ">
-              Espolvorear con sal. Agrega una cucharada de salsa hogao sobre
-              cada patacón. Adorne con cilantro picado y una última pizca de
-              sal. Sírvalas rápidamente, mientras aún están calientes.{" "}
+            Si buscas un sabor más tradicional y una textura ligeramente más ligera, el suero costeño añadido al final puede marcar la diferencia. Sin embargo, úsalo con moderación para no opacar el sabor de los quesos.
             </li>
           </ol>
-          <p className="mb-4 text-[32px] text-[#008638]">
-            Notas de preparación
-          </p>
           <div className="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#ECEBEB] rounded-md p-4">
             <div className="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
-                Los tomates Roma son ideales para el hogao. De color rojo
-                brillante, sabroso y firme, resisten cuando se cocinan a fuego
-                lento durante media hora con ajo, cebolla y cebollín y producen
-                una dulzura rica en especias.
+                Con nuestros productos queremos compartir la tradición culinaria
+                latinoamericana con{" "}
+                <span className="font-semibold">alimentos congelados</span>{" "}
+                listos para consumir.
               </p>
             </div>
           </div>
@@ -617,10 +607,11 @@ const Data = () => {
             </div>
             <div className="">
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
-                Alternativamente, muchas recetas para la salsa hogao requieren
-                marcar los tomates (cortar una X delgada en la parte inferior),
-                hervir durante aproximadamente 1 minuto y luego pelarlos antes
-                de saltearlos. Muy delicioso.{" "}
+                Te ha gustado esta receta de{" "}
+                <span className="font-semibold">puré de yuca con queso</span>?
+                Descubre más recetas deliciosas con {" "}
+                <span className="font-semibold">yuca en trozos Green Ground</span> en nuestra
+                página web y sorprende a todos con tus habilidades culinarias!
               </p>
             </div>
           </div>
@@ -629,11 +620,11 @@ const Data = () => {
     },
 
     {
-      id: "papas-saladas",
-      title: "Papas saladas.",
+      id: "papa-criolla",
+      title: "Papa criolla.",
       tipo: "recetas",
       description:
-        "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
+        "Prueba lo fácil que es cocinar una Papa Criolla Crocante Salteada con Mantequilla y Romero deliciosa con la Papa Criolla Precocida de Green Ground.",
       img: "/news/exportarTram.svg",
       btn: "Consulta receta",
       section: (
@@ -644,10 +635,13 @@ const Data = () => {
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
               <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
-                Receta Patacón Pisao con hogao
+                Papa Criolla Crocante Salteada con Mantequilla y Romero
               </p>
-              <p className="mb-6 text-[22px] mt-4 text-[#008638]">
-                Articulo publicado en revista semana
+              <p className="mb-2 text-[22px] mt-4 text-[#008638]">
+                Porciones: 2-3
+              </p>
+              <p className="mb-5 text-[22px] mt-4 text-[#008638]">
+                Tiempo de preparación: 25 minutos
               </p>
               <div className=" bg-[#008E4A] w-full rounded-md">
                 <p className="mb-4 text-[17px] mt-2 ml-2 text-white">
@@ -655,119 +649,106 @@ const Data = () => {
                 </p>
                 <ol className=" list-disc ml-8 text-[17px] text-white">
                   <li className="list-disc  ">
-                    1 paquete de 300 gr de taJadas de platano GREEN GROUND
+                    ½ kg de{" "}
+                    <span className="font-semibold">
+                      Papa Criolla Precocida de Green Ground
+                    </span>
                   </li>
-                  <li className="">2 a 3 tazas aceite vegetal</li>
                   <li className="">
-                    1 cucharadita sal, para espolvorear sobre los patacones
+                    50 g de <span className="font-semibold">mantequilla</span>
                   </li>
-                  <li className="list-disc  ">La Salsa Hogao</li>
-                  <li className="">4 a 5 Tomates Roma</li>
-                  <li className="">
-                    1 pequeña pimiento rojo, finamente picado
-                  </li>
+                  <li className="">50 ml de aceite de oliva</li>
                   <li className="list-disc  ">
-                    3 a 4 cebolletas, las secciones superiores picadas
+                    2 ramitas de romero fresco (o 1 cucharadita de romero seco)
                   </li>
-                  <li className="">1 cebolla blanca, grande, picada</li>
-                  <li className="">4 clavos de olor ajo picado</li>
-                  <li className=" list-disc  ">2 cucharada aceite de oliva</li>
-                  <li className="">1⁄2 cucharadita sal, o al gusto</li>
-                  <li className="">1⁄4 taza cilantro fresco, picado</li>
+                  <li className="">Ajo en polvo al gusto (opcional)</li>
+                  <li className="">Jugo de ½ limón fresco</li>
+                  <li className="list-disc  ">Sal al gusto</li>
                 </ol>
               </div>
             </div>
           </div>
-          <p className="mb-4 text-[32px] mt-4 text-[#008638]">Preparación:</p>
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+            La <span className="font-semibold">papa criolla </span>
+            es un producto único de Colombia considerado como alimento exótico y
+            gourmet para el mundo. Sus cualidades culinarias y características
+            le permiten ser el acompañamiento perfecto para cualquier plato y
+            ocasión.
+          </p>
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+            Explora una receta sencilla y deliciosa que realza el sabor único de
+            nuestra{" "}
+            <span className="font-semibold">
+              Papa Criolla Precocida de Green Ground
+            </span>{" "}
+            , perfecta como acompañamiento para cualquier plato fuerte; esta
+            preparación te conquistará con su crocancia y aroma irresistible.
+          </p>
           <p className="mb-4 text-[32px] mt-4 text-[#008638]">
-            Preparemos la Salsa de Hogao
+            Pasos para la Preparación:
           </p>
           <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
             <li className="mb-4   ">
-              Retire las semillas y las membranas interiores de los tomates.
-              Dados los tomates.
+              Nuestra{" "}
+              <span className="font-semibold">
+                Papa Criolla Precocida Green Ground{" "}
+              </span>
+              ya está lista para cocinar en cuestión de minutos. Puedes usarlas
+              enteras si son pequeñas o cortarlas por la mitad para una mayor
+              superficie de dorado y un extra de crocancia.
             </li>
             <li className="mb-4  ">
-              Despepitar, desmembrar y picar finamente el pimiento rojo.
-            </li>
-            <li className="mb-4   ">Pelar y picar la cebolla.</li>
-            <li className="mb-4  ">
-              En una sartén, caliente el aceite de oliva a fuego medio-bajo.
-              Agregue los tomates, la cebolla, el pimiento rojo, las cebolletas,
-              el ajo y la sal. Cocine a fuego lento durante 5 minutos a fuego
-              medio.
+              En una sartén grande a fuego medio-bajo, derrite la mantequilla
+              con el aceite de oliva. Agrega las ramitas de romero (o el romero
+              seco) y el ajo en polvo (si lo usas). Cocina por un minuto para
+              que los aromas se liberen.
             </li>
             <li className="mb-4   ">
-              Baja el fuego, tapa y cocina a fuego lento durante 15 minutos,
-              revolviendo regularmente, para asegurarte de que las verduras no
-              se peguen a la sartén.
+              Incorpora la{" "}
+              <span className="font-semibold">
+                Papa Criolla Precocida de Green Ground
+              </span>{" "}
+              a la sartén. Sazona con sal al gusto. Cocina, removiendo
+              suavemente de vez en cuando, hasta que las papas estén doradas y
+              ligeramente crocantes por todos lados, aproximadamente durante
+              10-15 minutos. El fuego bajo permitirá que se doren sin quemarse.
             </li>
             <li className="mb-4  ">
-              Destape, revuelva y saltee durante los últimos 5 minutos, sin
-              tapar. Pruebe y ajuste la sal, según sea necesario. Añadir un
-              chorrito final de aceite de oliva. Reserva mientras fríes los
-              patacones.
-            </li>
-            <p className="mb-4 text-[32px] -ml-8 text-[#008638]">
-              Es hora de freír los tostones
-            </p>
-            <li className="mb-4   ">
-              En una sartén grande sobre un fuego medio-alto, agregue el aceite
-              vegetal y caliente a unos 350°.
-            </li>
-            <li className="mb-4  ">
-              Pele y corte los plátanos verdes en rodajas gruesas, de una
-              pulgada de ancho cada una.
+              Una vez que las papas tengan el dorado deseado, retira las ramitas
+              de romero (si usaste frescas) y exprime el jugo de limón sobre las
+              papas. Deja que el jugo se evapore por un minuto, removiendo para
+              que se impregnen todos los sabores.
             </li>
             <li className="mb-4   ">
-              Agregue las rodajas de plátano macho al aceite caliente en tandas
-              para que no se toquen. Después de unos 2 minutos, dales la vuelta
-              y fríe el otro lado durante 1 o 2 minutos.
-            </li>
-            <li className="mb-4  ">
-              Cuando ambos lados estén ligeramente dorados, saque los plátanos
-              con una espumadera.
-            </li>
-
-            <li className="mb-4   ">
-              Coloque los platanos en un plato forrado con toallas de papel para
-              drenar el exceso de aceite. Déjalos reposar durante varios minutos
-              para que se enfríen un poco antes de aplanarlos.
-            </li>
-            <li className="mb-4  ">
-              Coloque un trozo de papel pergamino o una envoltura de plástico en
-              su prensa de plátano, prensa de tortillas o una sartén redonda
-              pesada o una lata ancha. Presione cada plátano, uno a la vez, de
-              modo que cada uno tenga aproximadamente ¼ de pulgada de grosor.
-            </li>
-            <li className="mb-4   ">
-              Una vez que todos los Platanos estén prensados, regréselos en
-              tandas al aceite caliente para su segunda fritura. Esta vez, deja
-              cada plátano por solo 30 segundos a 1 minuto por lado.{" "}
-            </li>
-            <li className="mb-4  ">
-              Saque del aceite caliente y de nuevo descanse en un plato forrado
-              con toallas de papel para drenar el exceso de aceite.{" "}
-            </li>
-            <li className="mb-4   ">
-              Espolvorear con sal. Agrega una cucharada de salsa hogao sobre
-              cada patacón. Adorne con cilantro picado y una última pizca de
-              sal. Sírvalas rápidamente, mientras aún están calientes.{" "}
+              Prueba las papas y ajusta la sal si es necesario. Sirve
+              inmediatamente como la guarnición estrella de tu plato fuerte.
             </li>
           </ol>
-          <p className="mb-4 text-[32px] text-[#008638]">
-            Notas de preparación
-          </p>
+          <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+            <li className="mb-4   ">
+              Para un acabado aún más crujiente, asegúrate de cortar las papas
+              por la mitad. La superficie plana se dorará más fácilmente.
+            </li>
+            <li className="mb-4  ">
+              Si usas romero fresco, puedes machacarlo ligeramente antes de
+              agregarlo al aceite para liberar aún más su fragancia.
+            </li>
+            <li className="mb-4   ">
+              Experimenta añadiendo otras hierbas como tomillo o un toque de
+              paprika para darle un giro diferente a tu salteado.
+            </li>
+          </ol>
           <div className="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#ECEBEB] rounded-md p-4">
             <div className="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
-                Los tomates Roma son ideales para el hogao. De color rojo
-                brillante, sabroso y firme, resisten cuando se cocinan a fuego
-                lento durante media hora con ajo, cebolla y cebollín y producen
-                una dulzura rica en especias.
+                Con nuestros productos queremos compartir la tradición culinaria
+                latinoamericana con{" "}
+                <span className="font-semibold">alimentos congelados</span>{" "}
+                listos para consumir.
               </p>
             </div>
           </div>
@@ -777,10 +758,16 @@ const Data = () => {
             </div>
             <div className="">
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
-                Alternativamente, muchas recetas para la salsa hogao requieren
-                marcar los tomates (cortar una X delgada en la parte inferior),
-                hervir durante aproximadamente 1 minuto y luego pelarlos antes
-                de saltearlos. Muy delicioso.{" "}
+                Te ha gustado esta receta de{" "}
+                <span className="font-semibold">
+                  papas criollas con mantequilla y romero
+                </span>
+                ? Descubre más recetas deliciosas{" "}
+                <span className="font-semibold">
+                  papas criollas precocidas Green Ground
+                </span>{" "}
+                <span className="font-semibold">Green Ground</span> en nuestra
+                página web y sorprende a todos con tus habilidades culinarias!
               </p>
             </div>
           </div>
@@ -789,11 +776,11 @@ const Data = () => {
     },
 
     {
-      id: "maduro-frito",
-      title: "Maduro frito.",
+      id: "platano-maduro",
+      title: "Plátano maduro.",
       tipo: "recetas",
       description:
-        "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
+        "Descubre la deliciosa receta de aborrajados de plátano maduro con Green Ground. Fácil y rápida de preparar!",
       img: "/news/maduro.svg",
       btn: "Consulta receta",
       section: (
@@ -804,10 +791,13 @@ const Data = () => {
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
               <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
-                Receta Patacón Pisao con hogao
+                Aborrajados de plátano maduro con queso: receta fácil y rápida
               </p>
-              <p className="mb-6 text-[22px] mt-4 text-[#008638]">
-                Articulo publicado en revista semana
+              <p className="mb-2 text-[22px] mt-4 text-[#008638]">
+                Porciones: 4
+              </p>
+              <p className="mb-5 text-[22px] mt-4 text-[#008638]">
+                Tiempo de preparación: 30 minutos
               </p>
               <div className=" bg-[#008E4A] w-full rounded-md">
                 <p className="mb-4 text-[17px] mt-2 ml-2 text-white">
@@ -815,119 +805,95 @@ const Data = () => {
                 </p>
                 <ol className=" list-disc ml-8 text-[17px] text-white">
                   <li className="list-disc  ">
-                    1 paquete de 300 gr de taJadas de platano GREEN GROUND
+                    2{" "}
+                    <span className="font-semibold">
+                      plátanos enteros maduros Green Ground (500 gr)
+                    </span>
                   </li>
-                  <li className="">2 a 3 tazas aceite vegetal</li>
                   <li className="">
-                    1 cucharadita sal, para espolvorear sobre los patacones
+                    150 gramos de <span className="font-semibold">queso</span>{" "}
+                    costeño o mozzarella
                   </li>
-                  <li className="list-disc  ">La Salsa Hogao</li>
-                  <li className="">4 a 5 Tomates Roma</li>
-                  <li className="">
-                    1 pequeña pimiento rojo, finamente picado
-                  </li>
-                  <li className="list-disc  ">
-                    3 a 4 cebolletas, las secciones superiores picadas
-                  </li>
-                  <li className="">1 cebolla blanca, grande, picada</li>
-                  <li className="">4 clavos de olor ajo picado</li>
-                  <li className=" list-disc  ">2 cucharada aceite de oliva</li>
-                  <li className="">1⁄2 cucharadita sal, o al gusto</li>
-                  <li className="">1⁄4 taza cilantro fresco, picado</li>
+                  <li className="">1 huevo</li>
+                  <li className="list-disc  ">1 taza de harina de trigo</li>
+                  <li className="">1 taza de leche</li>
+                  <li className="">1 cucharadita de azúcar (opcional)</li>
+                  <li className="list-disc  ">Sal al gusto</li>
+                  <li className="">Aceite vegetal para freír</li>
                 </ol>
               </div>
             </div>
           </div>
-          <p className="mb-4 text-[32px] mt-4 text-[#008638]">Preparación:</p>
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+            El <span className="font-semibold">plátano maduro</span>, una fruta
+            tropical por excelencia, es reconocido por su textura, versatilidad
+            y facilidad de preparación. Su sabor dulce y aroma tentador lo
+            convierten en el acompañamiento perfecto para una gran variedad de
+            platos.
+          </p>
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+            Aprende cómo preparar unos fáciles y deliciosos aborrajados con el{" "}
+            <span className="font-semibold">plátano maduro Green Ground</span>{" "}
+            rellenos de <span className="font-semibold">queso</span>, dorados y
+            crujientes. Una delicia agridulce perfecta como entrada o postre
+            para compartir tus comidas favoritas.
+          </p>
           <p className="mb-4 text-[32px] mt-4 text-[#008638]">
-            Preparemos la Salsa de Hogao
+            Pasos para la Preparación:
           </p>
           <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
             <li className="mb-4   ">
-              Retire las semillas y las membranas interiores de los tomates.
-              Dados los tomates.
+              Corta los{" "}
+              <span className="font-semibold">plátanos Green Ground</span> y
+              rellénalos con <span className="font-semibold">queso</span>.
             </li>
             <li className="mb-4  ">
-              Despepitar, desmembrar y picar finamente el pimiento rojo.
-            </li>
-            <li className="mb-4   ">Pelar y picar la cebolla.</li>
-            <li className="mb-4  ">
-              En una sartén, caliente el aceite de oliva a fuego medio-bajo.
-              Agregue los tomates, la cebolla, el pimiento rojo, las cebolletas,
-              el ajo y la sal. Cocine a fuego lento durante 5 minutos a fuego
-              medio.
+              Prepara una mezcla de harina, huevo, leche y azúcar para rebozar.
             </li>
             <li className="mb-4   ">
-              Baja el fuego, tapa y cocina a fuego lento durante 15 minutos,
-              revolviendo regularmente, para asegurarte de que las verduras no
-              se peguen a la sartén.
+              Sumerge los{" "}
+              <span className="font-semibold">plátanos Green Ground</span>{" "}
+              rellenos en la mezcla.
             </li>
             <li className="mb-4  ">
-              Destape, revuelva y saltee durante los últimos 5 minutos, sin
-              tapar. Pruebe y ajuste la sal, según sea necesario. Añadir un
-              chorrito final de aceite de oliva. Reserva mientras fríes los
-              patacones.
-            </li>
-            <p className="mb-4 text-[32px] -ml-8 text-[#008638]">
-              Es hora de freír los tostones
-            </p>
-            <li className="mb-4   ">
-              En una sartén grande sobre un fuego medio-alto, agregue el aceite
-              vegetal y caliente a unos 350°.
-            </li>
-            <li className="mb-4  ">
-              Pele y corte los plátanos verdes en rodajas gruesas, de una
-              pulgada de ancho cada una.
+              Fríe en aceite caliente hasta que estén dorados.
             </li>
             <li className="mb-4   ">
-              Agregue las rodajas de plátano macho al aceite caliente en tandas
-              para que no se toquen. Después de unos 2 minutos, dales la vuelta
-              y fríe el otro lado durante 1 o 2 minutos.
-            </li>
-            <li className="mb-4  ">
-              Cuando ambos lados estén ligeramente dorados, saque los plátanos
-              con una espumadera.
-            </li>
-
-            <li className="mb-4   ">
-              Coloque los platanos en un plato forrado con toallas de papel para
-              drenar el exceso de aceite. Déjalos reposar durante varios minutos
-              para que se enfríen un poco antes de aplanarlos.
-            </li>
-            <li className="mb-4  ">
-              Coloque un trozo de papel pergamino o una envoltura de plástico en
-              su prensa de plátano, prensa de tortillas o una sartén redonda
-              pesada o una lata ancha. Presione cada plátano, uno a la vez, de
-              modo que cada uno tenga aproximadamente ¼ de pulgada de grosor.
-            </li>
-            <li className="mb-4   ">
-              Una vez que todos los Platanos estén prensados, regréselos en
-              tandas al aceite caliente para su segunda fritura. Esta vez, deja
-              cada plátano por solo 30 segundos a 1 minuto por lado.{" "}
-            </li>
-            <li className="mb-4  ">
-              Saque del aceite caliente y de nuevo descanse en un plato forrado
-              con toallas de papel para drenar el exceso de aceite.{" "}
-            </li>
-            <li className="mb-4   ">
-              Espolvorear con sal. Agrega una cucharada de salsa hogao sobre
-              cada patacón. Adorne con cilantro picado y una última pizca de
-              sal. Sírvalas rápidamente, mientras aún están calientes.{" "}
+              Escurre el exceso de grasa y sirve caliente.
             </li>
           </ol>
-          <p className="mb-4 text-[32px] text-[#008638]">
-            Notas de preparación
-          </p>
+          <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+            <li className="mb-4   ">
+              Asegúrate de cortar el queso en trozos que queden bien centrados
+              dentro del plátano para evitar que se salga durante la cocción. Un
+              truco es hacer un corte profundo a lo largo del plátano sin llegar
+              a la base, introducir el queso y luego presionar suavemente para
+              sellar.
+            </li>
+            <li className="mb-4  ">
+              Asegúrate de que la mezcla para rebozar tenga una consistencia
+              similar a la de una masa para panqueques ligera. Si está demasiado
+              espesa, el rebozado quedará pesado; si está muy líquida, no se
+              adherirá bien al plátano.
+            </li>
+            <li className="mb-4   ">
+              Sumerge los plátanos rellenos justo antes de freír para que el
+              rebozado quede más crujiente. Un truco para un rebozado extra
+              crujiente es pasar los plátanos rebozados por pan rallado fino
+              antes de freír.
+            </li>
+          </ol>
           <div className="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#ECEBEB] rounded-md p-4">
             <div className="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
-                Los tomates Roma son ideales para el hogao. De color rojo
-                brillante, sabroso y firme, resisten cuando se cocinan a fuego
-                lento durante media hora con ajo, cebolla y cebollín y producen
-                una dulzura rica en especias.
+                Con nuestros productos queremos compartir la tradición culinaria
+                latinoamericana con{" "}
+                <span className="font-semibold">alimentos congelados</span>{" "}
+                listos para consumir.
               </p>
             </div>
           </div>
@@ -937,10 +903,11 @@ const Data = () => {
             </div>
             <div className="">
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
-                Alternativamente, muchas recetas para la salsa hogao requieren
-                marcar los tomates (cortar una X delgada en la parte inferior),
-                hervir durante aproximadamente 1 minuto y luego pelarlos antes
-                de saltearlos. Muy delicioso.{" "}
+                Te ha gustado esta receta de{" "}
+                <span className="font-semibold">plátanos aborrajados</span>?
+                Descubre más recetas deliciosas con{" "}
+                <span className="font-semibold">plátanos Green Ground</span> en nuestra
+                página web y sorprende a todos con tus habilidades culinarias!
               </p>
             </div>
           </div>

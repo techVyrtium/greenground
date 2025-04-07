@@ -11,14 +11,14 @@ export default function CardBlog({ data, color }) {
           </div>
           <div className="p-[8px] 2xl:p-[16px] flex flex-col">
             <div
-              className={`text-[22px] ${
+              className={`text-[28px] leading-8 h-16 ${
                 color ? "text-[#D9840D]" : "text-[#B52C17]"
               } font-bold`}
             >
               {dato.title}
             </div>
             <div className="block text-[#4a4a4a] font-[400] text-[18px] mt-[16px] 2xl:leading-[23px] leading-[22px]">
-              <div className=" line-clamp-5 2xl:line-clamp-4">{dato.description}</div>
+              <div className=" line-clamp-3">{dato.description}</div>
             </div>
             <div className="flex w-full h-fit">
               <Link href={`${/news/}${dato.id}`} className="w-full">
