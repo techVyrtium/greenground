@@ -1256,6 +1256,18 @@
       "images": [],
       "description": "Pendiente"
     },
+    "maduritos": {
+      "title": "Maduritos",
+      "subcategory": "Especialidades Latinas",
+      "category": "Congelados",
+      "link": "products/maduritos-platanitos-yuquitas",
+      "tag": "Nuevo",
+      "price": 0,
+      "images": [
+        "/products/maduritos empaque.png"
+      ],
+      "description": "Pendiente"
+    },
     "maduritos-platanitos-yuquitas": {
       "title": "Maduritos/ Platanitos/ Yuquitas",
       "subcategory": "Dulces y snacks",
