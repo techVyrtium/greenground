@@ -113,7 +113,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
     },
   ];
   return (
-    <div className="relative w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.svg)] overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
+    <div className="relative w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.svg)] bg-cover bg-no-repeat bg-center overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
       {contact && (
         <div className="w-full md:h-auto flex flex-row justify-start items-center px-4 mt-4">
           <div className="relative flex h-full w-full py-2 md:py-8 px-4 md:px-0">
@@ -227,7 +227,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
         <div className="absolute top-6 left-4 z-30">
           <button
             onClick={toggleModalContact}
-            className="transform text-white font-bold w-full"
+            className="transform text-white font-bold w-full cursor-pointer hover:scale-110 transition-transform duration-200"
           >
             <div className="w-6 h-6 bg-[#FF5143] rounded-full flex items-center justify-center mb-2">
               <img src="/home/btnX.svg" className="w-12  object-fill" />

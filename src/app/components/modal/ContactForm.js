@@ -4,7 +4,7 @@ import FormContact from "@/app/components/ContactForm";
 import { useModal } from "@/app/hooks/useModal";
 
 
-const ContactForm = ({ toggleModalContact }) => {
+const ContactForm = () => {
   const { toggleModal } = useModal();
 
 
@@ -37,7 +37,7 @@ const ContactForm = ({ toggleModalContact }) => {
       className="fixed inset-0 backdrop-brightness-50 flex justify-center items-center z-50"
       onClick={handleBackdropClick}
     >
-      <FormContact toggleModalContact={toggleModalContact} contact={true} />
+      <FormContact toggleModalContact={handleClose} contact={true} />
     </div>
   );
 };
