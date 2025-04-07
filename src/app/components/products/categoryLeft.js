@@ -1,30 +1,18 @@
+"use client";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 export function CategoryLeft() {
   const [expandedCategories, setExpandedCategories] = useState({});
+  const t = useTranslations("category");
 
+  const categories = t.raw("categories");
   const toggleCategory = (categoryName) => {
     setExpandedCategories((prev) => ({
       ...prev,
       [categoryName]: !prev[categoryName],
     }));
   };
-
-  // Estructura de datos modificada con subcategorías
-  const nestedCategories = [
-    {
-      name: "Congelados",
-      subcategories: ["Verduras", "Carnes", "Mariscos", "Preparados"],
-    },
-    {
-      name: "Abarrotes",
-      subcategories: ["Lácteos", "Granos", "Conservas", "Especias"],
-    },
-    {
-      name: "Menaje",
-      subcategories: [], // Sin subcategorías
-    },
-  ];
 
   return (
     <aside className="border border-[#D9840D] rounded shadow-md">
@@ -41,7 +29,7 @@ export function CategoryLeft() {
       </div>
 
       <ul className="transition-all duration-300">
-        {nestedCategories.map((category) => (
+        {categories.map((category) => (
           <li key={category.name} className="border-b last:border-b-0">
             <div
               className={`p-2 hover:bg-gray-200 cursor-pointer flex justify-between items-center text-[16px] xl:text-[24px]`}
