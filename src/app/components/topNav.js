@@ -15,10 +15,24 @@ export default function TopNavHero({ locale }) {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("topNav");
+  
   const changeLanguage = (lang) => {
     if (pathname.length === 3)
       router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
     else router.replace(`${pathname.replace(`/${locale}/`, `/${lang}/`)}`);
+  };
+
+  const handleSmoothScroll = (e, sectionId) => {
+    e.preventDefault();
+
+    if (pathname !== `/${locale}` && pathname !== `/${locale}/`) {
+      router.push(`/${locale}/#${sectionId}`);
+      return;
+    }
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -32,17 +46,16 @@ export default function TopNavHero({ locale }) {
             <li>
               <Link href="/" className="hover:underline hover:font-bold">
                 {t("home")}
-              </Link>{" "}
-              {/* Utilizando la traducción */}
+              </Link>
             </li>
             <li>
-              <Link
-                href="/#whatWeDo"
+              <Link 
+                href={`/${locale}/#whatWeDo`} 
                 className="hover:underline hover:font-bold"
+                onClick={(e) => handleSmoothScroll(e, "whatWeDo")}
               >
                 {t("whatWeDo")}
-              </Link>{" "}
-              {/* Utilizando la traducción */}
+              </Link>
             </li>
             <li className="z-50">
               <NavLinkMultiple
@@ -57,28 +70,31 @@ export default function TopNavHero({ locale }) {
               />
             </li>
             <li>
-              <Link
-                href="/#ourQuality"
+              <Link 
+                href={`/${locale}/#ourQuality`} 
                 className="hover:underline hover:font-bold"
+                onClick={(e) => handleSmoothScroll(e, "ourQuality")}
               >
                 {t("quality")}
-              </Link>{" "}
-              {/* Utilizando la traducción */}
+              </Link>
             </li>
             <li>
               <Link
-                href="/#ourCommit"
+                href={`/${locale}/#ourCommit`}
                 className="hover:underline hover:font-bold"
+                onClick={(e) => handleSmoothScroll(e, "ourCommit")}
               >
                 {t("commitment")}
-              </Link>{" "}
-              {/* Utilizando la traducción */}
+              </Link>
             </li>
             <li>
-              <Link href="/#blog" className="hover:underline hover:font-bold">
+              <Link
+                href={`/${locale}/#blog`}
+                className="hover:underline hover:font-bold"
+                onClick={(e) => handleSmoothScroll(e, "blog")}
+              >
                 {t("blog")}
-              </Link>{" "}
-              {/* Utilizando la traducción */}
+              </Link>
             </li>
           </ul>
         </div>
@@ -87,13 +103,7 @@ export default function TopNavHero({ locale }) {
             className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block"
             onClick={toggleModal}
           >
-            {t("contact")} {/* Utilizando la traducción */}
-          </button>
-          <button
-            className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
-            onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
-          >
-            {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
+            {t("contact")}
           </button>
           <div>
             <button
@@ -108,6 +118,7 @@ export default function TopNavHero({ locale }) {
               t={t}
               cantLinksProducts={CANT_LINKS_PRODUCTS}
               locale={locale}
+              toggleModal={toggleModal}
             />
           </div>
         </div>
