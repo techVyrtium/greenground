@@ -3,7 +3,10 @@ import { getLocale } from "next-intl/server";
 import { Roboto } from "next/font/google";
 import { Baloo_2 } from "next/font/google";
 import "./../globals.css";
-import { itcAvantGardeCEGothicBook, itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import {
+  itcAvantGardeCEGothicBook,
+  itcAvantGardeCEGothicLTBold,
+} from "../styles/fonts";
 import Footer from "@/app/components/Footer";
 import TopNavHero from "../components/topNav";
 import ModalContainer from "@/app/components/modal/ModalContainer";
@@ -25,8 +28,11 @@ export default async function RootLayout({ children }) {
   // Obtener el locale, esto puede ser de cookies, headers, etc.
   const locale = await getLocale();
   return (
-    <html lang={locale} className={`${roboto.variable} ${baloo.variable} ${itcGBook.variable} ${itcGBold.variable}`}>
-      <body className="">
+    <html
+      lang={locale}
+      className={`${roboto.variable} ${baloo.variable} ${itcGBook.variable} ${itcGBold.variable}`}
+    >
+      <body className="max-w-[1920px] mx-auto">
         <NextIntlClientProvider>
             <TopNavHero locale={locale} />
             {children}
