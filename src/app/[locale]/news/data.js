@@ -46,12 +46,13 @@ const Data = () => {
             de plátano.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            “La verdad, no éramos expertos en la manipulación de plátanos. No
-            obstante, nos aventuramos porque es un producto de gran potencial en
-            el mercado, dado que es la base de la canasta familiar en
+            &ldquo;La verdad, no éramos expertos en la manipulación de plátanos.
+            No obstante, nos aventuramos porque es un producto de gran potencial
+            en el mercado, dado que es la base de la canasta familiar en
             Centroamérica, Suramérica y África; además, se está convirtiendo en
             parte del consumo regular en Norteamérica por la mezcla de culturas
-            que se congregan en ese país”. Indicó Sebastián Santamaría Galán.
+            que se congregan en ese país&rdquo;. Indicó Sebastián Santamaría
+            Galán.
           </p>
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">
             El inicio de las exportaciones
@@ -59,22 +60,22 @@ const Data = () => {
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             En diciembre de 2016, Productora Agricola AG SAS envió su primer
             contenedor a Estados Unidos, y lo hizo a través del Puerto de
-            Barranquilla. “A los seis meses de tener nuestra planta logramos la
-            primera exportación, y es tal el amor y la devoción por la empresa,
-            que viajé con el contenedor hasta Barranquilla. Quería verificar que
-            en el Puerto se manejara la cadena de frío para cumplir con las
-            normas y condiciones que garantizan al cliente un producto de
-            altísima calidad”, explicó Sebastián. Fueron 14 horas de viaje en
-            una tractomula cargada con tajadas de plátano pre-fritas y
-            congeladas.
+            Barranquilla. &ldquo;A los seis meses de tener nuestra planta
+            logramos la primera exportación, y es tal el amor y la devoción por
+            la empresa, que viajé con el contenedor hasta Barranquilla. Quería
+            verificar que en el Puerto se manejara la cadena de frío para
+            cumplir con las normas y condiciones que garantizan al cliente un
+            producto de altísima calidad&rdquo;, explicó Sebastián. Fueron 14
+            horas de viaje en una tractomula cargada con tajadas de plátano
+            pre-fritas y congeladas.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            “El primer contenedor lo tuvimos listo en 45 días; ahora un
+            &ldquo;El primer contenedor lo tuvimos listo en 45 días; ahora un
             contenedor para exportar lo tenemos listo en dos días y medio.
             Cuando comenzamos este proyecto éramos 4 personas; hoy somos 88. En
             nuestros inicios teníamos procesos muy manuales; hoy ya estamos
             industrializando nuestra planta, que está localizada en el Parque
-            Logístico La Paz, en Zipaquirá”, dijo el joven empresario.
+            Logístico La Paz, en Zipaquirá&rdquo;, dijo el joven empresario.
           </p>
 
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">
@@ -87,12 +88,12 @@ const Data = () => {
             comercial para aumentar las exportaciones.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            “Éramos una empresa sin experiencia, nuestro volumen era de un
+            &ldquo;Éramos una empresa sin experiencia, nuestro volumen era de un
             contenedor al mes, aún así, ellos venían a hablar con nosotros, a
             trabajar de la mano con nosotros en nuestros procesos para ayudarnos
             a mejorarlos. Nos facilitaron los canales de comunicación con las
             autoridades para explicarles que las condiciones del producto se
-            pueden afectar si no se respeta la cadena de frío”, precisó.
+            pueden afectar si no se respeta la cadena de frío&rdquo;, precisó.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             Actualmente están exportando 9 contenedores al mes, los cuales van a
@@ -101,12 +102,12 @@ const Data = () => {
             y 2019.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            “El área Comercial del Puerto se ha encargado de ayudarnos para
-            aumentar las exportaciones y competir con países como Ecuador,
+            &ldquo;El área Comercial del Puerto se ha encargado de ayudarnos
+            para aumentar las exportaciones y competir con países como Ecuador,
             Guatemala y Honduras. Nos han guiado para disminuir nuestros costos
             operativos y volvernos más competitivos. Ana María, nuestra asesora
             comercial, siempre está dispuesta a visitarnos y ayudarnos en este
-            sentido”, expresó Sebastián Santamaría Galán.
+            sentido&rdquo;, expresó Sebastián Santamaría Galán.
           </p>
 
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">
@@ -127,17 +128,17 @@ const Data = () => {
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             Uno de los grandes valores que se respiran en la empresa de los
             Galán es la unión familiar, que ha pasado de generación en
-            generación como un importante legado. “Lo lindo es que acá está la
-            familia todos los días, con mucho amor y mucho apoyo, y eso se
-            siente en cada una de las cosas que hacemos, porque hemos hecho con
-            muy poco”, afirma Sebastián.
+            generación como un importante legado. &ldquo;Lo lindo es que acá
+            está la familia todos los días, con mucho amor y mucho apoyo, y eso
+            se siente en cada una de las cosas que hacemos, porque hemos hecho
+            con muy poco&rdquo;, afirma Sebastián.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             Precisamente, incluso con la inversión de tecnificación, ese
             concepto de la familia los ha impulsado a tratar de mantener el
-            número de trabajadores. “Sabemos lo que es venir de abajo, por eso
-            respetamos a nuestros trabajadores. El aporte de cada uno de ellos
-            es vital para las empresas”.
+            número de trabajadores. &ldquo;Sabemos lo que es venir de abajo, por
+            eso respetamos a nuestros trabajadores. El aporte de cada uno de
+            ellos es vital para las empresas&rdquo;.
           </p>
 
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">ProColombia</p>
@@ -206,11 +207,11 @@ const Data = () => {
             85% de las ventas, se exportaban patacones y papas criollas, entre
             otros.{" "}
             <span className="font-semibold">
-              “Con la pandemia, como los productos llegaban a restaurantes,
-              hoteles y colegios en Estados Unidos. Las ventas disminuyeron.
-              Entonces decidimos ejecutar un proyecto que teníamos pendiente:
-              posicionarnos como comercializadora de productos colombianos en el
-              exterior”,
+              &ldquo;Con la pandemia, como los productos llegaban a
+              restaurantes, hoteles y colegios en Estados Unidos. Las ventas
+              disminuyeron. Entonces decidimos ejecutar un proyecto que teníamos
+              pendiente: posicionarnos como comercializadora de productos
+              colombianos en el exterior&rdquo;,
             </span>{" "}
             afirma Santamaría, ahora gerente comercial de Green Ground.
           </p>
@@ -230,12 +231,12 @@ const Data = () => {
             De acuerdo con Santamaría, desde 2016 vienen creciendo al 350%
             anual.{" "}
             <span className="font-semibold">
-              “Mi expectativa de venta en 2020 era grande y, a pesar de las
-              circunstancias, hemos logrado un récord de ventas mes a mes
+              &ldquo;Mi expectativa de venta en 2020 era grande y, a pesar de
+              las circunstancias, hemos logrado un récord de ventas mes a mes
               gracias a que incursionamos en un nuevo segmento de negocio y a la
               tasa de cambio. Reaccionamos de forma oportuna a las bajas ventas
               y así pudimos crecer. Ahora los planes se enfocan en destinos como
-              Suiza, Nueva Zelanda, Irlanda y Países Bajos”.
+              Suiza, Nueva Zelanda, Irlanda y Países Bajos&rdquo;.
             </span>
           </p>
           <ol
@@ -289,13 +290,13 @@ const Data = () => {
           {/* <img src={"/news/prodAgricola.svg"} className="w-full" /> */}
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             COLOMBIA ES UNO DE LOS países donde más se aprecia la comida
-            “fresca”. Es decir, aquella que tiene menos intervenciones para
-            llegar del campo a la mesa. El que no pase por procesos industriales
-            es visto como un atributo: se considera más sabrosa. No obstante, la
-            modernidad ha traído cambios en estas costumbres y cada vez más
-            hogares con poco tiempo para cocinar han encontrado en los alimentos
-            congelados una forma eficiente de llenar sus alacenas y acelerar su
-            cocción.
+            &ldquo;fresca&rdquo;. Es decir, aquella que tiene menos
+            intervenciones para llegar del campo a la mesa. El que no pase por
+            procesos industriales es visto como un atributo: se considera más
+            sabrosa. No obstante, la modernidad ha traído cambios en estas
+            costumbres y cada vez más hogares con poco tiempo para cocinar han
+            encontrado en los alimentos congelados una forma eficiente de llenar
+            sus alacenas y acelerar su cocción.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             Quizás los congelados más populares son las papas a la francesa y
@@ -310,10 +311,11 @@ const Data = () => {
             en comparación con 2019. En particular, su marca propia se disparó
             en la venta de fritos como empanadas, pasteles de pollo. además de
             croissants y hojaldres. Su crecimiento fue de 1.000 por ciento
-            anual. “La covid-19 ha transformado los hábitos en consumo,
+            anual. &ldquo;La covid-19 ha transformado los hábitos en consumo,
             cambiando la manera en que los consumidores asumen su alimentación.
             Los productos congelados se presentan como una alternativa
-            conveniente, debido a su fácil preparación”, sostienen en la cadena.
+            conveniente, debido a su fácil preparación&rdquo;, sostienen en la
+            cadena.
           </p>
           <div className="flex items-center justify-center ">
             <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-center w-5/6">
@@ -415,18 +417,18 @@ const Data = () => {
             de innovar.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            “Fue un desarrollo que se logró en un tiempo récord de seis meses.
-            Salimos al mercado con un portafolio de baguettes congelados para
-            venta en supermercados como los que Congelar alimentos es cada vez
-            más tecnificado, con calidad e inocuidad. El canal institucional era
-            el mayor comprador, pero ahora entraron con fuerza al hogar.
+            &ldquo;Fue un desarrollo que se logró en un tiempo récord de seis
+            meses. Salimos al mercado con un portafolio de baguettes congelados
+            para venta en supermercados como los que Congelar alimentos es cada
+            vez más tecnificado, con calidad e inocuidad. El canal institucional
+            era el mayor comprador, pero ahora entraron con fuerza al hogar.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
             Empresas como Green Ground usan tecnología para madurar plátanos,
             tirarlos y ultracongelarlos, al punto que cuando se van a consumir
             parecen estar recién fritos o asados, teníamos en Panetier y hoy los
             panes congelados ya son 2,2 por ciento de las ventas de Bimbo en el
-            país”. dice Esguerra.
+            país&rdquo;. dice Esguerra.
           </p>
 
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
@@ -559,33 +561,65 @@ const Data = () => {
             <li className="mb-4  ">
               Mientras la yuca se cocina, calienta la leche entera en una
               cacerola pequeña a fuego medio hasta que esté tibia. Reserva. Ten
-              listos los <span className="font-semibold">quesos</span>. rallados, desmenuzados y el <span className="font-semibold">queso crema</span>. Si
-              deseas usar suero costeño, tenlo a mano.
+              listos los <span className="font-semibold">quesos</span>.
+              rallados, desmenuzados y el{" "}
+              <span className="font-semibold">queso crema</span>. Si deseas usar
+              suero costeño, tenlo a mano.
             </li>
             <li className="mb-4   ">
-            Una vez que la yuca esté cocida, escúrrela bien, reservando aproximadamente 1 taza del agua de cocción. Pasa la yuca y el ajo por un prensapapas o tritúralos con un tenedor en un tazón grande hasta obtener un puré sin grumos. Asegúrate de retirar cualquier hebra fibrosa que pueda haber en el centro de algunos trozos.
+              Una vez que la yuca esté cocida, escúrrela bien, reservando
+              aproximadamente 1 taza del agua de cocción. Pasa la yuca y el ajo
+              por un prensapapas o tritúralos con un tenedor en un tazón grande
+              hasta obtener un puré sin grumos. Asegúrate de retirar cualquier
+              hebra fibrosa que pueda haber en el centro de algunos trozos.
             </li>
             <li className="mb-4  ">
-            Vuelve a colocar el puré de yuca en la olla a fuego muy bajo. Agrega la mantequilla y la leche tibia, revolviendo constantemente con una cuchara de madera hasta que se integren por completo y el puré esté suave y cremoso. Si es necesario, agrega un poco del agua de cocción reservada para ajustar la consistencia.
+              Vuelve a colocar el puré de yuca en la olla a fuego muy bajo.
+              Agrega la mantequilla y la leche tibia, revolviendo constantemente
+              con una cuchara de madera hasta que se integren por completo y el
+              puré esté suave y cremoso. Si es necesario, agrega un poco del
+              agua de cocción reservada para ajustar la consistencia.
             </li>
             <li className="mb-4   ">
-            Incorpora el queso mozzarella rallado y el queso costeño desmenuzado al puré caliente. Sigue revolviendo suavemente hasta que ambos quesos se derritan por completo y se integren de manera homogénea en el puré, creando una textura aún más cremosa y un sabor delicioso y equilibrado entre la suavidad y el toque costeño.
+              Incorpora el queso mozzarella rallado y el queso costeño
+              desmenuzado al puré caliente. Sigue revolviendo suavemente hasta
+              que ambos quesos se derritan por completo y se integren de manera
+              homogénea en el puré, creando una textura aún más cremosa y un
+              sabor delicioso y equilibrado entre la suavidad y el toque
+              costeño.
             </li>
             <li className="mb-4   ">
-            Agrega las cucharadas de queso crema al puré y revuelve hasta que se disuelva completamente, aportando una cremosidad extra y un ligero contraste de sabor. Si lo deseas, añade suero costeño al gusto para una consistencia más ligera y un sabor tradicional. Prueba el puré y ajusta la sal y la pimienta si es necesario.            </li>
+              Agrega las cucharadas de queso crema al puré y revuelve hasta que
+              se disuelva completamente, aportando una cremosidad extra y un
+              ligero contraste de sabor. Si lo deseas, añade suero costeño al
+              gusto para una consistencia más ligera y un sabor tradicional.
+              Prueba el puré y ajusta la sal y la pimienta si es necesario.{" "}
+            </li>
             <li className="mb-4  ">
-            Sirve el puré de yuca y doble queso caliente, adornado con hojitas frescas de cilantro o cebollín picado, si lo deseas. Disfruta de este plato colombiano y lleno de sabor!            </li>
+              Sirve el puré de yuca y doble queso caliente, adornado con hojitas
+              frescas de cilantro o cebollín picado, si lo deseas. Disfruta de
+              este plato colombiano y lleno de sabor!{" "}
+            </li>
           </ol>
           <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
           <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
             <li className="mb-4   ">
-            Sofreír ligeramente el ajo en la mantequilla antes de incorporarlo al puré le dará un toque aromático y un sabor más profundo que complementa muy bien la dulzura de la yuca y la riqueza de los quesos.
+              Sofreír ligeramente el ajo en la mantequilla antes de incorporarlo
+              al puré le dará un toque aromático y un sabor más profundo que
+              complementa muy bien la dulzura de la yuca y la riqueza de los
+              quesos.
             </li>
             <li className="mb-4  ">
-            No dudes en usar una combinación de queso mozzarella rallado para un fundido suave y queso costeño desmenuzado para un sabor más pronunciado y pequeños "bocados" de queso que enriquecen la textura del puré.
+              No dudes en usar una combinación de queso mozzarella rallado para
+              un fundido suave y queso costeño desmenuzado para un sabor más
+              pronunciado y pequeños &ldquo;bocados&rdquo; de queso que
+              enriquecen la textura del puré.
             </li>
             <li className="mb-4   ">
-            Si buscas un sabor más tradicional y una textura ligeramente más ligera, el suero costeño añadido al final puede marcar la diferencia. Sin embargo, úsalo con moderación para no opacar el sabor de los quesos.
+              Si buscas un sabor más tradicional y una textura ligeramente más
+              ligera, el suero costeño añadido al final puede marcar la
+              diferencia. Sin embargo, úsalo con moderación para no opacar el
+              sabor de los quesos.
             </li>
           </ol>
           <div className="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#ECEBEB] rounded-md p-4">
@@ -609,9 +643,12 @@ const Data = () => {
               <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
                 Te ha gustado esta receta de{" "}
                 <span className="font-semibold">puré de yuca con queso</span>?
-                Descubre más recetas deliciosas con {" "}
-                <span className="font-semibold">yuca en trozos Green Ground</span> en nuestra
-                página web y sorprende a todos con tus habilidades culinarias!
+                Descubre más recetas deliciosas con{" "}
+                <span className="font-semibold">
+                  yuca en trozos Green Ground
+                </span>{" "}
+                en nuestra página web y sorprende a todos con tus habilidades
+                culinarias!
               </p>
             </div>
           </div>
@@ -906,8 +943,9 @@ const Data = () => {
                 Te ha gustado esta receta de{" "}
                 <span className="font-semibold">plátanos aborrajados</span>?
                 Descubre más recetas deliciosas con{" "}
-                <span className="font-semibold">plátanos Green Ground</span> en nuestra
-                página web y sorprende a todos con tus habilidades culinarias!
+                <span className="font-semibold">plátanos Green Ground</span> en
+                nuestra página web y sorprende a todos con tus habilidades
+                culinarias!
               </p>
             </div>
           </div>
