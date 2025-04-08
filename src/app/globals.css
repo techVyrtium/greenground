@@ -10,16 +10,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-category-title-light: #006C36BF;
-  --color-category-title-bold: #006C36F2;
-  --color-product-green: #3FB549BF;
+  --color-category-title-light: #006c36bf;
+  --color-category-title-bold: #006c36f2;
+  --color-product-green: #3fb549bf;
   --color-green700: #008638;
-  --color-gray1: #4A4A4A;
-  --color-product-red: #EE3135BF;
-  --color-product-orange: #EEA514BF;
-  --color-white-25: #FFFFFF40;
-  --color-border-gray: #A8A8A8;
-  --color-gray2: #C0C0C0;
+  --color-gray1: #4a4a4a;
+  --color-product-red: #ee3135bf;
+  --color-product-orange: #eea514bf;
+  --color-white-25: #ffffff40;
+  --color-border-gray: #a8a8a8;
+  --color-gray2: #c0c0c0;
   --image-product-categories: url(/home/bg-product-categories.png);
   --image-product-categories-rotate: url(/home/bg-product-categories-rotate.png);
   --font-sans: var(--font-geist-sans);
@@ -27,7 +27,9 @@
   --font-itcGBold: var(--font-itcBold);
   --font-itcGBook: var(--font-itcBook);
 }
-
+.font-baloo {
+  font-family: var(--font-baloo), sans-serif;
+}
 body {
   background-image: url("/fondo.png");
   background-size: cover;
@@ -39,19 +41,16 @@ body {
   font-family: var(--font-roboto), sans-serif;
 }
 
-
 .bg-product-categories {
   background-image: url(/home/bg-product-categories.png);
 }
-
-
 
 .bg-product-categories-rotate {
   background-image: url(/home/bg-product-categories-rotate.png);
 }
 
 .bg-category-title-light {
-  background-color: #006C36BF;
+  background-color: #006c36bf;
 }
 
 /* .bg-product-green {
@@ -67,9 +66,8 @@ body {
 } */
 
 .bg-category-title-bold {
-  background-color: #006C36F2;
+  background-color: #006c36f2;
 }
-
 
 .product-category-card:hover .product-category-main-image {
   scale: 100%;

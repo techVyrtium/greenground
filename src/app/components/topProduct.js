@@ -48,7 +48,7 @@ const TopProduct = () => {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 px-[48px] lg:px-[70px] 3xl:px-[96px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-[clamp(1rem,5vw,6rem)] ">
           {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
