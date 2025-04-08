@@ -22,28 +22,28 @@ export default function Experience() {
   const controls = useAnimation();
 
   // Reiniciar la animación cada 8 segundos
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setAnimationKey((prev) => prev + 1);
-  //   }, 8000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationKey((prev) => prev + 1);
+    }, 8000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   // Control de color de "30"
   const [color, setColor] = useState("#fff");
 
   // Función para controlar el color de "30"
-  // useEffect(() => {
-  //   if (isAnimating) {
-  //     setColor("#fff"); // Restablecer a blanco al comenzar
-  //     const timeout = setTimeout(() => {
-  //       setColor("#B52C17"); // Cambiar a rojo después de 3 segundos
-  //     }, 3000);
+  useEffect(() => {
+    if (isAnimating) {
+      setColor("#fff"); // Restablecer a blanco al comenzar
+      const timeout = setTimeout(() => {
+        setColor("#B52C17"); // Cambiar a rojo después de 3 segundos
+      }, 3000);
 
-  //     return () => clearTimeout(timeout);
-  //   }
-  // }, [isAnimating]);
+      return () => clearTimeout(timeout);
+    }
+  }, [isAnimating]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
