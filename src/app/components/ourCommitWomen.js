@@ -23,7 +23,9 @@ export default function OurCommitWomen() {
     {
       title: (
         <>
-          <h2 className={`text-[60px] font-bold text-[#008638] mb-12 leading-[0.8] font-itcGBold`}>
+          <h2
+            className={`text-[60px] font-bold text-[#008638] mb-12 leading-[0.8] font-itcGBold`}
+          >
             Nuestro compromiso es con las mujeres
           </h2>
         </>
@@ -43,8 +45,8 @@ export default function OurCommitWomen() {
   };
 
   return (
-    <section className="mt-20 w-full h-full">
-      <div className="px-4 sm:px-6 lg:px-20 flex flex-row h-full">
+    <section className="pt-[96px] md:mt-[96px] w-full h-full">
+      <div className="px-[clamp(1rem,5vw,6rem)] flex flex-row h-full ">
         <div className="flex flex-col lg:flex-row w-full h-full">
           <div className="lg:w-1/2 flex items-start">
             <div className="flex flex-row order-last lg:order-none items-center justify-evenly w-full mt-4 lg:mt-0">
@@ -74,7 +76,7 @@ export default function OurCommitWomen() {
           </div>
           <div className="lg:w-1/2 md:ml-12 flex flex-col order-first lg:order-none items-center justify-center">
             {data[0].title}
-            <p className="text-lg text-[#4A4A4A] leading-relaxed lg:mt-4 text-justify">
+            <p className="text-[clamp(1.2rem,1.75vw,1.75rem)]  text-[#4A4A4A] leading-relaxed lg:mt-4 text-left">
               {data[0].text}
             </p>
           </div>

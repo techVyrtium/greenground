@@ -8,14 +8,13 @@ export default function ResponsibleCompany() {
 
   const [animationKey, setAnimationKey] = useState(0);
 
-  // Reiniciar animación cada 5 segundos
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setAnimationKey((prev) => prev + 1);
-  //   }, 8000); // Ajusta el tiempo según necesidad
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationKey((prev) => prev + 1);
+    }, 8000); // Ajusta el tiempo según necesidad
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },

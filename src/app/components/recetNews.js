@@ -135,14 +135,14 @@ export default function RecetNews({ tipo = "recetas" }) {
   const changeColor = (c) => {
     setColorSet(c);
     revData(c);
-    setIsActive(false)
+    setIsActive(false);
     setTimeout(() => {
-        setIsActive(true)
+      setIsActive(true);
     }, 100);
   };
 
   return (
-    <div className="max-w-7xl mx-auto mt-12 h-full">
+    <div className="px-[clamp(1rem,5vw,6rem)]  mx-auto mt-12 h-full">
       <div className="flex flex-row items-center justify-center w-full gap-2  ">
         <div>
           <button
@@ -169,7 +169,11 @@ export default function RecetNews({ tipo = "recetas" }) {
           </button>
         </div>
       </div>
-      <div className={`mt-4 flex w-full ${isActive ? 'h-fit' : 'h-[40rem]'}  items-center justify-center`}>
+      <div
+        className={`mt-4 flex w-full ${
+          isActive ? "h-fit" : "h-[40rem]"
+        }  items-center justify-center`}
+      >
         {isActive && (
           <motion.div
             initial={{ opacity: 0, y: 60 }}
