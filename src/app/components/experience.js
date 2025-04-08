@@ -22,28 +22,28 @@ export default function Experience() {
   const controls = useAnimation();
 
   // Reiniciar la animación cada 8 segundos
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimationKey((prev) => prev + 1); // Reiniciar la animación
-    }, 8000); // Cada 8 segundos cambiar la animación
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setAnimationKey((prev) => prev + 1);
+  //   }, 8000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   // Control de color de "30"
   const [color, setColor] = useState("#fff");
 
   // Función para controlar el color de "30"
-  useEffect(() => {
-    if (isAnimating) {
-      setColor("#fff"); // Restablecer a blanco al comenzar
-      const timeout = setTimeout(() => {
-        setColor("#B52C17"); // Cambiar a rojo después de 3 segundos
-      }, 3000);
+  // useEffect(() => {
+  //   if (isAnimating) {
+  //     setColor("#fff"); // Restablecer a blanco al comenzar
+  //     const timeout = setTimeout(() => {
+  //       setColor("#B52C17"); // Cambiar a rojo después de 3 segundos
+  //     }, 3000);
 
-      return () => clearTimeout(timeout);
-    }
-  }, [isAnimating]);
+  //     return () => clearTimeout(timeout);
+  //   }
+  // }, [isAnimating]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -121,7 +121,7 @@ export default function Experience() {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-[#E7681F] h-[650px] relative overflow-hidden flex items-center justify-center"
+      className="w-full bg-[#E7681F] h-[clamp(400px,_45vw,_750px)] relative overflow-hidden flex items-center justify-center"
     >
       <AnimatePresence mode="wait">
         {isSectionInView && (
@@ -137,19 +137,19 @@ export default function Experience() {
           >
             {/* Contenedor del texto */}
             <motion.div
-              className="w-full flex items-center justify-center  z-10"
+              className="w-full flex items-center justify-center  z-10 font-baloo "
               variants={{
                 visible: { transition: { staggerChildren: 0.5 } },
               }}
             >
               <div className="flex flex-col text-center leading-none">
-                <div className="flex justify-center items-baseline gap-4 space-x-6 sm:space-x-10">
+                <div className="flex justify-center items-baseline gap-2 space-x-10 sm:space-x-10">
                   <motion.p
                     variants={animationSettings.text1}
                     transition={{ duration: 0.7 }}
-                    className="pl-8 text-[30px] md:text-[80px] lg:text-[100px] text-[#fff] font-[700] leading-tight whitespace-nowrap"
+                    style={{ fontSize: "clamp(2rem, 10vw, 8rem)" }}
+                    className="pl-8 text-[#fff] font-[700] leading-tight whitespace-nowrap"
                   >
-                    {" "}
                     Más de
                   </motion.p>
 
@@ -163,15 +163,16 @@ export default function Experience() {
                       animate={{
                         color: color, // Cambiar color según el estado
                       }}
+                      style={{ fontSize: "clamp(90px, 19vw, 245px)" }}
                       transition={{ duration: 0.8 }}
-                      className="text-[90px] md:text-[200px] lg:text-[220px] font-[700] leading-tight whitespace-nowrap absolute z-10 -mt-8 sm:mt-16 md:mt-12 lg:mt-8"
+                      className=" font-[700] leading-tight whitespace-nowrap absolute z-10 -mt-12 sm:mt-12 md:mt-8 lg:mt-2"
                     >
                       30
                     </motion.p>
                     <motion.div
                       variants={animationSettings.numberImage}
                       transition={{ duration: 0.7, delay: 2.5 }}
-                      className="absolute flex items-center justify-center bg-contain bg-center w-[140px] h-[140px] sm:w-[250px] sm:h-[250px] md:w-[350px] md:h-[350px] bg-no-repeat md:ml-4 -mt-16 sm:mt-2 md:-mt-8 overflow-visible"
+                      className="absolute flex items-center justify-center bg-contain bg-center w-[145px] h-[145px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[340px] lg:h-[340px]  bg-no-repeat md:ml-4 -mt-16 sm:mt-2 md:-mt-8 overflow-visible"
                       style={{ backgroundImage: `url('/home/manzana.png')` }}
                     >
                       <div ref={manzanaRef} className="absolute inset-0" />
@@ -181,13 +182,15 @@ export default function Experience() {
                     <motion.p
                       variants={animationSettings.text3}
                       transition={{ duration: 0.7, delay: 1 }}
-                      className="text-[30px]  md:text-[80px] lg:text-[100px] text-[#fff] font-[700] leading-tight whitespace-nowrap text-left"
+                      style={{ fontSize: "clamp(2rem, 10vw, 8rem)" }}
+                      className="text-[#fff] font-[700] leading-tight whitespace-nowrap text-left"
                     >
                       años
                     </motion.p>
                     <motion.p
                       variants={animationSettings.text4}
                       transition={{ duration: 0.7, delay: 2.4 }}
+                      style={{ fontSize: "clamp(1rem, 1.4vw, 1.4rem)" }}
                       className="text-[14px] md:text-[18px] lg:text-[24px] text-[#B52C17] leading-none self-start  font-[800] text-left whitespace-wrap "
                     >
                       de experiencia como productores y comercializadores de

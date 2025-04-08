@@ -15,7 +15,7 @@ export default function TopNavHero({ locale }) {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("topNav");
-  
+
   const changeLanguage = (lang) => {
     if (pathname.length === 3)
       router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
@@ -42,15 +42,15 @@ export default function TopNavHero({ locale }) {
           <Link href="/">
             <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
           </Link>
-          <ul className="hidden lg:flex gap-[1vw] text-2xl font-light">
+          <ul className="hidden lg:flex gap-[1vw] text-[clamp(1rem,1.5vw,1.5rem)] font-light">
             <li>
               <Link href="/" className="hover:underline hover:font-bold">
                 {t("home")}
               </Link>
             </li>
             <li>
-              <Link 
-                href={`/${locale}/#whatWeDo`} 
+              <Link
+                href={`/${locale}/#whatWeDo`}
                 className="hover:underline hover:font-bold"
                 onClick={(e) => handleSmoothScroll(e, "whatWeDo")}
               >
@@ -70,8 +70,8 @@ export default function TopNavHero({ locale }) {
               />
             </li>
             <li>
-              <Link 
-                href={`/${locale}/#ourQuality`} 
+              <Link
+                href={`/${locale}/#ourQuality`}
                 className="hover:underline hover:font-bold"
                 onClick={(e) => handleSmoothScroll(e, "ourQuality")}
               >
@@ -104,6 +104,12 @@ export default function TopNavHero({ locale }) {
             onClick={toggleModal}
           >
             {t("contact")}
+          </button>
+          <button
+            className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
+            onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
+          >
+            {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
           </button>
           <div>
             <button

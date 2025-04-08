@@ -402,7 +402,7 @@ export default function WhatWeDo() {
   }
 
   return (
-    <section className="h-full w-full" >
+    <section className="h-full w-full">
       <div className="w-full h-full flex flex-col">
         <div className="hidden lg:grid">
           <div className="flex">
@@ -429,12 +429,12 @@ export default function WhatWeDo() {
         {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
       </div>
       <div
-        className="py-16 px-4 sm:px-6 lg:px-20"
+        className="py-[96px] px-[clamp(1rem,5vw,6rem)]"
         onMouseOver={() => SetViewBotom(false)}
       >
-        <div className="max-w-7xl mx-auto h-full w-full " id="whatWeDo">
+        <div className="w-full mx-auto h-full" id="whatWeDo">
           <div className="mb-12 -mt-12">{btn()}</div>
-          <div className="flex flex-col lg:flex-row ">
+          <div className="flex flex-col lg:flex-row">
             <div className="relative flex items-center h-full w-full lg:w-1/3">
               {/* Imagen a la izquierda */}
               <div className="lg:w-1/3 w-full h-full">
@@ -446,16 +446,17 @@ export default function WhatWeDo() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[40px] w-fit">
+              <div className="absolute left-16 top-[40px] w-full max-w-[90%] lg:max-w-[400px]">
                 <h2
-                  className={`lg:text-[60px] text-[54px] max-[345px]:text-[15vw] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
+                  className={`text-[clamp(3.5rem,4vw,4rem)] max-[345px]:text-[15vw] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
                   dangerouslySetInnerHTML={{ __html: t("title") }}
                 />
               </div>
             </div>
+
             <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
-              {/* Text Content */}
-              <p className="text-lg text-[#4A4A4A] leading-relaxed ">
+              {/* Contenido de texto */}
+              <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-[#4A4A4A] leading-relaxed">
                 {t("text")}
               </p>
             </div>

@@ -30,14 +30,14 @@ export default async function Home() {
       <NewProduct />
       <ProductCategories />
       <NowNearYou />
-      <div id="ourQuality">
+      <div id="ourQuality" className="w-full">
         <OurQuality />
       </div>
       <OurCertificate />
-      <div id="blog">
+      <div id="blog" className="w-full">
         <Blog />
       </div>
-      <div id="ourCommit">
+      <div id="ourCommit" className="w-full">
         <OurCommit />
       </div>
       <OurCommitWomen />

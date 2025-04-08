@@ -27,7 +27,7 @@ export default function NewProduct() {
     },
   ];
   return (
-    <section className=" px-[48px] lg:px-[70px] 3xl:px-[96px] w-full h-fit mt-20 overflow-hidden">
+    <section className="p-[clamp(1rem,5vw,6rem)] w-full h-fit overflow-hidden">
       <div className="w-full mx-auto flex flex-col-reverse xl:flex-row">
         <div className="xl:w-3/5 w-full mt-12 md:mt-0  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {filteredProducts.map((product, index) => (
@@ -49,8 +49,8 @@ export default function NewProduct() {
               />
             </div>
           </div>
-          <div className="text-[16px] w-full text-black">{data[0].text}</div>
-          <div className="flex justify-end w-full">
+          {/* <div className="text-[16px] w-full text-black">{data[0].text}</div> */}
+          <div className="flex justify-center w-full">
             <a
               href={`/products`}
               className="bg-[#F19412] text-[20px] text-white px-6 mt-4 rounded-md"
