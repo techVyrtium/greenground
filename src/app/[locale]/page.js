@@ -15,12 +15,12 @@ import { ProductCategories } from "../components/productCategories";
 import OurCertificate from "../components/ourCertificate";
 import MapW from "../components/map";
 export default async function Home() {
-  
   return (
     <div
       className={`bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen`}
     >
       <WhatWeDo />
+
       <ResponsibleCompany />
       <Experience />
 
@@ -30,10 +30,16 @@ export default async function Home() {
       <NewProduct />
       <ProductCategories />
       <NowNearYou />
-      <OurQuality />
+      <div id="ourQuality" className="w-full">
+        <OurQuality />
+      </div>
       <OurCertificate />
-      <Blog />
-      <OurCommit />
+      <div id="blog" className="w-full">
+        <Blog />
+      </div>
+      <div id="ourCommit" className="w-full">
+        <OurCommit />
+      </div>
       <OurCommitWomen />
       {/* <WorkerTestimonials /> */}
     </div>

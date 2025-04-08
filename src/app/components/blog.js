@@ -1,7 +1,6 @@
 import RecetNews from "./recetNews";
 
 export default function Blog() {
-
   const data = [
     {
       title: (
@@ -42,14 +41,14 @@ export default function Blog() {
   ];
 
   return (
-    <section className="mt-24 w-full h-full" id='blog'>
+    <section className="mt-24 w-full h-full" id="blog">
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
-        <div className="px-4 sm:px-6 lg:px-20 py-4 box-border">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-10 max-w-7xl mx-auto h-full">
-            <div className="relative flex items-center h-full ml-14 mt-12">
+        <div className="px-[clamp(1rem,5vw,6rem)] ">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-4 w-full mx-auto h-full pt-4">
+            <div className="relative flex items-center h-full mt-12 ">
               {/* Imagen a la izquierda */}
-              <div className="absolute w-fit h-full -left-14 -top-10">
+              <div className="absolute w-fit h-full  -top-10">
                 <img
                   src="/home/sheetWhite.png"
                   alt="Descripción de la imagen"
@@ -57,20 +56,18 @@ export default function Blog() {
                 />
               </div>
               {/* Texto encima de la imagen */}
-              <div className="w-fit text-left">
-                {data[0].title}
-              </div>
+              <div className="w-fit text-left ml-10">{data[0].title}</div>
             </div>
-            <div className="flex flex-col justify-center h-fit lg:mt-4">
+            <div className="flex flex-col justify-center h-fit lg:mt-4 ml-10 text-[clamp(2rem,4vw,2.5rem)]">
               {/* Text Content */}
               <div className="space-y-6">{data[0].text}</div>
-              <div className="mt-6">{data[0].text1}</div>
+              <div className="my-4 ">{data[0].text1}</div>
             </div>
           </div>
         </div>
       </div>
       {/* Zona Card */}
-     <RecetNews />
+      <RecetNews />
     </section>
   );
 }

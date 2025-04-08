@@ -12,7 +12,6 @@ export default function OurCertificate() {
       text: "Contamos con la aprobación de los programas FSMA por parte de la inspección FDA.",
       img: "/home/Approve.png",
     },
-    
   ];
 
   const data2 = [
@@ -20,7 +19,7 @@ export default function OurCertificate() {
       title: (
         <>
           <h2
-            className={`text-[40px] font-bold text-[#008638]  leading-[0.8] font-itcGBold`}
+            className={`text-[64px] font-bold text-[#008638]  leading-[0.8] font-itcGBold`}
           >
             Nuestras certificaciones
           </h2>
@@ -30,21 +29,22 @@ export default function OurCertificate() {
   ];
 
   return (
-    <section className="w-full h-full px-4 sm:px-6 lg:px-20 mt-10">
-      <div className="lg:h-[10rem] max-w-7xl mx-auto">
-
+    <section className="w-full h-full p-[clamp(1rem,5vw,6rem)]">
+      <div className="lg:h-[10rem] w-full mx-auto">
         {/* Info Verde */}
-        <div className="flex flex-col lg:flex-row items-center justify-center h-full w-full gap-16 ">
+        <div className="flex flex-col lg:flex-row items-stretch justify-center h-full w-full gap-16">
           {data.map((dato) => (
             <div className="lg:w-1/2 w-full" key={dato.id}>
-              <div className="w-full h-24 flex flex-row place-items-center items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400">
-                <div className="">
-                  <img src={dato.img} className="w-16" />
-                </div>
-                <div className="w-96 ml-8">
-                  <p className="text-lg text-white text-center leading-relaxed ">
-                    {dato.text}
-                  </p>
+              <div className="w-full h-full flex flex-col">
+                <div className="flex-grow flex items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400 px-6 min-h-[80px]">
+                  <div className="">
+                    <img src={dato.img} className="w-[100px]" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-[29px] text-white text-center leading-8 font-bold py-4">
+                      {dato.text}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function OurCertificate() {
         </div>
       </div>
       {/*  Certificaciones */}
-      <div className="lg:h-[20rem] mt-12 lg:mt-0 max-w-7xl mx-auto">
+      <div className="lg:h-[20rem] mt-[160px] w-full ">
         <div className="flex flex-col w-full items-start gap-12">
           {/* titulo */}
           <div className="h-full w-full relative">
@@ -67,9 +67,7 @@ export default function OurCertificate() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div
-                className="absolute left-10 md:left-14  bottom-[-14px] md:bottom-6 sm:w-fit text-left"
-              >
+              <div className="absolute left-10 md:left-14  bottom-[-14px] md:bottom-6 sm:w-fit text-left">
                 {data2[0].title}
               </div>
             </div>

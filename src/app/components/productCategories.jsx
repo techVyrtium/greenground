@@ -98,11 +98,11 @@ export const ProductCategories = () => {
     <section
       className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)] font-itcGBold`}
     >
-      <div className="bg-[#00000080] py-2 px-4 md:px-8 md:py-10">
-        <h3 className="text-5xl font-bold my-4">{title}</h3>
+      <div className="bg-[#00000080]  p-[clamp(1rem,5vw,6rem)]">
+        <h3 className="text-[clamp(42px,5vw,48px)] font-bold my-4">{title}</h3>
         <div
           className={
-            "flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-around"
+            "flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-around pt-10"
           }
         >
           <ProductCategory
@@ -162,20 +162,18 @@ const ProductCategory = ({
 }) => {
   return (
     <Link
-      className={
-        `group w-[354px] md:w-[21.875rem] max-w-full h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`
-      }
+      className={`group w-[100%] lg:w-[30%] h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`}
       href={link}
     >
-
       <div className="lg:flex justify-end w-full absolute hidden">
         <div
           className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
         ></div>
       </div>
       <h3
-        className={`text-[34px] lg:text-4xl font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? "pl-14 py-4" : "py-6"
-          } px-4 w-full ${classNameTitle}`}
+        className={`text-[34px] lg:text-4xl font-bold flex flex-col lg:bg-transparent leading-7 ${
+          sup ? "pl-14 py-4" : "py-6"
+        } px-4 w-full ${classNameTitle}`}
       >
         <div className="text-2xl md:text-3xl self-start">{sup}</div>
         {title}

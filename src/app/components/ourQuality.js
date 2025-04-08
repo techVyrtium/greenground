@@ -7,7 +7,7 @@ export default function OurQuality() {
     {
       title: (
         <>
-          <h2 className="text-[60px] font-bold text-white mb-12 leading-[0.8]">
+          <h2 className="text-[clamp(50px,3.5vw,60px)] font-bold text-white mb-12 leading-[1] w-full md:w-full 2xl:max-w-[300px]">
             Nuestra calidad
           </h2>
         </>
@@ -44,9 +44,9 @@ export default function OurQuality() {
   };
 
   return (
-    <section className="mt-24 w-full h-full" id='ourQuality'>
-      <div className="h-[25rem] lg:h-[20rem] bg-[url(/home/bg-orange.png)] bg-cover bg-no-repeat">
-        <div className="flex flex-col lg:flex-row max-w-7xl mx-auto h-full">
+    <section className="mt-[96px] w-full h-full " id="ourQuality">
+      <div className="h-[25rem] lg:h-[20rem] bg-[url(/home/bg-orange.png)] bg-cover bg-no-repeat px-[clamp(1rem,5vw,6rem)] pt-4">
+        <div className="flex flex-col lg:flex-row w-full mx-auto h-full">
           <div className="relative flex h-full w-2/3 md:w-full lg:w-2/3 py-2 md:py-8 px-4 md:px-0">
             {/* Imagen a la izquierda */}
             <div className="w-1/3 h-full">
@@ -65,7 +65,7 @@ export default function OurQuality() {
           <div className="flex items-start lg:items-center lg:justify-center h-full xl:h-[16rem] px-4 md:px-0 -mt-8 md:mt-0 ">
             {/* Text Content */}
             <div className="space-y-6">
-              <p className="text-lg text-white leading-relaxed">
+              <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-white leading-relaxed">
                 {data[0].text}
               </p>
             </div>
@@ -73,8 +73,8 @@ export default function OurQuality() {
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-20 flex flex-row  -mt-8 md:-mt-26">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row w-full">
+      <div className="px-4 sm:px-6 lg:px-20 flex flex-row  -mt-8 md:-mt-20">
+        <div className=" mx-auto flex flex-col lg:flex-row w-full">
           <div className="lg:w-2/3 w-full flex items-center justify-center">
             <div className="flex flex-row items-center justify-evenly w-full">
               <div className="">
@@ -101,8 +101,8 @@ export default function OurQuality() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 w-full flex md:ml-10 md:w-fit">
-            <p className="text-lg text-[#4A4A4A] leading-relaxed mt-8 md:mt-32 text-justify">
+          <div className="lg:w-1/2 w-full flex md:ml-4 md:w-fit">
+            <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-[#4A4A4A] leading-relaxed mt-8 md:mt-32 text-left">
               {data[0].text2}
             </p>
           </div>
