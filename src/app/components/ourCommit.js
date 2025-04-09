@@ -25,7 +25,7 @@ export default function OurCommit() {
         <div className="px-[clamp(1rem,5vw,6rem)]">
           <div className="relative grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] w-full mx-auto h-full">
             {/* Columna izquierda (Imagen y texto) */}
-            <div className="relative flex h-full xl:h-auto py-8 xl:py-0">
+            <div className="relative flex h-full xl:h-auto py-4 ">
               <div className="xl:w-1/3 h-full">
                 <img
                   src="/home/sheetWhite.png"
@@ -35,7 +35,7 @@ export default function OurCommit() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-12 xl:left-16 top-[65px] xl:top-[40px] w-full text-left font-itcGBold">
+              <div className="absolute left-12 xl:left-16 top-[65px] xl:top-[50px] w-full text-left font-itcGBold">
                 {data[0].title}
               </div>
             </div>
