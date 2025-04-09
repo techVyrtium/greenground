@@ -10,7 +10,7 @@ export default function CardBlog({ data, color }) {
           className="flex flex-col h-full bg-transparent items-stretch"
         >
           <div className="w-full h-auto object-cover bg-no-repeat bg-cover">
-            <img src={dato.img} />
+            <img src={dato.img} className="rounded-md" />
           </div>
           <div className="p-[8px] 2xl:p-[16px] flex flex-col flex-grow">
             <div

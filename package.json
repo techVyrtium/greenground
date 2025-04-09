@@ -32,5 +32,9 @@
     "eslint-config-next": "15.2.4",
     "tailwindcss": "^4",
     "typescript": "5.8.2"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next-intl.config.js",
+  "author": "",
+  "license": "ISC"
 }
