@@ -99,10 +99,10 @@ export const ProductCategories = () => {
       className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)] font-itcGBold`}
     >
       <div className="bg-[#00000080]  p-[clamp(1rem,5vw,6rem)]">
-        <h3 className="text-[clamp(42px,5vw,48px)] font-bold my-4">{title}</h3>
+        <h3 className="text-[clamp(38px,3vw,48px)] font-bold my-4">{title}</h3>
         <div
           className={
-            "flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-around pt-10"
+            "flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-between pt-10"
           }
         >
           <ProductCategory
@@ -162,7 +162,7 @@ const ProductCategory = ({
 }) => {
   return (
     <Link
-      className={`group w-[100%] lg:w-[30%] h-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`}
+      className={`group w-[100%] lg:w-[30%] h-[300px] text-center align-middle product-category-card rounded-lg cursor-pointer flex justify-center items-center relative overflow-hidden z-10 ${className}`}
       href={link}
     >
       <div className="lg:flex justify-end w-full absolute hidden">

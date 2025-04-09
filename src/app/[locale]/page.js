@@ -24,7 +24,7 @@ export default async function Home() {
       <ResponsibleCompany />
       <Experience />
 
-      {/* <MapW /> */}
+      <MapW />
       <CaptureWorldOur />
       <TopProduct />
       <NewProduct />

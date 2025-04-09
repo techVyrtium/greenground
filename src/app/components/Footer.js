@@ -24,27 +24,41 @@ export default function Footer() {
           {/* Menú */}
           <div className="text-left min-w-[120px] self-start text-base md:text-2xl">
             <h3 className="font-bold text-3xl mb-3">{t("menuTitle")}</h3>
-            <ul className="space-y-1 text-white/90 ">
+            <ul className="space-y-2 text-white/90 ">
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.home")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.home")}
+                </Link>
               </li>
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.whatWeDo")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.whatWeDo")}
+                </Link>
               </li>
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.products")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.products")}
+                </Link>
               </li>
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.quality")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.quality")}
+                </Link>
               </li>
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.aboutUs")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.aboutUs")}
+                </Link>
               </li>
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.social")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.social")}
+                </Link>
               </li>
               <li className="font-bold">
-                <Link href={"#"} className="hover:underline">{t("menuItems.contact")}</Link>
+                <Link href={"#"} className="hover:underline">
+                  {t("menuItems.contact")}
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,19 +68,26 @@ export default function Footer() {
             <h3 className="font-bold text-3xl mb-3">{t("contactTitle")}</h3>
             <div className="flex items-center gap-2 mb-3">
               <Image src="/icon-phone.svg" alt="Phone" width={20} height={20} />
-              <Link href={"tel:+573004194289"} className="hover:underline">+57 3004194289</Link>
+              <Link href={"tel:+573004194289"} className="hover:underline">
+                +57 3004194289
+              </Link>
             </div>
             <div className="flex items-center  gap-2 mb-5">
               <Image src="/icon-email.svg" alt="Email" width={35} height={35} />
               <span className="break-all">
-                <Link href={"mailto:directorcomercial@greenground.com.co"} className="hover:underline">directorcomercial@greenground.com.co</Link>
+                <Link
+                  href={"mailto:directorcomercial@greenground.com.co"}
+                  className="hover:underline"
+                >
+                  directorcomercial@greenground.com.co
+                </Link>
               </span>
             </div>
             <ul className="space-y-1 text-base lg:text-2xl">
               <li>
                 <Link
                   href="https://greenground.com.co/politica-para-el-tratamiento-de-datos-personales-de-los-titulares/"
-                  className="text-orange-400 underline"
+                  className="text-orange-400 underline font-[700]"
                 >
                   {t("policies.dataPolicy")}
                 </Link>
@@ -74,7 +95,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="https://greenground.com.co/politica-de-seguridad/"
-                  className="text-orange-400 underline"
+                  className="text-orange-400 underline font-[700]"
                 >
                   {t("policies.securityPolicy")}
                 </Link>

@@ -20,7 +20,7 @@ export default function WhatWeDo() {
       title: "AHORA MÁS CERCA DE TI",
       text: (
         <>
-          <p className="text-[30px] text-white ">
+          <p className="text-[clamp(18px,2.5vw,28px)] text-white ">
             Encuentra nuestros productos{" "}
             <span className=" font-bold">Green ground </span>
             en<span className=" font-bold">tiendas ara </span>y abre las puertas
@@ -38,7 +38,7 @@ export default function WhatWeDo() {
       title2: "Tradición en cada",
       text: (
         <>
-          <p className="lg:text-[30px] md:text-[24px] text-[24px] text-white ">
+          <p className="text-[clamp(18px,2.5vw,28px)] text-white text-left ">
             Conoce nuestros productos{" "}
             <span className=" font-bold">
               orgánicos, sin etiquetas de excesos{" "}
@@ -175,7 +175,7 @@ export default function WhatWeDo() {
         className="px-4 sm:px-6 lg:px-22 w-full h-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat"
         ref={ubiRef}
       >
-        <div className="hidden lg:grid ">
+        <div className="hidden lg:grid">
           <div className=" flex flex-col lg:flex-row ">
             <motion.div
               initial={{ opacity: 0, x: 0 }}
@@ -197,7 +197,7 @@ export default function WhatWeDo() {
               </div>
               <div className="mt-12 flex justify-center">
                 <h1
-                  className={`text-white text-[100px] font-bold leading-21 font-itcGBold`}
+                  className={`text-white lg:text-[clamp(50px,5vw,95px)] font-bold leading-21 font-itcGBold`}
                 >
                   {data2[0].title}
                 </h1>
@@ -207,9 +207,20 @@ export default function WhatWeDo() {
               </div>
               <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
                 <div className="flex flex-row gap-8">
-                  <img src="/home/GFICON.png" className=" w-[140px]" />
-                  <img src="/home/MICICON.png" className=" w-[140px]" />
-                  <img src="/home/READYICON.png" className=" w-[140px]" />
+                  <img
+                    src="/home/GFICON.png"
+                    className="md:w-[156px] w-[120px]"
+                  />
+                  <img
+                    src="/home/MICICON.png"
+                    className="md:w-[156px] w-[120px]"
+                  />
+                </div>
+                <div className="gap-8">
+                  <img
+                    src="/home/READYICON.png"
+                    className="md:w-[156px] w-[120px]"
+                  />
                 </div>
               </div>
               <div className="flex items-end justify-end">
@@ -233,7 +244,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/homeYellow1.png"
-                  className="absolute w-[450px] h-[auto] -ml-14 z-10 "
+                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
                 />
               </div>
               <div>
@@ -248,7 +259,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/patacones.png"
-                  className="absolute w-[450px] h-[auto] mt-42 ml-40 z-2"
+                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
                 />
               </div>
               <div>
@@ -263,7 +274,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/papaCriolla.png"
-                  className="w-[350px] h-[auto] mt-70 ml-[24rem] "
+                  className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
                 />
               </div>
             </div>
@@ -300,7 +311,7 @@ export default function WhatWeDo() {
               </div>
               <div className="mt-6 flex justify-start">
                 <h1
-                  className={`text-white text-[82px] font-bold  leading-21 font-itcGBold`}
+                  className={`text-white lg:text-[clamp(50px,5vw,95px)] font-bold  leading-21 font-itcGBold`}
                 >
                   {data[0].title}
                 </h1>
@@ -435,20 +446,20 @@ export default function WhatWeDo() {
         <div className="w-full mx-auto h-full" id="whatWeDo">
           <div className="mb-12 -mt-12">{btn()}</div>
           <div className="flex flex-col lg:flex-row">
-            <div className="relative flex items-center h-full w-full lg:w-1/3">
+            <div className="relative flex items-center h-full w-full lg:w-1/3 -top-8">
               {/* Imagen a la izquierda */}
               <div className="lg:w-1/3 w-full h-full">
                 <img
                   src="/home/quehacemos.png"
                   alt="Descripción de la imagen"
-                  className="w-[100px] h-[120px]"
+                  className="w-[80px] h-auto lg:w-[100px] lg:h-[120px]"
                 />
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[40px] w-full max-w-[90%] lg:max-w-[400px]">
+              <div className="absolute left-16 top-[30px] w-full max-w-[90%] lg:max-w-[400px]">
                 <h2
-                  className={`text-[clamp(3.5rem,4vw,4rem)] max-[345px]:text-[15vw] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
+                  className={`text-[clamp(40px,6vw,96px)] lg:text-[clamp(70px,5.8vw,96px)]  font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
                   dangerouslySetInnerHTML={{ __html: t("title") }}
                 />
               </div>
@@ -456,7 +467,7 @@ export default function WhatWeDo() {
 
             <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
               {/* Contenido de texto */}
-              <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-[#4A4A4A] leading-relaxed">
+              <p className="text-[clamp(22px,1.45vw,28px)] text-[#4A4A4A] leading-[1.3] ">
                 {t("text")}
               </p>
             </div>

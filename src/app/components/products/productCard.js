@@ -28,42 +28,40 @@ const ProductCard = ({ product, infinity = null }) => {
   };
 
   return (
-    <div className="w-full rounded-xl p-3 relative pb-12">
+    <div className="w-full rounded-xl p-2 relative pb-12">
       <Slider {...settings} className="rounded-lg">
         {product.images.map((img, index) => (
           <div key={index}>
             <img
               src={img}
               alt={product.title}
-              className="w-full h-48 3xl:h-56 object-cover rounded-lg bg-white/60 shadow-md"
+              className="w-full h-[200px] object-contain rounded-lg bg-white/60 shadow-md"
             />
           </div>
         ))}
       </Slider>
       {!hasMultipleImages && (
-        <div className="relative py-2 w-full">
+        <div className="relative py-2 w-full pb-[12px]">
           <ul className="flex justify-center items-center">
             <li>
-              <div className=" bg-[#b52c17] rounded-full mx-1 w-4 h-4" />
+              <div className=" bg-[#b52c17] rounded-full mx-1 w-4 h-4 " />
             </li>
           </ul>
         </div>
       )}
 
-      <div className="border border-[#008638] text-[#4A4A4A] text-[18px] 3xl:text-[24px] p-1 rounded-lg flex flex-col">
+      <div className="border border-[#008638] text-[#4A4A4A]  text-[clamp(18px,1.25vw,24px)] font-bold p-1 rounded-lg flex flex-col">
         <div className="min-h-[60px] flex items-center justify-center px-2 overflow-y-auto">
-          <h3 className="text-center leading-snug text-[16px] 3xl:text-[24px]">
-            {product.title}
-          </h3>
+          <h3 className="text-center leading-snug ">{product.title}</h3>
         </div>
 
         <div className="border-t border-[#F19412] mt-auto w-full">
-          <div className="flex justify-center items-center text-[10px] 3xl:text-[14px] py-2">
-            {product.price || "0.00"} usd
+          <div className="flex justify-center items-center text-[clamp(12px,1.8vw,14px)] py-2 font-normal">
+            {product.presentation || "500 gr / 1kg / 2kg / 3kg"}
           </div>
           <a
             href={`/products/${product.slug}`}
-            className="block w-full bg-[#F5B356] text-white text-[14px] 3xl:text-[24px] rounded-md p-2 text-center"
+            className="block w-full bg-[#F5B356] text-white text-[clamp(18px,1.25vw,24px)]  rounded-md p-2 text-center"
           >
             Ver producto
           </a>
