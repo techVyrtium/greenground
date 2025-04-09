@@ -6,7 +6,7 @@ export default function Blog() {
       title: (
         <>
           <h2
-            className={`text-[60px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}
+            className={`text-[clamp(70px,9vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-0 leading-[1] font-itcGBold`}
           >
             Blog
           </h2>
@@ -45,10 +45,10 @@ export default function Blog() {
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)] ">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-4 w-full mx-auto h-full pt-4">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-4 w-full mx-auto h-full pt-4 pb-10">
             <div className="relative flex items-center h-full mt-12 ">
               {/* Imagen a la izquierda */}
-              <div className="absolute w-fit h-full  -top-10">
+              <div className="absolute w-fit h-full -top-6">
                 <img
                   src="/home/sheetWhite.png"
                   alt="Descripción de la imagen"

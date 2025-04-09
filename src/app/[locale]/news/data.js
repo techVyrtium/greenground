@@ -6,7 +6,7 @@ const Data = () => {
       tipo: "novedades",
       description:
         "La fusión del respeto por la sabiduría de los mejores y la aceptación de las ideas innovadoras de los jóvenes ha permitido que tres generaciones de la familia Galán, orgullosamente campesinos de la Sabana, hayan construido una de las 100 empresas colombianas con mayor productividad en corto tiempo.",
-      img: "/news/womenCook.svg",
+      img: "/news/revistasemana2card.png",
       btn: "Consulta el reportaje",
       section: (
         <>
@@ -17,14 +17,14 @@ const Data = () => {
             Articulo publicado en revista semana
           </p>
           {/* <img src={"/news/prodAgricola.svg"} className="w-full" /> */}
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La fusión del respeto por la sabiduría de los mejores y la
             aceptación de las ideas innovadoras de los jóvenes ha permitido que
             tres generaciones de la familia Galán, orgullosamente campesinos de
             la Sabana, hayan construido una de las 100 empresas colombianas con
             mayor productividad en corto tiempo.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Se trata de Productora Agricola AG CI SAS, iniciada por los abuelos
             de Sebastián Santamaría Galán, quienes se dedicaban a vender en la
             Central de Abastos de Bogotá -Corabastos- todo tipo de hortalizas en
@@ -33,12 +33,12 @@ const Data = () => {
             mercado institucional del país, como hoteles, restaurantes y puntos
             remotos como Caño Limón y Cerrejón.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Con una visión global, Sebastián y su prima Daniela Galán impulsaron
             en la empresa familiar un nuevo proceso que consistía en darle valor
             agregado a los productos y buscar mercados internacionales.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Procolombia jugó un papel definitivo en el despegue internacional de
             esta empresa, pues abrió los cambios para que Sebastián y Daniela
             participaran en una rueda de negocios en Atlanta, Estados Unidos.
@@ -46,9 +46,9 @@ const Data = () => {
             de plátano.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            &ldquo;La verdad, no éramos expertos en la manipulación de plátanos.
-            No obstante, nos aventuramos porque es un producto de gran potencial
-            en el mercado, dado que es la base de la canasta familiar en
+          &ldquo;La verdad, no éramos expertos en la manipulación de plátanos. No
+            obstante, nos aventuramos porque es un producto de gran potencial en
+            el mercado, dado que es la base de la canasta familiar en
             Centroamérica, Suramérica y África; además, se está convirtiendo en
             parte del consumo regular en Norteamérica por la mezcla de culturas
             que se congregan en ese país&rdquo;. Indicó Sebastián Santamaría
@@ -57,7 +57,7 @@ const Data = () => {
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">
             El inicio de las exportaciones
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             En diciembre de 2016, Productora Agricola AG SAS envió su primer
             contenedor a Estados Unidos, y lo hizo a través del Puerto de
             Barranquilla. &ldquo;A los seis meses de tener nuestra planta
@@ -70,7 +70,7 @@ const Data = () => {
             pre-fritas y congeladas.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            &ldquo;El primer contenedor lo tuvimos listo en 45 días; ahora un
+          &ldquo;El primer contenedor lo tuvimos listo en 45 días; ahora un
             contenedor para exportar lo tenemos listo en dos días y medio.
             Cuando comenzamos este proyecto éramos 4 personas; hoy somos 88. En
             nuestros inicios teníamos procesos muy manuales; hoy ya estamos
@@ -81,29 +81,29 @@ const Data = () => {
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">
             El Puerto de Barranquilla, su aliado
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             El Puerto de Barranquilla cumplió y superó todas sus expectativas,
             pues además de garantizar la cadena de frío para el producto,
             Sebastián encontró en él un gran aliado que le brinda asesoría
             comercial para aumentar las exportaciones.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            &ldquo;Éramos una empresa sin experiencia, nuestro volumen era de un
+          &ldquo;Éramos una empresa sin experiencia, nuestro volumen era de un
             contenedor al mes, aún así, ellos venían a hablar con nosotros, a
             trabajar de la mano con nosotros en nuestros procesos para ayudarnos
             a mejorarlos. Nos facilitaron los canales de comunicación con las
             autoridades para explicarles que las condiciones del producto se
             pueden afectar si no se respeta la cadena de frío&rdquo;, precisó.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Actualmente están exportando 9 contenedores al mes, los cuales van a
             países como Estados Unidos, Australia y España, lo que ha permitido
             que la empresa registre un crecimiento acumulado de 280% entre 2017
             y 2019.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            &ldquo;El área Comercial del Puerto se ha encargado de ayudarnos
-            para aumentar las exportaciones y competir con países como Ecuador,
+          &ldquo;El área Comercial del Puerto se ha encargado de ayudarnos para
+            aumentar las exportaciones y competir con países como Ecuador,
             Guatemala y Honduras. Nos han guiado para disminuir nuestros costos
             operativos y volvernos más competitivos. Ana María, nuestra asesora
             comercial, siempre está dispuesta a visitarnos y ayudarnos en este
@@ -113,19 +113,19 @@ const Data = () => {
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">
             De Corabastos a Zipaquirá
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Hace menos de tres años, el 100% de las ventas de Productora
             Agricola AG SAS eran nacionales; ahora, el 98% de las ventas son
             internacionales, lo que motivó a que la tradicional sede de la
             empresa familiar en Corabastos se trasladara a la planta del Parque
             Logístico La Paz, en Zipaquirá. 
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Allí José Antonio Galán es el Gerente General, Maria Galán es la
             Gerente de Calidad, Daniela Galán es la Directora de Producción, y
             Sebastián Santamaría es el Director Comercial y de Innovación.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Uno de los grandes valores que se respiran en la empresa de los
             Galán es la unión familiar, que ha pasado de generación en
             generación como un importante legado. &ldquo;Lo lindo es que acá
@@ -133,7 +133,7 @@ const Data = () => {
             se siente en cada una de las cosas que hacemos, porque hemos hecho
             con muy poco&rdquo;, afirma Sebastián.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Precisamente, incluso con la inversión de tecnificación, ese
             concepto de la familia los ha impulsado a tratar de mantener el
             número de trabajadores. &ldquo;Sabemos lo que es venir de abajo, por
@@ -142,13 +142,13 @@ const Data = () => {
           </p>
 
           <p className="mb-6 text-[32px] mt-4 text-[#008638]">ProColombia</p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Uno de los grandes apoyos que destaca Sebastián es el de
             ProColombia, entidad que les ha abierto espacios en ruedas de
             negocio, agendas personalizadas en Estados Unidos y seguimiento con
             visitas a la empresa.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Como premio a los excelentes resultados de productividad en tan
             corto tiempo, próximamente esta empresa familiar recibirá la visita
             del Viceministro de Comercio Exterior y el Presidente de ProColombia
@@ -165,14 +165,14 @@ const Data = () => {
       tipo: "novedades",
       description:
         "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
-      img: "/news/exportarTram.svg",
+      img: "/news/GreenGroundcard.png",
       btn: "Consulta el reportaje",
       section: (
         <>
           <p className="text-[30px] md:text-[36px] xl:text-[50px] 2xl:text-[60px] text-[#008638] font-itcGBold ">
             Green Ground: Exportar es un trampolín para crecer.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Hace cinco años, para graduarse de administración de empresas de la
             Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su
             proyecto de grado pensando en agregar valor al negocio familiar,
@@ -180,12 +180,12 @@ const Data = () => {
             hortalizas.
           </p>
           {/* <img src={"/news/prodAgricola.svg"} className="w-full" /> */}
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La segunda generación ya había hecho su aporte: convertir el negocio
             en una compañía que hacía mercados para grandes empresas, colegios,
             universidades y hoteles, entre otros.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Con la ayuda de su familia desarrollaron productos prelistos fáciles
             de preparar, como zanahoria en rodajas o papas precocidas. Ante la
             quiebra de sus clientes, decidieron explorar las oportunidades de
@@ -193,7 +193,7 @@ const Data = () => {
             técnicos y de mercado, logrando en 2016 poner a punto su planta de
             producción para salir al mundo.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La empresa participó en una rueda de negocios en Atlanta donde un
             cliente le pidió tajadas de plátano maduro, un producto que no
             hacían, pero que decidieron desarrollar para aprovechar la
@@ -202,32 +202,32 @@ const Data = () => {
             <span className="text-[#008638] underline">Estados Unidos</span>{" "}
             llegaron a representar el 90% de las ventas de la compañía.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Hasta principios de 2020, aparte de las tajadas que representan el
             85% de las ventas, se exportaban patacones y papas criollas, entre
             otros.{" "}
             <span className="font-semibold">
-              &ldquo;Con la pandemia, como los productos llegaban a
-              restaurantes, hoteles y colegios en Estados Unidos. Las ventas
-              disminuyeron. Entonces decidimos ejecutar un proyecto que teníamos
-              pendiente: posicionarnos como comercializadora de productos
-              colombianos en el exterior&rdquo;,
+            &ldquo;Con la pandemia, como los productos llegaban a restaurantes,
+              hoteles y colegios en Estados Unidos. Las ventas disminuyeron.
+              Entonces decidimos ejecutar un proyecto que teníamos pendiente:
+              posicionarnos como comercializadora de productos colombianos en el
+              exterior&ldquo;,
             </span>{" "}
             afirma Santamaría, ahora gerente comercial de Green Ground.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             En su portafolio internacional, la empresa ha incluido Chocoramo,
             Choclitos, Pony Malta, Detodito y Barrilete, entre otros productos.
             Los despachos atienden la demanda en países como Estados Unidos,
             Australia, España, Canadá, Chile y Perú.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La compañía genera en la actualizada un promedio de ventas de USD 3
             millones anuales y cuenta con 114 colaboradores en su nómina.
             Durante la pandemia, no despidieron a ningún trabajador, incluso
             generaron 25 puestos de trabajo adicionales.
           </p>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             De acuerdo con Santamaría, desde 2016 vienen creciendo al 350%
             anual.{" "}
             <span className="font-semibold">
@@ -240,7 +240,7 @@ const Data = () => {
             </span>
           </p>
           <ol
-            className=" list-disc font-semibold text-[24px] text-[#4A4A4A]"
+            className=" list-disc font-semibold text-[24px] text-[#4A4A4A] text-justify marker:text-[#008638]"
             style={{ listStyleType: "disc" }}
           >
             <li className="mb-4 list-disc  ">
@@ -275,20 +275,20 @@ const Data = () => {
       tipo: "novedades",
       description:
         "Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y manes, hoy salen más comidas de la nevera al fogón.",
-      img: "/news/recetamaduro.svg",
+      img: "/news/revistasemanacard.png",
       btn: "Consulta el reportaje",
       section: (
         <>
           <p className="text-[30px] md:text-[36px] xl:text-[50px] 2xl:text-[60px] text-[#008638] font-itcGBold ">
             Boom de congelados
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] font-semibold">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] font-semibold text-justify indent-8">
             Las cuarentenas son el motor del negocio de alimentos congelados,
             cuyo consumo está al alza. Desde empanadas y pasteles hasta
             sancochos y manes, hoy salen más comidas de la nevera al fogón.
           </p>
           {/* <img src={"/news/prodAgricola.svg"} className="w-full" /> */}
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             COLOMBIA ES UNO DE LOS países donde más se aprecia la comida
             &ldquo;fresca&rdquo;. Es decir, aquella que tiene menos
             intervenciones para llegar del campo a la mesa. El que no pase por
@@ -298,14 +298,14 @@ const Data = () => {
             encontrado en los alimentos congelados una forma eficiente de llenar
             sus alacenas y acelerar su cocción.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Quizás los congelados más populares son las papas a la francesa y
             las pizzas. Este nicho se ha venido expandiendo con las cuarentenas
             adoptadas para frenar el coronavirus ya sea porque con más personas
             en teletrabajo necesitan cocinar rápido, o porque ya no pueden ir a
             los restaurantes a disfrutar de sus platos favoritos.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Esto ya está cambiando las tendencias. El Grupo Éxito registró el
             año pasado un aumento de 76 por ciento en las ventas de congelados,
             en comparación con 2019. En particular, su marca propia se disparó
@@ -326,12 +326,12 @@ const Data = () => {
               </span>
             </p>
           </div>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Cifras de Euromonitos indican que el mercado de alimentos congelados
             del país pasó de 173.600 millones de pesos en 2019 a 189.500
             millones en 2020.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Esta moda ya es global. La firma WGSN, que se dedica al pronóstico
             de tendencias, encontró que hay un renovado interés de los
             consumidores por los congelados, tanto por estar confinados en casa
@@ -345,31 +345,31 @@ const Data = () => {
             permiten a los compradores disfrutar de comida global, que antes
             solo se conseguía en restaurantes.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Rollitos primaverales chinos, burritos, platos indios o árabes ya
             vienen listos y solo requieren su paso por el horno.
           </p>
 
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Congelar alimentos es cada vez más tecnificado, con calidad e
             inocuidad. El canal institucional era el mayor comprador, pero ahora
             entraron con fuerza al hogar.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Empresas como Green Ground usan tecnología para madurar plátanos,
             tirarlos y ultracongelarlos, al punto que cuando se van a consumir
             parecen estar recién fritos o asados.
           </p>
           <p className="mb-2 text-[32px] mt-4 text-[#008638]">LOS DE SIEMPRE</p>
 
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Empresas tradicionales del sector como la caleña Congelados Criss y
             la bogotana Green Ground no han sido ajenas a este aumento de
             demanda en los hogares, aunque también han estado golpeadas por las
             menores compras de restaurantes, cafeterías y hoteles que han sido
             sus grandes cliente
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Juan Sebastián Santamaría, gerente comercial de Green Ground, afirma
             que produce congelados étnicos (principalmente a base de plátano),
             cuenta que el año pasado fue bueno porque pudieron exportar más, lo
@@ -378,7 +378,7 @@ const Data = () => {
             oportunidad de poner valor agregado a los alimentos y por ejemplo no
             venden la cebolla entera sino en julianas o con alguna cocción.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Así, de la mano de ProColombia, lograron ajustar sus productos para
             exportar. Compran plátano y lo ponen en un proceso de maduración
             controlado, le miden los grados de dulzura, lo pelan, lo fríen y lo
@@ -391,7 +391,7 @@ const Data = () => {
             Colombia hay que trabajar para seguir aumentando la cultura del
             consumo y ampliar el espacio de congeladores en los supermercados.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             En Congelados Criss comenzaron con la fabricación de empanadas y
             luego pasaron a deditos de queso, aborrajados, marranitas y otros
             productos típicos que la gente no sabe o no quiere preparar, o que
@@ -402,13 +402,13 @@ const Data = () => {
           </p>
 
           <p className="mb-2 text-[32px] mt-4 text-[#008638]">LOS QUE LLEGAN</p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             El <span className="italic">boom</span> de los congelados también ha
             implicado oportunidades para empresas que no estaban en ese nicho,
             como es el caso de Bimbo, que sacó su línea de panes congelados de
             cocinar en casa.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Tatiana Esguerra, gerente de mercado de esa multinacional, dice que
             llegaron a este producto por tres factores: hace tres años compraron
             Panetier -una fábrica de pan congelado que estaba dirigida al sector
@@ -417,13 +417,13 @@ const Data = () => {
             de innovar.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-            &ldquo;Fue un desarrollo que se logró en un tiempo récord de seis
-            meses. Salimos al mercado con un portafolio de baguettes congelados
-            para venta en supermercados como los que Congelar alimentos es cada
-            vez más tecnificado, con calidad e inocuidad. El canal institucional
-            era el mayor comprador, pero ahora entraron con fuerza al hogar.
+            “Fue un desarrollo que se logró en un tiempo récord de seis meses.
+            Salimos al mercado con un portafolio de baguettes congelados para
+            venta en supermercados como los que Congelar alimentos es cada vez
+            más tecnificado, con calidad e inocuidad. El canal institucional era
+            el mayor comprador, pero ahora entraron con fuerza al hogar.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Empresas como Green Ground usan tecnología para madurar plátanos,
             tirarlos y ultracongelarlos, al punto que cuando se van a consumir
             parecen estar recién fritos o asados, teníamos en Panetier y hoy los
@@ -431,7 +431,7 @@ const Data = () => {
             país&rdquo;. dice Esguerra.
           </p>
 
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Otro es el caso de la cadena de heladerías Popsy, que en plena
             pandemia decidió apostar por una nueva alternativa de domicilios de
             comida congelada o lista para cocinar en la casa. Aprovechando que
@@ -440,7 +440,7 @@ const Data = () => {
             unió a otros proveedores de alimentos para montar el canal digital
             Amicasa.com.co.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Desde este portal los clientes pueden adquirir distintos productos
             congelados que llegan a su hogar desde el punto de fábrica y
             conservan la cadena de frío. Además de Popsy, en A Mi Casa están
@@ -449,7 +449,7 @@ const Data = () => {
             también pertenece a Popsy y la idea es que se venden las galletas
             listas para hornear en casa.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             También Alianza Team, con su marca Dagusto lanzó un portafolio de
             panadería para el hogar con productos congelados. En menos de seis
             meses lograron sacar al mercado 15 nuevas referencias entre
@@ -457,7 +457,7 @@ const Data = () => {
             otras. Su apuesta consiste en replicar la experiencia de consumir un
             pan recién horneado, caliente y fresco en la cocina de los hogares.
           </p>
-          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La oferta local de congelados va más allá del mecato o la panadería
             de platos listos, como sancochos y ajiacos (que antes solo estaban
             dirigidos a la exportación), o como algunos ingredientes listos para
@@ -476,22 +476,22 @@ const Data = () => {
       tipo: "recetas",
       description:
         "Prepara un puré de yuca y doble queso súper cremoso con Yuca Green Ground. Receta paso a paso y lista en minutos.",
-      img: "/news/recetatostone.svg",
+      img: "/news/Puredeyuca-card.png",
       btn: "Consulta receta",
       section: (
         <>
           <div className="flex md:flex-row flex-col">
             <div className="lg:w-1/2 w-full gap-8">
-              <img src={"/news/tostonparareceta.svg"} className="w-full" />
+              <img src={"/news/Puredeyuca.jpg"} className="w-full rounded-md" />
             </div>
-            <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
-              <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
+            <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-0">
+              <p className="text-[30px] md:text-[36px] xl:text-[36px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
                 Aborrajados de plátano maduro con queso: receta fácil y rápida
               </p>
               <p className="mb-2 text-[22px] mt-4 text-[#008638]">
                 Porciones: 4-6
               </p>
-              <p className="mb-5 text-[22px] mt-4 text-[#008638]">
+              <p className="mb-2 text-[22px] mt-4 text-[#008638]">
                 Tiempo de preparación: 45-55 minutos.
               </p>
               <div className=" bg-[#008E4A] w-full rounded-md">
@@ -532,14 +532,14 @@ const Data = () => {
               </div>
             </div>
           </div>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Esta receta realza el sabor natural de la{" "}
             <span className="font-semibold">yuca</span> combinándola con la
             textura fundente de la mozzarella, el toque sabroso del queso
             costeño y la cremosidad del queso crema, creando un puré
             irresistible y perfecto para acompañar una gran variedad de platos.
           </p>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La presentación de{" "}
             <span className="font-semibold">Yuca en Trozos Green Ground</span>{" "}
             facilita la preparación al venir ya cortada, ahorrándote tiempo en
@@ -548,7 +548,7 @@ const Data = () => {
           <p className="mb-4 text-[32px] mt-4 text-[#008638]">
             Pasos para la Preparación:
           </p>
-          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px] text-justify">
             <li className="mb-4   ">
               Coloca la{" "}
               <span className="font-semibold">Yuca en Trozos Green Ground</span>{" "}
@@ -602,7 +602,7 @@ const Data = () => {
             </li>
           </ol>
           <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
-          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px] text-justify">
             <li className="mb-4   ">
               Sofreír ligeramente el ajo en la mantequilla antes de incorporarlo
               al puré le dará un toque aromático y un sabor más profundo que
@@ -627,7 +627,7 @@ const Data = () => {
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
-              <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
+              <p className="text-[#4A4A4A] text-[24px] leading-[28px] text-justify 2xl:text-[24px]">
                 Con nuestros productos queremos compartir la tradición culinaria
                 latinoamericana con{" "}
                 <span className="font-semibold">alimentos congelados</span>{" "}
@@ -640,7 +640,7 @@ const Data = () => {
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
-              <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
+              <p className="text-[#4A4A4A] text-[24px] leading-[28px] text-justify  2xl:text-[24px]">
                 Te ha gustado esta receta de{" "}
                 <span className="font-semibold">puré de yuca con queso</span>?
                 Descubre más recetas deliciosas con{" "}
@@ -662,22 +662,22 @@ const Data = () => {
       tipo: "recetas",
       description:
         "Prueba lo fácil que es cocinar una Papa Criolla Crocante Salteada con Mantequilla y Romero deliciosa con la Papa Criolla Precocida de Green Ground.",
-      img: "/news/exportarTram.svg",
+      img: "/news/Papascriollas-card.png",
       btn: "Consulta receta",
       section: (
         <>
           <div className="flex md:flex-row flex-col">
             <div className="lg:w-1/2 w-full gap-8">
-              <img src={"/news/tostonparareceta.svg"} className="w-full" />
+              <img src={"/news/Papascriollas.jpg"} className="w-full rounded-md" />
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
               <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
                 Papa Criolla Crocante Salteada con Mantequilla y Romero
               </p>
-              <p className="mb-2 text-[22px] mt-4 text-[#008638]">
+              <p className="mb-2 text-[22px] mt-6 text-[#008638]">
                 Porciones: 2-3
               </p>
-              <p className="mb-5 text-[22px] mt-4 text-[#008638]">
+              <p className="mb-8 text-[22px] mt-4 text-[#008638]">
                 Tiempo de preparación: 25 minutos
               </p>
               <div className=" bg-[#008E4A] w-full rounded-md">
@@ -705,14 +705,14 @@ const Data = () => {
               </div>
             </div>
           </div>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             La <span className="font-semibold">papa criolla </span>
             es un producto único de Colombia considerado como alimento exótico y
             gourmet para el mundo. Sus cualidades culinarias y características
             le permiten ser el acompañamiento perfecto para cualquier plato y
             ocasión.
           </p>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Explora una receta sencilla y deliciosa que realza el sabor único de
             nuestra{" "}
             <span className="font-semibold">
@@ -724,7 +724,7 @@ const Data = () => {
           <p className="mb-4 text-[32px] mt-4 text-[#008638]">
             Pasos para la Preparación:
           </p>
-          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px] text-justify">
             <li className="mb-4   ">
               Nuestra{" "}
               <span className="font-semibold">
@@ -762,7 +762,7 @@ const Data = () => {
             </li>
           </ol>
           <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
-          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px] text-justify">
             <li className="mb-4   ">
               Para un acabado aún más crujiente, asegúrate de cortar las papas
               por la mitad. La superficie plana se dorará más fácilmente.
@@ -781,7 +781,7 @@ const Data = () => {
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
-              <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
+              <p className="text-[#4A4A4A] text-[24px] leading-[28px] text-justify 2xl:text-[24px]">
                 Con nuestros productos queremos compartir la tradición culinaria
                 latinoamericana con{" "}
                 <span className="font-semibold">alimentos congelados</span>{" "}
@@ -794,7 +794,7 @@ const Data = () => {
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
-              <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
+              <p className="text-[#4A4A4A] text-[24px] leading-[28px] text-justify  2xl:text-[24px]">
                 Te ha gustado esta receta de{" "}
                 <span className="font-semibold">
                   papas criollas con mantequilla y romero
@@ -818,13 +818,13 @@ const Data = () => {
       tipo: "recetas",
       description:
         "Descubre la deliciosa receta de aborrajados de plátano maduro con Green Ground. Fácil y rápida de preparar!",
-      img: "/news/maduro.svg",
+      img: "/news/Aborrajados-card.png",
       btn: "Consulta receta",
       section: (
         <>
           <div className="flex md:flex-row flex-col">
             <div className="lg:w-1/2 w-full gap-8">
-              <img src={"/news/tostonparareceta.svg"} className="w-full" />
+              <img src={"/news/Aborrajados.jpg"} className="w-full rounded-md" />
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
               <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
@@ -861,14 +861,14 @@ const Data = () => {
               </div>
             </div>
           </div>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             El <span className="font-semibold">plátano maduro</span>, una fruta
             tropical por excelencia, es reconocido por su textura, versatilidad
             y facilidad de preparación. Su sabor dulce y aroma tentador lo
             convierten en el acompañamiento perfecto para una gran variedad de
             platos.
           </p>
-          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A]">
+          <p className="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Aprende cómo preparar unos fáciles y deliciosos aborrajados con el{" "}
             <span className="font-semibold">plátano maduro Green Ground</span>{" "}
             rellenos de <span className="font-semibold">queso</span>, dorados y
@@ -900,7 +900,7 @@ const Data = () => {
             </li>
           </ol>
           <p className="mb-4 text-[32px] text-[#008638]">Tips:</p>
-          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
+          <ol className=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px] text-justify">
             <li className="mb-4   ">
               Asegúrate de cortar el queso en trozos que queden bien centrados
               dentro del plátano para evitar que se salga durante la cocción. Un
@@ -926,7 +926,7 @@ const Data = () => {
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
-              <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
+              <p className="text-[#4A4A4A] text-[24px] leading-[28px] text-justify 2xl:text-[24px]">
                 Con nuestros productos queremos compartir la tradición culinaria
                 latinoamericana con{" "}
                 <span className="font-semibold">alimentos congelados</span>{" "}
@@ -939,7 +939,7 @@ const Data = () => {
               <img src="/news/Vector.svg" className=" w-full" />
             </div>
             <div className="">
-              <p className="text-[#4A4A4A] text-[24px] leading-[22px]  2xl:text-[24px] 2xl:leading-[28px]">
+              <p className="text-[#4A4A4A] text-[24px] leading-[28px] text-justify 2xl:text-[24px] ">
                 Te ha gustado esta receta de{" "}
                 <span className="font-semibold">plátanos aborrajados</span>?
                 Descubre más recetas deliciosas con{" "}

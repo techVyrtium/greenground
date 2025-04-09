@@ -10,7 +10,7 @@ export default function CardBlog({ data, color }) {
           className="flex flex-col h-full bg-transparent items-stretch"
         >
           <div className="w-full h-auto object-cover bg-no-repeat bg-cover">
-            <img src={dato.img} />
+            <img src={dato.img} className="rounded-md" />
           </div>
           <div className="p-[8px] 2xl:p-[16px] flex flex-col flex-grow">
             <div
@@ -20,7 +20,7 @@ export default function CardBlog({ data, color }) {
             >
               {dato.title}
             </div>
-            <div className="block text-[#4a4a4a] font-[400] text-[clamp(1.375rem,4vw,1.75rem)] mt-[16px] leading-[25px] flex-grow">
+            <div className="block text-[#4a4a4a] font-[400] text-[clamp(1.375rem,4vw,1.75rem)] mt-[16px] leading-[1.1] flex-grow">
               <div className="line-clamp-4">{dato.description}</div>
             </div>
             <div className="flex w-full h-fit">
