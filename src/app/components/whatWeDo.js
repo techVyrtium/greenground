@@ -195,9 +195,10 @@ export default function WhatWeDo() {
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
-              <div className="mt-12 flex justify-center">
+              <div className="mt-12 flex flex-col items-center justify-center">
+                <p className={`text-white text-[clamp(20px,6.5vw,46px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
                 <h1
-                  className={`text-white lg:text-[clamp(50px,5vw,95px)] font-bold leading-21 font-itcGBold`}
+                  className={`text-white lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold`}
                 >
                   {data2[0].title}
                 </h1>
@@ -209,17 +210,15 @@ export default function WhatWeDo() {
                 <div className="flex flex-row gap-8">
                   <img
                     src="/home/GFICON.png"
-                    className="md:w-[156px] w-[120px]"
+                    className="md:w-[136px] w-[120px]"
                   />
                   <img
                     src="/home/MICICON.png"
-                    className="md:w-[156px] w-[120px]"
+                    className="md:w-[136px] w-[120px]"
                   />
-                </div>
-                <div className="gap-8">
-                  <img
+                   <img
                     src="/home/READYICON.png"
-                    className="md:w-[156px] w-[120px]"
+                    className="md:w-[136px] w-[120px]"
                   />
                 </div>
               </div>
@@ -231,7 +230,7 @@ export default function WhatWeDo() {
                 </Link>
               </div>
             </motion.div>
-            <div className="relative w-2/3 flex flex-col mt-12 ml-20">
+            <div className="relative w-2/3 flex flex-col mt-12 lg:mt-36 xl:mt-28 2xl:mt-30 ml-20">
               <div className="">
                 <motion.img
                   initial={{ opacity: 1, y: 160 }}
@@ -323,17 +322,15 @@ export default function WhatWeDo() {
                 <div className="flex flex-row gap-8">
                   <img
                     src="/home/GFICON.png"
-                    className="md:w-[156px] w-[120px]"
+                    className="md:w-[136px] w-[120px]"
                   />
                   <img
                     src="/home/MICICON.png"
-                    className="md:w-[156px] w-[120px]"
+                    className="md:w-[136px] w-[120px]"
                   />
-                </div>
-                <div className="gap-8">
                   <img
                     src="/home/READYICON.png"
-                    className="md:w-[156px] w-[120px]"
+                    className="md:w-[136px] w-[120px]"
                   />
                 </div>
               </div>
