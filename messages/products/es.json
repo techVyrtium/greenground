@@ -112,7 +112,7 @@
         "/products/gucamole-bandeja.png"
       ],
       "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
-      "description": "Pendiente"
+      "description":  ""
     },
     "papa-criolla-precocida": {
       "title": "Papa criolla precocida",
@@ -1642,7 +1642,7 @@
         "/products/snacky.jpg"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "maizistos-y-tostacos": {
       "title": "Maizistos y Tostacos",
@@ -1855,7 +1855,7 @@
         "/products/parrila-arepas.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "molinillo-de-madera": {
       "title": "Molinillo de Madera",
@@ -1868,7 +1868,7 @@
         "/products/molinillo.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "jarrafas-para-cerveza": {
       "title": "Jarrafas para cerveza",
@@ -1881,7 +1881,7 @@
         "/products/olla-a-presion.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "olla-a-presion-imusa": {
       "title": "Olla a presión Imusa",
@@ -1894,7 +1894,7 @@
         "/products/olla-a-presion.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "caldero-imusa-": {
       "title": "Caldero Imusa",
@@ -1907,7 +1907,7 @@
         "/products/caldero.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "pataconera-imusa": {
       "title": "Pataconera Imusa",
@@ -1920,7 +1920,7 @@
         "/products/pataconera.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "vasija-de-barro-bandeja-paisa": {
       "title": "Vasija de barro Bandeja Paisa",
@@ -1933,7 +1933,7 @@
         "/products/cacerola-paisa.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "vasija-de-barro-cazuela-ajiaco-frijolada": {
       "title": "Vasija de Barro Cazuela-Ajiaco-Frijolada",
@@ -1946,7 +1946,7 @@
         "/products/vasijas-ajiaco.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "molino-tolva": {
       "title": "Molino Tolva",
@@ -1959,7 +1959,7 @@
         "/products/molino-tolva.png"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "chocolatera-imusa-+-molinillo": {
       "title": "Chocolatera Imusa + Molinillo",
@@ -1972,7 +1972,7 @@
         "/products/chocolatera-imusa-y-bolinillo.webp"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     },
     "vasija-de-barro-viudo-de-pescado": {
       "title": "Vasija de barro Viudo de pescado",
@@ -1985,7 +1985,7 @@
         "/products/chocolatera-imusa-y-bolinillo.webp"
       ],
       "presentation": "",
-      "description": "Pendiente"
+      "description":  ""
     }
   }
 }
