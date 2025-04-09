@@ -46,7 +46,7 @@ export default function Blog() {
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)] ">
           <div className="flex flex-col lg:flex-row lg:items-center gap-4 w-full mx-auto h-full pt-4 pb-10">
-            <div className="relative flex items-center h-full mt-12 ">
+            <div className="relative flex items-center h-full mt-4 ">
               {/* Imagen a la izquierda */}
               <div className="absolute w-fit h-full -top-6">
                 <img
@@ -56,7 +56,7 @@ export default function Blog() {
                 />
               </div>
               {/* Texto encima de la imagen */}
-              <div className="w-fit text-left ml-10">{data[0].title}</div>
+              <div className="w-fit text-left ml-14 py-2">{data[0].title}</div>
             </div>
             <div className="flex flex-col justify-center h-fit lg:mt-4 ml-10 text-[clamp(2rem,4vw,2.5rem)]">
               {/* Text Content */}
