@@ -8,10 +8,11 @@
       "link": "products/tajadas-de-platano-maduro",
       "price": 0,
       "images": [
-        "/products/1.3 Tajada Madura Green Ground - Imagen Empaque.png",
-        "/products/tajadas maquila.png",
-        "/products/1.10 tajadas plato.png"
+        "/products/tajada-madura-green-ground-imagen-empaque.png",
+        "/products/tajadas-maquila.png",
+        "/products/tajadas-plato.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
     "platano-verde-toston": {
@@ -22,11 +23,12 @@
       "link": "products/platano-verde-toston",
       "price": 0,
       "images": [
-        "/products/2.3 Toston Green Ground - Imagen Empaque.png",
-        "/products/tostones enpaque bandeja.png",
-        "/products/patacones servidos.png"
+        "/products/toston-green-ground-imagen-empaque.png",
+        "/products/tostones-empaque-bandeja.png",
+        "/products/patacones-servidos.png"
       ],
-      "description": "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos.  Presentación 500 gr / 1kg / 2kg / 3kg"
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "description": "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "maduritos": {
       "title": "Maduritos",
@@ -36,8 +38,9 @@
       "link": "products/maduritos",
       "price": "",
       "images": [
-        "/products/maduritos empaque.png"
+        "/products/maduritos-empaque.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": ""
     },
     "ajiaco-precocido": {
@@ -49,9 +52,10 @@
       "price": 0,
       "images": [
         "/products/ajiaco-precocido.jpg",
-        "/products/3. ajiaco-bandeja-maquila.png",
-        "/products/3. ajiaco-bandeja (2).png"
+        "/products/ajiaco-bandeja-maquila.png",
+        "/products/ajiaco-bandeja-2.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "arracacha": {
@@ -63,8 +67,9 @@
       "price": 0,
       "images": [
         "/products/arracacha.jpg",
-        "/products/3. ajiaco-bandeja-maquila.png"
+        "/products/ajiaco-bandeja-maquila.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "choclo-entero": {
@@ -76,8 +81,9 @@
       "price": 0,
       "images": [
         "/products/choclo-entero-congelado.jpg",
-        "/products/choclo bandeja.png"
+        "/products/choclo-bandeja.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "cubos-de-platano": {
@@ -89,8 +95,9 @@
       "price": 0,
       "images": [
         "/products/cubos-platano-precocido.jpg",
-        "/products/Cubo de platano bandeja.png"
+        "/products/cubo-de-platano-bandeja.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "guacamole": {
@@ -102,8 +109,9 @@
       "price": 0,
       "images": [
         "/products/guacamole.jpg",
-        "/products/gucamole bandeja.png"
+        "/products/gucamole-bandeja.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Pendiente"
     },
     "papa-criolla-precocida": {
@@ -114,10 +122,11 @@
       "link": "products/papa-criolla-precocida",
       "price": 0,
       "images": [
-        "/products/3.3 Papa Criolla Green Ground - Imagen Empaque.png",
-        "/products/papa criolla bandeja.png",
-        "/products/3.1 Papa Criolla Green Ground - Imagen Producto.png"
+        "/products/papa-criolla-green-ground-imagen-empaque.png",
+        "/products/papa-criolla-bandeja.png",
+        "/products/papa-criolla-green-ground-imagen-producto.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "platano-entero-maduro": {
@@ -128,10 +137,11 @@
       "link": "products/platano-entero-maduro",
       "price": 0,
       "images": [
-        "/products/4.3 Entero Maduro Green Ground - Imagen Empaque.png",
-        "/products/platano maduro entero bandeja.png",
-        "/products/platano maduro servido.png"
+        "/products/entero-maduro-green-ground-imagen-empaque.png",
+        "/products/platano-maduro-entero-bandeja.png",
+        "/products/platano-maduro-servido.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
     "platano-entero-verde": {
@@ -142,9 +152,10 @@
       "link": "products/platano-entero-verde",
       "price": 0,
       "images": [
-        "/products/5.3 Entero Verde Crudo Green Ground - Imagen Empaque.png",
-        "/products/platano verde empaque.png"
+        "/products/entero-verde-crudo-green-ground-imagen-empaque.png",
+        "/products/platano-verde-empaque.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "sancocho-precocido": {
@@ -155,10 +166,11 @@
       "link": "products/sancocho-precocido",
       "price": 0,
       "images": [
-        "/products/sancocho-.jpg",
-        "/products/sancocho empaque.png",
-        "/products/sancocho BANDEJA.png"
+        "/products/sancocho.jpg",
+        "/products/sancocho-empaque.png",
+        "/products/sancocho-bandeja.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "toston-hawaiano": {
@@ -171,6 +183,7 @@
       "images": [
         "/products/tostones-hawaiano.jpg"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "yuca-en-trozos": {
@@ -181,10 +194,11 @@
       "link": "products/yuca-en-trozos",
       "price": 0,
       "images": [
-        "/products/Yuka frita frontal.png",
-        "/products/yuka fries empaque.png",
-        "/products/yuka fries bandeja.png"
+        "/products/yuka-frita-frontal.png",
+        "/products/yuka-fries-empaque.png",
+        "/products/yuka-fries-bandeja.png"
       ],
+      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "garrafa-azucarada-de-guanabana": {
@@ -197,6 +211,7 @@
       "images": [
         "/products/garrafa-azucarada-guanabana.jpg"
       ],
+      "presentation": "Presentación 1/2 Galón – Caja * 6",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-mora": {
@@ -209,6 +224,7 @@
       "images": [
         "/products/garrafa-azucarada-mora.jpg"
       ],
+      "presentation": "Presentación 1/2 Galón – Caja * 7",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-mango": {
@@ -221,6 +237,7 @@
       "images": [
         "/products/garrafa-azucarada-mango.jpg"
       ],
+      "presentation": "Presentación 1/2 Galón – Caja * 8",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-guayaba": {
@@ -233,6 +250,7 @@
       "images": [
         "/products/garrafa-azucarada-guayaba.jpg"
       ],
+      "presentation": "Presentación 1/2 Galón – Caja * 9",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-fresa": {
@@ -245,6 +263,7 @@
       "images": [
         "/products/garrafa-azucarada-fresa.jpg"
       ],
+      "presentation": "Presentación 1/2 Galón – Caja * 10",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "pulpa-de-mango": {
@@ -257,6 +276,7 @@
       "images": [
         "/products/pulpa-mango.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 24",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-gunabana-en-mota": {
@@ -269,6 +289,7 @@
       "images": [
         "/products/mora-entera.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 25",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-maracuya-con-pepa": {
@@ -281,6 +302,7 @@
       "images": [
         "/products/mora-entera.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 26",
       "description": "Presentación 500gr – Caja * 24"
     },
     "mora-entera": {
@@ -293,6 +315,7 @@
       "images": [
         "/products/mora-entera.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 27",
       "description": "Presentación 500gr – Caja * 24"
     },
     "lulo-naranjillo-entero": {
@@ -305,6 +328,7 @@
       "images": [
         "/products/lulo-entero.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 28",
       "description": "Presentación 500gr – Caja * 24"
     },
     "tomate-de-arbol-entero": {
@@ -317,6 +341,7 @@
       "images": [
         "/products/tomate-arbol-entero.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 29",
       "description": "Presentación 500gr – Caja * 24"
     },
     "coco-rallado": {
@@ -329,6 +354,7 @@
       "images": [
         "/products/coco-rallado.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 30",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-papaya": {
@@ -341,6 +367,7 @@
       "images": [
         "/products/pulpa-papaya.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 31",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-tamarindo": {
@@ -353,6 +380,7 @@
       "images": [
         "/products/pulpa-tamarindo.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 32",
       "description": "Presentación 500gr – Caja * 24"
     },
     "piña-en-trozos": {
@@ -365,6 +393,7 @@
       "images": [
         "/products/piña-en-trozos.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 33",
       "description": "Presentación 500gr – Caja * 24"
     },
     "guayaba-en-trozos": {
@@ -377,6 +406,7 @@
       "images": [
         "/products/guayaba-en-trozos.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 34",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-curuba": {
@@ -389,6 +419,7 @@
       "images": [
         "/products/curuba-en-trozos.jpg"
       ],
+      "presentation": "Presentación 500gr – Caja * 35",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pandebono-granel": {
@@ -399,8 +430,9 @@
       "link": "products/pandebono-granel",
       "price": 0,
       "images": [
-        "/products/pandebono bandeja.png"
+        "/products/pandebono-bandeja.png"
       ],
+      "presentation": "Presentación 80gr – Caja * 42",
       "description": "Presentación 80gr – Caja * 42"
     },
     "buñuelo-granel": {
@@ -411,9 +443,10 @@
       "link": "products/buñuelo-granel",
       "price": 0,
       "images": [
-        "/products/buñuelo bandeja.png",
-        "/products/Buñuelo unidad.jpg"
+        "/products/buñuelo-bandeja.png",
+        "/products/buñuelo-unidad.jpg"
       ],
+      "presentation": "Presentación 80gr – Caja * 43",
       "description": "Presentación 80gr – Caja * 42"
     },
     "almojabana-granel": {
@@ -426,6 +459,7 @@
       "images": [
         "/products/almojabana-granel.jpg"
       ],
+      "presentation": "Presentación 80gr – Caja * 44",
       "description": "Presentación 80gr – Caja * 42"
     },
     "arepa-blanca": {
@@ -438,6 +472,7 @@
       "images": [
         "/products/arepas-blancas.jpg"
       ],
+      "presentation": "Presentación 80gr – Caja * 45",
       "description": "Presentación 700gr – Caja * 24"
     },
     "arepa-campesina": {
@@ -450,6 +485,7 @@
       "images": [
         "/products/arepa-maiz-amarillo.jpg"
       ],
+      "presentation": "Presentación 80gr – Caja * 46",
       "description": "Presentación 700gr – Caja * 24"
     },
     "arepa-de-yuca": {
@@ -462,6 +498,7 @@
       "images": [
         "/products/arepas-de-yuca.jpg"
       ],
+      "presentation": "Presentación 80gr – Caja * 47",
       "description": "Presentación 700gr – Caja * 24"
     },
     "harina-pan": {
@@ -472,10 +509,11 @@
       "link": "products/harina-pan",
       "price": 0,
       "images": [
-        "/products/harinapan blanca.jpg",
+        "/products/harinapan-blanca.jpg",
         "/products/harinapan-amarillo.jpg",
         "/products/harinapan-amarillo.jpg"
       ],
+      "presentation": "Presentación 80gr – Caja * 48",
       "description": "Presentación 700gr – Caja * 24"
     },
     "harina-la-nieve-y-masapan": {
@@ -488,6 +526,7 @@
       "images": [
         "/products/masapan-la-nieve.jpg"
       ],
+      "presentation": "* 1 kg / Caja x 20 uds",
       "description": "* 1 kg / Caja x 20 uds"
     },
     "harina-arepasan-blanca": {
@@ -500,6 +539,7 @@
       "images": [
         "/products/arepasan.png"
       ],
+      "presentation": "* 1 kg / Caja x 20 uds",
       "description": "* 1 kg / Caja x 20 uds"
     },
     "harina-bellini": {
@@ -510,8 +550,9 @@
       "link": "products/harina-bellini",
       "price": 0,
       "images": [
-        "/products/Harina bellini.jpg"
+        "/products/harina-bellini.jpg"
       ],
+      "presentation": "* 1 kg / paca x 20 uds",
       "description": "Blanca y amarilla. 1 kg / Paca 20 uds."
     },
     "harina-campesina": {
@@ -522,8 +563,9 @@
       "link": "products/harina-campesina",
       "price": 0,
       "images": [
-        "/products/Harina campesina.jpg"
+        "/products/harina-campesina.jpg"
       ],
+      "presentation": "* 1 kg / Caja x 20 uds",
       "description": "* 1 kg / Caja x 20 uds"
     },
     "natilla-maizena": {
@@ -536,6 +578,7 @@
       "images": [
         "/products/maizena-bunuelos.jpg"
       ],
+      "presentation": "* 350 g / Caja x 20 uds",
       "description": "* 350 g / Caja x 20 uds"
     },
     "buñuelos-maizena": {
@@ -548,6 +591,7 @@
       "images": [
         "/products/maizena-bunuelos.jpg"
       ],
+      "presentation": "* 350 g / Caja x 20 uds",
       "description": "* 350 g / Caja x 20 uds"
     },
     "buñuelos-colmaiz": {
@@ -560,6 +604,7 @@
       "images": [
         "/products/bunuelo-colmaiz.jpg"
       ],
+      "presentation": "* 1 kg / Saco 25kg",
       "description": "* 1 kg / Saco 25kg"
     },
     "colmaiz-almojabana,-pandeyuca,-pandebono": {
@@ -571,9 +616,10 @@
       "price": 0,
       "images": [
         "/products/almojabana-colmaiz.jpg",
-        "/products/pandebono_1kg.jpg",
+        "/products/pandebono-1kg.jpg",
         "/products/pandeyuca-colmaiz.jpg"
       ],
+      "presentation": "* 1 kg / Saco 25kg",
       "description": "* 1 kg / Saco 25kg"
     },
     "expandex-almidones-de-yuca-agrio": {
@@ -584,20 +630,22 @@
       "link": "products/expandex-almidones-de-yuca-agrio",
       "price": 0,
       "images": [
-        "/products/Expandex_yuca.webp"
+        "/products/expandex-yuca.webp"
       ],
+      "presentation": "* 1 kg / Saco 25kg",
       "description": "* 1 kg / Saco 25kg"
     },
-    "frijol-bola-roja--cargamanto": {
+    "frijol-bola-roja-cargamanto": {
       "title": "Frijol bola roja / cargamanto",
       "subcategory": "Granos",
       "category": "Abarrotes",
       "tag": "",
-      "link": "products/frijol-bola-roja--cargamanto",
+      "link": "products/frijol-bola-roja-cargamanto",
       "price": 0,
       "images": [
         "/products/frijo-rojo-bulto.jpg"
       ],
+      "presentation": "* Saco 12,5kg",
       "description": "* Saco 12,5kg"
     },
     "maiz-pira": {
@@ -610,6 +658,7 @@
       "images": [
         "/products/maiz-pira.jpg"
       ],
+      "presentation": "* Saco 12,5kg",
       "description": "* Saco 12,5kg"
     },
     "lenteja": {
@@ -622,6 +671,7 @@
       "images": [
         "/products/lenteja.jpg"
       ],
+      "presentation": "* Saco 12,5kg",
       "description": "* Saco 12,5kg"
     },
     "arveja-verde-y-amarilla": {
@@ -635,6 +685,7 @@
         "/products/arveja-amarilla.jpg",
         "/products/arveja-verde.jpg"
       ],
+      "presentation": "* Saco 12,5kg",
       "description": "* Saco 12,5kg"
     },
     "cuchuco-amarillo-y-blanco": {
@@ -647,6 +698,7 @@
       "images": [
         "/products/cuchuco-blanco.jpg"
       ],
+      "presentation": "* Saco 12,5kg / Grueso – Delgado",
       "description": "* Saco 12,5kg / Grueso – Delgado"
     },
     "mazamorra-blanca-y-amarilla": {
@@ -660,6 +712,7 @@
         "/products/mazamorra-amarilla.jpg",
         "/products/mazamorra-blanca.jpg"
       ],
+      "presentation": "* Saco 12,5kg",
       "description": "* Saco 12,5kg"
     },
     "salsa-de-tomate-fruco": {
@@ -670,8 +723,9 @@
       "link": "products/salsa-de-tomate-fruco",
       "price": 0,
       "images": [
-        "/products/salsa_tomate_fruco_250.jpg"
+        "/products/salsa-tomate-fruco-250.jpg"
       ],
+      "presentation": "* 250g – 400g / Caja x 24 uds",
       "description": "* 250g – 400g / Caja x 24 uds"
     },
     "salsas-fruco-para-carnes-aji-inglesa-soya-china-y-negra": {
@@ -686,6 +740,7 @@
         "/products/salsa-de-aji.jpg",
         "/products/salsa-de-carnes-fruco.jpg"
       ],
+      "presentation": "* 170 g / Caja x 24 uds",
       "description": "* 170 g / Caja x 24 uds"
     },
     "salsa-de-piña-la-constancia": {
@@ -698,6 +753,7 @@
       "images": [
         "/products/salsa-de-pina.jpg"
       ],
+      "presentation": "* 200g / Caja x 24 uds",
       "description": "* 200g / Caja x 24 uds"
     },
     "salsa-de-guayaba-la-constancia": {
@@ -710,6 +766,7 @@
       "images": [
         "/products/salsa-de-guayaba-la-constancia.jpg"
       ],
+      "presentation": "* 200g / Caja x 24 uds",
       "description": "* 200g / Caja x 24 uds"
     },
     "conserva-de-salmuera-de-chontaduro": {
@@ -722,6 +779,7 @@
       "images": [
         "/products/conserva-salmuera.jpg"
       ],
+      "presentation": "* 790 g / Caja x 12 uds",
       "description": "* 790 g / Caja x 12 uds"
     },
     "jalea-de-borojo": {
@@ -734,6 +792,7 @@
       "images": [
         "/products/jalea-chontaduro.jpg"
       ],
+      "presentation": "* 500 gr / Caja x 12 uds",
       "description": "* 500 gr / Caja x 12 uds"
     },
     "brevas-en-almivar": {
@@ -746,6 +805,7 @@
       "images": [
         "/products/brevas-en-almibar.jpg"
       ],
+      "presentation": "* 790 g / Caja x 12 uds",
       "description": "* 790 g / Caja x 12 uds"
     },
     "jalea-de-borojo-con-chontaduro": {
@@ -758,6 +818,7 @@
       "images": [
         "/products/jalea-chontaduro.jpg"
       ],
+      "presentation": "*  500 gr / Caja x 12 uds",
       "description": "*  500 gr / Caja x 12 uds"
     },
     "brevas-la-constancia": {
@@ -770,6 +831,7 @@
       "images": [
         "/products/brevas-la-constancia.jpg"
       ],
+      "presentation": "* 600 g / Caja x 24 uds",
       "description": "* 600 g / Caja x 24 uds"
     },
     "guanabana-en-conserva": {
@@ -782,6 +844,7 @@
       "images": [
         "/products/guanabana-conserva.png"
       ],
+      "presentation": "18 uds. x 200 g / Caja 36 displays",
       "description": "18 uds. x 200 g / Caja 36 displays"
     },
     "cafe-sello-rojo": {
@@ -794,6 +857,7 @@
       "images": [
         "/products/cafe-sello-rojo.jpg"
       ],
+      "presentation": "* 250g – 500g / Caja x 48 uds",
       "description": "* 250g – 500g / Caja x 48 uds"
     },
     "cafe-aguila-roja": {
@@ -806,6 +870,7 @@
       "images": [
         "/products/cafe-aguila-roja.jpg"
       ],
+      "presentation": "* 250g – 500g / Caja x 48 uds",
       "description": "* 250g – 500g / Caja x 48 uds"
     },
     "Chocolate-Corona": {
@@ -817,8 +882,9 @@
       "price": "",
       "images": [
         "/products/chocolate-corona.jpg",
-        "/products/Chocolate-Corona-Flash-500-grs.jpg"
+        "/products/chocolate-corona-flash-500-grs.jpg"
       ],
+      "presentation": "250 g - 500 g / Caja 48 - 50 uds.",
       "description": "200 g / Caja 12 uds. - Instantáneo 250 g - 500 g / Caja 48 - 50 uds. - Tradicional"
     },
     "chocolisto": {
@@ -829,8 +895,9 @@
       "link": "products/chocolisto",
       "price": 0,
       "images": [
-        "/products/Choco-listo.webp"
+        "/products/choco-listo.webp"
       ],
+      "presentation": "18 uds. x 25 g / Caja 36 displays",
       "description": "18 uds. x 25 g / Caja 36 displays"
     },
     "Milo": {
@@ -839,11 +906,12 @@
       "category": "Abarrotes",
       "tag": "",
       "link": "products/Milo",
-      "price": 0,
+      "price": "",
       "images": [
         "/products/milo-tarro.jpg",
         "/products/milo-doypack.jpg"
       ],
+      "presentation": "250 g - 500 g / Caja 12 uds.",
       "description": "200 g - 400 g / Caja 12 uds. - Tarro 250 g - 500 g / Caja 12 uds. - Doypack"
     },
     "luker": {
@@ -854,8 +922,9 @@
       "link": "products/luker",
       "price": 0,
       "images": [
-        "/products/chocolate-lucker.jpg"
+        "/products/chocolate-luker.jpg"
       ],
+      "presentation": "* 250g / Caja x 50 uds",
       "description": "* 250g / Caja x 50 uds"
     },
     "sopas-magi": {
@@ -870,6 +939,7 @@
         "/products/maggi-choclo-600x600.jpg",
         "/products/maggi-sancocho.jpg"
       ],
+      "presentation": "Display 24 uds / Caja x 6 displays",
       "description": "Display 24 uds / Caja x 6 displays"
     },
     "triguisar": {
@@ -882,6 +952,7 @@
       "images": [
         "/products/la-gran-cocina.jpg"
       ],
+      "presentation": "*Display x 12 uds / Caja x 12 displays",
       "description": "*Display x 12 uds / Caja x 12 displays"
     },
     "guascas-kiska": {
@@ -894,6 +965,7 @@
       "images": [
         "/products/guscas-kiska-600x600.jpg"
       ],
+      "presentation": "*Display x 8 uds / Caja x 22 displays",
       "description": "*Display x 8 uds / Caja x 22 displays"
     },
     "esencia-sabor-leña--humo-leña": {
@@ -904,8 +976,9 @@
       "link": "products/esencia-sabor-leña--humo-leña",
       "price": 0,
       "images": [
-        "/products/Sabor_A_Leña.jpg"
+        "/products/sabor-a-leña.jpg"
       ],
+      "presentation": "135 g / 48 uds.",
       "description": "*Display x 24 uds / Caja x 4 displays"
     },
     "tarrito-rojo-jgb": {
@@ -918,6 +991,7 @@
       "images": [
         "/products/tarrito-rojo.webp"
       ],
+      "presentation": "135 g / 48 uds.",
       "description": "135 g / 48 uds."
     },
     "tintura-caramelo-levapan": {
@@ -930,6 +1004,7 @@
       "images": [
         "/products/tinruta-caramelo-levapan.jpg"
       ],
+      "presentation": "* 60ml -500ml / Caja x 24 uds",
       "description": "* 60ml -500ml / Caja x 24 uds"
     },
     "esencias-levapan": {
@@ -944,6 +1019,7 @@
         "/products/esencia-levapan-vainilla.jpg",
         "/products/esencia-levapan-ponque.jpg"
       ],
+      "presentation": "* 60ml -500ml / Caja x 24 uds",
       "description": "Vainilla, banano, canela, coco, mantequilla, piña, ponque. * 60ml -500ml / Caja x 24 uds"
     },
     "instaya-guanabana": {
@@ -954,8 +1030,9 @@
       "link": "products/instaya-guanabana",
       "price": 0,
       "images": [
-        "/products/refresco_ya_guanabana.jpg"
+        "/products/refresco-ya-guanabana.jpg"
       ],
+      "presentation": "*30g – Display x 8 uds / Caja x 8 displays",
       "description": "*30g – Display x 8 uds / Caja x 8 displays"
     },
     "instaya-tropical": {
@@ -968,7 +1045,8 @@
       "images": [
         "/products/tropicalya.jpg"
       ],
-      "description": ""
+      "presentation": "*318g / Caja x 24 uds.",
+      "description": "*318g / Caja x 24 uds."
     },
     "instaya-maracuya": {
       "title": "Instayá Maracuyá",
@@ -980,6 +1058,7 @@
       "images": [
         "/products/maravuya.jpg"
       ],
+      "presentation": "*318g / Caja x 24 uds.",
       "description": "*318g / Caja x 24 uds."
     },
     "instaya-mango": {
@@ -992,6 +1071,7 @@
       "images": [
         "/products/magoya.jpg"
       ],
+      "presentation": "*318g / Caja x 24 uds.",
       "description": "*318g / Caja x 24 uds."
     },
     "instaya-fresa": {
@@ -1004,6 +1084,7 @@
       "images": [
         "/products/fresaya.jpg"
       ],
+      "presentation": "*318g / Caja x 24 uds.",
       "description": "*318g / Caja x 24 uds."
     },
     "instaya-naranja": {
@@ -1016,6 +1097,7 @@
       "images": [
         "/products/naranya.jpg"
       ],
+      "presentation": "*318g / Caja x 24 uds.",
       "description": "*318g / Caja x 24 uds."
     },
     "cerveza-club-colombia": {
@@ -1028,6 +1110,7 @@
       "images": [
         "/products/club-colombia.png"
       ],
+      "presentation": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds",
       "description": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
     },
     "cerveza-poker": {
@@ -1038,8 +1121,9 @@
       "link": "products/cerveza-poker",
       "price": 0,
       "images": [
-        "/products/Cerveza-Poker.jpg"
+        "/products/cerveza-poker.jpg"
       ],
+      "presentation": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds",
       "description": "*330 ml / Caja x 30. Caja x 4 displays * 6 Uds"
     },
     "cerveza-costeña": {
@@ -1052,6 +1136,7 @@
       "images": [
         "/products/costeña-pequeña.jpg"
       ],
+      "presentation": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds",
       "description": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
     },
     "cerveza-aguila": {
@@ -1064,6 +1149,7 @@
       "images": [
         "/products/aguila.png"
       ],
+      "presentation": "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds",
       "description": "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds"
     },
     "cerveza-aguila-light": {
@@ -1076,6 +1162,7 @@
       "images": [
         "/products/aguila-cero.jpg"
       ],
+      "presentation": "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds",
       "description": "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds"
     },
     "pony-malta-botella": {
@@ -1088,6 +1175,7 @@
       "images": [
         "/products/pony-malta.jpg"
       ],
+      "presentation": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds",
       "description": "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
     },
     "gaseosas-postobon": {
@@ -1102,6 +1190,7 @@
         "/products/uva-10-onzas.jpg",
         "/products/colombiana-10-onzas.jpg"
       ],
+      "presentation": "*10 oz / Caja x 24",
       "description": "*10 oz / Caja x 24"
     },
     "jugos-hit": {
@@ -1116,6 +1205,7 @@
         "/products/hit-naranjapiña.jpg",
         "/products/hit-tropical.jpg"
       ],
+      "presentation": "*237 ml / Caja x 24",
       "description": "*237 ml / Caja x 24"
     },
     "avena-quacker-instantanea": {
@@ -1130,6 +1220,7 @@
         "/products/avena-instantanea-fresa.jpg",
         "/products/avena-instantanea-vainilla.jpg"
       ],
+      "presentation": "*300 g / Caja x 24",
       "description": "*300 g / Caja x 24"
     },
     "coladas-maizena": {
@@ -1144,6 +1235,7 @@
         "/products/colada-maizena-fresa.jpg",
         "/products/colada-maizena.jpg"
       ],
+      "presentation": "Display 18 uds. / Caja 12 displays",
       "description": "Arequipe, Vainilla, Fresa. / Display 18 uds. / Caja 12 displays"
     },
     "quipitos": {
@@ -1156,6 +1248,7 @@
       "images": [
         "/products/quipitos-2.png"
       ],
+      "presentation": "Display 24 uds / Caja x 24 displays",
       "description": "Display 24 uds / Caja x 24 displays"
     },
     "menta-helada-colombina": {
@@ -1166,8 +1259,9 @@
       "link": "products/menta-helada-colombina",
       "price": "",
       "images": [
-        "/products/ment-helada.jpg"
+        "/products/menta-helada.jpg"
       ],
+      "presentation": "Bolsa 100 uds. / Caja 18 bolsas",
       "description": "Bolsa 100 uds. / Caja 18 bolsas"
     },
     "menta-chao": {
@@ -1180,6 +1274,7 @@
       "images": [
         "/products/menta-chao.jpg"
       ],
+      "presentation": "*Bolsa 100 x uds / Caja x 24 bolsas",
       "description": "*Bolsa 100 x uds / Caja x 24 bolsas"
     },
     "sparkies": {
@@ -1190,8 +1285,9 @@
       "link": "products/sparkies",
       "price": 0,
       "images": [
-        "/products/Sparkies.jpg"
+        "/products/sparkies.jpg"
       ],
+      "presentation": "*Display 20 uds / Caja x 24 displays",
       "description": "*Display 20 uds / Caja x 24 displays"
     },
     "coffe-delight-blando": {
@@ -1204,6 +1300,7 @@
       "images": [
         "/products/coffe-delight.jpg"
       ],
+      "presentation": "Bolsa 100 x uds / Caja x 18 bolsas",
       "description": "Bolsa 100 x uds / Caja x 18 bolsas"
     },
     "coffe-deligth-duro": {
@@ -1216,6 +1313,7 @@
       "images": [
         "/products/coffee-deligth-duro.png"
       ],
+      "presentation": "Bolsa 100 x uds / Caja x 18 bolsas",
       "description": "Bolsa 100 x uds / Caja x 18 bolsas"
     },
     "arequipe-colombina": {
@@ -1226,8 +1324,9 @@
       "link": "products/arequipe-colombina",
       "price": 0,
       "images": [
-        "/products/arequipe_colombina_50gr.jpg"
+        "/products/arequipe-colombina-50gr.jpg"
       ],
+      "presentation": "*Display 12 uds / Caja x 8 displays",
       "description": "*Display 12 uds / Caja x 8 displays"
     },
     "chocolatina-jet": {
@@ -1240,6 +1339,7 @@
       "images": [
         "/products/chocolatina-jet.jpg"
       ],
+      "presentation": "*Display 50 uds / Caja x 30 displays",
       "description": "*Display 50 uds / Caja x 30 displays"
     },
     "frunas": {
@@ -1252,6 +1352,7 @@
       "images": [
         "/products/frunas.jpg"
       ],
+      "presentation": "Display 32 unidades / Caja x 18 displays",
       "description": "Display 32 unidades / Caja x 18 displays"
     },
     "chocolatina-jumbo-mani": {
@@ -1264,6 +1365,7 @@
       "images": [
         "/products/jumbo-mani.jpg"
       ],
+      "presentation": "Bolsa x 12 unidades / Caja x 18 displays",
       "description": "Bolsa x 12 unidades / Caja x 18 displays"
     },
     "turron-supercoco": {
@@ -1276,6 +1378,7 @@
       "images": [
         "/products/supercoco.jpg"
       ],
+      "presentation": "Bolsa x 100 unidades / Caja x 18 bolsas 24 unidades / Caja x 24 bolsas",
       "description": "Bolsa x 100 unidades / Caja x 18 bolsas 24 unidades / Caja x 24 bolsas"
     },
     "super-barriletes": {
@@ -1288,6 +1391,7 @@
       "images": [
         "/products/barriletes.jpg"
       ],
+      "presentation": "*Bolsas 50 uds / Caja x 18 displays",
       "description": "*Bolsas 50 uds / Caja x 18 displays"
     },
     "chiclets-menta-y-surtido": {
@@ -1301,6 +1405,7 @@
         "/products/adam-menta.jpg",
         "/products/adam-surtido.jpg"
       ],
+      "presentation": "Display 20 unidades / Caja x 50 displays",
       "description": "Display 20 unidades / Caja x 50 displays"
     },
     "bocadillo-rojo-en-tarro": {
@@ -1313,6 +1418,7 @@
       "images": [
         "/products/bocadillo-tarro.jpg"
       ],
+      "presentation": "* 50 uds / Caja * 6 tarros",
       "description": "* 50 uds / Caja * 6 tarros"
     },
     "cernido-de-guayaba-levapan": {
@@ -1325,6 +1431,7 @@
       "images": [
         "/products/cernido-de-guayaba.jpg"
       ],
+      "presentation": "*Cernido 5 kg",
       "description": "*Cernido 5 kg"
     },
     "dulce-de-guayaba-incauca": {
@@ -1337,6 +1444,7 @@
       "images": [
         "/products/dulce-guayaba-incauca.jpg"
       ],
+      "presentation": "*Bolsa * 1 kg",
       "description": "*Bolsa * 1 kg"
     },
     "bocadillo-doña-guayaba": {
@@ -1349,6 +1457,7 @@
       "images": [
         "/products/bocadillo-doña.jpg"
       ],
+      "presentation": "*Bolsa *25 uds  / Caja *12 bolsas",
       "description": "*Bolsa *25 uds  / Caja *12 bolsas"
     },
     "obleas--arequipe-jace": {
@@ -1359,9 +1468,10 @@
       "link": "products/obleas--arequipe-jace",
       "price": 0,
       "images": [
-        "/products/Obeas.jpg",
-        "/products/Obleas-arequipe.jpg"
+        "/products/obleas.jpg",
+        "/products/obleas-arequipe.jpg"
       ],
+      "presentation": "Bolsa 24 uds. / Caja 16 bolsas",
       "description": "Bolsa 24 uds. / Caja 16 bolsas"
     },
     "nucita-colombina": {
@@ -1374,6 +1484,7 @@
       "images": [
         "/products/nucita-600x600.jpg"
       ],
+      "presentation": "*Display 12 uds / Caja x 8 displays",
       "description": "*Display 12 uds / Caja x 8 displays"
     },
     "yogueta-fresa": {
@@ -1386,6 +1497,7 @@
       "images": [
         "/products/yogueta-fresa.jpg"
       ],
+      "presentation": "*Bolsa 24 x uds / Caja x 16 bolsas",
       "description": "*Bolsa 24 x uds / Caja x 16 bolsas"
     },
     "yogueta-suritda": {
@@ -1398,6 +1510,7 @@
       "images": [
         "/products/yogueta-surtida.jpg"
       ],
+      "presentation": "*Bolsa 24 x uds / Caja x 16 bolsas",
       "description": "*Bolsa 24 x uds / Caja x 16 bolsas"
     },
     "bon-bon-bum-surtido": {
@@ -1410,6 +1523,7 @@
       "images": [
         "/products/bonbonbum-surtido.jpg"
       ],
+      "presentation": "*Bolsa 24 x uds / Caja x 16 bolsas",
       "description": "*Bolsa 24 x uds / Caja x 16 bolsas"
     },
     "caramelo-leche-bombonera": {
@@ -1420,8 +1534,9 @@
       "link": "products/caramelo-leche-bombonera",
       "price": 0,
       "images": [
-        "/products/Caramelo-de-leche.png"
+        "/products/caramelo-de-leche.png"
       ],
+      "presentation": "50 uds. 15 g c/u / 12 tarros",
       "description": "50 uds. 15 g c/u / 12 tarros"
     },
     "panelitas-leche-bombonera": {
@@ -1434,6 +1549,7 @@
       "images": [
         "/products/panelita-de-leche.png"
       ],
+      "presentation": "51 uds. 15 g c/u / 12 tarros",
       "description": "50 uds. 15 g c/u / 12 tarros"
     },
     "cocadita-leche-bombonera": {
@@ -1446,6 +1562,7 @@
       "images": [
         "/products/cocadita.png"
       ],
+      "presentation": "52 uds. 15 g c/u / 12 tarros",
       "description": "50 uds. 15 g c/u / 12 tarros"
     },
     "chocorramo": {
@@ -1458,6 +1575,7 @@
       "images": [
         "/products/chocorramo.jpg"
       ],
+      "presentation": "65 g / Pqt. 5 uds. /Caja 44 Pqt.",
       "description": "65 g / Pqt. 5 uds. /Caja 44 Pqt."
     },
     "achiras-del-huila": {
@@ -1471,6 +1589,7 @@
         "/products/achiras-25gr.jpg",
         "/products/achiras-120gr.jpg"
       ],
+      "presentation": "Caja x 20 displays / 12 unidades",
       "description": "Caja x 20 displays / 12 unidades"
     },
     "choclitos-limon": {
@@ -1483,6 +1602,7 @@
       "images": [
         "/products/choclitos-27gr.jpg"
       ],
+      "presentation": "230g / Caja x 14 uds 27g * 12 uds / Caja x 8 bolsas",
       "description": "230g / Caja x 14 uds 27g * 12 uds / Caja x 8 bolsas"
     },
     "yupis-tradicional": {
@@ -1495,6 +1615,7 @@
       "images": [
         "/products/yupis.jpg"
       ],
+      "presentation": "*60 g / Caja x 36",
       "description": "*60 g / Caja x 36"
     },
     "mani-moto": {
@@ -1507,6 +1628,7 @@
       "images": [
         "/products/mani-moto.jpg"
       ],
+      "presentation": "*Display 16 uds / Caja x 14 displays",
       "description": "*Display 16 uds / Caja x 14 displays"
     },
     "snacky-caramelo": {
@@ -1519,6 +1641,7 @@
       "images": [
         "/products/snacky.jpg"
       ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "maizistos-y-tostacos": {
@@ -1532,6 +1655,7 @@
         "/products/maizitos.jpg",
         "/products/tostaco.jpg"
       ],
+      "presentation": "* 30 g * 12 uds / Caja x 1 displays",
       "description": "* 30 g * 12 uds / Caja x 1 displays"
     },
     "saltin-noel": {
@@ -1545,6 +1669,7 @@
         "/products/saltin-2tacos.jpg",
         "/products/saltin-3tacos-queso.jpg"
       ],
+      "presentation": "*Tritaco – 2 tacos – Queso Mantequilla",
       "description": "*Tritaco – 2 tacos – Queso Mantequilla"
     },
     "galleta-ducales": {
@@ -1557,6 +1682,7 @@
       "images": [
         "/products/ducales.jpg"
       ],
+      "presentation": "*Sabor Original",
       "description": "*Sabor Original"
     },
     "galleta-club-social": {
@@ -1569,6 +1695,7 @@
       "images": [
         "/products/club-social.jpg"
       ],
+      "presentation": "*Bolsa  x 9 uds / Caja x 24 bolsas",
       "description": "*Bolsa  x 9 uds / Caja x 24 bolsas"
     },
     "de-todito": {
@@ -1582,18 +1709,20 @@
         "/products/detodito.jpg",
         "/products/detodito-bbq.jpg"
       ],
+      "presentation": "* 45g * 6 uds / Caja x 6 displays",
       "description": "* 45g * 6 uds / Caja x 6 displays"
     },
-    "galleta-hony-bran-": {
+    "galleta-hony-bran": {
       "title": "Galleta Hony Bran",
       "subcategory": "Dulces y snacks",
       "category": "Abarrotes",
       "tag": "",
-      "link": "products/galleta-hony-bran-",
+      "link": "products/galleta-hony-bran",
       "price": 0,
       "images": [
-        "/products/Honey-bran.png"
+        "/products/hony-bran.png"
       ],
+      "presentation": "297 g 24 display / 9 und",
       "description": "297 g 24 display / 9 und"
     },
     "cocosette": {
@@ -1606,6 +1735,7 @@
       "images": [
         "/products/cocosette.jpg"
       ],
+      "presentation": "*Display 6 uds (50g)/ Caja x 24 * 50 g * 12 pqts * 8 uds",
       "description": "*Display 6 uds (50g)/ Caja x 24 * 50 g * 12 pqts * 8 uds"
     },
     "natuchips-platano-maduro": {
@@ -1616,8 +1746,9 @@
       "link": "products/natuchips-platano-maduro",
       "price": 0,
       "images": [
-        "/products/NC-MADURO.png"
+        "/products/nc-maduro.png"
       ],
+      "presentation": "135 g / 16 uds.",
       "description": "135 g / 16 uds."
     },
     "natuchips-platano-verde": {
@@ -1628,8 +1759,9 @@
       "link": "products/natuchips-platano-verde",
       "price": 0,
       "images": [
-        "/products/NC-VERDE.png"
+        "/products/nc-verde.png"
       ],
+      "presentation": "136 g / 16 uds.",
       "description": "135 g / 16 uds."
     },
     "natuchips-yuca": {
@@ -1640,8 +1772,9 @@
       "link": "products/natuchips-yuca",
       "price": 0,
       "images": [
-        "/products/NC-YUCA.png"
+        "/products/nc-yuca.png"
       ],
+      "presentation": "137 g / 16 uds.",
       "description": "135 g / 16 uds."
     },
     "maduritos-platanitos-yuquitas": {
@@ -1652,10 +1785,11 @@
       "link": "products/maduritos-platanitos-yuquitas",
       "price": 0,
       "images": [
-        "/products/DV-VERDE.png",
-        "/products/DV-MADURITOS.png",
-        "/products/DV-YUCAS.png"
+        "/products/dv-verde.png",
+        "/products/dv-maduritos.png",
+        "/products/dv-yuquitas.png"
       ],
+      "presentation": "138 g / 16 uds.",
       "description": "150 g / 20 uds."
     },
     "panela-green-ground-redonda": {
@@ -1668,6 +1802,7 @@
       "images": [
         "/products/panela-redonda.jpg"
       ],
+      "presentation": "*454 g / Caja * 24 uds .",
       "description": "*454 g / Caja * 24 uds ."
     },
     "panela-green-ground-fraccionada": {
@@ -1680,6 +1815,7 @@
       "images": [
         "/products/panela-fraccionada-600x600.jpg"
       ],
+      "presentation": "*454 g / Caja * 24 uds .",
       "description": "*454 g / Caja * 24 uds ."
     },
     "panela-green-ground-pulverizada": {
@@ -1692,6 +1828,7 @@
       "images": [
         "/products/panela-pulverizada.jpg"
       ],
+      "presentation": "*454 g / Caja * 24 uds .",
       "description": "*454 g / Caja * 24 uds ."
     },
     "panela-green-ground-cuadrada": {
@@ -1704,6 +1841,7 @@
       "images": [
         "/products/panela-cuadrada.jpg"
       ],
+      "presentation": "*454 g / Caja * 24 uds .",
       "description": "*454 g / Caja * 24 uds ."
     },
     "parrilla-para-asar-arepas": {
@@ -1713,7 +1851,10 @@
       "tag": "",
       "link": "products/parrilla-para-asar-arepas",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/parrila-arepas.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "molinillo-de-madera": {
@@ -1723,7 +1864,10 @@
       "tag": "",
       "link": "products/molinillo-de-madera",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/molinillo.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "jarrafas-para-cerveza": {
@@ -1733,7 +1877,10 @@
       "tag": "",
       "link": "products/jarrafas-para-cerveza",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/olla-a-presion.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "olla-a-presion-imusa": {
@@ -1743,7 +1890,10 @@
       "tag": "",
       "link": "products/olla-a-presion-imusa",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/olla-a-presion.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "caldero-imusa-": {
@@ -1753,7 +1903,10 @@
       "tag": "",
       "link": "products/caldero-imusa-",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/caldero.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "pataconera-imusa": {
@@ -1763,7 +1916,10 @@
       "tag": "",
       "link": "products/pataconera-imusa",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/pataconera.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "vasija-de-barro-bandeja-paisa": {
@@ -1773,7 +1929,10 @@
       "tag": "",
       "link": "products/vasija-de-barro-bandeja-paisa",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/cacerola-paisa.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "vasija-de-barro-cazuela-ajiaco-frijolada": {
@@ -1783,7 +1942,10 @@
       "tag": "",
       "link": "products/vasija-de-barro-cazuela-ajiaco-frijolada",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/vasijas-ajiaco.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "molino-tolva": {
@@ -1793,7 +1955,10 @@
       "tag": "",
       "link": "products/molino-tolva",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/molino-tolva.png"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     },
     "chocolatera-imusa-+-molinillo": {
@@ -1803,8 +1968,11 @@
       "tag": "",
       "link": "products/chocolatera-imusa-+-molinillo",
       "price": 0,
-      "images": [],
-      "description": ""
+      "images": [
+        "/products/chocolatera-imusa-y-bolinillo.webp"
+      ],
+      "presentation": "",
+      "description": "Pendiente"
     },
     "vasija-de-barro-viudo-de-pescado": {
       "title": "Vasija de barro Viudo de pescado",
@@ -1813,7 +1981,10 @@
       "tag": "",
       "link": "products/vasija-de-barro-viudo-de-pescado",
       "price": 0,
-      "images": [],
+      "images": [
+        "/products/chocolatera-imusa-y-bolinillo.webp"
+      ],
+      "presentation": "",
       "description": "Pendiente"
     }
   }
