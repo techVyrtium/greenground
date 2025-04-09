@@ -12,7 +12,7 @@
         "/products/tajadas-maquila.png",
         "/products/tajadas-plato.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation": "500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
     "platano-verde-toston": {
@@ -27,7 +27,7 @@
         "/products/tostones-empaque-bandeja.png",
         "/products/patacones-servidos.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "maduritos": {
@@ -40,7 +40,7 @@
       "images": [
         "/products/maduritos-empaque.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": ""
     },
     "ajiaco-precocido": {
@@ -55,7 +55,7 @@
         "/products/ajiaco-bandeja-maquila.png",
         "/products/ajiaco-bandeja-2.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "arracacha": {
@@ -69,7 +69,7 @@
         "/products/arracacha.jpg",
         "/products/ajiaco-bandeja-maquila.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "choclo-entero": {
@@ -83,7 +83,7 @@
         "/products/choclo-entero-congelado.jpg",
         "/products/choclo-bandeja.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "cubos-de-platano": {
@@ -97,7 +97,7 @@
         "/products/cubos-platano-precocido.jpg",
         "/products/cubo-de-platano-bandeja.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "guacamole": {
@@ -111,7 +111,7 @@
         "/products/guacamole.jpg",
         "/products/gucamole-bandeja.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description":  ""
     },
     "papa-criolla-precocida": {
@@ -126,7 +126,7 @@
         "/products/papa-criolla-bandeja.png",
         "/products/papa-criolla-green-ground-imagen-producto.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "platano-entero-maduro": {
@@ -141,7 +141,7 @@
         "/products/platano-maduro-entero-bandeja.png",
         "/products/platano-maduro-servido.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
     "platano-entero-verde": {
@@ -155,7 +155,7 @@
         "/products/entero-verde-crudo-green-ground-imagen-empaque.png",
         "/products/platano-verde-empaque.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "sancocho-precocido": {
@@ -170,7 +170,7 @@
         "/products/sancocho-empaque.png",
         "/products/sancocho-bandeja.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "toston-hawaiano": {
@@ -183,7 +183,7 @@
       "images": [
         "/products/tostones-hawaiano.jpg"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "yuca-en-trozos": {
@@ -198,7 +198,7 @@
         "/products/yuka-fries-empaque.png",
         "/products/yuka-fries-bandeja.png"
       ],
-      "presentation": "Presentación 500 gr / 1kg / 2kg / 3kg",
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "garrafa-azucarada-de-guanabana": {
@@ -211,7 +211,7 @@
       "images": [
         "/products/garrafa-azucarada-guanabana.jpg"
       ],
-      "presentation": "Presentación 1/2 Galón – Caja * 6",
+      "presentation":"1/2 Galón – Caja * 6",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-mora": {
@@ -224,7 +224,7 @@
       "images": [
         "/products/garrafa-azucarada-mora.jpg"
       ],
-      "presentation": "Presentación 1/2 Galón – Caja * 7",
+      "presentation":"1/2 Galón – Caja * 7",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-mango": {
@@ -237,7 +237,7 @@
       "images": [
         "/products/garrafa-azucarada-mango.jpg"
       ],
-      "presentation": "Presentación 1/2 Galón – Caja * 8",
+      "presentation":"1/2 Galón – Caja * 8",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-guayaba": {
@@ -250,7 +250,7 @@
       "images": [
         "/products/garrafa-azucarada-guayaba.jpg"
       ],
-      "presentation": "Presentación 1/2 Galón – Caja * 9",
+      "presentation":"1/2 Galón – Caja * 9",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "garrafa-azucarada-de-fresa": {
@@ -263,7 +263,7 @@
       "images": [
         "/products/garrafa-azucarada-fresa.jpg"
       ],
-      "presentation": "Presentación 1/2 Galón – Caja * 10",
+      "presentation":"1/2 Galón – Caja * 10",
       "description": "Presentación 1/2 Galón – Caja * 6"
     },
     "pulpa-de-mango": {
@@ -276,7 +276,7 @@
       "images": [
         "/products/pulpa-mango.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 24",
+      "presentation":"500gr – Caja * 24",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-gunabana-en-mota": {
@@ -289,7 +289,7 @@
       "images": [
         "/products/mora-entera.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 25",
+      "presentation":"500gr – Caja * 25",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-maracuya-con-pepa": {
@@ -302,7 +302,7 @@
       "images": [
         "/products/mora-entera.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 26",
+      "presentation":"500gr – Caja * 26",
       "description": "Presentación 500gr – Caja * 24"
     },
     "mora-entera": {
@@ -315,7 +315,7 @@
       "images": [
         "/products/mora-entera.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 27",
+      "presentation":"500gr – Caja * 27",
       "description": "Presentación 500gr – Caja * 24"
     },
     "lulo-naranjillo-entero": {
@@ -328,7 +328,7 @@
       "images": [
         "/products/lulo-entero.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 28",
+      "presentation":"500gr – Caja * 28",
       "description": "Presentación 500gr – Caja * 24"
     },
     "tomate-de-arbol-entero": {
@@ -341,7 +341,7 @@
       "images": [
         "/products/tomate-arbol-entero.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 29",
+      "presentation":"500gr – Caja * 29",
       "description": "Presentación 500gr – Caja * 24"
     },
     "coco-rallado": {
@@ -354,7 +354,7 @@
       "images": [
         "/products/coco-rallado.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 30",
+      "presentation":"500gr – Caja * 30",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-papaya": {
@@ -367,7 +367,7 @@
       "images": [
         "/products/pulpa-papaya.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 31",
+      "presentation":"500gr – Caja * 31",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-tamarindo": {
@@ -380,7 +380,7 @@
       "images": [
         "/products/pulpa-tamarindo.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 32",
+      "presentation":"500gr – Caja * 32",
       "description": "Presentación 500gr – Caja * 24"
     },
     "piña-en-trozos": {
@@ -393,7 +393,7 @@
       "images": [
         "/products/piña-en-trozos.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 33",
+      "presentation":"500gr – Caja * 33",
       "description": "Presentación 500gr – Caja * 24"
     },
     "guayaba-en-trozos": {
@@ -406,7 +406,7 @@
       "images": [
         "/products/guayaba-en-trozos.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 34",
+      "presentation":"500gr – Caja * 34",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pulpa-de-curuba": {
@@ -419,7 +419,7 @@
       "images": [
         "/products/curuba-en-trozos.jpg"
       ],
-      "presentation": "Presentación 500gr – Caja * 35",
+      "presentation":"500gr – Caja * 35",
       "description": "Presentación 500gr – Caja * 24"
     },
     "pandebono-granel": {
@@ -432,7 +432,7 @@
       "images": [
         "/products/pandebono-bandeja.png"
       ],
-      "presentation": "Presentación 80gr – Caja * 42",
+      "presentation": "80gr – Caja * 42",
       "description": "Presentación 80gr – Caja * 42"
     },
     "buñuelo-granel": {
@@ -446,7 +446,7 @@
         "/products/buñuelo-bandeja.png",
         "/products/buñuelo-unidad.jpg"
       ],
-      "presentation": "Presentación 80gr – Caja * 43",
+      "presentation": "80gr – Caja * 43",
       "description": "Presentación 80gr – Caja * 42"
     },
     "almojabana-granel": {
@@ -459,7 +459,7 @@
       "images": [
         "/products/almojabana-granel.jpg"
       ],
-      "presentation": "Presentación 80gr – Caja * 44",
+      "presentation": "80gr – Caja * 44",
       "description": "Presentación 80gr – Caja * 42"
     },
     "arepa-blanca": {
@@ -472,7 +472,7 @@
       "images": [
         "/products/arepas-blancas.jpg"
       ],
-      "presentation": "Presentación 80gr – Caja * 45",
+      "presentation": "80gr – Caja * 45",
       "description": "Presentación 700gr – Caja * 24"
     },
     "arepa-campesina": {
@@ -485,7 +485,7 @@
       "images": [
         "/products/arepa-maiz-amarillo.jpg"
       ],
-      "presentation": "Presentación 80gr – Caja * 46",
+      "presentation": "80gr – Caja * 46",
       "description": "Presentación 700gr – Caja * 24"
     },
     "arepa-de-yuca": {
@@ -498,7 +498,7 @@
       "images": [
         "/products/arepas-de-yuca.jpg"
       ],
-      "presentation": "Presentación 80gr – Caja * 47",
+      "presentation": "80gr – Caja * 47",
       "description": "Presentación 700gr – Caja * 24"
     },
     "harina-pan": {
@@ -513,7 +513,7 @@
         "/products/harinapan-amarillo.jpg",
         "/products/harinapan-amarillo.jpg"
       ],
-      "presentation": "Presentación 80gr – Caja * 48",
+      "presentation": "80gr – Caja * 48",
       "description": "Presentación 700gr – Caja * 24"
     },
     "harina-la-nieve-y-masapan": {
