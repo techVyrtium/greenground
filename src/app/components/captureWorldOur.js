@@ -34,7 +34,7 @@ export default function CaptureWorldOur() {
       title: "Conquista el mundo con Nosotros",
       text: (
         <>
-          <p className="text-[#5C6E79] font-[700]  font-itcGBook text-[clamp(26px,1.75vw,32px)]">
+          <p className="text-justify text-[#5C6E79] font-bold leading-[1.3] font-itcGBook text-[clamp(22px,1.45vw,28px)]">
             Está es tu oportunidad de llegar con tu negocio a todos los rincones
             del globo, con nuestros{" "}
             <span className={` font-[700] font-itcGBold`}>
@@ -159,21 +159,34 @@ export default function CaptureWorldOur() {
             </div>
             <div className="absolute left-8 sm:left-12 top-[25px] sm:top-[36px] text-left md:left-10 lg:left-12 w-fit">
               <h2
-                className={`font-bold text-[#008638] mb-12 leading-[1] font-itcGBold text-[23px] md:text-[32px] lg:text-[40px] 2xl:text-[48px] lg:leading-[0.8]`}
+                className={`font-bold text-[#008638] mb-12 leading-[1.1] font-itcGBold text-[clamp(28px,1.75vw,48px)] lg:leading-[0.8]`}
               >
                 {data[0].title}
               </h2>
             </div>
           </div>
           <div className="items-center md:mt-0">
-            <div className={`space-y-6 mt-12 text-left font-itcGBook  `}>
+            <div
+              className={`space-y-4 mt-8 text-left font-itcGBook  font-medium`}
+            >
               {data[0].text}
             </div>
           </div>
           <div className={`hidden lg:grid`}>
             <div className="items-center flex flex-col lg:flex-row lg:mt-10 gap-x-24 ">
-              <div className="lg:w-1/2 flex items-center justify-center">
-                <img src="/home/Frame171.png" className="w-auto h-[320px]" />
+              <div className="lg:w-1/2 flex flex-row items-center justify-center gap-4">
+                <div className="w-[60%] aspect-square">
+                  <img
+                    src="/home/Frame171.png"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="w-[40%] aspect-square">
+                  <img
+                    src="/tu_logo_aqui.png"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
               <div className="w-2/5 h-full flex flex-col justify-center ml-4">
                 <div className={`flex items-end justify-end font-itcGBook`}>
@@ -192,9 +205,20 @@ export default function CaptureWorldOur() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
-        <div className="md:w-1/2 w-full flex items-center justify-center">
-          <img src="/home/Frame171.png" className="w-auto h-[251px]" />
+      <div className="max-w-full mx-auto flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
+        <div className="lg:w-1/2 flex flex-row items-center justify-center gap-4">
+          <div className="w-[60%] aspect-square">
+            <img
+              src="/home/Frame171.png"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="w-[40%] aspect-square">
+            <img
+              src="/tu_logo_aqui.png"
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
         <div className="lg:w-1/3 md:w-1/2 h-full flex flex-col justify-end ml-4">
           <div className="flex items-end justify-end">{data[0].text2}</div>

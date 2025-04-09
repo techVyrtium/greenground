@@ -446,20 +446,20 @@ export default function WhatWeDo() {
         <div className="w-full mx-auto h-full" id="whatWeDo">
           <div className="mb-12 -mt-12">{btn()}</div>
           <div className="flex flex-col lg:flex-row">
-            <div className="relative flex items-center h-full w-full lg:w-1/3">
+            <div className="relative flex items-center h-full w-full lg:w-1/3 -top-8">
               {/* Imagen a la izquierda */}
               <div className="lg:w-1/3 w-full h-full">
                 <img
                   src="/home/quehacemos.png"
                   alt="Descripción de la imagen"
-                  className="w-[100px] h-[120px]"
+                  className="w-[80px] h-auto lg:w-[100px] lg:h-[120px]"
                 />
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[40px] w-full max-w-[90%] lg:max-w-[400px]">
+              <div className="absolute left-16 top-[30px] w-full max-w-[90%] lg:max-w-[400px]">
                 <h2
-                  className={`text-[clamp(3.5rem,4vw,4rem)] max-[345px]:text-[15vw] font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
+                  className={`text-[clamp(40px,6vw,96px)] lg:text-[clamp(70px,5.8vw,96px)]  font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
                   dangerouslySetInnerHTML={{ __html: t("title") }}
                 />
               </div>
@@ -467,7 +467,7 @@ export default function WhatWeDo() {
 
             <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
               {/* Contenido de texto */}
-              <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-[#4A4A4A] leading-relaxed">
+              <p className="text-[clamp(22px,1.45vw,28px)] text-[#4A4A4A] leading-[1.3] ">
                 {t("text")}
               </p>
             </div>
