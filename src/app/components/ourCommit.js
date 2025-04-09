@@ -1,12 +1,12 @@
 import React from "react";
-
+import OurCommitWomen from "./ourCommitWomen";
 export default function OurCommit() {
   const data = [
     {
       title: (
         <>
           <h2
-            className={`lg:text-[60px] text-[40px] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}
+            className={`text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}
           >
             Nuestro compromiso
           </h2>
@@ -16,14 +16,17 @@ export default function OurCommit() {
     },
   ];
   return (
-    <section className="mt-24 w-full h-full" id="ourCommit">
+    <section
+      className="block mt-24 w-full xl:h-auto h-screen min-h-[400px]"
+      id="ourCommit"
+    >
       {/* Zona Orange */}
-      <div className="h-[15rem] lg:h-[12rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
+      <div className="relative h-[15rem] xl:h-[12rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)]">
-          <div className="flex flex-row w-full mx-auto h-full">
-            <div className="relative flex  h-full w-1/2 lg:w-1/3 py-8 ">
-              {/* Imagen a la izquierda */}
-              <div className="lg:w-1/3 h-full">
+          <div className="relative grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] w-full mx-auto h-full">
+            {/* Columna izquierda (Imagen y texto) */}
+            <div className="relative flex h-full xl:h-auto py-8 xl:py-0">
+              <div className="xl:w-1/3 h-full">
                 <img
                   src="/home/sheetWhite.png"
                   alt="Descripción de la imagen"
@@ -32,33 +35,38 @@ export default function OurCommit() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[70px] w-full text-left font-itcGBold">
+              <div className="absolute left-12 xl:left-16 top-[65px] xl:top-[40px] w-full text-left font-itcGBold">
                 {data[0].title}
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div className=" px-[clamp(1rem,5vw,6rem)] flex h-full lg:h-[18rem] ">
-        <div className="w-full mx-auto flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 w-full flex lg:order-none order-last">
-            <div className=" w-full">
-              <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-[#4A4A4A] leading-relaxed mt-[30px] text-left">
-                {data[0].text}
-              </p>
-            </div>
-          </div>
-          <div className="lg:w-3/5 w-full lg:order-none order-first">
-            <div className="flex flex-row justify-end w-full -mt-10 lg:-mt-36">
+            {/* Columna derecha (Video) */}
+            <div className=" h-auto xl:w-full xl:h-auto hidden flex-col xl:flex justify-center items-center xl:pt-12 xl:pt-0 mt-8 xl:mt-10 -mt-28">
               <video
                 src="/home/ourCommit.mov"
                 autoPlay={true}
                 loop
                 muted={true}
-                className="w-[750px] h-auto rounded-lg"
+                className="w-full h-auto max-h-[50vh] rounded-lg"
               />
             </div>
+          </div>
+        </div>
+      </div>
+      {/* Espacio para el texto debajo */}
+      <div className="px-[clamp(1rem,5vw,6rem)] flex flex-col xl:flex-row xl:mt-[50px] mb-12 flex">
+        <video
+          src="/home/ourCommit.mov"
+          autoPlay={true}
+          loop
+          muted={true}
+          className="w-full h-auto max-h-[50vh] rounded-lg -mt-[50px] z-10 xl:hidden"
+        />
+        <div className="w-full xl:w-2/5 flex xl:order-none order-last">
+          <div className="w-full">
+            <p className="text-[clamp(1.2rem,1.75vw,1.75rem)] text-[#4A4A4A] leading-[1.2] text-left mt-[60px] xl:mt-0">
+              {data[0].text}
+            </p>
           </div>
         </div>
       </div>

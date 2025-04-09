@@ -19,7 +19,7 @@ export default function OurCertificate() {
       title: (
         <>
           <h2
-            className={`text-[64px] font-bold text-[#008638]  leading-[0.8] font-itcGBold`}
+            className={`text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-[#008638]  leading-[0.8] font-itcGBold`}
           >
             Nuestras certificaciones
           </h2>
@@ -27,7 +27,17 @@ export default function OurCertificate() {
       ),
     },
   ];
-
+  const imageList = [
+    {
+      src: "/home/logotipo-iso-9001.png",
+      link: "https://www.sgs.com/en/certified-clients-and-products",
+    },
+    { src: "/home/FDA.png", link: "" },
+    { src: "/home/logo-invima1.png", link: "" },
+    { src: "/home/tcpat1.png", link: "" },
+    { src: "/home/logo-bacs.png", link: "" },
+    { src: "/home/Logo-Kosher1.png", link: "" },
+  ];
   return (
     <section className="w-full h-full p-[clamp(1rem,5vw,6rem)]">
       <div className="lg:h-[10rem] w-full mx-auto">
@@ -67,42 +77,29 @@ export default function OurCertificate() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-10 md:left-14  bottom-[-14px] md:bottom-6 sm:w-fit text-left">
+              <div className="absolute left-10 md:left-14  bottom-[-2px] md:bottom-0 sm:w-fit text-left">
                 {data2[0].title}
               </div>
             </div>
           </div>
 
           {/* imagenes */}
-          <div className="mt-12 w-full lg:mt-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:order-none order-last place-items-center">
-            <div>
-              <a
-                href="https://www.sgs.com/en/certified-clients-and-products"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/home/logotipo-iso-9001.png"
-                  className="w-full h-auto"
-                />
-              </a>
-            </div>
-
-            <div>
-              <img src="/home/FDA.png" className="w-full h-auto" />
-            </div>
-            <div>
-              <img src="/home/logo-invima1.png" className="w-full h-auto" />
-            </div>
-            <div>
-              <img src="/home/tcpat1.png" className="w-full h-auto" />
-            </div>
-            <div>
-              <img src="/home/logo-bacs.png" className="w-full h-auto" />
-            </div>
-            <div>
-              <img src="/home/Logo-Kosher1.png" className="w-full h-auto" />
-            </div>
+          <div className="mt-12 w-full lg:mt-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 lg:order-none order-last place-items-center">
+            {imageList.map((image, index) => (
+              <div key={index}>
+                {image.link ? (
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={image.src} className="w-40 h-40 object-contain" />
+                  </a>
+                ) : (
+                  <img src={image.src} className="w-40 h-40 object-contain" />
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

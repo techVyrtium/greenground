@@ -3,13 +3,13 @@ import React from "react";
 export default function NowNearYou() {
   const data = [
     {
-      title: "AHORA MÁS CERCA DE TI",
+      title: "AHORA MÁS<br/>CERCA DE TI",
       text: (
         <>
-          <p className="text-white text-[clamp(20px,2.5vw,34px)] leading-8">
+          <p className="text-white text-[33px] leading-[1] text-justify">
             Encuentra nuestros productos{" "}
             <span className=" font-bold">Green Ground </span>
-            en<span className=" font-bold">tiendas Ara </span> y abre las
+            en<span className=" font-bold"> tiendas Ara </span> y abre las
             puertas de tu casa al{" "}
             <span className=" font-bold">sabor de la tradición.</span>
           </p>
@@ -24,35 +24,31 @@ export default function NowNearYou() {
           <img src="/home/Frame171.png" className="w-[600px] h-auto" />
         </div>
         <div className="flex flex-col justify-around lg:w-1/2 w-full h-fit">
-          <div className="flex flex-col md:flex-row">
-            <div className="flex justify-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
+            <div className="flex justify-center md:justify-start">
               <img
                 src="/home/aroBird.png"
-                className="w-[288px] md:w-[30rem] h-auto object-contain"
+                className="w-[140px] md:w-[180px] lg:w-[220px] xl:w-[270px] h-auto object-contain"
               />
             </div>
-            <div>
-              <h1
-                className={`text-white text-[70px] leading-16 lg:text-[clamp(42px,3.5vw,85px)] font-bold font-itcGBold ml-8`}
-              >
-                {data[0].title}
-              </h1>
+            <div className="ml-4 flex flex-1">
+              <h2
+                className={`text-[clamp(78px,4.6vw,120px)] lg:text-[clamp(48px,4.6vw,96px)] text-[#fff] mb-12 leading-[1.1] font-bold font-itcGBold whitespace-nowrap`}
+                dangerouslySetInnerHTML={{ __html: data[0].title }}
+              />
             </div>
           </div>
-          <div className="space-y-4 mt-8 text-justify ">{data[0].text}</div>
+          <div className="space-y-4 mt-8 text-justify">{data[0].text}</div>
           <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
             <div className="flex flex-row gap-8 lg:gap-[1vw] max-[465px]:gap-6">
-              <img
-                src="/home/GFICON.png"
-                className=" w-[126px] md:w-[156px] lg:w-[14vw] w-[120px] max-[465px]:w-[100px]"
-              />
+              <img src="/home/GFICON.png" className=" w-[126px] md:w-[156px]" />
               <img
                 src="/home/MICICON.png"
-                className=" w-[126px] md:w-[156px] lg:w-[14vw] w-[120px] max-[465px]:w-[100px]"
+                className=" w-[126px] md:w-[156px]"
               />
               <img
                 src="/home/READYICON.png"
-                className=" w-[126px] md:w-[156px] lg:w-[14vw] w-[120px] max-[465px]:w-[100px]"
+                className=" w-[126px] md:w-[156px]"
               />
             </div>
           </div>

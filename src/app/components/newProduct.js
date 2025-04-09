@@ -29,28 +29,26 @@ export default function NewProduct() {
   return (
     <section className="p-[clamp(1rem,5vw,6rem)] w-full h-fit overflow-hidden">
       <div className="w-full mx-auto flex flex-col-reverse xl:flex-row">
-        <div className="xl:w-3/5 w-full mt-12 md:mt-0  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <div className="xl:w-3/5 w-full mt-12 md:mt-0  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2">
           {filteredProducts.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
-        <div className="xl:w-2/5  w-full flex flex-col items-center justify-center mt-12">
-          <div className="relative w-full">
-            <div className="w-fit">
-              <h2
-                className={`md:text-[73px] lg:text-[80px] text-6xl font-bold text-[#E7681F] mb-12 font-itcGBold`}
-              >
+        <div className="xl:w-2/5 w-full flex flex-col items-center justify-center mt-12">
+          <div className="relative w-full flex justify-center">
+            <div className="w-[400px] md:w-full xl:w-[400px] lg:w-full relative flex flex-col items-center">
+              <h2 className="text-[clamp(60px,8.5vw,96px)] xl:text-[clamp(48px,5.6vw,96px)] leading-[1] font-bold text-[#E7681F] mb-12 font-itcGBold text-left">
                 {data[0].title}
               </h2>
               <img
                 src="/home/sheetOrange.png"
                 alt="Descripción de la imagen"
-                className="w-[150px] h:[120px] md:w-[155px] md:h-[135px] absolute left-32 md:left-142 lg:left-159 xl:left-55 -top-[50px] min-[600px]:left-112"
+                className="w-[155px] h-auto absolute -top-10 right-4"
               />
             </div>
           </div>
-          {/* <div className="text-[16px] w-full text-black">{data[0].text}</div> */}
-          <div className="flex justify-center w-full">
+
+          <div className="flex justify-end w-full">
             <a
               href={`/products`}
               className="bg-[#F19412] text-[20px] text-white px-6 mt-4 rounded-md"
