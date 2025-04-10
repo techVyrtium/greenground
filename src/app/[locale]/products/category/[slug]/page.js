@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { FiSearch } from "react-icons/fi";
@@ -22,7 +21,6 @@ export default function ProductosPorCategoria() {
       categorySlug.toLowerCase()
   );
 
-  const [search, setSearch] = useState("");
 
   const formatTitle = (str) =>
     str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -33,8 +31,8 @@ export default function ProductosPorCategoria() {
         <CategoryLeft />
       </div>
 
-      <div className="grid lg:grid-cols-[1fr_4fr] gap-6">
-        <div className="hidden lg:block">
+      <div className="grid lg:grid-cols-[1fr_4fr] gap-6 md:mx-[48px] lg:mx-[70px] 2xl:mx-[96px]">
+        <div className="hidden lg:block gap-6 h-min w-full sticky top-6">
           <CategoryLeft />
         </div>
 
