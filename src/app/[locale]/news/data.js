@@ -827,13 +827,13 @@ const Data = () => {
               <img src={"/news/Aborrajados.jpg"} className="w-full rounded-md" />
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
-              <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
-                Aborrajados de plátano maduro con queso: receta fácil y rápida
+              <p className="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px] mb-10  text-[#008638] font-itcGBold ">
+                Aborrajados de plátano maduro con queso
               </p>
-              <p className="mb-2 text-[22px] mt-4 text-[#008638]">
+              <p className="mb-6 text-[22px] mt-4 text-[#008638]">
                 Porciones: 4
               </p>
-              <p className="mb-5 text-[22px] mt-4 text-[#008638]">
+              <p className="mb-12 text-[22px] mt-4 text-[#008638]">
                 Tiempo de preparación: 30 minutos
               </p>
               <div className=" bg-[#008E4A] w-full rounded-md">
