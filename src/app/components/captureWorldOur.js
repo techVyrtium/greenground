@@ -78,7 +78,7 @@ export default function CaptureWorldOur() {
     if (activeIndex <= dataVideo.length) handleNext();
   };
   return (
-    <section className="px-[clamp(1rem,5vw,6rem)] w-full h-fit mt-[clamp(1rem,5vw,6rem)]">
+    <section className="px-[clamp(1rem,5vw,8rem)] w-full h-fit mt-[clamp(1rem,5vw,6rem)]">
       <div className="w-full flex flex-col md:flex-row gap-10">
         <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-start">
           <div className="flex items-start h-fit">

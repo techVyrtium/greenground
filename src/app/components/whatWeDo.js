@@ -61,7 +61,7 @@ export default function WhatWeDo() {
 
   function btn() {
     return (
-      <div className="flex felx-row items-center justify-center gap-2 lg:hidden">
+      <div className="flex flex-row items-center justify-center gap-2 lg:hidden">
         <img
           src="/home/arrowsRSL.png"
           alt="Descripción de la imagen"
@@ -136,7 +136,7 @@ export default function WhatWeDo() {
         </video>
         {viewBotom ? (
           <div
-            className={`absolute w-full 2xl:w-5/6 h-10 cursor-pointer mb-6 items-center`}
+            className={`absolute w-full max-w-[1920px] 2xl:w-5/6 h-10 cursor-pointer mb-6 items-center`}
           >
             <div className="flex flex-row items-center justify-center  ">
               <div
@@ -454,7 +454,7 @@ export default function WhatWeDo() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[30px] w-full max-w-[90%] lg:max-w-[400px]">
+              <div className="absolute left-16 top-[30px] w-fit max-w-[90%] lg:max-w-[400px]">
                 <h2
                   className={`text-[clamp(40px,6vw,96px)] lg:text-[clamp(70px,5.8vw,96px)]  font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
                   dangerouslySetInnerHTML={{ __html: t("title") }}
