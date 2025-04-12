@@ -2,7 +2,9 @@ import { CategoryTop } from "@/app/components/products/categoryTop";
 import { CategoryLeft } from "@/app/components/products/categoryLeft";
 import ProductGrid from "@/app/components/products/productsGrid";
 import { useTranslations } from "next-intl"; // Importar useTranslations
-
+export const metadata = {
+  title: 'Products'
+}
 export default function ProductosCongelados() {
   const t = useTranslations("products");
 

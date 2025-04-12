@@ -4,7 +4,7 @@ import CardBlog from "./cardBlog";
 import Data from "../[locale]/news/data";
 import { motion } from "framer-motion";
 
-export default function RecetNews({ tipo = "recetas" }) {
+export default function RecetNews({ tipo = "recetas", existPadding = true, className = '' }) {
   //console.log("tipo ", tipo);
   const { news } = Data();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -71,43 +71,43 @@ export default function RecetNews({ tipo = "recetas" }) {
 
   function btn(size) {
     return (
-      <div className="flex felx-row items-center justify-center gap-2">
+      <div className="flex flex-row items-center justify-center gap-2">
         <img
           src={`${colorset ? "/home/arrowsOrangeL.png" : "/home/arrowsRSL.png"
             }`}
           alt="Descripción de la imagen"
-          className="mt-4 mr-2"
+          className="mt-4 mr-2 cursor-pointer"
           onClick={() => handlePrev(size)}
         />
         <div
-          className={`mt-4 p-3 rounded-full ${activeIndex == 0 && colorset
-              ? "bg-[#F19412]"
-              : activeIndex == 0 && !colorset
-                ? "bg-[#B52C17]"
-                : "bg-[#FEF8F1]"
+          className={`mt-4 p-3 rounded-full cursor-pointer ${activeIndex == 0 && colorset
+            ? "bg-[#F19412]"
+            : activeIndex == 0 && !colorset
+              ? "bg-[#B52C17]"
+              : "bg-[#FEF8F1]"
             }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full ${activeIndex == 1 && colorset
-              ? "bg-[#F19412]"
-              : activeIndex == 1 && !colorset
-                ? "bg-[#B52C17]"
-                : "bg-[#FEF8F1]"
+          className={`mt-4 p-3 rounded-full cursor-pointer ${activeIndex == 1 && colorset
+            ? "bg-[#F19412]"
+            : activeIndex == 1 && !colorset
+              ? "bg-[#B52C17]"
+              : "bg-[#FEF8F1]"
             }`}
         ></div>
         <div
           className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${activeIndex == 2 && colorset
-              ? "bg-[#F19412]"
-              : activeIndex == 2 && !colorset
-                ? "bg-[#B52C17]"
-                : "bg-[#FEF8F1]"
+            ? "bg-[#F19412]"
+            : activeIndex == 2 && !colorset
+              ? "bg-[#B52C17]"
+              : "bg-[#FEF8F1]"
             }`}
         ></div>
         <img
           src={`${colorset ? "/home/arrowsOrangeR.png" : "/home/arrowsRSR.png"
             }`}
           alt="Descripción de la imagen"
-          className="mt-4 ml-2"
+          className="mt-4 ml-2 cursor-pointer"
           onClick={() => handleNext(size)}
         />
       </div>
@@ -137,15 +137,15 @@ export default function RecetNews({ tipo = "recetas" }) {
   };
 
   return (
-    <div className="px-[clamp(1rem,5vw,6rem)]  mx-auto mt-12 h-full">
+    <div className={`${existPadding ? "px-[clamp(1rem,5vw,6rem)]" : "px-0"} mx-auto mt-12 h-full ${className}`}>
       <div className="flex flex-row items-center justify-center w-full gap-2  ">
         <div>
           <button
             onClick={() => changeColor(true)}
             className={`${colorset
-                ? "bg-[#f19412]"
-                : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
-              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
+              ? "bg-[#f19412]"
+              : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
+              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold cursor-pointer`}
           >
             Recetas
           </button>
@@ -154,8 +154,8 @@ export default function RecetNews({ tipo = "recetas" }) {
           <button
             onClick={() => changeColor(false)}
             className={`${colorset
-                ? "bg-[#f5b256] hover:bg-[#f19412] cursor-pointer"
-                : "bg-[#EA6B58]"
+              ? "bg-[#f5b256] hover:bg-[#f19412] cursor-pointer"
+              : "bg-[#EA6B58]"
               } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
           >
             Actualidad
