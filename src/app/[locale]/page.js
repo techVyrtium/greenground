@@ -27,7 +27,7 @@ export default async function Home() {
       <ProductCategories />
       <TopProduct />
       <NewProduct />
-      {/* <MapW /> */}
+      <MapW />
       <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">
