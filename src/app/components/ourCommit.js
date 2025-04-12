@@ -1,5 +1,3 @@
-import React from "react";
-import OurCommitWomen from "./ourCommitWomen";
 export default function OurCommit() {
   const data = [
     {
@@ -21,7 +19,7 @@ export default function OurCommit() {
       id="ourCommit"
     >
       {/* Zona Orange */}
-      <div className="relative h-[15rem] xl:h-[12rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
+      <div className="relative h-[14rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)]">
           <div className="relative grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] w-full mx-auto h-full">
             {/* Columna izquierda (Imagen y texto) */}

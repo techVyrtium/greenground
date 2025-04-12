@@ -30,6 +30,20 @@
       "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Presentación 500 gr / 1kg / 2kg / 3kg"
     },
+    "platano-entero-verde": {
+      "title": "Platano entero verde",
+      "subcategory": "Especialidades Latinas",
+      "category": "Congelados",
+      "tag": "Top",
+      "link": "products/platano-entero-verde",
+      "price": 0,
+      "images": [
+        "/products/entero-verde-crudo-green-ground-imagen-empaque.png",
+        "/products/platano-verde-empaque.png"
+      ],
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
+      "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
+    },
     "maduritos": {
       "title": "Maduritos",
       "subcategory": "Especialidades Latinas",
@@ -114,21 +128,6 @@
       "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description":  ""
     },
-    "papa-criolla-precocida": {
-      "title": "Papa criolla precocida",
-      "subcategory": "Especialidades Latinas",
-      "category": "Congelados",
-      "tag": "Top",
-      "link": "products/papa-criolla-precocida",
-      "price": 0,
-      "images": [
-        "/products/papa-criolla-green-ground-imagen-empaque.png",
-        "/products/papa-criolla-bandeja.png",
-        "/products/papa-criolla-green-ground-imagen-producto.png"
-      ],
-      "presentation":"500 gr / 1kg / 2kg / 3kg",
-      "description": "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
-    },
     "platano-entero-maduro": {
       "title": "Platano entero Maduro",
       "subcategory": "Especialidades Latinas",
@@ -144,19 +143,35 @@
       "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
     },
-    "platano-entero-verde": {
-      "title": "Platano entero verde",
+    "yuca-en-trozos": {
+      "title": "Yuca en trozos",
       "subcategory": "Especialidades Latinas",
       "category": "Congelados",
       "tag": "Top",
-      "link": "products/platano-entero-verde",
+      "link": "products/yuca-en-trozos",
       "price": 0,
       "images": [
-        "/products/entero-verde-crudo-green-ground-imagen-empaque.png",
-        "/products/platano-verde-empaque.png"
+        "/products/yuka-frita-frontal.png",
+        "/products/yuka-fries-empaque.png",
+        "/products/yuka-fries-bandeja.png"
       ],
       "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
+    },
+    "papa-criolla-precocida": {
+      "title": "Papa criolla precocida",
+      "subcategory": "Especialidades Latinas",
+      "category": "Congelados",
+      "tag": "Top",
+      "link": "products/papa-criolla-precocida",
+      "price": 0,
+      "images": [
+        "/products/papa-criolla-green-ground-imagen-empaque.png",
+        "/products/papa-criolla-bandeja.png",
+        "/products/papa-criolla-green-ground-imagen-producto.png"
+      ],
+      "presentation":"500 gr / 1kg / 2kg / 3kg",
+      "description": "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
     },
     "sancocho-precocido": {
       "title": "Sancocho precocido",
@@ -186,21 +201,7 @@
       "presentation":"500 gr / 1kg / 2kg / 3kg",
       "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
     },
-    "yuca-en-trozos": {
-      "title": "Yuca en trozos",
-      "subcategory": "Especialidades Latinas",
-      "category": "Congelados",
-      "tag": "Top",
-      "link": "products/yuca-en-trozos",
-      "price": 0,
-      "images": [
-        "/products/yuka-frita-frontal.png",
-        "/products/yuka-fries-empaque.png",
-        "/products/yuka-fries-bandeja.png"
-      ],
-      "presentation":"500 gr / 1kg / 2kg / 3kg",
-      "description": "Presentación 500 gr / 1kg / 2kg / 3kg"
-    },
+    
     "garrafa-azucarada-de-guanabana": {
       "title": "Garrafa azucarada de Guanabana",
       "subcategory": "Pulpa de fruta",

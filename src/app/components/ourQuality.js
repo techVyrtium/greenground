@@ -74,12 +74,12 @@ export default function OurQuality() {
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-row  -mt-8 md:-mt-12">
         <div className=" mx-auto flex flex-col lg:flex-row w-full">
           <div className="lg:w-1/2 w-full flex items-center justify-center">
-            <div className="flex flex-row items-center justify-evenly w-full">
+            <div className="flex flex-row gap-4 items-center justify-evenly w-full">
               <div className="">
                 <img
                   src="/home/arrowsRedL.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 md:w-[3rem] w-[6rem]"
+                  className="mt-4 md:w-[3rem] w-[6rem] cursor-pointer"
                   onClick={() => handlePrev()}
                 />
               </div>
@@ -93,7 +93,7 @@ export default function OurQuality() {
                 <img
                   src="/home/arrowsRedR.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 md:w-[3rem] w-[6rem]"
+                  className="mt-4 md:w-[3rem] w-[6rem] cursor-pointer"
                   onClick={() => handleNext()}
                 />
               </div>

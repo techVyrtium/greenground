@@ -26,10 +26,15 @@
   --font-mono: var(--font-geist-mono);
   --font-itcGBold: var(--font-itcBold);
   --font-itcGBook: var(--font-itcBook);
+  --font-itcGDemi: var(--font-itcDemi);
+  --font-itcGLTBook: var(--font-itcLTBook);
+  --font-itcGLTCondensedBook: var(--font-itcLTCondensedBook);
 }
+
 .font-baloo {
   font-family: var(--font-baloo), sans-serif;
 }
+
 body {
   background-image: url("/fondo.png");
   background-size: cover;
@@ -76,13 +81,16 @@ body {
 .fade-enter {
   opacity: 0;
 }
+
 .fade-enter-active {
   opacity: 1;
   transition: opacity 500ms;
 }
+
 .fade-exit {
   opacity: 1;
 }
+
 .fade-exit-active {
   opacity: 0;
   transition: opacity 500ms;

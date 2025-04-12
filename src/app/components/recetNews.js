@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import CardBlog from "./cardBlog";
 import Data from "../[locale]/news/data";
-import { inView, motion, useInView, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function RecetNews({ tipo = "recetas" }) {
   //console.log("tipo ", tipo);
@@ -73,44 +73,39 @@ export default function RecetNews({ tipo = "recetas" }) {
     return (
       <div className="flex felx-row items-center justify-center gap-2">
         <img
-          src={`${
-            colorset ? "/home/arrowsOrangeL.png" : "/home/arrowsRSL.png"
-          }`}
+          src={`${colorset ? "/home/arrowsOrangeL.png" : "/home/arrowsRSL.png"
+            }`}
           alt="Descripción de la imagen"
           className="mt-4 mr-2"
           onClick={() => handlePrev(size)}
         />
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 0 && colorset
+          className={`mt-4 p-3 rounded-full ${activeIndex == 0 && colorset
               ? "bg-[#F19412]"
               : activeIndex == 0 && !colorset
-              ? "bg-[#B52C17]"
-              : "bg-[#FEF8F1]"
-          }`}
+                ? "bg-[#B52C17]"
+                : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 1 && colorset
+          className={`mt-4 p-3 rounded-full ${activeIndex == 1 && colorset
               ? "bg-[#F19412]"
               : activeIndex == 1 && !colorset
-              ? "bg-[#B52C17]"
-              : "bg-[#FEF8F1]"
-          }`}
+                ? "bg-[#B52C17]"
+                : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${
-            activeIndex == 2 && colorset
+          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${activeIndex == 2 && colorset
               ? "bg-[#F19412]"
               : activeIndex == 2 && !colorset
-              ? "bg-[#B52C17]"
-              : "bg-[#FEF8F1]"
-          }`}
+                ? "bg-[#B52C17]"
+                : "bg-[#FEF8F1]"
+            }`}
         ></div>
         <img
-          src={`${
-            colorset ? "/home/arrowsOrangeR.png" : "/home/arrowsRSR.png"
-          }`}
+          src={`${colorset ? "/home/arrowsOrangeR.png" : "/home/arrowsRSR.png"
+            }`}
           alt="Descripción de la imagen"
           className="mt-4 ml-2"
           onClick={() => handleNext(size)}
@@ -147,11 +142,10 @@ export default function RecetNews({ tipo = "recetas" }) {
         <div>
           <button
             onClick={() => changeColor(true)}
-            className={`${
-              colorset
+            className={`${colorset
                 ? "bg-[#f19412]"
                 : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
-            } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
+              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
           >
             Recetas
           </button>
@@ -159,20 +153,18 @@ export default function RecetNews({ tipo = "recetas" }) {
         <div>
           <button
             onClick={() => changeColor(false)}
-            className={`${
-              colorset
+            className={`${colorset
                 ? "bg-[#f5b256] hover:bg-[#f19412] cursor-pointer"
                 : "bg-[#EA6B58]"
-            } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
+              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
           >
             Actualidad
           </button>
         </div>
       </div>
       <div
-        className={`mt-4 flex w-full ${
-          isActive ? "h-fit" : "h-[40rem]"
-        }  items-center justify-center`}
+        className={`mt-4 flex w-full ${isActive ? "h-fit" : "h-[40rem]"
+          }  items-center justify-center`}
       >
         {isActive && (
           <motion.div

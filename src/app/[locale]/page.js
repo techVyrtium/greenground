@@ -24,11 +24,11 @@ export default async function Home() {
       <ResponsibleCompany />
       <Experience />
 
-      <MapW />
-      <CaptureWorldOur />
+      <ProductCategories />
       <TopProduct />
       <NewProduct />
-      <ProductCategories />
+      {/* <MapW /> */}
+      <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">
         <OurQuality />

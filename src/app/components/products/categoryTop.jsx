@@ -12,7 +12,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 37.195,
         height: 172.538,
-        className: "group-hover:left-4 left-4 lg:-left-12",
+        className: "group-hover:left-4 left-4 lg:-left-12 md:h-[6.5rem] lg:h-auto",
       },
       {
         start: "bottom",
@@ -22,7 +22,7 @@ export function CategoryTop({ search, setSearch }) {
         width: 128.906,
         height: 183.732,
         className:
-          "left-4 group-hover:-bottom-[7.5rem] -bottom-[7.5rem] lg:-bottom-52",
+          "left-4 group-hover:-bottom-[7.5rem] -bottom-[7.5rem] lg:-bottom-52 md:h-[9.5rem] lg:h-auto",
       },
       {
         start: "bottom",
@@ -32,7 +32,7 @@ export function CategoryTop({ search, setSearch }) {
         width: 116.467,
         height: 171,
         className:
-          "w-[4.8rem] group-hover:-bottom-8 -bottom-8 right-0 lg:-bottom-36",
+          "w-[4.8rem] group-hover:-bottom-8 -bottom-8 right-0 lg:-bottom-36 md:h-[5.5rem] lg:h-auto",
       },
       {
         start: "top",
@@ -41,7 +41,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 103.984,
         height: 91.71,
-        className: "w-20 group-hover:top-2 top-2 right-4 lg:-top-24",
+        className: "w-20 group-hover:top-2 top-2 right-4 lg:-top-24 md:h-[3rem]",
       },
     ],
     abarrotes: [
@@ -170,38 +170,38 @@ const ProductCategory = ({
   link,
 }) => {
   return (
-    <div
-      className={`group h-56 w-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex flex-1 justify-center items-center relative overflow-hidden z-10 ${className}`}
+
+    <Link
+      className={`group h-40 w-full md:h-56 md:w-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex md:flex-1 justify-center items-center relative overflow-hidden z-10 ${className}`}
+      href={link}
     >
-      <Link href={link}>
-        <div className="lg:flex justify-end w-full absolute hidden">
-          <div
-            className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
-          ></div>
-        </div>
-        <h3
-          className={`text-[34px] md:text-5xl font-bold flex flex-col lg:bg-transparent leading-7 text-[#F19412] ${
-            sup ? "pl-4 py-4" : "py-6"
+
+      <div className="lg:flex justify-end w-full absolute hidden">
+        <div
+          className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
+        ></div>
+      </div>
+      <h3
+        className={`text-[34px] md:text-[3.2vw] font-bold flex flex-col lg:bg-transparent leading-7 text-[#F19412] ${sup ? "pl-4 py-4" : "py-6"
           } px-4 w-full ${classNameTitle}`}
-        >
-          <div className="text-2xl md:text-3xl self-start ">{sup}</div>
-          {title}
-        </h3>
-        {images.map(({ className, id, ...props }) => (
-          <Image
-            key={id}
-            {...props}
-            className={`absolute z-0 ${className} duration-150`}
-          />
-        ))}
+      >
+        <div className="text-2xl md:text-3xl self-start">{sup}</div>
+        {title}
+      </h3>
+      {images.map(({ className, id, ...props }) => (
         <Image
-          src={mainImage}
-          width={mainImageWidth}
-          height={mainImageHeight}
-          alt="main"
-          className={`absolute -z-10 lg:scale-0 duration-300 product-category-main-image ${classNameImage}`}
+          key={id}
+          {...props}
+          className={`absolute z-0 ${className} duration-150`}
         />
-      </Link>
-    </div>
+      ))}
+      <Image
+        src={mainImage}
+        width={mainImageWidth}
+        height={mainImageHeight}
+        alt="main"
+        className={`absolute -z-10 lg:scale-0 duration-300 product-category-main-image ${classNameImage}`}
+      />
+    </Link>
   );
 };

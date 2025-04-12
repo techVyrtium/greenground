@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; // ✅ IMPORTANTE
 import "slick-carousel/slick/slick-theme.css";
 
-const ProductCard = ({ product, infinity = null }) => {
+const ProductCard = ({ product }) => {
   const hasMultipleImages = product.images.length > 1;
   const settings = {
     dots: true,
@@ -31,11 +31,12 @@ const ProductCard = ({ product, infinity = null }) => {
     <div className="w-full rounded-xl p-2 relative pb-12">
       <Slider {...settings} className="rounded-lg">
         {product.images.map((img, index) => (
-          <div key={index}>
+          <div key={index} className="m-auto">
             <img
               src={img}
               alt={product.title}
-              className="w-full h-[200px] object-contain rounded-lg bg-white/60 shadow-md"
+              // object-contain
+              className="w-full h-[200px]  rounded-lg bg-white/60 shadow-md"
             />
           </div>
         ))}
@@ -50,9 +51,9 @@ const ProductCard = ({ product, infinity = null }) => {
         </div>
       )}
 
-      <div className="border border-[#008638] text-[#4A4A4A]  text-[clamp(18px,1.25vw,24px)] font-bold p-1 rounded-lg flex flex-col">
-        <div className="min-h-[60px] flex items-center justify-center px-2 overflow-y-auto">
-          <h3 className="text-center leading-snug ">{product.title}</h3>
+      <div className="border border-[#008638] text-[#4A4A4A] text-[clamp(18px,1.25vw,24px)] font-bold p-1 rounded-lg flex flex-col h-52">
+        <div className="min-h-[60px] h-full flex items-center justify-center px-2 overflow-y-auto">
+          <h3 className="text-center leading-snug">{product.title}</h3>
         </div>
 
         <div className="border-t border-[#F19412] mt-auto w-full">

@@ -46,7 +46,7 @@ const Data = () => {
             de plátano.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-          &ldquo;La verdad, no éramos expertos en la manipulación de plátanos. No
+            &ldquo;La verdad, no éramos expertos en la manipulación de plátanos. No
             obstante, nos aventuramos porque es un producto de gran potencial en
             el mercado, dado que es la base de la canasta familiar en
             Centroamérica, Suramérica y África; además, se está convirtiendo en
@@ -70,7 +70,7 @@ const Data = () => {
             pre-fritas y congeladas.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-          &ldquo;El primer contenedor lo tuvimos listo en 45 días; ahora un
+            &ldquo;El primer contenedor lo tuvimos listo en 45 días; ahora un
             contenedor para exportar lo tenemos listo en dos días y medio.
             Cuando comenzamos este proyecto éramos 4 personas; hoy somos 88. En
             nuestros inicios teníamos procesos muy manuales; hoy ya estamos
@@ -88,7 +88,7 @@ const Data = () => {
             comercial para aumentar las exportaciones.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-          &ldquo;Éramos una empresa sin experiencia, nuestro volumen era de un
+            &ldquo;Éramos una empresa sin experiencia, nuestro volumen era de un
             contenedor al mes, aún así, ellos venían a hablar con nosotros, a
             trabajar de la mano con nosotros en nuestros procesos para ayudarnos
             a mejorarlos. Nos facilitaron los canales de comunicación con las
@@ -102,7 +102,7 @@ const Data = () => {
             y 2019.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A]">
-          &ldquo;El área Comercial del Puerto se ha encargado de ayudarnos para
+            &ldquo;El área Comercial del Puerto se ha encargado de ayudarnos para
             aumentar las exportaciones y competir con países como Ecuador,
             Guatemala y Honduras. Nos han guiado para disminuir nuestros costos
             operativos y volvernos más competitivos. Ana María, nuestra asesora
@@ -118,7 +118,7 @@ const Data = () => {
             Agricola AG SAS eran nacionales; ahora, el 98% de las ventas son
             internacionales, lo que motivó a que la tradicional sede de la
             empresa familiar en Corabastos se trasladara a la planta del Parque
-            Logístico La Paz, en Zipaquirá. 
+            Logístico La Paz, en Zipaquirá.
           </p>
           <p className="mb-2 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
             Allí José Antonio Galán es el Gerente General, Maria Galán es la
@@ -207,7 +207,7 @@ const Data = () => {
             85% de las ventas, se exportaban patacones y papas criollas, entre
             otros.{" "}
             <span className="font-semibold">
-            &ldquo;Con la pandemia, como los productos llegaban a restaurantes,
+              &ldquo;Con la pandemia, como los productos llegaban a restaurantes,
               hoteles y colegios en Estados Unidos. Las ventas disminuyeron.
               Entonces decidimos ejecutar un proyecto que teníamos pendiente:
               posicionarnos como comercializadora de productos colombianos en el
@@ -480,12 +480,12 @@ const Data = () => {
       btn: "Consulta receta",
       section: (
         <>
-          <div className="flex md:flex-row flex-col">
+          <div className="flex md:flex-row flex-col font-itcGBook">
             <div className="lg:w-1/2 w-full gap-8">
               <img src={"/news/Puredeyuca.jpg"} className="w-full rounded-md" />
             </div>
             <div className="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-0">
-              <p className="text-[30px] md:text-[36px] xl:text-[36px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
+              <p className="text-[30px] md:text-[36px] xl:text-[36px] 2xl:text-[50px] text-[#008638] font-itcGBold leading-12">
                 Aborrajados de plátano maduro con queso: receta fácil y rápida
               </p>
               <p className="mb-2 text-[22px] mt-4 text-[#008638]">

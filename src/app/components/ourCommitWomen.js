@@ -49,12 +49,12 @@ export default function OurCommitWomen() {
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-row h-full ">
         <div className="flex flex-col lg:flex-row w-full h-full">
           <div className="lg:w-1/2 flex items-start">
-            <div className="flex flex-row order-last lg:order-none items-center justify-evenly w-full mt-4 lg:mt-0">
+            <div className="flex flex-row order-last gap-4 lg:order-none items-center justify-evenly w-full mt-4 lg:mt-0">
               <div className="">
                 <img
                   src="/home/arrowsL.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 w-[8rem] md:w-[3rem]"
+                  className="mt-4 w-[8rem] md:w-[3rem] cursor-pointer"
                   onClick={() => handlePrev()}
                 />
               </div>
@@ -68,7 +68,7 @@ export default function OurCommitWomen() {
                 <img
                   src="/home/arrowsR.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 w-[8rem] md:w-[3rem]"
+                  className="mt-4 w-[8rem] md:w-[3rem] cursor-pointer"
                   onClick={() => handleNext()}
                 />
               </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl"; // Importar useTranslations
 import Yellowmd from "./weDo/yellowmd";
@@ -10,11 +10,21 @@ export default function WhatWeDo() {
   const [activeIndex, setActiveIndex] = useState(0);
   const ubiRef = useRef();
   const videoPlay = useRef(null);
+  const [autoPlay, setAutoPlay] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
   const [viewBotom, SetViewBotom] = useState(false);
   const [stateBotom, setStateBotom] = useState(true);
   const [videoMute, setVideoMute] = useState(true);
+  // const [maximaze, setMaximaze] = useState(false);
+  // const { toggleModal } = useModal();
+  const handleMaximaze = () => { }
+  const handleTimeUpdate = (e) => {
+    const { currentTime } = e.target;
+    if (currentTime >= 15 && autoPlay) {
+      setActiveIndex(activeIndex + 1);
+    }
 
+  }
   const data = [
     {
       title: "AHORA MÁS CERCA DE TI",
@@ -65,23 +75,20 @@ export default function WhatWeDo() {
         <img
           src="/home/arrowsRSL.png"
           alt="Descripción de la imagen"
-          className="mt-4 mr-2 w-8"
+          className="mt-4 mr-2 w-8 cursor-pointer"
           onClick={() => handlePrev()}
         />
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 0 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 0 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 1 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 1 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full  ${
-            activeIndex == 2 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
-          }`}
+          className={`mt-4 p-3 rounded-full  ${activeIndex == 2 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
+            }`}
         ></div>
         <img
           src="/home/arrowsRSR.png"
@@ -100,6 +107,7 @@ export default function WhatWeDo() {
 
   const togglePlayPause = () => {
     const video = videoPlay.current;
+    setAutoPlay(false);
     setIsPlaying(!isPlaying);
     if (isPlaying) {
       video.pause(); // Pausa el video
@@ -124,6 +132,7 @@ export default function WhatWeDo() {
           muted={videoMute}
           ref={videoPlay}
           onMouseOver={() => SetViewBotom(true)}
+          onTimeUpdate={handleTimeUpdate}
         >
           <source src={"/hero/video.mp4"} type="video/mp4" />
           <track
@@ -157,7 +166,7 @@ export default function WhatWeDo() {
                     }
                     onClick={() => toggleMute()}
                   />
-                  {/* <img src={"home/play.svg"} className="w-8 h-auto" /> */}
+                  <img src={"/home/maximaze.svg"} className="w-8 h-auto" onClick={handleMaximaze} />
                 </div>
               </div>
             </div>
@@ -216,7 +225,7 @@ export default function WhatWeDo() {
                     src="/home/MICICON.png"
                     className="md:w-[136px] w-[120px]"
                   />
-                   <img
+                  <img
                     src="/home/READYICON.png"
                     className="md:w-[136px] w-[120px]"
                   />
@@ -242,7 +251,7 @@ export default function WhatWeDo() {
                       delay: 1,
                     },
                   }}
-                  src="/home/homeYellow1.png"
+                  src="/home/tajadas.png"
                   className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
                 />
               </div>
@@ -418,7 +427,7 @@ export default function WhatWeDo() {
               <img
                 src="/home/arrowsRSL.png"
                 alt="Descripción de la imagen"
-                className="mt-4 mr-2 w-8"
+                className="mt-4 mr-2 w-8 cursor-pointer"
                 onClick={() => handlePrev()}
               />
             </div>
@@ -428,7 +437,7 @@ export default function WhatWeDo() {
               <img
                 src="/home/arrowsRSR.png"
                 alt="Descripción de la imagen"
-                className="mt-4 mr-2 w-8"
+                className="mt-4 mr-2 w-8 cursor-pointer"
                 onClick={() => handleNext()}
               />
             </div>
