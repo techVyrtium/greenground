@@ -98,12 +98,12 @@ export const ProductCategories = () => {
     <section className="w-full font-itcGBold text-[#008638]">
       <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold my-4">{title}</h3>
       <div
-        className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] lg:bg-[image:var(--image-product-categories-rotate)]`}
+        className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] md:bg-[image:var(--image-product-categories-rotate)]`}
       >
-        <div className="bg-[#00000080]  p-[clamp(1rem,5vw,6rem)]">
+        <div className="bg-[#00000080] p-[clamp(1rem,5vw,6rem)]">
           <div
             className={
-              "flex flex-col gap-4 flex-wrap items-center lg:flex-row lg:justify-between pt-10"
+              "flex flex-col gap-4 flex-nowrap items-center md:flex-row md:justify-between pt-10"
             }
           >
             <ProductCategory
@@ -174,7 +174,7 @@ const ProductCategory = ({
         ></div>
       </div>
       <h3
-        className={`text-[34px] lg:text-4xl font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? "pl-14 py-4" : "py-6"
+        className={`text-[34px] lg:text-4xl md:text-[min(3.2vw,30px)] font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? "pl-14 py-4" : "py-6"
           } px-4 w-full ${classNameTitle}`}
       >
         <div className="text-2xl md:text-3xl self-start">{sup}</div>

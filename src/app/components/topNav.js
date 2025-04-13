@@ -36,8 +36,8 @@ export default function TopNavHero({ locale }) {
   };
 
   return (
-    <div className="w-full">
-      <nav className="bg-[#008638] text-white flex justify-between items-center px-4 py-1 w-full">
+    <div className="w-full fixed top-0 left-0 bg-[#01010140] z-30 backdrop-blur-[20px]">
+      <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full">
         <div className="flex items-center gap-4">
           <Link href="/">
             <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />

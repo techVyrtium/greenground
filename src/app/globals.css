@@ -58,17 +58,10 @@ body {
   background-color: #006c36bf;
 }
 
-/* .bg-product-green {
-  background-color: #3FB549BF;
+:root:has(.maximaze,.sidebar) {
+  overflow-y: hidden; 
+  /* Usar cuando se organice el MODAL */
 }
-
-.bg-product-red {
-  background-color: #EE3135BF;
-}
-
-.bg-product-orange {
-  background-color: #EEA514BF;
-} */
 
 .bg-category-title-bold {
   background-color: #006c36f2;

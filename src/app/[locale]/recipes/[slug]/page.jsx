@@ -2,30 +2,31 @@ import RecetNews from "@/app/components/recetNews";
 import { getAllSlugRecipesByLocale } from "@/services/getAllSlugRecipesByLocale";
 import { getRecipe } from "@/services/getRecipe"
 import Image from "next/image";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 export const generateMetadata = async ({ params }) => {
     const { slug, locale } = await params;
     const recipe = await getRecipe({ locale, slug });
     if (!recipe)
         notFound();
-    const { image, owner, title } = recipe;
+    const { image, title } = recipe;
+    const description = `Temporal description`;
     return {
-        title: `Recipe: ${title}`,
-        // description: `${content[0].split(0, 100)}`,
+        title,
+        description,
         image: `https://greenground.vercel.app${image}`,
         url: `https://greenground.vercel.app/${locale}/news/${slug}`,
         openGraph: {
             type: 'article',
-            title: `${title} - ${owner}`,
-            //   description: `${content[0].split(0, 100)}`,
+            title,
+            description,
             image: `https://greenground.vercel.app${image}`,
             url: `https://greenground.vercel.app/${locale}/news/${slug}`,
         },
         twitter: {
             card: `summary_large_image`,
             site: `https://greenground.vercel.app/${locale}/news/${slug}`,
-            title: `${title} - ${owner}`,
-            //   description: `${content[0].split(0, 100)}`,
+            title,
+            description,
             image: `https://greenground.vercel.app${image}`,
         }
     }

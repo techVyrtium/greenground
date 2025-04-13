@@ -1,6 +1,6 @@
+import { getAllProducts } from "@/services/getAllProducts";
 import ProductCard from "./products/productCard";
-import { useTranslations } from "next-intl";
-const TopProduct = () => {
+const TopProduct = async ({ locale }) => {
   const data = [
     {
       title: "TOP",
@@ -9,15 +9,13 @@ const TopProduct = () => {
     },
   ];
 
-  const t = useTranslations("products");
   const tag = "Top";
-  const tag2 = "Nuevo";
-
-  const products = Object.entries(t.raw("products")).map(([slug, product]) => ({
+  const products = await getAllProducts(locale);
+  const productsMap = Object.entries(products).map(([slug, product]) => ({
     slug,
     ...product,
   }));
-  const productsTop = products
+  const productsTop = productsMap
     .filter(
       (product) => {
         // No trae el orden de escritura del json.

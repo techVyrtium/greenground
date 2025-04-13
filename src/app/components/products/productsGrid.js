@@ -17,7 +17,7 @@ const ProductGrid = ({ products }) => {
   const totalPages = Math.ceil(products.length / productsPerPage);
   const clientPage = (data.get('page') ?? 1);
   const currentPage = totalPages < clientPage ? 1 : clientPage;
-  console.log({ currentPage, productsPerPage });
+  
   const paginatedProducts = products.slice(
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage
@@ -25,7 +25,7 @@ const ProductGrid = ({ products }) => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,194px)] gap-4">
         {paginatedProducts.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

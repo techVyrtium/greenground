@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl"; // Importar useTranslations
 import Yellowmd from "./weDo/yellowmd";
 import Link from "next/link";
 import Yellowsm from "./weDo/yellowsm";
+import Image from "next/image";
+import { Maximaze } from "./common/Maximaze";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,15 +17,17 @@ export default function WhatWeDo() {
   const [viewBotom, SetViewBotom] = useState(false);
   const [stateBotom, setStateBotom] = useState(true);
   const [videoMute, setVideoMute] = useState(true);
-  // const [maximaze, setMaximaze] = useState(false);
+  const [maximaze, setMaximaze] = useState(false);
   // const { toggleModal } = useModal();
-  const handleMaximaze = () => { }
+  const toogleMaximaze = () => {
+    setMaximaze(!maximaze);
+    setAutoPlay(false);
+  }
   const handleTimeUpdate = (e) => {
     const { currentTime } = e.target;
     if (currentTime >= 15 && autoPlay) {
       setActiveIndex(activeIndex + 1);
     }
-
   }
   const data = [
     {
@@ -120,6 +124,7 @@ export default function WhatWeDo() {
 
   const toggleMute = () => {
     setVideoMute(!videoMute);
+    setAutoPlay(false);
   };
 
   function video() {
@@ -145,7 +150,7 @@ export default function WhatWeDo() {
         </video>
         {viewBotom ? (
           <div
-            className={`absolute w-full max-w-[1920px] 2xl:w-5/6 h-10 cursor-pointer mb-6 items-center`}
+            className={`absolute w-full max-w-[1920px] h-10 cursor-pointer mb-6 items-center`}
           >
             <div className="flex flex-row items-center justify-center  ">
               <div
@@ -166,7 +171,7 @@ export default function WhatWeDo() {
                     }
                     onClick={() => toggleMute()}
                   />
-                  <img src={"/home/maximaze.svg"} className="w-8 h-auto" onClick={handleMaximaze} />
+                  {!maximaze ? <img src={"/home/maximaze.svg"} className="w-8 h-auto" onClick={toogleMaximaze} /> : <Image src={'/minimaze.svg'} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
                 </div>
               </div>
             </div>
@@ -480,6 +485,9 @@ export default function WhatWeDo() {
           </div>
         </div>
       </div>
+      {maximaze ? <Maximaze maximaze={maximaze} setMaximaze={setMaximaze}>
+        {video()}
+      </Maximaze> : <></>}
     </section>
   );
 }

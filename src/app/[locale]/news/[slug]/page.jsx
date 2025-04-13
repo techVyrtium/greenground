@@ -6,16 +6,16 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 export const generateMetadata = async ({ params }) => {
   const { slug, locale } = await params;
-  const { image, title, owner } = await getNew({ locale, slug });
+  const { image, title, owner, description = "" } = await getNew({ locale, slug });
   return {
     title: `New: ${title}`,
-    // description: `${content[0].split(0, 100)}`,
+    description: `${description.substring(0, 100)}`,
     image: `https://greenground.vercel.app${image}`,
     url: `https://greenground.vercel.app/${locale}/news/${slug}`,
     openGraph: {
       type: 'article',
       title: `${title} - ${owner}`,
-      // description: `${content[0].split(0, 100)}`,
+      description: `${description.substring(0, 100)}`,
       image: `https://greenground.vercel.app${image}`,
       url: `https://greenground.vercel.app/${locale}/news/${slug}`,
     },
@@ -23,7 +23,7 @@ export const generateMetadata = async ({ params }) => {
       card: `summary_large_image`,
       site: `https://greenground.vercel.app/${locale}/news/${slug}`,
       title: `${title} - ${owner}`,
-      // description: `${content[0].split(0, 100)}`,
+      description: `${description.substring(0, 100)}`,
       image: `https://greenground.vercel.app${image}`,
     }
   }

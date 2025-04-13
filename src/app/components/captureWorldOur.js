@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useModal } from "@/app/hooks/useModal";
 import Image from "next/image";
@@ -108,18 +108,35 @@ export default function CaptureWorldOur() {
     );
   };
 
-  /* const videoTime = (e) => {
-    console.log(e.target.duration);
-  }; */
-
   const handleVideoEnd = () => {
     if (activeIndex <= dataSlider.length) handleNext();
   };
+  const ImageSlide = ({ activeIndex }) => {
+    const timeout = setTimeout(() => {
+      handleNext();
+    }, 8000)
+    useEffect(() => {
+      return () => {
+        clearTimeout(timeout);
+      }
+    }, [timeout])
+    return (
+      (
+        <Image
+          src={dataSlider[activeIndex].src}
+          className="md:w-full md:h-[353px] lg:h-[480px] object-cover object-center rounded-lg h-[55.5rem]"
+          height={dataSlider[activeIndex].height}
+          width={dataSlider[activeIndex].width}
+          alt="image-slide"
+        />
+      )
+    )
+  }
   return (
     <section className="px-[clamp(1rem,5vw,8rem)] w-full h-fit mt-[clamp(1rem,5vw,6rem)]">
       <div className="w-full flex flex-col md:flex-row gap-10">
-        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-start">
-          <div className="flex items-start h-fit">
+        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-center md:items-start">
+          <div className="flex items-center md:items-start h-fit min-h-[356px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -146,13 +163,7 @@ export default function CaptureWorldOur() {
                     />
                   </video>)
                     : (
-                      <Image
-                        src={dataSlider[activeIndex].src}
-                        className="md:w-full h-[487.72px] object-cover object-center rounded-lg"
-                        height={dataSlider[activeIndex].height}
-                        width={dataSlider[activeIndex].width}
-                        alt="image-slide"
-                      />
+                      <ImageSlide activeIndex={activeIndex} />
                     )
                 }
 
@@ -216,13 +227,13 @@ export default function CaptureWorldOur() {
           <div className={`hidden lg:grid`}>
             <div className="items-center flex flex-col  lg:mt-10 gap-x-24 ">
               <div className="lg:w-full flex flex-row items-center justify-around gap-4 h-52">
-                <div className="lg:w-[20rem] aspect-square">
+                <div className="lg:w-[min(25vw,20rem)] aspect-square">
                   <img
                     src="/home/Frame171.png"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="lg:w-[20rem] aspect-square">
+                <div className="lg:w-[min(25vw,20rem)] aspect-square">
                   <img
                     src="/tu_logo_aqui.png"
                     className="w-full h-full object-contain"
