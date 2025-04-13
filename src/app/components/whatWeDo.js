@@ -485,9 +485,11 @@ export default function WhatWeDo() {
           </div>
         </div>
       </div>
-      {maximaze ? <Maximaze maximaze={maximaze} setMaximaze={setMaximaze}>
-        {video()}
-      </Maximaze> : <></>}
+      {maximaze ? (
+        <Maximaze maximaze={maximaze} setMaximaze={setMaximaze}>
+          {video()}
+        </Maximaze>
+      ) : <></>}
     </section>
   );
 }
