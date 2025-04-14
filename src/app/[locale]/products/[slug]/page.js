@@ -48,7 +48,7 @@ export async function generateStaticParams() {
 
   return locales.map(async (locale) => {
     const slugs = await getAllProducts(locale);
-    return Object.entries(slugs).map(([slug]) => ({ locale, slug }));
+    return Object.keys(slugs).map((slug) => ({ locale, slug }));
   });
 }
 export default async function ProductPage({ params }) {
