@@ -46,6 +46,7 @@ export default function Experience() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
+      y: 50,
       opacity: 1,
       transition: {
         when: "beforeChildren",
@@ -127,7 +128,8 @@ export default function Experience() {
           className="w-full h-full relative flex flex-col items-center justify-center "
           variants={containerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ amount: 0.8, once: true }}
           exit="exit"
           onAnimationStart={() => setIsAnimating(true)} // Iniciar animación
           onAnimationComplete={() => setIsAnimating(false)} // Finalizar animación

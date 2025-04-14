@@ -55,7 +55,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
 
     setIsEnabledButton(
       Object.values({ ...errors, [name]: error }).every((err) => !err) &&
-        Object.values({ ...formData, [name]: value }).every((val) => val.trim())
+      Object.values({ ...formData, [name]: value }).every((val) => val.trim())
     );
   };
 
@@ -113,7 +113,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
     },
   ];
   return (
-    <div className="relative w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.svg)] bg-cover bg-no-repeat bg-center overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
+    <div className="relative w-full md:w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.svg)] bg-cover bg-no-repeat bg-center overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
       {contact && (
         <div className="w-full md:h-auto flex flex-row justify-start items-center px-4 mt-4">
           <div className="relative flex h-full w-full py-2 md:py-8 px-4 md:px-0">
@@ -135,7 +135,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
       )}
       <div className="w-full p-8">
         <form onSubmit={onSubmit}>
-          <div className="flex flex-col -mt-10 gap-1">
+          <div className="flex flex-col md:-mt-10 gap-1 mt-6">
             {/* Campos del formulario */}
             {["fullname", "email", "interes", "phone", "company"].map(
               (field) => (
@@ -150,13 +150,12 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
                     value={formData[field]}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className={`w-full p-1 border bg-white text-gray-800 font-['Roboto']  ${
-                      errors[field]
+                    className={`w-full p-1 border bg-white text-gray-800 font-['Roboto']  ${errors[field]
                         ? "border-red-500"
                         : formData[field]
-                        ? "border-green-500"
-                        : "border-gray-300"
-                    } rounded`}
+                          ? "border-green-500"
+                          : "border-gray-300"
+                      } rounded`}
                   />
                   {errors[field] && (
                     <p className="text-red-500 text-sm mt-1">{errors[field]}</p>
@@ -177,11 +176,10 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
               <button
                 type="submit"
                 disabled={!isEnabledButton || isLoading}
-                className={`w-1/2 md:w-auto font-bold py-2 px-6 rounded font-['Roboto'] ${
-                  isEnabledButton && !isLoading
+                className={`w-1/2 md:w-auto font-bold py-2 px-6 rounded font-['Roboto'] ${isEnabledButton && !isLoading
                     ? "bg-[#FF5143] text-white"
                     : "bg-[#72777A]/80 text-white cursor-not-allowed"
-                } flex items-center justify-center gap-2`}
+                  } flex items-center justify-center gap-2`}
               >
                 {isLoading ? (
                   <svg
