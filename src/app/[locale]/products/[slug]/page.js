@@ -12,13 +12,21 @@ export const generateMetadata = async ({ params }) => {
   return {
     title,
     description,
-    image: `https://greenground.vercel.app${images[0]}`,
+    images: images.map((image) => ({
+      url: `https://greenground.vercel.app${image}`,
+      width: 800,
+      height: 600,
+    })),
     url: `https://greenground.vercel.app/${locale}/products/${slug}`,
     openGraph: {
       type: 'article',
       title: `${title}`,
       description,
-      image: `https://greenground.vercel.app${images[0]}`,
+      images: images.map((image) => ({
+        url: `https://greenground.vercel.app${image}`,
+        width: 800,
+        height: 600,
+      })),
       url: `https://greenground.vercel.app/${locale}/producs/${slug}`,
     },
     twitter: {
@@ -26,7 +34,11 @@ export const generateMetadata = async ({ params }) => {
       site: `https://greenground.vercel.app/${locale}/products/${slug}`,
       title: `${title}`,
       description,
-      image: `https://greenground.vercel.app${images[0]}`,
+      images: images.map((image) => ({
+        url: `https://greenground.vercel.app${image}`,
+        width: 800,
+        height: 600,
+      }))
     }
   }
 }
