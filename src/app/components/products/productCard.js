@@ -35,7 +35,6 @@ const ProductCard = ({ product }) => {
             <img
               src={img}
               alt={product.title}
-              // object-contain
               className="w-full h-[200px]  rounded-lg bg-white/60 shadow-md"
             />
           </div>
@@ -52,8 +51,8 @@ const ProductCard = ({ product }) => {
       )}
 
       <div className="border border-[#008638] text-[#4A4A4A] text-[clamp(18px,1.25vw,24px)] font-bold p-1 rounded-lg flex flex-col h-52">
-        <div className="min-h-[60px] h-full flex items-center justify-center px-2 overflow-y-auto">
-          <h3 className="text-center leading-snug">{product.title}</h3>
+        <div className="min-h-[60px] h-full flex items-center justify-center px-2 overflow-y-auto overflow-x-hidden">
+          <h3 className="text-center leading-[18px] md:leading-snug">{product.title}</h3>
         </div>
 
         <div className="border-t border-[#F19412] mt-auto w-full">

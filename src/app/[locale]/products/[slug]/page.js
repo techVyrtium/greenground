@@ -75,7 +75,7 @@ export default async function ProductPage({ params }) {
   }));
   return (
     <>
-      <div className="p-5 min-h-screen">
+      <div className="p-5 min-h-screen mt-16">
         <div className="grid lg:grid-cols-[1fr_4fr] gap-6 md:px-[48px]  lg:px-[70px] 2xl:px-[96px]">
           <div className="hidden lg:block">
             <CategoryLeft />

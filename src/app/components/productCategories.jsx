@@ -96,7 +96,7 @@ export const ProductCategories = () => {
   };
   return (
     <section className="w-full font-itcGBold text-[#008638]">
-      <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold my-4">{title}</h3>
+      <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold my-4 leading-[2.1rem]">{title}</h3>
       <div
         className={`bg-cover w-full text-white my-4 bg-[image:var(--image-product-categories)] md:bg-[image:var(--image-product-categories-rotate)]`}
       >

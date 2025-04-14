@@ -1,10 +1,11 @@
 "use client";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+
 export default function ResponsibleCompany() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, margin: "-50px" });
+  const isInView = useInView(ref, { initial: true, margin: "-50px" });
 
   const [animationKey, setAnimationKey] = useState(0);
 
@@ -15,10 +16,14 @@ export default function ResponsibleCompany() {
 
   //   return () => clearInterval(interval);
   // }, []);
+  // useEffect(() => {
+  //   setAnimationKey(animationKey + 1);
+  // }, [isInView])
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
+      y: 50,
       opacity: 1,
       transition: {
         when: "beforeChildren",
@@ -38,12 +43,12 @@ export default function ResponsibleCompany() {
   const animationSettings = {
     text: {
       hidden: { opacity: 1, x: -2550 },
-      visible: { opacity: 1, x: 0 },
+      visible: { opacity: 1, x: 0, y: 50, },
       exit: { opacity: 1, x: -100 },
     },
     image: {
       hidden: { opacity: 1, x: 1810 },
-      visible: { opacity: 1, x: 0 },
+      visible: { opacity: 1, x: 0, y: 50 },
       exit: { opacity: 0, x: 100 },
     },
   };
@@ -59,7 +64,9 @@ export default function ResponsibleCompany() {
           className="w-full md:max-w-7xl px-[clamp(1rem,4vw,3rem)] md:px-10 h-full relative z-10 flex flex-col items-start justify-center"
           variants={containerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView={"visible"}
+          viewport={{ amount: 0.8 }}
+          // animate="visible"
           exit="exit"
         >
           {/* Texto normal encima del fondo */}
