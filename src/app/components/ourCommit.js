@@ -1,12 +1,10 @@
-import React from "react";
-import OurCommitWomen from "./ourCommitWomen";
 export default function OurCommit() {
   const data = [
     {
       title: (
         <>
           <h2
-            className={`text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-12 leading-[0.8] font-itcGBold`}
+            className={`text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}
           >
             Nuestro compromiso
           </h2>
@@ -21,7 +19,7 @@ export default function OurCommit() {
       id="ourCommit"
     >
       {/* Zona Orange */}
-      <div className="relative h-[15rem] xl:h-[12rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
+      <div className="relative h-[14rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)]">
           <div className="relative grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] w-full mx-auto h-full">
             {/* Columna izquierda (Imagen y texto) */}
@@ -35,7 +33,7 @@ export default function OurCommit() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-12 xl:left-16 top-[65px] xl:top-[50px] w-full text-left font-itcGBold">
+              <div className="absolute left-12 xl:left-16 top-[65px] xl:top-[50px] w-fit text-left font-itcGBold">
                 {data[0].title}
               </div>
             </div>

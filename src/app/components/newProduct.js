@@ -1,16 +1,14 @@
-import React from "react";
-import Card from "./card";
 import ProductCard from "./products/productCard";
-import { useTranslations } from "next-intl";
-export default function NewProduct() {
-  const t = useTranslations("products");
-  const tag = "Nuevo";
+import { getAllProducts } from "@/services/getAllProducts";
 
-  const products = Object.entries(t.raw("products")).map(([slug, product]) => ({
+export default async function NewProduct({ locale = 'es'}) {
+  const tag = "Nuevo";
+  const products = await getAllProducts(locale);
+  const productsMap = Object.entries(products).map(([slug, product]) => ({
     slug,
     ...product,
   }));
-  const filteredProducts = products
+  const filteredProducts = productsMap
     .filter(
       (product) =>
         product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()

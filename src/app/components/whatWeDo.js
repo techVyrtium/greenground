@@ -1,20 +1,34 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl"; // Importar useTranslations
 import Yellowmd from "./weDo/yellowmd";
 import Link from "next/link";
 import Yellowsm from "./weDo/yellowsm";
+import Image from "next/image";
+import { Maximaze } from "./common/Maximaze";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
   const ubiRef = useRef();
   const videoPlay = useRef(null);
+  const [autoPlay, setAutoPlay] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
   const [viewBotom, SetViewBotom] = useState(false);
   const [stateBotom, setStateBotom] = useState(true);
   const [videoMute, setVideoMute] = useState(true);
-
+  const [maximaze, setMaximaze] = useState(false);
+  // const { toggleModal } = useModal();
+  const toogleMaximaze = () => {
+    setMaximaze(!maximaze);
+    setAutoPlay(false);
+  }
+  const handleTimeUpdate = (e) => {
+    const { currentTime } = e.target;
+    if (currentTime >= 15 && autoPlay) {
+      setActiveIndex(activeIndex + 1);
+    }
+  }
   const data = [
     {
       title: "AHORA MÁS CERCA DE TI",
@@ -61,27 +75,24 @@ export default function WhatWeDo() {
 
   function btn() {
     return (
-      <div className="flex felx-row items-center justify-center gap-2 lg:hidden">
+      <div className="flex flex-row items-center justify-center gap-2 lg:hidden">
         <img
           src="/home/arrowsRSL.png"
           alt="Descripción de la imagen"
-          className="mt-4 mr-2 w-8"
+          className="mt-4 mr-2 w-8 cursor-pointer"
           onClick={() => handlePrev()}
         />
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 0 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 0 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full ${
-            activeIndex == 1 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
-          }`}
+          className={`mt-4 p-3 rounded-full ${activeIndex == 1 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
+            }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full  ${
-            activeIndex == 2 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
-          }`}
+          className={`mt-4 p-3 rounded-full  ${activeIndex == 2 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
+            }`}
         ></div>
         <img
           src="/home/arrowsRSR.png"
@@ -100,6 +111,7 @@ export default function WhatWeDo() {
 
   const togglePlayPause = () => {
     const video = videoPlay.current;
+    setAutoPlay(false);
     setIsPlaying(!isPlaying);
     if (isPlaying) {
       video.pause(); // Pausa el video
@@ -112,6 +124,7 @@ export default function WhatWeDo() {
 
   const toggleMute = () => {
     setVideoMute(!videoMute);
+    setAutoPlay(false);
   };
 
   function video() {
@@ -124,6 +137,7 @@ export default function WhatWeDo() {
           muted={videoMute}
           ref={videoPlay}
           onMouseOver={() => SetViewBotom(true)}
+          onTimeUpdate={handleTimeUpdate}
         >
           <source src={"/hero/video.mp4"} type="video/mp4" />
           <track
@@ -136,7 +150,7 @@ export default function WhatWeDo() {
         </video>
         {viewBotom ? (
           <div
-            className={`absolute w-full 2xl:w-5/6 h-10 cursor-pointer mb-6 items-center`}
+            className={`absolute w-full max-w-[1920px] h-10 cursor-pointer mb-6 items-center`}
           >
             <div className="flex flex-row items-center justify-center  ">
               <div
@@ -157,7 +171,7 @@ export default function WhatWeDo() {
                     }
                     onClick={() => toggleMute()}
                   />
-                  {/* <img src={"home/play.svg"} className="w-8 h-auto" /> */}
+                  {!maximaze ? <img src={"/home/maximaze.svg"} className="w-8 h-auto" onClick={toogleMaximaze} /> : <Image src={'/minimaze.svg'} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
                 </div>
               </div>
             </div>
@@ -216,7 +230,7 @@ export default function WhatWeDo() {
                     src="/home/MICICON.png"
                     className="md:w-[136px] w-[120px]"
                   />
-                   <img
+                  <img
                     src="/home/READYICON.png"
                     className="md:w-[136px] w-[120px]"
                   />
@@ -242,7 +256,7 @@ export default function WhatWeDo() {
                       delay: 1,
                     },
                   }}
-                  src="/home/homeYellow1.png"
+                  src="/home/tajadas.png"
                   className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
                 />
               </div>
@@ -418,7 +432,7 @@ export default function WhatWeDo() {
               <img
                 src="/home/arrowsRSL.png"
                 alt="Descripción de la imagen"
-                className="mt-4 mr-2 w-8"
+                className="mt-4 mr-2 w-8 cursor-pointer"
                 onClick={() => handlePrev()}
               />
             </div>
@@ -428,7 +442,7 @@ export default function WhatWeDo() {
               <img
                 src="/home/arrowsRSR.png"
                 alt="Descripción de la imagen"
-                className="mt-4 mr-2 w-8"
+                className="mt-4 mr-2 w-8 cursor-pointer"
                 onClick={() => handleNext()}
               />
             </div>
@@ -454,7 +468,7 @@ export default function WhatWeDo() {
               </div>
 
               {/* Texto encima de la imagen */}
-              <div className="absolute left-16 top-[30px] w-full max-w-[90%] lg:max-w-[400px]">
+              <div className="absolute left-16 top-[30px] w-fit max-w-[90%] lg:max-w-[400px]">
                 <h2
                   className={`text-[clamp(40px,6vw,96px)] lg:text-[clamp(70px,5.8vw,96px)]  font-bold text-[#E7681F] mb-12 leading-[0.8] font-itcGBold`}
                   dangerouslySetInnerHTML={{ __html: t("title") }}
@@ -471,6 +485,11 @@ export default function WhatWeDo() {
           </div>
         </div>
       </div>
+      {maximaze ? (
+        <Maximaze maximaze={maximaze} setMaximaze={setMaximaze}>
+          {video()}
+        </Maximaze>
+      ) : <></>}
     </section>
   );
 }

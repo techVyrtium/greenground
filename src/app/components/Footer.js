@@ -24,7 +24,7 @@ export default function Footer() {
           {/* Menú */}
           <div className="text-left min-w-[120px] self-start text-base md:text-2xl">
             <h3 className="font-bold text-3xl mb-3">{t("menuTitle")}</h3>
-            <ul className="space-y-2 text-white/90 ">
+            <ul className="space-y-2 text-white/90">
               <li className="font-bold">
                 <Link href={"#"} className="hover:underline">
                   {t("menuItems.home")}
@@ -83,11 +83,11 @@ export default function Footer() {
                 </Link>
               </span>
             </div>
-            <ul className="space-y-1 text-base lg:text-2xl">
+            <ul className="space-y-1 min-w-[120px] self-start text-base md:text-2xl">
               <li>
                 <Link
                   href="https://greenground.com.co/politica-para-el-tratamiento-de-datos-personales-de-los-titulares/"
-                  className="text-orange-400 underline font-[700]"
+                  className="text-orange-400 hover:underline font-[700]"
                 >
                   {t("policies.dataPolicy")}
                 </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="https://greenground.com.co/politica-de-seguridad/"
-                  className="text-orange-400 underline font-[700]"
+                  className="text-orange-400 hover:underline font-[700]"
                 >
                   {t("policies.securityPolicy")}
                 </Link>

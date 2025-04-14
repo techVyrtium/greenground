@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useModal } from "@/app/hooks/useModal";
-import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import Image from "next/image";
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
   const { toggleModal } = useModal();
@@ -11,21 +11,57 @@ export default function CaptureWorldOur() {
   const videoAnimationDuration = 0.5; // Duración en segundos
   const videoAnimationEase = "easeInOut"; // Tipo de transición
 
-  const dataVideo = [
+  const dataSlider = [
     {
       id: 1,
       texto: "Nuestra marca ha logrado llegar a la quinta avenida en New York",
-      video: "/home/quintaAve.mov",
+      src: "/home/quintaAve.mov",
+      type: 'video'
     },
     {
       id: 2,
       texto: "Feria de productos colombianos Frankfurt Alemania",
-      video: "/home/feria.mov",
+      src: "/home/feria.mov",
+      type: 'video'
     },
     {
       id: 3,
       texto: "Celebrando nuestra llegada al mercado suizo",
-      video: "/home/suiza.mov",
+      src: "/home/suiza.mov",
+      type: 'video'
+    },
+    {
+      id: 4,
+      texto: "Celebrando nuestra llegada al mercado suizo",
+      src: "/home/slide4.png",
+      type: 'image',
+      height: 1148,
+      width: 487.72,
+    },
+    {
+      id: 5,
+      texto: "Celebrando nuestra llegada al mercado suizo",
+      src: "/home/slide5.png",
+      type: 'image',
+      height: 1148,
+      width: 487.72,
+    },
+    {
+      id: 6,
+      texto: "Celebrando nuestra llegada al mercado suizo",
+      src: "/home/slide6.png",
+      type: 'image',
+      height: 1148,
+      width: 487.72,
+
+    },
+    {
+      id: 7,
+      texto: "Celebrando nuestra llegada al mercado suizo",
+      src: "/home/slide7.png",
+      type: 'image',
+      height: 1148,
+      width: 487.72,
     },
   ];
 
@@ -49,7 +85,9 @@ export default function CaptureWorldOur() {
       text2: (
         <>
           <p
-            className={`text-[#5C6E79] font-[700] font-itcGBold text-[clamp(20px,1.3vw,25px)]`}
+            className={
+              `text-[#5C6E79] font-[700] font-itcGBold text-[clamp(20px,1.3vw,25px)]`
+            }
           >
             Pon tu logo en nuestros productos, o distribúyelos alrededor del
             mundo
@@ -61,27 +99,44 @@ export default function CaptureWorldOur() {
   ];
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % dataVideo.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % dataSlider.length);
   };
 
   const handlePrev = () => {
     setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + dataVideo.length) % dataVideo.length
+      (prevIndex) => (prevIndex - 1 + dataSlider.length) % dataSlider.length
     );
   };
 
-  /* const videoTime = (e) => {
-    console.log(e.target.duration);
-  }; */
-
   const handleVideoEnd = () => {
-    if (activeIndex <= dataVideo.length) handleNext();
+    if (activeIndex <= dataSlider.length) handleNext();
   };
+  const ImageSlide = ({ activeIndex }) => {
+    const timeout = setTimeout(() => {
+      handleNext();
+    }, 8000)
+    useEffect(() => {
+      return () => {
+        clearTimeout(timeout);
+      }
+    }, [timeout])
+    return (
+      (
+        <Image
+          src={dataSlider[activeIndex].src}
+          className="md:w-full md:h-[353px] lg:h-[480px] object-cover object-center rounded-lg h-[55.5rem]"
+          height={dataSlider[activeIndex].height}
+          width={dataSlider[activeIndex].width}
+          alt="image-slide"
+        />
+      )
+    )
+  }
   return (
-    <section className="px-[clamp(1rem,5vw,6rem)] w-full h-fit mt-[clamp(1rem,5vw,6rem)]">
+    <section className="px-[clamp(1rem,5vw,8rem)] w-full h-fit mt-[clamp(1rem,5vw,6rem)]">
       <div className="w-full flex flex-col md:flex-row gap-10">
-        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-start">
-          <div className="flex items-start h-fit">
+        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-center md:items-start">
+          <div className="flex items-center md:items-start h-fit min-h-[356px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -93,56 +148,53 @@ export default function CaptureWorldOur() {
                   ease: videoAnimationEase,
                 }}
               >
-                <video
-                  src={dataVideo[activeIndex].video}
-                  autoPlay={true}
-                  muted={true}
-                  onEnded={handleVideoEnd}
-                  className="md:w-full h-auto rounded-lg"
-                >
-                  <source
-                    src={dataVideo[activeIndex].video}
-                    type="video/mov"
+                {
+                  dataSlider[activeIndex].type === 'video' ? (<video
+                    src={dataSlider[activeIndex].src}
                     autoPlay={true}
-                  />
-                </video>
+                    muted={true}
+                    onEnded={handleVideoEnd}
+                    className="md:w-full h-auto rounded-lg"
+                  >
+                    <source
+                      src={dataSlider[activeIndex].src}
+                      type="video/mov"
+                      autoPlay={true}
+                    />
+                  </video>)
+                    : (
+                      <ImageSlide activeIndex={activeIndex} />
+                    )
+                }
+
               </motion.div>
             </AnimatePresence>
           </div>
           <div className="lg:w-[20rem] w-fit mt-4">
             <p className="text-[14px] md:text-[16px] xl:text-[22px] text-gray-700">
-              {dataVideo[activeIndex].texto}
+              {dataSlider[activeIndex].texto}
             </p>
           </div>
           <div className="md:w-[19rem] w-full flex flex-row items-center justify-center md:-ml-6">
             <img
               src="/home/arrowsL.png"
               alt="Descripción de la imagen"
-              className="mt-4 mr-2"
+              className="mt-4 mr-2 cursor-pointer"
               onClick={() => handlePrev()}
             />
             <div className="flex flex-row gap-2">
-              <div
-                className={`mt-4 p-1.5 rounded-full ${
-                  activeIndex == 0 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
-                }`}
-              ></div>
-              <div
-                className={`mt-4 p-1.5 rounded-full ${
-                  activeIndex == 1 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
-                }`}
-              ></div>
-              <div
-                className={`mt-4 p-1.5 rounded-full ${
-                  activeIndex == 2 ? "bg-[#008E4A]" : "bg-[#E1FAEE]"
-                }`}
-              ></div>
+              {
+                new Array(dataSlider.length).fill(0).map((_, i) => (
+                  <div key={`slide-${i}`} className={`mt-4 p-1.5 rounded-full cursor-pointer ${activeIndex == i ? "bg-[#008E4A]" : "bg-[#E1FAEE]"}`}>
+                  </div>
+                ))
+              }
             </div>
 
             <img
               src="/home/arrowsR.png"
               alt="Descripción de la imagen"
-              className="mt-4 ml-2"
+              className="mt-4 ml-2 cursor-pointer"
               onClick={() => handleNext()}
             />
           </div>
@@ -173,31 +225,38 @@ export default function CaptureWorldOur() {
             </div>
           </div>
           <div className={`hidden lg:grid`}>
-            <div className="items-center flex flex-col lg:flex-row lg:mt-10 gap-x-24 ">
-              <div className="lg:w-1/2 flex flex-row items-center justify-center gap-4">
-                <div className="w-[60%] aspect-square">
+            <div className="items-center flex flex-col  lg:mt-10 gap-x-24 ">
+              <div className="lg:w-full flex flex-row items-center justify-around gap-4 h-52">
+                <div className="lg:w-[min(25vw,20rem)] aspect-square">
                   <img
                     src="/home/Frame171.png"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-[40%] aspect-square">
+                <div className="lg:w-[min(25vw,20rem)] aspect-square">
                   <img
                     src="/tu_logo_aqui.png"
                     className="w-full h-full object-contain"
                   />
                 </div>
               </div>
-              <div className="w-2/5 h-full flex flex-col justify-center ml-4">
-                <div className={`flex items-end justify-end font-itcGBook`}>
+              <div className="w-full h-full flex flex-row justify-center ml-4 mt-3">
+                <div className={`flex items-end justify-end font-itcGBook leading-5`}>
                   {data[0].text2}
                 </div>
 
                 <button
                   onClick={toggleModal}
-                  className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] text-white px-6 mt-4 rounded-md"
+                  // cursor-[url(/home/cursor.svg)_3_3,_pointer]
+                  className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 rounded-md font-bold leading-4 w-[27rem] h-10 relative"
                 >
                   {data[0].button}
+                  <Image
+                    src={'/home/cursor.svg'}
+                    width={60} height={60}
+                    className="absolute -right-1 -bottom-7 w-10 h-10"
+                    alt='cursor'
+                  />
                 </button>
               </div>
             </div>
@@ -207,24 +266,32 @@ export default function CaptureWorldOur() {
 
       <div className="max-w-full mx-auto flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
         <div className="lg:w-1/2 flex flex-row items-center justify-center gap-4">
-          <div className="w-[60%] aspect-square">
+          <div className="w-[50%] aspect-square">
             <img
               src="/home/Frame171.png"
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="w-[40%] aspect-square">
+          <div className="w-[50%] aspect-square">
             <img
               src="/tu_logo_aqui.png"
               className="w-full h-full object-contain"
+              alt='tu-logo-aqui'
             />
           </div>
         </div>
         <div className="lg:w-1/3 md:w-1/2 h-full flex flex-col justify-end ml-4">
           <div className="flex items-end justify-end">{data[0].text2}</div>
 
-          <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md">
+          <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md relative">
             {data[0].button}
+            <Image
+              src={'/home/cursor.svg'}
+              width={60}
+              height={60}
+              className="absolute -right-1 -bottom-7 w-10 h-10"
+              alt='cursor'
+            />
           </button>
         </div>
       </div>

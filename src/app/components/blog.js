@@ -67,7 +67,7 @@ export default function Blog() {
         </div>
       </div>
       {/* Zona Card */}
-      <RecetNews />
+      <RecetNews tipo="actualidad" />
     </section>
   );
 }
