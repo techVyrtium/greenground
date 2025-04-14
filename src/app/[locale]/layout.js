@@ -2,14 +2,15 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import { Roboto } from "next/font/google";
 import { Baloo_2 } from "next/font/google";
+import Footer from "@/app/components/Footer";
+import TopNavHero from "../components/topNav";
+import ModalContainer from "@/app/components/modal/ModalContainer";
 import "./../globals.css";
 import {
   itcAvantGardeCEGothicBook,
   itcAvantGardeCEGothicLTBold,
+  itcAvantGardeCEGothicLTBook,
 } from "../styles/fonts";
-import Footer from "@/app/components/Footer";
-import TopNavHero from "../components/topNav";
-import ModalContainer from "@/app/components/modal/ModalContainer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,20 +25,33 @@ const baloo = Baloo_2({
 });
 const itcGBook = itcAvantGardeCEGothicBook;
 const itcGBold = itcAvantGardeCEGothicLTBold;
+const itcGLTBook = itcAvantGardeCEGothicLTBook;
+export const metadata = {
+  title: {
+    template: '%s | Greenground',
+    default: 'Greenground'
+  }
+}
 export default async function RootLayout({ children }) {
   // Obtener el locale, esto puede ser de cookies, headers, etc.
   const locale = await getLocale();
   return (
     <html
       lang={locale}
-      className={`${roboto.variable} ${baloo.variable} ${itcGBook.variable} ${itcGBold.variable}`}
+      className={`${roboto.variable} ${baloo.variable} ${itcGBook.variable} ${itcGBold.variable} ${itcGLTBook.variable}`}
     >
+      <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+      </head>
       <body className="max-w-[1920px] mx-auto">
         <NextIntlClientProvider>
-            <TopNavHero locale={locale} />
-            {children}
-            <Footer />
-            <ModalContainer />
+          <TopNavHero locale={locale} />
+          {children}
+          <Footer />
+          <ModalContainer/>
         </NextIntlClientProvider>
       </body>
     </html>

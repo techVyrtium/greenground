@@ -1,33 +1,53 @@
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
-import Image from "next/image";
 import ProductDetail from "@/app/components/products/detail";
 import { CategoryLeft } from "@/app/components/products/categoryLeft";
-export default async function ProductPage({ params }) {
-  const resolvedParams = await params;
-  const { slug, locale } = resolvedParams;
-
-  const t = await getTranslations({ locale, namespace: "products" });
-  let title, description, price, images, category, subcategory;
-  let product;
-  console.log("product", t.raw(`products.${slug}`));
-  try {
-    product = t.raw(`products.${slug}`);
-
-    if (!product) {
-      return notFound();
+import { getAllProducts } from "@/services/getAllProducts";
+import { getProduct } from "@/services/getProduct";
+export const generateMetadata = async ({ params }) => {
+  const { slug, locale } = await params;
+  const product = await getProduct({ locale, slug });
+  if (!product)
+    notFound();
+  const { title, images, description } = product;
+  return {
+    title,
+    description,
+    image: `https://greenground.vercel.app${images[0]}`,
+    url: `https://greenground.vercel.app/${locale}/products/${slug}`,
+    openGraph: {
+      type: 'article',
+      title: `${title}`,
+      description,
+      image: `https://greenground.vercel.app${images[0]}`,
+      url: `https://greenground.vercel.app/${locale}/producs/${slug}`,
+    },
+    twitter: {
+      card: `summary_large_image`,
+      site: `https://greenground.vercel.app/${locale}/products/${slug}`,
+      title: `${title}`,
+      description,
+      image: `https://greenground.vercel.app${images[0]}`,
     }
-
-    ({ title, description, price, images, category, subcategory } = product);
-  } catch (e) {
-    console.log("error", e);
-    return notFound();
   }
+}
+export async function generateStaticParams() {
+  const locales = ['es', 'en'];
 
-  const allProducts = t.raw("products");
+  return locales.map(async (locale) => {
+    const slugs = await getAllProducts(locale);
+    return await slugs.map((slug) => ({ locale, slug }));
+  });
+}
+export default async function ProductPage({ params }) {
+  const { slug, locale } = await params;
+  const products = await getAllProducts(locale);
+  const product = products[slug];
+  if (!product)
+    notFound();
+  const { category } = product;
 
-  const sameCategoryProducts = Object.entries(allProducts).filter(
-    ([key, p]) => p.category === product.category && key !== slug
+  const sameCategoryProducts = Object.entries(products).filter(
+    ([key, p]) => p.category === category && key !== slug
   );
 
   const getRandomItems = (arr, count) => {

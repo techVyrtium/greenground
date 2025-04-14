@@ -16,8 +16,8 @@ export function CategoryLeft() {
 
   return (
     <aside className="border border-[#D9840D] rounded shadow-md">
-      <div className="flex justify-between items-center bg-[#D9840D] p-2 rounded-br-lg rounded-bl-lg">
-        <h2 className="text-white font-bold text-[24px] font-[700]">
+      <div className="flex justify-between items-center bg-[#D9840D] p-2">
+        <h2 className="text-white font-bold text-[24px]">
           Categorías
         </h2>
         <button

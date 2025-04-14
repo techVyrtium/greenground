@@ -5,18 +5,18 @@ import { Dropdown } from "./common/Dropdown";
 /**
  * Opción del menú lateral con submenú desplegable
  */
-export const SidebarLinksMultiples = ({ title, options = [] }) => {
+export const SidebarLinksMultiples = ({ title, options = [], buttonClassName = '' }) => {
     return (
         <Dropdown
             title={title}
             className="relative flex flex-col items-center gap-2 w-full"
-            buttonClassName="w-full justify-center"
+            buttonClassName={`w-full justify-center ${buttonClassName}`}
             menuClassName="bg-[#008638] rounded p-4 pl-8 font-light w-4/5 items-center"
         >
             <ol>
                 {options.map(({ id, text, href }) => (
                     <li key={id} className="mb-1">
-                        <Link 
+                        <Link
                             href={href}
                             className="hover:underline hover:font-bold cursor-pointer block w-full"
                         >

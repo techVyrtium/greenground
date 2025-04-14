@@ -1,40 +1,65 @@
-"use client";
-import { useState } from "react";
-import { useParams } from "next/navigation";
-import { useTranslations } from "next-intl";
-import { FiSearch } from "react-icons/fi";
 import { CategoryLeft } from "@/app/components/products/categoryLeft";
 import ProductGrid from "@/app/components/products/productsGrid";
+import { getAllProducts } from "@/services/getAllProducts";
+import { FiSearch } from "react-icons/fi";
+export const generateMetadata = async ({ params }) => {
+  const { slug } = await params;
+  return {
+    title: `Product-Category: ${slug}`
+  }
+  // return {
+  //   title,
+  //   description,
+  //   image: `https://greenground.vercel.app${images[0]}`,
+  //   url: `https://greenground.vercel.app/${locale}/products/${slug}`,
+  //   openGraph: {
+  //     type: 'article',
+  //     title: `${title}`,
+  //     description,
+  //     image: `https://greenground.vercel.app${images[0]}`,
+  //     url: `https://greenground.vercel.app/${locale}/producs/${slug}`,
+  //   },
+  //   twitter: {
+  //     card: `summary_large_image`,
+  //     site: `https://greenground.vercel.app/${locale}/products/${slug}`,
+  //     title: `${title}`,
+  //     description,
+  //     image: `https://greenground.vercel.app${images[0]}`,
+  //   }
+  // }
+}
+export async function generateStaticParams() {
+  const locales = ['es', 'en'];
 
-export default function ProductosPorCategoria() {
-  const t = useTranslations("products");
-  const params = useParams();
-  const categorySlug = params?.slug?.toString() || "";
-
-  const products = Object.entries(t.raw("products")).map(([slug, product]) => ({
+  return locales.map(async (locale) => {
+    const slugs = await getAllProducts(locale);
+    return await slugs.map((slug) => ({ locale, slug }));
+  });
+}
+export default async function ProductosPorCategoria({ params }) {
+  const { slug = '', locale } = await params;
+  const products = await getAllProducts(locale);
+  const productsMap = Object.entries(products).map(([slug, product]) => ({
     slug,
     ...product,
   }));
 
-  const filteredProducts = products.filter(
+  const filteredProducts = productsMap.filter(
     (product) =>
       product.category?.toLowerCase().replace(/\s+/g, "-") ===
-      categorySlug.toLowerCase()
+      slug.toLowerCase()
   );
-
-  const [search, setSearch] = useState("");
 
   const formatTitle = (str) =>
     str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-
   return (
     <div className="p-5 min-h-screen">
       <div className="lg:hidden mb-6">
         <CategoryLeft />
       </div>
 
-      <div className="grid lg:grid-cols-[1fr_4fr] gap-6">
-        <div className="hidden lg:block">
+      <div className="grid lg:grid-cols-[1fr_4fr] gap-6 md:mx-[48px] lg:mx-[70px] 2xl:mx-[96px]">
+        <div className="hidden lg:block gap-6 h-min w-full sticky top-6">
           <CategoryLeft />
         </div>
 
@@ -42,7 +67,7 @@ export default function ProductosPorCategoria() {
           <div className="flex justify-between gap-4 mb-6 w-full flex-col">
             <div className="p-2 md:px-8 px-4">
               <h3 className="text-3xl font-bold my-4 text-[#B52C17]">
-                Productos {formatTitle(categorySlug)}
+                {locale === 'es' ? "Productos" : 'Products'} {formatTitle(slug)}
               </h3>
             </div>
             <div className="flex justify-between gap-4 mb-6 w-full flex-col md:px-8 px-4">
@@ -56,10 +81,9 @@ export default function ProductosPorCategoria() {
               </div>
             </div>
           </div>
-
           <ProductGrid products={filteredProducts} />
         </div>
       </div>
     </div>
-  );
+  )
 }

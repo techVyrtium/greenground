@@ -12,7 +12,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 37.195,
         height: 172.538,
-        className: "group-hover:left-4 left-4 lg:-left-12",
+        className: "lg:group-hover:left-4 -left-2 lg:-left-10 h-[5.5rem] lg:h-auto",
       },
       {
         start: "bottom",
@@ -22,7 +22,7 @@ export function CategoryTop({ search, setSearch }) {
         width: 128.906,
         height: 183.732,
         className:
-          "left-4 group-hover:-bottom-[7.5rem] -bottom-[7.5rem] lg:-bottom-52",
+          "left-4 lg:group-hover:-bottom-[7.5rem] -bottom-[7.5rem] lg:-bottom-52 h-[9.5rem] lg:h-auto",
       },
       {
         start: "bottom",
@@ -32,7 +32,7 @@ export function CategoryTop({ search, setSearch }) {
         width: 116.467,
         height: 171,
         className:
-          "w-[4.8rem] group-hover:-bottom-8 -bottom-8 right-0 lg:-bottom-36",
+          "w-[4.8rem] lg:group-hover:-bottom-8 -bottom-8 right-0 lg:-bottom-36 h-[5.5rem] lg:h-auto",
       },
       {
         start: "top",
@@ -41,7 +41,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 103.984,
         height: 91.71,
-        className: "w-20 group-hover:top-2 top-2 right-4 lg:-top-24",
+        className: "w-20 lg:group-hover:top-2 top-2 right-4 lg:-top-24 h-[3rem]",
       },
     ],
     abarrotes: [
@@ -52,7 +52,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 105.892,
         height: 111,
-        className: "group-hover:top-6 top-6 left-4 w-[4.8rem] lg:-top-28",
+        className: "lg:group-hover:top-6 top-6 left-4 lg:w-[4.8rem] w-[3.2rem] lg:w-[4.8rem] lg:-top-28 top-4",
       },
       {
         start: "bottom",
@@ -61,7 +61,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 61.055,
         height: 123,
-        className: "left-4 group-hover:-bottom-8 -bottom-8 lg:-bottom-40",
+        className: "left-4 lg:group-hover:-bottom-8 -bottom-8 lg:-bottom-40 lg:w-auto w-12",
       },
       {
         start: "top",
@@ -70,7 +70,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 77.603,
         height: 77,
-        className: "w-16 group-hover:top-8 top-8 right-16 lg:-top-24",
+        className: "lg:group-hover:top-8 top-2 right-6 lg:right-16 lg:-top-24 lg:w-16 w-12",
       },
     ],
     menaje: [
@@ -81,7 +81,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 106.897,
         height: 161.924,
-        className: "bottom-2 group-hover:left-2 left-2 w-24 lg:-left-32",
+        className: "bottom-2 lg:group-hover:left-2 left-2 lg:w-24 lg:-left-32 w-16",
       },
       {
         start: "top",
@@ -90,7 +90,7 @@ export function CategoryTop({ search, setSearch }) {
         alt: "",
         width: 191.983,
         height: 171.772,
-        className: "group-hover:top-0 top-0 w-32 -right-8 lg:-top-32",
+        className: "lg:group-hover:top-0 top-0 lg:w-32 -right-8 lg:-top-32 w-24",
       },
     ],
   };
@@ -111,8 +111,8 @@ export function CategoryTop({ search, setSearch }) {
             mainImage="/home/rabano.svg"
             mainImageHeight={392}
             mainImageWidth={269.555}
-            classNameImage="w-52 -bottom-24"
-            className="border border-[#4A4A4A] lg:hover:bg-product-green lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
+            classNameImage="w-[11rem] md:w-52 -bottom-24"
+            className="border border-[#4A4A4A] md:w-auto lg:hover:bg-product-green lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
             classNameTitle="md:bg-category-title-light"
             images={images.congelados}
             link="products/category/congelados"
@@ -123,7 +123,7 @@ export function CategoryTop({ search, setSearch }) {
             mainImage="/home/dulce.svg"
             mainImageHeight={231}
             mainImageWidth={468.405}
-            classNameImage="bottom-6 w-full"
+            classNameImage="bottom-6 w-[15rem] md:w-full md:scale-[120%] md:bottom-15 md:group-hover:scale-[120%]"
             className="border border-[#4A4A4A] lg:hover:bg-product-red lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
             classNameTitle="md:bg-category-title-bold"
             images={images.abarrotes}
@@ -135,7 +135,7 @@ export function CategoryTop({ search, setSearch }) {
             mainImage="/home/olla.svg"
             mainImageHeight={272}
             mainImageWidth={261}
-            classNameImage="bottom-2 w-[12.5rem]"
+            classNameImage="bottom-2 w-[9rem] md:w-[12.5rem]"
             className="border border-[#4A4A4A] lg:hover:bg-product-orange lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
             classNameTitle="md:bg-category-title-bold"
             images={images.menaje}
@@ -170,38 +170,38 @@ const ProductCategory = ({
   link,
 }) => {
   return (
-    <div
-      className={`group h-56 w-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex flex-1 justify-center items-center relative overflow-hidden z-10 ${className}`}
+
+    <Link
+      className={`group h-40 w-full md:h-56 md:w-56 text-center align-middle product-category-card rounded-lg cursor-pointer flex md:flex-1 justify-center items-center relative overflow-hidden z-10 ${className}`}
+      href={link}
     >
-      <Link href={link}>
-        <div className="lg:flex justify-end w-full absolute hidden">
-          <div
-            className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
-          ></div>
-        </div>
-        <h3
-          className={`text-[34px] md:text-5xl font-bold flex flex-col lg:bg-transparent leading-7 text-[#F19412] ${
-            sup ? "pl-4 py-4" : "py-6"
+
+      <div className="lg:flex justify-end w-full absolute hidden">
+        <div
+          className={`relative group-hover:w-full w-0 h-[76px] bg-category-title-${bgTitleType} -z-[1] duration-[2s] text-end transition-[width]`}
+        ></div>
+      </div>
+      <h3
+        className={`text-[34px] md:text-[3.2vw] font-bold flex flex-col lg:bg-transparent leading-7 text-[#F19412] ${sup ? "pl-4 py-4" : "py-6"
           } px-4 w-full ${classNameTitle}`}
-        >
-          <div className="text-2xl md:text-3xl self-start ">{sup}</div>
-          {title}
-        </h3>
-        {images.map(({ className, id, ...props }) => (
-          <Image
-            key={id}
-            {...props}
-            className={`absolute z-0 ${className} duration-150`}
-          />
-        ))}
+      >
+        <div className="text-2xl md:text-3xl self-start">{sup}</div>
+        {title}
+      </h3>
+      {images.map(({ className, id, ...props }) => (
         <Image
-          src={mainImage}
-          width={mainImageWidth}
-          height={mainImageHeight}
-          alt="main"
-          className={`absolute -z-10 lg:scale-0 duration-300 product-category-main-image ${classNameImage}`}
+          key={id}
+          {...props}
+          className={`absolute z-0 ${className} duration-150`}
         />
-      </Link>
-    </div>
+      ))}
+      <Image
+        src={mainImage}
+        width={mainImageWidth}
+        height={mainImageHeight}
+        alt="main"
+        className={`absolute -z-10 lg:scale-0 duration-300 group-hover:scale-100 ${classNameImage}`}
+      />
+    </Link>
   );
 };
