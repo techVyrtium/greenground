@@ -14,13 +14,25 @@ export const generateMetadata = async ({ params }) => {
     return {
         title,
         description,
-        image: `https://greenground.vercel.app${image}`,
+        images: [
+            {
+                url: `https://greenground.vercel.app${image}`,
+                width: 800,
+                height: 600
+            }
+        ],
         url: `https://greenground.vercel.app/${locale}/news/${slug}`,
         openGraph: {
             type: 'article',
             title,
             description,
-            image: `https://greenground.vercel.app${image}`,
+            images: [
+                {
+                    url: `https://greenground.vercel.app${image}`,
+                    width: 800,
+                    height: 600
+                }
+            ],
             url: `https://greenground.vercel.app/${locale}/news/${slug}`,
         },
         twitter: {
@@ -28,7 +40,13 @@ export const generateMetadata = async ({ params }) => {
             site: `https://greenground.vercel.app/${locale}/news/${slug}`,
             title,
             description,
-            image: `https://greenground.vercel.app${image}`,
+            images: [
+                {
+                    url: `https://greenground.vercel.app${image}`,
+                    width: 800,
+                    height: 600
+                }
+            ],
         }
     }
 }
