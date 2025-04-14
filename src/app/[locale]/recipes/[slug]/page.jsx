@@ -65,7 +65,7 @@ export default async function Recipe({ params }) {
                             Receta hecha por {owner}
                         </p>
                     </div>
-                    <div className=" bg-[#008E4A] w-full md:w-fit rounded-md px-4 h-full min-h-[370px] overflow-y-auto" style={{ scrollbarWidth: 'thin' }}>
+                    <div className=" bg-[#008E4A] w-full md:w-fit rounded-md px-4 h-fit max-h-full min-h-[300px] overflow-y-auto" style={{ scrollbarWidth: 'thin' }}>
                         <h3 className="text-[24px] bg-[#008E4A] h-[50px] pt-1 ml-2 text-[#FEF8F1] font-bold font-itcGBold sticky top-0">
                             Ingredientes:
                         </h3>
