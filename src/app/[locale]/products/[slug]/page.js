@@ -14,7 +14,7 @@ export const generateMetadata = async ({ params }) => {
     description,
     images: images.map((image) => ({
       url: `https://greenground.vercel.app${image}`,
-      width: 800,
+      width: 600,
       height: 600,
     })),
     url: `https://greenground.vercel.app/${locale}/products/${slug}`,
@@ -24,7 +24,7 @@ export const generateMetadata = async ({ params }) => {
       description,
       images: images.map((image) => ({
         url: `https://greenground.vercel.app${image}`,
-        width: 800,
+        width: 600,
         height: 600,
       })),
       url: `https://greenground.vercel.app/${locale}/producs/${slug}`,
@@ -36,7 +36,7 @@ export const generateMetadata = async ({ params }) => {
       description,
       images: images.map((image) => ({
         url: `https://greenground.vercel.app${image}`,
-        width: 800,
+        width: 600,
         height: 600,
       }))
     }
