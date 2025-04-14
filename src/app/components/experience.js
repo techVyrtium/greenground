@@ -129,7 +129,7 @@ export default function Experience() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.8 }}
+          viewport={{ amount: 0.8, once: true }}
           exit="exit"
           onAnimationStart={() => setIsAnimating(true)} // Iniciar animación
           onAnimationComplete={() => setIsAnimating(false)} // Finalizar animación

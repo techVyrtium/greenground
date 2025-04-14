@@ -65,7 +65,7 @@ export default function ResponsibleCompany() {
           variants={containerVariants}
           initial="hidden"
           whileInView={"visible"}
-          viewport={{ amount: 0.8 }}
+          viewport={{ amount: 0.8, once: true }}
           // animate="visible"
           exit="exit"
         >
