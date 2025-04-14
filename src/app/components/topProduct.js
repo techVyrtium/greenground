@@ -48,7 +48,7 @@ const TopProduct = async ({ locale }) => {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-[clamp(1rem,5vw,6rem)] ">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-items-center p-[clamp(1rem,3.5vw,6rem)]">
           {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}

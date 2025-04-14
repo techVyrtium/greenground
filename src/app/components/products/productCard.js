@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="w-full rounded-xl p-2 relative pb-12">
+    <div className="w-[186px] rounded-xl p-2 relative pb-12">
       <Slider {...settings} className="rounded-lg">
         {product.images.map((img, index) => (
           <div key={index} className="m-auto">
