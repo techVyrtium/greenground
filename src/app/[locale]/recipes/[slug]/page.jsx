@@ -66,7 +66,7 @@ export default async function Recipe({ params }) {
     const { title, image, ingredients, owner, preparationNotes, preparationPhases, tips } = recipe;
     return (
         // lg:mx-52
-        <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-20">
+        <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24">
             <div className="flex flex-col md:flex-row font-itcGBook md:gap-8 text-[#4A4A4A]">
                 <Image
                     src={image}

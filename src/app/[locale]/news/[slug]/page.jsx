@@ -66,7 +66,7 @@ export default async function News({ params }) {
     notFound();
   const { image, content = [], owner, sections = [], title } = await getNew({ locale, slug });
   return (
-    <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-20">
+    <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24">
       <h2 className="text-[38px] text-[#008638] font-itcGBold leading-12 lg:leading-12 md:text-[3.5vw] lg:text-[38px] md:leading-8 mb-4">
         {title}
       </h2>
