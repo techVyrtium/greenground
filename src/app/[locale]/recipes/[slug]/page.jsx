@@ -9,8 +9,8 @@ export const generateMetadata = async ({ params }) => {
     const recipe = await getRecipe({ locale, slug });
     if (!recipe)
         notFound();
-    const { image, title } = recipe;
-    const description = `Temporal description`;
+    const { image, title, preparationNotes } = recipe;
+    const description = preparationNotes?.join(" ") ?? title;
     return {
         title,
         description,
@@ -56,7 +56,7 @@ export async function generateStaticParams() {
     return locales.map(async (locale) => {
         const slugs = await getAllSlugRecipesByLocale(locale);
         return Object.entries(slugs).map((slug) => ({ locale, slug }));
-    })
+    });
 }
 export default async function Recipe({ params }) {
     const { slug, locale } = await params;

@@ -29,7 +29,7 @@ const TopProduct = async ({ locale }) => {
   return (
     <>
       <section className="w-full h-fit mt-20">
-        <div className="relative flex h-[131px] w-4/5 md:w-2/3 lg:w-2/5 py-4 bg-[#008638] rounded-br-full">
+        <div className="relative flex h-[131px] w-[80vw] max-w-[500px] pb-4 pt-6 bg-[#008638] rounded-br-full">
           <div className="h-full px-4 sm:px-6 lg:px-30">
             <img
               src="/home/sheetWhite.png"
@@ -38,7 +38,7 @@ const TopProduct = async ({ locale }) => {
             />
           </div>
           <div
-            className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold text-[32px] md:text-[40px]`}
+            className={`absolute pt-2 px-4 sm:px-6 lg:px-30 font-itcGBold text-[32px] md:text-[40px]`}
           >
             <h2 className="ml-22 text-[min(10vw,36px)] top-[36px] text-left font-bold text-white leading-[0.8]">
               {data[0].title}
@@ -48,7 +48,7 @@ const TopProduct = async ({ locale }) => {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-[clamp(1rem,5vw,6rem)] ">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-items-center p-[clamp(1rem,3.5vw,6rem)]">
           {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
