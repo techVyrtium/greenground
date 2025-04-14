@@ -28,12 +28,13 @@ export const generateMetadata = async ({ params }) => {
   //   }
   // }
 }
+export const dynamic = 'force-static'
 export async function generateStaticParams() {
   const locales = ['es', 'en'];
 
   return locales.map(async (locale) => {
     const slugs = await getAllProducts(locale);
-    return await slugs.map((slug) => ({ locale, slug }));
+    return Object.entries(slugs).map(([slug]) => ({ locale, slug }));
   });
 }
 export default async function ProductosPorCategoria({ params }) {
