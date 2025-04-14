@@ -5,7 +5,6 @@ import { getAllProducts } from "@/services/getAllProducts";
 export const metadata = {
   title: 'Products'
 }
-export const dynamic = 'force-static'
 export const generateStaticParams = async () => {
   const locales = ['es', 'en'];
   return locales.map((locale) => ({
