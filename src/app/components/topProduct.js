@@ -40,10 +40,10 @@ const TopProduct = async ({ locale }) => {
           <div
             className={`absolute px-4 sm:px-6 lg:px-30 font-itcGBold text-[32px] md:text-[40px]`}
           >
-            <h2 className="ml-22 top-[36px] text-left font-bold text-white leading-[0.8]">
+            <h2 className="ml-22 text-[min(10vw,36px)] top-[36px] text-left font-bold text-white leading-[0.8]">
               {data[0].title}
             </h2>
-            <h2 className="text-[32.5px] ml-14 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
+            <h2 className="text-[min(8vw,32.5px)] ml-14 mt-2 top-[45px] text-left font-bold text-white mb-12 leading-[0.8]">
               {data[0].title2}
             </h2>
           </div>

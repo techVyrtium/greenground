@@ -4,7 +4,7 @@ export default function OurCommit() {
       title: (
         <>
           <h2
-            className={`text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}
+            className={`text-[clamp(38px,6vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}
           >
             Nuestro compromiso
           </h2>
@@ -52,7 +52,7 @@ export default function OurCommit() {
         </div>
       </div>
       {/* Espacio para el texto debajo */}
-      <div className="px-[clamp(1rem,5vw,6rem)] flex flex-col xl:flex-row xl:mt-[50px] mb-12 flex">
+      <div className="px-[clamp(1rem,5vw,6rem)] flex flex-col xl:flex-row xl:mt-[50px] mb-12">
         <video
           src="/home/ourCommit.mov"
           autoPlay={true}
