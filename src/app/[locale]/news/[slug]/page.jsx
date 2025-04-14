@@ -4,6 +4,9 @@ import { getAllSlugNewsByLocale } from "@/services/getAllSlugNewsByLocale";
 import { getNew } from "@/services/getNew";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+
+export const dynamic = 'force-static';
+
 export const generateMetadata = async ({ params }) => {
   const { slug, locale } = await params;
   const { image, title, owner, description = "" } = await getNew({ locale, slug });
