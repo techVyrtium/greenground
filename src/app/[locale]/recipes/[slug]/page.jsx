@@ -3,7 +3,7 @@ import { getAllSlugRecipesByLocale } from "@/services/getAllSlugRecipesByLocale"
 import { getRecipe } from "@/services/getRecipe"
 import Image from "next/image";
 import { notFound } from "next/navigation";
-export const dynamic = 'force-static'
+export const dynamic = 'force-static';
 export const generateMetadata = async ({ params }) => {
     const { slug, locale } = await params;
     const recipe = await getRecipe({ locale, slug });
