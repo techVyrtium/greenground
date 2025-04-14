@@ -36,7 +36,7 @@ export default function TopNavHero({ locale }) {
   };
 
   return (
-    <div className="w-full fixed top-0 left-0 bg-[#01010140] z-30 backdrop-blur-[20px]">
+    <div className="w-full fixed top-0 left-0 bg-[#01010140] z-30 backdrop-blur-[20px] max-w-[1920px]">
       <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full">
         <div className="flex items-center gap-4">
           <Link href="/">
