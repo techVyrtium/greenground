@@ -24,9 +24,10 @@ export default function OurCommitWomen() {
       title: (
         <>
           <h2
-            className={`text-[clamp(40px,6vw,90px)] xl:text-[clamp(70px,4.5vw,90px)]  font-bold text-[#008638] mb-12 leading-[0.98] font-itcGBold`}
+            className={`text-[clamp(40px,6vw,70px)] font-bold text-[#008638] mb-12 leading-[0.98] font-itcGBold`}
           >
-            Nuestro compromiso es con las mujeres
+            Nuestro compromiso
+            <span className="inline-block">es con las mujeres</span>
           </h2>
         </>
       ),

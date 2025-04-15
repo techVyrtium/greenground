@@ -12,7 +12,7 @@ export default function OurQuality() {
           </h2>
         </>
       ),
-      text: "Contamos con una planta física adecuada para el almacenamiento y distribución. Nuestro personal esta capacitado en localizar aquellos productos que sean de su interés , bajo un plan logístico de excelencia.",
+      text: "Contamos con una planta física adecuada para el almacenamiento y distribución. Nuestro personal esta capacitado en localizar aquellos productos que sean de su interés, bajo un plan logístico de excelencia.",
       text2:
         "Nuestro éxito radica en atender nuestras operaciones desde la compra hasta la comercialización internacional. Trabajamos con proveedores que cumplen con buenas prácticas de manufactura y agrícola para obtener una materia prima, insumos y servicios con altos estándares, lo cual nos asegure alimentos de alta calidad ",
     },
@@ -64,7 +64,7 @@ export default function OurQuality() {
 
           {/* Texto descriptivo */}
           <div className="mt-14 xl:mt-0 xl:ml-8 flex items-center lg:w-2/3">
-            <p className="text-[clamp(20px,1.75vw,28px)] text-white font-[600] leading-[1.1]">
+            <p className="text-[clamp(20px,1.75vw,28px)] text-white font-light leading-[1.1]">
               {data[0].text}
             </p>
           </div>
@@ -79,21 +79,21 @@ export default function OurQuality() {
                 <img
                   src="/home/arrowsRedL.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 md:w-[3rem] w-[6rem] cursor-pointer"
+                  className="mt-4 md:w-[3rem] w-[6rem] lg:w-[6rem] cursor-pointer"
                   onClick={() => handlePrev()}
                 />
               </div>
               <div className="">
                 <img
                   src={dataimg[activeIndex].image}
-                  className="md:w-[750px] md:h-[400px] w-[950px] h-[200px] rounded-tr-[20px] rounded-bl-[20px]"
+                  className="md:w-[750px] lg:max-w-full lg:w-[1400px] lg:h-[550px] md:h-[400px] w-[950px] h-[200px] rounded-tr-[20px] rounded-bl-[20px]"
                 />
               </div>
               <div className="">
                 <img
                   src="/home/arrowsRedR.png"
                   alt="Descripción de la imagen"
-                  className="mt-4 md:w-[3rem] w-[6rem] cursor-pointer"
+                  className="mt-4 md:w-[3rem] w-[6rem] lg:w-[6rem] cursor-pointer"
                   onClick={() => handleNext()}
                 />
               </div>

@@ -61,6 +61,24 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+            <ul className="space-x-1 min-w-[120px] self-start text-base md:text-2xl flex lg:gap-4">
+                <li>
+                  <Link
+                    href="https://greenground.com.co/politica-para-el-tratamiento-de-datos-personales-de-los-titulares/"
+                    className="text-[#F5B356] underline lg:whitespace-nowrap"
+                  >
+                    {t("policies.dataPolicy")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://greenground.com.co/politica-de-seguridad/"
+                    className="text-[#F5B356] underline lg:whitespace-nowrap"
+                  >
+                    {t("policies.securityPolicy")}
+                  </Link>
+                </li>
+              </ul>
           </div>
 
           {/* Contacto */}
@@ -83,24 +101,6 @@ export default function Footer() {
                 </Link>
               </span>
             </div>
-            <ul className="space-y-1 min-w-[120px] self-start text-base md:text-2xl">
-              <li>
-                <Link
-                  href="https://greenground.com.co/politica-para-el-tratamiento-de-datos-personales-de-los-titulares/"
-                  className="text-orange-400 hover:underline font-[700]"
-                >
-                  {t("policies.dataPolicy")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://greenground.com.co/politica-de-seguridad/"
-                  className="text-orange-400 hover:underline font-[700]"
-                >
-                  {t("policies.securityPolicy")}
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

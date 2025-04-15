@@ -26,7 +26,7 @@ export default async function Home({ params }) {
 
       <ProductCategories />
       <TopProduct locale={locale} />
-      <NewProduct locale={locale} />
+      {/* <NewProduct locale={locale} /> */}
       {/* <MapW /> */}
       <CaptureWorldOur />
       <NowNearYou />
