@@ -28,8 +28,8 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="max-w-[235px] w-full rounded-xl p-2 relative pb-12">
-      <Slider {...settings} className="rounded-lg">
+    <div className="w-full max-w-[235px] md:w-[235px] rounded-xl p-2 relative pb-12">
+      <Slider {...settings} pauseOnHover={false} className="rounded-lg">
         {product.images.map((img, index) => (
           <div key={index} className="m-auto">
             <img

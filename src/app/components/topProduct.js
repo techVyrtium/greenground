@@ -1,6 +1,7 @@
 import { getAllProducts } from "@/services/getAllProducts";
 import ProductCard from "./products/productCard";
 import Link from "next/link";
+import Image from "next/image";
 const TopProduct = async ({ locale }) => {
   const data = [
     {
@@ -49,16 +50,23 @@ const TopProduct = async ({ locale }) => {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,235px)] justify-center gap-6 justify-items-center p-[clamp(1rem,3.5vw,6rem)]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,235px)] px-[clamp(1rem,5vw,8rem)] justify-between gap-6 justify-items-center mt-[96px]">
           {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
         <Link
           href={`/products`}
-          className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 py-4 rounded-md font-bold leading-4 max-w-[27rem] h-12 absolute bottom-0 right-16"
+          className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 py-4 rounded-md font-bold leading-4 max-w-[36rem] w-[34rem] text-center h-12 absolute -bottom-6 right-[clamp(1rem,5.3vw,8rem)]"
         >
           Consulta nuestro catalogo
+          <Image
+            src={'/home/cursor.svg'}
+            width={60}
+            height={60}
+            className="absolute -right-1 -bottom-7 w-10 h-10"
+            alt='cursor'
+          />
         </Link>
       </section>
     </>

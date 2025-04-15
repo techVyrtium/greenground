@@ -25,7 +25,7 @@ const ProductGrid = ({ products }) => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,194px)] gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,235)] gap-2">
         {paginatedProducts.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

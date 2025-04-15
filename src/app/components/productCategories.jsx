@@ -96,14 +96,14 @@ export const ProductCategories = () => {
   };
   return (
     <section className="w-full font-itcGBold text-[#008638]">
-      <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold leading-[2.1rem] my-10">{title}</h3>
+      <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold leading-[2.1rem] my-12">{title}</h3>
       <div
         className={`bg-cover w-full text-white bg-[image:var(--image-product-categories)] md:bg-[image:var(--image-product-categories-rotate)]`}
       >
-        <div className="bg-[#00000080] p-6">
+        <div className="bg-[#00000080] p-6 px-[clamp(1rem,5vw,8rem)]">
           <div
             className={
-              "flex flex-col gap-4 flex-nowrap items-center md:flex-row md:justify-between pt-10"
+              "flex flex-col gap-4 flex-nowrap items-center md:flex-row md:justify-between"
             }
           >
             <ProductCategory

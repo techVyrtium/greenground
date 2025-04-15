@@ -7,22 +7,22 @@ import { useState, useEffect, useRef } from 'react';
  * @param {boolean} options.closeOnOutsideClick - Si el menú debe cerrarse al hacer clic fuera
  * @returns {Object} - Estado y funciones del dropdown
  */
-export const useDropdown = ({ 
-    closeOnEscape = true, 
-    closeOnOutsideClick = true 
+export const useDropdown = ({
+    closeOnEscape = true,
+    closeOnOutsideClick = true
 } = {}) => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
     const toggle = () => setIsOpen(prev => !prev);
     const close = () => setIsOpen(false);
-    
+
     useEffect(() => {
         if (!isOpen) return;
 
         const handleClickOutside = (event) => {
-            if (closeOnOutsideClick && 
-                dropdownRef.current && 
+            if (closeOnOutsideClick &&
+                dropdownRef.current &&
                 !dropdownRef.current.contains(event.target)) {
                 close();
             }
@@ -45,6 +45,7 @@ export const useDropdown = ({
 
     return {
         isOpen,
+        setIsOpen,
         toggle,
         close,
         dropdownRef

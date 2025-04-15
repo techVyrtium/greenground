@@ -2,6 +2,7 @@ import Link from "next/link"
 import { SidebarLinksMultiples } from "./sidebarLinksMultiples"
 import { useRouter } from "next/navigation"
 import { useId } from "react";
+import Image from "next/image";
 
 export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLinksProducts }) => {
     const router = useRouter();
@@ -29,9 +30,14 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
             setMenuOpen(false);
     }
     return (
-        <section className={`lg:hidden absolute pt-4 h-screen rounded-b-2xl overflow-hidden text-[#E1FAEE] bg-[#01010156] backdrop-blur-2xl  z-30 mt-0.5 ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'} right-0 top-19.5 z-10 transition-all duration-200`} onClick={close} >
+        <section className={`lg:hidden fixed pt-4 h-screen rounded-b-2xl overflow-hidden text-white bg-[#01010156] backdrop-blur-2xl z-30 mt-0.5 ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'} right-0 top-19.5 z-10 transition-all duration-200`} onClick={close} >
             <div>
-                <ul className="flex flex-col gap-4 text-2xl font-light items-center" onClick={close}>
+                <ul className="flex flex-col gap-4 text-3xl font-light items-end mr-4" onClick={close}>
+                    <li className="mb-8">
+                        <Link href="/">
+                        <Image src={'/home/blanco-12.svg'} width={150} height={150} alt="logo-white"/>
+                        </Link>
+                    </li>
                     <li>
                         <Link href="/" className="hover:underline hover:font-bold">{t("home")}</Link>
                     </li>
@@ -44,7 +50,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                             {t("whatWeDo")}
                         </Link>
                     </li>
-                    <li className={`w-full`}>
+                    {/* <li className={`w-full`}>
                         <SidebarLinksMultiples buttonClassName={`sidebar-dropdown-${id}`} title={t('products.title')} options={new Array(cantLinksProducts).fill(0).map((_, i) => {
                             return {
                                 id: t(`products.options.${i}.id`),
@@ -53,7 +59,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                             }
                         })}
                         />
-                    </li>
+                    </li> */}
                     <li>
                         <Link
                             href={`/${locale}/#ourQuality`}
@@ -82,16 +88,16 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                         </Link>
                     </li>
                 </ul>
-                <div className="flex items-center gap-4 justify-center mt-16">
-                    <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer" onClick={toggleModal}>
+                <div className="flex items-center gap-1 justify-center mt-16">
+                    <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer md:w-[46%] h-14 md:text-[1.7rem] font-bold" onClick={toggleModal}>
                         {t("contact")}
                     </button>
-                    {/* <button
-                    className="border px-4 py-2 rounded cursor-pointer"
-                    onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
-                >
-                    {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
-                </button> */}
+                    <button
+                        className="border px-4 py-2 rounded cursor-pointer md:w-[46%] h-14 md:text-[1.7rem] font-bold"
+                        onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
+                    >
+                        {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
+                    </button>
                 </div>
             </div>
 
