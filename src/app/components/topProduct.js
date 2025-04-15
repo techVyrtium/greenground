@@ -1,5 +1,6 @@
 import { getAllProducts } from "@/services/getAllProducts";
 import ProductCard from "./products/productCard";
+import Link from "next/link";
 const TopProduct = async ({ locale }) => {
   const data = [
     {
@@ -28,7 +29,7 @@ const TopProduct = async ({ locale }) => {
     str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   return (
     <>
-      <section className="w-full h-fit mt-20">
+      <section className="w-full h-fit mt-20 relative">
         <div className="relative flex h-[131px] w-[80vw] max-w-[500px] pb-4 pt-6 bg-[#008638] rounded-br-full">
           <div className="h-full px-4 sm:px-6 lg:px-30">
             <img
@@ -48,11 +49,17 @@ const TopProduct = async ({ locale }) => {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-items-center p-[clamp(1rem,3.5vw,6rem)]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,235px)] justify-center gap-6 justify-items-center p-[clamp(1rem,3.5vw,6rem)]">
           {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
+        <Link
+          href={`/products`}
+          className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 py-4 rounded-md font-bold leading-4 max-w-[27rem] h-12 absolute bottom-0 right-16"
+        >
+          Consulta nuestro catalogo
+        </Link>
       </section>
     </>
   );

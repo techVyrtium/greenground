@@ -26,8 +26,8 @@ export default async function Home({ params }) {
 
       <ProductCategories />
       <TopProduct locale={locale} />
-      <NewProduct locale={locale} />
-      {/* <MapW /> */}
+      {/* <NewProduct locale={locale} /> */}
+      <MapW />
       <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">

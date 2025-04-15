@@ -58,7 +58,7 @@ export default function Blog() {
               {/* Texto encima de la imagen */}
               <div className="w-fit text-left ml-14 py-2">{data[0].title}</div>
             </div>
-            <div className="flex flex-col justify-center h-fit lg:mt-4 ml-10 text-[clamp(2rem,4vw,2.5rem)]">
+            <div className="flex flex-col justify-center h-fit lg:mt-4 ml-10 lg:ml-[min(15rem,15vw)] text-[clamp(2rem,4vw,2.5rem)]">
               {/* Text Content */}
               <div className="space-y-6">{data[0].text}</div>
               <div className="my-4 ">{data[0].text1}</div>
