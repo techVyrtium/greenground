@@ -451,7 +451,7 @@ export default function WhatWeDo() {
         {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
       </div>
       <div
-        className="py-[96px] px-[clamp(1rem,5vw,6rem)]"
+        className="py-[95px] px-[clamp(1rem,5vw,6rem)]"
         onMouseOver={() => SetViewBotom(false)}
       >
         <div className="w-full mx-auto h-full" id="whatWeDo">
@@ -478,7 +478,7 @@ export default function WhatWeDo() {
 
             <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
               {/* Contenido de texto */}
-              <p className="text-[clamp(22px,1.45vw,28px)] text-[#4A4A4A] leading-[1.3] ">
+              <p className="text-[clamp(22px,1.45vw,28px)] text-[#4A4A4A] leading-[1.3]">
                 {t("text")}
               </p>
             </div>

@@ -8,7 +8,8 @@ export default function CaptureWorldOur() {
   const { toggleModal } = useModal();
 
   // Variables para la duración de las animaciones
-  const videoAnimationDuration = 0.5; // Duración en segundos
+  // const videoAnimationDuration = 0.5; // Duración en segundos
+  const videoAnimationDuration = 0.5;
   const videoAnimationEase = "easeInOut"; // Tipo de transición
 
   const dataSlider = [
@@ -89,8 +90,11 @@ export default function CaptureWorldOur() {
               `text-[#5C6E79] font-[700] font-itcGBold text-[clamp(20px,1.3vw,25px)]`
             }
           >
-            Pon tu logo en nuestros productos, o distribúyelos alrededor del
-            mundo
+            Pon tu logo en nuestros productos,
+            <span className="inline-block">
+              o distribúyelos alrededor del
+              mundo
+            </span>
           </p>
         </>
       ),
@@ -117,6 +121,7 @@ export default function CaptureWorldOur() {
     }, 8000)
     useEffect(() => {
       return () => {
+        console.log("Clear timeout")
         clearTimeout(timeout);
       }
     }, [timeout])
@@ -124,7 +129,7 @@ export default function CaptureWorldOur() {
       (
         <Image
           src={dataSlider[activeIndex].src}
-          className="md:w-full md:h-[353px] lg:h-[480px] object-cover object-center rounded-lg h-[55.5rem]"
+          className="md:w-full object-cover object-center rounded-lg h-full md:h-[520px]"
           height={dataSlider[activeIndex].height}
           width={dataSlider[activeIndex].width}
           alt="image-slide"
@@ -135,47 +140,46 @@ export default function CaptureWorldOur() {
   return (
     <section className="px-[clamp(1rem,5vw,8rem)] w-full h-fit mt-[clamp(1rem,5vw,6rem)]">
       <div className="w-full flex flex-col md:flex-row gap-10">
-        <div className="md:w-1/4 w-full h-full flex flex-col md:flex-col lg:flex-col items-center md:items-start">
-          <div className="flex items-center md:items-start h-fit min-h-[356px]">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeIndex}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 20 }}
-                transition={{
-                  duration: videoAnimationDuration,
-                  ease: videoAnimationEase,
-                }}
-              >
-                {
-                  dataSlider[activeIndex].type === 'video' ? (<video
+        <div className="lg:w-1/4 md:w-[44rem] w-full h-full flex flex-col md:flex-col lg:flex-col items-center">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              transition={{
+                duration: videoAnimationDuration,
+                ease: videoAnimationEase,
+              }}
+              className="md:min-h-[520px] lg:h-full min-h-[55.5rem]"
+            >
+              {
+                dataSlider[activeIndex].type === 'video' ? (<video
+                  src={dataSlider[activeIndex].src}
+                  autoPlay={true}
+                  muted={true}
+                  onEnded={handleVideoEnd}
+                  className="h-[55.5rem] md:h-[520px] object-cover rounded-lg"
+                >
+                  <source
                     src={dataSlider[activeIndex].src}
+                    type="video/mov"
                     autoPlay={true}
-                    muted={true}
-                    onEnded={handleVideoEnd}
-                    className="md:w-full h-auto rounded-lg"
-                  >
-                    <source
-                      src={dataSlider[activeIndex].src}
-                      type="video/mov"
-                      autoPlay={true}
-                    />
-                  </video>)
-                    : (
-                      <ImageSlide activeIndex={activeIndex} />
-                    )
-                }
+                  />
+                </video>)
+                  : (
+                    <ImageSlide activeIndex={activeIndex} />
+                  )
+              }
 
-              </motion.div>
-            </AnimatePresence>
-          </div>
-          <div className="lg:w-[20rem] w-fit mt-4">
-            <p className="text-[14px] md:text-[16px] xl:text-[22px] text-gray-700">
+            </motion.div>
+          </AnimatePresence>
+          <div className="lg:w-[20rem] w-fit max-w-full mt-4">
+            <p className="text-[14px] md:text-[16px] xl:text-[22px] text-gray-700 leading-[20px] text-center">
               {dataSlider[activeIndex].texto}
             </p>
           </div>
-          <div className="md:w-[19rem] w-full flex flex-row items-center justify-center md:-ml-6">
+          <div className="w-full flex flex-row items-center justify-center">
             <img
               src="/home/arrowsL.png"
               alt="Descripción de la imagen"
@@ -227,37 +231,36 @@ export default function CaptureWorldOur() {
           <div className={`hidden lg:grid`}>
             <div className="items-center flex flex-col  lg:mt-10 gap-x-24 ">
               <div className="lg:w-full flex flex-row items-center justify-around gap-4 h-52">
-                <div className="lg:w-[min(25vw,20rem)] aspect-square">
+                <div className="lg:w-[min(25vw,20rem)] aspect-square flex flex-col">
                   <img
                     src="/home/Frame171.png"
                     className="w-full h-full object-contain"
                   />
+                  <div className={`flex items-end justify-end font-itcGBook leading-5 bottom-8 relative`}>
+                    {data[0].text2}
+                  </div>
                 </div>
-                <div className="lg:w-[min(25vw,20rem)] aspect-square">
+                <div className="lg:w-[min(25vw,20rem)] aspect-square flex flex-col">
                   <img
                     src="/tu_logo_aqui.png"
                     className="w-full h-full object-contain"
                   />
+                  <button
+                    onClick={toggleModal}
+                    // cursor-[url(/home/cursor.svg)_3_3,_pointer]
+                    className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 rounded-md font-bold leading-4 max-w-[27rem] h-12 relative bottom-8"
+                  >
+                    {data[0].button}
+                    <Image
+                      src={'/home/cursor.svg'}
+                      width={60} height={60}
+                      className="absolute -right-1 -bottom-7 w-10 h-10"
+                      alt='cursor'
+                    />
+                  </button>
                 </div>
               </div>
               <div className="w-full h-full flex flex-row justify-center ml-4 mt-3">
-                <div className={`flex items-end justify-end font-itcGBook leading-5`}>
-                  {data[0].text2}
-                </div>
-
-                <button
-                  onClick={toggleModal}
-                  // cursor-[url(/home/cursor.svg)_3_3,_pointer]
-                  className="bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 rounded-md font-bold leading-4 w-[27rem] h-10 relative"
-                >
-                  {data[0].button}
-                  <Image
-                    src={'/home/cursor.svg'}
-                    width={60} height={60}
-                    className="absolute -right-1 -bottom-7 w-10 h-10"
-                    alt='cursor'
-                  />
-                </button>
               </div>
             </div>
           </div>
@@ -283,7 +286,7 @@ export default function CaptureWorldOur() {
         <div className="lg:w-1/3 md:w-1/2 h-full flex flex-col justify-end ml-4">
           <div className="flex items-end justify-end">{data[0].text2}</div>
 
-          <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md relative">
+          <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md relative h-12">
             {data[0].button}
             <Image
               src={'/home/cursor.svg'}

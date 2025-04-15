@@ -141,17 +141,6 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
       <div className="flex flex-row items-center justify-center w-full gap-2  ">
         <div>
           <button
-            onClick={() => changeColor(true)}
-            className={`${colorset
-              ? "bg-[#f19412]"
-              : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
-              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold cursor-pointer`}
-          >
-            Recetas
-          </button>
-        </div>
-        <div>
-          <button
             onClick={() => changeColor(false)}
             className={`${colorset
               ? "bg-[#f5b256] hover:bg-[#f19412] cursor-pointer"
@@ -161,6 +150,18 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
             Actualidad
           </button>
         </div>
+        <div>
+          <button
+            onClick={() => changeColor(true)}
+            className={`${colorset
+              ? "bg-[#f19412]"
+              : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
+              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold cursor-pointer`}
+          >
+            Recetas
+          </button>
+        </div>
+
       </div>
       <div
         className={`mt-4 flex w-full ${isActive ? "h-fit" : "h-[40rem]"

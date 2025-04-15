@@ -4,7 +4,7 @@ export default function OurCommit() {
       title: (
         <>
           <h2
-            className={`text-[clamp(38px,6vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}
+            className={`text-[clamp(38px,5.5vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}
           >
             Nuestro compromiso
           </h2>
@@ -19,7 +19,7 @@ export default function OurCommit() {
       id="ourCommit"
     >
       {/* Zona Orange */}
-      <div className="relative h-[14rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
+      <div className="relative h-[16rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)]">
           <div className="relative grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] w-full mx-auto h-full">
             {/* Columna izquierda (Imagen y texto) */}
@@ -41,7 +41,7 @@ export default function OurCommit() {
             {/* Columna derecha (Video) */}
             <div className=" h-auto xl:w-full xl:h-auto hidden flex-col xl:flex justify-center items-center xl:pt-12 xl:pt-0 mt-8 xl:mt-10 -mt-28">
               <video
-                src="/home/ourCommit.mov"
+                src="/home/ourCommit.mp4"
                 autoPlay={true}
                 loop
                 muted={true}
