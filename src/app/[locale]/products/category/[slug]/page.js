@@ -54,13 +54,13 @@ export default async function ProductosPorCategoria({ params }) {
   const formatTitle = (str) =>
     str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   return (
-    <div className="p-5 min-h-screen">
+    <div className="p-5 min-h-screen mt-16">
       <div className="lg:hidden mb-6">
         <CategoryLeft />
       </div>
 
       <div className="grid lg:grid-cols-[1fr_4fr] gap-6 md:mx-[48px] lg:mx-[70px] 2xl:mx-[96px]">
-        <div className="hidden lg:block gap-6 h-min w-full sticky top-6">
+        <div className="hidden lg:block gap-6 h-min w-full sticky top-24">
           <CategoryLeft />
         </div>
 

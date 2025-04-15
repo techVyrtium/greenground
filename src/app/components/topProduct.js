@@ -30,7 +30,7 @@ const TopProduct = async ({ locale }) => {
   return (
     <>
       <section className="w-full h-fit mt-20 relative">
-        <div className="relative flex h-[131px] w-[80vw] max-w-[500px] pb-4 pt-6 bg-[#008638] rounded-br-full">
+        <div className="relative flex h-[131px] w-[80vw] max-w-[500px] pb-4 pt-6 bg-[#008638] rounded-br-full bg-[image:url(/home/bg-green.png)] bg-center">
           <div className="h-full px-4 sm:px-6 lg:px-30">
             <img
               src="/home/sheetWhite.png"
