@@ -41,7 +41,8 @@ export default function Blog() {
   ];
 
   return (
-    <section className="mt-24 w-full h-full" id="blog">
+    <section className="mt-24 w-full h-full relative">
+      <div className="peg w-6 h-6 absolute -top-20" id="blog"></div>
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)] ">

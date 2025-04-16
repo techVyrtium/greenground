@@ -57,7 +57,7 @@ const TopProduct = async ({ locale }) => {
         </div>
         <Link
           href={`/products`}
-          className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 py-4 rounded-md font-bold leading-4 max-w-[36rem] w-[34rem] text-center h-12 absolute -bottom-6 right-[clamp(1rem,5.3vw,8rem)]"
+          className="block bg-[#FFB000] text-[clamp(18px,1.25vw,24px)] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 py-4 rounded-md font-bold leading-4 max-w-[36rem] relative m-auto w-[30rem] md:w-[34rem] text-center h-12 md:absolute md:-bottom-6 md:right-[clamp(1rem,5.3vw,8rem)]"
         >
           Consulta nuestro catalogo
           <Image

@@ -444,11 +444,13 @@ export default function WhatWeDo() {
         </div>
         {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
       </div>
+      
       <div
-        className="py-[95px] px-[clamp(1rem,5vw,6rem)]"
+        className="py-[95px] px-[clamp(1rem,5vw,6rem)] relative"
         onMouseOver={() => SetViewBotom(false)}
       >
-        <div className="w-full mx-auto h-full" id="whatWeDo">
+        <div className="peg w-6 h-6 absolute -top-20" id="whatWeDo"></div>
+        <div className="w-full mx-auto h-full">
           <div className="mb-12 -mt-12">{btn()}</div>
           <div className="flex flex-col lg:flex-row">
             <div className="relative flex items-center h-full w-full lg:w-1/3 -top-8">

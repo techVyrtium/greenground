@@ -11,7 +11,7 @@ export const NavLinkMultiple = ({ title, options = [], className = '', onToogle 
             title={title}
             className={className}
             onToggle={onToogle}
-            menuClassName="absolute top-8 rounded w-[300px] font-light bg-[#00000040] backdrop-blur-[50px] z-30"
+            menuClassName="rounded w-[300px] font-light bg-[#01010140] backdrop-blur-[20px] z-30"
         >
             <ol className="m-4 z-30">
                 {options.map(({ id, text, href }) => (

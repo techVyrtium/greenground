@@ -30,12 +30,13 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
             setMenuOpen(false);
     }
     return (
-        <section className={`lg:hidden fixed pt-4 h-screen rounded-b-2xl overflow-hidden text-white bg-[#01010156] backdrop-blur-2xl z-30 mt-0.5 ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'} right-0 top-19.5 z-10 transition-all duration-200`} onClick={close} >
-            <div>
-                <ul className="flex flex-col gap-4 text-3xl font-light items-end mr-4" onClick={close}>
+        <section className={`lg:hidden fixed pt-4 h-screen rounded-b-2xl overflow-hidden text-white mt-0.5 ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'} right-0 top-19.5 z-10 transition- duration-200`} onClick={close} >
+            <div className={`fixed bg-[#01010156] backdrop-blur-[20px] z-30 right-0 top-19.5 h-full ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'}`}></div>
+            <div className={`relative z-40`}>
+                <ul className={`flex flex-col gap-4 text-3xl font-light items-end mr-4`} onClick={close}>
                     <li className="mb-8">
                         <Link href="/">
-                        <Image src={'/home/blanco-12.svg'} width={150} height={150} alt="logo-white"/>
+                            <Image src={'/home/blanco-12.svg'} width={150} height={150} alt="logo-white" />
                         </Link>
                     </li>
                     <li>
@@ -50,7 +51,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                             {t("whatWeDo")}
                         </Link>
                     </li>
-                    {/* <li className={`w-full`}>
+                    <li>
                         <SidebarLinksMultiples buttonClassName={`sidebar-dropdown-${id}`} title={t('products.title')} options={new Array(cantLinksProducts).fill(0).map((_, i) => {
                             return {
                                 id: t(`products.options.${i}.id`),
@@ -59,7 +60,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                             }
                         })}
                         />
-                    </li> */}
+                    </li>
                     <li>
                         <Link
                             href={`/${locale}/#ourQuality`}
@@ -88,12 +89,12 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
                         </Link>
                     </li>
                 </ul>
-                <div className="flex items-center gap-1 justify-center mt-16">
-                    <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer md:w-[46%] h-14 md:text-[1.7rem] font-bold" onClick={toggleModal}>
+                <div className="flex items-center gap-3 justify-end mt-16 mr-4">
+                    <button className="bg-orange-500 px-4 py-2 rounded cursor-pointer md:w-[13rem] h-14 md:text-[1.7rem] font-bold" onClick={toggleModal}>
                         {t("contact")}
                     </button>
                     <button
-                        className="border px-4 py-2 rounded cursor-pointer md:w-[46%] h-14 md:text-[1.7rem] font-bold"
+                        className="border px-4 py-2 rounded cursor-pointer md:w-[150px] h-14 md:text-[1.7rem] font-bold"
                         onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
                     >
                         {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
