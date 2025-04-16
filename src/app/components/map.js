@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import React, { Suspense, useEffect, useState } from "react";
 import { MapMobile } from "./MapMobile";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
@@ -8,10 +7,9 @@ export default function MapW() {
   const [screen, setScreen] = useState();
   useEffect(() => {
 
-    if (window) {
-      console.log("Ingresa y... ", window.screen.availWidth);
+    if (window)
       setScreen(window.screen.availWidth);
-    }
+
   }, [])
   return (
 

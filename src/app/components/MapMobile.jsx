@@ -45,7 +45,7 @@ export const MapMobile = () => {
         exit: { opacity: 0, },
     }
     return (
-        <section className="w-full relative h-[37rem] my-20">
+        <section className="w-full relative h-[37rem] my-20 md:hidden">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={`animation-map`}
