@@ -13,27 +13,36 @@ export default function CardBlog({ data, color, type }) {
           className="flex flex-col h-full bg-transparent items-stretch"
         >
           <div className="w-full h-auto object-cover bg-no-repeat bg-cover">
-            <Image src={dato.image} className="rounded-md w-full h-[450px]" width={400} height={450} />
+            <Image
+              src={dato.image}
+              className="w-full h-[300px] object-cover rounded-md"
+              width={400}
+              height={400}
+            />
           </div>
           <div className="p-[8px] 2xl:p-[16px] flex flex-col flex-grow">
             <div
-              className={`text-[28px] leading-8 h-16 ${color ? "text-[#D9840D]" : "text-[#B52C17]"
-                } font-bold`}
+              className={`text-[28px] leading-8 h-16 ${
+                color ? "text-[#D9840D]" : "text-[#B52C17]"
+              } font-bold`}
             >
               {dato.title}
             </div>
             <div className="block text-[#4a4a4a] font-[400] text-[clamp(1.375rem,4vw,1.75rem)] mt-[16px] leading-[1.1] flex-grow">
-              <div className="line-clamp-4">{dato.description ?? 'Descripcion temporal'}</div>
+              <div className="line-clamp-4">
+                {dato.description ?? "Descripcion temporal"}
+              </div>
             </div>
             <div className="flex w-full h-fit">
               <Link href={`/${type}/${dato.slug}`} className="w-full">
                 <button
-                  className={`mt-[16px] w-full text-center text-[#EFEBE7] cursor-pointer ${color
-                    ? "bg-[#F19412] hover:bg-[#f19412e2]"
-                    : "bg-[#EA6B58] hover:bg-[#B52C17]"
-                    } font-[700] py-[4px] px-[16px] rounded-lg text-[clamp(1.375rem,4vw,1.75rem)] `}
+                  className={`mt-[16px] w-full text-center text-[#EFEBE7] cursor-pointer ${
+                    color
+                      ? "bg-[#F19412] hover:bg-[#f19412e2]"
+                      : "bg-[#EA6B58] hover:bg-[#B52C17]"
+                  } font-[700] py-[4px] px-[16px] rounded-lg text-[clamp(1.375rem,4vw,1.75rem)] `}
                 >
-                  {locale === 'es' ? 'Consulta' : 'Find'}
+                  {locale === "es" ? "Consulta" : "Find"}
                 </button>
               </Link>
             </div>

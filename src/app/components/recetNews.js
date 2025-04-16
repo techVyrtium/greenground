@@ -6,7 +6,11 @@ import { useParams } from "next/navigation";
 import { recipes } from "@/seed/recipes";
 import { news } from "@/seed/news";
 
-export default function RecetNews({ tipo = "recetas", existPadding = true, className = '' }) {
+export default function RecetNews({
+  tipo = "recetas",
+  existPadding = true,
+  className = "",
+}) {
   const { locale } = useParams();
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -17,11 +21,9 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
   const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
-
     if (tipo == "actualidad") {
       setColorSet(false);
       revData(false);
-
     } else {
       setColorSet(true);
       revData(true);
@@ -29,7 +31,6 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
   }, []);
 
   const moveCard = (res) => {
-
     if (activeIndex == 0) {
       const rs = res.filter((r) => r.id == res[0].id || r.id == res[1].id);
       setDataTable(rs);
@@ -72,39 +73,44 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
     return (
       <div className="flex flex-row items-center justify-center gap-2">
         <img
-          src={`${colorset ? "/home/arrowsOrangeL.png" : "/home/arrowsRSL.png"
-            }`}
+          src={`${
+            colorset ? "/home/arrowsOrangeL.png" : "/home/arrowsRSL.png"
+          }`}
           alt="Descripción de la imagen"
           className="mt-4 mr-2 cursor-pointer"
           onClick={() => handlePrev(size)}
         />
         <div
-          className={`mt-4 p-3 rounded-full cursor-pointer ${activeIndex == 0 && colorset
-            ? "bg-[#F19412]"
-            : activeIndex == 0 && !colorset
+          className={`mt-4 p-3 rounded-full cursor-pointer ${
+            activeIndex == 0 && colorset
+              ? "bg-[#F19412]"
+              : activeIndex == 0 && !colorset
               ? "bg-[#B52C17]"
               : "bg-[#FEF8F1]"
-            }`}
+          }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full cursor-pointer ${activeIndex == 1 && colorset
-            ? "bg-[#F19412]"
-            : activeIndex == 1 && !colorset
+          className={`mt-4 p-3 rounded-full cursor-pointer ${
+            activeIndex == 1 && colorset
+              ? "bg-[#F19412]"
+              : activeIndex == 1 && !colorset
               ? "bg-[#B52C17]"
               : "bg-[#FEF8F1]"
-            }`}
+          }`}
         ></div>
         <div
-          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${activeIndex == 2 && colorset
-            ? "bg-[#F19412]"
-            : activeIndex == 2 && !colorset
+          className={`mt-4 p-3 rounded-full sm:grid md:hidden  ${
+            activeIndex == 2 && colorset
+              ? "bg-[#F19412]"
+              : activeIndex == 2 && !colorset
               ? "bg-[#B52C17]"
               : "bg-[#FEF8F1]"
-            }`}
+          }`}
         ></div>
         <img
-          src={`${colorset ? "/home/arrowsOrangeR.png" : "/home/arrowsRSR.png"
-            }`}
+          src={`${
+            colorset ? "/home/arrowsOrangeR.png" : "/home/arrowsRSR.png"
+          }`}
           alt="Descripción de la imagen"
           className="mt-4 ml-2 cursor-pointer"
           onClick={() => handleNext(size)}
@@ -114,7 +120,6 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
   }
 
   const revData = async (rev) => {
-
     let res = null;
     if (rev == true) {
       res = recipes[locale];
@@ -135,15 +140,20 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
   };
 
   return (
-    <div className={`${existPadding ? "px-[clamp(1rem,5vw,6rem)]" : "px-0"} mx-auto mt-12 h-full ${className}`}>
+    <div
+      className={`${
+        existPadding ? "px-[clamp(1rem,5vw,6rem)]" : "px-0"
+      } mx-auto mt-12 h-full ${className}`}
+    >
       <div className="flex flex-row items-center justify-center w-full gap-2  ">
         <div>
           <button
             onClick={() => changeColor(false)}
-            className={`${colorset
-              ? "bg-[#f5b256] hover:bg-[#f19412] cursor-pointer"
-              : "bg-[#EA6B58]"
-              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
+            className={`${
+              colorset
+                ? "bg-[#f5b256] hover:bg-[#f19412] cursor-pointer"
+                : "bg-[#EA6B58]"
+            } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
           >
             Actualidad
           </button>
@@ -151,19 +161,20 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
         <div>
           <button
             onClick={() => changeColor(true)}
-            className={`${colorset
-              ? "bg-[#f19412]"
-              : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
-              } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold cursor-pointer`}
+            className={`${
+              colorset
+                ? "bg-[#f19412]"
+                : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
+            } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold cursor-pointer`}
           >
             Recetas
           </button>
         </div>
-
       </div>
       <div
-        className={`mt-4 flex w-full ${isActive ? "h-fit" : "h-[40rem]"
-          }  items-center justify-center`}
+        className={`mt-4 flex w-full ${
+          isActive ? "h-fit" : "h-[40rem]"
+        }  items-center justify-center`}
       >
         {isActive && (
           <motion.div
@@ -178,16 +189,28 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
             }}
           >
             <div className="hidden lg:grid ">
-              <CardBlog data={dataDesk} color={colorset} type={tipo === 'recetas' ? 'recipes' : 'news'} />
+              <CardBlog
+                data={dataDesk}
+                color={colorset}
+                type={tipo === "recetas" ? "recipes" : "news"}
+              />
             </div>
             {/*  Movil */}
             <div className="block lg:hidden sm:hidden">
-              <CardBlog data={dataMovil} color={colorset} type={tipo === 'recetas' ? 'recipes' : 'news'} />
+              <CardBlog
+                data={dataMovil}
+                color={colorset}
+                type={tipo === "recetas" ? "recipes" : "news"}
+              />
               {btn(0)}
             </div>
             {/*  Tabla */}
             <div className="hidden md:grid lg:hidden ">
-              <CardBlog data={dataTable} color={colorset} type={tipo === 'recetas' ? 'recipes' : 'news'} />
+              <CardBlog
+                data={dataTable}
+                color={colorset}
+                type={tipo === "recetas" ? "recipes" : "news"}
+              />
               {btn(1)}
             </div>
           </motion.div>
