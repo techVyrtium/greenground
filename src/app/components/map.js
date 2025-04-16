@@ -6,8 +6,11 @@ const Spline = React.lazy(() => import("@splinetool/react-spline"));
 export default function MapW() {
   const [screen, setScreen] = useState();
   useEffect(() => {
-    if (window)
-      setScreen(window.screenX);
+
+    if (window) {
+      console.log("Ingresa y... ", window.screen.availWidth);
+      setScreen(window.screen.availWidth);
+    }
   }, [])
   return (
 

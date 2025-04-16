@@ -182,7 +182,7 @@ const ProductCategory = ({
         ></div>
       </div>
       <h3
-        className={`text-[34px] md:text-[3.2vw] font-bold flex flex-col lg:bg-transparent leading-7 text-[#F19412] ${sup ? "pl-4 py-4" : "py-6"
+        className={`text-[34px] md:text-[min(50px,3.2vw)] font-bold flex flex-col lg:bg-transparent leading-7 text-[#F19412] ${sup ? "pl-4 py-4" : "py-6"
           } px-4 w-full ${classNameTitle}`}
       >
         <div className="text-2xl md:text-3xl self-start">{sup}</div>

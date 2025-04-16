@@ -145,7 +145,7 @@ export default function RecetNews({
         existPadding ? "px-[clamp(1rem,5vw,6rem)]" : "px-0"
       } mx-auto mt-12 h-full ${className}`}
     >
-      <div className="flex flex-row items-center justify-center w-full gap-2  ">
+      <div className="flex flex-row items-center justify-center w-full gap-2">
         <div>
           <button
             onClick={() => changeColor(false)}
@@ -172,9 +172,9 @@ export default function RecetNews({
         </div>
       </div>
       <div
-        className={`mt-4 flex w-full ${
+        className={`mt-4 w-full ${
           isActive ? "h-fit" : "h-[40rem]"
-        }  items-center justify-center`}
+        }`}
       >
         {isActive && (
           <motion.div
@@ -188,7 +188,7 @@ export default function RecetNews({
               },
             }}
           >
-            <div className="hidden lg:grid ">
+            <div className="hidden lg:block">
               <CardBlog
                 data={dataDesk}
                 color={colorset}
@@ -205,7 +205,7 @@ export default function RecetNews({
               {btn(0)}
             </div>
             {/*  Tabla */}
-            <div className="hidden md:grid lg:hidden ">
+            <div className="hidden md:block lg:hidden ">
               <CardBlog
                 data={dataTable}
                 color={colorset}
