@@ -28,14 +28,14 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="w-full max-w-[235px] md:w-[235px] rounded-xl p-2 relative pb-12">
+    <div className="w-full  rounded-xl p-2 relative pb-12">
       <Slider {...settings} pauseOnHover={false} className="rounded-lg">
         {product.images.map((img, index) => (
           <div key={index} className="m-auto">
             <img
               src={img}
               alt={product.title}
-              className="w-full h-[200px]  rounded-lg bg-white/60 shadow-md"
+              className="w-full h-auto  rounded-lg bg-white/60 shadow-md"
             />
           </div>
         ))}
@@ -52,7 +52,9 @@ const ProductCard = ({ product }) => {
 
       <div className="border border-[#008638] text-[#4A4A4A] text-[clamp(18px,1.25vw,24px)] font-bold p-1 rounded-lg flex flex-col h-52">
         <div className="min-h-[60px] h-full flex items-center justify-center px-2 overflow-y-auto overflow-x-hidden">
-          <h3 className="text-center leading-[18px] md:leading-snug">{product.title}</h3>
+          <h3 className="text-center leading-[18px] md:leading-snug">
+            {product.title}
+          </h3>
         </div>
 
         <div className="border-t border-[#F19412] mt-auto w-full">
