@@ -41,10 +41,10 @@ export default function TopNavHero({ locale }) {
   };
 
   return (
-    <div className="fixed w-full h-[80px] z-30 mx-auto max-w-[1920px]">
+    <div className="fixed w-full h-[80px] z-30 mx-auto max-w-[1920px] top-0">
       {/* Fondo con blur */}
       <div className="fixed w-full h-[80px] z-30 bg-[#01010140] backdrop-blur-[20px] max-w-[1920px] mx-auto top-0"></div>
-      <div className="absolute w-full h-full bg-[#01010140] backdrop-blur-[20px] z-30" />
+      <div className="absolute w-full h-full bg-[#01010140] backdrop-blur-[20px] z-30 top-0" />
 
       {/* Contenedor centrado del nav */}
       <div className="max-w-[1920px] w-full mx-auto z-40 relative">
