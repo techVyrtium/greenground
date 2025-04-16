@@ -29,17 +29,17 @@ export default async function Home({ params }) {
       <TopProduct locale={locale} />
       {/* <NewProduct locale={locale} /> */}
       {/* <MapW /> */}
-      <Image src={'/home/map1.svg'} width={1920} height={808} className="my-20" />
+      <Image src={'/home/map.png'} width={444} height={665} className="my-20 w-full" />
       <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">
         <OurQuality />
       </div>
       <OurCertificate />
-      <div id="blog" className="w-full">
+      <div className="w-full">
         <Blog />
       </div>
-      <div id="ourCommit" className="w-full">
+      <div className="w-full">
         <OurCommit />
       </div>
       <OurCommitWomen />

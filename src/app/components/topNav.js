@@ -43,9 +43,10 @@ export default function TopNavHero({ locale }) {
   };
 
   return (
-    <div className="relative">
-      <div className="w-full fixed top-0 left-0 bg-[#01010140] z-30 backdrop-blur-[20px] max-w-[1920px]">
-        <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full">
+    <div className="fixed w-full h-[80px] z-30">
+      <div className="fixed w-full h-[80px] z-30 bg-[#01010140] backdrop-blur-[20px] max-w[1920px] top-0"></div>
+      <div className="w-full fixed top-0 left-0 max-w-[1920px] z-40">
+        <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full relative z-30">
           <div className="flex items-center gap-4">
             <Link href="/">
               <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
@@ -65,11 +66,19 @@ export default function TopNavHero({ locale }) {
                   {t("whatWeDo")}
                 </Link>
               </li>
-              <li className="z-50">
-                <button className="flex cursor-pointer items-center gap-2 hover:underline hover:font-bold" onClick={toogleOptions}>
-                  {t("products.title")}
-                  <FaChevronDown className="w-4 h-4" fillOpacity={0.85} />
-                </button>
+              <li>
+                <NavLinkMultiple
+                  title={"Productos"}
+                  onToogle={toogleMultipleOptions}
+                  className="text-[#E1FAEE] text-[clamp(1rem,1.5vw,1.5rem)] z-30 font-light hover:underline hover:font-bold"
+                  options={new Array(CANT_LINKS_PRODUCTS).fill(0).map((_, i) => {
+                    return {
+                      id: t(`products.options.${i}.id`),
+                      text: t(`products.options.${i}.text`),
+                      href: t(`products.options.${i}.href`),
+                    };
+                  })}
+                />
               </li>
               <li>
                 <Link
@@ -120,12 +129,9 @@ export default function TopNavHero({ locale }) {
               >
                 <IoMdMenu size={24} />
               </button>
-
             </div>
-
           </div>
         </nav>
-
       </div>
       <Siderbar
         menuOpen={menuOpen}
@@ -135,7 +141,7 @@ export default function TopNavHero({ locale }) {
         locale={locale}
         toggleModal={toggleModal}
       />
-      
+
     </div>
 
   );
