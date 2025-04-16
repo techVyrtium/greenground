@@ -1,12 +1,14 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CardBlog from "./cardBlog";
-import Data from "../[locale]/news/data";
 import { motion } from "framer-motion";
+import { useParams } from "next/navigation";
+import { recipes } from "@/seed/recipes";
+import { news } from "@/seed/news";
 
 export default function RecetNews({ tipo = "recetas", existPadding = true, className = '' }) {
-  //console.log("tipo ", tipo);
-  const { news } = Data();
+  const { locale } = useParams();
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [dataDesk, setDataDesk] = useState([]);
   const [dataTable, setDataTable] = useState([]);
@@ -15,22 +17,19 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
   const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
-    //console.log("tipo..", colorset)
-    if (tipo == "recetas") {
-      setColorSet(true);
-      revData(true);
-    } else {
+
+    if (tipo == "actualidad") {
       setColorSet(false);
       revData(false);
-    }
-  }, [tipo]);
 
-  useEffect(() => {
-    revData(colorset);
-  }, [activeIndex]);
+    } else {
+      setColorSet(true);
+      revData(true);
+    }
+  }, []);
 
   const moveCard = (res) => {
-    //console.log(res);
+
     if (activeIndex == 0) {
       const rs = res.filter((r) => r.id == res[0].id || r.id == res[1].id);
       setDataTable(rs);
@@ -114,14 +113,13 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
     );
   }
 
-  const revData = (rev) => {
-    //setColorSet(rev);
-    //console.log("revData ", tipo, colorset)
+  const revData = async (rev) => {
+
     let res = null;
     if (rev == true) {
-      res = news.filter((d) => d.tipo == "recetas");
+      res = recipes[locale];
     } else if (rev == false) {
-      res = news.filter((d) => d.tipo == "novedades");
+      res = news[locale];
     }
     setDataDesk(res);
     moveCard(res);
@@ -180,16 +178,16 @@ export default function RecetNews({ tipo = "recetas", existPadding = true, class
             }}
           >
             <div className="hidden lg:grid ">
-              <CardBlog data={dataDesk} color={colorset} />
+              <CardBlog data={dataDesk} color={colorset} type={tipo === 'recetas' ? 'recipes' : 'news'} />
             </div>
             {/*  Movil */}
             <div className="block lg:hidden sm:hidden">
-              <CardBlog data={dataMovil} color={colorset} />
+              <CardBlog data={dataMovil} color={colorset} type={tipo === 'recetas' ? 'recipes' : 'news'} />
               {btn(0)}
             </div>
             {/*  Tabla */}
             <div className="hidden md:grid lg:hidden ">
-              <CardBlog data={dataTable} color={colorset} />
+              <CardBlog data={dataTable} color={colorset} type={tipo === 'recetas' ? 'recipes' : 'news'} />
               {btn(1)}
             </div>
           </motion.div>

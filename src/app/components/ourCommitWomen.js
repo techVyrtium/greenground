@@ -48,34 +48,33 @@ export default function OurCommitWomen() {
   return (
     <section className="pt-[96px] md:mt-[96px] w-full h-full">
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-row h-full ">
-        <div className="flex flex-col lg:flex-row w-full h-full">
-          <div className="lg:w-1/2 flex items-start">
-            <div className="flex flex-row order-last gap-4 lg:order-none items-center justify-evenly w-full mt-4 lg:mt-0">
-              <div className="">
-                <img
-                  src="/home/arrowsL.png"
-                  alt="Descripción de la imagen"
-                  className="mt-4 w-[8rem] md:w-[3rem] cursor-pointer"
-                  onClick={() => handlePrev()}
-                />
-              </div>
-              <div className="">
-                <img
-                  src={dataimg[activeIndex].image}
-                  className="md:w-[750px] md:h-[400px] w-[65rem] h-[15rem] rounded-b-2xl rounded-r-2xl"
-                />
-              </div>
-              <div className="">
-                <img
-                  src="/home/arrowsR.png"
-                  alt="Descripción de la imagen"
-                  className="mt-4 w-[8rem] md:w-[3rem] cursor-pointer"
-                  onClick={() => handleNext()}
-                />
-              </div>
+        <div className="flex flex-col lg:flex-row w-full h-full justify-start">
+          <div className="w-full flex items-start justify-start">
+            <div className="flex flex-row order-last gap-[0.4rem] md:gap-4 lg:order-none items-center justify-start w-full mt-4 lg:mt-0">
+
+              <img
+                src="/home/arrowsL.png"
+                alt="Descripción de la imagen"
+                className="mt-4 w-[3rem] cursor-pointer"
+                onClick={() => handlePrev()}
+              />
+
+
+              <img
+                src={dataimg[activeIndex].image}
+                className="md:w-[750px] md:h-[400px] lg:max-w-full lg:w-[82%] w-[82%] lg:h-[550px] h-full rounded-b-2xl rounded-r-2xl"
+              />
+
+              <img
+                src="/home/arrowsR.png"
+                alt="Descripción de la imagen"
+                className="mt-4 w-[3rem] cursor-pointer"
+                onClick={() => handleNext()}
+              />
+
             </div>
           </div>
-          <div className="lg:w-1/2 md:ml-12 flex flex-col order-first lg:order-none items-center justify-center">
+          <div className="md:ml-12 flex flex-col order-first lg:order-none items-center justify-center lg:w-[49%]">
             {data[0].title}
             <p className="text-[clamp(1.2rem,1.75vw,1.75rem)]  text-[#4A4A4A] leading-[1.3] lg:mt-4 text-left">
               {data[0].text}

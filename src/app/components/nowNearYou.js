@@ -39,18 +39,16 @@ export default function NowNearYou() {
             </div>
           </div>
           <div className="space-y-4 mt-8 text-justify">{data[0].text}</div>
-          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
-            <div className="flex flex-row gap-8 lg:gap-[1vw] max-[465px]:gap-6">
-              <img src="/home/GFICON.png" className=" w-[126px] md:w-[156px]" />
-              <img
-                src="/home/MICICON.png"
-                className=" w-[126px] md:w-[156px]"
-              />
-              <img
-                src="/home/READYICON.png"
-                className=" w-[126px] md:w-[156px]"
-              />
-            </div>
+          <div className="flex flex-row gap-8 lg:gap-[1vw] max-[465px]:gap-6 w-fit mt-8 m-auto">
+            <img src="/home/GFICON.png" className=" w-[126px] md:w-[156px] h-full" />
+            <img
+              src="/home/MICICON.png"
+              className="w-[126px] md:w-[170px] h-full"
+            />
+            <img
+              src="/home/READYICON.png"
+              className=" w-[126px] md:w-[156px] h-full"
+            />
           </div>
         </div>
       </div>

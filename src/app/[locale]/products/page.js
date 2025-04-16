@@ -17,9 +17,9 @@ export default async function Products({ params }) {
   const products = await getAllProducts(locale);
   const productMap = Object.entries(products).map(([slug, product]) => ({ slug, ...product }));
   return (
-    <div className="p-5 min-h-screen">
+    <div className="p-5 min-h-screen mt-18">
       <div className="grid lg:grid-cols-[1fr_4fr] gap-6 md:px-[48px]  lg:px-[70px] 2xl:px-[96px]">
-        <div className="hidden lg:block">
+        <div className="hidden lg:block sticky top-23 h-fit">
           <CategoryLeft />
         </div>
         <div>

@@ -34,7 +34,7 @@ export default function WhatWeDo() {
       title: "AHORA MÁS CERCA DE TI",
       text: (
         <>
-          <p className="text-[clamp(18px,2.5vw,28px)] text-white ">
+          <p className="text-[clamp(18px,2.5vw,28px)] text-white">
             Encuentra nuestros productos{" "}
             <span className=" font-bold">Green ground </span>
             en<span className=" font-bold">tiendas ara </span>y abre las puertas
@@ -52,12 +52,12 @@ export default function WhatWeDo() {
       title2: "Tradición en cada",
       text: (
         <>
-          <p className="text-[clamp(18px,2.5vw,28px)] text-white text-left ">
+          <p className="text-[clamp(18px,2.5vw,28px)] text-left">
             Conoce nuestros productos{" "}
-            <span className=" font-bold">
+            <span className="font-bold">
               orgánicos, sin etiquetas de excesos{" "}
             </span>
-            y <span className=" font-bold">100% Colombianos</span>
+            y <span className="font-bold">100% Colombianos</span>
           </p>
         </>
       ),
@@ -149,9 +149,7 @@ export default function WhatWeDo() {
           Your browser does not support the video tag.
         </video>
         {viewBotom ? (
-          <div
-            className={`absolute w-full max-w-[1920px] h-10 cursor-pointer mb-6 items-center`}
-          >
+          <div className={`absolute w-full max-w-[1920px] h-10 cursor-pointer mb-6 items-center`}>
             <div className="flex flex-row items-center justify-center  ">
               <div
                 className={`cursor-pointer w-3/4 h-10 p-6 bg-[#031D35] rounded-md`}
@@ -186,11 +184,11 @@ export default function WhatWeDo() {
   function yellow() {
     return (
       <section
-        className="px-4 sm:px-6 lg:px-22 w-full h-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat"
+        className="mt-12 px-4 sm:px-6 lg:px-22 w-full h-full bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white"
         ref={ubiRef}
       >
         <div className="hidden lg:grid">
-          <div className=" flex flex-col lg:flex-row ">
+          <div className=" flex flex-col">
             <motion.div
               initial={{ opacity: 0, x: 0 }}
               whileInView={{
@@ -201,95 +199,91 @@ export default function WhatWeDo() {
                   delay: 1,
                 },
               }}
-              className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
+              // justify-center
+              className="flex flex-row justify-around w-full h-fit md:pt-10"
             >
+              {/* gap-24 */}
               <div className="flex justify-center leading-7">
                 <img
-                  src="/home/blanco-12.svg"
+                  src="/home/logo-green.svg"
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
-              <div className="mt-12 flex flex-col items-center justify-center">
-                <p className={`text-white text-[clamp(20px,6.5vw,46px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
+              <div className="mt-12 flex flex-col items-center justify-center text-[#45AC36]">
+                <p className={`text-[clamp(20px,6.5vw,46px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
                 <h1
-                  className={`text-white lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold`}
+                  className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
                   {data2[0].title}
                 </h1>
               </div>
-              <div className="space-y-6 mt-12 text-justify ">
+              <div className="space-y-6 mt-12 text-justify text-[#45AC36] w-[26rem]">
                 {data2[0].text}
               </div>
-              <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
-                <div className="flex flex-row gap-8">
-                  <img
-                    src="/home/GFICON.png"
-                    className="md:w-[136px] w-[120px]"
-                  />
-                  <img
-                    src="/home/MICICON.png"
-                    className="md:w-[136px] w-[120px]"
-                  />
-                  <img
-                    src="/home/READYICON.png"
-                    className="md:w-[136px] w-[120px]"
-                  />
-                </div>
-              </div>
-              <div className="flex items-end justify-end">
-                <Link href={"/products"}>
-                  <button className="bg-[#B52C17] text-[20px] text-white px-6 mt-4 rounded-md cursor-pointer">
-                    {data2[0].button}
-                  </button>
-                </Link>
-              </div>
             </motion.div>
-            <div className="relative w-2/3 flex flex-col mt-12 lg:mt-36 xl:mt-28 2xl:mt-30 ml-20">
-              <div className="">
-                <motion.img
-                  initial={{ opacity: 1, y: 160 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 10,
-                    transition: {
-                      duration: 0.5,
-                      delay: 1,
-                    },
-                  }}
-                  src="/home/tajadas.png"
-                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
+            {/* Images. */}
+            <div className="flex flex-row mt-4 w-fit m-auto">
+
+              <motion.img
+                initial={{ opacity: 1, y: 160 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 10,
+                  transition: {
+                    duration: 0.5,
+                    delay: 1,
+                  },
+                }}
+                src="/home/tajadas.png"
+                className="lg:w-[min(33vw,600px)] h-[700px] z-10 -mx-12"
+              />
+
+              <motion.img
+                initial={{ opacity: 0, x: -20, }}
+                whileInView={{
+                  opacity: 1,
+                  x: 10,
+                  transition: {
+                    duration: 0.5,
+                    delay: 1.2,
+                  },
+                }}
+                src="/home/patacones.png"
+                //  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-6 ml-[11rem] lg:ml-[7rem]  z-2", ideal: 600px
+                className="lg:w-[min(33vw,600px)] h-[auto] z-2 -mx-12"
+              />
+              <motion.img
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 80,
+                  transition: {
+                    duration: 0.5,
+                    delay: 1.5,
+                  },
+                }}
+                src="/home/papaCriolla.png"
+                className="lg:w-[min(33vw,600px)] h-[auto] -mx-[6.5rem]"
+              />
+            </div>
+            <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8 text-[#45AC36]">
+              <div className="flex flex-row gap-8">
+                <img
+                  src="/home/GFICON-green.png"
+                  className="md:w-[136px] w-[120px] lg:w-[min(15vw,350px)]"
+                />
+                <img
+                  src="/home/MICICON-green.png"
+                  className="md:w-[136px] w-[120px] lg:w-[min(15vw,350px)]"
+                />
+                <img
+                  src="/home/READYICON-green.png"
+                  className="md:w-[136px] w-[120px] lg:w-[min(15vw,350px)]"
                 />
               </div>
-              <div>
-                <motion.img
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{
-                    opacity: 1,
-                    x: 10,
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.2,
-                    },
-                  }}
-                  src="/home/patacones.png"
-                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
-                />
-              </div>
-              <div>
-                <motion.img
-                  initial={{ opacity: 0, x: -40 }}
-                  whileInView={{
-                    opacity: 1,
-                    x: 80,
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.5,
-                    },
-                  }}
-                  src="/home/papaCriolla.png"
-                  className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
-                />
-              </div>
+              <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6 lg:pt-[min(3%,1.5vw)] box-border max-w-[27rem] h-[min(5vw,7rem)] text-center">
+                {data2[0].button}
+              </Link>
             </div>
           </div>
         </div>

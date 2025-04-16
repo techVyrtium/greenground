@@ -7,7 +7,7 @@ export default function OurQuality() {
     {
       title: (
         <>
-          <h2 className="text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-12 leading-[0.9]">
+          <h2 className="text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4vw,96px)] font-bold text-white mb-12 leading-[0.9]">
             Nuestra calidad
           </h2>
         </>
@@ -72,38 +72,32 @@ export default function OurQuality() {
       </div>
 
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-row  -mt-8 md:-mt-12">
-        <div className=" mx-auto flex flex-col lg:flex-row w-full">
-          <div className="lg:w-1/2 w-full flex items-center justify-center">
-            <div className="flex flex-row gap-4 items-center justify-evenly w-full">
-              <div className="">
-                <img
-                  src="/home/arrowsRedL.png"
-                  alt="Descripción de la imagen"
-                  className="mt-4 md:w-[3rem] w-[6rem] lg:w-[6rem] cursor-pointer"
-                  onClick={() => handlePrev()}
-                />
-              </div>
-              <div className="">
-                <img
-                  src={dataimg[activeIndex].image}
-                  className="md:w-[750px] lg:max-w-full lg:w-[1400px] lg:h-[550px] md:h-[400px] w-[950px] h-[200px] rounded-tr-[20px] rounded-bl-[20px]"
-                />
-              </div>
-              <div className="">
-                <img
-                  src="/home/arrowsRedR.png"
-                  alt="Descripción de la imagen"
-                  className="mt-4 md:w-[3rem] w-[6rem] lg:w-[6rem] cursor-pointer"
-                  onClick={() => handleNext()}
-                />
-              </div>
+        <div className=" mx-auto flex flex-col lg:flex-row w-full justify-start">
+          <div className="w-full flex items-center justify-start">
+            <div className="flex flex-row gap-[0.4rem] md:gap-4 items-center justify-start w-full">
+
+              <img
+                src="/home/arrowsRedL.png"
+                alt="Descripción de la imagen"
+                className="mt-4 w-[min(2.5rem,7vw)] md:w-[2.8rem] lg:w-[3rem] cursor-pointer"
+                onClick={() => handlePrev()}
+              />
+
+              <img
+                src={dataimg[activeIndex].image}
+                className="md:w-[88%] lg:max-w-full lg:w-[82%] lg:h-[550px] md:h-[400px] max-w-full w-[82%] h-full rounded-tr-[20px] rounded-bl-[20px]"
+              />
+              <img
+                src="/home/arrowsRedR.png"
+                alt="Descripción de la imagen"
+                className="mt-4 w-[min(2.5rem,7vw)] md:w-[2.8rem] lg:w-[3rem] cursor-pointer"
+                onClick={() => handleNext()}
+              />
             </div>
           </div>
-          <div className="lg:w-1/2 w-full flex md:ml-4 md:w-fit">
-            <p className="text-[clamp(22px,1.75vw,28px)] text-[#4A4A4A] leading-[1.1] mt-8 md:mt-32 text-left">
-              {data[0].text2}
-            </p>
-          </div>
+          <p className="text-[clamp(22px,1.75vw,28px)] text-[#4A4A4A] leading-[1.1] mt-8 md:mt-32 text-left lg:w-[49%]">
+            {data[0].text2}
+          </p>
         </div>
       </div>
     </section>

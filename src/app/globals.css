@@ -58,7 +58,7 @@ body {
   background-color: #006c36bf;
 }
 
-:root:has(.maximaze,.sidebar) {
+:root:has(.maximaze) {
   overflow-y: hidden; 
   /* Usar cuando se organice el MODAL */
 }
