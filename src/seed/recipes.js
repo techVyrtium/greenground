@@ -5,6 +5,7 @@ export const recipes = {
             slug: "patacon-pisao-con-hogao",
             title: "Receta Patacón Pisao con hogao",
             owner: 'Lina montero',
+            description: 'Descripcion de este producto',
             image: "/recipes/patacon-pisao-con-hogao.png",
             ingredients: [
                 "1 paquete <strong class='font-itcGBold'>de 300 gr de tajadas de platano GREEN GROUND</strong>",
