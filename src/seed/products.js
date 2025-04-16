@@ -39,7 +39,8 @@ export const products = {
             price: 0,
             images: [
                 "/products/entero-verde-crudo-green-ground-imagen-empaque.png",
-                "/products/platano-verde-empaque.png"
+                "/products/platano-verde-empaque.png",
+                "/products/platano-verde-servido.png"
             ],
             presentation: "500 gr / 1kg / 2kg / 3kg",
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"

@@ -2,6 +2,7 @@
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 export function CategoryLeft() {
   const [expandedCategories, setExpandedCategories] = useState({});
   const t = useTranslations("category");
@@ -51,16 +52,15 @@ export function CategoryLeft() {
 
             {category.subcategories.length > 0 && (
               <ul
-                className={`overflow-hidden transition-all duration-300 ${
-                  expandedCategories[category.name] ? "max-h-96" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${expandedCategories[category.name] ? "max-h-96" : "max-h-0"
+                  }`}
               >
                 {category.subcategories.map((subcat) => (
                   <li
                     key={subcat}
                     className="pl-6 p-2 hover:bg-gray-100 cursor-pointer text-sm text-[#4A4A4A] text-[16px] 2xl:text-[24px]"
                   >
-                    {subcat}
+                    <Link href={`/products/category/${category.name}?subcategory=${subcat}`}>{subcat}</Link>
                   </li>
                 ))}
               </ul>

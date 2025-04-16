@@ -13,6 +13,7 @@ import { ProductCategories } from "../components/productCategories";
 // import { WorkerTestimonials } from "../components/workerTestimonials";
 import OurCertificate from "../components/ourCertificate";
 import MapW from "../components/map";
+import Image from "next/image";
 export default async function Home({ params }) {
   const { locale } = await params;
   return (
@@ -27,7 +28,8 @@ export default async function Home({ params }) {
       <ProductCategories />
       <TopProduct locale={locale} />
       {/* <NewProduct locale={locale} /> */}
-      <MapW />
+      {/* <MapW /> */}
+      <Image src={'/home/map1.svg'} width={1920} height={808} className="my-20" />
       <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">

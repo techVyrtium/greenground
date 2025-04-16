@@ -9,7 +9,7 @@ export default function CaptureWorldOur() {
 
   // Variables para la duración de las animaciones
   // const videoAnimationDuration = 0.5; // Duración en segundos
-  const videoAnimationDuration = 0.5;
+  const videoAnimationDuration = 0;
   const videoAnimationEase = "easeInOut"; // Tipo de transición
 
   const dataSlider = [
@@ -87,7 +87,7 @@ export default function CaptureWorldOur() {
         <>
           <p
             className={
-              `text-[#5C6E79] font-[700] font-itcGBold text-[clamp(20px,1.3vw,25px)]`
+              `text-[#5C6E79] font-[700] font-itcGBold text-[1rem]`
             }
           >
             Pon tu logo en nuestros productos,
@@ -146,7 +146,7 @@ export default function CaptureWorldOur() {
               key={activeIndex}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
+              exit={{ opacity: 1, x: 20 }}
               transition={{
                 duration: videoAnimationDuration,
                 ease: videoAnimationEase,

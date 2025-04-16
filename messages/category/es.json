@@ -2,12 +2,30 @@
   "categories": [
     {
       "name": "Congelados",
-      "subcategories": ["Verduras", "Carnes", "Mariscos", "Preparados"],
+      "subcategories": [
+        "Latinos Premium",
+        "Especialidades congelados",
+        "Pulpa de fruta",
+        "Panaderia",
+        "Arepas"
+      ],
       "link": "products/category/congelados"
     },
     {
       "name": "Abarrotes",
-      "subcategories": ["Lácteos", "Granos", "Conservas", "Especias"],
+      "subcategories": [
+        "Harinas de Maíz",
+        "Almidones",
+        "Granos",
+        "Salsas y conservas",
+        "Café y chocolate",
+        "Condimentos",
+        "Esencias",
+        "Bebidas",
+        "Avenas",
+        "Dulces y snacks",
+        "Panela"
+      ],
       "link": "products/category/abarrotes"
     },
     {

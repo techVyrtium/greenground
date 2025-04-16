@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
@@ -7,15 +7,22 @@ import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
 import { useModal } from "@/app/hooks/useModal";
 import { Siderbar } from "./sidebar";
+import { FaChevronDown } from "react-icons/fa";
 
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const { toggleModal } = useModal();
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("topNav");
+  const toogleMultipleOptions = () => {
 
+  }
+  const toogleOptions = () => {
+    setToogleMultipleOptions(!toogleMultipleOptions)
+  }
   const changeLanguage = (lang) => {
     if (pathname.length === 3)
       router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
@@ -36,99 +43,100 @@ export default function TopNavHero({ locale }) {
   };
 
   return (
-    <div className="w-full fixed top-0 left-0 bg-[#01010140] z-30 backdrop-blur-[20px] max-w-[1920px]">
-      <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full">
-        <div className="flex items-center gap-4">
-          <Link href="/">
-            <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
-          </Link>
-          <ul className="hidden lg:flex gap-[1vw] text-[clamp(1rem,1.5vw,1.5rem)] font-light">
-            <li>
-              <Link href="/" className="hover:underline hover:font-bold">
-                {t("home")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/#whatWeDo`}
-                className="hover:underline hover:font-bold"
-                onClick={(e) => handleSmoothScroll(e, "whatWeDo")}
-              >
-                {t("whatWeDo")}
-              </Link>
-            </li>
-            <li className="z-50">
-              <NavLinkMultiple
-                title={t("products.title")}
-                options={new Array(CANT_LINKS_PRODUCTS).fill(0).map((_, i) => {
-                  return {
-                    id: t(`products.options.${i}.id`),
-                    text: t(`products.options.${i}.text`),
-                    href: t(`products.options.${i}.href`),
-                  };
-                })}
-              />
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/#ourQuality`}
-                className="hover:underline hover:font-bold"
-                onClick={(e) => handleSmoothScroll(e, "ourQuality")}
-              >
-                {t("quality")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/#ourCommit`}
-                className="hover:underline hover:font-bold"
-                onClick={(e) => handleSmoothScroll(e, "ourCommit")}
-              >
-                {t("commitment")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/#blog`}
-                className="hover:underline hover:font-bold"
-                onClick={(e) => handleSmoothScroll(e, "blog")}
-              >
-                {t("blog")}
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex items-center gap-4">
-          <button
-            className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block"
-            onClick={toggleModal}
-          >
-            {t("contact")}
-          </button>
-          <button
-            className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
-            onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
-          >
-            {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
-          </button>
-          <div>
-            <button
-              className="lg:hidden cursor-pointer z-30"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <IoMdMenu size={24} />
-            </button>
-            <Siderbar
-              menuOpen={menuOpen}
-              setMenuOpen={setMenuOpen}
-              t={t}
-              cantLinksProducts={CANT_LINKS_PRODUCTS}
-              locale={locale}
-              toggleModal={toggleModal}
-            />
+    <div className="relative">
+      <div className="w-full fixed top-0 left-0 bg-[#01010140] z-30 backdrop-blur-[20px] max-w-[1920px]">
+        <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full">
+          <div className="flex items-center gap-4">
+            <Link href="/">
+              <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
+            </Link>
+            <ul className="hidden lg:flex gap-[1vw] text-[clamp(1rem,1.5vw,1.5rem)] font-light">
+              <li>
+                <Link href="/" className="hover:underline hover:font-bold">
+                  {t("home")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/#whatWeDo`}
+                  className="hover:underline hover:font-bold"
+                  onClick={(e) => handleSmoothScroll(e, "whatWeDo")}
+                >
+                  {t("whatWeDo")}
+                </Link>
+              </li>
+              <li className="z-50">
+                <button className="flex cursor-pointer items-center gap-2 hover:underline hover:font-bold" onClick={toogleOptions}>
+                  {t("products.title")}
+                  <FaChevronDown className="w-4 h-4" fillOpacity={0.85} />
+                </button>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/#ourQuality`}
+                  className="hover:underline hover:font-bold"
+                  onClick={(e) => handleSmoothScroll(e, "ourQuality")}
+                >
+                  {t("quality")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/#ourCommit`}
+                  className="hover:underline hover:font-bold"
+                  onClick={(e) => handleSmoothScroll(e, "ourCommit")}
+                >
+                  {t("commitment")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/#blog`}
+                  className="hover:underline hover:font-bold"
+                  onClick={(e) => handleSmoothScroll(e, "blog")}
+                >
+                  {t("blog")}
+                </Link>
+              </li>
+            </ul>
           </div>
-        </div>
-      </nav>
+          <div className="flex items-center gap-4">
+            <button
+              className="bg-orange-500 px-4 py-2 rounded cursor-pointer hidden lg:block"
+              onClick={toggleModal}
+            >
+              {t("contact")}
+            </button>
+            <button
+              className="border px-4 py-2 rounded cursor-pointer hidden lg:block"
+              onClick={() => changeLanguage(locale === "en" ? "es" : "en")}
+            >
+              {locale === "en" ? "ESP 🇪🇸" : "ENG 🇺🇸"}
+            </button>
+            <div>
+              <button
+                className="lg:hidden cursor-pointer z-30"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
+                <IoMdMenu size={24} />
+              </button>
+
+            </div>
+
+          </div>
+        </nav>
+
+      </div>
+      <Siderbar
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        t={t}
+        cantLinksProducts={CANT_LINKS_PRODUCTS}
+        locale={locale}
+        toggleModal={toggleModal}
+      />
+      
     </div>
+
   );
 }

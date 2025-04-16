@@ -61,7 +61,7 @@ export default function ResponsibleCompany() {
       <AnimatePresence mode="wait">
         <motion.div
           key={animationKey}
-          className="w-full md:max-w-7xl px-[clamp(1rem,4vw,3rem)] md:px-10 h-full relative z-10 flex flex-col items-start justify-center"
+          className="mt-4 w-full md:max-w-7xl px-[clamp(1rem,4vw,3rem)] md:px-10 h-full relative z-10 flex flex-col items-start justify-start"
           variants={containerVariants}
           initial="hidden"
           whileInView={"visible"}
@@ -142,7 +142,7 @@ export default function ResponsibleCompany() {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.7, delay: 0.5 }}
-        className="w-full lg:max-w-7xl absolute top-10 xl:left-8 right-20 xl:right-2 bottom-0 mx-auto  h-[90%] bg-no-repeat bg-contain bg-right bg-[url('/home/responsable.png')] z-0"
+        className="w-full lg:max-w-7xl absolute top-10 xl:left-8 right-20 bottom-0 mx-auto  h-[90%] bg-no-repeat bg-contain bg-right bg-[url('/home/responsable.png')] z-0"
       />
     </section>
   );

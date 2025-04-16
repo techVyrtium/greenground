@@ -15,7 +15,7 @@ export const Dropdown = ({
     closeOnSelect = true,
     onToggle,
 }) => {
-    const { isOpen, toggle, close, dropdownRef } = useDropdown();
+    const { isOpen, toggle, close } = useDropdown();
 
     const handleToggle = () => {
         toggle();
@@ -29,7 +29,7 @@ export const Dropdown = ({
     };
 
     return (
-        <div className={`relative ${className}`} ref={dropdownRef}>
+        <div className={`fixed ${className}`}>
             <button
                 type="button"
                 onClick={handleToggle}
@@ -42,7 +42,7 @@ export const Dropdown = ({
             </button>
 
             {isOpen && (
-                <div 
+                <div
                     className={`z-10 ${menuClassName}`}
                     role="menu"
                     aria-orientation="vertical"
