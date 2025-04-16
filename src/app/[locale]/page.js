@@ -8,12 +8,11 @@ import Blog from "../components/blog";
 import OurCommit from "../components/ourCommit";
 import OurCommitWomen from "../components/ourCommitWomen";
 import TopProduct from "../components/topProduct";
-import NewProduct from "../components/newProduct";
 import { ProductCategories } from "../components/productCategories";
 // import { WorkerTestimonials } from "../components/workerTestimonials";
 import OurCertificate from "../components/ourCertificate";
 import MapW from "../components/map";
-import Image from "next/image";
+
 export default async function Home({ params }) {
   const { locale } = await params;
   return (
@@ -28,8 +27,8 @@ export default async function Home({ params }) {
       <ProductCategories />
       <TopProduct locale={locale} />
       {/* <NewProduct locale={locale} /> */}
-      {/* <MapW /> */}
-      <Image src={'/home/map.png'} width={444} height={665} className="my-20 w-full" />
+      <MapW />
+      
       <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">
