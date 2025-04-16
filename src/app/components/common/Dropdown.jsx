@@ -29,7 +29,7 @@ export const Dropdown = ({
     };
 
     return (
-        <div className={`fixed ${className}`}>
+        <div className={`relative ${className}`}>
             <button
                 type="button"
                 onClick={handleToggle}
@@ -43,7 +43,7 @@ export const Dropdown = ({
 
             {isOpen && (
                 <div
-                    className={`z-10 ${menuClassName}`}
+                    className={`absolute z-10 ${menuClassName}`}
                     role="menu"
                     aria-orientation="vertical"
                     onClick={handleSelect}

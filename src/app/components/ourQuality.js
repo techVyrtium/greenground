@@ -44,7 +44,7 @@ export default function OurQuality() {
   };
 
   return (
-    <section className="pt-[96px] w-full h-full " id="ourQuality">
+    <section className="pt-[96px] w-full h-full">
       <div className="bg-[url(/home/bg-orange.png)] bg-cover bg-no-repeat px-[clamp(1rem,5vw,6rem)] pt-4 pb-20">
         <div className="flex flex-col xl:flex-row w-full mx-auto h-full pt-6 px-4 md:px-0">
           {/* Bloque: Imagen + Título */}

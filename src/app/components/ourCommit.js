@@ -15,9 +15,9 @@ export default function OurCommit() {
   ];
   return (
     <section
-      className="block mt-24 w-full xl:h-auto h-screen min-h-[400px]"
-      id="ourCommit"
+      className="block mt-24 w-full xl:h-auto h-screen min-h-[400px] relative"      
     >
+      <div className="peg w-6 h-6 absolute -top-20" id="ourCommit"></div>
       {/* Zona Orange */}
       <div className="relative h-[16rem] bg-[url(/home/bg-green.png)] bg-cover bg-no-repeat">
         <div className="px-[clamp(1rem,5vw,6rem)]">
