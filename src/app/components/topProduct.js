@@ -18,12 +18,12 @@ const TopProduct = async ({ locale }) => {
     ...product,
   }));
   const productsTop = productsMap
-    .filter(
-      (product) => {
-        // No trae el orden de escritura del json.
-        return product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
-      }
-    )
+    .filter((product) => {
+      // No trae el orden de escritura del json.
+      return (
+        product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
+      );
+    })
     .slice(0, 6);
 
   const formatTitle = (str) =>
@@ -50,7 +50,7 @@ const TopProduct = async ({ locale }) => {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,235px)] px-[clamp(1rem,5vw,8rem)] justify-between gap-6 justify-items-center mt-[96px]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-6 gap-4 justify-items-center px-[clamp(1rem,5vw,8rem)] mt-[96px]">
           {productsTop.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
@@ -61,11 +61,11 @@ const TopProduct = async ({ locale }) => {
         >
           Consulta nuestro catalogo
           <Image
-            src={'/home/cursor.svg'}
+            src={"/home/cursor.svg"}
             width={60}
             height={60}
             className="absolute -right-1 -bottom-7 w-10 h-10"
-            alt='cursor'
+            alt="cursor"
           />
         </Link>
       </section>

@@ -17,12 +17,10 @@ export default function TopNavHero({ locale }) {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("topNav");
-  const toogleMultipleOptions = () => {
-
-  }
+  const toogleMultipleOptions = () => {};
   const toogleOptions = () => {
-    setToogleMultipleOptions(!toogleMultipleOptions)
-  }
+    setToogleMultipleOptions(!toogleMultipleOptions);
+  };
   const changeLanguage = (lang) => {
     if (pathname.length === 3)
       router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
@@ -43,9 +41,13 @@ export default function TopNavHero({ locale }) {
   };
 
   return (
-    <div className="fixed w-full h-[80px] z-30">
-      <div className="fixed w-full h-[80px] z-30 bg-[#01010140] backdrop-blur-[20px] max-w[1920px] top-0"></div>
-      <div className="w-full fixed top-0 left-0 max-w-[1920px] z-40">
+    <div className="fixed w-full h-[80px] z-30 mx-auto max-w-[1920px] top-0">
+      {/* Fondo con blur */}
+      <div className="fixed w-full h-[80px] z-30 bg-[#01010140] backdrop-blur-[20px] max-w-[1920px] mx-auto top-0"></div>
+      <div className="absolute w-full h-full bg-[#01010140] backdrop-blur-[20px] z-30 top-0" />
+
+      {/* Contenedor centrado del nav */}
+      <div className="max-w-[1920px] w-full mx-auto z-40 relative">
         <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full relative z-30">
           <div className="flex items-center gap-4">
             <Link href="/">
@@ -71,13 +73,15 @@ export default function TopNavHero({ locale }) {
                   title={"Productos"}
                   onToogle={toogleMultipleOptions}
                   className="text-[#E1FAEE] text-[clamp(1rem,1.5vw,1.5rem)] z-30 font-light hover:underline hover:font-bold"
-                  options={new Array(CANT_LINKS_PRODUCTS).fill(0).map((_, i) => {
-                    return {
-                      id: t(`products.options.${i}.id`),
-                      text: t(`products.options.${i}.text`),
-                      href: t(`products.options.${i}.href`),
-                    };
-                  })}
+                  options={new Array(CANT_LINKS_PRODUCTS)
+                    .fill(0)
+                    .map((_, i) => {
+                      return {
+                        id: t(`products.options.${i}.id`),
+                        text: t(`products.options.${i}.text`),
+                        href: t(`products.options.${i}.href`),
+                      };
+                    })}
                 />
               </li>
               <li>
@@ -141,8 +145,6 @@ export default function TopNavHero({ locale }) {
         locale={locale}
         toggleModal={toggleModal}
       />
-
     </div>
-
   );
 }
