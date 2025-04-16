@@ -1,25 +1,13 @@
 "use client";
-import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
 import { itcAvantGardeCEGothicLTBold } from "../styles/fonts";
+import { useTranslations } from "next-intl";
 
 export default function ResponsibleCompany() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { initial: true, margin: "-50px" });
-
-  const [animationKey, setAnimationKey] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setAnimationKey((prev) => prev + 1);
-  //   }, 8000); // Ajusta el tiempo según necesidad
-
-  //   return () => clearInterval(interval);
-  // }, []);
-  // useEffect(() => {
-  //   setAnimationKey(animationKey + 1);
-  // }, [isInView])
-
+  const [animationKey,] = useState(0);
+  // const t = useTranslations('responsableCompany');
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -82,9 +70,11 @@ export default function ResponsibleCompany() {
           >
             <p className=" text-[#008E4A] font-[700] leading-tight mb-0">
               Somos una empresa
+              {/* {t('text1')} */}
             </p>
             <p className=" text-[#008E4A] font-[700] leading-tight md:mt-[-4px]">
               Socialmente Responsable
+              {/* {t('text2')} */}
             </p>
           </motion.div>
 
@@ -101,6 +91,7 @@ export default function ResponsibleCompany() {
           >
             <p className="text-white font-[700] leading-tight">
               Amigable con el
+              {/* {t('text3')} */}
             </p>
           </motion.div>
 
@@ -116,6 +107,7 @@ export default function ResponsibleCompany() {
           >
             <p className="text-white font-[700] leading-tight">
               Medio Ambiente
+              {/* {t('text4')} */}
             </p>
           </motion.div>
 
@@ -131,6 +123,7 @@ export default function ResponsibleCompany() {
           >
             <p className="text-[#B52C17] font-[700] leading-tight">
               Y comercio justo
+              {/* {t('text5')} */}
             </p>
           </motion.div>
         </motion.div>
