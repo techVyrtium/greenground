@@ -121,7 +121,6 @@ export default function CaptureWorldOur() {
     }, 8000)
     useEffect(() => {
       return () => {
-        console.log("Clear timeout")
         clearTimeout(timeout);
       }
     }, [timeout])

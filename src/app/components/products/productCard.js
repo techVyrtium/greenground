@@ -3,8 +3,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; // ✅ IMPORTANTE
 import "slick-carousel/slick/slick-theme.css";
+import { useParams } from "next/navigation";
 
 const ProductCard = ({ product }) => {
+  const { locale } = useParams()
   const hasMultipleImages = product.images.length > 1;
   const settings = {
     dots: true,
@@ -65,7 +67,7 @@ const ProductCard = ({ product }) => {
             href={`/products/${product.slug}`}
             className="block w-full bg-[#F5B356] text-white text-[clamp(18px,1.25vw,24px)]  rounded-md p-2 text-center"
           >
-            Ver producto
+            {locale === 'en' ? 'View product' : 'Ver producto'}
           </a>
         </div>
       </div>

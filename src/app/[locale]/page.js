@@ -24,10 +24,10 @@ export default async function Home({ params }) {
       <ResponsibleCompany />
       <Experience />
 
-      <ProductCategories />
+      <ProductCategories locale={locale} />
       <TopProduct locale={locale} />
       {/* <NewProduct locale={locale} /> */}
-      <MapW/>      
+      <MapW />
       <CaptureWorldOur />
       <NowNearYou />
       <div id="ourQuality" className="w-full">

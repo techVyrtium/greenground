@@ -12,12 +12,7 @@ export default function RecetNews({
   className = "",
 }) {
   const { locale } = useParams();
-
-  const [activeIndex, setActiveIndex] = useState(0);
   const [data, setData] = useState([]);
-  // const [dataDesk, setDataDesk] = useState([]);
-  // const [dataTable, setDataTable] = useState([]);
-  // const [dataMovil, setDataMovil] = useState([]);
   const [colorset, setColorSet] = useState(true);
   const [isActive, setIsActive] = useState(true);
 
@@ -64,7 +59,7 @@ export default function RecetNews({
               : "bg-[#EA6B58]"
               } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold`}
           >
-            Actualidad
+            {locale === 'en' ? "Current Trends" : "Actualidad"}
           </button>
         </div>
         <div>
@@ -75,7 +70,7 @@ export default function RecetNews({
               : " bg-[#EA6B58] hover:bg-[#B52C17] cursor-pointer"
               } px-8 py-2 rounded-xl text-white text-[16px] lg:text-[20px] font-bold cursor-pointer`}
           >
-            Recetas
+            {locale === 'en' ? "Recipes" : "Recetas"}
           </button>
         </div>
       </div>
