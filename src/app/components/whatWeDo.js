@@ -35,11 +35,9 @@ export default function WhatWeDo() {
       text: (
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-white">
-            Encuentra nuestros productos{" "}
-            <span className=" font-bold">Green ground </span>
-            en<span className=" font-bold">tiendas ara </span>y abre las puertas
-            de tu casa al{" "}
-            <span className=" font-bold">sabor de la tradición.</span>
+            Encuentra nuestros productos <span className=" font-bold">Green ground </span>
+            en <span className="font-bold">tiendas ara</span> y abre las puertas
+            de tu casa al <span className=" font-bold">sabor de la tradición.</span>
           </p>
         </>
       ),

@@ -44,7 +44,7 @@ const ProductCard = ({ product }) => {
         <div className="relative py-2 w-full pb-[12px]">
           <ul className="flex justify-center items-center">
             <li>
-              <div className=" bg-[#b52c17] rounded-full mx-1 w-4 h-4 " />
+              <div className="bg-[#b52c17] rounded-full mx-1 w-4 h-4" />
             </li>
           </ul>
         </div>

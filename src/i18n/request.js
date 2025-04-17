@@ -25,6 +25,7 @@ export default getRequestConfig(async () => {
       products: await loadMessages("products"),
       category: await loadMessages("category"),
       whatWeDo: await loadMessages("whatWeDo"),
+      responsabilyCompany: await loadMessages("responsableCompany"),
       home: await loadMessages("home"),
       footer: await loadMessages("footer"),
       news: await loadMessages("news"),
