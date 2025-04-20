@@ -121,7 +121,6 @@ export default function CaptureWorldOur() {
     }, 8000)
     useEffect(() => {
       return () => {
-        console.log("Clear timeout")
         clearTimeout(timeout);
       }
     }, [timeout])
@@ -129,7 +128,7 @@ export default function CaptureWorldOur() {
       (
         <Image
           src={dataSlider[activeIndex].src}
-          className="md:w-full object-cover object-center rounded-lg h-full md:h-[520px]"
+          className="md:w-full object-cover object-center rounded-lg md:h-[520px] h-[40rem]"
           height={dataSlider[activeIndex].height}
           width={dataSlider[activeIndex].width}
           alt="image-slide"
@@ -151,7 +150,7 @@ export default function CaptureWorldOur() {
                 duration: videoAnimationDuration,
                 ease: videoAnimationEase,
               }}
-              className="md:min-h-[520px] lg:h-full min-h-[55.5rem]"
+              className="md:min-h-[520px] lg:h-full min-h-[40rem]"
             >
               {
                 dataSlider[activeIndex].type === 'video' ? (<video
@@ -159,7 +158,7 @@ export default function CaptureWorldOur() {
                   autoPlay={true}
                   muted={true}
                   onEnded={handleVideoEnd}
-                  className="h-[55.5rem] md:h-[520px] object-cover rounded-lg"
+                  className="h-[40rem] md:h-[520px] object-cover rounded-lg"
                 >
                   <source
                     src={dataSlider[activeIndex].src}

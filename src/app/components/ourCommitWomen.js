@@ -46,7 +46,7 @@ export default function OurCommitWomen() {
   };
 
   return (
-    <section className="pt-[96px] md:mt-[96px] w-full h-full">
+    <section className="md:mt-[200px] w-full h-full">
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-row h-full ">
         <div className="flex flex-col lg:flex-row w-full h-full justify-start">
           <div className="w-full flex items-start justify-start">

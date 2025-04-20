@@ -9,8 +9,8 @@ export const generateMetadata = async ({ params }) => {
     const recipe = await getRecipe({ locale, slug });
     if (!recipe)
         notFound();
-    const { image, title, preparationNotes } = recipe;
-    const description = preparationNotes?.join(" ") ?? title;
+    const { image, title, preparationNotes, description: description2, keywords } = recipe;
+    const description = description2 ?? preparationNotes?.join(" ") ?? title;
     return {
         title,
         description,
@@ -22,6 +22,7 @@ export const generateMetadata = async ({ params }) => {
             }
         ],
         url: `https://greenground.vercel.app/${locale}/news/${slug}`,
+        keywords,
         openGraph: {
             type: 'article',
             title,
@@ -65,8 +66,7 @@ export default async function Recipe({ params }) {
         notFound();
     const { title, image, ingredients, owner, preparationNotes, preparationPhases, tips } = recipe;
     return (
-        // lg:mx-52
-        <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24">
+        <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24 relative">
             <div className="flex flex-col md:flex-row font-itcGBook md:gap-8 text-[#4A4A4A]">
                 <Image
                     src={image}
@@ -127,11 +127,11 @@ export default async function Recipe({ params }) {
             {
                 preparationNotes.map((note, i) => (
                     // #ECEBEB
-                    <div key={`note-${i}`} className="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#CFCECE] rounded-md p-4">
+                    <div key={`note-${i}`} className="flex flex-row gap-[16px] mt-[24px] justify-start items-center bg-[#CFCECE] rounded-md p-4">
                         <div className="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
                             <img src="/news/Vector.svg" className="w-10 h-10" />
                         </div>
-                        <div className="">
+                        <div>
                             <p className="text-[#4A4A4A] text-[20px] leading-6 text-justify 2xl:text-[24px] [word-spacing:-1.5px]" dangerouslySetInnerHTML={{ __html: note }}></p>
                         </div>
                     </div>
