@@ -8,6 +8,7 @@ const TopProduct = async ({ locale }) => {
       title: "TOP",
       title2: "PRODUCTOS",
       text: "Participamos como una de las empresas donantes y voluntarias hacia la comunidad de la Esperanza en la Guajira Colombiana, donde a través de donativos se instauró un tanque de agua que va a mejorar la calidad de vida de 100 familias, con un sistema de agua con capacidad de 10.000 litros que provisiona las necesidades hídricas de esta población.",
+      // text: "We participate as one of the donor and volunteer companies towards the Esperanza community in the Colombian Guajira, where through donations a water tank was established that will improve the quality of life of 100 families, with a water system with a capacity of 10,000 liters that provides the water needs of this population."
     },
   ];
 

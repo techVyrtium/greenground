@@ -1,8 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const ProductCategories = () => {
-  const title = "Conoce nuestras distintas categorías de productos:";
+export const ProductCategories = async ({ locale = 'es' }) => {
+  const info = {
+    es: {
+      title: 'Conoce nuestras distintas categorías de productos:',
+      categories: [
+        "Congelados",
+        "Abarrotes",
+        "Menaje"
+      ]
+    },
+    en: {
+      title: 'Discover our different product categories:',
+      categories: [
+        "Frozen",
+        "Groceries",
+        "Houseware"
+      ]
+    }
+  }
+  const { title, categories } = info[locale];
+  // const title = "Conoce nuestras distintas categorías de productos:";
   const images = {
     congelados: [
       {
@@ -107,8 +126,8 @@ export const ProductCategories = () => {
             }
           >
             <ProductCategory
-              sup="Productos"
-              title={"Congelados"}
+              sup={locale === 'en' ? 'Products' : "Productos"}
+              title={categories[0]}
               color="green"
               mainImage="/home/rabano.svg"
               mainImageHeight={392}
@@ -117,10 +136,10 @@ export const ProductCategories = () => {
               className="bg-product-green lg:bg-white-25 lg:hover:bg-product-green lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
               classNameTitle="md:bg-category-title-light"
               images={images.congelados}
-              link="products/category/congelados"
+              link={`products/category/${categories[0].toLowerCase()}`}
             />
             <ProductCategory
-              title={"Abarrotes"}
+              title={categories[1]}
               color="red"
               mainImage="/home/dulce.svg"
               mainImageHeight={231}
@@ -129,10 +148,10 @@ export const ProductCategories = () => {
               className="bg-product-red lg:bg-white-25 lg:hover:bg-product-red lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
               classNameTitle="md:bg-category-title-bold"
               images={images.abarrotes}
-              link="products/category/abarrotes"
+              link={`products/category/${categories[1].toLowerCase()}`}
             />
             <ProductCategory
-              title={"Menaje"}
+              title={categories[2]}
               color="orange"
               mainImage="/home/olla.svg"
               mainImageHeight={272}
@@ -141,7 +160,7 @@ export const ProductCategories = () => {
               className="bg-product-orange lg:bg-white-25 lg:hover:bg-product-orange lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
               classNameTitle="md:bg-category-title-bold"
               images={images.menaje}
-              link="products/category/menaje"
+              link={`products/category/${categories[2].toLowerCase()}`}
             />
           </div>
         </div>
