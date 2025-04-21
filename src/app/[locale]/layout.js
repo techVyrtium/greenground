@@ -51,7 +51,7 @@ export default async function RootLayout({ children }) {
           <TopNavHero locale={locale} />
           {children}
           <Footer />
-          <ModalContainer/>
+          <ModalContainer />
         </NextIntlClientProvider>
       </body>
     </html>

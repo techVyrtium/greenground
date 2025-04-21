@@ -60,7 +60,7 @@ body {
 
 :root:has(.maximaze) {
   overflow-y: hidden;
-  /* Usar cuando se organice el MODAL */
+ 
 }
 
 .bg-category-title-bold {
