@@ -422,7 +422,7 @@ export default function WhatWeDo() {
   }
 
   return (
-    <section className="h-full w-full">
+    <section className="h-full w-full mt-8">
       <div className="w-full h-full flex flex-col">
         <div className="hidden lg:grid">
           <div className="flex">
