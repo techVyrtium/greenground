@@ -17,7 +17,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     vertical: false,
     slidesToShow: 3,
     infinite: false,
-    arrows: true,
+    arrows: false,
     swipeToSlide: true,
     focusOnSelect: true,
   };
@@ -25,7 +25,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     vertical: false,
     slidesToShow: 2,
     infinite: false,
-    arrows: true,
+    arrows: false,
     swipeToSlide: true,
     focusOnSelect: true,
   };
@@ -33,7 +33,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     vertical: false,
     slidesToShow: 1,
     infinite: false,
-    arrows: true,
+    arrows: false,
     swipeToSlide: true,
     focusOnSelect: true,
   };

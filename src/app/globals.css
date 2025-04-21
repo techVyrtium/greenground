@@ -59,7 +59,7 @@ body {
 }
 
 :root:has(.maximaze) {
-  overflow-y: hidden; 
+  overflow-y: hidden;
   /* Usar cuando se organice el MODAL */
 }
 
@@ -87,4 +87,8 @@ body {
 .fade-exit-active {
   opacity: 0;
   transition: opacity 500ms;
+}
+
+.slick-slide {
+  display: inline-block;
 }

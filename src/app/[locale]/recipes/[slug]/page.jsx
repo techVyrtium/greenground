@@ -66,7 +66,7 @@ export default async function Recipe({ params }) {
         notFound();
     const { title, image, ingredients, owner, preparationNotes, preparationPhases, tips } = recipe;
     return (
-        <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24 relative">
+        <section className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24 relative">
             <div className="flex flex-col md:flex-row font-itcGBook md:gap-8 text-[#4A4A4A]">
                 <Image
                     src={image}
@@ -137,10 +137,10 @@ export default async function Recipe({ params }) {
                     </div>
                 ))
             }
-            <h2 className="my-4 text-[38px] text-[#008638] font-itcGBold leading-12 lg:leading-12 md:text-[3.5vw] lg:text-[38px] md:leading-8">
+            <h3 className="my-4 text-[38px] text-[#008638] font-itcGBold leading-12 lg:leading-12 md:text-[3.5vw] lg:text-[38px] md:leading-8">
                 Consulta más artículos o recetas
-            </h2>
+            </h3>
             <RecetNews tipo="recetas" existPadding={false} />
-        </div>
+        </section>
     )
 }
