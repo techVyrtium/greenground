@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import CardBlog, { Version } from "./cardBlog";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useParams } from "next/navigation";
 import { recipes } from "@/seed/recipes";
 import { news } from "@/seed/news";
@@ -40,9 +40,9 @@ export default function RecetNews({
     setColorSet(c);
     revData(c);
     setIsActive(false);
-    setTimeout(() => {
-      setIsActive(true);
-    }, 100);
+    // setTimeout(() => {
+    //   setIsActive(true);
+    // }, 100);
   };
 
   return (
@@ -78,17 +78,22 @@ export default function RecetNews({
         className={`mt-4 w-full ${isActive ? "h-fit" : "h-[40rem]"
           }`}
       >
-        {isActive && (
+        <AnimatePresence mode="wait">
           <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{
-              opacity: 1,
-              y: 10,
-              transition: {
-                duration: 0.5,
-                delay: 0.5,
-              },
+            key={`animation-slider`}
+            variants={{
+              offscreen: { opacity: 0, y: 0 },
+              onscreen: {
+                opacity: 1,
+                y: 10,
+                transition: {
+                  duration: 0.5,
+                  delay: 0.5,
+                },
+              }
             }}
+            initial="offscreen"
+            whileInView="onscreen"
           >
             <div className="hidden lg:block">
               <CardBlog
@@ -99,7 +104,7 @@ export default function RecetNews({
               />
             </div>
             {/*  Movil */}
-            <div className="block lg:hidden sm:hidden">
+            <div className="block md:hidden">
               <CardBlog
                 data={data}
                 color={colorset}
@@ -117,7 +122,7 @@ export default function RecetNews({
               />
             </div>
           </motion.div>
-        )}
+        </AnimatePresence>
       </div>
     </div>
   );

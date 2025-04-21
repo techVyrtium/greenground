@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
-import Link from "next/link"
 import { useTranslations } from "next-intl"
 export const MapMobile = () => {
     const globalAnimation = {
@@ -96,6 +95,7 @@ export const MapMobile = () => {
                                 src={'/home/map/locations-map.png'}
                                 width={700}
                                 height={800}
+                                alt="locations-map"
                             />
                         </motion.div>
                         <motion.div
@@ -106,6 +106,7 @@ export const MapMobile = () => {
                                 src={'/home/map/boat.png'}
                                 width={80}
                                 height={80}
+                                alt="boat"
                             />
                         </motion.div>
                     </div>
