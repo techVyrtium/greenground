@@ -15,7 +15,6 @@ export default function RecetNews({
   const [data, setData] = useState([]);
   const [colorset, setColorSet] = useState(true);
   const [isActive, setIsActive] = useState(true);
-
   useEffect(() => {
     if (tipo == "actualidad") {
       setColorSet(false);
@@ -40,9 +39,9 @@ export default function RecetNews({
     setColorSet(c);
     revData(c);
     setIsActive(false);
-    // setTimeout(() => {
-    //   setIsActive(true);
-    // }, 100);
+    setTimeout(() => {
+      setIsActive(true);
+    }, 100);
   };
 
   return (
@@ -99,7 +98,7 @@ export default function RecetNews({
               <CardBlog
                 data={data}
                 color={colorset}
-                type={tipo === "recetas" ? "recipes" : "news"}
+                type={colorset ? "recipes" : "news"}
                 version={Version.DESK}
               />
             </div>
@@ -108,7 +107,7 @@ export default function RecetNews({
               <CardBlog
                 data={data}
                 color={colorset}
-                type={tipo === "recetas" ? "recipes" : "news"}
+                type={colorset ? "recipes" : "news"}
                 version={Version.MOBILE}
               />
             </div>
@@ -117,7 +116,7 @@ export default function RecetNews({
               <CardBlog
                 data={data}
                 color={colorset}
-                type={tipo === "recetas" ? "recipes" : "news"}
+                type={colorset ? "recipes" : "news"}
                 version={Version.TABLET}
               />
             </div>

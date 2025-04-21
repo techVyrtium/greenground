@@ -3,9 +3,7 @@ export default function OurCommit() {
     {
       title: (
         <>
-          <h2
-            className={`text-[clamp(38px,5.5vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}
-          >
+          <h2 className={`text-[clamp(38px,5.5vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}>
             Nuestro compromiso
           </h2>
         </>
@@ -15,7 +13,7 @@ export default function OurCommit() {
   ];
   return (
     <section
-      className="block mt-24 w-full xl:h-auto min-h-[400px] relative"      
+      className="block mt-24 w-full xl:h-auto min-h-[400px] relative"
     >
       <div className="peg w-6 h-6 absolute -top-20" id="ourCommit"></div>
       {/* Zona Orange */}
@@ -58,6 +56,7 @@ export default function OurCommit() {
           autoPlay={true}
           loop
           muted={true}
+          preload="auto"
           className="w-full h-auto max-h-[50vh] rounded-lg -mt-[50px] z-10 xl:hidden"
         />
         <div className="w-full xl:w-2/5 flex xl:order-none order-last">
