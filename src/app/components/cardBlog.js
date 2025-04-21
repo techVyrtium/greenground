@@ -17,7 +17,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     vertical: false,
     slidesToShow: 3,
     infinite: false,
-    arrows: false,
+    arrows: true,
     swipeToSlide: true,
     focusOnSelect: true,
   };
@@ -25,7 +25,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     vertical: false,
     slidesToShow: 2,
     infinite: false,
-    arrows: false,
+    arrows: true,
     swipeToSlide: true,
     focusOnSelect: true,
   };
@@ -33,7 +33,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     vertical: false,
     slidesToShow: 1,
     infinite: false,
-    arrows: false,
+    arrows: true,
     swipeToSlide: true,
     focusOnSelect: true,
   };
@@ -42,25 +42,18 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
     [Version.TABLET]: tablet,
     [Version.DESK]: desktop
   }
-  useEffect(() => {
-    $slider.slickGoTo(slide);
-  }, [slide]);
+
 
   const handleNext = (cant) => {
-    if (slide === cant - 1) {
-      setSlide(0)
-      return;
-    }
-    setSlide(slide + 1);
+    const next = slide === cant - 1 ? 0 : slide + 1;
+    setSlide(next);
+    $slider.slickGoTo(next);
   };
 
   const handlePrev = (cant) => {
-    if (slide === 0) {
-      setSlide(cant - 1)
-      return;
-    }
-    setSlide(slide - 1);
-
+    const previous = slide === 0 ? cant - 1 : slide - 1;
+    setSlide(previous);
+    $slider.slickGoTo(previous);
   };
 
   function Buttons({ slidesToShow, size }) {
@@ -75,14 +68,16 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
         />
         {new Array(Math.ceil(size / slidesToShow)).fill(0).map((_, i) => (
           <div key={`dot-${i}`}
-            // onClick={() => setslide(i)}
             className={`mt-4 p-3 rounded-full cursor-pointer ${slide == i && color
               ? "bg-[#F19412]"
               : slide == i && !color
                 ? "bg-[#B52C17]"
                 : "bg-[#FEF8F1]"
               }`}
-            onClick={() => setSlide(i)}
+            onClick={() => {
+              setSlide(i)
+              $slider.slickGoTo(i)
+            }}
           ></div>
         )
         )}
@@ -114,6 +109,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
                 className="w-full h-[300px] object-cover rounded-md"
                 width={400}
                 height={400}
+                alt={dato.title}
               />
             </div>
             <div className="pt-[8px] 2xl:pt-[16px] flex flex-col flex-grow">

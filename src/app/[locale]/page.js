@@ -30,18 +30,13 @@ export default async function Home({ params }) {
       <MapW />
       <CaptureWorldOur />
       <NowNearYou />
-      <div id="ourQuality" className="w-full">
+      <div id="ourQuality">
         <OurQuality />
       </div>
       <OurCertificate />
-      <div className="w-full">
-        <Blog />
-      </div>
-      <div className="w-full">
-        <OurCommit />
-      </div>
+      <Blog />
+      <OurCommit />
       <OurCommitWomen />
-      {/* <WorkerTestimonials /> */}
     </div>
   );
 }

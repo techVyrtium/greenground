@@ -7,7 +7,6 @@ import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
 import { useModal } from "@/app/hooks/useModal";
 import { Siderbar } from "./sidebar";
-import { FaChevronDown } from "react-icons/fa";
 
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero({ locale }) {
@@ -17,10 +16,7 @@ export default function TopNavHero({ locale }) {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("topNav");
-  const toogleMultipleOptions = () => {};
-  const toogleOptions = () => {
-    setToogleMultipleOptions(!toogleMultipleOptions);
-  };
+  const toogleMultipleOptions = () => { };
   const changeLanguage = (lang) => {
     if (pathname.length === 3)
       router.replace(`${pathname.replace(`/${locale}`, `/${lang}`)}`);
@@ -29,7 +25,6 @@ export default function TopNavHero({ locale }) {
 
   const handleSmoothScroll = (e, sectionId) => {
     e.preventDefault();
-
     if (pathname !== `/${locale}` && pathname !== `/${locale}/`) {
       router.push(`/${locale}/#${sectionId}`);
       return;
