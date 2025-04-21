@@ -31,14 +31,15 @@ export default function WhatWeDo() {
   }
   const data = [
     {
-      title: t('red.title'),
+      title: "AHORA MÁS CERCA DE TI",
       text: (
         <>
-          <p className="text-[clamp(18px,2.5vw,28px)] text-white">
-            {t('red.text.part1')} <span className=" font-bold">{t('red.text.strong1')}</span>
-            {t('red.text.part2')} <span className="font-bold">{t('red.text.strong2')}</span>
-            {t('red.text.part3')}
-            <span className=" font-bold">{t('red.text.strong3')}</span>
+          <p className="text-[clamp(18px,2.5vw,28px)] text-white ">
+            Encuentra nuestros productos{" "}
+            <span className=" font-bold">Green ground </span>
+            en<span className=" font-bold">tiendas ara </span>y abre las puertas
+            de tu casa al{" "}
+            <span className=" font-bold">sabor de la tradición.</span>
           </p>
         </>
       ),
@@ -47,21 +48,20 @@ export default function WhatWeDo() {
 
   const data2 = [
     {
-      title: t('yellow.title'),
-      title2: t('yellow.title2'),
+      title: "BOCADO",
+      title2: "Tradición en cada",
       text: (
         <>
-          <p className="text-[clamp(18px,2.5vw,28px)] text-left">
-            {t('yellow.text.part1')}
-            <span className="font-bold">
-              {t('yellow.text.strong1')}
+          <p className="text-[clamp(18px,2.5vw,28px)] text-left ">
+            Conoce nuestros productos{" "}
+            <span className=" font-bold">
+              orgánicos, sin etiquetas de excesos{" "}
             </span>
-            {t('yellow.text.part2')}
-            <span className="font-bold">{t('yellow.text.strong2')}</span>
+            y <span className=" font-bold">100% Colombianos</span>
           </p>
         </>
       ),
-      button: t('yellow.button'),
+      button: "Conoce nuestros productos",
     },
   ];
 
@@ -149,8 +149,10 @@ export default function WhatWeDo() {
           Your browser does not support the video tag.
         </video>
         {viewBotom ? (
-          <div className={`absolute w-full max-w-[1920px] h-10 cursor-pointer mb-6 items-center`}>
-            <div className="flex flex-row items-center justify-center  ">
+          <div
+            className={`absolute w-full max-w-[1920px] h-10 cursor-pointer mb-6 items-center`}
+          >
+            <div className="flex flex-row items-center justify-center">
               <div
                 className={`cursor-pointer w-3/4 h-10 p-6 bg-[#031D35] rounded-md`}
               >
@@ -184,11 +186,11 @@ export default function WhatWeDo() {
   function yellow() {
     return (
       <section
-        className="mt-12 px-4 sm:px-6 lg:px-22 w-full h-full bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white"
+        className="px-4 sm:px-6 lg:px-22 w-full h-full mt-12 bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat"
         ref={ubiRef}
       >
         <div className="hidden lg:grid">
-          <div className=" flex flex-col">
+          <div className=" flex flex-col lg:flex-row ">
             <motion.div
               initial={{ opacity: 0, x: 0 }}
               whileInView={{
@@ -199,10 +201,8 @@ export default function WhatWeDo() {
                   delay: 1,
                 },
               }}
-              // justify-center
-              className="flex flex-row justify-around w-full h-fit md:pt-10"
+              className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
             >
-              {/* gap-24 */}
               <div className="flex justify-center leading-7">
                 <img
                   src="/home/logo-green.svg"
@@ -217,73 +217,77 @@ export default function WhatWeDo() {
                   {data2[0].title}
                 </h1>
               </div>
-              <div className="space-y-6 mt-12 text-justify text-[#45AC36] w-[26rem]">
+              <div className="space-y-6 mt-12 text-justify text-[#45AC36]">
                 {data2[0].text}
               </div>
+              <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
+                <div className="flex flex-row gap-8">
+                  <img
+                    src="/home/GFICON-green.png"
+                    className="md:w-[136px] w-[120px]"
+                  />
+                  <img
+                    src="/home/MICICON-green.png"
+                    className="md:w-[136px] w-[120px]"
+                  />
+                  <img
+                    src="/home/READYICON-green.png"
+                    className="md:w-[136px] w-[120px]"
+                  />
+                </div>
+              </div>
+              <div className="flex items-end justify-end">
+                <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
+                  {data2[0].button}
+                </Link>
+              </div>
             </motion.div>
-            {/* Images. */}
-            <div className="flex flex-row mt-4 w-fit m-auto">
-
-              <motion.img
-                initial={{ opacity: 1, y: 160 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1,
-                  },
-                }}
-                src="/home/tajadas.png"
-                className="lg:w-[min(33vw,600px)] h-[auto] z-10 -mx-12"
-              />
-
-              <motion.img
-                initial={{ opacity: 0, x: -20, }}
-                whileInView={{
-                  opacity: 1,
-                  x: 10,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.2,
-                  },
-                }}
-                src="/home/patacones.png"
-                //  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-6 ml-[11rem] lg:ml-[7rem]  z-2", ideal: 600px
-                className="lg:w-[min(33vw,600px)] h-[auto] z-2 -mx-12"
-              />
-              <motion.img
-                initial={{ opacity: 0, x: -40 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 80,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.5,
-                  },
-                }}
-                src="/home/papaCriolla.png"
-                className="lg:w-[min(33vw,600px)] h-[auto] -mx-[6.5rem]"
-              />
-            </div>
-            <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8 text-[#45AC36]">
-              <div className="flex flex-row gap-8">
-                <img
-                  src="/home/GFICON-green.png"
-                  className="md:w-[136px] w-[120px] lg:w-[min(15vw,350px)]"
-                />
-                <img
-                  src="/home/MICICON-green.png"
-                  className="md:w-[136px] w-[120px] lg:w-[min(17vw,350px)]"
-                />
-                <img
-                  src="/home/READYICON-green.png"
-                  className="md:w-[136px] w-[120px] lg:w-[min(15vw,350px)]"
+            <div className="relative w-2/3 flex flex-col mt-12 lg:mt-36 xl:mt-28 2xl:mt-30 ml-20">
+              <div className="">
+                <motion.img
+                  initial={{ opacity: 1, y: 160 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 10,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1,
+                    },
+                  }}
+                  src="/home/tajadas.png"
+                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
                 />
               </div>
-              <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6 lg:pt-[min(3%,1.5vw)] box-border max-w-[27rem] h-[min(5vw,7rem)] text-center">
-                {data2[0].button}
-              </Link>
+              <div>
+                <motion.img
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 10,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.2,
+                    },
+                  }}
+                  src="/home/patacones.png"
+                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
+                />
+              </div>
+              <div>
+                <motion.img
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 80,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                  src="/home/papaCriolla.png"
+                  className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -444,13 +448,11 @@ export default function WhatWeDo() {
         </div>
         {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
       </div>
-
       <div
-        className="py-[95px] px-[clamp(1rem,5vw,6rem)] relative"
+        className="py-[96px] px-[clamp(1rem,5vw,6rem)]"
         onMouseOver={() => SetViewBotom(false)}
       >
-        <div className="peg w-6 h-6 absolute -top-20" id="whatWeDo"></div>
-        <div className="w-full mx-auto h-full">
+        <div className="w-full mx-auto h-full" id="whatWeDo">
           <div className="mb-12 -mt-12">{btn()}</div>
           <div className="flex flex-col lg:flex-row">
             <div className="relative flex items-center h-full w-full lg:w-1/3 -top-8">
@@ -474,7 +476,7 @@ export default function WhatWeDo() {
 
             <div className="flex flex-col justify-center lg:w-2/3 w-full h-fit lg:ml-24 mt-8 lg:mt-0">
               {/* Contenido de texto */}
-              <p className="text-[clamp(22px,1.45vw,28px)] text-[#4A4A4A] leading-[1.3]">
+              <p className="text-[clamp(22px,1.45vw,28px)] text-[#4A4A4A] leading-[1.3] ">
                 {t("text")}
               </p>
             </div>
