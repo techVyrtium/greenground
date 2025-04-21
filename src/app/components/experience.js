@@ -1,25 +1,24 @@
 "use client";
 import {
   motion,
-  useInView,
+  // useInView,
   AnimatePresence,
-  useAnimation,
+  // useAnimation,
 } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useRef, useState, useEffect } from "react";
 
 export default function Experience() {
   const sectionRef = useRef(null);
   const manzanaRef = useRef(null);
-
-  const isSectionInView = useInView(sectionRef, {
-    once: false,
-    margin: "-50px",
-  });
+  const t = useTranslations('experience')
+  // const isSectionInView = useInView(sectionRef, {
+  //   once: false,
+  //   margin: "-50px",
+  // });
 
   const [animationKey, setAnimationKey] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-
-  const controls = useAnimation();
 
   // Reiniciar la animación cada 8 segundos
   // useEffect(() => {
@@ -149,7 +148,7 @@ export default function Experience() {
                   style={{ fontSize: "clamp(2rem, 10vw, 8rem)" }}
                   className="pl-8 text-[#fff] font-[700] leading-tight whitespace-nowrap"
                 >
-                  Más de
+                  {t('text1')}
                 </motion.p>
 
                 {/* Número "30" con imagen */}
@@ -166,7 +165,7 @@ export default function Experience() {
                     transition={{ duration: 0.8 }}
                     className=" font-[700] leading-tight whitespace-nowrap absolute z-10 -mt-12 sm:mt-12 md:mt-8 lg:mt-2"
                   >
-                    30
+                    {t('number')}
                   </motion.p>
                   <motion.div
                     variants={animationSettings.numberImage}
@@ -184,7 +183,7 @@ export default function Experience() {
                     style={{ fontSize: "clamp(2rem, 10vw, 8rem)" }}
                     className="text-[#fff] font-[700] leading-tight whitespace-nowrap text-left"
                   >
-                    años
+                    {t('text2')}
                   </motion.p>
                   <motion.p
                     variants={animationSettings.text4}
@@ -192,8 +191,7 @@ export default function Experience() {
                     style={{ fontSize: "clamp(1rem, 1.4vw, 1.4rem)" }}
                     className="text-[14px] md:text-[18px] lg:text-[24px] text-[#B52C17] leading-none self-start  font-[800] text-left whitespace-wrap "
                   >
-                    de experiencia como productores y comercializadores de
-                    congelados y abarrotes
+                    {t('text3')}
                   </motion.p>
                 </div>
                 <motion.div

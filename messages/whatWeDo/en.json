@@ -1,4 +1,26 @@
 {
   "title": "What <br/>We do",
-  "text": "Productora Agrícola AG CI SAS, is part of the chain of processing, marketing and distribution of dry and frozen food in the Colombian and international markets. With our products we want to spread the Latin American culinary tradition through food with added value."
+  "text": "Productora Agrícola AG CI SAS, is part of the chain of processing, marketing and distribution of dry and frozen food in the Colombian and international markets. With our products we want to spread the Latin American culinary tradition through food with added value.",
+  "red": {
+    "title": "AHORA MÁS CERCA DE TI",
+    "text": {
+      "part1": "Encuentra nuestros productos ",
+      "strong1": "Green ground ",
+      "part2": "en ",
+      "strong2": "tiendas ara ",
+      "part3": "y abre las puertas de tu casa al ",
+      "strong3": "sabor de la tradición."
+    }
+  },
+  "yellow": {
+    "title": "BOCADO",
+    "title2": "Tradición en cada",
+    "text": {
+      "part1": "Conoce nuestros productos ",
+      "strong1": "orgánicos, sin etiquetas de excesos ",
+      "part2": "y ",
+      "strong2": "100% Colombianos"
+    },
+    "button": "Conoce nuestros productos"
+  }
 }

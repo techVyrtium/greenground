@@ -1,19 +1,28 @@
+'use client'
 import { getAllProducts } from "@/services/getAllProducts";
 import ProductCard from "./products/productCard";
 import Link from "next/link";
 import Image from "next/image";
-const TopProduct = async ({ locale }) => {
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+const TopProduct = ({ locale }) => {
+  const t = useTranslations('topProducts');
+  const [products, setProducts] = useState([]);
   const data = [
     {
-      title: "TOP",
-      title2: "PRODUCTOS",
-      text: "Participamos como una de las empresas donantes y voluntarias hacia la comunidad de la Esperanza en la Guajira Colombiana, donde a través de donativos se instauró un tanque de agua que va a mejorar la calidad de vida de 100 familias, con un sistema de agua con capacidad de 10.000 litros que provisiona las necesidades hídricas de esta población.",
-      // text: "We participate as one of the donor and volunteer companies towards the Esperanza community in the Colombian Guajira, where through donations a water tank was established that will improve the quality of life of 100 families, with a water system with a capacity of 10,000 liters that provides the water needs of this population."
+      title: t('title'),
+      title2: t('title2'),
+      text: t('text'),
     },
   ];
 
   const tag = "Top";
-  const products = await getAllProducts(locale);
+  useEffect(() => {
+    (async () => {
+      setProducts(await getAllProducts(locale));
+    })();
+  }, [])
+
   const productsMap = Object.entries(products).map(([slug, product]) => ({
     slug,
     ...product,
@@ -60,7 +69,7 @@ const TopProduct = async ({ locale }) => {
           href={`/products`}
           className="block bg-[#FFB000] text-[clamp(18px,1.25vw,24px)] md:text-[16px] lg:text-[20px] cursor-pointer text-white px-6 py-4 rounded-md font-bold leading-4 max-w-[36rem] w-[86%] md:w-[31.5rem] text-center h-12 absolute md:-bottom-6 right-[clamp(1rem,5.3vw,8rem)]"
         >
-          Consulta nuestro catalogo
+          {t('button')}
           <Image
             src={"/home/cursor.svg"}
             width={60}

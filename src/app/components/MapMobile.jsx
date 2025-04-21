@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 export const MapMobile = () => {
     const globalAnimation = {
         offscreen: { opacity: 1 },
@@ -44,6 +45,7 @@ export const MapMobile = () => {
         onscreen: { opacity: 1, y: 0 },
         exit: { opacity: 0, },
     }
+    const t = useTranslations('mobileMap');
     return (
         <section className="w-full relative h-[37rem] my-20 md:hidden">
             <AnimatePresence mode="wait">
@@ -66,7 +68,7 @@ export const MapMobile = () => {
                         className="text-[#157548] text-[clamp(28px,1.75vw,48px)] leading-[1.1] font-itcGBook p-4 relative z-20"
                     >
 
-                        Hemos <span className="font-itcGBold">conquistado</span> el globo <span className="font-itcGBold">con nuestros productos</span>
+                        {t('title.part1')} <span className="font-itcGBold">{t('title.strong1')}</span>{t('title.part2')}<span className="font-itcGBold">{t('title.strong2')}</span>
                     </motion.h2>
                     <div className="absolute h-[30rem] max-w-full top-0">
                         <motion.div
@@ -121,10 +123,13 @@ export const MapMobile = () => {
 
                         <div className="flex flex-col w-[max(16rem,50vw)] items-end justify-end gap-4">
                             <p className="text-[max(13px,3vw)] w-fit font-itcGBook text-[#137E1A] text-right leading-[min(1.3rem,3.5vw)] max-[390px]:leading-[min(1.3rem,3.5vw)]">
-                                Somos comercializadores internacionales con exportaciones efectivas alrededor de <span className="font-bold font-itcGBold">20 países</span> en mercados de América, Europa y Oceanía
+                                {t('text.part1')} <span className="font-bold font-itcGBold">{t('text.strong1')}</span>{t('text.part2')}
                             </p>
-                            <Link href={'/'} className="bg-[#157548] text-[#FEF8F1] font-bold p-3 rounded w-full inline-block text-center">
-                                Descarga el Flyer
+                            <Link
+                                href={'/TC-GREEN-GROUND-DISEÑO-DE-FLYER-INGLÉS-OL.pdf'}
+                                download='TC-GREEN-GROUND-DISEÑO-DE-FLYER-INGLÉS-OL'
+                                className="bg-[#157548] text-[#FEF8F1] font-bold p-3 rounded w-full inline-block text-center">
+                                {t('flyer')}
                             </Link>
                         </div>
 

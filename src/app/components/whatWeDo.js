@@ -31,13 +31,14 @@ export default function WhatWeDo() {
   }
   const data = [
     {
-      title: "AHORA MÁS CERCA DE TI",
+      title: t('red.title'),
       text: (
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-white">
-            Encuentra nuestros productos <span className=" font-bold">Green ground </span>
-            en <span className="font-bold">tiendas ara</span> y abre las puertas
-            de tu casa al <span className=" font-bold">sabor de la tradición.</span>
+            {t('red.text.part1')} <span className=" font-bold">{t('red.text.strong1')}</span>
+            {t('red.text.part2')} <span className="font-bold">{t('red.text.strong2')}</span>
+            {t('red.text.part3')}
+            <span className=" font-bold">{t('red.text.strong3')}</span>
           </p>
         </>
       ),
@@ -46,20 +47,21 @@ export default function WhatWeDo() {
 
   const data2 = [
     {
-      title: "BOCADO",
-      title2: "Tradición en cada",
+      title: t('yellow.title'),
+      title2: t('yellow.title2'),
       text: (
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-left">
-            Conoce nuestros productos{" "}
+            {t('yellow.text.part1')}
             <span className="font-bold">
-              orgánicos, sin etiquetas de excesos{" "}
+              {t('yellow.text.strong1')}
             </span>
-            y <span className="font-bold">100% Colombianos</span>
+            {t('yellow.text.part2')}
+            <span className="font-bold">{t('yellow.text.strong2')}</span>
           </p>
         </>
       ),
-      button: "Conoce nuestros productos",
+      button: t('yellow.button'),
     },
   ];
 
@@ -226,14 +228,14 @@ export default function WhatWeDo() {
                 initial={{ opacity: 1, y: 160 }}
                 whileInView={{
                   opacity: 1,
-                  y: 10,
+                  y: 0,
                   transition: {
                     duration: 0.5,
                     delay: 1,
                   },
                 }}
                 src="/home/tajadas.png"
-                className="lg:w-[min(33vw,600px)] h-[700px] z-10 -mx-12"
+                className="lg:w-[min(33vw,600px)] h-[auto] z-10 -mx-12"
               />
 
               <motion.img
@@ -272,7 +274,7 @@ export default function WhatWeDo() {
                 />
                 <img
                   src="/home/MICICON-green.png"
-                  className="md:w-[136px] w-[120px] lg:w-[min(15vw,350px)]"
+                  className="md:w-[136px] w-[120px] lg:w-[min(17vw,350px)]"
                 />
                 <img
                   src="/home/READYICON-green.png"
@@ -442,7 +444,7 @@ export default function WhatWeDo() {
         </div>
         {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
       </div>
-      
+
       <div
         className="py-[95px] px-[clamp(1rem,5vw,6rem)] relative"
         onMouseOver={() => SetViewBotom(false)}
