@@ -47,7 +47,7 @@ export const MapMobile = () => {
     }
     const t = useTranslations('mobileMap');
     return (
-        <section className="w-full relative h-[37rem] my-20 md:hidden">
+        <section className="w-full relative h-[37rem] md:hidden">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={`animation-map`}
