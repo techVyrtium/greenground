@@ -45,9 +45,9 @@ export default function Blog() {
       <div className="peg w-6 h-6 absolute -top-20" id="blog"></div>
       {/* Zona Orange */}
       <div className="h-full w-full bg-[url(/home/bg-yellow.png)] bg-cover bg-no-repeat">
-        <div className="px-[clamp(1rem,5vw,6rem)] ">
+        <div className="px-[clamp(1rem,5vw,6rem)]">
           <div className="flex flex-col lg:flex-row lg:items-center gap-4 w-full mx-auto h-full pt-4 pb-10">
-            <div className="relative flex items-center h-full mt-4 ">
+            <div className="relative flex items-center h-full md:mt-4 mt-8">
               {/* Imagen a la izquierda */}
               <div className="absolute w-fit h-full -top-6">
                 <img
