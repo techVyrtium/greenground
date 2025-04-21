@@ -52,7 +52,7 @@ export function CategoryLeft() {
 
             {category.subcategories.length > 0 && (
               <ul
-                className={`overflow-hidden transition-all duration-300 ${expandedCategories[category.name] ? "max-h-96" : "max-h-0"
+                className={`overflow-hidden transition-all duration-300 ${expandedCategories[category.name] ? "" : "max-h-0"
                   }`}
               >
                 {category.subcategories.map((subcat) => (
