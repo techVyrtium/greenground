@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export default function ResponsibleCompany() {
   const ref = useRef(null);
   const [animationKey,] = useState(0);
-  // const t = useTranslations('responsableCompany');
+  const t = useTranslations('responsableCompany');
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -69,12 +69,12 @@ export default function ResponsibleCompany() {
             style={{ fontSize: "clamp(20px, 3vw, 48px)" }}
           >
             <p className=" text-[#008E4A] font-[700] leading-tight mb-0">
-              Somos una empresa
-              {/* {t('text1')} */}
+              {/* Somos una empresa */}
+              {t('text1')}
             </p>
             <p className=" text-[#008E4A] font-[700] leading-tight md:mt-[-4px]">
-              Socialmente Responsable
-              {/* {t('text2')} */}
+              {/* Socialmente Responsable */}
+              {t('text2')}
             </p>
           </motion.div>
 
@@ -90,8 +90,8 @@ export default function ResponsibleCompany() {
             style={{ fontSize: "clamp(26px, 4.5vw, 64px)" }}
           >
             <p className="text-white font-[700] leading-tight">
-              Amigable con el
-              {/* {t('text3')} */}
+              {/* Amigable con el */}
+              {t('text3')}
             </p>
           </motion.div>
 
@@ -106,8 +106,8 @@ export default function ResponsibleCompany() {
             style={{ fontSize: "clamp(33px, 8vw, 128px)" }}
           >
             <p className="text-white font-[700] leading-tight">
-              Medio Ambiente
-              {/* {t('text4')} */}
+              {/* Medio Ambiente */}
+              {t('text4')}
             </p>
           </motion.div>
 
@@ -122,8 +122,8 @@ export default function ResponsibleCompany() {
             style={{ fontSize: "clamp(26px, 4.5vw, 64px)" }}
           >
             <p className="text-[#B52C17] font-[700] leading-tight">
-              Y comercio justo
-              {/* {t('text5')} */}
+              {/* Y comercio justo */}
+              {t('text5')}
             </p>
           </motion.div>
         </motion.div>

@@ -1,4 +1,26 @@
 {
-  "title": "Qué<br />hacemos",
-  "text": "Productora Agrícola AG CI SAS, hace parte de la industria de procesamiento, comercialización y distribución de alimentos secos y congelados en el mercado colombiano e internacional. Con nuestros productos queremos difundir la tradición culinaria latinoamericana a través de alimentos con valor agregado."
+  "title": "Qué<br/>hacemos",
+  "text": "Productora Agrícola AG CI SAS, hace parte de la industria de procesamiento, comercialización y distribución de alimentos secos y congelados en el mercado colombiano e internacional. Con nuestros productos queremos difundir la tradición culinaria latinoamericana a través de alimentos con valor agregado.",
+  "red": {
+    "title": "AHORA MÁS CERCA DE TI",
+    "text": {
+      "part1": "Encuentra nuestros productos ",
+      "strong1": "Green ground ",
+      "part2": "en ",
+      "strong2": "tiendas ara ",
+      "part3": "y abre las puertas de tu casa al ",
+      "strong3": "sabor de la tradición."
+    }
+  },
+  "yellow": {
+    "title": "BOCADO",
+    "title2": "Tradición en cada",
+    "text": {
+      "part1": "Conoce nuestros productos ",
+      "strong1": "orgánicos, sin etiquetas de excesos ",
+      "part2": "y ",
+      "strong2": "100% Colombianos"
+    },
+    "button": "Conoce nuestros productos"
+  }
 }

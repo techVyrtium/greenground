@@ -1,20 +1,21 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 export default function OurQuality() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const t = useTranslations('ourQuality');
   const data = [
     {
       title: (
         <>
           <h2 className="text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4vw,96px)] font-bold text-white mb-12 leading-[0.9]">
-            Nuestra calidad
+            {t('title')}
           </h2>
         </>
       ),
-      text: "Contamos con una planta física adecuada para el almacenamiento y distribución. Nuestro personal esta capacitado en localizar aquellos productos que sean de su interés, bajo un plan logístico de excelencia.",
-      text2:
-        "Nuestro éxito radica en atender nuestras operaciones desde la compra hasta la comercialización internacional. Trabajamos con proveedores que cumplen con buenas prácticas de manufactura y agrícola para obtener una materia prima, insumos y servicios con altos estándares, lo cual nos asegure alimentos de alta calidad ",
+      text: t('text'),
+      text2: t('text2'),
     },
   ];
 
