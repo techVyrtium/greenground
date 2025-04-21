@@ -1,15 +1,17 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export default function OurCertificate() {
+  const t = useTranslations('ourCertificate');
   const data = [
     {
       id: 1,
-      text: "Las auditorias son realizadas en nuestra locación anualmente.",
+      text: t('text'),
       img: "/home/Calendar.png",
     },
     {
       id: 2,
-      text: "Contamos con la aprobación de los programas FSMA por parte de la inspección FDA.",
+      text: t('text2'),
       img: "/home/Approve.png",
     },
   ];
@@ -21,7 +23,7 @@ export default function OurCertificate() {
           <h2
             className={`text-[clamp(40px,6vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-[#008638]  leading-[0.8] font-itcGBold max-[378px]:text-[10vw]`}
           >
-            Nuestras certificaciones
+            {t('title')}
           </h2>
         </>
       ),

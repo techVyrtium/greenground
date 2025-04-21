@@ -1,8 +1,7 @@
 import { CategoryLeft } from "@/app/components/products/categoryLeft";
 import { FilterProducts } from "@/app/components/products/FilterProducts";
-import ProductGrid from "@/app/components/products/productsGrid";
 import { getAllProducts } from "@/services/getAllProducts";
-import { FiSearch } from "react-icons/fi";
+
 export const generateMetadata = async ({ params }) => {
   const { slug } = await params;
   return {

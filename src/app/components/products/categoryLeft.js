@@ -41,7 +41,7 @@ export function CategoryLeft() {
               role="button"
               aria-expanded={expandedCategories[category.name]}
             >
-              <span className="text-[#4A4A4A]">{category.name}</span>
+              {category.subcategories.length > 0 ? <span className="text-[#4A4A4A]">{category.name}</span> : <Link href={`/products/category/${category.name}`} className="text-[#4A4A4A] inline-block w-full h-full">{category.name}</Link>}
               {category.subcategories.length > 0 &&
                 (expandedCategories[category.name] ? (
                   <LuChevronUp className="h-4 w-4 text-[#4A4A4A]" />
@@ -60,9 +60,10 @@ export function CategoryLeft() {
                     key={subcat}
                     className="pl-6 p-2 hover:bg-gray-100 cursor-pointer text-sm text-[#4A4A4A] text-[16px] 2xl:text-[24px]"
                   >
-                    <Link href={`/products/category/${category.name}?subcategory=${subcat}`}>{subcat}</Link>
+                    <Link className='w-full h-full inline-block' href={`/products/category/${category.name}?subcategory=${subcat}`}>{subcat}</Link>
                   </li>
-                ))}
+                )
+                )}
               </ul>
             )}
           </li>

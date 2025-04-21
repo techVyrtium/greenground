@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useModal } from "@/app/hooks/useModal";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
   const { toggleModal } = useModal();
-
+  const t = useTranslations('captureWorldOur');
   // Variables para la duración de las animaciones
   // const videoAnimationDuration = 0.5; // Duración en segundos
   const videoAnimationDuration = 0;
@@ -68,18 +69,15 @@ export default function CaptureWorldOur() {
 
   const data = [
     {
-      title: "Conquista el mundo con Nosotros",
+      title: t('title'),
       text: (
         <>
           <p className="text-justify text-[#5C6E79] font-bold leading-[1.3] font-itcGBook text-[clamp(22px,1.45vw,28px)]">
-            Está es tu oportunidad de llegar con tu negocio a todos los rincones
-            del globo, con nuestros{" "}
+            {t('text1.part1')}
             <span className={` font-[700] font-itcGBold`}>
-              productos de alta calidad y 100% Colombianos
+              {t('text1.strong1')}
             </span>
-            , además puedes expandir tu marca con nuestra alianza de Maquila,
-            donde puedes adquirir nuestros productos y llegar así a más
-            clientes.
+            {t('text1.part2')}
           </p>
         </>
       ),
@@ -90,15 +88,14 @@ export default function CaptureWorldOur() {
               `text-[#5C6E79] font-[700] font-itcGBold text-[1rem]`
             }
           >
-            Pon tu logo en nuestros productos,
+            {t('text2.part1')}
             <span className="inline-block">
-              o distribúyelos alrededor del
-              mundo
+              {t('text2.part2')}
             </span>
           </p>
         </>
       ),
-      button: "Distribuye con nosotros",
+      button: t('button'),
     },
   ];
 
