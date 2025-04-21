@@ -125,12 +125,12 @@ export const MapMobile = () => {
                             <p className="text-[max(13px,3vw)] w-fit font-itcGBook text-[#137E1A] text-right leading-[min(1.3rem,3.5vw)] max-[390px]:leading-[min(1.3rem,3.5vw)]">
                                 {t('text.part1')} <span className="font-bold font-itcGBold">{t('text.strong1')}</span>{t('text.part2')}
                             </p>
-                            <Link
+                            <a
                                 href={'/TC-GREEN-GROUND-DISEÑO-DE-FLYER-INGLÉS-OL.pdf'}
-                                download='TC-GREEN-GROUND-DISEÑO-DE-FLYER-INGLÉS-OL'
+                                download
                                 className="bg-[#157548] text-[#FEF8F1] font-bold p-3 rounded w-full inline-block text-center">
                                 {t('flyer')}
-                            </Link>
+                            </a>
                         </div>
 
                     </motion.div>
