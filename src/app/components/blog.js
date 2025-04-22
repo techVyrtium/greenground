@@ -1,6 +1,9 @@
+'use client'
+import { useTranslations } from "next-intl";
 import RecetNews from "./recetNews";
 
 export default function Blog() {
+  const t = useTranslations('blog');
   const data = [
     {
       title: (
@@ -8,22 +11,22 @@ export default function Blog() {
           <h2
             className={`text-[clamp(70px,9vw,96px)] xl:text-[clamp(70px,4.5vw,96px)] font-bold text-white mb-0 leading-[1] font-itcGBold`}
           >
-            Blog
+            {t('title')}
           </h2>
         </>
       ),
       text: (
         <>
           <p className="text-[26px] text-white leading-[1.8rem]">
-            Descubre{" "}
-            <span className=" font-bold">recetas fáciles y deliciosas </span>,
-            las{" "}
+            {t('text1.part1')}
+            <span className=" font-bold">{t('text1.strong1')}</span>
+            {t('text1.part2')}
             <span className=" font-bold">
-              últimas tendencias en alimentación{" "}
+              {t('text1.strong2')}
             </span>
-            saludable y nuestro{" "}
+            {t('text1.part3')}
             <span className=" font-bold">
-              compromiso con la sostenibilidad.
+              {t('text1.strong3')}
             </span>
           </p>
         </>
@@ -33,7 +36,7 @@ export default function Blog() {
           <p
             className={`text-[26px] text-white leading-relaxed font-bold font-itcGBold`}
           >
-            Inspírate, cocina y disfruta con nosotros.
+            {t('text2')}
           </p>
         </>
       ),

@@ -1,9 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 export default function OurCommitWomen() {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const t = useTranslations('ourCommitWomen');
   const dataimg = [
     {
       id: 1,
@@ -26,12 +27,12 @@ export default function OurCommitWomen() {
           <h2
             className={`text-[clamp(40px,6vw,70px)] font-bold text-[#008638] mb-12 leading-[0.98] font-itcGBold`}
           >
-            Nuestro compromiso
-            <span className="inline-block">es con las mujeres</span>
+            {t('title.part1')}
+            <span className="inline-block">{t('title.strong1')}</span>
           </h2>
         </>
       ),
-      text: "Queremos retribuir a la sociedad apoyando diferentes comunidades y fundaciones, además nuestra política de empleo se basa en la contratación de mujeres cabeza de hogar equivalente a un 80% de nuestro personal.",
+      text: t('text'),
     },
   ];
 

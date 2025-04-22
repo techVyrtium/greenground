@@ -1,14 +1,19 @@
+'use client'
+
+import { useTranslations } from "next-intl";
+
 export default function OurCommit() {
+  const t = useTranslations('ourCommit');
   const data = [
     {
       title: (
         <>
           <h2 className={`text-[clamp(38px,5.5vw,96px)] font-bold text-white mb-12 leading-[0.8] w-fit font-itcGBold`}>
-            Nuestro compromiso
+            {t('title')}
           </h2>
         </>
       ),
-      text: "Participamos como una de las empresas donantes y voluntarias hacia la comunidad de la Esperanza en la Guajira Colombiana, donde a través de donativos se instauró un tanque de agua que va a mejorar la calidad de vida de 100 familias, con un sistema de agua con capacidad de 10.000 litros que provisiona las necesidades hídricas de esta población.",
+      text: t('text'),
     },
   ];
   return (

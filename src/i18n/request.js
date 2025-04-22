@@ -36,6 +36,7 @@ export default getRequestConfig(async () => {
       captureWorldOur: await loadMessages("captureWorldOur"),
       ourCertificate: await loadMessages("ourCertificate"),
       // home: await loadMessages("home"),
+      blog: await loadMessages('blog'),
       footer: await loadMessages("footer"),
       news: await loadMessages("news"),
       detallenews: await loadMessages("detallenews"),
