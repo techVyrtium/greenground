@@ -48,7 +48,7 @@ export default async function RootLayout({ children }) {
       </head>
       <body className="max-w-[1920px] mx-auto">
         <NextIntlClientProvider>
-          <TopNavHero locale={locale} />
+          <TopNavHero />
           {children}
           <Footer />
           <ModalContainer />
