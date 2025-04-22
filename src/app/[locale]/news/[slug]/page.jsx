@@ -3,13 +3,18 @@ import RecetNews from "@/app/components/recetNews";
 import { getAllSlugNewsByLocale } from "@/services/getAllSlugNewsByLocale";
 import { getNew } from "@/services/getNew";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export const dynamic = 'force-static';
 
 export const generateMetadata = async ({ params }) => {
   const { slug, locale } = await params;
-  const { image, title, owner, content, sections } = await getNew({ locale, slug });
+  const currentNew = await getNew({ locale, slug });
+  if (!currentNew)
+    notFound();
+  const { slug: currentSlug, image, title, owner, content, sections } = currentNew.new;
+  if (currentNew.auxiliar)
+    redirect(`/${locale}/news/${currentSlug}`);
   const description = content[0]?.text ?? sections[0]?.text ?? title;
   return {
     title: `New: ${title}`,
@@ -61,17 +66,17 @@ export async function generateStaticParams() {
 }
 export default async function News({ params }) {
   const { locale, slug } = await params;
-  const news = await getNew({ locale, slug });
-  if (!news)
+  const currentNew = await getNew({ locale, slug });
+  if (!currentNew)
     notFound();
-  const { image, content = [], owner, sections = [], title } = await getNew({ locale, slug });
+  const { image, content = [], owner, sections = [], title } = currentNew.new;
   return (
     <div className="w-11/12 m-auto lg:w-auto lg:mx-28 mt-24">
       <h2 className="text-[38px] text-[#008638] font-itcGBold leading-12 lg:leading-12 md:text-[3.5vw] lg:text-[38px] md:leading-8 mb-4">
         {title}
       </h2>
       <p className="my-4 text-[22px] text-[#008638] leading-[1.6rem]">
-        Articulo publicado en {owner}
+        {locale === 'es' ? "Articulo publicado en" : "Article published in"} {owner}
       </p>
 
       <Image
@@ -110,7 +115,7 @@ export default async function News({ params }) {
         ))
       }
       <h2 className="my-4 text-[38px] text-[#008638] font-itcGBold leading-12 lg:leading-12 md:text-[3.5vw] lg:text-[38px] md:leading-8">
-        Consulta más artículos o recetas
+        {locale === 'es' ? 'Consulta más artículos o recetas' : 'Check out more articles or recipes'}
       </h2>
       <RecetNews tipo="actualidad" existPadding={false} />
     </div>

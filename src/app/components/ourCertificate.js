@@ -8,11 +8,13 @@ export default function OurCertificate() {
       id: 1,
       text: t('text'),
       img: "/home/Calendar.png",
+      className: `md:w-[170px]`
     },
     {
       id: 2,
       text: t('text2'),
       img: "/home/Approve.png",
+      className: `md:w-[200px]`
     },
   ];
 
@@ -49,8 +51,8 @@ export default function OurCertificate() {
             <div className="lg:w-1/2 w-full" key={dato.id}>
               <div className="w-full h-full flex flex-col">
                 <div className="flex-grow flex items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400 px-6 min-h-[80px]">
-                  <div className="">
-                    <img src={dato.img} className="md:w-[200px] w-[100px]" />
+                  <div>
+                    <img src={dato.img} className={`${dato.className ?? ''} w-[100px]`} />
                   </div>
                   <div className="ml-8">
                     <p className="text-[max(1rem,3.8vw)] leading-[1.5rem] md:text-[36px] text-white text-center md:leading-8 font-bold py-4">
