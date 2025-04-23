@@ -25,7 +25,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, changeLanguage
             setMenuOpen(false); // Cerrar el menú después de hacer clic
         }
     };
-    
+
     const close = (e) => {
         const { classList } = e.target;
         const isDropdown = classList.contains(`sidebar-dropdown-${id}`);
@@ -35,7 +35,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, changeLanguage
     return (
         <section className={`lg:hidden fixed pt-4 h-screen rounded-b-2xl overflow-hidden text-white mt-0.5 ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'} right-0 top-19.5 z-10 transition- duration-200`} onClick={close} >
             <div className={`fixed bg-[#01010156] backdrop-blur-[20px] z-30 right-0 top-19.5 h-full ${menuOpen ? 'w-full md:w-1/2 sidebar' : 'w-0'}`}></div>
-            <div className={`relative z-40`}>
+            <div className={`relative z-40 ${menuOpen ? 'opacity-100' : 'opacity-0'}`}>
                 <ul className={`flex flex-col gap-4 text-3xl font-light items-end mr-4`} onClick={close}>
                     <li className="mb-8">
                         <Link href="/">
