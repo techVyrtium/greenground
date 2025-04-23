@@ -2,11 +2,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Yellowsm() {
   const cardTop = useRef();
   const [num, setNum] = useState(1);
-
+  const t = useTranslations("whatWeDo");
   useEffect(() => {
     const elemento = cardTop.current;
     const observer = new IntersectionObserver(
@@ -34,20 +35,21 @@ export default function Yellowsm() {
 
   const data2 = [
     {
-      title: "BOCADO",
-      title2: "Tradición en cada",
+      title: t('yellow.title'),
+      title2: t('yellow.title2'),
       text: (
         <>
-          <p className="lg:text-[30px] md:text-[24px] text-[24px]">
-            Conoce nuestros productos{" "}
+          <p className="text-[clamp(18px,2.5vw,28px)] text-left ">
+            {t('yellow.text.part1')}
             <span className=" font-bold">
-              orgánicos, sin etiquetas de excesos{" "}
+              {t('yellow.text.strong1')}
             </span>
-            y <span className=" font-bold">100% Colombianos</span>
+            {t('yellow.text.part2')}
+            <span className=" font-bold">{t('yellow.text.strong2')}</span>
           </p>
         </>
       ),
-      button: "Conoce nuestros productos",
+      button: t('button'),
     },
   ];
   return (
@@ -71,7 +73,7 @@ export default function Yellowsm() {
             {data2[0].title}
           </h1>
         </div>
-        <div className="w-full h-fit flex text-base mt-4">
+        <div className="w-full h-fit flex text-base mt-4 text-[#45AC36]">
           {data2[0].text}
         </div>
 

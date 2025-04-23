@@ -1,13 +1,15 @@
-export const ListType = Object.freeze(
-    {
-        ORDER: 1,
-        UNORDER: 2
-    }
+export const ListType = Object.freeze({
+    ORDER: 1,
+    UNORDER: 2
+}
 )
 export const news = {
     es: [
         {
             slug: "productora-agricola-ag-una-familia-de-exportacion",
+            auxiliarSlugs: {
+                en: 'productora-agricola-ag-an-exporting-family'
+            },
             title: "PRODUCTORA AGRÍCOLA AG, una familia de exportación",
             owner: 'Revista semana',
             image: "/news/revistasemana2card.png",
@@ -55,6 +57,9 @@ export const news = {
         },
         {
             slug: "green-ground",
+            auxiliarSlugs: {
+                en: 'green-ground'
+            },
             title: "Exportar trampolín para crecer.",
             owner: 'Juan Sebastián Santamaría Galán, gerente comercial Green Ground',
             description: "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
@@ -89,6 +94,10 @@ export const news = {
         },
         {
             id: "boom-congelados",
+            slug: 'boom-congelados',
+            auxiliarSlugs: {
+                en: "frozen-food-boom"
+            },
             title: "Boom de congelados.",
             owner: 'Juan Sebastián Santamaría, Gerente Comercial de Green Ground',
             description: "Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y manes, hoy salen más comidas de la nevera al fogón.",
@@ -181,6 +190,9 @@ export const news = {
     en: [
         {
             slug: "productora-agricola-ag-an-exporting-family",
+            auxiliarSlugs: {
+                es: "productora-agricola-ag-una-familia-de-exportacion"
+            },
             title: "Productora Agrícola AG, an Exporting Family",
             owner: 'Revista semana',
             image: "/news/revistasemana2card.png",
@@ -228,9 +240,10 @@ export const news = {
         },
         {
             slug: "green-ground",
+            auxiliarSlugs: { es: "green-ground" },
             title: "Green Ground: Exporting as a Stepping Stone for Growth",
             owner: 'Juan Sebastián Santamaría Galán, Commercial Manager, Green Ground.',
-            description: "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
+            description: "Five years ago, to graduate with a degree in business administration from Universidad Externado de Colombia, Juan Sebastián Santamaría made his degree project thinking about adding value to the family business, founded three decades earlier by his grandparents in Bogotá: selling vegetables.",
             image: "/news/GreenGroundcard.png",
             sections: [
                 {
@@ -263,6 +276,7 @@ export const news = {
         {
             id: "frozen-food-boom",
             slug: 'frozen-food-boom',
+            auxiliarSlugs: { es: "boom-congelados" },
             title: "Frozen Food Boom",
             owner: 'Juan Sebastián Santamaría Galán, Commercial Manager, Green Ground.',
             description: "Quarantines are driving the frozen food business, whose consumption is on the rise. From empanadas and pastries to sancochos and peanuts, more meals are now going from the freezer to the stove.",

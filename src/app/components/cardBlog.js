@@ -125,7 +125,7 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
                 </div>
               </div>
               <div className="flex w-full h-fit">
-                <Link href={`/${type}/${dato.slug}`} className="w-full">
+                <Link href={`/${locale}/${type}/${dato.slug}`} className="w-full">
                   <button
                     className={`mt-[16px] w-full text-center text-[#EFEBE7] cursor-pointer ${color
                       ? "bg-[#F19412] hover:bg-[#f19412e2]"

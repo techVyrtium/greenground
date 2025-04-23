@@ -56,6 +56,9 @@ export const recipes = {
         // },
         {
             slug: "cremoso-pure-de-yuca-y-queso-doble",
+            auxiliarSlugs: {
+                en: "creamy-yucca-and-double-cheese-puree"
+            },
             keywords: ["yuca"],
             title: "Cremoso Puré de Yuca y Queso Doble.",
             owner: 'Lina Montero',
@@ -100,6 +103,9 @@ export const recipes = {
         },
         {
             slug: "papa-criolla-crocante-salteada-con-mantequilla-y-romero",
+            auxiliarSlugs: {
+                en: "crispy-yellow-potatoes-sauteed-with-butter-and-rosemary"
+            },
             keywords: ["papa amarilla", "papa criolla"],
             title: "Papa Criolla Crocante Salteada con Mantequilla y Romero",
             description: "Prueba lo fácil que es cocinar una Papa Criolla Crocante Salteada con Mantequilla y Romero deliciosa con la Papa Criolla Precocida de Green Ground.",
@@ -140,6 +146,9 @@ export const recipes = {
         },
         {
             slug: "aborrajados-de-platano-maduro-con-queso",
+            auxiliarSlugs: {
+                en: "plantain-and-cheese-aborrajados"
+            },
             keywords: ["platano maduro"],
             title: "Aborrajados de plátano maduro con queso: receta fácil y rápida",
             owner: 'Lina Montero',
@@ -337,7 +346,10 @@ export const recipes = {
         //     recommendations: [],
         // },
         {
-            slug: "creamy-yucca-and-double-cheese-purée",
+            slug: "creamy-yucca-and-double-cheese-puree",
+            auxiliarSlugs: {
+                es: "cremoso-pure-de-yuca-y-queso-doble"
+            },
             keywords: ["Yucca"],
             title: "Creamy Yucca and Double Cheese Purée",
             owner: 'Lina Montero',
@@ -384,6 +396,9 @@ export const recipes = {
         },
         {
             slug: "crispy-yellow-potatoes-sauteed-with-butter-and-rosemary",
+            auxiliarSlugs: {
+                es: "papa-criolla-crocante-salteada-con-mantequilla-y-romero"
+            },
             title: "Crispy Yellow Potatoes Sautéed with Butter and Rosemary",
             keywords: ["Yellow Potato"],
             description: "Experience how easy it is to cook delicious Crispy Yellow Potatoes Sautéed with Butter and Rosemary using Green Ground Pre-Cooked Yellow Potatoes.",
@@ -424,6 +439,7 @@ export const recipes = {
         },
         {
             slug: "plantain-and-cheese-aborrajados",
+            auxiliarSlugs: { es: "aborrajados-de-platano-maduro-con-queso" },
             title: "Ripe plantain and cheese aborrajados: easy and quick recipe.",
             keywords: ["Ripe Plantain"],
             owner: 'Green Ground',
