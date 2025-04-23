@@ -51,15 +51,14 @@ export default function MapW2() {
         );
 
         if (!response.ok) throw new Error("Scene not found");
-        console.log(response.headers
-          .get("content-type"));
-        if (
-          !response.headers
-            .get("content-type")
-            ?.includes("application/octet-stream")
-        ) {
-          throw new Error("Invalid Spline file");
-        }
+        
+        // if (
+        //   !response.headers
+        //     .get("content-type")
+        //     ?.includes("application/octet-stream")
+        // ) {
+        //   throw new Error("Invalid Spline file");
+        // }
 
         setIsValidScene(true);
       } catch (error) {

@@ -8,7 +8,10 @@ const nextConfig = {
   //   appDir: true,
   // },
   images: {
-    domains: ["picsum.photos"],
+    remotePatterns: [
+      { hostname: 'picsum.photos' }
+    ],
+    // domains: ["picsum.photos"],
   },
 };
 
