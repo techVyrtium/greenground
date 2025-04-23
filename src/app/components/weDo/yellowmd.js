@@ -39,7 +39,7 @@ export default function Yellowmd() {
       title2: t('yellow.title2'),
       text: (
         <>
-          <p className="text-[clamp(18px,2.5vw,28px)] text-left ">
+          <p className="text-[clamp(18px,2.5vw,28px)] text-left">
             {t('yellow.text.part1')}
             <span className=" font-bold">
               {t('yellow.text.strong1')}
@@ -69,12 +69,12 @@ export default function Yellowmd() {
               {data2[0].title2}
             </h1>
             <h1
-              className={`text-[80px] font-bold leading-21 font-itcGBold`}
+              className={`text-[80px] font-bold leading-21 font-itcGBold text-[#45AC36]`}
             >
               {data2[0].title}
             </h1>
           </div>
-          <div className="w-1/4 mt-8">{data2[0].text}</div>
+          <div className="w-1/4 mt-8 text-[#45AC36]">{data2[0].text}</div>
         </div>
 
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">

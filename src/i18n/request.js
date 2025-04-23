@@ -6,7 +6,7 @@ export default getRequestConfig(async () => {
   const requestHeaders = await headers();
   const selectedLocale = requestHeaders.get("x-locale") || "es"; // ✅ Leer el idioma del middleware
 
-  console.log("Locale detectado:", selectedLocale); // Para depuración
+  console.log("Locale detectado (REQUEST):", selectedLocale); // Para depuración
 
   const loadMessages = async (section) => {
     try {

@@ -20,7 +20,7 @@ export async function middleware(req) {
   const requestHeaders = await req.headers;
   const selectedLocale = locale || "es"; // Aquí usas await para obtener los headers
 
-  console.log("Locale detectado:", selectedLocale); // Para depuración
+  console.log("Locale detectado (MIDDLEWARE):", selectedLocale); // Para depuración
 
   // Pasar el idioma a los headers
   const response = NextResponse.next();

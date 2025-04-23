@@ -73,7 +73,7 @@ export default function Yellowsm() {
             {data2[0].title}
           </h1>
         </div>
-        <div className="w-full h-fit flex text-base mt-4">
+        <div className="w-full h-fit flex text-base mt-4 text-[#45AC36]">
           {data2[0].text}
         </div>
 
