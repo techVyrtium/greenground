@@ -1,6 +1,6 @@
 "use client";
-import { useCallback, useRef, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -9,9 +9,9 @@ import { useModal } from "@/app/hooks/useModal";
 import { Siderbar } from "./sidebar";
 
 const CANT_LINKS_PRODUCTS = 4;
-export default function TopNavHero({ locale }) {
+export default function TopNavHero() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const { locale } = useParams();
   const { toggleModal } = useModal();
   const pathname = usePathname();
   const router = useRouter();
@@ -137,8 +137,8 @@ export default function TopNavHero({ locale }) {
         setMenuOpen={setMenuOpen}
         t={t}
         cantLinksProducts={CANT_LINKS_PRODUCTS}
-        locale={locale}
         toggleModal={toggleModal}
+        changeLanguage={changeLanguage}
       />
     </div>
   );

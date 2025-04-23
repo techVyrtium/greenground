@@ -1,6 +1,9 @@
 export const products = {
+    auxiliarSlugs: [],
     es: {
+
         "tajadas-de-platano-maduro": {
+            auxiliarSlugs: [],
             title: "Tajadas de platano maduro",
             subcategory: "Latinos premium",
             category: "Congelados",
@@ -16,6 +19,7 @@ export const products = {
             description: "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
         },
         "platano-verde-toston": {
+            auxiliarSlugs: [],
             title: "Platano verde tostón",
             subcategory: "Latinos premium",
             category: "Congelados",
@@ -31,6 +35,7 @@ export const products = {
             description: "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "platano-entero-verde": {
+            auxiliarSlugs: [],
             title: "Platano entero verde",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -46,6 +51,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "maduritos": {
+            auxiliarSlugs: [],
             title: "Maduritos",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -59,6 +65,7 @@ export const products = {
             description: ""
         },
         "ajiaco-precocido": {
+            auxiliarSlugs: [],
             title: "Ajiaco precocido",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -74,6 +81,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "arracacha": {
+            auxiliarSlugs: [],
             title: "Arracacha",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -88,6 +96,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "choclo-entero": {
+            auxiliarSlugs: [],
             title: "Choclo entero",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -102,6 +111,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "cubos-de-platano": {
+            auxiliarSlugs: [],
             title: "Cubos de platano",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -116,6 +126,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "guacamole": {
+            auxiliarSlugs: [],
             title: "Guacamole",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -130,6 +141,7 @@ export const products = {
             description: ""
         },
         "platano-entero-maduro": {
+            auxiliarSlugs: [],
             title: "Platano entero Maduro",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -145,6 +157,7 @@ export const products = {
             description: "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
         },
         "yuca-en-trozos": {
+            auxiliarSlugs: [],
             title: "Yuca en trozos",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -160,6 +173,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "papa-criolla-precocida": {
+            auxiliarSlugs: [],
             title: "Papa criolla precocida",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -175,6 +189,7 @@ export const products = {
             description: "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "sancocho-precocido": {
+            auxiliarSlugs: [],
             title: "Sancocho precocido",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -190,6 +205,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "toston-hawaiano": {
+            auxiliarSlugs: [],
             title: "Tostón Hawaiano",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -204,6 +220,7 @@ export const products = {
         },
 
         "garrafa-azucarada-de-guanabana": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Guanabana",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -217,6 +234,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-mora": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Mora",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -230,6 +248,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-mango": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de mango",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -243,6 +262,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-guayaba": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Guayaba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -256,6 +276,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-fresa": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Fresa",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -269,6 +290,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "pulpa-de-mango": {
+            auxiliarSlugs: [],
             title: "Pulpa de mango",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -282,6 +304,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-gunabana-en-mota": {
+            auxiliarSlugs: [],
             title: "Pulpa de Gunabana en mota",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -295,6 +318,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-maracuya-con-pepa": {
+            auxiliarSlugs: [],
             title: "Pulpa de maracuyá con pepa",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -308,6 +332,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "mora-entera": {
+            auxiliarSlugs: [],
             title: "Mora entera",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -321,6 +346,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "lulo-naranjillo-entero": {
+            auxiliarSlugs: [],
             title: "Lulo Naranjillo entero",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -334,6 +360,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "tomate-de-arbol-entero": {
+            auxiliarSlugs: [],
             title: "Tomate de árbol entero",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -347,6 +374,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "coco-rallado": {
+            auxiliarSlugs: [],
             title: "Coco rallado",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -360,6 +388,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-papaya": {
+            auxiliarSlugs: [],
             title: "Pulpa de Papaya",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -373,6 +402,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-tamarindo": {
+            auxiliarSlugs: [],
             title: "Pulpa de Tamarindo",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -386,6 +416,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "piña-en-trozos": {
+            auxiliarSlugs: [],
             title: "Piña en trozos",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -399,6 +430,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "guayaba-en-trozos": {
+            auxiliarSlugs: [],
             title: "Guayaba en trozos",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -412,6 +444,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-curuba": {
+            auxiliarSlugs: [],
             title: "Pulpa de Curuba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -425,6 +458,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pandebono-granel": {
+            auxiliarSlugs: [],
             title: "Pandebono Granel",
             subcategory: "Panaderia",
             category: "Congelados",
@@ -438,6 +472,7 @@ export const products = {
             description: "Presentación 80gr – Caja * 42"
         },
         "buñuelo-granel": {
+            auxiliarSlugs: [],
             title: "Buñuelo Granel",
             subcategory: "Panaderia",
             category: "Congelados",
@@ -452,6 +487,7 @@ export const products = {
             description: "Presentación 80gr – Caja * 42"
         },
         "almojabana-granel": {
+            auxiliarSlugs: [],
             title: "Almojábana Granel",
             subcategory: "Panaderia",
             category: "Congelados",
@@ -465,6 +501,7 @@ export const products = {
             description: "Presentación 80gr – Caja * 42"
         },
         "arepa-blanca": {
+            auxiliarSlugs: [],
             title: "Arepa Blanca",
             subcategory: "Arepas",
             category: "Congelados",
@@ -478,6 +515,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "arepa-campesina": {
+            auxiliarSlugs: [],
             title: "Arepa Campesina",
             subcategory: "Arepas",
             category: "Congelados",
@@ -491,6 +529,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "arepa-de-yuca": {
+            auxiliarSlugs: [],
             title: "Arepa de Yuca",
             subcategory: "Arepas",
             category: "Congelados",
@@ -504,6 +543,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "harina-pan": {
+            auxiliarSlugs: [],
             title: "Harina Pan",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -519,6 +559,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "harina-la-nieve-y-masapan": {
+            auxiliarSlugs: [],
             title: "Harina la nieve y Masapán",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -532,6 +573,7 @@ export const products = {
             description: "* 1 kg / Caja x 20 uds"
         },
         "harina-arepasan-blanca": {
+            auxiliarSlugs: [],
             title: "Harina Arepasan blanca",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -545,6 +587,7 @@ export const products = {
             description: "* 1 kg / Caja x 20 uds"
         },
         "harina-bellini": {
+            auxiliarSlugs: [],
             title: "Harina Bellini",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -558,6 +601,7 @@ export const products = {
             description: "Blanca y amarilla. 1 kg / Paca 20 uds."
         },
         "harina-campesina": {
+            auxiliarSlugs: [],
             title: "Harina Campesina",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -571,6 +615,7 @@ export const products = {
             description: "* 1 kg / Caja x 20 uds"
         },
         "natilla-maizena": {
+            auxiliarSlugs: [],
             title: "Natilla Maizena",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -584,6 +629,7 @@ export const products = {
             description: "* 350 g / Caja x 20 uds"
         },
         "buñuelos-maizena": {
+            auxiliarSlugs: [],
             title: "Buñuelos Maizena",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -597,6 +643,7 @@ export const products = {
             description: "* 350 g / Caja x 20 uds"
         },
         "buñuelos-colmaiz": {
+            auxiliarSlugs: [],
             title: "Buñuelos Colmaiz",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -610,6 +657,7 @@ export const products = {
             description: "* 1 kg / Saco 25kg"
         },
         "colmaiz-almojabana,-pandeyuca,-pandebono": {
+            auxiliarSlugs: [],
             title: "Colmaiz Almojábana, Pandeyuca, pandebono",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -625,6 +673,7 @@ export const products = {
             description: "* 1 kg / Saco 25kg"
         },
         "expandex-almidones-de-yuca-agrio": {
+            auxiliarSlugs: [],
             title: "Expandex Almidones de yuca agrio",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -638,6 +687,7 @@ export const products = {
             description: "* 1 kg / Saco 25kg"
         },
         "frijol-bola-roja-cargamanto": {
+            auxiliarSlugs: [],
             title: "Frijol bola roja / cargamanto",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -651,6 +701,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "maiz-pira": {
+            auxiliarSlugs: [],
             title: "Maiz pira",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -664,6 +715,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "lenteja": {
+            auxiliarSlugs: [],
             title: "Lenteja",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -677,6 +729,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "arveja-verde-y-amarilla": {
+            auxiliarSlugs: [],
             title: "Arveja verde y amarilla",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -691,6 +744,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "cuchuco-amarillo-y-blanco": {
+            auxiliarSlugs: [],
             title: "Cuchuco amarillo y blanco",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -704,6 +758,7 @@ export const products = {
             description: "* Saco 12,5kg / Grueso – Delgado"
         },
         "mazamorra-blanca-y-amarilla": {
+            auxiliarSlugs: [],
             title: "Mazamorra blanca y amarilla",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -718,6 +773,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "salsa-de-tomate-fruco": {
+            auxiliarSlugs: [],
             title: "Salsa de tomate fruco",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -731,6 +787,7 @@ export const products = {
             description: "* 250g – 400g / Caja x 24 uds"
         },
         "salsas-fruco-para-carnes-aji-inglesa-soya-china-y-negra": {
+            auxiliarSlugs: [],
             title: "Salsas fruco, para carnes, ají, inglesa, soya. china y negra",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -746,6 +803,7 @@ export const products = {
             description: "* 170 g / Caja x 24 uds"
         },
         "salsa-de-piña-la-constancia": {
+            auxiliarSlugs: [],
             title: "Salsa de piña La Constancia",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -759,6 +817,7 @@ export const products = {
             description: "* 200g / Caja x 24 uds"
         },
         "salsa-de-guayaba-la-constancia": {
+            auxiliarSlugs: [],
             title: "Salsa de Guayaba La constancia",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -772,6 +831,7 @@ export const products = {
             description: "* 200g / Caja x 24 uds"
         },
         "conserva-de-salmuera-de-chontaduro": {
+            auxiliarSlugs: [],
             title: "Conserva de salmuera de Chontaduro",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -785,6 +845,7 @@ export const products = {
             description: "* 790 g / Caja x 12 uds"
         },
         "jalea-de-borojo": {
+            auxiliarSlugs: [],
             title: "Jalea de Borojó",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -798,6 +859,7 @@ export const products = {
             description: "* 500 gr / Caja x 12 uds"
         },
         "brevas-en-almivar": {
+            auxiliarSlugs: [],
             title: "Brevas en Almivar",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -811,6 +873,7 @@ export const products = {
             description: "* 790 g / Caja x 12 uds"
         },
         "jalea-de-borojo-con-chontaduro": {
+            auxiliarSlugs: [],
             title: "Jalea de Borojó con chontaduro",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -824,6 +887,7 @@ export const products = {
             description: "*  500 gr / Caja x 12 uds"
         },
         "brevas-la-constancia": {
+            auxiliarSlugs: [],
             title: "Brevas la Constancia",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -837,6 +901,7 @@ export const products = {
             description: "* 600 g / Caja x 24 uds"
         },
         "guanabana-en-conserva": {
+            auxiliarSlugs: [],
             title: "Guanabana en conserva",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -850,6 +915,7 @@ export const products = {
             description: "18 uds. x 200 g / Caja 36 displays"
         },
         "cafe-sello-rojo": {
+            auxiliarSlugs: [],
             title: "Café Sello Rojo",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -863,6 +929,7 @@ export const products = {
             description: "* 250g – 500g / Caja x 48 uds"
         },
         "cafe-aguila-roja": {
+            auxiliarSlugs: [],
             title: "Café Águila Roja",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -876,6 +943,7 @@ export const products = {
             description: "* 250g – 500g / Caja x 48 uds"
         },
         "Chocolate-Corona": {
+            auxiliarSlugs: [],
             title: "Chocolate Corona",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -890,6 +958,7 @@ export const products = {
             description: "200 g / Caja 12 uds. - Instantáneo 250 g - 500 g / Caja 48 - 50 uds. - Tradicional"
         },
         "chocolisto": {
+            auxiliarSlugs: [],
             title: "Chocolisto",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -903,6 +972,7 @@ export const products = {
             description: "18 uds. x 25 g / Caja 36 displays"
         },
         "Milo": {
+            auxiliarSlugs: [],
             title: "Milo",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -917,6 +987,7 @@ export const products = {
             description: "200 g - 400 g / Caja 12 uds. - Tarro 250 g - 500 g / Caja 12 uds. - Doypack"
         },
         "luker": {
+            auxiliarSlugs: [],
             title: "Luker",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -930,6 +1001,7 @@ export const products = {
             description: "* 250g / Caja x 50 uds"
         },
         "sopas-magi": {
+            auxiliarSlugs: [],
             title: "Sopas Magi",
             subcategory: "Condimentos",
             category: "Abarrotes",
@@ -945,6 +1017,7 @@ export const products = {
             description: "Display 24 uds / Caja x 6 displays"
         },
         "triguisar": {
+            auxiliarSlugs: [],
             title: "Triguisar",
             subcategory: "Condimentos",
             category: "Abarrotes",
@@ -958,6 +1031,7 @@ export const products = {
             description: "*Display x 12 uds / Caja x 12 displays"
         },
         "guascas-kiska": {
+            auxiliarSlugs: [],
             title: "Guascas Kiska",
             subcategory: "Condimentos",
             category: "Abarrotes",
@@ -971,6 +1045,7 @@ export const products = {
             description: "*Display x 8 uds / Caja x 22 displays"
         },
         "esencia-sabor-leña--humo-leña": {
+            auxiliarSlugs: [],
             title: "Esencia sabor leña / humo leña",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -984,6 +1059,7 @@ export const products = {
             description: "*Display x 24 uds / Caja x 4 displays"
         },
         "tarrito-rojo-jgb": {
+            auxiliarSlugs: [],
             title: "Tarrito rojo JGB",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -997,6 +1073,7 @@ export const products = {
             description: "135 g / 48 uds."
         },
         "tintura-caramelo-levapan": {
+            auxiliarSlugs: [],
             title: "Tintura caramelo Levapan",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -1010,6 +1087,7 @@ export const products = {
             description: "* 60ml -500ml / Caja x 24 uds"
         },
         "esencias-levapan": {
+            auxiliarSlugs: [],
             title: "Esencias levapan",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -1025,6 +1103,7 @@ export const products = {
             description: "Vainilla, banano, canela, coco, mantequilla, piña, ponque. * 60ml -500ml / Caja x 24 uds"
         },
         "instaya-guanabana": {
+            auxiliarSlugs: [],
             title: "Instayá Guanabana",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1038,6 +1117,7 @@ export const products = {
             description: "*30g – Display x 8 uds / Caja x 8 displays"
         },
         "instaya-tropical": {
+            auxiliarSlugs: [],
             title: "Instayá Tropical",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1051,6 +1131,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-maracuya": {
+            auxiliarSlugs: [],
             title: "Instayá Maracuyá",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1064,6 +1145,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-mango": {
+            auxiliarSlugs: [],
             title: "Instayá Mango",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1077,6 +1159,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-fresa": {
+            auxiliarSlugs: [],
             title: "Instayá Fresa",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1090,6 +1173,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-naranja": {
+            auxiliarSlugs: [],
             title: "Instayá Naranja",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1103,6 +1187,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "cerveza-club-colombia": {
+            auxiliarSlugs: [],
             title: "Cerveza Club Colombia",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1116,6 +1201,7 @@ export const products = {
             description: "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
         },
         "cerveza-poker": {
+            auxiliarSlugs: [],
             title: "Cerveza Poker",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1129,6 +1215,7 @@ export const products = {
             description: "*330 ml / Caja x 30. Caja x 4 displays * 6 Uds"
         },
         "cerveza-costeña": {
+            auxiliarSlugs: [],
             title: "Cerveza Costeña",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1142,6 +1229,7 @@ export const products = {
             description: "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
         },
         "cerveza-aguila": {
+            auxiliarSlugs: [],
             title: "Cerveza Águila",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1155,6 +1243,7 @@ export const products = {
             description: "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds"
         },
         "cerveza-aguila-light": {
+            auxiliarSlugs: [],
             title: "Cerveza Águila Light",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1168,6 +1257,7 @@ export const products = {
             description: "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds"
         },
         "pony-malta-botella": {
+            auxiliarSlugs: [],
             title: "Pony malta botella",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1181,6 +1271,7 @@ export const products = {
             description: "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
         },
         "gaseosas-postobon": {
+            auxiliarSlugs: [],
             title: "Gaseosas Postobón",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1196,6 +1287,7 @@ export const products = {
             description: "*10 oz / Caja x 24"
         },
         "jugos-hit": {
+            auxiliarSlugs: [],
             title: "Jugos Hit",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -1211,6 +1303,7 @@ export const products = {
             description: "*237 ml / Caja x 24"
         },
         "avena-quacker-instantanea": {
+            auxiliarSlugs: [],
             title: "Avena Quacker instantánea",
             subcategory: "Avenas",
             category: "Abarrotes",
@@ -1226,6 +1319,7 @@ export const products = {
             description: "*300 g / Caja x 24"
         },
         "coladas-maizena": {
+            auxiliarSlugs: [],
             title: "Coladas Maizena",
             subcategory: "Avenas",
             category: "Abarrotes",
@@ -1241,6 +1335,7 @@ export const products = {
             description: "Arequipe, Vainilla, Fresa. / Display 18 uds. / Caja 12 displays"
         },
         "quipitos": {
+            auxiliarSlugs: [],
             title: "Quipitos",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1254,6 +1349,7 @@ export const products = {
             description: "Display 24 uds / Caja x 24 displays"
         },
         "menta-helada-colombina": {
+            auxiliarSlugs: [],
             title: "Menta helada colombina",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1267,6 +1363,7 @@ export const products = {
             description: "Bolsa 100 uds. / Caja 18 bolsas"
         },
         "menta-chao": {
+            auxiliarSlugs: [],
             title: "Menta Chao",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1280,6 +1377,7 @@ export const products = {
             description: "*Bolsa 100 x uds / Caja x 24 bolsas"
         },
         "sparkies": {
+            auxiliarSlugs: [],
             title: "Sparkies",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1293,6 +1391,7 @@ export const products = {
             description: "*Display 20 uds / Caja x 24 displays"
         },
         "coffe-delight-blando": {
+            auxiliarSlugs: [],
             title: "Coffe Delight Blando",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1306,6 +1405,7 @@ export const products = {
             description: "Bolsa 100 x uds / Caja x 18 bolsas"
         },
         "coffe-deligth-duro": {
+            auxiliarSlugs: [],
             title: "Coffe Deligth Duro",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1319,6 +1419,7 @@ export const products = {
             description: "Bolsa 100 x uds / Caja x 18 bolsas"
         },
         "arequipe-colombina": {
+            auxiliarSlugs: [],
             title: "Arequipe Colombina",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1332,6 +1433,7 @@ export const products = {
             description: "*Display 12 uds / Caja x 8 displays"
         },
         "chocolatina-jet": {
+            auxiliarSlugs: [],
             title: "Chocolatina Jet",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1345,6 +1447,7 @@ export const products = {
             description: "*Display 50 uds / Caja x 30 displays"
         },
         "frunas": {
+            auxiliarSlugs: [],
             title: "Frunas",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1358,6 +1461,7 @@ export const products = {
             description: "Display 32 unidades / Caja x 18 displays"
         },
         "chocolatina-jumbo-mani": {
+            auxiliarSlugs: [],
             title: "Chocolatina jumbo maní",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1371,6 +1475,7 @@ export const products = {
             description: "Bolsa x 12 unidades / Caja x 18 displays"
         },
         "turron-supercoco": {
+            auxiliarSlugs: [],
             title: "Turrón supercoco",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1384,6 +1489,7 @@ export const products = {
             description: "Bolsa x 100 unidades / Caja x 18 bolsas 24 unidades / Caja x 24 bolsas"
         },
         "super-barriletes": {
+            auxiliarSlugs: [],
             title: "Super Barriletes",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1397,6 +1503,7 @@ export const products = {
             description: "*Bolsas 50 uds / Caja x 18 displays"
         },
         "chiclets-menta-y-surtido": {
+            auxiliarSlugs: [],
             title: "Chiclets menta y surtido",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1411,6 +1518,7 @@ export const products = {
             description: "Display 20 unidades / Caja x 50 displays"
         },
         "bocadillo-rojo-en-tarro": {
+            auxiliarSlugs: [],
             title: "Bocadillo Rojo en tarro",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1424,6 +1532,7 @@ export const products = {
             description: "* 50 uds / Caja * 6 tarros"
         },
         "cernido-de-guayaba-levapan": {
+            auxiliarSlugs: [],
             title: "Cernido de Guayaba Levapan",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1437,6 +1546,7 @@ export const products = {
             description: "*Cernido 5 kg"
         },
         "dulce-de-guayaba-incauca": {
+            auxiliarSlugs: [],
             title: "Dulcé de Guayaba Incauca",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1450,6 +1560,7 @@ export const products = {
             description: "*Bolsa * 1 kg"
         },
         "bocadillo-doña-guayaba": {
+            auxiliarSlugs: [],
             title: "Bocadillo Doña guayaba",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1463,6 +1574,7 @@ export const products = {
             description: "*Bolsa *25 uds  / Caja *12 bolsas"
         },
         "obleas--arequipe-jace": {
+            auxiliarSlugs: [],
             title: "Obleas / Arequipe Jace",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1477,6 +1589,7 @@ export const products = {
             description: "Bolsa 24 uds. / Caja 16 bolsas"
         },
         "nucita-colombina": {
+            auxiliarSlugs: [],
             title: "Nucita Colombina",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1490,6 +1603,7 @@ export const products = {
             description: "*Display 12 uds / Caja x 8 displays"
         },
         "yogueta-fresa": {
+            auxiliarSlugs: [],
             title: "Yogueta Fresa",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1503,6 +1617,7 @@ export const products = {
             description: "*Bolsa 24 x uds / Caja x 16 bolsas"
         },
         "yogueta-suritda": {
+            auxiliarSlugs: [],
             title: "Yogueta Suritda",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1516,6 +1631,7 @@ export const products = {
             description: "*Bolsa 24 x uds / Caja x 16 bolsas"
         },
         "bon-bon-bum-surtido": {
+            auxiliarSlugs: [],
             title: "Bon bon bum surtido",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1529,6 +1645,7 @@ export const products = {
             description: "*Bolsa 24 x uds / Caja x 16 bolsas"
         },
         "caramelo-leche-bombonera": {
+            auxiliarSlugs: [],
             title: "Caramelo Leche Bombonera",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1542,6 +1659,7 @@ export const products = {
             description: "50 uds. 15 g c/u / 12 tarros"
         },
         "panelitas-leche-bombonera": {
+            auxiliarSlugs: [],
             title: "Panelitas Leche Bombonera",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1555,6 +1673,7 @@ export const products = {
             description: "50 uds. 15 g c/u / 12 tarros"
         },
         "cocadita-leche-bombonera": {
+            auxiliarSlugs: [],
             title: "Cocadita Leche Bombonera",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1568,6 +1687,7 @@ export const products = {
             description: "50 uds. 15 g c/u / 12 tarros"
         },
         "chocorramo": {
+            auxiliarSlugs: [],
             title: "Chocorramo",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1581,6 +1701,7 @@ export const products = {
             description: "65 g / Pqt. 5 uds. /Caja 44 Pqt."
         },
         "achiras-del-huila": {
+            auxiliarSlugs: [],
             title: "Achiras del huila",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1595,6 +1716,7 @@ export const products = {
             description: "Caja x 20 displays / 12 unidades"
         },
         "choclitos-limon": {
+            auxiliarSlugs: [],
             title: "Choclitos limón",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1608,6 +1730,7 @@ export const products = {
             description: "230g / Caja x 14 uds 27g * 12 uds / Caja x 8 bolsas"
         },
         "yupis-tradicional": {
+            auxiliarSlugs: [],
             title: "Yupis tradicional",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1621,6 +1744,7 @@ export const products = {
             description: "*60 g / Caja x 36"
         },
         "mani-moto": {
+            auxiliarSlugs: [],
             title: "Maní moto",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1634,6 +1758,7 @@ export const products = {
             description: "*Display 16 uds / Caja x 14 displays"
         },
         "snacky-caramelo": {
+            auxiliarSlugs: [],
             title: "Snacky Caramelo",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1647,6 +1772,7 @@ export const products = {
             description: ""
         },
         "maizistos-y-tostacos": {
+            auxiliarSlugs: [],
             title: "Maizistos y Tostacos",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1661,6 +1787,7 @@ export const products = {
             description: "* 30 g * 12 uds / Caja x 1 displays"
         },
         "saltin-noel": {
+            auxiliarSlugs: [],
             title: "Saltín Noel",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1675,6 +1802,7 @@ export const products = {
             description: "*Tritaco – 2 tacos – Queso Mantequilla"
         },
         "galleta-ducales": {
+            auxiliarSlugs: [],
             title: "Galleta ducales",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1688,6 +1816,7 @@ export const products = {
             description: "*Sabor Original"
         },
         "galleta-club-social": {
+            auxiliarSlugs: [],
             title: "Galleta Club Social",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1701,6 +1830,7 @@ export const products = {
             description: "*Bolsa  x 9 uds / Caja x 24 bolsas"
         },
         "de-todito": {
+            auxiliarSlugs: [],
             title: "De Todito",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1715,6 +1845,7 @@ export const products = {
             description: "* 45g * 6 uds / Caja x 6 displays"
         },
         "galleta-hony-bran": {
+            auxiliarSlugs: [],
             title: "Galleta Hony Bran",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1728,6 +1859,7 @@ export const products = {
             description: "297 g 24 display / 9 und"
         },
         "cocosette": {
+            auxiliarSlugs: [],
             title: "Cocosette",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1741,6 +1873,7 @@ export const products = {
             description: "*Display 6 uds (50g)/ Caja x 24 * 50 g * 12 pqts * 8 uds"
         },
         "natuchips-platano-maduro": {
+            auxiliarSlugs: [],
             title: "Natuchips Plátano maduro",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1754,6 +1887,7 @@ export const products = {
             description: "135 g / 16 uds."
         },
         "natuchips-platano-verde": {
+            auxiliarSlugs: [],
             title: "Natuchips Plátano Verde",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1767,6 +1901,7 @@ export const products = {
             description: "135 g / 16 uds."
         },
         "natuchips-yuca": {
+            auxiliarSlugs: [],
             title: "Natuchips Yuca",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1780,6 +1915,7 @@ export const products = {
             description: "135 g / 16 uds."
         },
         "maduritos-platanitos-yuquitas": {
+            auxiliarSlugs: [],
             title: "Maduritos/ Platanitos/ Yuquitas",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -1795,6 +1931,7 @@ export const products = {
             description: "150 g / 20 uds."
         },
         "panela-green-ground-redonda": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Redonda",
             subcategory: "Panela",
             category: "Abarrotes",
@@ -1808,6 +1945,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "panela-green-ground-fraccionada": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Fraccionada",
             subcategory: "Panela",
             category: "Abarrotes",
@@ -1821,6 +1959,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "panela-green-ground-pulverizada": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Pulverizada",
             subcategory: "Panela",
             category: "Abarrotes",
@@ -1834,6 +1973,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "panela-green-ground-cuadrada": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Cuadrada",
             subcategory: "Panela",
             category: "Menaje",
@@ -1847,6 +1987,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "parrilla-para-asar-arepas": {
+            auxiliarSlugs: [],
             title: "Parrilla Para asar Arepas",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1860,6 +2001,7 @@ export const products = {
             description: ""
         },
         "molinillo-de-madera": {
+            auxiliarSlugs: [],
             title: "Molinillo de Madera",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1873,6 +2015,7 @@ export const products = {
             description: ""
         },
         "jarrafas-para-cerveza": {
+            auxiliarSlugs: [],
             title: "Jarrafas para cerveza",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1886,6 +2029,7 @@ export const products = {
             description: ""
         },
         "olla-a-presion-imusa": {
+            auxiliarSlugs: [],
             title: "Olla a presión Imusa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1899,6 +2043,7 @@ export const products = {
             description: ""
         },
         "caldero-imusa-": {
+            auxiliarSlugs: [],
             title: "Caldero Imusa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1912,6 +2057,7 @@ export const products = {
             description: ""
         },
         "pataconera-imusa": {
+            auxiliarSlugs: [],
             title: "Pataconera Imusa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1925,6 +2071,7 @@ export const products = {
             description: ""
         },
         "vasija-de-barro-bandeja-paisa": {
+            auxiliarSlugs: [],
             title: "Vasija de barro Bandeja Paisa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1938,6 +2085,7 @@ export const products = {
             description: ""
         },
         "vasija-de-barro-cazuela-ajiaco-frijolada": {
+            auxiliarSlugs: [],
             title: "Vasija de Barro Cazuela-Ajiaco-Frijolada",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1951,6 +2099,7 @@ export const products = {
             description: ""
         },
         "molino-tolva": {
+            auxiliarSlugs: [],
             title: "Molino Tolva",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1964,6 +2113,7 @@ export const products = {
             description: ""
         },
         "chocolatera-imusa-molinillo": {
+            auxiliarSlugs: [],
             title: "Chocolatera Imusa + Molinillo",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1977,6 +2127,7 @@ export const products = {
             description: ""
         },
         "vasija-de-barro-viudo-de-pescado": {
+            auxiliarSlugs: [],
             title: "Vasija de barro Viudo de pescado",
             subcategory: "Menaje",
             category: "Menaje",
@@ -1991,7 +2142,9 @@ export const products = {
         }
     },
     en: {
+
         "tajadas-de-platano-maduro": {
+            auxiliarSlugs: [],
             title: "Tajadas de platano maduro",
             subcategory: "Latinos premium",
             category: "Congelados",
@@ -2007,6 +2160,7 @@ export const products = {
             description: "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
         },
         "platano-verde-toston": {
+            auxiliarSlugs: [],
             title: "Platano verde tostón",
             subcategory: "Latinos premium",
             category: "Congelados",
@@ -2022,6 +2176,7 @@ export const products = {
             description: "El plátano verde Green Ground ha conquistado las cocinas internacionales, por su genuino sabor y practicidad en la preparación resulta ideal en cualquier ocasión. Con nuestros patacones usted se deleitara del autentico sabor latino en la elaboración de platillos exóticos al alcance de todos. Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "platano-entero-verde": {
+            auxiliarSlugs: [],
             title: "Platano entero verde",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2036,6 +2191,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "maduritos": {
+            auxiliarSlugs: [],
             title: "Maduritos",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2049,6 +2205,7 @@ export const products = {
             description: ""
         },
         "ajiaco-precocido": {
+            auxiliarSlugs: [],
             title: "Ajiaco precocido",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2064,6 +2221,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "arracacha": {
+            auxiliarSlugs: [],
             title: "Arracacha",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2078,6 +2236,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "choclo-entero": {
+            auxiliarSlugs: [],
             title: "Choclo entero",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2092,6 +2251,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "cubos-de-platano": {
+            auxiliarSlugs: [],
             title: "Cubos de platano",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2106,6 +2266,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "guacamole": {
+            auxiliarSlugs: [],
             title: "Guacamole",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2120,6 +2281,7 @@ export const products = {
             description: ""
         },
         "platano-entero-maduro": {
+            auxiliarSlugs: [],
             title: "Platano entero Maduro",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2135,6 +2297,7 @@ export const products = {
             description: "El plátano maduro Green Ground es reconocido como una fruta étnica tropical de excelencia que por su textura, versatilidad y facilidad en la preparación se convierte en el acompañamiento perfecto, pues cautiva con su sabor dulce e hipnotiza con su tentador aroma.  Con nuestros productos queremos difundir la tradición culinaria latino americana con alimentos congelados con valor agregado listos para consumir.  Presentación 500 gr / 1k / 2k / 3kg"
         },
         "yuca-en-trozos": {
+            auxiliarSlugs: [],
             title: "Yuca en trozos",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2150,6 +2313,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "papa-criolla-precocida": {
+            auxiliarSlugs: [],
             title: "Papa criolla precocida",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2165,6 +2329,7 @@ export const products = {
             description: "La papa criolla es un producto único de Colombia considerado como alimento exótico y gourmet para el mundo. Sus cualidades culinarias y características le permiten ser el acompañamiento perfecto para cualquier plato y ocasión. Con nuestros productos Green Ground usted podrá deleitarse de una picada de papas criollas o el autentico ajiaco Santafereño desde la comodidad de su hogar.  Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "sancocho-precocido": {
+            auxiliarSlugs: [],
             title: "Sancocho precocido",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2180,6 +2345,7 @@ export const products = {
             description: "Presentación 500 gr / 1kg / 2kg / 3kg"
         },
         "toston-hawaiano": {
+            auxiliarSlugs: [],
             title: "Tostón Hawaiano",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
@@ -2194,6 +2360,7 @@ export const products = {
         },
 
         "garrafa-azucarada-de-guanabana": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Guanabana",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2207,6 +2374,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-mora": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Mora",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2220,6 +2388,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-mango": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de mango",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2233,6 +2402,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-guayaba": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Guayaba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2246,6 +2416,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "garrafa-azucarada-de-fresa": {
+            auxiliarSlugs: [],
             title: "Garrafa azucarada de Fresa",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2259,6 +2430,7 @@ export const products = {
             description: "Presentación 1/2 Galón – Caja * 6"
         },
         "pulpa-de-mango": {
+            auxiliarSlugs: [],
             title: "Pulpa de mango",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2272,6 +2444,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-gunabana-en-mota": {
+            auxiliarSlugs: [],
             title: "Pulpa de Gunabana en mota",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2285,6 +2458,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-maracuya-con-pepa": {
+            auxiliarSlugs: [],
             title: "Pulpa de maracuyá con pepa",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2298,6 +2472,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "mora-entera": {
+            auxiliarSlugs: [],
             title: "Mora entera",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2311,6 +2486,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "lulo-naranjillo-entero": {
+            auxiliarSlugs: [],
             title: "Lulo Naranjillo entero",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2324,6 +2500,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "tomate-de-arbol-entero": {
+            auxiliarSlugs: [],
             title: "Tomate de árbol entero",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2337,6 +2514,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "coco-rallado": {
+            auxiliarSlugs: [],
             title: "Coco rallado",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2350,6 +2528,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-papaya": {
+            auxiliarSlugs: [],
             title: "Pulpa de Papaya",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2363,6 +2542,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-tamarindo": {
+            auxiliarSlugs: [],
             title: "Pulpa de Tamarindo",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2376,6 +2556,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "piña-en-trozos": {
+            auxiliarSlugs: [],
             title: "Piña en trozos",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2389,6 +2570,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "guayaba-en-trozos": {
+            auxiliarSlugs: [],
             title: "Guayaba en trozos",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2402,6 +2584,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pulpa-de-curuba": {
+            auxiliarSlugs: [],
             title: "Pulpa de Curuba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
@@ -2415,6 +2598,7 @@ export const products = {
             description: "Presentación 500gr – Caja * 24"
         },
         "pandebono-granel": {
+            auxiliarSlugs: [],
             title: "Pandebono Granel",
             subcategory: "Panaderia",
             category: "Congelados",
@@ -2428,6 +2612,7 @@ export const products = {
             description: "Presentación 80gr – Caja * 42"
         },
         "buñuelo-granel": {
+            auxiliarSlugs: [],
             title: "Buñuelo Granel",
             subcategory: "Panaderia",
             category: "Congelados",
@@ -2442,6 +2627,7 @@ export const products = {
             description: "Presentación 80gr – Caja * 42"
         },
         "almojabana-granel": {
+            auxiliarSlugs: [],
             title: "Almojábana Granel",
             subcategory: "Panaderia",
             category: "Congelados",
@@ -2455,6 +2641,7 @@ export const products = {
             description: "Presentación 80gr – Caja * 42"
         },
         "arepa-blanca": {
+            auxiliarSlugs: [],
             title: "Arepa Blanca",
             subcategory: "Arepas",
             category: "Congelados",
@@ -2468,6 +2655,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "arepa-campesina": {
+            auxiliarSlugs: [],
             title: "Arepa Campesina",
             subcategory: "Arepas",
             category: "Congelados",
@@ -2481,6 +2669,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "arepa-de-yuca": {
+            auxiliarSlugs: [],
             title: "Arepa de Yuca",
             subcategory: "Arepas",
             category: "Congelados",
@@ -2494,6 +2683,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "harina-pan": {
+            auxiliarSlugs: [],
             title: "Harina Pan",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -2509,6 +2699,7 @@ export const products = {
             description: "Presentación 700gr – Caja * 24"
         },
         "harina-la-nieve-y-masapan": {
+            auxiliarSlugs: [],
             title: "Harina la nieve y Masapán",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -2522,6 +2713,7 @@ export const products = {
             description: "* 1 kg / Caja x 20 uds"
         },
         "harina-arepasan-blanca": {
+            auxiliarSlugs: [],
             title: "Harina Arepasan blanca",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -2535,6 +2727,7 @@ export const products = {
             description: "* 1 kg / Caja x 20 uds"
         },
         "harina-bellini": {
+            auxiliarSlugs: [],
             title: "Harina Bellini",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -2548,6 +2741,7 @@ export const products = {
             description: "Blanca y amarilla. 1 kg / Paca 20 uds."
         },
         "harina-campesina": {
+            auxiliarSlugs: [],
             title: "Harina Campesina",
             subcategory: "Harinas precocidas",
             category: "Abarrotes",
@@ -2561,6 +2755,7 @@ export const products = {
             description: "* 1 kg / Caja x 20 uds"
         },
         "natilla-maizena": {
+            auxiliarSlugs: [],
             title: "Natilla Maizena",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -2574,6 +2769,7 @@ export const products = {
             description: "* 350 g / Caja x 20 uds"
         },
         "buñuelos-maizena": {
+            auxiliarSlugs: [],
             title: "Buñuelos Maizena",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -2587,6 +2783,7 @@ export const products = {
             description: "* 350 g / Caja x 20 uds"
         },
         "buñuelos-colmaiz": {
+            auxiliarSlugs: [],
             title: "Buñuelos Colmaiz",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -2600,6 +2797,7 @@ export const products = {
             description: "* 1 kg / Saco 25kg"
         },
         "colmaiz-almojabana,-pandeyuca,-pandebono": {
+            auxiliarSlugs: [],
             title: "Colmaiz Almojábana, Pandeyuca, pandebono",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -2615,6 +2813,7 @@ export const products = {
             description: "* 1 kg / Saco 25kg"
         },
         "expandex-almidones-de-yuca-agrio": {
+            auxiliarSlugs: [],
             title: "Expandex Almidones de yuca agrio",
             subcategory: "Almidones",
             category: "Abarrotes",
@@ -2628,6 +2827,7 @@ export const products = {
             description: "* 1 kg / Saco 25kg"
         },
         "frijol-bola-roja-cargamanto": {
+            auxiliarSlugs: [],
             title: "Frijol bola roja / cargamanto",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -2641,6 +2841,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "maiz-pira": {
+            auxiliarSlugs: [],
             title: "Maiz pira",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -2654,6 +2855,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "lenteja": {
+            auxiliarSlugs: [],
             title: "Lenteja",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -2667,6 +2869,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "arveja-verde-y-amarilla": {
+            auxiliarSlugs: [],
             title: "Arveja verde y amarilla",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -2681,6 +2884,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "cuchuco-amarillo-y-blanco": {
+            auxiliarSlugs: [],
             title: "Cuchuco amarillo y blanco",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -2694,6 +2898,7 @@ export const products = {
             description: "* Saco 12,5kg / Grueso – Delgado"
         },
         "mazamorra-blanca-y-amarilla": {
+            auxiliarSlugs: [],
             title: "Mazamorra blanca y amarilla",
             subcategory: "Granos",
             category: "Abarrotes",
@@ -2708,6 +2913,7 @@ export const products = {
             description: "* Saco 12,5kg"
         },
         "salsa-de-tomate-fruco": {
+            auxiliarSlugs: [],
             title: "Salsa de tomate fruco",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2721,6 +2927,7 @@ export const products = {
             description: "* 250g – 400g / Caja x 24 uds"
         },
         "salsas-fruco-para-carnes-aji-inglesa-soya-china-y-negra": {
+            auxiliarSlugs: [],
             title: "Salsas fruco, para carnes, ají, inglesa, soya. china y negra",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2736,6 +2943,7 @@ export const products = {
             description: "* 170 g / Caja x 24 uds"
         },
         "salsa-de-piña-la-constancia": {
+            auxiliarSlugs: [],
             title: "Salsa de piña La Constancia",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2749,6 +2957,7 @@ export const products = {
             description: "* 200g / Caja x 24 uds"
         },
         "salsa-de-guayaba-la-constancia": {
+            auxiliarSlugs: [],
             title: "Salsa de Guayaba La constancia",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2762,6 +2971,7 @@ export const products = {
             description: "* 200g / Caja x 24 uds"
         },
         "conserva-de-salmuera-de-chontaduro": {
+            auxiliarSlugs: [],
             title: "Conserva de salmuera de Chontaduro",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2775,6 +2985,7 @@ export const products = {
             description: "* 790 g / Caja x 12 uds"
         },
         "jalea-de-borojo": {
+            auxiliarSlugs: [],
             title: "Jalea de Borojó",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2788,6 +2999,7 @@ export const products = {
             description: "* 500 gr / Caja x 12 uds"
         },
         "brevas-en-almivar": {
+            auxiliarSlugs: [],
             title: "Brevas en Almivar",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2801,6 +3013,7 @@ export const products = {
             description: "* 790 g / Caja x 12 uds"
         },
         "jalea-de-borojo-con-chontaduro": {
+            auxiliarSlugs: [],
             title: "Jalea de Borojó con chontaduro",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2814,6 +3027,7 @@ export const products = {
             description: "*  500 gr / Caja x 12 uds"
         },
         "brevas-la-constancia": {
+            auxiliarSlugs: [],
             title: "Brevas la Constancia",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2827,6 +3041,7 @@ export const products = {
             description: "* 600 g / Caja x 24 uds"
         },
         "guanabana-en-conserva": {
+            auxiliarSlugs: [],
             title: "Guanabana en conserva",
             subcategory: "Salsas y conservas",
             category: "Abarrotes",
@@ -2840,6 +3055,7 @@ export const products = {
             description: "18 uds. x 200 g / Caja 36 displays"
         },
         "cafe-sello-rojo": {
+            auxiliarSlugs: [],
             title: "Café Sello Rojo",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -2853,6 +3069,7 @@ export const products = {
             description: "* 250g – 500g / Caja x 48 uds"
         },
         "cafe-aguila-roja": {
+            auxiliarSlugs: [],
             title: "Café Águila Roja",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -2866,6 +3083,7 @@ export const products = {
             description: "* 250g – 500g / Caja x 48 uds"
         },
         "Chocolate-Corona": {
+            auxiliarSlugs: [],
             title: "Chocolate Corona",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -2880,6 +3098,7 @@ export const products = {
             description: "200 g / Caja 12 uds. - Instantáneo 250 g - 500 g / Caja 48 - 50 uds. - Tradicional"
         },
         "chocolisto": {
+            auxiliarSlugs: [],
             title: "Chocolisto",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -2893,6 +3112,7 @@ export const products = {
             description: "18 uds. x 25 g / Caja 36 displays"
         },
         "Milo": {
+            auxiliarSlugs: [],
             title: "Milo",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -2907,6 +3127,7 @@ export const products = {
             description: "200 g - 400 g / Caja 12 uds. - Tarro 250 g - 500 g / Caja 12 uds. - Doypack"
         },
         "luker": {
+            auxiliarSlugs: [],
             title: "Luker",
             subcategory: "Café y Chocolate",
             category: "Abarrotes",
@@ -2920,6 +3141,7 @@ export const products = {
             description: "* 250g / Caja x 50 uds"
         },
         "sopas-magi": {
+            auxiliarSlugs: [],
             title: "Sopas Magi",
             subcategory: "Condimentos",
             category: "Abarrotes",
@@ -2935,6 +3157,7 @@ export const products = {
             description: "Display 24 uds / Caja x 6 displays"
         },
         "triguisar": {
+            auxiliarSlugs: [],
             title: "Triguisar",
             subcategory: "Condimentos",
             category: "Abarrotes",
@@ -2948,6 +3171,7 @@ export const products = {
             description: "*Display x 12 uds / Caja x 12 displays"
         },
         "guascas-kiska": {
+            auxiliarSlugs: [],
             title: "Guascas Kiska",
             subcategory: "Condimentos",
             category: "Abarrotes",
@@ -2961,6 +3185,7 @@ export const products = {
             description: "*Display x 8 uds / Caja x 22 displays"
         },
         "esencia-sabor-leña--humo-leña": {
+            auxiliarSlugs: [],
             title: "Esencia sabor leña / humo leña",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -2974,6 +3199,7 @@ export const products = {
             description: "*Display x 24 uds / Caja x 4 displays"
         },
         "tarrito-rojo-jgb": {
+            auxiliarSlugs: [],
             title: "Tarrito rojo JGB",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -2987,6 +3213,7 @@ export const products = {
             description: "135 g / 48 uds."
         },
         "tintura-caramelo-levapan": {
+            auxiliarSlugs: [],
             title: "Tintura caramelo Levapan",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -3000,6 +3227,7 @@ export const products = {
             description: "* 60ml -500ml / Caja x 24 uds"
         },
         "esencias-levapan": {
+            auxiliarSlugs: [],
             title: "Esencias levapan",
             subcategory: "Esencias",
             category: "Abarrotes",
@@ -3015,6 +3243,7 @@ export const products = {
             description: "Vainilla, banano, canela, coco, mantequilla, piña, ponque. * 60ml -500ml / Caja x 24 uds"
         },
         "instaya-guanabana": {
+            auxiliarSlugs: [],
             title: "Instayá Guanabana",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3028,6 +3257,7 @@ export const products = {
             description: "*30g – Display x 8 uds / Caja x 8 displays"
         },
         "instaya-tropical": {
+            auxiliarSlugs: [],
             title: "Instayá Tropical",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3041,6 +3271,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-maracuya": {
+            auxiliarSlugs: [],
             title: "Instayá Maracuyá",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3054,6 +3285,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-mango": {
+            auxiliarSlugs: [],
             title: "Instayá Mango",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3067,6 +3299,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-fresa": {
+            auxiliarSlugs: [],
             title: "Instayá Fresa",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3080,6 +3313,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "instaya-naranja": {
+            auxiliarSlugs: [],
             title: "Instayá Naranja",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3093,6 +3327,7 @@ export const products = {
             description: "*318g / Caja x 24 uds."
         },
         "cerveza-club-colombia": {
+            auxiliarSlugs: [],
             title: "Cerveza Club Colombia",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3106,6 +3341,7 @@ export const products = {
             description: "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
         },
         "cerveza-poker": {
+            auxiliarSlugs: [],
             title: "Cerveza Poker",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3119,6 +3355,7 @@ export const products = {
             description: "*330 ml / Caja x 30. Caja x 4 displays * 6 Uds"
         },
         "cerveza-costeña": {
+            auxiliarSlugs: [],
             title: "Cerveza Costeña",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3132,6 +3369,7 @@ export const products = {
             description: "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
         },
         "cerveza-aguila": {
+            auxiliarSlugs: [],
             title: "Cerveza Águila",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3145,6 +3383,7 @@ export const products = {
             description: "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds"
         },
         "cerveza-aguila-light": {
+            auxiliarSlugs: [],
             title: "Cerveza Águila Light",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3158,6 +3397,7 @@ export const products = {
             description: "*237 ml / Caja x 24 *330 ml / Caja x 4 displays * 6 Uds"
         },
         "pony-malta-botella": {
+            auxiliarSlugs: [],
             title: "Pony malta botella",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3171,6 +3411,7 @@ export const products = {
             description: "*330 ml / Caja x 24. Caja x 4 displays * 6 Uds"
         },
         "gaseosas-postobon": {
+            auxiliarSlugs: [],
             title: "Gaseosas Postobón",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3186,6 +3427,7 @@ export const products = {
             description: "*10 oz / Caja x 24"
         },
         "jugos-hit": {
+            auxiliarSlugs: [],
             title: "Jugos Hit",
             subcategory: "Bebidas",
             category: "Abarrotes",
@@ -3201,6 +3443,7 @@ export const products = {
             description: "*237 ml / Caja x 24"
         },
         "avena-quacker-instantanea": {
+            auxiliarSlugs: [],
             title: "Avena Quacker instantánea",
             subcategory: "Avenas",
             category: "Abarrotes",
@@ -3216,6 +3459,7 @@ export const products = {
             description: "*300 g / Caja x 24"
         },
         "coladas-maizena": {
+            auxiliarSlugs: [],
             title: "Coladas Maizena",
             subcategory: "Avenas",
             category: "Abarrotes",
@@ -3231,6 +3475,7 @@ export const products = {
             description: "Arequipe, Vainilla, Fresa. / Display 18 uds. / Caja 12 displays"
         },
         "quipitos": {
+            auxiliarSlugs: [],
             title: "Quipitos",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3244,6 +3489,7 @@ export const products = {
             description: "Display 24 uds / Caja x 24 displays"
         },
         "menta-helada-colombina": {
+            auxiliarSlugs: [],
             title: "Menta helada colombina",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3257,6 +3503,7 @@ export const products = {
             description: "Bolsa 100 uds. / Caja 18 bolsas"
         },
         "menta-chao": {
+            auxiliarSlugs: [],
             title: "Menta Chao",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3270,6 +3517,7 @@ export const products = {
             description: "*Bolsa 100 x uds / Caja x 24 bolsas"
         },
         "sparkies": {
+            auxiliarSlugs: [],
             title: "Sparkies",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3283,6 +3531,7 @@ export const products = {
             description: "*Display 20 uds / Caja x 24 displays"
         },
         "coffe-delight-blando": {
+            auxiliarSlugs: [],
             title: "Coffe Delight Blando",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3296,6 +3545,7 @@ export const products = {
             description: "Bolsa 100 x uds / Caja x 18 bolsas"
         },
         "coffe-deligth-duro": {
+            auxiliarSlugs: [],
             title: "Coffe Deligth Duro",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3309,6 +3559,7 @@ export const products = {
             description: "Bolsa 100 x uds / Caja x 18 bolsas"
         },
         "arequipe-colombina": {
+            auxiliarSlugs: [],
             title: "Arequipe Colombina",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3322,6 +3573,7 @@ export const products = {
             description: "*Display 12 uds / Caja x 8 displays"
         },
         "chocolatina-jet": {
+            auxiliarSlugs: [],
             title: "Chocolatina Jet",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3335,6 +3587,7 @@ export const products = {
             description: "*Display 50 uds / Caja x 30 displays"
         },
         "frunas": {
+            auxiliarSlugs: [],
             title: "Frunas",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3348,6 +3601,7 @@ export const products = {
             description: "Display 32 unidades / Caja x 18 displays"
         },
         "chocolatina-jumbo-mani": {
+            auxiliarSlugs: [],
             title: "Chocolatina jumbo maní",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3361,6 +3615,7 @@ export const products = {
             description: "Bolsa x 12 unidades / Caja x 18 displays"
         },
         "turron-supercoco": {
+            auxiliarSlugs: [],
             title: "Turrón supercoco",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3374,6 +3629,7 @@ export const products = {
             description: "Bolsa x 100 unidades / Caja x 18 bolsas 24 unidades / Caja x 24 bolsas"
         },
         "super-barriletes": {
+            auxiliarSlugs: [],
             title: "Super Barriletes",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3387,6 +3643,7 @@ export const products = {
             description: "*Bolsas 50 uds / Caja x 18 displays"
         },
         "chiclets-menta-y-surtido": {
+            auxiliarSlugs: [],
             title: "Chiclets menta y surtido",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3401,6 +3658,7 @@ export const products = {
             description: "Display 20 unidades / Caja x 50 displays"
         },
         "bocadillo-rojo-en-tarro": {
+            auxiliarSlugs: [],
             title: "Bocadillo Rojo en tarro",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3414,6 +3672,7 @@ export const products = {
             description: "* 50 uds / Caja * 6 tarros"
         },
         "cernido-de-guayaba-levapan": {
+            auxiliarSlugs: [],
             title: "Cernido de Guayaba Levapan",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3427,6 +3686,7 @@ export const products = {
             description: "*Cernido 5 kg"
         },
         "dulce-de-guayaba-incauca": {
+            auxiliarSlugs: [],
             title: "Dulcé de Guayaba Incauca",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3440,6 +3700,7 @@ export const products = {
             description: "*Bolsa * 1 kg"
         },
         "bocadillo-doña-guayaba": {
+            auxiliarSlugs: [],
             title: "Bocadillo Doña guayaba",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3453,6 +3714,7 @@ export const products = {
             description: "*Bolsa *25 uds  / Caja *12 bolsas"
         },
         "obleas--arequipe-jace": {
+            auxiliarSlugs: [],
             title: "Obleas / Arequipe Jace",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3467,6 +3729,7 @@ export const products = {
             description: "Bolsa 24 uds. / Caja 16 bolsas"
         },
         "nucita-colombina": {
+            auxiliarSlugs: [],
             title: "Nucita Colombina",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3480,6 +3743,7 @@ export const products = {
             description: "*Display 12 uds / Caja x 8 displays"
         },
         "yogueta-fresa": {
+            auxiliarSlugs: [],
             title: "Yogueta Fresa",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3493,6 +3757,7 @@ export const products = {
             description: "*Bolsa 24 x uds / Caja x 16 bolsas"
         },
         "yogueta-suritda": {
+            auxiliarSlugs: [],
             title: "Yogueta Suritda",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3506,6 +3771,7 @@ export const products = {
             description: "*Bolsa 24 x uds / Caja x 16 bolsas"
         },
         "bon-bon-bum-surtido": {
+            auxiliarSlugs: [],
             title: "Bon bon bum surtido",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3519,6 +3785,7 @@ export const products = {
             description: "*Bolsa 24 x uds / Caja x 16 bolsas"
         },
         "caramelo-leche-bombonera": {
+            auxiliarSlugs: [],
             title: "Caramelo Leche Bombonera",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3532,6 +3799,7 @@ export const products = {
             description: "50 uds. 15 g c/u / 12 tarros"
         },
         "panelitas-leche-bombonera": {
+            auxiliarSlugs: [],
             title: "Panelitas Leche Bombonera",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3545,6 +3813,7 @@ export const products = {
             description: "50 uds. 15 g c/u / 12 tarros"
         },
         "cocadita-leche-bombonera": {
+            auxiliarSlugs: [],
             title: "Cocadita Leche Bombonera",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3558,6 +3827,7 @@ export const products = {
             description: "50 uds. 15 g c/u / 12 tarros"
         },
         "chocorramo": {
+            auxiliarSlugs: [],
             title: "Chocorramo",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3571,6 +3841,7 @@ export const products = {
             description: "65 g / Pqt. 5 uds. /Caja 44 Pqt."
         },
         "achiras-del-huila": {
+            auxiliarSlugs: [],
             title: "Achiras del huila",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3585,6 +3856,7 @@ export const products = {
             description: "Caja x 20 displays / 12 unidades"
         },
         "choclitos-limon": {
+            auxiliarSlugs: [],
             title: "Choclitos limón",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3598,6 +3870,7 @@ export const products = {
             description: "230g / Caja x 14 uds 27g * 12 uds / Caja x 8 bolsas"
         },
         "yupis-tradicional": {
+            auxiliarSlugs: [],
             title: "Yupis tradicional",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3611,6 +3884,7 @@ export const products = {
             description: "*60 g / Caja x 36"
         },
         "mani-moto": {
+            auxiliarSlugs: [],
             title: "Maní moto",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3624,6 +3898,7 @@ export const products = {
             description: "*Display 16 uds / Caja x 14 displays"
         },
         "snacky-caramelo": {
+            auxiliarSlugs: [],
             title: "Snacky Caramelo",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3637,6 +3912,7 @@ export const products = {
             description: ""
         },
         "maizistos-y-tostacos": {
+            auxiliarSlugs: [],
             title: "Maizistos y Tostacos",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3651,6 +3927,7 @@ export const products = {
             description: "* 30 g * 12 uds / Caja x 1 displays"
         },
         "saltin-noel": {
+            auxiliarSlugs: [],
             title: "Saltín Noel",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3665,6 +3942,7 @@ export const products = {
             description: "*Tritaco – 2 tacos – Queso Mantequilla"
         },
         "galleta-ducales": {
+            auxiliarSlugs: [],
             title: "Galleta ducales",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3678,6 +3956,7 @@ export const products = {
             description: "*Sabor Original"
         },
         "galleta-club-social": {
+            auxiliarSlugs: [],
             title: "Galleta Club Social",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3691,6 +3970,7 @@ export const products = {
             description: "*Bolsa  x 9 uds / Caja x 24 bolsas"
         },
         "de-todito": {
+            auxiliarSlugs: [],
             title: "De Todito",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3705,6 +3985,7 @@ export const products = {
             description: "* 45g * 6 uds / Caja x 6 displays"
         },
         "galleta-hony-bran": {
+            auxiliarSlugs: [],
             title: "Galleta Hony Bran",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3718,6 +3999,7 @@ export const products = {
             description: "297 g 24 display / 9 und"
         },
         "cocosette": {
+            auxiliarSlugs: [],
             title: "Cocosette",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3731,6 +4013,7 @@ export const products = {
             description: "*Display 6 uds (50g)/ Caja x 24 * 50 g * 12 pqts * 8 uds"
         },
         "natuchips-platano-maduro": {
+            auxiliarSlugs: [],
             title: "Natuchips Plátano maduro",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3744,6 +4027,7 @@ export const products = {
             description: "135 g / 16 uds."
         },
         "natuchips-platano-verde": {
+            auxiliarSlugs: [],
             title: "Natuchips Plátano Verde",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3757,6 +4041,7 @@ export const products = {
             description: "135 g / 16 uds."
         },
         "natuchips-yuca": {
+            auxiliarSlugs: [],
             title: "Natuchips Yuca",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3770,6 +4055,7 @@ export const products = {
             description: "135 g / 16 uds."
         },
         "maduritos-platanitos-yuquitas": {
+            auxiliarSlugs: [],
             title: "Maduritos/ Platanitos/ Yuquitas",
             subcategory: "Dulces y snacks",
             category: "Abarrotes",
@@ -3785,6 +4071,7 @@ export const products = {
             description: "150 g / 20 uds."
         },
         "panela-green-ground-redonda": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Redonda",
             subcategory: "Panela",
             category: "Abarrotes",
@@ -3798,6 +4085,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "panela-green-ground-fraccionada": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Fraccionada",
             subcategory: "Panela",
             category: "Abarrotes",
@@ -3811,6 +4099,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "panela-green-ground-pulverizada": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Pulverizada",
             subcategory: "Panela",
             category: "Abarrotes",
@@ -3824,6 +4113,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "panela-green-ground-cuadrada": {
+            auxiliarSlugs: [],
             title: "Panela Green Ground Cuadrada",
             subcategory: "Panela",
             category: "Menaje",
@@ -3837,6 +4127,7 @@ export const products = {
             description: "*454 g / Caja * 24 uds ."
         },
         "parrilla-para-asar-arepas": {
+            auxiliarSlugs: [],
             title: "Parrilla Para asar Arepas",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3850,6 +4141,7 @@ export const products = {
             description: ""
         },
         "molinillo-de-madera": {
+            auxiliarSlugs: [],
             title: "Molinillo de Madera",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3863,6 +4155,7 @@ export const products = {
             description: ""
         },
         "jarrafas-para-cerveza": {
+            auxiliarSlugs: [],
             title: "Jarrafas para cerveza",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3876,6 +4169,7 @@ export const products = {
             description: ""
         },
         "olla-a-presion-imusa": {
+            auxiliarSlugs: [],
             title: "Olla a presión Imusa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3889,6 +4183,7 @@ export const products = {
             description: ""
         },
         "caldero-imusa-": {
+            auxiliarSlugs: [],
             title: "Caldero Imusa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3902,6 +4197,7 @@ export const products = {
             description: ""
         },
         "pataconera-imusa": {
+            auxiliarSlugs: [],
             title: "Pataconera Imusa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3915,6 +4211,7 @@ export const products = {
             description: ""
         },
         "vasija-de-barro-bandeja-paisa": {
+            auxiliarSlugs: [],
             title: "Vasija de barro Bandeja Paisa",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3928,6 +4225,7 @@ export const products = {
             description: ""
         },
         "vasija-de-barro-cazuela-ajiaco-frijolada": {
+            auxiliarSlugs: [],
             title: "Vasija de Barro Cazuela-Ajiaco-Frijolada",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3941,6 +4239,7 @@ export const products = {
             description: ""
         },
         "molino-tolva": {
+            auxiliarSlugs: [],
             title: "Molino Tolva",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3954,6 +4253,7 @@ export const products = {
             description: ""
         },
         "chocolatera-imusa-molinillo": {
+            auxiliarSlugs: [],
             title: "Chocolatera Imusa + Molinillo",
             subcategory: "Menaje",
             category: "Menaje",
@@ -3967,6 +4267,7 @@ export const products = {
             description: ""
         },
         "vasija-de-barro-viudo-de-pescado": {
+            auxiliarSlugs: [],
             title: "Vasija de barro Viudo de pescado",
             subcategory: "Menaje",
             category: "Menaje",

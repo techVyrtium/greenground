@@ -1,24 +1,26 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export default function NowNearYou() {
+  const t = useTranslations('nowNearYou');
   const data = [
     {
-      title: "AHORA MÁS<br/>CERCA DE TI",
+      title: t('title'),
       text: (
         <>
           <p className="text-white text-[33px] leading-[1] text-justify">
-            Encuentra nuestros productos{" "}
-            <span className=" font-bold">Green Ground </span>
-            en<span className=" font-bold"> tiendas Ara </span> y abre las
-            puertas de tu casa al{" "}
-            <span className=" font-bold">sabor de la tradición.</span>
+            {t('text.part1')}
+            <span className="font-bold">{t('text.strong1')}</span>
+            {t('text.part2')}<span className="font-bold">{t('text.strong2')}</span>{t('text.part3')}
+            <span className="font-bold">{t('text.strong3')}</span>
           </p>
         </>
       ),
     },
   ];
   return (
-    <section className="mt-[96px] hidden md:block p-[clamp(1rem,5vw,6rem)] w-full h-fit h-[700px]  bg-[url(/home/bg-red.png)] bg-cover bg-no-repeat">
+    // h-fit h-[700px]
+    <section className="mt-[96px] hidden md:block p-[clamp(1rem,5vw,6rem)] w-full h-fit bg-[url(/home/bg-red.png)] bg-cover bg-no-repeat">
       <div className=" flex flex-col lg:flex-row ">
         <div className="lg:w-1/2 w-full flex items-center justify-center">
           <img src="/home/Frame171.png" className="w-[600px] h-auto" />

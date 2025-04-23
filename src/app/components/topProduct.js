@@ -5,7 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-const TopProduct = ({ locale }) => {
+import { useParams } from "next/navigation";
+const TopProduct = () => {
+  const { locale } = useParams();
   const t = useTranslations('topProducts');
   const [products, setProducts] = useState([]);
   const data = [

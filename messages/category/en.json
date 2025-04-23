@@ -1,37 +1,37 @@
 {
     "categories": [
         {
-            "name": "Congelados",
+            "name": "Frozen",
             "subcategories": [
-                "Latinos Premium",
-                "Especialidades congelados",
-                "Pulpa de fruta",
-                "Panaderia",
+                "Premium Latinos",
+                "Frozen Specialties",
+                "Fruit pulp",
+                "Bakery",
                 "Arepas"
             ],
-            "link": "products/category/congelados"
+            "link": "products/category/frozen"
         },
         {
-            "name": "Abarrotes",
+            "name": "Groceries",
             "subcategories": [
-                "Harinas de Maíz",
-                "Almidones",
-                "Granos",
-                "Salsas y conservas",
-                "Café y chocolate",
-                "Condimentos",
-                "Esencias",
-                "Bebidas",
-                "Avenas",
-                "Dulces y snacks",
+                "Precooked flours",
+                "Starches",
+                "Grain",
+                "Sauces and preserves",
+                "Coffee and chocolate",
+                "Condiments",
+                "Essences",
+                "Drinks",
+                "Oats",
+                "Sweets and snacks",
                 "Panela"
             ],
-            "link": "products/category/abarrotes"
+            "link": "products/category/groceries"
         },
         {
-            "name": "Menaje",
+            "name": "Household",
             "subcategories": [],
-            "link": "products/category/menaje"
+            "link": "products/category/household"
         }
     ]
 }
