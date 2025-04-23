@@ -38,7 +38,7 @@ const checkWebGLSupport = () => {
   }
 };
 
-export default function MapW2() {
+export default function MapW() {
   const [isValidScene, setIsValidScene] = useState(false);
   const [webGLSupported, setWebGLSupported] = useState(true);
 
@@ -50,19 +50,18 @@ export default function MapW2() {
           "https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode"
         );
 
+        console.log("Status:", response.status);
+        console.log("Content-Type:", response.headers.get("content-type"));
+        console.log(
+          "Tamaño del archivo:",
+          (await response.blob()).size + " bytes"
+        );
+
         if (!response.ok) throw new Error("Scene not found");
-        
-        // if (
-        //   !response.headers
-        //     .get("content-type")
-        //     ?.includes("application/octet-stream")
-        // ) {
-        //   throw new Error("Invalid Spline file");
-        // }
 
         setIsValidScene(true);
       } catch (error) {
-        console.error("Spline scene verification failed:", error);
+        console.error("Error en verificación:", error);
         setIsValidScene(false);
       }
     };
@@ -86,6 +85,10 @@ export default function MapW2() {
           {isValidScene && (
             <Spline
               scene="https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode"
+              onLoad={(spline) => {
+                console.log("Spline cargado:", spline);
+                spline.setZoom(0.5); // Ejemplo de ajuste
+              }}
               onError={(error) => {
                 console.error("Spline runtime error:", error);
                 throw new Error("Spline initialization failed");
