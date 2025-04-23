@@ -137,8 +137,8 @@ export default function TopNavHero() {
         setMenuOpen={setMenuOpen}
         t={t}
         cantLinksProducts={CANT_LINKS_PRODUCTS}
-        locale={locale}
         toggleModal={toggleModal}
+        changeLanguage={changeLanguage}
       />
     </div>
   );

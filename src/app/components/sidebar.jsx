@@ -1,10 +1,12 @@
+'use client'
 import Link from "next/link"
 import { SidebarLinksMultiples } from "./sidebarLinksMultiples"
-import { useRouter } from "next/navigation"
+import { useParams, useRouter } from "next/navigation"
 import { useId } from "react";
 import Image from "next/image";
 
-export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLinksProducts }) => {
+export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, changeLanguage, cantLinksProducts }) => {
+    const { locale } = useParams();
     const router = useRouter();
     const id = useId();
     const handleSmoothScroll = (e, sectionId) => {
@@ -23,6 +25,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, locale, cantLi
             setMenuOpen(false); // Cerrar el menú después de hacer clic
         }
     };
+    
     const close = (e) => {
         const { classList } = e.target;
         const isDropdown = classList.contains(`sidebar-dropdown-${id}`);
