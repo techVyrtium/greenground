@@ -12,7 +12,7 @@ export const generateMetadata = async ({ params }) => {
   const currentNew = await getNew({ locale, slug });
   if (!currentNew)
     notFound();
-  const { slug: currentSlug, image, title, owner, content, sections } = currentNew.new;
+  const { slug: currentSlug, image, title, owner, content = [], sections = [] } = currentNew.new;
   if (currentNew.auxiliar)
     redirect(`/${locale}/news/${currentSlug}`);
   const description = content[0]?.text ?? sections[0]?.text ?? title;
