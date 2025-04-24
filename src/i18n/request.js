@@ -1,11 +1,12 @@
 import { getRequestConfig } from "next-intl/server";
-import { headers } from "next/headers"; // ✅ Importar headers desde Next.js
+import { cookies, headers } from "next/headers"; // ✅ Importar headers desde Next.js
 
 export default getRequestConfig(async () => {
   // Obtener los headers de la solicitud
   const requestHeaders = await headers();
-  const selectedLocale = requestHeaders.get("x-locale") || "es"; // ✅ Leer el idioma del middleware
-
+  const cookiesStore = await cookies();
+  
+  const selectedLocale = requestHeaders.get("x-locale") || cookiesStore.get('x-locale') || "es"; // ✅ Leer el idioma del middleware
   console.log("Locale detectado (REQUEST):", selectedLocale); // Para depuración
 
   const loadMessages = async (section) => {

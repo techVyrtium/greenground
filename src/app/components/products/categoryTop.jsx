@@ -1,8 +1,11 @@
+'use client'
 import Image from "next/image";
 import { FiSearch } from "react-icons/fi";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 export function CategoryTop({ search, setSearch }) {
-  const title = "Categorías de productos";
+  const { locale } = useParams();
+  const title = locale === 'es' ? "Categorías de productos" : "Product categories";
   const images = {
     congelados: [
       {
@@ -105,8 +108,8 @@ export function CategoryTop({ search, setSearch }) {
           }
         >
           <ProductCategory
-            sup="Productos"
-            title={"Congelados"}
+            sup={locale === 'en' ? 'Products' : "Productos"}
+            title={locale === 'en' ? 'Frozen' : "Congelados"}
             color="green"
             mainImage="/home/rabano.svg"
             mainImageHeight={392}
@@ -118,7 +121,7 @@ export function CategoryTop({ search, setSearch }) {
             link="products/category/congelados"
           />
           <ProductCategory
-            title={"Abarrotes"}
+            title={locale === 'en' ? 'Groceries' : "Abarrotes"}
             color="red"
             mainImage="/home/dulce.svg"
             mainImageHeight={231}
@@ -130,7 +133,7 @@ export function CategoryTop({ search, setSearch }) {
             link="products/category/abarrotes"
           />
           <ProductCategory
-            title={"Menaje"}
+            title={locale === 'en' ? "Household" : "Menaje"}
             color="orange"
             mainImage="/home/olla.svg"
             mainImageHeight={272}

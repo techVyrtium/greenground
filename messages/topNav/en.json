@@ -12,17 +12,17 @@
       {
         "id": "frozen-products",
         "text": "Frozen products",
-        "href": "/products/category/congelados"
+        "href": "/products/category/frozen-products"
       },
       {
         "id": "groceries",
         "text": "Groceries",
-        "href": "/products/category/abarrotes"
+        "href": "/products/category/groceries"
       },
       {
         "id": "household",
         "text": "Household",
-        "href": "/products/category/menaje"
+        "href": "/products/category/household"
       }
     ]
   },
