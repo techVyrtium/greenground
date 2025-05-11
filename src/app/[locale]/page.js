@@ -12,6 +12,7 @@ import { ProductCategories } from "../components/productCategories";
 // import { WorkerTestimonials } from "../components/workerTestimonials";
 import OurCertificate from "../components/ourCertificate";
 import MapW from "../components/map";
+import SolarEnergyStats from "../components/solarEnergyStats";
 
 export default async function Home({ params }) {
   const { locale } = await params;
@@ -37,6 +38,7 @@ export default async function Home({ params }) {
       <Blog />
       <OurCommit />
       <OurCommitWomen />
+      <SolarEnergyStats />
     </div>
   );
 }

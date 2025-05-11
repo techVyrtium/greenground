@@ -14,7 +14,17 @@
   },
   "yellow": {
     "title": "BOCADO",
-    "title2": "Tradición en cada",
+    "text": {
+      "part1": "Conoce nuestros productos ",
+      "strong1": "orgánicos, sin etiquetas de excesos ",
+      "part2": "y ",
+      "strong2": "100% Colombianos"
+    },
+    "button": "Conoce nuestros productos"
+  },
+  "yellow2": {
+    "title": "En casa",
+    "title2": "Nuestra tradición hecha",
     "text": {
       "part1": "Conoce nuestros productos ",
       "strong1": "orgánicos, sin etiquetas de excesos ",
