@@ -40,6 +40,7 @@ export default getRequestConfig(async () => {
       footer: await loadMessages("footer"),
       news: await loadMessages("news"),
       detallenews: await loadMessages("detallenews"),
+      solarEnergyStats: await loadMessages("solarEnergyStats"),
     },
   };
 });

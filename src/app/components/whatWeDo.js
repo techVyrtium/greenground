@@ -65,12 +65,32 @@ export default function WhatWeDo() {
     },
   ];
 
+  const data3 = [
+    {
+      title: t('yellow2.title'),
+      title2: t('yellow2.title2'),
+      text: (
+        <>
+          <p className="text-[clamp(18px,2.5vw,28px)] text-left ">
+            {t('yellow2.text.part1')}
+            <span className=" font-bold">
+              {t('yellow2.text.strong1')}
+            </span>
+            {t('yellow2.text.part2')}
+            <span className=" font-bold">{t('yellow2.text.strong2')}</span>
+          </p>
+        </>
+      ),
+      button: t('button'),
+    },
+  ];
+
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % 4);
   };
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + 3) % 3);
+    setActiveIndex((prevIndex) => (prevIndex - 1 + 4) % 4);
   };
 
   function btn() {
@@ -139,7 +159,7 @@ export default function WhatWeDo() {
           onMouseOver={() => SetViewBotom(true)}
           onTimeUpdate={handleTimeUpdate}
         >
-          <source src={"/hero/video.mp4"} type="video/mp4" />
+          <source src={"/home/GGbanner.mp4"} type="video/mp4" />
           <track
             // src="/path/to/captions.vtt"
             kind="subtitles"
@@ -209,8 +229,7 @@ export default function WhatWeDo() {
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
-              <div className="mt-12 flex flex-col items-center justify-center text-[#45AC36]">
-                <p className={`text-[clamp(20px,6.5vw,46px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
+              <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
                 <h1
                   className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
@@ -285,6 +304,128 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/papaCriolla.png"
+                  className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tabla */}
+        <div className="hidden md:grid lg:hidden py-22 mb-10">
+          <Yellowmd />
+        </div>
+
+        {/*Movil */}
+        <div className="block md:hidden py-10 mb-10 ">
+          <Yellowsm />
+        </div>
+      </section>
+    );
+  }
+
+  function yellow2() {
+    return (
+      <section
+        className="px-4 sm:px-6 lg:px-22 w-full h-full mt-12 bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat"
+        ref={ubiRef}
+      >
+        <div className="hidden lg:grid">
+          <div className=" flex flex-col lg:flex-row ">
+            <motion.div
+              initial={{ opacity: 0, x: 0 }}
+              whileInView={{
+                opacity: 1,
+                x: 55,
+                transition: {
+                  duration: 0.5,
+                  delay: 1,
+                },
+              }}
+              className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
+            >
+              <div className="flex justify-center leading-7">
+                <img
+                  src="/home/logo-green.svg"
+                  className="w-[200px] md:w-[250px] h-auto"
+                />
+              </div>
+              <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
+                <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data3[0].title2}</p>
+                <h1
+                  className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                >
+                  {data3[0].title}
+                </h1>
+              </div>
+              <div className="space-y-6 mt-6 text-justify text-[#45AC36]">
+                {data3[0].text}
+              </div>
+              <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
+                <div className="flex flex-row gap-8">
+                  <img
+                    src="/home/GFICON-green.png"
+                    className="md:w-[136px] w-[120px]"
+                  />
+                  <img
+                    src="/home/MICICON-green.png"
+                    className="md:w-[136px] w-[120px]"
+                  />
+                  <img
+                    src="/home/READYICON-green.png"
+                    className="md:w-[136px] w-[120px]"
+                  />
+                </div>
+              </div>
+              <div className="flex items-end justify-end">
+                <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
+                  {data3[0].button}
+                </Link>
+              </div>
+            </motion.div>
+            <div className="relative w-2/3 flex flex-col mt-12 lg:mt-36 xl:mt-28 2xl:mt-30 ml-20">
+              <div className="">
+                <motion.img
+                  initial={{ opacity: 1, y: 160 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 10,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1,
+                    },
+                  }}
+                  src="/home/platanomaduro.png"
+                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
+                />
+              </div>
+              <div>
+                <motion.img
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 10,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.2,
+                    },
+                  }}
+                  src="/home/platanoverde.png"
+                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
+                />
+              </div>
+              <div>
+                <motion.img
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 80,
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                  src="/home/yucafrita.png"
                   className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
                 />
               </div>
@@ -446,7 +587,7 @@ export default function WhatWeDo() {
             </div>
           </div>
         </div>
-        {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : red()}
+        {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : activeIndex == 2 ? yellow2() : red()}
       </div>
       <div
         className="py-[96px] px-[clamp(1rem,5vw,6rem)]"
