@@ -7,6 +7,8 @@ import Link from "next/link";
 import Yellowsm from "./weDo/yellowsm";
 import Image from "next/image";
 import { Maximaze } from "./common/Maximaze";
+import Yellow2md from "./weDo/yellow2md";
+import Yellow2sm from "./weDo/yellow2sm";
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
@@ -436,12 +438,12 @@ export default function WhatWeDo() {
 
         {/* Tabla */}
         <div className="hidden md:grid lg:hidden py-22 mb-10">
-          <Yellowmd />
+          <Yellow2md />
         </div>
 
         {/*Movil */}
         <div className="block md:hidden py-10 mb-10 ">
-          <Yellowsm />
+          <Yellow2sm />
         </div>
       </section>
     );
