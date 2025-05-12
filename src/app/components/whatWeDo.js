@@ -230,6 +230,7 @@ export default function WhatWeDo() {
                 />
               </div>
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
+                <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
                 <h1
                   className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
