@@ -228,18 +228,18 @@ export default function WhatWeDo() {
               <div className="flex justify-center leading-7">
                 <img
                   src="/home/logo-green.svg"
-                  className="w-[200px] md:w-[250px] h-auto"
+                  className="w-[100px] md:w-[200px] h-auto"
                 />
               </div>
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
-                <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
+                <p className={`text-[clamp(20px,6.5vw,30px)] xl:text-[clamp(20px,6.5vw,39px)] 2xl:text-[clamp(20px,6.5vw,49px)]  font-bold font-itcGBold`}>{data2[0].title2}</p>
                 <h1
-                  className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                  className={`text-[20px] lg:text-[clamp(50px,6.5vw,90px)] xl:text-[clamp(50px,6.5vw,85px)] 2xl:text-[clamp(50px,6.5vw,130px)] font-bold leading-21 font-itcGBold `}
                 >
                   {data2[0].title}
                 </h1>
               </div>
-              <div className="space-y-6 mt-12 text-justify text-[#45AC36]">
+              <div className="space-y-6 text-justify text-[#45AC36]">
                 {data2[0].text}
               </div>
               <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
@@ -350,13 +350,14 @@ export default function WhatWeDo() {
               <div className="flex justify-center leading-7">
                 <img
                   src="/home/logo-green.svg"
-                  className="w-[200px] md:w-[250px] h-auto"
+                  className="w-[100px] md:w-[200px] h-auto"
                 />
               </div>
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
-                <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data3[0].title2}</p>
+                <p className={`text-[clamp(20px,6.5vw,30px)] xl:text-[clamp(20px,6.5vw,30px)] 2xl:text-[38px] font-bold font-itcGBold`}>{data3[0].title2}</p>
+
                 <h1
-                  className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                  className={`lg:text-[clamp(50px,6.5vw,100px)] xl:text-[clamp(50px,6.5vw,100px)] 2xl:text-[120px] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
                   {data3[0].title}
                 </h1>
@@ -399,7 +400,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/platanomaduro.png"
-                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
+                  className="absolute lg:w-[320px] xl:w-[320px] 2xl:w-[380px] h-[auto] -ml-12 z-10 "
                 />
               </div>
               <div>
@@ -414,7 +415,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/platanoverde.png"
-                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
+                  className="absolute lg:w-[320px] xl:w-[320px] 2xl:w-[380px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
                 />
               </div>
               <div>

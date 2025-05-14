@@ -19,7 +19,7 @@ export default function MapW() {
         <>
           {/* {screen >= 1024 ? (<div className="bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white w-full"><MapW2 /></div>) : (<MapMobile />)} */}
           {/* <Spline className="bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white" scene="https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode" /> */}
-          <div className="bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white w-full"><MapW2 /></div>
+          <div className="bg-cover bg-no-repeat bg-white w-full"><MapW2 /></div>
         </>
       </Suspense>
     </section>
