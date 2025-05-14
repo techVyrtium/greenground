@@ -1,6 +1,11 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-
+import frame171 from "@/assets/home/Frame171.png";
+import araBird from "@/assets/home/aroBird.png";
+import GFICON from "@/assets/home/GFICON.png"
+import MICICON from '@/assets/home/MICICON.png';
+import READYICON from '@/assets/home/READYICON.png';
+import Image from "next/image";
 export default function NowNearYou() {
   const t = useTranslations('nowNearYou');
   const data = [
@@ -23,13 +28,18 @@ export default function NowNearYou() {
     <section className="mt-[96px] hidden md:block p-[clamp(1rem,5vw,6rem)] w-full h-fit bg-[url(/home/bg-red.png)] bg-cover bg-no-repeat">
       <div className=" flex flex-col lg:flex-row ">
         <div className="lg:w-1/2 w-full flex items-center justify-center">
-          <img src="/home/Frame171.png" className="w-[600px] h-auto" />
+          <Image
+            alt="frame171"
+            src={frame171}
+            className="w-[600px] h-auto"
+          />
         </div>
         <div className="flex flex-col justify-around lg:w-1/2 w-full h-fit">
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="flex justify-center md:justify-start">
-              <img
-                src="/home/aroBird.png"
+              <Image
+                alt="araBird"
+                src={araBird}
                 className="w-[140px] md:w-[180px] lg:w-[220px] xl:w-[270px] h-auto object-contain"
               />
             </div>
@@ -42,13 +52,15 @@ export default function NowNearYou() {
           </div>
           <div className="space-y-4 mt-8 text-justify">{data[0].text}</div>
           <div className="flex flex-row gap-8 lg:gap-[1vw] max-[465px]:gap-6 w-fit mt-8 m-auto">
-            <img src="/home/GFICON.png" className=" w-[126px] md:w-[156px] h-full" />
-            <img
-              src="/home/MICICON.png"
+            <Image alt="GFICON" src={GFICON} className=" w-[126px] md:w-[156px] h-full" />
+            <Image
+              alt="MICICON"
+              src={MICICON}
               className="w-[126px] md:w-[170px] h-full"
             />
-            <img
-              src="/home/READYICON.png"
+            <Image
+              alt="READYICON"
+              src={READYICON}
               className=" w-[126px] md:w-[156px] h-full"
             />
           </div>

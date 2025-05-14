@@ -1,59 +1,8 @@
+import pureDeYuca from '@/assets/news/Puredeyuca.jpg';
+import papasCriollas from '@/assets/news/Papascriollas-card.png';
+import aborrajados from '@/assets/news/Aborrajados-card.png';
 export const recipes = {
     es: [
-        // {
-        //     id: "patacon-pisao-con-hogao",
-        //     slug: "patacon-pisao-con-hogao",
-        //     title: "Receta Patacón Pisao con hogao",
-        //     owner: 'Lina montero',
-        //     description: 'Descripcion de este producto',
-        //     image: "/recipes/patacon-pisao-con-hogao.png",
-        //     ingredients: [
-        //         "1 paquete <strong class='font-itcGBold'>de 300 gr de tajadas de platano GREEN GROUND</strong>",
-        //         "2 a 3 tazas aceite vegetal",
-        //         "1 cucharadita sal, para espolvorear sobre los patacones",
-        //         "La Salsa Hogao",
-        //         "4 a 5 Tomates Roma",
-        //         "1 pequeña pimiento rojo, finamente picado",
-        //         "3 a 4 cebolletas, las secciones superiores picadas",
-        //         "1 cebolla blanca, grande, picada",
-        //         "4 clavos de olor ajo picado",
-        //         "2 cucharada aceite de oliva",
-        //         "1⁄2 cucharadita sal, o al gusto",
-        //         "1⁄4 taza cilantro fresco, picado",
-        //     ],
-        //     preparationPhases: [
-        //         {
-        //             title: 'Preparemos la Salsa de Hogao',
-        //             phases: [
-        //                 "Retire las semillas y las membranas interiores de los tomates. Dados los tomates.",
-        //                 "Despepitar, desmembrar y picar finamente el pimiento rojo.",
-        //                 "Pelar y picar la cebolla.",
-        //                 "En una sartén, caliente el aceite de oliva a fuego medio-bajo. Agregue los tomates, la cebolla, el pimiento rojo, las cebolletas, el ajo y la sal. Cocine a fuego lento durante 5 minutos a fuego medio.",
-        //                 "Baja el fuego, tapa y cocina a fuego lento durante 15 minutos, revolviendo regularmente, para asegurarte de que las verduras no se peguen a la sartén.",
-        //                 "Destape, revuelva y saltee durante los últimos 5 minutos, sin tapar. Pruebe y ajuste la sal, según sea necesario. Añadir un chorrito final de aceite de oliva. Reserva mientras fríes los patacones.",
-        //             ]
-        //         },
-        //         {
-        //             title: 'Es hora de freír los tostones',
-        //             phases: [
-        //                 "En una sartén grande sobre un fuego medio-alto, agregue el aceite vegetal y caliente a unos 350°.",
-        //                 "Pele y corte los plátanos verdes en rodajas gruesas, de una pulgada de ancho cada una.",
-        //                 "Agregue las rodajas de plátano macho al aceite caliente en tandas para que no se toquen. Después de unos 2 minutos, dales la vuelta y fríe el otro lado durante 1 o 2 minutos.",
-        //                 "Cuando ambos lados estén ligeramente dorados, saque los plátanos con una espumadera.",
-        //                 "Coloque los platanos en un plato forrado con toallas de papel para drenar el exceso de aceite. Déjalos reposar durante varios minutos para que se enfríen un poco antes de aplanarlos.",
-        //                 "Coloque un trozo de papel pergamino o una envoltura de plástico en su prensa de plátano, prensa de tortillas o una sartén redonda pesada o una lata ancha. Presione cada plátano, uno a la vez, de modo que cada uno tenga aproximadamente ¼ de pulgada de grosor.",
-        //                 "Una vez que todos los Platanos estén prensados, regréselos en tandas al aceite caliente para su segunda fritura. Esta vez, deja cada plátano por solo 30 segundos a 1 minuto por lado.",
-        //                 "Saque del aceite caliente y de nuevo descanse en un plato forrado con toallas de papel para drenar el exceso de aceite.",
-        //                 "Espolvorear con sal. Agrega una cucharada de salsa hogao sobre cada patacón. Adorne con cilantro picado y una última pizca de sal. Sírvalas rápidamente, mientras aún están calientes."
-        //             ]
-        //         }
-        //     ],
-        //     preparationNotes: [
-        //         "Los tomates Roma son ideales para el hogao. De color rojo brillante, sabroso y firme, resisten cuando se cocinan a fuego lento durante media hora con ajo, cebolla y cebollín y producen una dulzura rica en especias.",
-        //         "Alternativamente, muchas recetas para la salsa hogao requieren marcar los tomates (cortar una X delgada en la parte inferior), hervir durante aproximadamente 1 minuto y luego pelarlos antes de saltearlos. Muy delicioso."
-        //     ],
-        //     recommendations: [],
-        // },
         {
             slug: "cremoso-pure-de-yuca-y-queso-doble",
             auxiliarSlugs: {
@@ -63,7 +12,7 @@ export const recipes = {
             title: "Cremoso Puré de Yuca y Queso Doble.",
             owner: 'Lina Montero',
             description: "Prepara un puré de yuca y doble queso súper cremoso con Yuca Green Ground. Receta paso a paso y lista en minutos.",
-            image: "/news/Puredeyuca.jpg",
+            image: pureDeYuca,
             ingredients: [
                 '1 kg de <span class="font-semibold"> Yuca en Trozos Green Ground </span>',
                 '2 dientes de ajo, pelados',
@@ -109,7 +58,7 @@ export const recipes = {
             keywords: ["papa amarilla", "papa criolla"],
             title: "Papa Criolla Crocante Salteada con Mantequilla y Romero",
             description: "Prueba lo fácil que es cocinar una Papa Criolla Crocante Salteada con Mantequilla y Romero deliciosa con la Papa Criolla Precocida de Green Ground.",
-            image: "/news/Papascriollas-card.png",
+            image: papasCriollas,
             owner: 'Lina Montero',
             ingredients: [
                 '½ kg de <span class="font-semibold"> Papa Criolla Precocida de Green Ground </span>',
@@ -153,7 +102,7 @@ export const recipes = {
             title: "Aborrajados de plátano maduro con queso: receta fácil y rápida",
             owner: 'Lina Montero',
             description: "Descubre la deliciosa receta de aborrajados de plátano maduro con Green Ground. Fácil y rápida de preparar!",
-            image: "/news/Aborrajados-card.png",
+            image: aborrajados,
             ingredients: [
                 '2 <span class="font-semibold"> plátanos enteros maduros Green Ground (500 gr) </span>',
                 '150 gramos de <span class="font-semibold">queso</span> costeño o mozzarella',
@@ -185,166 +134,9 @@ export const recipes = {
                 'Con nuestros productos queremos compartir la tradición culinaria latinoamericana con <span class="font-semibold">alimentos congelados</span> listos para consumir.',
                 'Te ha gustado esta receta de <span class="font-semibold">plátanos aborrajados</span>? Descubre más recetas deliciosas con <span class="font-semibold">plátanos Green Ground</span> en nuestra página web y sorprende a todos con tus habilidades culinarias!'
             ],
-
-            section: (
-                <>
-                    <div class="flex md:flex-row flex-col">
-                        <div class="lg:w-1/2 w-full gap-8">
-                            <img src={"/news/Aborrajados.jpg"} class="w-full rounded-md" />
-                        </div>
-                        <div class="lg:w-1/2 w-full lg:ml-8 lg:mt-0 mt-8">
-                            <p class="text-[30px] md:text-[36px] xl:text-[40px] 2xl:text-[50px]  text-[#008638] font-itcGBold ">
-
-                            </p>
-                            <p class="mb-2 text-[22px] mt-4 text-[#008638]">
-                                Porciones: 4
-                            </p>
-                            <p class="mb-5 text-[22px] mt-4 text-[#008638]">
-                                Tiempo de preparación: 30 minutos
-                            </p>
-                            <div class=" bg-[#008E4A] w-full rounded-md">
-                                <p class="mb-4 text-[17px] mt-2 ml-2 text-white">
-                                    Ingredientes:
-                                </p>
-                                <ol class=" list-disc ml-8 text-[17px] text-white">
-                                    <li class="list-disc  ">
-
-                                    </li>
-                                    <li class="">
-
-                                    </li>
-                                    <li class=""></li>
-                                    <li class="list-disc  "></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class="list-disc  "></li>
-                                    <li class=""></li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <p class="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
-                    El <span class="font-semibold">plátano maduro</span>, una fruta
-                    tropical por excelencia, es reconocido por su textura, versatilidad
-                    y facilidad de preparación. Su sabor dulce y aroma tentador lo
-                    convierten en el acompañamiento perfecto para una gran variedad de
-                    platos.
-                </p>
-                <p class="mb-4 text-[24px] mt-4 text-[#4A4A4A] text-justify indent-8">
-                    Aprende cómo preparar unos fáciles y deliciosos aborrajados con el{" "}
-                    <span class="font-semibold">plátano maduro Green Ground</span>{" "}
-                    rellenos de <span class="font-semibold">queso</span>, dorados y
-                    crujientes. Una delicia agridulce perfecta como entrada o postre
-                    para compartir tus comidas favoritas.
-                </p> */}
-
-                    <ol class=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px]">
-                        <li class="mb-4   ">
-
-                        </li>
-                        <li class="mb-4  ">
-
-                        </li>
-                        <li class="mb-4   ">
-
-                        </li>
-                        <li class="mb-4  ">
-
-                        </li>
-                        <li class="mb-4   ">
-
-                        </li>
-                    </ol>
-                    <p class="mb-4 text-[32px] text-[#008638]">Tips:</p>
-                    <ol class=" list-decimal ml-8 marker:text-[#008638] text-[#4A4A4A] text-[24px] text-justify">
-                        <li class="mb-4   ">
-
-                        </li>
-                        <li class="mb-4  ">
-
-                        </li>
-                        <li class="mb-4   ">
-
-                        </li>
-                    </ol>
-                    <div class="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#ECEBEB] rounded-md p-4">
-                        <div class="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
-                            <img src="/news/Vector.svg" class=" w-full" />
-                        </div>
-                        <div class="">
-                            <p class="text-[#4A4A4A] text-[24px] leading-[28px] text-justify 2xl:text-[24px]">
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row gap-[16px] mt-[24px] justify-center items-center bg-[#ECEBEB] rounded-md p-4">
-                        <div class="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
-                            <img src="/news/Vector.svg" class=" w-full" />
-                        </div>
-                        <div class="">
-                            <p class="text-[#4A4A4A] text-[24px] leading-[28px] text-justify 2xl:text-[24px] ">
-
-                            </p>
-                        </div>
-                    </div>
-                </>
-            ),
         },
     ],
     en: [
-        // {
-        //     id: "patacon-pisao-con-hogao",
-        //     slug: "patacon-pisao-con-hogao",
-        //     title: "Receta Patacón Pisao con hogao",
-        //     owner: 'Lina montero',
-        //     image: "/recipes/patacon-pisao-con-hogao.png",
-        //     ingredients: [
-        //         "1 paquete <strong class='font-itcGBold'>de 300 gr de tajadas de platano GREEN GROUND</strong>",
-        //         "2 a 3 tazas aceite vegetal",
-        //         "1 cucharadita sal, para espolvorear sobre los patacones",
-        //         "La Salsa Hogao",
-        //         "4 a 5 Tomates Roma",
-        //         "1 pequeña pimiento rojo, finamente picado",
-        //         "3 a 4 cebolletas, las secciones superiores picadas",
-        //         "1 cebolla blanca, grande, picada",
-        //         "4 clavos de olor ajo picado",
-        //         "2 cucharada aceite de oliva",
-        //         "1⁄2 cucharadita sal, o al gusto",
-        //         "1⁄4 taza cilantro fresco, picado",
-        //     ],
-        //     preparationPhases: [
-        //         {
-        //             title: 'Preparemos la Salsa de Hogao',
-        //             phases: [
-        //                 "Retire las semillas y las membranas interiores de los tomates. Dados los tomates.",
-        //                 "Despepitar, desmembrar y picar finamente el pimiento rojo.",
-        //                 "Pelar y picar la cebolla.",
-        //                 "En una sartén, caliente el aceite de oliva a fuego medio-bajo. Agregue los tomates, la cebolla, el pimiento rojo, las cebolletas, el ajo y la sal. Cocine a fuego lento durante 5 minutos a fuego medio.",
-        //                 "Baja el fuego, tapa y cocina a fuego lento durante 15 minutos, revolviendo regularmente, para asegurarte de que las verduras no se peguen a la sartén.",
-        //                 "Destape, revuelva y saltee durante los últimos 5 minutos, sin tapar. Pruebe y ajuste la sal, según sea necesario. Añadir un chorrito final de aceite de oliva. Reserva mientras fríes los patacones.",
-        //             ]
-        //         },
-        //         {
-        //             title: 'Es hora de freír los tostones',
-        //             phases: [
-        //                 "En una sartén grande sobre un fuego medio-alto, agregue el aceite vegetal y caliente a unos 350°.",
-        //                 "Pele y corte los plátanos verdes en rodajas gruesas, de una pulgada de ancho cada una.",
-        //                 "Agregue las rodajas de plátano macho al aceite caliente en tandas para que no se toquen. Después de unos 2 minutos, dales la vuelta y fríe el otro lado durante 1 o 2 minutos.",
-        //                 "Cuando ambos lados estén ligeramente dorados, saque los plátanos con una espumadera.",
-        //                 "Coloque los platanos en un plato forrado con toallas de papel para drenar el exceso de aceite. Déjalos reposar durante varios minutos para que se enfríen un poco antes de aplanarlos.",
-        //                 "Coloque un trozo de papel pergamino o una envoltura de plástico en su prensa de plátano, prensa de tortillas o una sartén redonda pesada o una lata ancha. Presione cada plátano, uno a la vez, de modo que cada uno tenga aproximadamente ¼ de pulgada de grosor.",
-        //                 "Una vez que todos los Platanos estén prensados, regréselos en tandas al aceite caliente para su segunda fritura. Esta vez, deja cada plátano por solo 30 segundos a 1 minuto por lado.",
-        //                 "Saque del aceite caliente y de nuevo descanse en un plato forrado con toallas de papel para drenar el exceso de aceite.",
-        //                 "Espolvorear con sal. Agrega una cucharada de salsa hogao sobre cada patacón. Adorne con cilantro picado y una última pizca de sal. Sírvalas rápidamente, mientras aún están calientes."
-        //             ]
-        //         }
-        //     ],
-        //     preparationNotes: [
-        //         "Los tomates Roma son ideales para el hogao. De color rojo brillante, sabroso y firme, resisten cuando se cocinan a fuego lento durante media hora con ajo, cebolla y cebollín y producen una dulzura rica en especias.",
-        //         "Alternativamente, muchas recetas para la salsa hogao requieren marcar los tomates (cortar una X delgada en la parte inferior), hervir durante aproximadamente 1 minuto y luego pelarlos antes de saltearlos. Muy delicioso."
-        //     ],
-        //     recommendations: [],
-        // },
         {
             slug: "creamy-yucca-and-double-cheese-puree",
             auxiliarSlugs: {
@@ -354,7 +146,7 @@ export const recipes = {
             title: "Creamy Yucca and Double Cheese Purée",
             owner: 'Lina Montero',
             description: "Prepare a Super Creamy Yucca and Double Cheese Purée with Yuca Green Ground. Step-by-Step Recipe, Ready in Minutes.",
-            image: "/news/Puredeyuca.jpg",
+            image: pureDeYuca,
             ingredients: [
                 '1 kg of <span class="font-semibold">Yuca fries Green Ground</span>',
                 '2 cloves of garlic, peeled',
@@ -402,7 +194,7 @@ export const recipes = {
             title: "Crispy Yellow Potatoes Sautéed with Butter and Rosemary",
             keywords: ["Yellow Potato"],
             description: "Experience how easy it is to cook delicious Crispy Yellow Potatoes Sautéed with Butter and Rosemary using Green Ground Pre-Cooked Yellow Potatoes.",
-            image: "/news/Papascriollas-card.png",
+            image: papasCriollas,
             owner: 'Lina Montero',
             ingredients: [
                 '½ kg of <span class="font-semibold">Green Ground Pre-Cooked Yellow Potatoes</span>',
@@ -444,7 +236,7 @@ export const recipes = {
             keywords: ["Ripe Plantain"],
             owner: 'Green Ground',
             description: "Discover the delicious recipe for ripe plantain aborrajados with Green Ground. Easy and quick to prepare!",
-            image: "/news/Aborrajados-card.png",
+            image: aborrajados,
             ingredients: [
                 '2 <span class="font-semibold">whole ripe Green Ground plantains (500 gr) </span>',
                 '150 grams of Costeño <span class="font-semibold">cheese or mozzarella</span>',

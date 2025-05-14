@@ -3,6 +3,7 @@ import { getAllSlugRecipesByLocale } from "@/services/getAllSlugRecipesByLocale"
 import { getRecipe } from "@/services/getRecipe"
 import Image from "next/image";
 import { notFound, redirect } from "next/navigation";
+import vector from '@/assets/news/Vector.svg';
 export const dynamic = 'force-static';
 export const generateMetadata = async ({ params }) => {
     const { slug, locale } = await params;
@@ -131,7 +132,7 @@ export default async function Recipe({ params }) {
                     // #ECEBEB
                     <div key={`note-${i}`} className="flex flex-row gap-[16px] mt-[24px] justify-start items-center bg-[#CFCECE] rounded-md p-4">
                         <div className="w-[60px] 2xl:w-[80px] flex-shrink-0 flex-grow-0">
-                            <img src="/news/Vector.svg" className="w-10 h-10" />
+                            <Image src={vector} className="w-10 h-10" />
                         </div>
                         <div>
                             <p className="text-[#4A4A4A] text-[20px] leading-6 text-justify 2xl:text-[24px] [word-spacing:-1.5px]" dangerouslySetInnerHTML={{ __html: note }}></p>

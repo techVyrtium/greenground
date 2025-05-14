@@ -3,6 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import Slider from "react-slick";
+import arrowOrangeL from '@/assets/home/arrowsOrangeL.png';
+import arrowOrangeR from '@/assets/home/arrowsOrangeR.png';
+import arrowRSL from '@/assets/home/arrowsRSL.png';
+import arrowRSR from '@/assets/home/arrowsRSR.png';
+
 export const Version = Object.freeze({
   MOBILE: 1,
   TABLET: 2,
@@ -59,9 +64,8 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
   function Buttons({ slidesToShow, size }) {
     return (
       <div className="flex flex-row items-center justify-center gap-2">
-        <img
-          src={`${color ? "/home/arrowsOrangeL.png" : "/home/arrowsRSL.png"
-            }`}
+        <Image
+          src={color ? arrowOrangeL : arrowRSL}
           alt="Descripción de la imagen"
           className="mt-4 mr-2 cursor-pointer"
           onClick={() => handlePrev(Math.ceil(size / slidesToShow))}
@@ -81,9 +85,8 @@ export default function CardBlog({ data, color, type, version = Version.MOBILE }
           ></div>
         )
         )}
-        <img
-          src={`${color ? "/home/arrowsOrangeR.png" : "/home/arrowsRSR.png"
-            }`}
+        <Image
+          src={color ? arrowOrangeR : arrowRSR}
           alt="Descripción de la imagen"
           className="mt-4 ml-2 cursor-pointer"
           onClick={() => handleNext(Math.ceil(size / slidesToShow))}

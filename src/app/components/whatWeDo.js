@@ -9,6 +9,30 @@ import Image from "next/image";
 import { Maximaze } from "./common/Maximaze";
 import Yellow2md from "./weDo/yellow2md";
 import Yellow2sm from "./weDo/yellow2sm";
+import arrowRSL from '@/assets/home/arrowsRSL.png';
+import arrowsRSR from '@/assets/home/arrowsRSR.png';
+import pause from '@/assets/home/pause.svg';
+import play from '@/assets/home/play.svg';
+import speaker from '@/assets/home/speaker.svg';
+import mute from '@/assets/home/mute.svg';
+import minimaze from '@/assets/minimaze.svg';
+import maximazeIcon from '@/assets/home/maximaze.svg';
+import logoGreen from "@/assets/home/logo-green.svg";
+import GFICONGreen from "@/assets/home/GFICON-green.png"
+import MICICONGreen from '@/assets/home/MICICON-green.png';
+import READYICONGreen from '@/assets/home/READYICON-green.png';
+import tajadas from '@/assets/home/tajadas.png';
+import patacones from '@/assets/home/patacones.png';
+import papaCriolla from "@/assets/home/papaCriolla.png"
+import platanoMaduro from '@/assets/home/platanomaduro.png';
+import platanoVerde from '@/assets/home/platanoverde.png';
+import yucaFrita from '@/assets/home/yucafrita.png';
+import frame171 from '@/assets/home/Frame171.png';
+import araBird from '@/assets/home/aroBird.png';
+import queHacemos from '@/assets/home/quehacemos.png';
+import GFICON from "@/assets/home/GFICON.png"
+import MICICON from '@/assets/home/MICICON.png';
+import READYICON from '@/assets/home/READYICON.png';
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
   const [activeIndex, setActiveIndex] = useState(0);
@@ -98,9 +122,9 @@ export default function WhatWeDo() {
   function btn() {
     return (
       <div className="flex flex-row items-center justify-center gap-2 lg:hidden">
-        <img
-          src="/home/arrowsRSL.png"
-          alt="Descripción de la imagen"
+        <Image
+          src={arrowRSL}
+          alt="arrowRSL"
           className="mt-4 mr-2 w-8 cursor-pointer"
           onClick={() => handlePrev()}
         />
@@ -116,9 +140,9 @@ export default function WhatWeDo() {
           className={`mt-4 p-3 rounded-full  ${activeIndex == 2 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
             }`}
         ></div>
-        <img
-          src="/home/arrowsRSR.png"
-          alt="Descripción de la imagen"
+        <Image
+          src={arrowsRSR}
+          alt="arrowsRSR"
           className="mt-4 ml-2 w-8"
           onClick={() => handleNext()}
         />
@@ -180,20 +204,21 @@ export default function WhatWeDo() {
               >
                 <div className=" h-full" onClick={() => togglePlayPause()}>
                   {stateBotom ? (
-                    <img src={"home/pause.svg"} className="w-5 h-auto -mt-4" />
+                    <Image alt="pause" src={pause} className="w-5 h-auto -mt-4" />
                   ) : (
-                    <img src={"home/play.svg"} className="w-8 h-auto -mt-4" />
+                    <Image alt="play" src={play} className="w-8 h-auto -mt-4" />
                   )}
                 </div>
                 <div className="relative h-full flex items-end justify-end mt-8">
-                  <img
-                    src={!videoMute ? "home/speaker.svg" : "home/mute.svg"}
+                  <Image
+                    src={!videoMute ? speaker : mute}
+                    alt="sound"
                     className={
                       !videoMute ? "w-5 h-auto mr-4" : "w-8 h-auto mr-4"
                     }
                     onClick={() => toggleMute()}
                   />
-                  {!maximaze ? <img src={"/home/maximaze.svg"} className="w-8 h-auto" onClick={toogleMaximaze} /> : <Image src={'/minimaze.svg'} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
+                  {!maximaze ? <Image src={maximazeIcon} className="w-8 h-auto" onClick={toogleMaximaze} /> : <Image src={minimaze} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
                 </div>
               </div>
             </div>
@@ -226,8 +251,9 @@ export default function WhatWeDo() {
               className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
             >
               <div className="flex justify-center leading-7">
-                <img
-                  src="/home/logo-green.svg"
+                <Image
+                  src={logoGreen}
+                  alt="logo-green"
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
@@ -244,16 +270,19 @@ export default function WhatWeDo() {
               </div>
               <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
                 <div className="flex flex-row gap-8">
-                  <img
-                    src="/home/GFICON-green.png"
+                  <Image
+                    src={GFICONGreen}
+                    alt="GFICON"
                     className="md:w-[136px] w-[120px]"
                   />
-                  <img
-                    src="/home/MICICON-green.png"
+                  <Image
+                    src={MICICONGreen}
+                    alt="MICICON"
                     className="md:w-[136px] w-[120px]"
                   />
-                  <img
-                    src="/home/READYICON-green.png"
+                  <Image
+                    src={READYICONGreen}
+                    alt="READY"
                     className="md:w-[136px] w-[120px]"
                   />
                 </div>
@@ -276,7 +305,8 @@ export default function WhatWeDo() {
                       delay: 1,
                     },
                   }}
-                  src="/home/tajadas.png"
+                  alt="tajadas"
+                  src={tajadas.src}
                   className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
                 />
               </div>
@@ -291,7 +321,8 @@ export default function WhatWeDo() {
                       delay: 1.2,
                     },
                   }}
-                  src="/home/patacones.png"
+                  alt="patacones"
+                  src={patacones.src}
                   className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
                 />
               </div>
@@ -306,7 +337,8 @@ export default function WhatWeDo() {
                       delay: 1.5,
                     },
                   }}
-                  src="/home/papaCriolla.png"
+                  alt="papaCriolla"
+                  src={papaCriolla.src}
                   className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
                 />
               </div>
@@ -348,8 +380,9 @@ export default function WhatWeDo() {
               className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-10"
             >
               <div className="flex justify-center leading-7">
-                <img
-                  src="/home/logo-green.svg"
+                <Image
+                  alt="logo-green"
+                  src={logoGreen}
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
@@ -366,16 +399,19 @@ export default function WhatWeDo() {
               </div>
               <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
                 <div className="flex flex-row gap-8">
-                  <img
-                    src="/home/GFICON-green.png"
+                  <Image
+                    alt="GFICON"
+                    src={GFICONGreen}
                     className="md:w-[136px] w-[120px]"
                   />
-                  <img
-                    src="/home/MICICON-green.png"
+                  <Image
+                    alt="MICICO "
+                    src={MICICONGreen}
                     className="md:w-[136px] w-[120px]"
                   />
-                  <img
-                    src="/home/READYICON-green.png"
+                  <Image
+                    alt="READY"
+                    src={READYICONGreen}
                     className="md:w-[136px] w-[120px]"
                   />
                 </div>
@@ -398,7 +434,7 @@ export default function WhatWeDo() {
                       delay: 1,
                     },
                   }}
-                  src="/home/platanomaduro.png"
+                  src={platanoMaduro.src}
                   className="absolute lg:w-[320px] h-[auto] -ml-12 z-10 "
                 />
               </div>
@@ -413,7 +449,7 @@ export default function WhatWeDo() {
                       delay: 1.2,
                     },
                   }}
-                  src="/home/platanoverde.png"
+                  src={platanoVerde.src}
                   className="absolute lg:w-[320px]  h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
                 />
               </div>
@@ -428,7 +464,7 @@ export default function WhatWeDo() {
                       delay: 1.5,
                     },
                   }}
-                  src="/home/yucafrita.png"
+                  src={yucaFrita.src}
                   className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[18rem] 2xl:ml-[25rem] "
                 />
               </div>
@@ -455,12 +491,13 @@ export default function WhatWeDo() {
         <div className="hidden lg:grid ">
           <div className=" flex flex-col lg:flex-row ">
             <div className="lg:w-3/5 w-full flex items-center justify-center">
-              <img src="/home/Frame171.png" className="w-[900px] h-[auto]" />
+              <Image alt="frame171" src={frame171} className="w-[900px] h-[auto]" />
             </div>
             <div className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-22">
               <div className="flex justify-end leading-7">
-                <img
-                  src="/home/aroBird.png"
+                <Image
+                  alt="araBird"
+                  src={araBird}
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
@@ -476,16 +513,19 @@ export default function WhatWeDo() {
               </div>
               <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 py-8">
                 <div className="flex flex-row gap-8">
-                  <img
-                    src="/home/GFICON.png"
+                  <Image
+                    alt="GFICON"
+                    src={GFICON}
                     className="md:w-[136px] w-[120px]"
                   />
-                  <img
-                    src="/home/MICICON.png"
+                  <Image
+                    alt="MICICON"
+                    src={MICICON}
                     className="md:w-[136px] w-[120px]"
                   />
-                  <img
-                    src="/home/READYICON.png"
+                  <Image
+                    alt="READY"
+                    src={READYICON}
                     className="md:w-[136px] w-[120px]"
                   />
                 </div>
@@ -499,8 +539,9 @@ export default function WhatWeDo() {
           <div className="flex flex-col w-full h-full">
             <div className="flex flex-row">
               <div className="w-1/5">
-                <img
-                  src="/home/aroBird.png"
+                <Image
+                  alt="araBird"
+                  src={araBird}
                   className="w-[200px] md:w-[250px] h-auto"
                 />
               </div>
@@ -520,14 +561,15 @@ export default function WhatWeDo() {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <img src="/home/Frame171.png" className="w-[600px] h-[auto]" />
+              <Image alt="frame171" src={frame171} className="w-[600px] h-[auto]" />
             </div>
 
             <div className="flex flex-row items-center justify-center gap-8">
-              <img src="/home/GFICON.png" className="md:w-[156px] w-[120px]" />
-              <img src="/home/MICICON.png" className="md:w-[156px] w-[120px]" />
-              <img
-                src="/home/READYICON.png"
+              <Image alt="GFICON" src={GFICON} className="md:w-[156px] w-[120px]" />
+              <Image alt="MICICON" src={MICICON} className="md:w-[156px] w-[120px]" />
+              <Image
+                alt="READYICON"
+                src={READYICON}
                 className="md:w-[156px] w-[120px]"
               />
             </div>
@@ -538,13 +580,14 @@ export default function WhatWeDo() {
         <div className="block md:hidden py-10 mb-10 ">
           <div className="flex flex-col w-full h-full">
             <div className="w-full flex items-center justify-center">
-              <img
-                src="/home/aroBird.png"
+              <Image
+                alt="araBird"
+                src={araBird}
                 className="w-[200px] md:w-[250px] h-auto"
               />
             </div>
             <div className="w-full flex items-center justify-center">
-              <img src="/home/Frame171.png" className="w-full h-full" />
+              <Image alt="frame171" src={frame171} className="w-full h-full" />
             </div>
             <div className="w-full flex items-center justify-center">
               <h1
@@ -555,9 +598,9 @@ export default function WhatWeDo() {
             </div>
             <div className="space-y-6 mt-2 text-pretty ">{data[0].text}</div>
             <div className="flex flex-row items-center justify-center mt-8 gap-8">
-              <img src="/home/GFICON.png" className="w-[95px]" />
-              <img src="/home/MICICON.png" className="w-[95px]" />
-              <img src="/home/READYICON.png" className="w-[95px]" />
+              <Image alt="GFICON" src={GFICON} className="w-[95px]" />
+              <Image alt="MICICON" src={MICICON} className="w-[95px]" />
+              <Image alt="READYICON" src={READYICON} className="w-[95px]" />
             </div>
           </div>
         </div>
@@ -571,8 +614,8 @@ export default function WhatWeDo() {
         <div className="hidden lg:grid">
           <div className="flex">
             <div className="absolute z-10 text-8xl ml-1 mt-[20rem]">
-              <img
-                src="/home/arrowsRSL.png"
+              <Image
+                src={arrowRSL}
                 alt="Descripción de la imagen"
                 className="mt-4 mr-2 w-8 cursor-pointer"
                 onClick={() => handlePrev()}
@@ -581,8 +624,8 @@ export default function WhatWeDo() {
           </div>
           <div className="flex items-center justify-end ">
             <div className="absolute z-10 text-8xl mr-1 mt-[44rem]">
-              <img
-                src="/home/arrowsRSR.png"
+              <Image
+                src={arrowsRSR}
                 alt="Descripción de la imagen"
                 className="mt-4 mr-2 w-8 cursor-pointer"
                 onClick={() => handleNext()}
@@ -602,8 +645,8 @@ export default function WhatWeDo() {
             <div className="relative flex items-center h-full w-full lg:w-1/3 -top-8">
               {/* Imagen a la izquierda */}
               <div className="lg:w-1/3 w-full h-full">
-                <img
-                  src="/home/quehacemos.png"
+                <Image
+                  src={queHacemos}
                   alt="Descripción de la imagen"
                   className="w-[80px] h-auto lg:w-[100px] lg:h-[120px]"
                 />

@@ -7,7 +7,8 @@ import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
 import { useModal } from "@/app/hooks/useModal";
 import { Siderbar } from "./sidebar";
-
+import Image from "next/image";
+import logo from '@/assets/logo.png';
 const CANT_LINKS_PRODUCTS = 4;
 export default function TopNavHero() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +47,12 @@ export default function TopNavHero() {
         <nav className="text-[#E1FAEE] flex justify-between items-center px-4 py-1 w-full relative z-30">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <img src="/logo.png" alt="Logo" className="h-18 xl:pl-[86px]" />
+              <Image
+                src={logo}
+                alt="Logo"
+                height={130}
+                className="xl:pl-[86px]"
+              />
             </Link>
             <ul className="hidden lg:flex gap-[1vw] text-[clamp(1rem,1.5vw,1.5rem)] font-light">
               <li>

@@ -3,6 +3,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import logoGreen from '@/assets/home/logo-green.svg';
+import GFICONGreen from "@/assets/home/GFICON-green.png"
+import MICICONGreen from '@/assets/home/MICICON-green.png';
+import READYICONGreen from '@/assets/home/READYICON-green.png';
+import Image from "next/image";
 
 export default function Yellowmd() {
   const cardTop = useRef();
@@ -57,8 +62,9 @@ export default function Yellowmd() {
       <div className="flex flex-col w-full h-full">
         <div className="flex flex-row">
           <div className="w-1/4 h-fit">
-            <img
-              src="/home/logo-green.svg"
+            <Image
+              alt="logo-green"
+              src={logoGreen}
               className="w-[200px] md:w-[250px] h-auto"
             />
           </div>
@@ -80,7 +86,7 @@ export default function Yellowmd() {
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
-              src={`/home/homeYellow${num}.png`}
+              src={`../../assets/home/homeYellow${num}.png`}
               alt=""
               initial={{
                 opacity: 0,
@@ -101,17 +107,10 @@ export default function Yellowmd() {
         </div>
         <div className="flex flex-row items-center justify-around w-full">
           <div className="flex flex-row gap-8">
-            <img src="/home/GFICON-green.png" className=" w-[120px]" />
-            <img src="/home/MICICON-green.png" className=" w-[120px]" />
-            <img src="/home/READYICON-green.png" className=" w-[120px]" />
+            <Image alt="GFICONGreen" src={GFICONGreen} className=" w-[120px]" />
+            <Image alt="MICICONGreen" src={MICICONGreen} className=" w-[120px]" />
+            <Image alt="READYICONGreen" src={READYICONGreen} className=" w-[120px]" />
           </div>
-
-          {/* <div className="gap-8">
-            <Link href={'/products'}>
-              <button className="bg-[#B52C17] text-[30px] text-white px-6 mt-4 rounded-md cursor-pointer">
-                {data2[0].button}
-              </button></Link>
-          </div> */}
           <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
             {data2[0].button}
           </Link>

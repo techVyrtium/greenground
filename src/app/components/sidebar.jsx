@@ -4,6 +4,7 @@ import { SidebarLinksMultiples } from "./sidebarLinksMultiples"
 import { useParams, useRouter } from "next/navigation"
 import { useId } from "react";
 import Image from "next/image";
+import blanco12 from '@/assets/home/blanco-12.svg';
 
 export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, changeLanguage, cantLinksProducts }) => {
     const { locale } = useParams();
@@ -39,7 +40,7 @@ export const Siderbar = ({ menuOpen, setMenuOpen, t, toggleModal, changeLanguage
                 <ul className={`flex flex-col gap-4 text-3xl font-light items-end mr-4`} onClick={close}>
                     <li className="mb-8">
                         <Link href="/">
-                            <Image src={'/home/blanco-12.svg'} width={150} height={150} alt="logo-white" />
+                            <Image src={blanco12} width={150} height={150} alt="logo-white" />
                         </Link>
                     </li>
                     <li>
