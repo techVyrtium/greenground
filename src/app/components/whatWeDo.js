@@ -232,9 +232,9 @@ export default function WhatWeDo() {
                 />
               </div>
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
-                <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
+                <p className={`text-[clamp(20px,6.5vw,48px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
                 <h1
-                  className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                  className={`lg:text-[clamp(50px,6.5vw,120px)] text-[clamp(50px,6.5vw,14px)] 2xl:text-[clamp(50px,6.5vw,160px)] font-bold leading-21 font-itcGBold `}
                 >
                   {data2[0].title}
                 </h1>
@@ -356,7 +356,7 @@ export default function WhatWeDo() {
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
                 <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data3[0].title2}</p>
                 <h1
-                  className={`lg:text-[clamp(50px,6.5vw,100px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                  className={`lg:text-[clamp(50px,6.5vw,220px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
                   {data3[0].title}
                 </h1>
@@ -399,7 +399,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/platanomaduro.png"
-                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
+                  className="absolute lg:w-[320px] h-[auto] -ml-12 z-10 "
                 />
               </div>
               <div>
@@ -414,7 +414,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/platanoverde.png"
-                  className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
+                  className="absolute lg:w-[320px]  h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
                 />
               </div>
               <div>
@@ -429,7 +429,7 @@ export default function WhatWeDo() {
                     },
                   }}
                   src="/home/yucafrita.png"
-                  className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem] "
+                  className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[18rem] 2xl:ml-[25rem] "
                 />
               </div>
             </div>
