@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRef, useState, useEffect } from "react";
-
+import experienciaPera from '@/assets/home/experiencepera.png';
 export default function Experience() {
   const sectionRef = useRef(null);
   const manzanaRef = useRef(null);
@@ -119,7 +119,7 @@ export default function Experience() {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-[#E7681F] h-[clamp(400px,_45vw,_750px)] relative overflow-hidden flex items-center justify-center"
+      className="w-full bg-[#E7681F] h-[clamp(400px,45vw,750px)] relative overflow-hidden flex items-center justify-center"
     >
       <AnimatePresence mode="wait">
         <motion.div
@@ -209,7 +209,7 @@ export default function Experience() {
           {/* Imagen adicional */}
           <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
             <motion.img
-              src="/home/experiencepera.png"
+              src={experienciaPera}
               alt="Production process"
               className="w-[250px] sm:w-[400px] lg:w-[480px] h-auto"
               variants={animationSettings.image}

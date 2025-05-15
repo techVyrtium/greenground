@@ -3,7 +3,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
+import logoGreen from "@/assets/home/logo-green.svg";
+import GFICONGreen from "@/assets/home/GFICON-green.png"
+import MICICONGreen from '@/assets/home/MICICON-green.png';
+import READYICONGreen from '@/assets/home/READYICON-green.png';
+import Image from "next/image";
 export default function Yellow2sm() {
   const cardTop = useRef();
   const [num, setNum] = useState(1);
@@ -56,8 +60,9 @@ export default function Yellow2sm() {
     <section className="" ref={cardTop}>
       <div className="flex flex-col w-full h-full text-[#45AC36] items-center gap-4">
         <div className="w-full h-fit flex items-center justify-center">
-          <img
-            src="/home/logo-green.svg"
+          <Image
+            alt="logo-green"
+            src={logoGreen}
             className="w-[200px] md:w-[250px] h-auto"
           />
         </div>
@@ -100,9 +105,9 @@ export default function Yellow2sm() {
         </div>
 
         <div className="flex flex-row items-center justify-center mt-8 gap-3">
-          <img src="/home/GFICON-green.png" className="w-[max(75px,20vw)]" />
-          <img src="/home/MICICON-green.png" className="w-[max(75px,20vw)]" />
-          <img src="/home/READYICON-green.png" className="w-[max(75px,20vw)]" />
+          <Image alt="GFICONGreen" src={GFICONGreen} className="w-[max(75px,20vw)]" />
+          <Image alt="MICICONGreen" src={MICICONGreen} className="w-[max(75px,20vw)]" />
+          <Image alt="READYICONGreen" src={READYICONGreen} className="w-[max(75px,20vw)]" />
         </div>
         <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
           {data2[0].button}

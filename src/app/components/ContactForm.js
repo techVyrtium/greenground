@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { useState } from "react";
-
+import sheetWhite from '@/assets/home/sheetWhite.png';
+import btnX from '@/assets/home/btnX.svg';
 const FormContact = ({ toggleModalContact, contact = false }) => {
   const initialData = {
     fullname: "",
@@ -119,8 +121,8 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
           <div className="relative flex h-full w-full py-2 md:py-8 px-4 md:px-0">
             {/* Imagen a la izquierda */}
             <div className="w-1/3 h-full">
-              <img
-                src="/home/sheetWhite.png"
+              <Image
+                src={sheetWhite}
                 alt="Descripción de la imagen"
                 className="w-[100px] h-[120px]"
               />
@@ -151,10 +153,10 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     className={`w-full p-1 border bg-white text-gray-800 font-['Roboto']  ${errors[field]
-                        ? "border-red-500"
-                        : formData[field]
-                          ? "border-green-500"
-                          : "border-gray-300"
+                      ? "border-red-500"
+                      : formData[field]
+                        ? "border-green-500"
+                        : "border-gray-300"
                       } rounded`}
                   />
                   {errors[field] && (
@@ -177,8 +179,8 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
                 type="submit"
                 disabled={!isEnabledButton || isLoading}
                 className={`w-1/2 md:w-auto font-bold py-2 px-6 rounded font-['Roboto'] ${isEnabledButton && !isLoading
-                    ? "bg-[#FF5143] text-white"
-                    : "bg-[#72777A]/80 text-white cursor-not-allowed"
+                  ? "bg-[#FF5143] text-white"
+                  : "bg-[#72777A]/80 text-white cursor-not-allowed"
                   } flex items-center justify-center gap-2`}
               >
                 {isLoading ? (
@@ -228,7 +230,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
             className="transform text-white font-bold w-full cursor-pointer hover:scale-110 transition-transform duration-200"
           >
             <div className="w-6 h-6 bg-[#FF5143] rounded-full flex items-center justify-center mb-2">
-              <img src="/home/btnX.svg" className="w-12  object-fill" />
+              <Image src={btnX} className="w-12  object-fill" />
             </div>
           </button>
         </div>

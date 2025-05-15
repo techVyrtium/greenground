@@ -35,10 +35,10 @@ export default async function Home({ params }) {
         <OurQuality />
       </div>
       <OurCertificate />
-      <Blog />
       <OurCommit />
       <OurCommitWomen />
       <SolarEnergyStats />
+      <Blog />
     </div>
   );
 }

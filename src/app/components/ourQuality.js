@@ -1,7 +1,13 @@
 "use client";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
-
+import ourQuality1 from '@/assets/home/ourQuality1.png'
+import ourQuality2 from '@/assets/home/ourQuality2.png'
+import ourQuality3 from '@/assets/home/ourQuality3.png'
+import arrowRedL from '@/assets/home/arrowsRedL.png';
+import arrowsRedR from '@/assets/home/arrowsRedR.png';
+import sheetWhite from '@/assets/home/sheetWhite.png';
+import Image from "next/image";
 export default function OurQuality() {
   const [activeIndex, setActiveIndex] = useState(0);
   const t = useTranslations('ourQuality');
@@ -22,15 +28,15 @@ export default function OurQuality() {
   const dataimg = [
     {
       id: 1,
-      image: "/home/ourQuality1.png",
+      image: ourQuality1,
     },
     {
       id: 2,
-      image: "/home/ourQuality2.png",
+      image: ourQuality2,
     },
     {
       id: 3,
-      image: "/home/ourQuality3.png",
+      image: ourQuality3.png,
     },
   ];
 
@@ -51,8 +57,8 @@ export default function OurQuality() {
           {/* Bloque: Imagen + Título */}
           <div className="relative w-full xl:w-1/3">
             {/* Imagen de fondo */}
-            <img
-              src="/home/sheetWhite.png"
+            <Image
+              src={sheetWhite}
               alt="Decoración"
               className="w-[6rem] md:w-[10rem] h-auto"
             />
@@ -77,19 +83,20 @@ export default function OurQuality() {
           <div className="w-full flex items-center justify-start">
             <div className="flex flex-row gap-[0.4rem] md:gap-4 items-center justify-start w-full">
 
-              <img
-                src="/home/arrowsRedL.png"
+              <Image
+                src={arrowRedL}
                 alt="Descripción de la imagen"
                 className="mt-4 w-[min(2.5rem,7vw)] md:w-[2.8rem] lg:w-[3rem] cursor-pointer"
                 onClick={() => handlePrev()}
               />
 
-              <img
+              <Image
+                alt={`image-${activeIndex}`}
                 src={dataimg[activeIndex].image}
                 className="md:w-[88%] lg:max-w-full lg:w-[82%] lg:h-[550px] md:h-[400px] max-w-full w-[82%] h-full rounded-tr-[20px] rounded-bl-[20px]"
               />
-              <img
-                src="/home/arrowsRedR.png"
+              <Image
+                src={arrowsRedR}
                 alt="Descripción de la imagen"
                 className="mt-4 w-[min(2.5rem,7vw)] md:w-[2.8rem] lg:w-[3rem] cursor-pointer"
                 onClick={() => handleNext()}

@@ -1,7 +1,9 @@
+import Image from "next/image";
 import ProductCard from "./products/productCard";
 import { getAllProducts } from "@/services/getAllProducts";
-
-export default async function NewProduct({ locale = 'es'}) {
+import sheetOrange from '@/assets/home/sheetOrange.png';
+import Link from "next/link";
+export default async function NewProduct({ locale = 'es' }) {
   const tag = "Nuevo";
   const products = await getAllProducts(locale);
   const productsMap = Object.entries(products).map(([slug, product]) => ({
@@ -38,8 +40,8 @@ export default async function NewProduct({ locale = 'es'}) {
               <h2 className="text-[clamp(60px,8.5vw,96px)] xl:text-[clamp(48px,5.6vw,96px)] leading-[1] font-bold text-[#E7681F] mb-12 font-itcGBold text-left">
                 {data[0].title}
               </h2>
-              <img
-                src="/home/sheetOrange.png"
+              <Image
+                src={sheetOrange}
                 alt="Descripción de la imagen"
                 className="w-[155px] h-auto absolute -top-10 right-4"
               />
@@ -47,12 +49,12 @@ export default async function NewProduct({ locale = 'es'}) {
           </div>
 
           <div className="flex justify-end w-full">
-            <a
+            <Link
               href={`/products`}
               className="bg-[#F19412] text-[20px] text-white px-6 mt-4 rounded-md"
             >
               {data[0].button}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

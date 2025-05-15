@@ -1,7 +1,8 @@
 'use client'
 import { useTranslations } from "next-intl";
 import RecetNews from "./recetNews";
-
+import Image from "next/image";
+import sheetWhite from '@/assets/home/sheetWhite.png'
 export default function Blog() {
   const t = useTranslations('blog');
   const data = [
@@ -53,8 +54,8 @@ export default function Blog() {
             <div className="relative flex items-center h-full md:mt-4 mt-8">
               {/* Imagen a la izquierda */}
               <div className="absolute w-fit h-full -top-6">
-                <img
-                  src="/home/sheetWhite.png"
+                <Image
+                  src={sheetWhite}
                   alt="Descripción de la imagen"
                   className="w-[100px] h-[120px]"
                 />

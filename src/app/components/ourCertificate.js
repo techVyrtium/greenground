@@ -1,19 +1,29 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-
+import Image from "next/image";
+import calendar from '@/assets/home/Calendar.png';
+import approve from '@/assets/home/Approve.png';
+import iso9001 from '@/assets/home/logotipo-iso-9001.png'
+import FDA from "@/assets/home/FDA.png"
+import invima1 from "@/assets/home/logo-invima1.png"
+import tcpat1 from "@/assets/home/tcpat1.png"
+import bacs from "@/assets/home/logo-bacs.png"
+import kosher1 from "@/assets/home/Logo-Kosher1.png"
+import sheetGreen from '@/assets/home/sheetGreen.png';
+import Link from "next/link";
 export default function OurCertificate() {
   const t = useTranslations('ourCertificate');
   const data = [
     {
       id: 1,
       text: t('text'),
-      img: "/home/Calendar.png",
+      img: calendar,
       className: `md:w-[170px]`
     },
     {
       id: 2,
       text: t('text2'),
-      img: "/home/Approve.png",
+      img: approve,
       className: `md:w-[200px]`
     },
   ];
@@ -33,26 +43,26 @@ export default function OurCertificate() {
   ];
   const imageList = [
     {
-      src: "/home/logotipo-iso-9001.png",
+      src: iso9001,
       link: "https://www.sgs.com/en/certified-clients-and-products",
     },
-    { src: "/home/FDA.png", link: "" },
-    { src: "/home/logo-invima1.png", link: "" },
-    { src: "/home/tcpat1.png", link: "" },
-    { src: "/home/logo-bacs.png", link: "" },
-    { src: "/home/Logo-Kosher1.png", link: "" },
+    { src: FDA, link: "" },
+    { src: invima1, link: "" },
+    { src: tcpat1, link: "" },
+    { src: bacs, link: "" },
+    { src: kosher1, link: "" },
   ];
   return (
     <section className="w-full h-full p-[clamp(1rem,5vw,6rem)]">
       <div className="lg:h-[10rem] w-full mx-auto">
         {/* Info Verde */}
         <div className="flex flex-col lg:flex-row items-stretch justify-center h-full w-full gap-16">
-          {data.map((dato) => (
+          {data.map((dato, i) => (
             <div className="lg:w-1/2 w-full" key={dato.id}>
               <div className="w-full h-full flex flex-col">
                 <div className="flex-grow flex items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400 px-6 min-h-[80px]">
                   <div>
-                    <img src={dato.img} className={`${dato.className ?? ''} w-[100px]`} />
+                    <Image alt={`image-${i}`} src={dato.img} className={`${dato.className ?? ''} w-[100px]`} />
                   </div>
                   <div className="ml-8">
                     <p className="text-[max(1rem,3.8vw)] leading-[1.5rem] md:text-[36px] text-white text-center md:leading-8 font-bold py-4">
@@ -73,8 +83,8 @@ export default function OurCertificate() {
             <div className="flex h-full">
               {/* Imagen a la izquierda */}
               <div className="h-full">
-                <img
-                  src="/home/sheetGreen.png"
+                <Image
+                  src={sheetGreen}
                   alt="Descripción de la imagen"
                   className="w-[70px] h-[90px] sm:w-[90px] sm:h-[110px] rotate-12"
                 />
@@ -92,15 +102,15 @@ export default function OurCertificate() {
             {imageList.map((image, index) => (
               <div key={index}>
                 {image.link ? (
-                  <a
+                  <Link
                     href={image.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={image.src} className="w-40 h-40 object-contain" />
-                  </a>
+                    <Image src={image.src} alt="image" className="w-40 h-40 object-contain" />
+                  </Link>
                 ) : (
-                  <img src={image.src} className="w-40 h-40 object-contain" />
+                  <Image src={image.src} alt="image" className="w-40 h-40 object-contain" />
                 )}
               </div>
             ))}

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; // ✅ IMPORTANTE
 import "slick-carousel/slick/slick-theme.css";
 import { useParams } from "next/navigation";
-
+import Image from "next/image";
 const ProductCard = ({ product }) => {
   const { locale } = useParams()
   const hasMultipleImages = product.images.length > 1;
@@ -34,9 +34,11 @@ const ProductCard = ({ product }) => {
       <Slider {...settings} pauseOnHover={false} className="rounded-lg">
         {product.images.map((img, index) => (
           <div key={index} className="m-auto">
-            <img
+            <Image
               src={img}
               alt={product.title}
+              width={208}
+              height={208}
               className="w-full h-auto  rounded-lg bg-white/60 shadow-md"
             />
           </div>

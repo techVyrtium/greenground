@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl"; // Importar useTranslations
 import Link from "next/link";
-
+import logo2 from '@/assets/logo2.png';
+import phone from '@/assets/icon-phone.svg';
+import email from '@/assets/icon-email.svg';
 export default function Footer() {
   const t = useTranslations("footer"); // Inicializar useTranslations
 
@@ -11,7 +13,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="flex justify-start lg:justify-start lg:w-auto">
           <Image
-            src="/logo2.png"
+            src={logo2}
             alt="Green Ground"
             width={300}
             height={300}
@@ -85,13 +87,13 @@ export default function Footer() {
           <div className="text-left  self-start lg:max-w-none text-base md:text-2xl">
             <h3 className="font-bold text-3xl mb-3">{t("contactTitle")}</h3>
             <div className="flex items-center gap-2 mb-3">
-              <Image src="/icon-phone.svg" alt="Phone" width={20} height={20} />
+              <Image src={phone} alt="Phone" width={20} height={20} />
               <Link href={"tel:+573004194289"} className="hover:underline">
                 +57 3004194289
               </Link>
             </div>
             <div className="flex items-center  gap-2 mb-5">
-              <Image src="/icon-email.svg" alt="Email" width={35} height={35} />
+              <Image src={email} alt="Email" width={35} height={35} />
               <span className="break-all">
                 <Link
                   href={"mailto:directorcomercial@greenground.com.co"}
