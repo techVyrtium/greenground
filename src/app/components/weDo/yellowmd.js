@@ -86,7 +86,7 @@ export default function Yellowmd() {
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
-              src={`../../assets/home/homeYellow${num}.png`}
+              src={`/home/homeYellow${num}.png`}
               alt=""
               initial={{
                 opacity: 0,

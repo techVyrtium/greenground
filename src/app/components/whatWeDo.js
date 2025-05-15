@@ -218,7 +218,7 @@ export default function WhatWeDo() {
                     }
                     onClick={() => toggleMute()}
                   />
-                  {!maximaze ? <Image src={maximazeIcon} className="w-8 h-auto" onClick={toogleMaximaze} /> : <Image src={minimaze} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
+                  {!maximaze ? <Image src={maximazeIcon} className="w-8 h-auto" onClick={toogleMaximaze} alt="maximaze" /> : <Image src={minimaze} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
                 </div>
               </div>
             </div>

@@ -84,8 +84,8 @@ export default function Yellow2sm() {
 
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
-            <motion.image
-              src={`../assets/home/homeYellow2${num}.png`}
+            <motion.img
+              src={`/home/homeYellow2${num}.png`}
               alt=""
               initial={{
                 opacity: 0,
