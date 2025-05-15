@@ -6,6 +6,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import sheetWhite from '@/assets/home/sheetWhite.png';
+import cursor from '@/assets/home/cursor.svg';
 const TopProduct = () => {
   const { locale } = useParams();
   const t = useTranslations('topProducts');
@@ -45,8 +47,8 @@ const TopProduct = () => {
       <section className="w-full h-fit mt-20 relative">
         <div className="relative flex h-[131px] w-[80vw] max-w-[500px] pb-4 pt-6 bg-[#008638] rounded-br-full bg-[image:url(/home/bg-green.png)] bg-center">
           <div className="h-full px-4 sm:px-6 lg:px-30">
-            <img
-              src="/home/sheetWhite.png"
+            <Image
+              src={sheetWhite}
               alt="Descripción de la imagen"
               className="w-[80px] h-[100px]"
             />
@@ -73,7 +75,7 @@ const TopProduct = () => {
         >
           {t('button')}
           <Image
-            src={"/home/cursor.svg"}
+            src={cursor}
             width={60}
             height={60}
             className="absolute -right-1 -bottom-7 w-10 h-10"

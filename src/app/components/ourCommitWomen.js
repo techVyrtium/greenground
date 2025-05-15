@@ -1,22 +1,27 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React, { useState } from "react";
-
+import arrowL from '@/assets/home/arrowL.svg';
+import arrowR from '@/assets/home/arrowR.svg';
+import women1 from '@/assets/home/women1.png';
+import women2 from '@/assets/home/women2.png';
+import women3 from '@/assets/home/women3.png';
 export default function OurCommitWomen() {
   const [activeIndex, setActiveIndex] = useState(0);
   const t = useTranslations('ourCommitWomen');
   const dataimg = [
     {
       id: 1,
-      image: "/home/women1.png",
+      image: women1,
     },
     {
       id: 2,
-      image: "/home/women2.png",
+      image: women2,
     },
     {
       id: 3,
-      image: "/home/women3.png",
+      image: women3,
     },
   ];
 
@@ -53,21 +58,22 @@ export default function OurCommitWomen() {
           <div className="w-full flex items-start justify-start">
             <div className="flex flex-row order-last gap-[0.4rem] md:gap-4 lg:order-none items-center justify-start w-full mt-4 lg:mt-0">
 
-              <img
-                src="/home/arrowsL.png"
+              <Image
+                src={arrowL}
                 alt="Descripción de la imagen"
                 className="mt-4 w-[3rem] cursor-pointer"
                 onClick={() => handlePrev()}
               />
 
 
-              <img
+              <Image
                 src={dataimg[activeIndex].image}
+                alt="image"
                 className="md:w-[750px] md:h-[400px] lg:max-w-full lg:w-[82%] w-[82%] lg:h-[550px] h-full rounded-b-2xl rounded-r-2xl"
               />
 
-              <img
-                src="/home/arrowsR.png"
+              <Image
+                src={arrowR}
                 alt="Descripción de la imagen"
                 className="mt-4 w-[3rem] cursor-pointer"
                 onClick={() => handleNext()}

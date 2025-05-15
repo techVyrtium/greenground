@@ -1,6 +1,6 @@
 'use client'
 import React, { Suspense, useEffect, useState } from "react";
-import { MapMobile } from "./MapMobile";
+// import { MapMobile } from "./MapMobile";
 import MapW2 from "./MapW2";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 

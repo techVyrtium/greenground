@@ -60,7 +60,7 @@ const ProductDetail = ({
         <div className="flex flex-col sm:flex-row">
           {/* Imagen principal */}
           <div className="relative w-full flex flex-1 bg-white rounded-xl">
-            <img
+            <Image
               src={mainImage}
               alt={title}
               className="w-full object-contain rounded-xl border"
@@ -83,6 +83,8 @@ const ProductDetail = ({
                         alt={`thumb-${i}`}
                         fill
                         className="object-cover rounded-md border"
+                        width={600}
+                        height={800}
                       />
                     </div>
                   </div>

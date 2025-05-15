@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import aji from '@/assets/home/aji.svg';
+import maiz from "@/assets/home/maiz.svg";
+import bananom from '@/assets/home/bananom.svg';
+import cafe from '@/assets/home/cafe.svg';
+import pera from '@/assets/home/pera.svg';
+import paleta from '@/assets/home/paleta.svg';
+import botella from '@/assets/home/botella.svg';
+import galleta from '@/assets/home/galleta.svg';
+import piña from '@/assets/home/piña.svg';
 export const ProductCategories = async ({ locale = 'es' }) => {
   const info = {
     es: {
@@ -27,7 +35,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "left",
         id: "aji",
-        src: "/home/aji.svg",
+        src: aji,
         alt: "",
         width: 37.195,
         height: 172.538,
@@ -36,7 +44,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "bottom",
         id: "maiz",
-        src: "/home/maiz.svg",
+        src: maiz,
         alt: "",
         width: 128.906,
         height: 183.732,
@@ -46,7 +54,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "bottom",
         id: "pera",
-        src: "/home/pera.svg",
+        src: pera,
         alt: "",
         width: 116.467,
         height: 171,
@@ -56,7 +64,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "top",
         id: "bananom",
-        src: "/home/bananom.svg",
+        src: bananom,
         alt: "",
         width: 103.984,
         height: 91.71,
@@ -67,7 +75,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "top",
         id: "cafe",
-        src: "/home/cafe.svg",
+        src: cafe,
         alt: "",
         width: 105.892,
         height: 111,
@@ -76,7 +84,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "bottom",
         id: "botella",
-        src: "/home/botella.svg",
+        src: botella,
         alt: "",
         width: 61.055,
         height: 123,
@@ -85,7 +93,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "top",
         id: "galleta",
-        src: "/home/galleta.svg",
+        src: galleta,
         alt: "",
         width: 77.603,
         height: 77,
@@ -96,7 +104,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "left",
         id: "paleta",
-        src: "/home/paleta.svg",
+        src: paleta,
         alt: "",
         width: 106.897,
         height: 161.924,
@@ -105,7 +113,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
       {
         start: "top",
         id: "piña",
-        src: "/home/piña.svg",
+        src: piña,
         alt: "",
         width: 191.983,
         height: 171.772,

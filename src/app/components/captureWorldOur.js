@@ -4,6 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useModal } from "@/app/hooks/useModal";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import slide4 from '@/assets/home/slide4.png'
+import slide5 from '@/assets/home/slide5.png'
+import slide6 from '@/assets/home/slide6.png'
+import slide7 from '@/assets/home/slide7.png'
+import tuLogoAqui from '@/assets/tu_logo_aqui.png';
+import cursor from '@/assets/home/cursor.svg';
+import arrowL from '@/assets/home/arrowL.svg';
+import arrowR from '@/assets/home/arrowR.svg';
+import sheetGreen from '@/assets/home/sheetGreen.png';
+import frame171 from '@/assets/home/Frame171.png';
 export default function CaptureWorldOur() {
   const [activeIndex, setActiveIndex] = useState(0);
   const { toggleModal } = useModal();
@@ -35,7 +45,7 @@ export default function CaptureWorldOur() {
     {
       id: 4,
       texto: "Celebrando nuestra llegada al mercado suizo",
-      src: "/home/slide4.png",
+      src: slide4,
       type: 'image',
       height: 1148,
       width: 487.72,
@@ -43,7 +53,7 @@ export default function CaptureWorldOur() {
     {
       id: 5,
       texto: "Celebrando nuestra llegada al mercado suizo",
-      src: "/home/slide5.png",
+      src: slide5,
       type: 'image',
       height: 1148,
       width: 487.72,
@@ -51,7 +61,7 @@ export default function CaptureWorldOur() {
     {
       id: 6,
       texto: "Celebrando nuestra llegada al mercado suizo",
-      src: "/home/slide6.png",
+      src: slide6,
       type: 'image',
       height: 1148,
       width: 487.72,
@@ -60,7 +70,7 @@ export default function CaptureWorldOur() {
     {
       id: 7,
       texto: "Celebrando nuestra llegada al mercado suizo",
-      src: "/home/slide7.png",
+      src: slide7,
       type: 'image',
       height: 1148,
       width: 487.72,
@@ -176,8 +186,8 @@ export default function CaptureWorldOur() {
             </p>
           </div>
           <div className="w-full flex flex-row items-center justify-center">
-            <img
-              src="/home/arrowsL.png"
+            <Image
+              src={arrowL}
               alt="Descripción de la imagen"
               className="mt-4 mr-2 cursor-pointer"
               onClick={() => handlePrev()}
@@ -191,8 +201,8 @@ export default function CaptureWorldOur() {
               }
             </div>
 
-            <img
-              src="/home/arrowsR.png"
+            <Image
+              src={arrowR}
               alt="Descripción de la imagen"
               className="mt-4 ml-2 cursor-pointer"
               onClick={() => handleNext()}
@@ -203,8 +213,8 @@ export default function CaptureWorldOur() {
         <div className=" w-full h-full flex flex-col md:mt-18 md:ml-4 lg:mt-6 lg:ml-16 ">
           <div className="relative">
             <div className="w-1/3">
-              <img
-                src="/home/sheetGreen.png"
+              <Image
+                src={sheetGreen}
                 alt="Descripción de la imagen"
                 className="w-[70px] h-[90px] md:w-[60px] md:h-[80px] lg:w-[70px] lg:h-[90px]"
               />
@@ -228,8 +238,9 @@ export default function CaptureWorldOur() {
             <div className="items-center flex flex-col  lg:mt-10 gap-x-24 ">
               <div className="lg:w-full flex flex-row items-center justify-around gap-4 h-52">
                 <div className="lg:w-[min(25vw,20rem)] aspect-square flex flex-col">
-                  <img
-                    src="/home/Frame171.png"
+                  <Image
+                    alt="frame171"
+                    src={frame171}
                     className="w-full h-full object-contain"
                   />
                   <div className={`flex items-end justify-end font-itcGBook leading-5 bottom-8 relative`}>
@@ -237,8 +248,9 @@ export default function CaptureWorldOur() {
                   </div>
                 </div>
                 <div className="lg:w-[min(25vw,20rem)] aspect-square flex flex-col">
-                  <img
-                    src="/tu_logo_aqui.png"
+                  <Image
+                  alt="tu_logo_aqui"
+                    src={tuLogoAqui}
                     className="w-full h-full object-contain"
                   />
                   <button
@@ -248,7 +260,7 @@ export default function CaptureWorldOur() {
                   >
                     {data[0].button}
                     <Image
-                      src={'/home/cursor.svg'}
+                      src={cursor}
                       width={60} height={60}
                       className="absolute -right-1 -bottom-7 w-10 h-10"
                       alt='cursor'
@@ -266,14 +278,15 @@ export default function CaptureWorldOur() {
       <div className="max-w-full mx-auto flex flex-col md:flex-row items-center justify-center lg:mt-10 visible lg:hidden ">
         <div className="lg:w-1/2 flex flex-row items-center justify-center gap-4">
           <div className="w-[50%] aspect-square">
-            <img
-              src="/home/Frame171.png"
+            <Image
+              src={frame171}
+              alt="frame171"
               className="w-full h-full object-contain"
             />
           </div>
           <div className="w-[50%] aspect-square">
-            <img
-              src="/tu_logo_aqui.png"
+            <Image
+              src={tuLogoAqui}
               className="w-full h-full object-contain"
               alt='tu-logo-aqui'
             />
@@ -285,7 +298,7 @@ export default function CaptureWorldOur() {
           <button className="bg-[#FFB000] text-[20px] text-white px-6 mt-4 rounded-md relative h-12">
             {data[0].button}
             <Image
-              src={'/home/cursor.svg'}
+              src={cursor}
               width={60}
               height={60}
               className="absolute -right-1 -bottom-7 w-10 h-10"

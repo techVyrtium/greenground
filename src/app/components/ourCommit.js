@@ -1,7 +1,8 @@
 'use client'
 
 import { useTranslations } from "next-intl";
-
+import Image from "next/image";
+import sheetWhite from '@/assets/home/sheetWhite.png';
 export default function OurCommit() {
   const t = useTranslations('ourCommit');
   const data = [
@@ -28,8 +29,8 @@ export default function OurCommit() {
             {/* Columna izquierda (Imagen y texto) */}
             <div className="relative flex h-full xl:h-auto py-4 ">
               <div className="xl:w-1/3 h-full">
-                <img
-                  src="/home/sheetWhite.png"
+                <Image
+                  src={sheetWhite}
                   alt="Descripción de la imagen"
                   className="w-[100px] h-[120px]"
                 />
