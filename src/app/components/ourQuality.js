@@ -36,7 +36,7 @@ export default function OurQuality() {
     },
     {
       id: 3,
-      image: ourQuality3.png,
+      image: ourQuality3,
     },
   ];
 
