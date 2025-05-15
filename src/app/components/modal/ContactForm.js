@@ -33,7 +33,7 @@ const ContactForm = () => {
 
 
   return (
-    <div 
+    <div
       className="fixed inset-0 backdrop-brightness-50 flex justify-center items-center z-50"
       onClick={handleBackdropClick}
     >

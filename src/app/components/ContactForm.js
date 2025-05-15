@@ -230,7 +230,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
             className="transform text-white font-bold w-full cursor-pointer hover:scale-110 transition-transform duration-200"
           >
             <div className="w-6 h-6 bg-[#FF5143] rounded-full flex items-center justify-center mb-2">
-              <Image src={btnX} className="w-12  object-fill" />
+              <Image src={btnX} alt="btnx" className="w-12  object-fill" />
             </div>
           </button>
         </div>

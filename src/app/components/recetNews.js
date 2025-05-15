@@ -23,7 +23,7 @@ export default function RecetNews({
       setColorSet(true);
       revData(true);
     }
-  }, []);
+  }, [tipo]);
 
   const revData = async (rev) => {
     let res = null;
