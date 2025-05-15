@@ -51,7 +51,7 @@ export default function TopNavHero() {
                 src={logo}
                 alt="Logo"
                 height={130}
-                className="xl:pl-[86px]"
+                className="w-20"
               />
             </Link>
             <ul className="hidden lg:flex gap-[1vw] text-[clamp(1rem,1.5vw,1.5rem)] font-light">
