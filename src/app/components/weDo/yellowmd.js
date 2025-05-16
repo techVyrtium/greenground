@@ -7,6 +7,8 @@ import logoGreen from '@/assets/home/logo-green.svg';
 import GFICONGreen from "@/assets/home/GFICON-green.png"
 import MICICONGreen from '@/assets/home/MICICON-green.png';
 import READYICONGreen from '@/assets/home/READYICON-green.png';
+import homeYellow1 from '@/assets/home/homeYellow1.png';
+import homeYellow2 from '@/assets/home/homeYellow2.png';
 import Image from "next/image";
 
 export default function Yellowmd() {
@@ -66,6 +68,7 @@ export default function Yellowmd() {
               alt="logo-green"
               src={logoGreen}
               className="w-[200px] md:w-[250px] h-auto"
+              width={250}
             />
           </div>
           <div className="flex flex-col items-center h-fit w-2/3 text-[#45AC36]">
@@ -86,7 +89,7 @@ export default function Yellowmd() {
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
-              src={`/home/homeYellow${num}.png`}
+              src={num === 1 ? homeYellow1.src : homeYellow2.src}
               alt=""
               initial={{
                 opacity: 0,
@@ -107,9 +110,24 @@ export default function Yellowmd() {
         </div>
         <div className="flex flex-row items-center justify-around w-full">
           <div className="flex flex-row gap-8">
-            <Image alt="GFICONGreen" src={GFICONGreen} className=" w-[120px]" />
-            <Image alt="MICICONGreen" src={MICICONGreen} className=" w-[120px]" />
-            <Image alt="READYICONGreen" src={READYICONGreen} className=" w-[120px]" />
+            <Image
+              alt="GFICONGreen"
+              src={GFICONGreen}
+              className="w-[120px]"
+              width={120}
+            />
+            <Image
+              alt="MICICONGreen"
+              src={MICICONGreen}
+              className="w-[120px]"
+              width={120}
+            />
+            <Image
+              alt="READYICONGreen"
+              src={READYICONGreen}
+              className="w-[120px]"
+              width={120}
+            />
           </div>
           <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
             {data2[0].button}

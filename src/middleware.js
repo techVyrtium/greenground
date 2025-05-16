@@ -13,14 +13,14 @@ export async function middleware(req) {
   if (!supportedLocales.includes(locale)) {
     // Redirigir al idioma por defecto (es) si no es válido
     const url = req.nextUrl.clone();
+    console.log({ pathname })
     url.pathname = `/es${pathname}`;
     return NextResponse.redirect(url);
   }
 
   const requestHeaders = await req.headers;
   const selectedLocale = locale || "es"; // Aquí usas await para obtener los headers
-
-  console.log("Locale detectado (MIDDLEWARE):", selectedLocale); // Para depuración
+  console.log("Locale detectado (MIDDLEWARE):", { selectedLocale }); // Para depuración
 
   // Pasar el idioma a los headers
   const response = NextResponse.next();

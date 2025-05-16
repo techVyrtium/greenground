@@ -7,6 +7,8 @@ import logoGreen from "@/assets/home/logo-green.svg";
 import GFICONGreen from "@/assets/home/GFICON-green.png"
 import MICICONGreen from '@/assets/home/MICICON-green.png';
 import READYICONGreen from '@/assets/home/READYICON-green.png';
+import homeYellow1 from '@/assets/home/homeYellow1.png'
+import homeYellow2 from '@/assets/home/homeYellow2.png'
 import Image from "next/image";
 
 export default function Yellowsm() {
@@ -86,7 +88,7 @@ export default function Yellowsm() {
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
-              src={`/home/homeYellow${num}.png`}
+              src={num == 1 ? homeYellow1 : homeYellow2}
               alt=""
               initial={{
                 opacity: 0,

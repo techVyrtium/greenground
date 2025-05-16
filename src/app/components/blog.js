@@ -1,4 +1,3 @@
-'use client'
 import { useTranslations } from "next-intl";
 import RecetNews from "./recetNews";
 import Image from "next/image";

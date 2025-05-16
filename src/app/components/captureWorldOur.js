@@ -160,19 +160,20 @@ export default function CaptureWorldOur() {
               className="md:min-h-[520px] lg:h-full min-h-[40rem]"
             >
               {
-                dataSlider[activeIndex].type === 'video' ? (<video
-                  src={dataSlider[activeIndex].src}
-                  autoPlay={true}
-                  muted={true}
-                  onEnded={handleVideoEnd}
-                  className="h-[40rem] md:h-[520px] object-cover rounded-lg"
-                >
-                  <source
+                dataSlider[activeIndex].type === 'video' ? (
+                  <video
                     src={dataSlider[activeIndex].src}
-                    type="video/mov"
                     autoPlay={true}
-                  />
-                </video>)
+                    muted={true}
+                    onEnded={handleVideoEnd}
+                    className="h-[40rem] md:h-[520px] object-cover rounded-lg"
+                  >
+                    <source
+                      src={dataSlider[activeIndex].src}
+                      type="video/mov"
+                      autoPlay={true}
+                    />
+                  </video>)
                   : (
                     <ImageSlide activeIndex={activeIndex} />
                   )
@@ -249,7 +250,7 @@ export default function CaptureWorldOur() {
                 </div>
                 <div className="lg:w-[min(25vw,20rem)] aspect-square flex flex-col">
                   <Image
-                  alt="tu_logo_aqui"
+                    alt="tu_logo_aqui"
                     src={tuLogoAqui}
                     className="w-full h-full object-contain"
                   />

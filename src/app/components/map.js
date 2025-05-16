@@ -1,24 +1,14 @@
 'use client'
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 // import { MapMobile } from "./MapMobile";
 import MapW2 from "./MapW2";
-const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 export default function MapW() {
-  const [screen, setScreen] = useState();
-  useEffect(() => {
-
-    if (window)
-      setScreen(window.screen.availWidth);
-
-  }, [])
   return (
 
     <section className="w-full h-auto md:min-h-[400px] flex items-center justify-center my-20">
       <Suspense fallback={<div className="text-white">Cargando mapa...</div>}>
         <>
-          {/* {screen >= 1024 ? (<div className="bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white w-full"><MapW2 /></div>) : (<MapMobile />)} */}
-          {/* <Spline className="bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white" scene="https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode" /> */}
           <div className="bg-cover bg-no-repeat bg-white w-full"><MapW2 /></div>
         </>
       </Suspense>

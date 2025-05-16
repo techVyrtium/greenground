@@ -24,7 +24,11 @@ export default function Card({ card, wSize = 48, hSize = 52, imgW = 400, zone = 
       {card.map((data) => (
         <div className="md:w-48 w-full flex flex-col items-center justify-around lg:items-start " key={data.id}>
           <div className={`flex items-center justify-center w-[155px]  md:w-${wSize} md:h-${hSize} lg:h-${hSize} xl:md:h-${hSize} rounded-lg backdrop-blur-md shadow-md  shadow-gray-500 `}>
-            <Image src={activeIndex == 0  ? data.img1 : data.img2} className={`w-${imgW} ${zone == 1 ? 'h-36' : 'h-32'} transition-[blur] duration-[2s] ease-initial` } />
+            <Image 
+            src={activeIndex == 0  ? data.img1 : data.img2} 
+            className={`w-${imgW} ${zone == 1 ? 'h-36' : 'h-32'} transition-[blur] duration-[2s] ease-initial` }
+            alt="card"
+            />
           </div>
           <div className={`flex w-[155px] md:w-${wSize} flex-row items-center justify-center gap-2`}>
             <div
