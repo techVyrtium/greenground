@@ -7,7 +7,9 @@ import logoGreen from "@/assets/home/logo-green.svg";
 import GFICONGreen from "@/assets/home/GFICON-green.png"
 import MICICONGreen from '@/assets/home/MICICON-green.png';
 import READYICONGreen from '@/assets/home/READYICON-green.png';
+import homeYellow22 from '@/assets/home/homeYellow22.png';
 import Image from "next/image";
+
 export default function Yellow2sm() {
   const cardTop = useRef();
   const [num, setNum] = useState(1);
@@ -85,7 +87,8 @@ export default function Yellow2sm() {
         <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
-              src={`/home/homeYellow2${num}.png`}
+              // `/home/homeYellow2${num}.png`
+              src={homeYellow22}
               alt=""
               initial={{
                 opacity: 0,

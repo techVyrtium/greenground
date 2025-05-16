@@ -93,6 +93,7 @@ export default function MapW() {
                 console.error("Spline runtime error:", error);
                 throw new Error("Spline initialization failed");
               }}
+              
             />
           )}
         </Suspense>

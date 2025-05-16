@@ -1,3 +1,6 @@
+import revistaSemana from '@/assets/news/revistasemana2card.png';
+import greenground from '@/assets/news/GreenGroundcard.png';
+import congelados from '@/assets/news/revistasemanacard.png';
 export const ListType = Object.freeze({
     ORDER: 1,
     UNORDER: 2
@@ -12,7 +15,7 @@ export const news = {
             },
             title: "PRODUCTORA AGRÍCOLA AG, una familia de exportación",
             owner: 'Revista semana',
-            image: "/news/revistasemana2card.png",
+            image: revistaSemana,
             content: [
                 { text: "La fusión del respeto por la sabiduría de los mejores y la aceptación de las ideas innovadoras de los jóvenes ha permitido que tres generaciones de la familia Galán, orgullosamente campesinos de la Sabana, hayan construido una de las 100 empresas colombianas con mayor productividad en corto tiempo.", },
                 { text: "Se trata de Productora Agricola AG CI SAS, iniciada por los abuelos de Sebastián Santamaría Galán, quienes se dedicaban a vender en la Central de Abastos de Bogotá -Corabastos- todo tipo de hortalizas en fresco. La segunda generación, conformada por María y José Antonio Galán, madre y tío de Sebastián, ampliaron los horizontes hacia el mercado institucional del país, como hoteles, restaurantes y puntos remotos como Caño Limón y Cerrejón.", },
@@ -63,7 +66,7 @@ export const news = {
             title: "Exportar trampolín para crecer.",
             owner: 'Juan Sebastián Santamaría Galán, gerente comercial Green Ground',
             description: "Hace cinco años, para graduarse de administración de empresas de la Universidad Externado de Colombia, Juan Sebastián Santamaría hizo su proyecto de grado pensando en agregar valor al negocio familiar, fundado tres décadas atrás por sus abuelos en Bogotá: vender hortalizas.",
-            image: "/news/GreenGroundcard.png",
+            image: greenground,
             sections: [
                 {
                     title: 'Green Ground: Exportar es un trampolín para crecer.',
@@ -101,7 +104,7 @@ export const news = {
             title: "Boom de congelados.",
             owner: 'Juan Sebastián Santamaría, Gerente Comercial de Green Ground',
             description: "Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y manes, hoy salen más comidas de la nevera al fogón.",
-            image: "/news/revistasemanacard.png",
+            image: congelados,
             sections: [
                 {
                     title: 'Boom de congelados',
@@ -195,7 +198,7 @@ export const news = {
             },
             title: "Productora Agrícola AG, an Exporting Family",
             owner: 'Revista semana',
-            image: "/news/revistasemana2card.png",
+            image: revistaSemana,
             content: [
                 { text: "The fusion of respect for the wisdom of the elders and the acceptance of innovative ideas from the young has allowed three generations of the Galán family, proudly farmers from the Sabana region, to build one of the 100 most productive Colombian companies in a short time.", },
                 { text: "This is Productora Agricola AG CI SAS, started by the grandparents of Sebastián Santamaría Galán, who were dedicated to selling all kinds of fresh vegetables at the Central de Abastos in Bogotá -Corabastos-. The second generation, made up of María and José Antonio Galán, Sebastián's mother and uncle, expanded their horizons towards the country's institutional market, such as hotels, restaurants, and remote locations like Caño Limón and Cerrejón.", },
@@ -244,7 +247,7 @@ export const news = {
             title: "Green Ground: Exporting as a Stepping Stone for Growth",
             owner: 'Juan Sebastián Santamaría Galán, Commercial Manager, Green Ground.',
             description: "Five years ago, to graduate with a degree in business administration from Universidad Externado de Colombia, Juan Sebastián Santamaría made his degree project thinking about adding value to the family business, founded three decades earlier by his grandparents in Bogotá: selling vegetables.",
-            image: "/news/GreenGroundcard.png",
+            image: greenground,
             sections: [
                 {
                     title: 'Green Ground: Exportar es un trampolín para crecer.',
@@ -280,7 +283,7 @@ export const news = {
             title: "Frozen Food Boom",
             owner: 'Juan Sebastián Santamaría Galán, Commercial Manager, Green Ground.',
             description: "Quarantines are driving the frozen food business, whose consumption is on the rise. From empanadas and pastries to sancochos and peanuts, more meals are now going from the freezer to the stove.",
-            image: "/news/revistasemanacard.png",
+            image: congelados,
             sections: [
                 {
                     title: 'Boom de congelados',
