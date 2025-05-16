@@ -9,6 +9,9 @@ import paleta from '@/assets/home/paleta.svg';
 import botella from '@/assets/home/botella.svg';
 import galleta from '@/assets/home/galleta.svg';
 import piña from '@/assets/home/piña.svg';
+import olla from '@/assets/home/olla.svg';
+import rabano from '@/assets/home/rabano.svg';
+import dulce from '@/assets/home/dulce.svg';
 export const ProductCategories = async ({ locale = 'es' }) => {
   const info = {
     es: {
@@ -137,7 +140,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
               sup={locale === 'en' ? 'Products' : "Productos"}
               title={categories[0]}
               color="green"
-              mainImage="/home/rabano.svg"
+              mainImage={rabano}
               mainImageHeight={392}
               mainImageWidth={269.555}
               classNameImage="w-52 -bottom-24"
@@ -149,7 +152,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
             <ProductCategory
               title={categories[1]}
               color="red"
-              mainImage="/home/dulce.svg"
+              mainImage={dulce}
               mainImageHeight={231}
               mainImageWidth={468.405}
               classNameImage="bottom-6 w-full"
@@ -161,7 +164,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
             <ProductCategory
               title={categories[2]}
               color="orange"
-              mainImage="/home/olla.svg"
+              mainImage={olla}
               mainImageHeight={272}
               mainImageWidth={261}
               classNameImage="bottom-2 w-[12.5rem]"

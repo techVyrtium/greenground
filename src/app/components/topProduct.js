@@ -25,7 +25,7 @@ const TopProduct = () => {
     (async () => {
       setProducts(await getAllProducts(locale));
     })();
-  }, [])
+  }, [locale])
 
   const productsMap = Object.entries(products).map(([slug, product]) => ({
     slug,

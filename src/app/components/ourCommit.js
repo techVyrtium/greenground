@@ -1,5 +1,3 @@
-'use client'
-
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import sheetWhite from '@/assets/home/sheetWhite.png';
@@ -43,7 +41,7 @@ export default function OurCommit() {
             </div>
 
             {/* Columna derecha (Video) */}
-            <div className=" h-auto xl:w-full xl:h-auto hidden flex-col xl:flex justify-center items-center xl:pt-12 xl:pt-0 mt-8 xl:mt-10 -mt-28">
+            <div className=" h-auto xl:w-full xl:h-auto hidden flex-col xl:flex justify-center items-center xl:pt-12 mt-8 xl:mt-10">
               <video
                 src="/home/ourCommit.mp4"
                 autoPlay={true}

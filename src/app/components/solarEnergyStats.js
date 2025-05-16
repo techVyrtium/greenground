@@ -1,6 +1,4 @@
-"use client";
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
 
 export default function SolarEnergyStats() {
     const t = useTranslations("solarEnergyStats");
