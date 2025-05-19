@@ -55,7 +55,7 @@ export const MapMobile = () => {
                     whileInView="onscreen"
                     viewport={{ amount: 0.8, once: false }}
                     exit={"exit"}
-                    className="relative w-full h-[37rem] bg-[image:url(/home/banana-patterns.png)] bg-cover bg-no-repeat bg-white"
+                    className="relative w-full h-[37rem] bg-white"
                 >
                     <motion.h2
                         variants={titleAnimation}
