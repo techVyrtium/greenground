@@ -20,8 +20,8 @@
   --color-white-25: #ffffff40;
   --color-border-gray: #a8a8a8;
   --color-gray2: #c0c0c0;
-  --image-product-categories: url(/home/bg-product-categories.png);
-  --image-product-categories-rotate: url(/home/bg-product-categories-rotate.png);
+  --image-product-categories: url(/home/bg-product-categories.jpg);
+  --image-product-categories-rotate: url(/home/bg-product-categories-rotate.jpg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-itcGBold: var(--font-itcBold);
