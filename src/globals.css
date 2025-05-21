@@ -59,8 +59,7 @@ body {
 }
 
 :root:has(.maximaze) {
-  overflow-y: hidden;
- 
+  overflow-y: hidden; 
 }
 
 .bg-category-title-bold {
