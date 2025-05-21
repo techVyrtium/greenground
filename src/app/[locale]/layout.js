@@ -5,7 +5,8 @@ import { Baloo_2 } from "next/font/google";
 import Footer from "@/app/components/Footer";
 import TopNavHero from "../components/topNav";
 import ModalContainer from "@/app/components/modal/ModalContainer";
-import "./../globals.css";
+import "./../../globals.css";
+
 import {
   itcAvantGardeCEGothicBook,
   itcAvantGardeCEGothicLTBold,
