@@ -9,10 +9,18 @@ import OurCommit from "../components/ourCommit";
 import OurCommitWomen from "../components/ourCommitWomen";
 import TopProduct from "../components/topProduct";
 import { ProductCategories } from "../components/productCategories";
-// import { WorkerTestimonials } from "../components/workerTestimonials";
 import OurCertificate from "../components/ourCertificate";
 import MapW from "../components/map";
 import SolarEnergyStats from "../components/solarEnergyStats";
+
+export const dynamic = 'force-static';
+
+export const generateStaticParams = async () => {
+  const locales = ['es', 'en'];
+  return locales.map((locale) => ({
+    locale
+  }));
+}
 
 export default async function Home({ params }) {
   const { locale } = await params;

@@ -115,7 +115,7 @@ const FormContact = ({ toggleModalContact, contact = false }) => {
     },
   ];
   return (
-    <div className="relative w-full md:w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.svg)] bg-cover bg-no-repeat bg-center overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
+    <div className="relative w-full md:w-1/3 h-full md:h-auto max-w-3xl bg-[url(/home/bgContact.png)] bg-cover bg-no-repeat bg-center overflow-hidden pt-4 rounded-[8px] md:rounded-[16px]">
       {contact && (
         <div className="w-full md:h-auto flex flex-row justify-start items-center px-4 mt-4">
           <div className="relative flex h-full w-full py-2 md:py-8 px-4 md:px-0">
