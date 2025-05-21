@@ -21,9 +21,6 @@ import logoGreen from "@/assets/home/logo-green.svg";
 import GFICONGreen from "@/assets/home/GFICON-green.png"
 import MICICONGreen from '@/assets/home/MICICON-green.png';
 import READYICONGreen from '@/assets/home/READYICON-green.png';
-import tajadas from '@/assets/home/tajadas.png';
-import patacones from '@/assets/home/patacones.png';
-import papaCriolla from "@/assets/home/papaCriolla.png"
 import platanoMaduro from '@/assets/home/platanomaduro.png';
 import platanoVerde from '@/assets/home/platanoverde.png';
 import yucaFrita from '@/assets/home/yucafrita.png';
@@ -313,7 +310,8 @@ export default function WhatWeDo() {
                     },
                   }}
                   alt="tajadas"
-                  src={tajadas.src}
+                  // src={tajadas.src}
+                  src={"/home/tajadas.webp"}
                   className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] -ml-12 z-10 "
                 />
               </div>
@@ -329,7 +327,8 @@ export default function WhatWeDo() {
                     },
                   }}
                   alt="patacones"
-                  src={patacones.src}
+                  // src={patacones.src}
+                  src="/home/patacones.webp"
                   className="absolute lg:w-[320px] xl:w-[420px] 2xl:w-[480px] h-[auto] mt-42 ml-[11rem] lg:ml-[7rem] xl:ml-[10rem] 2xl:ml-[12rem] z-2"
                 />
               </div>
@@ -345,7 +344,8 @@ export default function WhatWeDo() {
                     },
                   }}
                   alt="papaCriolla"
-                  src={papaCriolla.src}
+                  // src={papaCriolla.src}
+                  src="/home/papaCriolla.webp"
                   className="lg:w-[220px] xl:w-[300px] 2xl:w-[380px] h-[auto] mt-70 ml-[26rem] lg:ml-[17rem] xl:ml-[23rem] 2xl:ml-[27rem]"
                 />
               </div>
