@@ -27,19 +27,19 @@ export default function CaptureWorldOur() {
     {
       id: 1,
       texto: "Nuestra marca ha logrado llegar a la quinta avenida en New York",
-      src: "/home/quintaAve.mov",
+      src: "/home/quintaAve.mp4",
       type: 'video'
     },
     {
       id: 2,
       texto: "Feria de productos colombianos Frankfurt Alemania",
-      src: "/home/feria.mov",
+      src: "/home/feria.mp4",
       type: 'video'
     },
     {
       id: 3,
       texto: "Celebrando nuestra llegada al mercado suizo",
-      src: "/home/suiza.mov",
+      src: "/home/suiza.mp4",
       type: 'video'
     },
     {
