@@ -56,7 +56,7 @@ export default function OurCommit() {
       {/* Espacio para el texto debajo */}
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-col xl:flex-row xl:mt-[50px] mb-12">
         <video
-          src="/home/ourCommit.mov"
+          src="/home/ourCommit_mov.mp4"
           autoPlay={true}
           loop
           muted={true}
