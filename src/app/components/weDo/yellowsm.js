@@ -85,10 +85,10 @@ export default function Yellowsm() {
           {data2[0].text}
         </div>
 
-        {/* <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
+        <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
-              src={num == 1 ? homeYellow1 : homeYellow2}
+              src={num == 1 ? homeYellow1.src : homeYellow2.src}
               alt=""
               initial={{
                 opacity: 0,
@@ -106,7 +106,7 @@ export default function Yellowsm() {
               className={`${num == 1 ? 'w-[250px] h-[auto]' : 'w-full h-full'}`}
             />
           </AnimatePresence>
-        </div> */}
+        </div>
 
         <div className="flex flex-row items-center justify-around mt-4">
           <div className="flex flex-row items-center justify-center mt-8 gap-3">
