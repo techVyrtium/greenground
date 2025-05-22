@@ -84,11 +84,11 @@ export default function Yellow2sm() {
           {data2[0].text}
         </div>
 
-        {/* <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
+        <div className="relative w-full h-full flex flex-row items-center justify-center gap-4">
           <AnimatePresence>
             <motion.img
               // `/home/homeYellow2${num}.png`
-              src={homeYellow22}
+              src={homeYellow22.src}
               alt=""
               initial={{
                 opacity: 0,
@@ -105,7 +105,7 @@ export default function Yellow2sm() {
               className={`${num == 1 ? 'w-[250px] h-[auto]' : 'w-full h-full'}`}
             />
           </AnimatePresence>
-        </div> */}
+        </div>
 
         <div className="flex flex-row items-center justify-center mt-8 gap-3">
           <Image alt="GFICONGreen" src={GFICONGreen} className="w-[max(75px,20vw)]" />
