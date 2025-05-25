@@ -51,6 +51,7 @@ const TopProduct = () => {
               src={sheetWhite}
               alt="Descripción de la imagen"
               className="w-[80px] h-[100px]"
+              loading="lazy"
             />
           </div>
           <div
@@ -80,6 +81,7 @@ const TopProduct = () => {
             height={60}
             className="absolute -right-1 -bottom-7 w-10 h-10"
             alt="cursor"
+            loading="lazy"
           />
         </Link>
       </section>

@@ -1,5 +1,5 @@
-import { ListContent } from "@/app/components/ListContent";
-import RecetNews from "@/app/components/recetNews";
+import { ListContent } from "@/components/ListContent";
+import RecetNews from "@/components/recetNews";
 import { getAllSlugNewsByLocale } from "@/services/getAllSlugNewsByLocale";
 import { getNew } from "@/services/getNew";
 import Image from "next/image";

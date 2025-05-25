@@ -1,4 +1,4 @@
-import RecetNews from "@/app/components/recetNews";
+import RecetNews from "@/components/recetNews";
 import { getAllSlugRecipesByLocale } from "@/services/getAllSlugRecipesByLocale";
 import { getRecipe } from "@/services/getRecipe"
 import Image from "next/image";

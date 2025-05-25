@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useDropdown } from '@/app/hooks/useDropdown';
+import { useDropdown } from '@/hooks/useDropdown';
 import { FaChevronDown } from 'react-icons/fa';
 
 /**
