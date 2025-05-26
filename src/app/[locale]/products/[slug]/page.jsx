@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import ProductDetail from "@/app/components/products/detail";
-import { CategoryLeft } from "@/app/components/products/categoryLeft";
+import ProductDetail from "@/components/products/detail";
+import { CategoryLeft } from "@/components/products/categoryLeft";
 import { getAllProducts } from "@/services/getAllProducts";
 import { getProduct } from "@/services/getProduct";
 export const generateMetadata = async ({ params }) => {

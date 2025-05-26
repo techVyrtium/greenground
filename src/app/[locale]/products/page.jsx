@@ -1,6 +1,6 @@
-import { CategoryTop } from "@/app/components/products/categoryTop";
-import { CategoryLeft } from "@/app/components/products/categoryLeft";
-import ProductGrid from "@/app/components/products/productsGrid";
+import { CategoryTop } from "@/components/products/categoryTop";
+import { CategoryLeft } from "@/components/products/categoryLeft";
+import ProductGrid from "@/components/products/productsGrid";
 import { getAllProducts } from "@/services/getAllProducts";
 export const metadata = {
   title: 'Products'

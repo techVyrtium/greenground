@@ -31,6 +31,7 @@ export default function OurCommit() {
                   src={sheetWhite}
                   alt="Descripción de la imagen"
                   className="w-[100px] h-[120px]"
+                  loading="lazy"
                 />
               </div>
 
@@ -44,9 +45,9 @@ export default function OurCommit() {
             <div className=" h-auto xl:w-full xl:h-auto hidden flex-col xl:flex justify-center items-center xl:pt-12 mt-8 xl:mt-10">
               <video
                 src="/home/ourCommit.mp4"
-                autoPlay={true}
+                autoPlay
                 loop
-                muted={true}
+                muted
                 className="w-full h-auto max-h-[50vh] rounded-lg"
               />
             </div>
@@ -57,10 +58,9 @@ export default function OurCommit() {
       <div className="px-[clamp(1rem,5vw,6rem)] flex flex-col xl:flex-row xl:mt-[50px] mb-12">
         <video
           src="/home/ourCommit_mov.mp4"
-          autoPlay={true}
+          autoPlay
           loop
-          muted={true}
-          preload="auto"
+          muted
           className="w-full h-auto max-h-[50vh] rounded-lg -mt-[50px] z-10 xl:hidden"
         />
         <div className="w-full xl:w-2/5 flex xl:order-none order-last">

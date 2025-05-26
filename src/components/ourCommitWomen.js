@@ -70,6 +70,7 @@ export default function OurCommitWomen() {
                 src={dataimg[activeIndex].image}
                 alt="image"
                 className="md:w-[750px] md:h-[400px] lg:max-w-full lg:w-[82%] w-[70%] lg:h-[550px] h-full rounded-b-2xl rounded-r-2xl"
+                loading="lazy"
               />
 
               <Image

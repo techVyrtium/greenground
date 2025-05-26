@@ -40,6 +40,7 @@ const ProductCard = ({ product }) => {
               width={208}
               height={208}
               className="w-full h-auto  rounded-lg bg-white/60 shadow-md"
+              loading="lazy"
             />
           </div>
         ))}

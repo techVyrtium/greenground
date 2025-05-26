@@ -1,5 +1,5 @@
-import { CategoryLeft } from "@/app/components/products/categoryLeft";
-import { FilterProducts } from "@/app/components/products/FilterProducts";
+import { CategoryLeft } from "@/components/products/categoryLeft";
+import { FilterProducts } from "@/components/products/FilterProducts";
 import { getAllProducts } from "@/services/getAllProducts";
 
 export const generateMetadata = async ({ params }) => {

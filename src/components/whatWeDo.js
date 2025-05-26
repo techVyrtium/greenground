@@ -9,27 +9,27 @@ import Image from "next/image";
 import { Maximaze } from "./common/Maximaze";
 import Yellow2md from "./weDo/yellow2md";
 import Yellow2sm from "./weDo/yellow2sm";
-import arrowRSL from '@/assets/home/arrowsRSL.png';
-import arrowsRSR from '@/assets/home/arrowsRSR.png';
-import pause from '@/assets/home/pause.svg';
-import play from '@/assets/home/play.svg';
-import speaker from '@/assets/home/speaker.svg';
-import mute from '@/assets/home/mute.svg';
-import minimaze from '@/assets/minimaze.svg';
-import maximazeIcon from '@/assets/home/maximaze.svg';
+import arrowRSL from "@/assets/home/arrowsRSL.png";
+import arrowsRSR from "@/assets/home/arrowsRSR.png";
+import pause from "@/assets/home/pause.svg";
+import play from "@/assets/home/play.svg";
+import speaker from "@/assets/home/speaker.svg";
+import mute from "@/assets/home/mute.svg";
+import minimaze from "@/assets/minimaze.svg";
+import maximazeIcon from "@/assets/home/maximaze.svg";
 import logoGreen from "@/assets/home/logo-green.svg";
-import GFICONGreen from "@/assets/home/GFICON-green.png"
-import MICICONGreen from '@/assets/home/MICICON-green.png';
-import READYICONGreen from '@/assets/home/READYICON-green.png';
-import platanoMaduro from '@/assets/home/platanomaduro.png';
-import platanoVerde from '@/assets/home/platanoverde.png';
-import yucaFrita from '@/assets/home/yucafrita.png';
-import frame171 from '@/assets/home/Frame171.png';
-import araBird from '@/assets/home/aroBird.png';
-import queHacemos from '@/assets/home/quehacemos.png';
-import GFICON from "@/assets/home/GFICON.png"
-import MICICON from '@/assets/home/MICICON.png';
-import READYICON from '@/assets/home/READYICON.png';
+import GFICONGreen from "@/assets/home/GFICON-green.png";
+import MICICONGreen from "@/assets/home/MICICON-green.png";
+import READYICONGreen from "@/assets/home/READYICON-green.png";
+import platanoMaduro from "@/assets/home/platanomaduro.png";
+import platanoVerde from "@/assets/home/platanoverde.png";
+import yucaFrita from "@/assets/home/yucafrita.png";
+import frame171 from "@/assets/home/Frame171.png";
+import araBird from "@/assets/home/aroBird.png";
+import queHacemos from "@/assets/home/quehacemos.png";
+import GFICON from "@/assets/home/GFICON.png";
+import MICICON from "@/assets/home/MICICON.png";
+import READYICON from "@/assets/home/READYICON.png";
 
 export default function WhatWeDo() {
   const t = useTranslations("whatWeDo"); // Inicializar useTranslations
@@ -46,23 +46,25 @@ export default function WhatWeDo() {
   const toogleMaximaze = () => {
     setMaximaze(!maximaze);
     setAutoPlay(false);
-  }
+  };
   const handleTimeUpdate = (e) => {
     const { currentTime } = e.target;
     if (currentTime >= 15 && autoPlay) {
       setActiveIndex(activeIndex + 1);
     }
-  }
+  };
   const data = [
     {
-      title: t('red.title'),
+      title: t("red.title"),
       text: (
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-white ">
-            {t('red.text.part1')}
-            <span className=" font-bold">{t('red.text.strong1')}</span>
-            {t('red.text.part2')}<span className=" font-bold">{t('red.text.strong2')}</span>
-            {t('red.text.part3')}<span className=" font-bold">{t('red.text.part3')}</span>
+            {t("red.text.part1")}
+            <span className=" font-bold">{t("red.text.strong1")}</span>
+            {t("red.text.part2")}
+            <span className=" font-bold">{t("red.text.strong2")}</span>
+            {t("red.text.part3")}
+            <span className=" font-bold">{t("red.text.part3")}</span>
           </p>
         </>
       ),
@@ -71,41 +73,37 @@ export default function WhatWeDo() {
 
   const data2 = [
     {
-      title: t('yellow.title'),
-      title2: t('yellow.title2'),
+      title: t("yellow.title"),
+      title2: t("yellow.title2"),
       text: (
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-left ">
-            {t('yellow.text.part1')}
-            <span className=" font-bold">
-              {t('yellow.text.strong1')}
-            </span>
-            {t('yellow.text.part2')}
-            <span className=" font-bold">{t('yellow.text.strong2')}</span>
+            {t("yellow.text.part1")}
+            <span className=" font-bold">{t("yellow.text.strong1")}</span>
+            {t("yellow.text.part2")}
+            <span className=" font-bold">{t("yellow.text.strong2")}</span>
           </p>
         </>
       ),
-      button: t('button'),
+      button: t("button"),
     },
   ];
 
   const data3 = [
     {
-      title: t('yellow2.title'),
-      title2: t('yellow2.title2'),
+      title: t("yellow2.title"),
+      title2: t("yellow2.title2"),
       text: (
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-left ">
-            {t('yellow2.text.part1')}
-            <span className=" font-bold">
-              {t('yellow2.text.strong1')}
-            </span>
-            {t('yellow2.text.part2')}
-            <span className=" font-bold">{t('yellow2.text.strong2')}</span>
+            {t("yellow2.text.part1")}
+            <span className=" font-bold">{t("yellow2.text.strong1")}</span>
+            {t("yellow2.text.part2")}
+            <span className=" font-bold">{t("yellow2.text.strong2")}</span>
           </p>
         </>
       ),
-      button: t('button'),
+      button: t("button"),
     },
   ];
 
@@ -126,6 +124,7 @@ export default function WhatWeDo() {
           className="mt-4 mr-2 w-8 cursor-pointer"
           onClick={() => handlePrev()}
           width={32}
+          loading="lazy"
         />
         <div
           className={`mt-4 p-3 rounded-full ${activeIndex == 0 ? "bg-[#B52C17]" : "bg-[#C0C0C0]"
@@ -145,6 +144,7 @@ export default function WhatWeDo() {
           className="mt-4 ml-2 w-8"
           onClick={() => handleNext()}
           width={32}
+          loading="lazy"
         />
       </div>
     );
@@ -204,9 +204,19 @@ export default function WhatWeDo() {
               >
                 <div className=" h-full" onClick={() => togglePlayPause()}>
                   {stateBotom ? (
-                    <Image alt="pause" src={pause} className="w-5 h-auto -mt-4" width={20} />
+                    <Image
+                      alt="pause"
+                      src={pause}
+                      className="w-5 h-auto -mt-4"
+                      width={20}
+                    />
                   ) : (
-                    <Image alt="play" src={play} className="w-8 h-auto -mt-4" width={32} />
+                    <Image
+                      alt="play"
+                      src={play}
+                      className="w-8 h-auto -mt-4"
+                      width={32}
+                    />
                   )}
                 </div>
                 <div className="relative h-full flex items-end justify-end mt-8">
@@ -218,7 +228,24 @@ export default function WhatWeDo() {
                     }
                     onClick={() => toggleMute()}
                   />
-                  {!maximaze ? <Image src={maximazeIcon} className="w-8 h-auto" onClick={toogleMaximaze} alt="maximaze" width={32} /> : <Image src={minimaze} width={32} height={32} alt="minimaze" className="text-white" onClick={toogleMaximaze} />}
+                  {!maximaze ? (
+                    <Image
+                      src={maximazeIcon}
+                      className="w-8 h-auto"
+                      onClick={toogleMaximaze}
+                      alt="maximaze"
+                      width={32}
+                    />
+                  ) : (
+                    <Image
+                      src={minimaze}
+                      width={32}
+                      height={32}
+                      alt="minimaze"
+                      className="text-white"
+                      onClick={toogleMaximaze}
+                    />
+                  )}
                 </div>
               </div>
             </div>
@@ -256,10 +283,15 @@ export default function WhatWeDo() {
                   alt="logo-green"
                   width={250}
                   className="w-[200px] md:w-[250px] h-auto"
+                  loading="lazy"
                 />
               </div>
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
-                <p className={`text-[clamp(20px,6.5vw,48px)] font-bold font-itcGBold`}>{data2[0].title2}</p>
+                <p
+                  className={`text-[clamp(20px,6.5vw,48px)] font-bold font-itcGBold`}
+                >
+                  {data2[0].title2}
+                </p>
                 <h1
                   className={`lg:text-[clamp(50px,6.5vw,120px)] text-[clamp(50px,6.5vw,14px)] 2xl:text-[clamp(50px,6.5vw,160px)] font-bold leading-21 font-itcGBold `}
                 >
@@ -276,23 +308,29 @@ export default function WhatWeDo() {
                     alt="GFICON"
                     className="md:w-[136px] w-[120px]"
                     width={136}
+                    loading="lazy"
                   />
                   <Image
                     src={MICICONGreen}
                     alt="MICICON"
                     className="md:w-[136px] w-[120px]"
                     width={136}
+                    loading="lazy"
                   />
                   <Image
                     src={READYICONGreen}
                     alt="READY"
                     className="md:w-[136px] w-[120px]"
                     width={136}
+                    loading="lazy"
                   />
                 </div>
               </div>
               <div className="flex items-end justify-end">
-                <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
+                <Link
+                  href={"/products"}
+                  className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center"
+                >
                   {data2[0].button}
                 </Link>
               </div>
@@ -392,10 +430,15 @@ export default function WhatWeDo() {
                   src={logoGreen}
                   className="w-[200px] md:w-[250px] h-auto"
                   width={200}
+                  loading="lazy"
                 />
               </div>
               <div className="mt-12 flex flex-col items-start justify-center text-[#b52c17]">
-                <p className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}>{data3[0].title2}</p>
+                <p
+                  className={`text-[clamp(20px,6.5vw,34px)] font-bold font-itcGBold`}
+                >
+                  {data3[0].title2}
+                </p>
                 <h1
                   className={`lg:text-[clamp(50px,6.5vw,220px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
@@ -412,23 +455,29 @@ export default function WhatWeDo() {
                     src={GFICONGreen}
                     className="md:w-[136px] w-[120px]"
                     width={120}
+                    loading="lazy"
                   />
                   <Image
                     alt="MICICO "
                     src={MICICONGreen}
                     className="md:w-[136px] w-[120px]"
                     width={120}
+                    loading="lazy"
                   />
                   <Image
                     alt="READY"
                     src={READYICONGreen}
                     className="md:w-[136px] w-[120px]"
                     width={120}
+                    loading="lazy"
                   />
                 </div>
               </div>
               <div className="flex items-end justify-end">
-                <Link href={"/products"} className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center">
+                <Link
+                  href={"/products"}
+                  className="inline-block bg-[#FFB000] text-[12px] md:text-[16px] lg:text-[20px] cursor-pointer text-white box- rounded-md font-bold leading-4 px-6  box-border max-w-[27rem] h-fit py-[0.5rem] text-center"
+                >
                   {data3[0].button}
                 </Link>
               </div>
@@ -507,6 +556,7 @@ export default function WhatWeDo() {
                 src={frame171}
                 className="w-[900px] h-[auto]"
                 width={900}
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col justify-around lg:w-2/5 w-full h-fit md:py-22">
@@ -516,6 +566,7 @@ export default function WhatWeDo() {
                   src={araBird}
                   className="w-[200px] md:w-[250px] h-auto"
                   width={200}
+                  loading="lazy"
                 />
               </div>
               <div className="mt-6 flex justify-start">
@@ -535,18 +586,21 @@ export default function WhatWeDo() {
                     src={GFICON}
                     className="md:w-[136px] w-[120px]"
                     width={120}
+                    loading="lazy"
                   />
                   <Image
                     alt="MICICON"
                     src={MICICON}
                     className="md:w-[136px] w-[120px]"
                     width={120}
+                    loading="lazy"
                   />
                   <Image
                     alt="READY"
                     src={READYICON}
                     className="md:w-[136px] w-[120px]"
                     width={120}
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -564,6 +618,7 @@ export default function WhatWeDo() {
                   src={araBird}
                   className="w-[200px] md:w-[250px] h-auto"
                   width={200}
+                  loading="lazy"
                 />
               </div>
               <div className="w-4/5 px-8">
@@ -587,17 +642,31 @@ export default function WhatWeDo() {
                 src={frame171}
                 className="w-[600px] h-[auto]"
                 width={600}
+                loading="lazy"
               />
             </div>
 
             <div className="flex flex-row items-center justify-center gap-8">
-              <Image alt="GFICON" src={GFICON} className="md:w-[156px] w-[120px]" width={120} />
-              <Image alt="MICICON" src={MICICON} className="md:w-[156px] w-[120px]" width={120} />
+              <Image
+                alt="GFICON"
+                src={GFICON}
+                className="md:w-[156px] w-[120px]"
+                width={120}
+                loading="lazy"
+              />
+              <Image
+                alt="MICICON"
+                src={MICICON}
+                className="md:w-[156px] w-[120px]"
+                width={120}
+                loading="lazy"
+              />
               <Image
                 alt="READYICON"
                 src={READYICON}
                 className="md:w-[156px] w-[120px]"
                 width={120}
+                loading="lazy"
               />
             </div>
           </div>
@@ -615,11 +684,7 @@ export default function WhatWeDo() {
               />
             </div>
             <div className="w-full flex items-center justify-center">
-              <Image
-                alt="frame171"
-                src={frame171}
-                className="w-full h-full"
-              />
+              <Image alt="frame171" src={frame171} className="w-full h-full" loading="lazy" />
             </div>
             <div className="w-full flex items-center justify-center">
               <h1
@@ -635,18 +700,21 @@ export default function WhatWeDo() {
                 src={GFICON}
                 className="w-[95px]"
                 width={95}
+                loading="lazy"
               />
               <Image
                 alt="MICICON"
                 src={MICICON}
                 className="w-[95px]"
                 width={95}
+                loading="lazy"
               />
               <Image
                 alt="READYICON"
                 src={READYICON}
                 className="w-[95px]"
                 width={95}
+                loading="lazy"
               />
             </div>
           </div>
@@ -682,7 +750,13 @@ export default function WhatWeDo() {
             </div>
           </div>
         </div>
-        {activeIndex == 0 ? video() : activeIndex == 1 ? yellow() : activeIndex == 2 ? yellow2() : red()}
+        {activeIndex == 0
+          ? video()
+          : activeIndex == 1
+            ? yellow()
+            : activeIndex == 2
+              ? yellow2()
+              : red()}
       </div>
       <div
         className="py-[96px] px-[clamp(1rem,5vw,6rem)]"
@@ -725,7 +799,9 @@ export default function WhatWeDo() {
         <Maximaze maximaze={maximaze} setMaximaze={setMaximaze}>
           {video()}
         </Maximaze>
-      ) : <></>}
+      ) : (
+        <></>
+      )}
     </section>
   );
 }
