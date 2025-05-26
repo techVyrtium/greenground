@@ -1,36 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import aji from '@/assets/home/aji.svg';
+import aji from "@/assets/home/aji.svg";
 import maiz from "@/assets/home/maiz.svg";
-import bananom from '@/assets/home/bananom.svg';
-import cafe from '@/assets/home/cafe.svg';
-import pera from '@/assets/home/pera.svg';
-import paleta from '@/assets/home/paleta.svg';
-import botella from '@/assets/home/botella.svg';
-import galleta from '@/assets/home/galleta.svg';
-import piña from '@/assets/home/piña.svg';
-import olla from '@/assets/home/olla.svg';
-import rabano from '@/assets/home/rabano.svg';
-import dulce from '@/assets/home/dulce.svg';
-export const ProductCategories = async ({ locale = 'es' }) => {
+import bananom from "@/assets/home/bananom.svg";
+import cafe from "@/assets/home/cafe.svg";
+import pera from "@/assets/home/pera.svg";
+import paleta from "@/assets/home/paleta.svg";
+import botella from "@/assets/home/botella.svg";
+import galleta from "@/assets/home/galleta.svg";
+import piña from "@/assets/home/piña.svg";
+import olla from "@/assets/home/olla.svg";
+import rabano from "@/assets/home/rabano.svg";
+import dulce from "@/assets/home/dulce.svg";
+export const ProductCategories = async ({ locale = "es" }) => {
   const info = {
     es: {
-      title: 'Conoce nuestras distintas categorías de productos:',
-      categories: [
-        "Congelados",
-        "Abarrotes",
-        "Menaje"
-      ]
+      title: "Conoce nuestras distintas categorías de productos:",
+      categories: ["Congelados", "Abarrotes", "Menaje"],
     },
     en: {
-      title: 'Discover our different product categories:',
-      categories: [
-        "Frozen",
-        "Groceries",
-        "Houseware"
-      ]
-    }
-  }
+      title: "Discover our different product categories:",
+      categories: ["Frozen", "Groceries", "Houseware"],
+    },
+  };
   const { title, categories } = info[locale];
   // const title = "Conoce nuestras distintas categorías de productos:";
   const images = {
@@ -126,7 +118,9 @@ export const ProductCategories = async ({ locale = 'es' }) => {
   };
   return (
     <section className="w-full font-itcGBold text-[#008638]">
-      <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold leading-[2.1rem] my-12">{title}</h3>
+      <h3 className="mx-[clamp(1rem,5vw,6rem)] text-[clamp(38px,3vw,38px)] font-bold leading-[2.1rem] my-12">
+        {title}
+      </h3>
       <div
         className={`bg-cover w-full text-white bg-[image:var(--image-product-categories)] md:bg-[image:var(--image-product-categories-rotate)]`}
       >
@@ -137,7 +131,7 @@ export const ProductCategories = async ({ locale = 'es' }) => {
             }
           >
             <ProductCategory
-              sup={locale === 'en' ? 'Products' : "Productos"}
+              sup={locale === "en" ? "Products" : "Productos"}
               title={categories[0]}
               color="green"
               mainImage={rabano}
@@ -177,7 +171,6 @@ export const ProductCategories = async ({ locale = 'es' }) => {
         </div>
       </div>
     </section>
-
   );
 };
 const ProductCategory = ({
@@ -204,8 +197,9 @@ const ProductCategory = ({
         ></div>
       </div>
       <h3
-        className={`text-[34px] lg:text-4xl md:text-[min(3.2vw,30px)] font-bold flex flex-col lg:bg-transparent leading-7 ${sup ? "pl-14 py-4" : "py-6"
-          } px-4 w-full ${classNameTitle}`}
+        className={`text-[34px] lg:text-4xl md:text-[min(3.2vw,30px)] font-bold flex flex-col lg:bg-transparent leading-7 ${
+          sup ? "pl-14 py-4" : "py-6"
+        } px-4 w-full ${classNameTitle}`}
       >
         <div className="text-2xl md:text-3xl self-start">{sup}</div>
         {title}
@@ -215,6 +209,7 @@ const ProductCategory = ({
           key={id}
           {...props}
           className={`absolute z-0 ${className} duration-150`}
+          loading="lazy"
         />
       ))}
       <Image
@@ -223,6 +218,7 @@ const ProductCategory = ({
         height={mainImageHeight}
         alt="main"
         className={`absolute -z-10 lg:scale-0 duration-300 product-category-main-image ${classNameImage}`}
+        loading="lazy"
       />
     </Link>
   );

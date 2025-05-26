@@ -1,17 +1,17 @@
-import WhatWeDo from "../components/whatWeDo";
-import ResponsibleCompany from "../components/responsibleCompany";
-import Experience from "../components/experience";
-import CaptureWorldOur from "../components/captureWorldOur";
-import NowNearYou from "../components/nowNearYou";
-import OurQuality from "../components/ourQuality";
-import Blog from "../components/blog";
-import OurCommit from "../components/ourCommit";
-import OurCommitWomen from "../components/ourCommitWomen";
-import TopProduct from "../components/topProduct";
-import { ProductCategories } from "../components/productCategories";
-import OurCertificate from "../components/ourCertificate";
-import MapW from "../components/map";
-import SolarEnergyStats from "../components/solarEnergyStats";
+import WhatWeDo from "../../components/whatWeDo";
+import ResponsibleCompany from "../../components/responsibleCompany";
+import Experience from "../../components/experience";
+import CaptureWorldOur from "../../components/captureWorldOur";
+import NowNearYou from "../../components/nowNearYou";
+import OurQuality from "../../components/ourQuality";
+import Blog from "../../components/blog";
+import OurCommit from "../../components/ourCommit";
+import OurCommitWomen from "../../components/ourCommitWomen";
+import TopProduct from "../../components/topProduct";
+import { ProductCategories } from "../../components/productCategories";
+import OurCertificate from "../../components/ourCertificate";
+import MapW from "../../components/map";
+import SolarEnergyStats from "../../components/solarEnergyStats";
 
 export const dynamic = 'force-static';
 

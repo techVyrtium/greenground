@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
-import FormContact from "@/app/components/ContactForm";
-import { useModal } from "@/app/hooks/useModal";
+import FormContact from "@/components/ContactForm";
+import { useModal } from "@/hooks/useModal";
 
 
 const ContactForm = () => {

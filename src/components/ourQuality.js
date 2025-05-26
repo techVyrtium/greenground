@@ -61,6 +61,7 @@ export default function OurQuality() {
               src={sheetWhite}
               alt="Decoración"
               className="w-[6rem] md:w-[10rem] h-auto"
+              loading="lazy"
             />
 
             {/* Título encima de la imagen */}
@@ -94,6 +95,7 @@ export default function OurQuality() {
                 alt={`image-${activeIndex}`}
                 src={dataimg[activeIndex].image}
                 className="md:w-[88%] lg:max-w-full lg:w-[82%] lg:h-[550px] md:h-[400px] max-w-full w-[82%] h-full rounded-tr-[20px] rounded-bl-[20px]"
+                loading="lazy"
               />
               <Image
                 src={arrowsRedR}

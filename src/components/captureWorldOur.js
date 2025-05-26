@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useModal } from "@/app/hooks/useModal";
+import { useModal } from "@/hooks/useModal";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import slide4 from '@/assets/home/slide4.png'
@@ -139,6 +139,7 @@ export default function CaptureWorldOur() {
           height={dataSlider[activeIndex].height}
           width={dataSlider[activeIndex].width}
           alt="image-slide"
+          loading="lazy"
         />
       )
     )
@@ -218,6 +219,7 @@ export default function CaptureWorldOur() {
                 src={sheetGreen}
                 alt="Descripción de la imagen"
                 className="w-[70px] h-[90px] md:w-[60px] md:h-[80px] lg:w-[70px] lg:h-[90px]"
+                loading="lazy"
               />
             </div>
             <div className="absolute left-8 sm:left-12 top-[25px] sm:top-[36px] text-left md:left-10 lg:left-12 w-fit">
@@ -243,6 +245,7 @@ export default function CaptureWorldOur() {
                     alt="frame171"
                     src={frame171}
                     className="w-full h-full object-contain"
+                    loading="lazy"
                   />
                   <div className={`flex items-end justify-end font-itcGBook leading-5 bottom-8 relative`}>
                     {data[0].text2}
@@ -253,6 +256,7 @@ export default function CaptureWorldOur() {
                     alt="tu_logo_aqui"
                     src={tuLogoAqui}
                     className="w-full h-full object-contain"
+                    loading="lazy"
                   />
                   <button
                     onClick={toggleModal}
@@ -265,6 +269,7 @@ export default function CaptureWorldOur() {
                       width={60} height={60}
                       className="absolute -right-1 -bottom-7 w-10 h-10"
                       alt='cursor'
+                      loading="lazy"
                     />
                   </button>
                 </div>
@@ -283,6 +288,7 @@ export default function CaptureWorldOur() {
               src={frame171}
               alt="frame171"
               className="w-full h-full object-contain"
+              loading="lazy"
             />
           </div>
           <div className="w-[50%] aspect-square">
@@ -290,6 +296,7 @@ export default function CaptureWorldOur() {
               src={tuLogoAqui}
               className="w-full h-full object-contain"
               alt='tu-logo-aqui'
+              loading="lazy"
             />
           </div>
         </div>
@@ -304,6 +311,7 @@ export default function CaptureWorldOur() {
               height={60}
               className="absolute -right-1 -bottom-7 w-10 h-10"
               alt='cursor'
+              loading="lazy"
             />
           </button>
         </div>

@@ -2,16 +2,16 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import { Roboto } from "next/font/google";
 import { Baloo_2 } from "next/font/google";
-import Footer from "@/app/components/Footer";
-import TopNavHero from "../components/topNav";
-import ModalContainer from "@/app/components/modal/ModalContainer";
+import Footer from "@/components/Footer";
+import TopNavHero from "../../components/topNav";
+import ModalContainer from "@/components/modal/ModalContainer";
 import "./../../globals.css";
 
 import {
   itcAvantGardeCEGothicBook,
   itcAvantGardeCEGothicLTBold,
   itcAvantGardeCEGothicLTBook,
-} from "../styles/fonts";
+} from "../../styles/fonts";
 
 const roboto = Roboto({
   subsets: ["latin"],

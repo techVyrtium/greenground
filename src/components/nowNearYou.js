@@ -32,6 +32,7 @@ export default function NowNearYou() {
             alt="frame171"
             src={frame171}
             className="w-[600px] h-auto"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col justify-around lg:w-1/2 w-full h-fit">
@@ -41,6 +42,7 @@ export default function NowNearYou() {
                 alt="araBird"
                 src={araBird}
                 className="w-[140px] md:w-[180px] lg:w-[220px] xl:w-[270px] h-auto object-contain"
+                loading="lazy"
               />
             </div>
             <div className="ml-4 flex flex-1">
@@ -57,11 +59,13 @@ export default function NowNearYou() {
               alt="MICICON"
               src={MICICON}
               className="w-[126px] md:w-[170px] h-full"
+              loading="lazy"
             />
             <Image
               alt="READYICON"
               src={READYICON}
               className=" w-[126px] md:w-[156px] h-full"
+              loading="lazy"
             />
           </div>
         </div>

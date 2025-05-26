@@ -5,7 +5,7 @@ import { IoMdMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { NavLinkMultiple } from "./navLinkMultiple";
-import { useModal } from "@/app/hooks/useModal";
+import { useModal } from "@/hooks/useModal";
 import { Siderbar } from "./sidebar";
 import Image from "next/image";
 import logo from '@/assets/logo.png';

@@ -62,7 +62,7 @@ export default function OurCertificate() {
               <div className="w-full h-full flex flex-col">
                 <div className="flex-grow flex items-center justify-center rounded-xl bg-[#008638] text-white shadow-md shadow-gray-400 px-6 min-h-[80px]">
                   <div>
-                    <Image alt={`image-${i}`} src={dato.img} className={`${dato.className ?? ''} w-[100px]`} />
+                    <Image alt={`image-${i}`} src={dato.img} className={`${dato.className ?? ''} w-[100px]`} loading="lazy" />
                   </div>
                   <div className="ml-8">
                     <p className="text-[max(1rem,3.8vw)] leading-[1.5rem] md:text-[36px] text-white text-center md:leading-8 font-bold py-4">
@@ -87,6 +87,7 @@ export default function OurCertificate() {
                   src={sheetGreen}
                   alt="Descripción de la imagen"
                   className="w-[70px] h-[90px] sm:w-[90px] sm:h-[110px] rotate-12"
+                  loading="lazy"
                 />
               </div>
 
@@ -107,10 +108,10 @@ export default function OurCertificate() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={image.src} alt="image" className="w-40 h-40 object-contain" />
+                    <Image src={image.src} alt="image" className="w-40 h-40 object-contain" loading="lazy" />
                   </Link>
                 ) : (
-                  <Image src={image.src} alt="image" className="w-40 h-40 object-contain" />
+                  <Image src={image.src} alt="image" className="w-40 h-40 object-contain" loading="lazy" />
                 )}
               </div>
             ))}

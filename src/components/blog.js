@@ -57,6 +57,7 @@ export default function Blog() {
                   src={sheetWhite}
                   alt="Descripción de la imagen"
                   className="w-[100px] h-[120px]"
+                  loading="lazy"
                 />
               </div>
               {/* Texto encima de la imagen */}
