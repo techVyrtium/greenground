@@ -55,7 +55,7 @@ export const MapMobile = () => {
           whileInView="onscreen"
           viewport={{ amount: 0.8, once: false }}
           exit={"exit"}
-          className="relative w-full h-[37rem] bg-white"
+          className="relative w-full h-[29rem] bg-white"
         >
           <motion.h2
             variants={titleAnimation}
@@ -74,7 +74,7 @@ export const MapMobile = () => {
           <div className="absolute h-[30rem] max-w-full top-0">
             <motion.div variants={mapAnimation} className="max-w-full h-full">
               <Image
-                className="max-w-full h-full"
+                className="max-w-full h-[46%] object-cover mt-[7rem]"
                 src={"/home/map/single-map.png"}
                 width={700}
                 height={800}
@@ -91,7 +91,7 @@ export const MapMobile = () => {
               }}
             >
               <Image
-                className="max-w-full h-full absolute top-0 left-0"
+                className="max-w-full absolute top-28 left-0 h-[46%] object-cover"
                 src={"/home/map/locations-map.png"}
                 width={700}
                 height={800}
@@ -100,13 +100,13 @@ export const MapMobile = () => {
               />
             </motion.div>
             <motion.div
-              className="bottom-[20%] left-[5%] absolute"
+              className="bottom-[11.8rem] left-[15%] absolute"
               variants={boatAnimation}
             >
               <Image
                 src={"/home/map/boat.png"}
-                width={80}
-                height={80}
+                width={40}
+                height={40}
                 alt="boat"
                 loading="lazy"
               />
@@ -117,7 +117,7 @@ export const MapMobile = () => {
             className="absolute bottom-4  mx-auto left-4 right-4 flex flex-row justify-between gap-4"
           >
             <Image
-              className="h-[min(190px,40vw)]"
+              className="h-[min(190px,35vw)]"
               src={"/home/map/flyer.png"}
               width={113}
               height={190}
