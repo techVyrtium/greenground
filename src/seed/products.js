@@ -4,7 +4,7 @@ export const products = {
 
         "tajadas-de-platano-maduro": {
             auxiliarSlugs: [],
-            title: "Tajadas de platano maduro",
+            title: "Tajadas de plátano maduro",
             subcategory: "Latinos premium",
             category: "Congelados",
             tag: "Top",
@@ -20,7 +20,7 @@ export const products = {
         },
         "platano-verde-toston": {
             auxiliarSlugs: [],
-            title: "Platano verde tostón",
+            title: "Plátano verde tostón",
             subcategory: "Latinos premium",
             category: "Congelados",
             tag: "Top",
@@ -36,7 +36,7 @@ export const products = {
         },
         "platano-entero-verde": {
             auxiliarSlugs: [],
-            title: "Platano entero verde",
+            title: "Plátano entero verde",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
             tag: "Top",
@@ -142,7 +142,7 @@ export const products = {
         },
         "platano-entero-maduro": {
             auxiliarSlugs: [],
-            title: "Platano entero Maduro",
+            title: "Plátano entero Maduro",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
             tag: "Top",
@@ -2145,7 +2145,7 @@ export const products = {
 
         "tajadas-de-platano-maduro": {
             auxiliarSlugs: [],
-            title: "Tajadas de platano maduro",
+            title: "Tajadas de plátano maduro",
             subcategory: "Latinos premium",
             category: "Congelados",
             tag: "Top",
@@ -2161,7 +2161,7 @@ export const products = {
         },
         "platano-verde-toston": {
             auxiliarSlugs: [],
-            title: "Platano verde tostón",
+            title: "Plátano verde tostón",
             subcategory: "Latinos premium",
             category: "Congelados",
             tag: "Top",
@@ -2177,7 +2177,7 @@ export const products = {
         },
         "platano-entero-verde": {
             auxiliarSlugs: [],
-            title: "Platano entero verde",
+            title: "Plátano entero verde",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
             tag: "Top",
@@ -2282,7 +2282,7 @@ export const products = {
         },
         "platano-entero-maduro": {
             auxiliarSlugs: [],
-            title: "Platano entero Maduro",
+            title: "Plátano entero Maduro",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
             tag: "Top",

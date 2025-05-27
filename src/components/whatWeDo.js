@@ -60,11 +60,11 @@ export default function WhatWeDo() {
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-white ">
             {t("red.text.part1")}
-            <span className=" font-bold">{t("red.text.strong1")}</span>
+            <span className="font-bold">{t("red.text.strong1")}</span>
             {t("red.text.part2")}
-            <span className=" font-bold">{t("red.text.strong2")}</span>
+            <span className="font-bold">{t("red.text.strong2")}</span>
             {t("red.text.part3")}
-            <span className=" font-bold">{t("red.text.part3")}</span>
+            <span className="font-bold">{t("red.text.strong3")}</span>
           </p>
         </>
       ),
