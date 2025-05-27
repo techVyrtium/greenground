@@ -37,7 +37,7 @@ export const FilterProducts = ({ slug, locale, productsMap }) => {
                         <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-800 text-xl" />
                         <input
                             type="text"
-                            placeholder="buscar producto"
+                            placeholder="Buscar producto"
                             className="w-full border border-gray-800 rounded-lg py-2 pl-10 pr-4 focus:outline-none placeholder:text-gray-800"
                             onChange={handleChange}
                             name="product"

@@ -206,7 +206,7 @@ export const products = {
         },
         "toston-hawaiano": {
             auxiliarSlugs: [],
-            title: "Tostón Hawaiano",
+            title: "Tostón hawaiano",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
             tag: "",
@@ -221,7 +221,7 @@ export const products = {
 
         "garrafa-azucarada-de-guanabana": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Guanabana",
+            title: "Garrafa azucarada de guanabana",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -263,7 +263,7 @@ export const products = {
         },
         "garrafa-azucarada-de-guayaba": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Guayaba",
+            title: "Garrafa azucarada de guayaba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -277,7 +277,7 @@ export const products = {
         },
         "garrafa-azucarada-de-fresa": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Fresa",
+            title: "Garrafa azucarada de fresa",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -347,7 +347,7 @@ export const products = {
         },
         "lulo-naranjillo-entero": {
             auxiliarSlugs: [],
-            title: "Lulo Naranjillo entero",
+            title: "Lulo naranjillo entero",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -389,7 +389,7 @@ export const products = {
         },
         "pulpa-de-papaya": {
             auxiliarSlugs: [],
-            title: "Pulpa de Papaya",
+            title: "Pulpa de papaya",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -403,7 +403,7 @@ export const products = {
         },
         "pulpa-de-tamarindo": {
             auxiliarSlugs: [],
-            title: "Pulpa de Tamarindo",
+            title: "Pulpa de tamarindo",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -445,7 +445,7 @@ export const products = {
         },
         "pulpa-de-curuba": {
             auxiliarSlugs: [],
-            title: "Pulpa de Curuba",
+            title: "Pulpa de curuba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -459,7 +459,7 @@ export const products = {
         },
         "pandebono-granel": {
             auxiliarSlugs: [],
-            title: "Pandebono Granel",
+            title: "Pandebono granel",
             subcategory: "Panaderia",
             category: "Congelados",
             tag: "",
@@ -473,7 +473,7 @@ export const products = {
         },
         "buñuelo-granel": {
             auxiliarSlugs: [],
-            title: "Buñuelo Granel",
+            title: "Buñuelo granel",
             subcategory: "Panaderia",
             category: "Congelados",
             tag: "",
@@ -488,7 +488,7 @@ export const products = {
         },
         "almojabana-granel": {
             auxiliarSlugs: [],
-            title: "Almojábana Granel",
+            title: "Almojábana granel",
             subcategory: "Panaderia",
             category: "Congelados",
             tag: "",
@@ -502,7 +502,7 @@ export const products = {
         },
         "arepa-blanca": {
             auxiliarSlugs: [],
-            title: "Arepa Blanca",
+            title: "Arepa blanca",
             subcategory: "Arepas",
             category: "Congelados",
             tag: "",
@@ -516,7 +516,7 @@ export const products = {
         },
         "arepa-campesina": {
             auxiliarSlugs: [],
-            title: "Arepa Campesina",
+            title: "Arepa campesina",
             subcategory: "Arepas",
             category: "Congelados",
             tag: "",
@@ -530,7 +530,7 @@ export const products = {
         },
         "arepa-de-yuca": {
             auxiliarSlugs: [],
-            title: "Arepa de Yuca",
+            title: "Arepa de yuca",
             subcategory: "Arepas",
             category: "Congelados",
             tag: "",
@@ -2346,7 +2346,7 @@ export const products = {
         },
         "toston-hawaiano": {
             auxiliarSlugs: [],
-            title: "Tostón Hawaiano",
+            title: "Tostón hawaiano",
             subcategory: "Especialidades Latinas",
             category: "Congelados",
             tag: "",
@@ -2361,7 +2361,7 @@ export const products = {
 
         "garrafa-azucarada-de-guanabana": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Guanabana",
+            title: "Garrafa azucarada de guanabana",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2375,7 +2375,7 @@ export const products = {
         },
         "garrafa-azucarada-de-mora": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Mora",
+            title: "Garrafa azucarada de mora",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2403,7 +2403,7 @@ export const products = {
         },
         "garrafa-azucarada-de-guayaba": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Guayaba",
+            title: "Garrafa azucarada de guayaba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2417,7 +2417,7 @@ export const products = {
         },
         "garrafa-azucarada-de-fresa": {
             auxiliarSlugs: [],
-            title: "Garrafa azucarada de Fresa",
+            title: "Garrafa azucarada de fresa",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2443,9 +2443,9 @@ export const products = {
             presentation: "500gr – Caja * 24",
             description: "Presentación 500gr – Caja * 24"
         },
-        "pulpa-de-gunabana-en-mota": {
+        "pulpa-de-guanabana-en-mota": {
             auxiliarSlugs: [],
-            title: "Pulpa de Gunabana en mota",
+            title: "Pulpa de guanábana en mota",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2487,7 +2487,7 @@ export const products = {
         },
         "lulo-naranjillo-entero": {
             auxiliarSlugs: [],
-            title: "Lulo Naranjillo entero",
+            title: "Lulo naranjillo entero",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2529,7 +2529,7 @@ export const products = {
         },
         "pulpa-de-papaya": {
             auxiliarSlugs: [],
-            title: "Pulpa de Papaya",
+            title: "Pulpa de papaya",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2543,7 +2543,7 @@ export const products = {
         },
         "pulpa-de-tamarindo": {
             auxiliarSlugs: [],
-            title: "Pulpa de Tamarindo",
+            title: "Pulpa de tamarindo",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2585,7 +2585,7 @@ export const products = {
         },
         "pulpa-de-curuba": {
             auxiliarSlugs: [],
-            title: "Pulpa de Curuba",
+            title: "Pulpa de curuba",
             subcategory: "Pulpa de fruta",
             category: "Congelados",
             tag: "",
@@ -2599,7 +2599,7 @@ export const products = {
         },
         "pandebono-granel": {
             auxiliarSlugs: [],
-            title: "Pandebono Granel",
+            title: "Pandebono granel",
             subcategory: "Panaderia",
             category: "Congelados",
             tag: "",
@@ -2613,7 +2613,7 @@ export const products = {
         },
         "buñuelo-granel": {
             auxiliarSlugs: [],
-            title: "Buñuelo Granel",
+            title: "Buñuelo granel",
             subcategory: "Panaderia",
             category: "Congelados",
             tag: "",
@@ -2628,7 +2628,7 @@ export const products = {
         },
         "almojabana-granel": {
             auxiliarSlugs: [],
-            title: "Almojábana Granel",
+            title: "Almojábana granel",
             subcategory: "Panaderia",
             category: "Congelados",
             tag: "",
@@ -2642,7 +2642,7 @@ export const products = {
         },
         "arepa-blanca": {
             auxiliarSlugs: [],
-            title: "Arepa Blanca",
+            title: "Arepa blanca",
             subcategory: "Arepas",
             category: "Congelados",
             tag: "",
@@ -2656,7 +2656,7 @@ export const products = {
         },
         "arepa-campesina": {
             auxiliarSlugs: [],
-            title: "Arepa Campesina",
+            title: "Arepa campesina",
             subcategory: "Arepas",
             category: "Congelados",
             tag: "",
@@ -2670,7 +2670,7 @@ export const products = {
         },
         "arepa-de-yuca": {
             auxiliarSlugs: [],
-            title: "Arepa de Yuca",
+            title: "Arepa de yuca",
             subcategory: "Arepas",
             category: "Congelados",
             tag: "",
@@ -3140,9 +3140,9 @@ export const products = {
             presentation: "* 250g / Caja x 50 uds",
             description: "* 250g / Caja x 50 uds"
         },
-        "sopas-magi": {
+        "sopas-maggi": {
             auxiliarSlugs: [],
-            title: "Sopas Magi",
+            title: "Sopas Maggi",
             subcategory: "Condimentos",
             category: "Abarrotes",
             tag: "",
@@ -4116,7 +4116,7 @@ export const products = {
             auxiliarSlugs: [],
             title: "Panela Green Ground Cuadrada",
             subcategory: "Panela",
-            category: "Menaje",
+            category: "Abarrotes",
             tag: "",
             link: "products/panela-green-ground-cuadrada",
             price: 0,
@@ -4128,7 +4128,7 @@ export const products = {
         },
         "parrilla-para-asar-arepas": {
             auxiliarSlugs: [],
-            title: "Parrilla Para asar Arepas",
+            title: "Parrilla para asar arepas",
             subcategory: "Menaje",
             category: "Menaje",
             tag: "",
@@ -4142,7 +4142,7 @@ export const products = {
         },
         "molinillo-de-madera": {
             auxiliarSlugs: [],
-            title: "Molinillo de Madera",
+            title: "Molinillo de madera",
             subcategory: "Menaje",
             category: "Menaje",
             tag: "",
@@ -4154,16 +4154,16 @@ export const products = {
             presentation: "",
             description: ""
         },
-        "jarrafas-para-cerveza": {
+        "jirafa-para-cerveza": {
             auxiliarSlugs: [],
-            title: "Jarrafas para cerveza",
+            title: "Jirafa para cerveza",
             subcategory: "Menaje",
             category: "Menaje",
             tag: "",
-            link: "products/jarrafas-para-cerveza",
+            link: "products/jirafa-para-cerveza",
             price: 0,
             images: [
-                "/products/olla-a-presion.png"
+                "/products/jirafa-cerveza.png"
             ],
             presentation: "",
             description: ""
@@ -4275,7 +4275,7 @@ export const products = {
             link: "products/vasija-de-barro-viudo-de-pescado",
             price: 0,
             images: [
-                "/products/chocolatera-imusa-y-bolinillo.webp"
+                "/products/vasija-pescado.png"
             ],
             presentation: "",
             description: ""

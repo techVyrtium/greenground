@@ -440,7 +440,7 @@ export default function WhatWeDo() {
                   {data3[0].title2}
                 </p>
                 <h1
-                  className={`lg:text-[clamp(50px,6.5vw,122px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                  className={`md:text-[clamp(50px,6.5vw,122px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
                   {data3[0].title}
                 </h1>
