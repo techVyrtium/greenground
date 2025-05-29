@@ -33,9 +33,9 @@ export const metadata = {
     default: 'Greenground'
   }
 }
-export default async function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
   // Obtener el locale, esto puede ser de cookies, headers, etc.
-  const locale = await getLocale();
+  const { locale } = await params;
   return (
     <html
       lang={locale}

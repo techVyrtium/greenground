@@ -71,7 +71,7 @@ export default function TopNavHero() {
               </li>
               <li>
                 <NavLinkMultiple
-                  title={"Productos"}
+                  title={t('products.title')}
                   onToogle={toogleMultipleOptions}
                   className="text-[#E1FAEE] text-[clamp(1rem,1.5vw,1.5rem)] z-30 font-light hover:underline hover:font-bold"
                   options={new Array(CANT_LINKS_PRODUCTS)
