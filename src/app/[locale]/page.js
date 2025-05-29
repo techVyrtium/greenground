@@ -12,6 +12,10 @@ import { ProductCategories } from "../../components/productCategories";
 import OurCertificate from "../../components/ourCertificate";
 import MapW from "../../components/map";
 import SolarEnergyStats from "../../components/solarEnergyStats";
+import { hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 
 export const dynamic = 'force-static';
 
@@ -24,6 +28,14 @@ export const generateStaticParams = async () => {
 
 export default async function Home({ params }) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+
   return (
     <div
       className={`bg-white/20 w-full max-w-[1920px] mx-auto items-center justify-items-center min-h-screen`}

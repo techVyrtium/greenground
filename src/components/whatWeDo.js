@@ -99,7 +99,7 @@ export default function WhatWeDo() {
             {t("yellow2.text.part1")}
             <span className=" font-bold">{t("yellow2.text.strong1")}</span>
             {t("yellow2.text.part2")}
-            <span className=" font-bold">{t("yellow2.text.strong2")}</span>
+            <span className="font-bold">{t("yellow2.text.strong2")}</span>
           </p>
         </>
       ),
