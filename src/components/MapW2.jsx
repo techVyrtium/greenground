@@ -91,7 +91,7 @@ export default function MapW({ locale }) {
         <Suspense fallback={<div className="text-white">Cargando mapa...</div>}>
           {isValidScene && (
             <Spline
-              scene="https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode"
+              scene={animation}
               onLoad={(spline) => {
                 console.log("Spline cargado:", spline);
                 spline.setZoom(0.5); // Ejemplo de ajuste
