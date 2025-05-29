@@ -60,11 +60,11 @@ export default function WhatWeDo() {
         <>
           <p className="text-[clamp(18px,2.5vw,28px)] text-white ">
             {t("red.text.part1")}
-            <span className=" font-bold">{t("red.text.strong1")}</span>
+            <span className="font-bold">{t("red.text.strong1")}</span>
             {t("red.text.part2")}
-            <span className=" font-bold">{t("red.text.strong2")}</span>
+            <span className="font-bold">{t("red.text.strong2")}</span>
             {t("red.text.part3")}
-            <span className=" font-bold">{t("red.text.part3")}</span>
+            <span className="font-bold">{t("red.text.strong3")}</span>
           </p>
         </>
       ),
@@ -440,7 +440,7 @@ export default function WhatWeDo() {
                   {data3[0].title2}
                 </p>
                 <h1
-                  className={`lg:text-[clamp(50px,6.5vw,122px)] font-bold leading-21 font-itcGBold text-[20px]`}
+                  className={`md:text-[clamp(50px,6.5vw,122px)] font-bold leading-21 font-itcGBold text-[20px]`}
                 >
                   {data3[0].title}
                 </h1>
