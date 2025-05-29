@@ -9,7 +9,7 @@
                 "Bakery",
                 "Arepas"
             ],
-            "link": "products/category/frozen"
+            "link": "/en/products/category/frozen"
         },
         {
             "name": "Groceries",
@@ -26,12 +26,12 @@
                 "Sweets and snacks",
                 "Panela"
             ],
-            "link": "products/category/groceries"
+            "link": "/en/products/category/groceries"
         },
         {
             "name": "Household",
             "subcategories": [],
-            "link": "products/category/household"
+            "link": "/en/products/category/household"
         }
     ]
 }

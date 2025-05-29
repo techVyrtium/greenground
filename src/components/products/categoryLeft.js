@@ -3,7 +3,9 @@ import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 export function CategoryLeft() {
+  const { locale } = useParams();
   const [expandedCategories, setExpandedCategories] = useState({});
   const t = useTranslations("category");
 
@@ -19,7 +21,9 @@ export function CategoryLeft() {
     <aside className="border border-[#D9840D] rounded shadow-md">
       <div className="flex justify-between items-center bg-[#D9840D] p-2">
         <h2 className="text-white font-bold text-[24px]">
-          Categorías
+          {
+            locale === 'es' ? "Categorías" : "Categories"
+          }
         </h2>
         <button
           onClick={() => setExpandedCategories({})}

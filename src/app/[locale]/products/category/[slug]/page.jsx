@@ -1,12 +1,16 @@
 import { CategoryLeft } from "@/components/products/categoryLeft";
 import { FilterProducts } from "@/components/products/FilterProducts";
+import { routing } from "@/i18n/routing";
 import { getAllProducts } from "@/services/getAllProducts";
+import { hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 
 export const generateMetadata = async ({ params }) => {
   const { slug } = await params;
   return {
-    title: `Product-Category: ${slug}`
-  }
+    title: `Product-Category: ${slug}`,
+  };
   // return {
   //   title,
   //   description,
@@ -27,10 +31,10 @@ export const generateMetadata = async ({ params }) => {
   //     image: `https://greenground.vercel.app${images[0]}`,
   //   }
   // }
-}
-export const dynamic = 'force-static';
+};
+export const dynamic = "force-static";
 export async function generateStaticParams() {
-  const locales = ['es', 'en'];
+  const locales = ["es", "en"];
 
   return locales.map(async (locale) => {
     const slugs = await getAllProducts(locale);
@@ -38,7 +42,14 @@ export async function generateStaticParams() {
   });
 }
 export default async function ProductsByCategory({ params }) {
-  const { slug = '', locale } = await params;
+  const { slug = "", locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
+
   const products = await getAllProducts(locale);
   const productsMap = Object.entries(products).map(([slug, product]) => ({
     slug,
@@ -58,5 +69,5 @@ export default async function ProductsByCategory({ params }) {
         <FilterProducts slug={slug} locale={locale} productsMap={productsMap} />
       </div>
     </div>
-  )
+  );
 }
