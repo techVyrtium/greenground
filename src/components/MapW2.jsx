@@ -38,17 +38,24 @@ const checkWebGLSupport = () => {
   }
 };
 
-export default function MapW() {
+export default function MapW({ locale }) {
   const [isValidScene, setIsValidScene] = useState(false);
   const [webGLSupported, setWebGLSupported] = useState(true);
-
+  const [animation, setAnimation] = useState(
+    "https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode"
+  );
+  useEffect(() => {
+    setAnimation(
+      locale === "es"
+        ? "https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode"
+        : "https://prod.spline.design/vjab0woZpwnegvwG/scene.splinecode"
+    );
+  }, [locale]);
   // 3. Pre-validar la escena Spline
   useEffect(() => {
     const verifyScene = async () => {
       try {
-        const response = await fetch(
-          "https://prod.spline.design/WIoPFI60QecScwmI/scene.splinecode"
-        );
+        const response = await fetch(animation);
 
         console.log("Status:", response.status);
         console.log("Content-Type:", response.headers.get("content-type"));
@@ -93,7 +100,6 @@ export default function MapW() {
                 console.error("Spline runtime error:", error);
                 throw new Error("Spline initialization failed");
               }}
-              
             />
           )}
         </Suspense>

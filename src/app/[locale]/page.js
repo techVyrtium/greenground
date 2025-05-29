@@ -32,7 +32,6 @@ export default async function Home({ params }) {
     notFound();
   }
 
-  // Enable static rendering
   setRequestLocale(locale);
 
 

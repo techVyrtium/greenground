@@ -9,7 +9,7 @@
         "Panaderia",
         "Arepas"
       ],
-      "link": "products/category/congelados"
+      "link": "/es/products/category/congelados"
     },
     {
       "name": "Abarrotes",
@@ -26,12 +26,12 @@
         "Dulces y snacks",
         "Panela"
       ],
-      "link": "products/category/abarrotes"
+      "link": "/es/products/category/abarrotes"
     },
     {
       "name": "Menaje",
       "subcategories": [],
-      "link": "products/category/menaje"
+      "link": "/es/products/category/menaje"
     }
   ]
 }
