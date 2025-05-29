@@ -9,6 +9,7 @@ async function getRouting() {
     routes: {
       "/": "/es", // Redirigir a /es si no se especifica un idioma
     },
+    localeCookie: true,
   });
 }
 

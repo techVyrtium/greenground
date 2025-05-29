@@ -23,5 +23,15 @@
     },
     "button": "Get to know our products"
   },
+  "yellow2": {
+    "title": "At home",
+    "title2": "Our tradition made",
+    "text": {
+      "part1": "Get to know our products ",
+      "strong1": "",
+      "part2": "",
+      "strong2": "100% Colombianos"
+    }
+  },
   "button": "Get to know our products"
 }
