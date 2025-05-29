@@ -103,14 +103,14 @@ export const news = {
             },
             title: "Boom de congelados.",
             owner: 'Juan Sebastián Santamaría, Gerente Comercial de Green Ground',
-            description: "Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y manes, hoy salen más comidas de la nevera al fogón.",
+            description: "Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y panes, hoy salen más comidas de la nevera al fogón.",
             image: congelados,
             sections: [
                 {
                     title: 'Boom de congelados',
                     content: [
                         {
-                            text: 'Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y manes, hoy salen más comidas de la nevera al fogón.',
+                            text: 'Las cuarentenas son el motor del negocio de alimentos congelados, cuyo consumo está al alza. Desde empanadas y pasteles hasta sancochos y panes, hoy salen más comidas de la nevera al fogón.',
                         },
                         {
                             text: 'COLOMBIA ES UNO DE LOS países donde más se aprecia la comida &ldquo;fresca&rdquo;. Es decir, aquella que tiene menos intervenciones para llegar del campo a la mesa. El que no pase por procesos industriales es visto como un atributo: se considera más sabrosa. No obstante, la modernidad ha traído cambios en estas costumbres y cada vez más hogares con poco tiempo para cocinar han encontrado en los alimentos congelados una forma eficiente de llenar sus alacenas y acelerar su cocción.'
