@@ -13,8 +13,8 @@ import piña from "@/assets/home/piña.svg";
 import rabano from "@/assets/home/rabano.svg";
 import dulce from "@/assets/home/dulce.svg";
 import olla from "@/assets/home/olla.svg";
-export function CategoryTop({ search, setSearch }) {
-  const title = "Categorías de productos";
+
+export function CategoryTop({ search, setSearch, locale = "es" }) {
   const images = {
     congelados: [
       {
@@ -113,7 +113,17 @@ export function CategoryTop({ search, setSearch }) {
       },
     ],
   };
-
+  const info = {
+    es: {
+      title: "Categorías de productos",
+      categories: ["Congelados", "Abarrotes", "Menaje"],
+    },
+    en: {
+      title: "Product Categories",
+      categories: ["Frozen", "Groceries", "Houseware"],
+    },
+  };
+  const { title, categories } = info[locale];
   return (
     <div className="flex justify-between gap-4 mb-6 w-full flex-col">
       <div className="p-2 md:px-8 px-4">
@@ -124,8 +134,8 @@ export function CategoryTop({ search, setSearch }) {
           }
         >
           <ProductCategory
-            sup="Productos"
-            title={"Congelados"}
+            sup={locale === "en" ? "Products" : "Productos"}
+            title={categories[0]}
             color="green"
             mainImage={rabano}
             mainImageHeight={392}
@@ -134,10 +144,10 @@ export function CategoryTop({ search, setSearch }) {
             className="border border-[#4A4A4A] md:w-auto lg:hover:bg-product-green lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
             classNameTitle="md:bg-category-title-light"
             images={images.congelados}
-            link="products/category/congelados"
+            link={`products/category/${categories[0].toLowerCase()}`}
           />
           <ProductCategory
-            title={"Abarrotes"}
+            title={categories[1]}
             color="red"
             mainImage={dulce}
             mainImageHeight={231}
@@ -146,10 +156,10 @@ export function CategoryTop({ search, setSearch }) {
             className="border border-[#4A4A4A] lg:hover:bg-product-red lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
             classNameTitle="md:bg-category-title-bold"
             images={images.abarrotes}
-            link="products/category/abarrotes"
+            link={`products/category/${categories[1]}`}
           />
           <ProductCategory
-            title={"Menaje"}
+            title={categories[2]}
             color="orange"
             mainImage={olla}
             mainImageHeight={272}
@@ -158,7 +168,7 @@ export function CategoryTop({ search, setSearch }) {
             className="border border-[#4A4A4A] lg:hover:bg-product-orange lg:backdrop-blur-2xl hover:lg:backdrop-blur-none transition-[blur]"
             classNameTitle="md:bg-category-title-bold"
             images={images.menaje}
-            link="products/category/menaje"
+            link={`products/category/${categories[2]}`}
           />
         </div>
       </div>
