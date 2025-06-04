@@ -11,7 +11,7 @@ export const news = {
         {
             slug: "productora-agricola-ag-una-familia-de-exportacion",
             auxiliarSlugs: {
-                en: 'productora-agricola-ag-an-exporting-family'
+                en: 'agricultural-producer-ag-an-exporting-family'
             },
             title: "PRODUCTORA AGRÍCOLA AG, una familia de exportación",
             owner: 'Revista semana',
@@ -192,16 +192,16 @@ export const news = {
     ],
     en: [
         {
-            slug: "productora-agricola-ag-an-exporting-family",
+            slug: "agricultural-producer-ag-an-exporting-family",
             auxiliarSlugs: {
                 es: "productora-agricola-ag-una-familia-de-exportacion"
             },
-            title: "Productora Agrícola AG, an Exporting Family",
+            title: "Agricultural Producer AG, an Exporting Family",
             owner: 'Revista semana',
             image: revistaSemana,
             content: [
                 { text: "The fusion of respect for the wisdom of the elders and the acceptance of innovative ideas from the young has allowed three generations of the Galán family, proudly farmers from the Sabana region, to build one of the 100 most productive Colombian companies in a short time.", },
-                { text: "This is Productora Agricola AG CI SAS, started by the grandparents of Sebastián Santamaría Galán, who were dedicated to selling all kinds of fresh vegetables at the Central de Abastos in Bogotá -Corabastos-. The second generation, made up of María and José Antonio Galán, Sebastián's mother and uncle, expanded their horizons towards the country's institutional market, such as hotels, restaurants, and remote locations like Caño Limón and Cerrejón.", },
+                { text: "This is Agricultural Producer AG CI SAS, started by the grandparents of Sebastián Santamaría Galán, who were dedicated to selling all kinds of fresh vegetables at the Central de Abastos in Bogotá -Corabastos-. The second generation, made up of María and José Antonio Galán, Sebastián's mother and uncle, expanded their horizons towards the country's institutional market, such as hotels, restaurants, and remote locations like Caño Limón and Cerrejón.", },
                 { text: "With a global vision, Sebastián and his cousin Daniela Galán promoted a new process in the family business that consisted of adding value to the products and seeking international markets.", },
                 { text: "Procolombia played a decisive role in the international take-off of this company, as it opened the doors for Sebastián and Daniela to participate in a business conference in Atlanta, United States. There, they made contact with a company interested in supplying plantains.", },
                 { text: "“The truth is, we weren't experts in handling plantains. However, we took the risk because it's a product with great potential in the market, given that it's the basis of the family food basket in Central America, South America, and Africa; moreover, it's becoming part of regular consumption in North America due to the mix of cultures that congregate in that country”. said Sebastián Santamaría Galán." },
@@ -210,7 +210,7 @@ export const news = {
                 {
                     title: 'The Beginning of Exports',
                     content: [
-                        { text: "In December 2016, Productora Agricola AG SAS sent its first container to the United States, and it did so through the Port of Barranquilla. “Six months after having our plant, we achieved our first export, and such is the love and devotion for the company that I traveled with the container to Barranquilla. I wanted to verify that the cold chain was being handled correctly  at the Port to comply with the standards and conditions that guarantee to the customer a high-quality product”explained Sebastián. It was a 14-hour trip in a semi-trailer loaded with pre-fried and frozen plantain slices.", },
+                        { text: "In December 2016, Agricultural Producer AG SAS sent its first container to the United States, and it did so through the Port of Barranquilla. “Six months after having our plant, we achieved our first export, and such is the love and devotion for the company that I traveled with the container to Barranquilla. I wanted to verify that the cold chain was being handled correctly  at the Port to comply with the standards and conditions that guarantee to the customer a high-quality product”explained Sebastián. It was a 14-hour trip in a semi-trailer loaded with pre-fried and frozen plantain slices.", },
                         { text: "“We had the first container ready in 45 days; now we have a container ready for export in two and a half days. When we started this project, we were 4 people; today we are 88. In our beginnings, we had very manual processes; today we are industrializing our plant, which is located in the La Paz Logistics Park in Zipaquirá”, said the young entrepreneur.", }
                     ]
                 },
@@ -226,7 +226,7 @@ export const news = {
                 {
                     title: 'From Corabastos to Zipaquirá',
                     content: [
-                        { text: "Less than three years ago, 100% of Productora Agricola AG SAS's sales were national; now, 98% of sales are international, which led to the traditional headquarters of the family business in Corabastos moving to the plant in the La Paz Logistics Park in Zipaquirá.", },
+                        { text: "Less than three years ago, 100% of Agricultural Producer AG SAS's sales were national; now, 98% of sales are international, which led to the traditional headquarters of the family business in Corabastos moving to the plant in the La Paz Logistics Park in Zipaquirá.", },
                         { text: "There, José Antonio Galán is the General Manager, Maria Galán is the Quality Manager, Daniela Galán is the Production Director, and Sebastián Santamaría is the Commercial and Innovation Director.", },
                         { text: "One of the great values that is breathed in the Galán company is family unity, which has been passed from generation to generation as an important legacy. “The beautiful thing is that the family is here every day, with a lot of love and support, and that is felt in each of the things we do, because we have done it with very little”,  says Sebastián.", },
                         { text: "Precisely, even with the investment in technification, that concept of family has driven them to try to maintain the number of workers. “We know what it's like to come from the bottom, that's why we respect our workers. The contribution of each one of them is vital for the companies.”" },
@@ -236,7 +236,7 @@ export const news = {
                     title: 'ProColombia',
                     content: [
                         { text: "One of the great supports that Sebastián highlights is that of ProColombia, an entity that has opened spaces for them in business conferences, personalized agendas in the United States, and follow-up with visits to the company.", },
-                        { text: "As a reward for the excellent productivity results in such a short time, this family business will soon receive a visit from the Deputy Minister of Foreign Trade and the President of ProColombia to determine how they can support boosting the market of Productora Agricola AG SAS abroad." },
+                        { text: "As a reward for the excellent productivity results in such a short time, this family business will soon receive a visit from the Deputy Minister of Foreign Trade and the President of ProColombia to determine how they can support boosting the market of Agricultural Producer AG SAS abroad." },
                     ]
                 }
             ]
