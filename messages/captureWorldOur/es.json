@@ -9,5 +9,14 @@
         "part1": "Pon tu logo en nuestros productos",
         "part2": "o distribúyelos alrededor del mundo"
     },
-    "button": "Distribuye con nosotros"
+    "button": "Distribuye con nosotros",
+    "slides": {
+        "slide1": "Nuestra marca ha logrado llegar a la quinta avenida en New York",
+        "slide2": "Hemos estado en la feria de productos colombianos en Frankfurt, Alemania",
+        "slide3": "Celebrando nuestra llegada al mercado suizo",
+        "slide4": "Participamos en la Feria de Productos Colombianos realizada en Frankfurt, Alemania",
+        "slide5": "Formamos parte de la Feria de productos colombianos en Houston, Texas",
+        "slide6": "Estuvimos presentes en la feria de grandes empresas exportadoras de Colombia",
+        "slide7": "Nuestro equipo en nuestra planta productiva en Zipaquirá, Colombia"
+    }
 }
