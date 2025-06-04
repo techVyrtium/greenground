@@ -9,5 +9,14 @@
         "part1": "Brand our products with your logo,",
         "part2": "or distribute them around the world."
     },
-    "button": "Distribute with us"
+    "button": "Distribute with us",
+    "slides": {
+        "slide1": "Our brand has managed to reach Fifth Avenue in New York",
+        "slide2": "We have been to the Colombian products fair in Frankfurt, Germany",
+        "slide3": "Celebrating our arrival in the Swiss market",
+        "slide4": "We participated in the Colombian Products Fair held in Frankfurt, Germany",
+        "slide5": "We are part of the Colombian Products Fair in Houston, Texas",
+        "slide6": "We were present at the fair of large exporting companies in Colombia",
+        "slide7": "Our team at our production plant in Zipaquirá, Colombia"
+    }
 }

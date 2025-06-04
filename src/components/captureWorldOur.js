@@ -26,25 +26,25 @@ export default function CaptureWorldOur() {
   const dataSlider = [
     {
       id: 1,
-      texto: "Nuestra marca ha logrado llegar a la quinta avenida en New York",
+      texto: t('slides.slide1'),
       src: "/home/quintaAve.mp4",
       type: 'video'
     },
     {
       id: 2,
-      texto: "Feria de productos colombianos Frankfurt Alemania",
+      texto: t('slides.slide2'),
       src: "/home/feria.mp4",
       type: 'video'
     },
     {
       id: 3,
-      texto: "Celebrando nuestra llegada al mercado suizo",
+      texto: t('slides.slide3'),
       src: "/home/suiza.mp4",
       type: 'video'
     },
     {
       id: 4,
-      texto: "Celebrando nuestra llegada al mercado suizo",
+      texto: t('slides.slide4'),
       src: slide4,
       type: 'image',
       height: 1148,
@@ -52,7 +52,7 @@ export default function CaptureWorldOur() {
     },
     {
       id: 5,
-      texto: "Celebrando nuestra llegada al mercado suizo",
+      texto: t('slides.slide5'),
       src: slide5,
       type: 'image',
       height: 1148,
@@ -60,7 +60,7 @@ export default function CaptureWorldOur() {
     },
     {
       id: 6,
-      texto: "Celebrando nuestra llegada al mercado suizo",
+      texto: t('slides.slide6'),
       src: slide6,
       type: 'image',
       height: 1148,
@@ -69,7 +69,7 @@ export default function CaptureWorldOur() {
     },
     {
       id: 7,
-      texto: "Celebrando nuestra llegada al mercado suizo",
+      texto: t('slides.slide7'),
       src: slide7,
       type: 'image',
       height: 1148,
