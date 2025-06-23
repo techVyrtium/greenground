@@ -64,6 +64,9 @@ const ProductDetail = ({
               src={mainImage}
               alt={title}
               className="w-full object-contain rounded-xl border"
+              fill
+            // width={600}
+            // height={800}
             />
           </div>
 
@@ -83,8 +86,8 @@ const ProductDetail = ({
                         alt={`thumb-${i}`}
                         fill
                         className="object-cover rounded-md border"
-                        width={600}
-                        height={800}
+                      // width={600}
+                      // height={800}
                       />
                     </div>
                   </div>

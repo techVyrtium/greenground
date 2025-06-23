@@ -16,8 +16,8 @@ export default async function NewProduct({ locale = 'es' }) {
         product.tag?.toLowerCase().replace(/\s+/g, "-") === tag.toLowerCase()
     )
     .slice(0, 4);
-  const formatTitle = (str) =>
-    str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  // const formatTitle = (str) =>
+  //   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 
   const data = [
     {
