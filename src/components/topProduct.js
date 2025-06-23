@@ -40,8 +40,8 @@ const TopProduct = () => {
     })
     .slice(0, 6);
 
-  const formatTitle = (str) =>
-    str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  // const formatTitle = (str) =>
+  //   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   return (
     <>
       <section className="w-full h-fit mt-20 relative">
