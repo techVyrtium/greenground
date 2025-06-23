@@ -66,9 +66,11 @@ export default async function ProductPage({ params }) {
   const product = products[slug];
   if (!product) notFound();
   const { category } = product;
-
+  console.log({ category });
   const sameCategoryProducts = Object.entries(products).filter(
-    ([key, p]) => p.category === category && key !== slug
+    ([key, product]) => {
+      return category[0] === product.category[0] && key !== slug;
+    }
   );
 
   const getRandomItems = (arr, count) => {
