@@ -2226,7 +2226,7 @@ export const products = {
         // },
         "whole-green-plantain": {
             auxiliarSlugs: [],
-            title: "whole green plantain",
+            title: "Whole green plantain",
             subcategory: ["Especialidades Latinas", "Latin Specialties"],
             category: ["Congelados", "Frozen"],
             tag: "Top",
